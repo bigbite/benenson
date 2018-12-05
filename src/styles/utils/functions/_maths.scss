@@ -1,0 +1,27 @@
+////
+/// Maths helpers.
+////
+
+/// Quarter the suplied number.
+/// @param {string | mumber} $number
+@function quarter($number) {
+  @return round($number / 4);
+}
+
+/// Halve the suplied number.
+/// @param {string | mumber} $number
+@function halve($number) {
+  @return round($number / 2);
+}
+
+/// Double the suplied number.
+/// @param {string | mumber} $number
+@function double($number) {
+  @return round($number * 2);
+}
+
+/// Quadruple the suplied number.
+/// @param {string | mumber} $number
+@function quadruple($number) {
+  @return round($number * 4);
+}

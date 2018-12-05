@@ -1,0 +1,28 @@
+.tweetAction .editor-plain-text {
+  border-radius: 0 !important;
+}
+
+.tweetAction-title {
+  display: inline-block !important;
+  padding: 10px !important;
+  max-width: calc(100% - 54px);
+  background: transparent;
+  font-family: $font-family-secondary !important;
+  font-size: 28px !important;
+  font-weight: bold;
+  line-height: 1.4 !important;
+  text-transform: uppercase;
+}
+
+.tweetAction-content {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  padding: 10px !important;
+  font-family: $font-family-primary !important;
+  font-size: 21px !important;
+}
+
+.tweetAction-button {
+  padding-right: 10px;
+  padding-left: 10px;
+}

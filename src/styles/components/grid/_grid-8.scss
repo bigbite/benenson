@@ -1,0 +1,11 @@
+.grid-8 .grid-item:nth-child(5) {
+  margin-left: 0;
+
+  .rtl & {
+    margin-right: 0;
+  }
+}
+
+.grid-8 .grid-item:nth-child(n + 5) {
+  margin-top: flexy-gutter();
+}

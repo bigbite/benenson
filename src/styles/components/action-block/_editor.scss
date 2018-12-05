@@ -1,0 +1,63 @@
+.actionBlock {
+  max-width: 350px !important;
+}
+
+.actionBlock--wide {
+  max-width: 480px !important;
+}
+
+.actionBlock .editor-plain-text {
+  border-radius: 0 !important;
+}
+
+.actionBlock-image {
+  height: 100% !important;
+}
+
+.actionBlock-label {
+  width: auto !important;
+  padding: 2px 8px !important;
+  color: #fff !important;
+
+  @include placeholder {
+    color: #fff !important;
+  }
+}
+
+.actionBlock-content {
+  position: relative;
+}
+
+.actionBlock-content .editor-plain-text:not(.btn) {
+  padding: 8px !important;
+  border: 1px dotted #000;
+  line-height: 1.4 !important;
+  background-color: transparent !important;
+  color: #000 !important;
+
+  @include placeholder {
+    color: #000 !important;
+  }
+}
+
+.actionBlock-content .editor-plain-text.btn {
+  padding: 14px 24px !important;
+  font-family: $font-family-secondary;
+  color: $color-white;
+}
+
+.actionBlock .editor-url-input__button {
+  position: absolute !important;
+  right: 16px !important;
+  top: calc(100% - 66px) !important;
+}
+
+.actionBlock.actionBlock--wide .editor-url-input__button {
+  right: 66px !important;
+}
+
+.actionBlock .editor-url-input__button-modal {
+  position: absolute;
+  left: -150%;
+  min-width: 250px;
+}

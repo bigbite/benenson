@@ -1,0 +1,14 @@
+/**
+ * Create an inline list.
+ */
+%list--inline,
+.list--inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%list--inline li,
+.list--inline li {
+  display: inline;
+}

@@ -1,0 +1,23 @@
+/// Style any number of headings in one swoop.
+/// @author @csswizardry, @lar_zzz, @paranoida, @rowanmanning and @thierrylemoulec.
+/// @param {number} $from [1] - Starting heading
+/// @param {number} $to   [6] - Finishing heading
+/// @example scss
+/// .foo {
+///   @include headings(1, 3) {
+///     color: #BADA55;
+///   }
+/// }
+@mixin headings($from: 1, $to: 6) {
+  %headings-#{$from}-#{$to} {
+    @content;
+  }
+
+  @if $from >= 1 and $to <= 6 {
+    @for $i from $from through $to {
+      h#{$i} {
+        @extend %headings-#{$from}-#{$to};
+      }
+    }
+  }
+}

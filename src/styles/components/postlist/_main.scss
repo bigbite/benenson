@@ -1,0 +1,10 @@
+@import "./header";
+@import "./post";
+@import "./post-search";
+@import "./pagination";
+@import "./categories";
+
+.postlist {
+  display: flex;
+  flex-wrap: wrap;
+}

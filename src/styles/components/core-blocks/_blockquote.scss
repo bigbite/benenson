@@ -1,0 +1,262 @@
+/**
+ * Classic mode blockquote
+ */
+#quoteBox {
+  @include clearfix;
+}
+
+#quoteBox blockquote p {
+  font-size: 20px !important;
+}
+
+blockquote,
+.blockquote {
+  position: relative;
+  margin: 70px auto 0 !important;
+  font-family: $font-family-secondary;
+  text-align: center;
+
+  @include mq(small) {
+    max-width: $flexy-container / 2;
+  }
+}
+
+.section .container .blockquote {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include mq(medium) {
+    margin-top: 63px;
+    margin-bottom: 50px;
+  }
+}
+
+blockquote::before,
+.blockquote::before {
+  content: open-quote;
+  position: absolute;
+  left: calc(50% - 16px);
+  font-family: $font-family-secondary !important;
+  font-weight: 600;
+  font-size: 60px !important;
+  line-height: 1px;
+
+  @include mq(x-small) {
+    font-size: 70px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 80px !important;
+  }
+}
+
+blockquote::after,
+.blockquote::after {
+  content: close-quote;
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.blockquote.is-grey {
+  color: $color-grey-brand;
+  border-color: $color-grey-brand;
+}
+
+.blockquote.is-white {
+  color: $color-white;
+  border-color: $color-white;
+}
+
+.blockquote[class*="align-"] {
+  margin-top: 24px !important;
+}
+
+.blockquote.align-start::before,
+.blockquote.align-end::before {
+  display: none;
+}
+
+.blockquote.align-start {
+  margin-left: 0 !important;
+  text-align: left;
+
+  .rtl & {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    text-align: right;
+  }
+}
+
+.blockquote.align-end {
+  margin-right: 0 !important;
+  text-align: right;
+
+  .rtl & {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+    text-align: left;
+  }
+}
+
+blockquote p,
+.blockquote p {
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include mq(x-small) {
+    font-size: 32px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 36px !important;
+  }
+}
+
+.blockquote.is-medium p {
+  font-size: 20px !important;
+
+  @include mq(x-small) {
+    font-size: 28px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 32px !important;
+  }
+}
+
+.blockquote.is-small p {
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+
+  @include mq(x-small) {
+    font-size: 24px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 28px !important;
+  }
+}
+
+.blockquote[class*="align-"] p:first-of-type::before,
+.blockquote[class*="align-"] p:last-of-type::after {
+  display: inline-block;
+  font-size: 24px;
+
+  @include mq(x-small) {
+    font-size: 32px;
+  }
+
+  @include mq(medium) {
+    font-size: 40px;
+  }
+}
+
+.blockquote[class*="align-"] p:first-of-type::before {
+  content: open-quote;
+}
+
+.blockquote[class*="align-"] p:last-of-type::after {
+  content: close-quote;
+}
+
+.blockquote.align-start p:first-of-type::before {
+  text-indent: -20px;
+}
+
+.rtl .blockquote.align-end p:first-of-type::before {
+  right: 0;
+}
+
+.blockquote.align-end p:last-of-type::after {
+  position: absolute;
+  right: -20px;
+
+  .rtl & {
+    right: unset;
+    left: -20px;
+  }
+}
+
+blockquote cite,
+.blockquote cite {
+  display: inline-block;
+  font-style: normal;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 60px !important;
+  font-family: $font-family-primary;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include mq(x-small) {
+    font-size: 12px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 12px !important;
+  }
+}
+
+blockquote:not(.blockquote) cite,
+.blockquote.is-lined cite {
+  border-bottom: 1px solid;
+}
+
+.blockquote.is-medium cite {
+  font-size: 16px !important;
+
+  @include mq(x-small) {
+    font-size: 20px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 22px !important;
+  }
+}
+
+.blockquote.is-small cite {
+  font-size: 14px !important;
+  line-height: 40px !important;
+  border-bottom-width: 1px;
+
+  @include mq(x-small) {
+    font-size: 18px !important;
+  }
+
+  @include mq(medium) {
+    font-size: 20px !important;
+  }
+}
+
+.blockquote.is-capitalised p {
+  text-transform: uppercase;
+}
+
+.blockquote.align-start cite,
+.blockquote.align-end cite {
+  border-bottom: none;
+  line-height: 40px !important;
+}
+
+.ltr .blockquote.align-start.is-lined {
+  padding-left: 35px;
+  border-left: 8px solid;
+}
+
+.rtl .blockquote.align-start.is-lined,
+.ltr .blockquote.align-end.is-lined {
+  padding-right: 35px;
+  border-right: 8px solid;
+}

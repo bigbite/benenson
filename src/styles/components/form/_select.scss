@@ -1,0 +1,48 @@
+.element-select {
+  position: relative;
+
+  .news-sidebar & {
+    display: inline-block;
+  }
+}
+
+.element-select::after {
+  @include icon_svg(20px, 20px,"black", "arrow-ios-downward-outline");
+  position: absolute;
+  top: calc(50% - 11px);
+  right: 16px;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+
+  .rtl & {
+    right: unset;
+    left: 10px;
+  }
+}
+
+select {
+  padding: 12px 32px 12px 16px;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: $font-family-primary;
+  appearance: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: $color-white;
+  border: 1px solid #dadada;
+  border-radius: 0;
+  cursor: pointer;
+
+  .rtl & {
+    padding-right: 10px;
+    padding-left: 32px;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}

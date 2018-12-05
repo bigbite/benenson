@@ -1,0 +1,64 @@
+.section {
+  padding: 20px 0;
+
+  @include mq(medium) {
+    padding: 60px 0;
+  }
+}
+
+.section--narrow .container {
+  max-width: $section-narrow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--wide {
+  max-width: $section-wide;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--small {
+  padding: 15px;
+
+  @include mq(medium) {
+    padding: 20px;
+  }
+}
+
+.section--tinted {
+  background-color: $color-grey-xx-light;
+
+}
+
+.section--grey {
+  background-color: $color-grey-xx-light;
+}
+
+.section--dark {
+  background-color: $color-grey-light;
+}
+
+.section--topSpacing {
+  margin-top: 20px;
+}
+
+.section .container > *,
+.article-content > * {
+  margin-bottom: 0;
+}
+
+.section .container > * + *,
+.article-content > * + * {
+  margin-top: 24px;
+}
+
+.section--no-padding {
+  padding: 0;
+}
+
+[data-type="benenson/block-row"],
+[data-type="benenson/block-section"] {
+  width: 100% !important;
+  max-width: none !important;
+}

@@ -1,0 +1,19 @@
+@mixin state-background($colour: $color-black) {
+  transition: background-color .3s ease-in-out;
+
+  &:active,
+  &:focus-within,
+  &:enter {
+    background-color: $colour;
+  }
+}
+
+@mixin state-foreground($colour: $color-black) {
+  transition: color .3s ease-in-out;
+
+  &:active,
+  &:focus-within,
+  &:enter {
+    color: $colour;
+  }
+}

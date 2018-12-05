@@ -1,0 +1,95 @@
+// This file uses spacing to align, disable disalowing more than 1 space after colon.
+/* stylelint-disable declaration-colon-space-after */
+/* stylelint-disable declaration-bang-space-before */
+
+////
+/// @group Defaults
+/// @type Number (Unit)
+////
+
+/// Enable flexbox components.
+/// @type Bool
+$enable-flexbox: true !default;
+
+/// Primary font family.
+/// @type String (List)
+//$font-family-primary:   "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+
+$font-family-primary: "Lato", Calibri, Arial, sans-serif;
+
+/// Secondary font family.
+/// @type String (List)
+$font-family-secondary: "Playfair Display", serif;
+//$font-family-secondary: 'Merriweather', serif;
+
+/// Sets the base font size.
+$base-font-size:   18px !default;
+
+/// Sets the base line height.
+$base-line-height: 28px !default;
+
+/// Heading sizes
+$mobile-header-sizes: (
+  h1: 32px,
+  h2: 28px,
+  h3: 26px,
+  h4: 26px,
+  h5: 20px,
+  h6: 20px,
+);
+
+$desktop-header-sizes: (
+  h1: 52px,
+  h2: 41px,
+  h3: 31px,
+  h4: 31px,
+  h5: 24px,
+  h6: 24px,
+);
+
+//section settings.
+$section-narrow: 900px;
+$section-wide: 1200px;
+
+/// `.milli`.
+$milli-size: -1ms;
+
+//
+// Misc. variables.
+//
+
+/// Unitless line-height ratio (e.g 16px/24px = 1.5)
+/// @require $base-line-height
+/// @require $base-font-size
+/// @access private
+$line-height-ratio: $base-line-height / $base-font-size;
+
+/// Spacing for vertical rhythm based off the line-height.
+/// @group Defaults
+/// @require $base-line-height
+/// @see {function} spacing
+/// @example scss - Use modifiers for easy sizing adjustments.
+/// .foo {
+///   margin-top:    $spacing-unit;
+///   margin-bottom: $spacing-unit--double;
+///   margin-left:   $spacing-unit--half;
+/// }
+$spacing-unit: $base-line-height !default;
+
+/// Double `$spacing-unit`.
+$spacing-unit--double:  round($spacing-unit * 2);
+
+/// Half `$spacing-unit`.
+$spacing-unit--half:    round($spacing-unit / 2);
+
+/// Half `$spacing-unit`.
+$spacing-unit--quad:    round($spacing-unit * 4);
+
+/// Half `$spacing-unit`.
+$spacing-unit--quarter: round($spacing-unit / 4);
+
+/// Global border radius.
+$base-border-radius: 0px !default;
+
+/// Global border size.
+$base-border-size: 2px !default;

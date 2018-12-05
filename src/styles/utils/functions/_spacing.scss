@@ -1,0 +1,55 @@
+/// A flexible way to generate a rounded value based off the base line height.
+/// @author Connor Parks, Mark Goodyear
+/// @param {Number} $amount [1]   - Amount to multiply by
+/// @param {Unit}   $unit   [rem] - Output unit, rem or px
+/// @param {Unit}   $offset       - Pixel offset
+/// @require $base-font-size
+/// @require $base-line-height
+/// @example scss
+/// .element {
+///
+///   // Predefined values
+///   margin-bottom: spacing(double);
+///   margin-bottom: spacing(quad);
+///   margin-bottom: spacing(half);
+///   margin-bottom: spacing(quater);
+///
+///   // Custom number
+///   margin-bottom: spacing(2.5);
+///
+///   // Px value
+///   margin-bottom: spacing(2.5, px);
+///
+///   // Offset
+///   margin-bottom: spacing(2.5, $offset: 10px);
+/// }
+@function spacing($amount: 1, $unit: px, $offset: null) {
+  $base-value: null;
+
+  // Predifined values
+  @if ($amount == double) {
+    $amount: 2;
+  } @elseif ($amount == quad) {
+    $amount: 4;
+  } @elseif ($amount == half) {
+    $amount: .5;
+  } @elseif ($amount == quarter) {
+    $amount: .25;
+  }
+
+  // Offset
+  @if ($offset) {
+    $base-value: ($base-line-height + $offset);
+  } @else {
+    $base-value: $base-line-height;
+  }
+
+  // Output unit
+  @if ($unit == rem) {
+    $rem-spacing: ($base-value / $base-font-size) * 1rem;
+
+    @return $rem-spacing * $amount;
+  } @elseif ($unit == px) {
+    @return $base-value * $amount;
+  }
+}

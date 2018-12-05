@@ -1,0 +1,32 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+      "jest",
+      "react"
+    ],
+    "globals": {
+      "__DEV__": true,
+      "__TEST__": true,
+      "wp": true
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest/globals": true,
+      "jquery": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "strict": 0,
+      "no-underscore-dangle": "off",
+      "no-unused-vars": "off"
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+      }
+    }
+  }
+  

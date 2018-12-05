@@ -1,0 +1,17 @@
+.btn {
+  .icon-arrow-left {
+    //@include icon(234px, 240px, 16px, 16px);
+    @include icon_svg(16px, 16px, "black" ,"arrow-ios-back-outline");
+    display: inline-block;
+  }
+
+  &:hover .icon-arrow-left {
+    @include icon_svg(16px, 16px, "white" ,"arrow-ios-back-outline");
+  }
+
+  .rtl & {
+    &:hover .icon-arrow-left {
+      @include icon_svg(16px, 16px, "white" ,"arrow-ios-forward-outline");
+    }
+  }
+}

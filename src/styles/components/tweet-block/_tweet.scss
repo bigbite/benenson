@@ -1,0 +1,57 @@
+.tweetAction {
+  padding: 21px;
+  max-width: 350px;
+  background-color: $color-grey-x-light;
+
+  @include mq(small) {
+    max-width: 480px;
+  }
+}
+
+.tweetAction--narrow {
+  max-width: 350px;
+}
+
+.tweetAction.aligncentre {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tweetAction-header {
+  display: flex;
+  align-items: center;
+}
+
+.tweetAction .dashicons-twitter {
+  margin-right: 14px;
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  color: #1da1f2;
+}
+
+.tweetAction-title {
+  font-family: $font-family-primary;
+  letter-spacing: 2px;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.tweetAction-content {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+  min-height: 170px;
+  max-height: 170px;
+  overflow-y: scroll;
+  background-color: #fff;
+  font-family: $font-family-primary;
+  font-size: 21px;
+
+  @include mq(small) {
+    max-height: none;
+    overflow-y: unset;
+  }
+}

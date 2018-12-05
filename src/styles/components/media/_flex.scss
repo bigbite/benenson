@@ -1,0 +1,163 @@
+@if ($enable-flexbox) {
+
+  /**
+   * Media object, flexbox style.
+   *
+   * Extention modifiers:
+   * - Flip             [flip]   Flips the figure to the opposite side
+   * - Stack            [stack]  Stacks the figure on top of the text
+   * - Wrap             [wrap]   Wraps the text around the figure
+   * - Vertical align   [valign] Vertical aligns the figure with the text
+   */
+
+  /// Create media sizes.
+  /// @group Defaults
+  /// @type List
+  /// @example
+  /// $media-figure-sizes: (
+  ///   "large": "180px"
+  /// );
+  /// <div class="media media--large">
+  $media-figure-sizes: (
+    "large": "180px",
+    "medium": "140px",
+    "small": "100px"
+  ) !default;
+
+  /// Media spacing amount.
+  /// @group Defaults
+  /// @type Number (Unit)
+  $media-spacing: spacing() !default;
+
+  /// Media stack breakpoint.
+  /// @group Defaults
+  /// @type Mixed
+  $media-stack-breakpoint: x-small !default;
+
+  /**
+   * Core media styles.
+   */
+  .media {
+    @include clearfix;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $media-spacing;
+  }
+
+  /**
+   *  Media figure.
+   *
+   *  1. Gets rid of bottom margin on images.
+   */
+  .media-figure {
+    margin-right: $media-spacing;
+  }
+
+  .media-figure,
+  .media-figure img { /* 1 */ /* stylelint-disable-line */
+    vertical-align: bottom;
+  }
+
+  /**
+   * Media body.
+   *
+   * 1. Prevent text wrapping.
+   * 2. Remove margin from last media object, and also the last element inside.
+   */
+  .media-body {
+    flex: 1;
+
+    &:last-child, > *:last-child {
+      margin-bottom: 0; /* 2 */
+    }
+  }
+
+  /**
+   * Media flipped.
+   *
+   * 1. Resetting the default right margin.
+   */
+  .media--flip {
+    flex-direction: row-reverse;
+  }
+
+  .media--flip > .media-figure {
+    margin-right: 0; /* 1 */
+    margin-left: $media-spacing;
+  }
+
+  /**
+   * Media stacked.
+   */
+  .media--stack {
+    display: block;
+    text-align: center;
+  }
+
+  .media--stack > .media-figure {
+    margin: auto auto $media-spacing;
+  }
+
+  /**
+   * Media wrap text around image.
+   */
+  .media--wrap {
+    display: block;
+  }
+
+  .media--wrap > .media-figure {
+    float: left;
+  }
+
+  .media--flip.media--wrap > .media-figure {
+    float: right;
+  }
+
+  /**
+   * Media vertically aligned.
+   */
+  .media--valign {
+    align-items: center;
+  }
+
+  /**
+   * Media figure sizes.
+   */
+  @each $key, $value in $media-figure-sizes {
+    .media--#{$key} > .media-figure {
+      width: #{$value};
+    }
+
+    .media--#{$key} > .media-figure img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  /**
+   * Media breaking point. Wrapped in one MQ for sanity.
+   */
+  @include mq($until: $media-stack-breakpoint) {
+    .media {
+      display: block;
+      text-align: center;
+    }
+
+    /**
+     * Standard media object resetting.
+     *
+     * 1. Resets the margin for normal and flipped.
+     * 2. Resets floats for wrapping.
+     */
+    .media-figure,
+    .media--flip > .media-figure {
+      margin: auto auto $media-spacing; /* 1 */
+    }
+
+    .media--wrap > .media-figure,
+    .media--flip.media--wrap > .media-figure {
+      float: none; /* 2 */
+    }
+  }
+
+}

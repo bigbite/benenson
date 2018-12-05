@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="Big Bite CS" namespace="BigBite">
+    <description>Big Bite</description>
+
+    <config name="encoding" value="utf-8" />
+
+    <arg name="tab-width" value="4" />
+    <arg name="report-width" value="192" />
+    <arg name="report" value="full" />
+    <arg name="extensions" value="php" />
+    <arg value="q" />
+
+    <ini name="memory_limit" value="1024M" />
+
+    <!-- Generic -->
+    <exclude-pattern>*/.git/*</exclude-pattern>
+    <exclude-pattern>*/tests/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- Remove our generated block tranlation files as they generate erros. -->
+    <exclude-pattern>*/block-translations.php</exclude-pattern>
+    
+    <rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket" />
+    <rule ref="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" />
+
+    <rule ref="WordPress-Core">
+        <exclude name="WordPress.Files.FileName" />
+    </rule>
+
+    <rule ref="WordPress-Extra" />
+
+    <rule ref="WordPress-VIP">
+        <exclude name="WordPressVIPMinimum.VIP.RestrictedFunctions.wp_mail_wp_mail" />
+        <exclude name="WordPressVIPMinimum.VIP.RestrictedFunctions.user_meta_get_user_meta" />
+        <exclude name="WordPressVIPMinimum.VIP.RestrictedFunctions.switch_to_blog_switch_to_blog" />
+    </rule>
+</ruleset>

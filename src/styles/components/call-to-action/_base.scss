@@ -1,0 +1,56 @@
+.callToAction {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid $color-black;
+  border-bottom: 1px solid $color-black;
+  //background: $color-primary;
+
+  @include mq(small) {
+    padding: 36px 32px;
+  }
+}
+
+.section .container .callToAction {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.callToAction > *:empty {
+  display: none;
+}
+
+.callToAction:first-child {
+  margin-top: 0;
+}
+
+.callToAction-preHeading {
+  font-family: $font-family-primary;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @include mq(small) {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.callToAction-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+  @include mq(small) {
+    font-size: 41px;
+  }
+}
+
+.callToAction-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  line-height: 1.4;
+}

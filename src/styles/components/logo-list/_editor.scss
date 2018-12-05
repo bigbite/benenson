@@ -1,0 +1,9 @@
+.logoList .editor-block-list__layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.logoList .editor-block-list__layout > div {
+  flex-basis: 25%;
+}

@@ -1,0 +1,44 @@
+/* stylelint-disable block-opening-brace-space-before */
+
+/**
+ * Text transforms
+ */
+.u-textUpper { text-transform: uppercase !important; }
+.u-textLower { text-transform: lowercase !important; }
+.u-textCaps  { text-transform: capitalize !important; }
+
+/**
+ * Font weights
+ */
+.u-textLight  { font-weight: 300 !important; }
+.u-textNormal { font-weight: 400 !important; }
+.u-textBold   { font-weight: 600 !important; }
+
+/**
+ * Text alignment
+ */
+.u-textLeft   { text-align: left !important; }
+.u-textCenter { text-align: center !important; }
+.u-textRight  { text-align: right !important; }
+.u-textNoWrap { white-space: nowrap !important; }
+
+/* stylelint-enable */
+
+/**
+ * Text truncation.
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.u-textTruncate {
+  max-width: 100%; /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important; /* 2 */
+}

@@ -1,0 +1,17 @@
+.wp-block-image {
+  margin-bottom: 24px;
+}
+
+.wp-block-image.alignright {
+  float: right;
+}
+
+.wp-block-image.alignleft {
+  float: left;
+}
+
+.wp-block-image figcaption {
+  color: $color-grey-base;
+  font-size: 14px;
+  text-align: left;
+}

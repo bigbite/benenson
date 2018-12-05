@@ -1,0 +1,3 @@
+.thumbnails--small {
+  @include cols(".thumbnail", 5);
+}

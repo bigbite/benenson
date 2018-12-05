@@ -1,0 +1,137 @@
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 1 1 100%;
+  max-width: none;
+  min-height: 360px;
+  padding: 24px;
+  background-color: $color-grey-md-light;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  will-change: opacity;
+  background-color: #1a1a1a;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.grid-item:enter::before,
+.grid-item:focus-within::before {
+  opacity: .4;
+}
+
+.grid-item .grid-content {
+  min-width: 100%;
+  max-width: 100%;
+  background: $color-white;
+  padding: 10px 10px;
+}
+
+.grid-item .grid-content a {
+  position: relative;
+  z-index: 2;
+}
+
+.floating-anchor {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.grid-itemMeta {
+  @include state-background(darken($color-grey-x-light, 10%));
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding: 4px 8px;
+  color: $color-grey-dark;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: $color-grey-x-light;
+  letter-spacing: 2px;
+}
+
+span.grid-itemMeta a {
+  color: $color-grey-dark;
+  text-decoration: none;
+}
+
+.grid-itemTitle {
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 0;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: $font-family-secondary;
+  font-style: normal;
+  //font-style: normal;
+}
+
+h3.grid-itemTitle > span,
+h3.grid-itemTitle > a {
+  color: $color-black;
+  //background-color: $color-white;
+  //box-shadow: -12px 0 0 0 $color-white, 12px 0 0 0 $color-white;
+  //box-decoration-break: clone;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.grid-itemContent {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.no-js .grid-item:focus-within,
+.no-js .grid-item:enter {
+  .grid-itemContent {
+    display: block;
+  }
+}
+
+.grid-itemContent p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px;
+  color: $color-black;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: $color-white;
+  max-width: 100%;
+}
+
+.grid-itemContent a {
+  color: $color-black;
+  font-weight: 600;
+  font-family: $font-family-secondary;
+  text-transform: uppercase;
+}
+.grid-item .image-caption {
+  display: none;
+}

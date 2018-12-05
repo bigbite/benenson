@@ -1,0 +1,109 @@
+.wp-block-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.wp-block-table,
+.wp-block-table thead,
+.wp-block-table tbody,
+.wp-block-table tr {
+  max-width: 100%;
+}
+
+.wp-block-table tr {
+  display: block;
+
+  @include mq(680px) {
+    display: table-row;
+  }
+}
+
+.wp-block-table tr > *:nth-of-type(even) {
+  background-color: $color-grey-light;
+}
+
+.wp-block-table tr > *:nth-last-child(2):first-child + * {
+  background-color: unset;
+}
+
+.wp-block-table table th,
+.wp-block-table table thead td {
+  font-family: $font-family-secondary;
+  font-weight: 600;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+  display: block;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  // copypasta
+  padding: 16px;
+  table-layout: fixed;
+  text-align: center;
+  border: 1px solid $color-grey-light;
+
+  @include mq(680px) {
+    display: table-cell;
+
+    @for $i from 2 through 5 {
+      &:nth-last-child(#{$i}):first-child,
+      &:nth-last-child(#{$i}):first-child + td {
+        width: #{(100% / $i)};
+      }
+    }
+  }
+}
+
+.wp-block-table.is-style-responsive {
+  display: block;
+
+  @include mq(680px) {
+    display: table;
+  }
+}
+
+.wp-block-table.is-style-responsive thead {
+  @include clearfix;
+  display: block;
+  float: left;
+
+  @include mq(680px) {
+    display: table-header-group;
+    float: unset;
+  }
+}
+
+.wp-block-table.is-style-responsive tbody {
+  display: flex;
+  overflow-x: scroll;
+
+  @include mq(680px) {
+    display: table-row-group;
+    overflow-x: unset;
+  }
+}
+
+.wp-block-table.is-style-responsive tr {
+  display: block;
+
+  @include mq(680px) {
+    display: table-row;
+  }
+}
+
+.wp-block-table.is-style-responsive th,
+.wp-block-table.is-style-responsive td {
+  display: block;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: unset;
+
+  @include mq(680px) {
+    display: table-cell;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+}

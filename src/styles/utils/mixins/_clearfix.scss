@@ -1,0 +1,23 @@
+/// Clearfix
+/// @example scss
+/// .foo {
+///   @include clearfix();
+/// }
+///
+/// // This will generate a before and after containing clear fix declarations
+/// .foo::before,
+/// .foo::after {
+///   content: "";
+///   display: table;
+///   clear: both;
+/// }
+///
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

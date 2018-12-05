@@ -1,0 +1,18 @@
+.logoList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.logoList-item-imageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logoList-item {
+  flex-basis: 50%;
+
+  @include mq("medium") {
+    flex-basis: 25%;
+  }
+}

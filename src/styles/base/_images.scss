@@ -1,0 +1,54 @@
+/**
+ * Images responsive by default.
+ *
+ * 1. Fluid.
+ * 2. Offset `alt` text from surrounding copy
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;           /* 1 */
+  font-style: italic;        /* 2 */
+  vertical-align: middle;    /* 3 */
+}
+
+/**
+ * Styles for non-responsive images.
+ *
+ * 1. Respect if a `width` and/or `height` attribute have been explicitly defined.
+ * 2. Fix Google Maps, doesn't like fluid images.
+ */
+img[width],        /* 1 */ /* stylelint-disable-line */
+img[height],       /* 1 */ /* stylelint-disable-line */
+.gm-style img {    /* 2 */ /* stylelint-disable-line */
+  max-width: none;
+}
+
+/**
+ * Remove default figure marging and padding.
+ */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.has-caption {
+  position: relative;
+
+  &[class*="wp-image-"] {
+    display: inline-block;
+  }
+}
+
+.image-caption {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 5px;
+  font-size: 12px;
+  color: $color-white;
+  background-color: rgba($color-black, .5);
+}

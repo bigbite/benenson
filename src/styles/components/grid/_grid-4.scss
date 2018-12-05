@@ -1,0 +1,68 @@
+.grid-8 .grid-item,
+.grid-4 .grid-item {
+  flex: 1 1 100%;
+  max-width: none;
+
+  @include mq(medium-sm) {
+    @include flexy-grid(2, flexy-gutter());
+
+    .article-sidebar & {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+  }
+
+  @include mq(large) {
+    @include flexy-grid(4, flexy-gutter());
+  }
+}
+
+.grid-8, .grid-4 {
+  .grid-item + .grid-item {
+    margin-top: flexy-gutter();
+
+    @include mq(medium-sm) {
+      margin-top: 0;
+      margin-left: calc(#{flexy-gutter()} - 1px);
+
+      .rtl & {
+        margin-right: calc(#{flexy-gutter()} - 1px);
+        margin-left: 0;
+      }
+
+      .article-sidebar & {
+        margin-top: flexy-gutter();
+        margin-left: 0;
+
+        .rtl & {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .grid-item:nth-child(2n + 3) {
+    margin-left: 0;
+
+    .rtl & {
+      margin-right: 0;
+    }
+
+    @include mq(large) {
+      margin-left: calc(#{flexy-gutter()} - 1px);
+
+      .rtl & {
+        margin-right: calc(#{flexy-gutter()} - 1px);
+        margin-left: 0;
+      }
+    }
+  }
+
+  .grid-item:nth-child(n + 3) {
+    margin-top: flexy-gutter();
+
+    @include mq(large) {
+      margin-top: 0;
+    }
+  }
+}

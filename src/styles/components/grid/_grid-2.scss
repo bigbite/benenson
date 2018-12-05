@@ -1,0 +1,35 @@
+.grid-2 .grid-item {
+  @include flexy-grid(1, flexy-gutter());
+
+  @include mq(x-small) {
+    @include flexy-grid(2, flexy-gutter());
+
+    .article-sidebar & {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+  }
+}
+
+.grid-2 .grid-item + .grid-item {
+  margin-top: flexy-gutter();
+
+  @include mq(x-small) {
+    margin-top: 0;
+    margin-left: calc(#{flexy-gutter()} - 1px);
+
+    .rtl & {
+      margin-right: calc(#{flexy-gutter()} - 1px);
+      margin-left: 0;
+    }
+
+    .article-sidebar & {
+      margin-left: 0;
+      margin-top: flexy-gutter();
+
+      .rtl & {
+        margin-right: 0;
+      }
+    }
+  }
+}

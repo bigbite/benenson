@@ -1,0 +1,14 @@
+// Disable style line for this file as it doesnt like numerous spaces after the !default
+/* stylelint-disable */
+
+////
+/// Grid settings for Neat
+////
+
+// Adds support for flexygrids
+$flexy-container:    1200px !default;
+$flexy-columns:      12     !default;
+$flexy-column-width: 92px  !default;
+$flexy-gutter-width: 28px   !default;
+$flexy-outer-gutter: 0px   !default;
+/* stylelint-enable */

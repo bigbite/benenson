@@ -1,0 +1,52 @@
+/// Columns Generator
+/// @author Jerome Duncan
+/// @param {string}           $className - Class name to target.
+/// @param {string}           $cols - Number of items per row
+/// @example scss
+/// .thumbnails--small {
+///   @include cols(".thumbnail", 5);
+/// }
+///
+/// // This will generate styles for the container and the containing element,
+/// // with nth child styles already wrote out
+///
+/// // Output:
+/// .thumbnails--small {
+///   display: flex;
+///   flex-wrap: wrap;
+/// }
+///
+/// .thumbnails--small .thumbnail {
+///   flex-grow: 0;
+///   flex-shrink: 0;
+///   flex-basis: 18.70968%;
+///   width: 18.70968%;
+///   margin-right: 1.6129%;
+/// }
+///
+/// .thumbnails--small .thumbnail:nth-child(5n + 5) {
+///   margin-right: 0;
+/// }
+///
+/// .thumbnails--small .thumbnail:nth-child(-n + 5) {
+///   margin-top: 0;
+/// }
+@mixin cols($className, $cols) {
+  $colspan: 12 / $cols;
+
+  & {
+    @include flexy-wrapper;
+  }
+  & #{$className} {
+    @include flexy-column($colspan);
+  }
+
+  // & #{$className}:first-child,
+  & #{$className}:nth-child(#{$cols}n + #{$cols}) {
+    margin-right: 0;
+  }
+
+  & #{$className}:nth-child(-n + #{$cols}) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,20 @@
+[data-type="benenson/block-menu"] {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.editor-block-list__block-edit .postlist-categories {
+  list-style: none !important;
+  box-sizing: border-box !important;
+  padding: 0 20px !important;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-family-secondary;
+  }
+
+  ul {
+    display: none;
+  }
+}

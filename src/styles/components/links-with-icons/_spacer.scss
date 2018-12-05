@@ -1,0 +1,44 @@
+@mixin spacer-horizontal {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 35%;
+  height: 1px;
+  background-color: rgba(#000, .2);
+
+  @include mq(x-small) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@mixin spacer-vertical {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 1px;
+  height: 200px;
+  background-color: rgba(#000, .2);
+}
+
+.linksWithIcons-group .linksWithIcons-spacer:last-child {
+  display: none !important;
+}
+
+.linksWithIcons-group.is-vertical .linksWithIcons-spacer {
+  @include spacer-horizontal;
+}
+
+.linksWithIcons-group.is-horizontal .linksWithIcons-spacer {
+  @include spacer-horizontal;
+
+  @include mq(medium-sm) {
+    @include spacer-vertical;
+
+    &:nth-child(4) {
+      display: block;
+    }
+  }
+}
+
+.linksWithIcons-group.has-no-lines .linksWithIcons-spacer {
+  background-color: transparent;
+}

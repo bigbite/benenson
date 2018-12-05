@@ -1,0 +1,80 @@
+.grid-6 .grid-item {
+  flex: 1 1 100%;
+  max-width: none;
+
+  @include mq(x-small) {
+    @include flexy-grid(2, flexy-gutter());
+
+    .article-sidebar & {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+  }
+
+  @include mq(medium-sm) {
+    @include flexy-grid(4, flexy-gutter());
+  }
+}
+
+.grid-6 .grid-item + .grid-item {
+  margin-top: flexy-gutter();
+
+  @include mq(x-small) {
+    margin-top: 0;
+
+    .article-sidebar & {
+      margin-top: flexy-gutter();
+      margin-left: 0;
+
+      .rtl & {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include mq(medium-sm) {
+    margin-left: calc(#{flexy-gutter()} - 1px);
+
+    .rtl & {
+      margin-right: calc(#{flexy-gutter()} - 1px);
+      margin-left: 0;
+    }
+  }
+}
+
+.grid-6 .grid-item:nth-child(2n + 2) {
+  @include mq($from: x-small, $until: medium-sm) {
+    margin-left: calc(#{flexy-gutter()} - 1px);
+
+    .rtl & {
+      margin-right: calc(#{flexy-gutter()} - 1px);
+      margin-left: 0;
+    }
+  }
+}
+
+.grid-6 .grid-item:nth-child(-n + 2) {
+  @include mq(x-small) {
+    @include flexy-grid(2, flexy-gutter());
+
+    .article-sidebar & {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+  }
+}
+
+.grid-6 .grid-item:nth-child(n + 3) {
+  @include mq(x-small) {
+    margin-top: flexy-gutter();
+  }
+}
+
+.grid-6 .grid-item:nth-child(3) {
+  margin-left: 0;
+
+  .rtl & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

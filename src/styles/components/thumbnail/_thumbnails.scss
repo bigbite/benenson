@@ -1,0 +1,13 @@
+.thumbnails {
+  @include mq($until: x-small) {
+    @include cols(".thumbnail", 1);
+  }
+
+  @include mq(x-small, large) {
+    @include cols(".thumbnail", 2);
+  }
+
+  @include mq(large) {
+    @include cols(".thumbnail", 4);
+  }
+}

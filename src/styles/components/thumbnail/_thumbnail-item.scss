@@ -1,0 +1,40 @@
+.thumbnail {
+  margin-top: spacing();
+}
+
+.thumbnail-figure img {
+  width: 100%;
+}
+
+.thumbnail-body {
+  margin: spacing(half) 0;
+  padding: 0 spacing(half);
+  text-align: center;
+}
+
+.thumbnail a {
+  font-weight: 500;
+}
+
+.thumbnail-meta {
+  font-size: -1ms;
+}
+
+* + .thumbnail-title {
+  margin-top: spacing(quarter);
+}
+
+.thumbnail-title {
+  font-size: 2ms;
+  margin-bottom: 0;
+}
+
+.thumbnail-title a {
+  color: $heading-color;
+  font-weight: 600;
+}
+
+.thumbnail-append {
+  display: inline-block;
+  margin-top: spacing(quarter);
+}

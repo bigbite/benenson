@@ -1,0 +1,54 @@
+.edit-post-visual-editor .editor-block-list__block[data-type="benenson/block-call-to-action"] {
+  max-width: 100%;
+}
+
+.callToAction * {
+  font-family: $font-family-secondary;
+}
+
+.callToAction .editor-rich-text__tinymce.mce-content-body {
+  line-height: 1.3;
+}
+
+.callToAction-heading {
+  margin-bottom: 24px;
+}
+
+.callToAction-content {
+  margin-bottom: 24px;
+}
+
+.callToAction-buttonContainer {
+  position: relative;
+  display: inline-flex;
+
+  .editor-url-input__button {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > button:last-child {
+      display: none;
+    }
+  }
+
+  .editor-url-input__button-modal {
+    position: absolute;
+    right: -36px;
+    width: 340px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .editor-url-input__button > button:last-child {
+      display: block;
+    }
+  }
+}
+
+.callToAction .editor-rich-text__tinymce.mce-content-body:not(:last-child) { // Targets the input when the placeholder is visible.
+  left: 50%;
+  transform: translateX(-50%);
+}

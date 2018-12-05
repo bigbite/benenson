@@ -1,0 +1,92 @@
+.language-selector {
+  display: none;
+  padding: 14px 0;
+  background-color: $color-grey-mid-light;
+}
+
+.language-selector.is-visible {
+  display: block;
+}
+
+.language-selector .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+
+  @include mq(medium) {
+    justify-content: flex-end;
+  }
+}
+
+.language-selector p {
+  margin: 16px 0;
+  order: 1;
+  text-align: center;
+}
+
+.language-selector .language-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  order: 4;
+  flex-basis: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include mq(medium) {
+    order: 2;
+    flex-basis: auto;
+    margin-left: 24px;
+  }
+}
+
+.language-selector .language-list a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: $color-white;
+  font-family: $font-family-secondary;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.language-selector .language-list li + li {
+  margin-left: 4px;
+}
+
+.language-selector .language-list a:enter,
+.language-selector .language-list .is-selected a {
+  background-color: #252525;
+}
+
+button.language-selectorClose {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+  padding: 11px;
+  font-size: 16px;
+  order: 0;
+
+  @include mq(xx-small) {
+    order: 3;
+  }
+
+  .rtl & {
+    margin-left: 0;
+  }
+}
+
+.language-selectorClose::after {
+  @include icon(194px, 265px, 16px, 16px);
+  content: "";
+  display: inline-block;
+  margin-left: 11px;
+
+  .rtl & {
+    margin-right: 11px;
+    margin-left: 0;
+  }
+}

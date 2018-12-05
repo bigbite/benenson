@@ -1,0 +1,117 @@
+.category-list {
+  width: 100%;
+  background: $color-white;
+  border: 1px solid $color-grey-light;
+}
+
+.category-list .category-list-expander {
+  display: none;
+
+  &.is-visible {
+    display: block;
+  }
+
+  @include mq(large) {
+    display: block;
+  }
+}
+
+.category-list h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid $color-grey-light;
+  cursor: pointer;
+  font-size: 16px;
+
+  @include mq(large) {
+    font-size: 24px;
+  }
+}
+
+.category-list h3 .icon-minus {
+  display: none;
+}
+
+.category-list h3.is-open {
+  .icon-plus {
+    display: none;
+  }
+  .icon-minus {
+    display: block;
+  }
+
+  .icon-minus,
+  .icon-plus, {
+    @include mq(large) {
+      display: none;
+    }
+  }
+}
+
+.category-list h3 .icon-plus,
+.category-list h3 .icon-minus {
+  width: 16px;
+  height: 16px;
+}
+
+.category-list ul {
+  margin: 0;
+}
+
+.category-list ul li {
+  list-style: none;
+  line-height: 2;
+  font-family: $font-family-primary;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.category-list div > ul > li {
+  border-bottom: 1px solid $color-grey-light;
+  border-top: 0;
+  transition: background .3s ease;
+}
+
+.category-list div > ul > li:enter {
+  background: $color-black;
+  a {
+    color: $color-white;
+  }
+}
+
+.category-list div > ul > li a {
+  display: block;
+  padding: 20px;
+}
+
+.category-list div ul > li {
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.category-list div > ul ul {
+  margin-left: 20px;
+}
+
+.category-list li.is-current li {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+    margin-right: 10px;
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: $color-grey-base;
+  }
+}
+
+.category-list li.is-current > a {
+  font-weight: 600;
+}

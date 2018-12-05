@@ -1,0 +1,17 @@
+/**
+ * Clearfix
+ */
+.u-cf {
+  @include clearfix;
+}
+
+/**
+ * Floats
+ */
+.u-floatLeft {
+  float: left !important;
+}
+
+.u-floatRight {
+  float: right !important;
+}

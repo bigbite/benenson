@@ -1,0 +1,12 @@
+.blockquote {
+  width: 100%;
+}
+
+.blockquote cite.editor-rich-text__tinymce.mce-content-body[data-is-placeholder-visible="true"] {
+  border-bottom: none;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce blockquote {
+  border: none !important;
+  padding-left: 0;
+}

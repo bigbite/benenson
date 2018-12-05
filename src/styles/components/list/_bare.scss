@@ -1,0 +1,9 @@
+/**
+ * Remvove all lists styles.
+ */
+%list--bare,
+.list--bare {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}

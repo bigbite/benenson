@@ -1,0 +1,82 @@
+/**
+ * Headings.
+ */
+
+@include headings(1,  6) {
+  color: $heading-color;
+  line-height: 1.12;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: map-get($mobile-header-sizes, h#{$i});
+
+    @include mq(small) {
+      font-size: map-get($desktop-header-sizes, h#{$i});
+    }
+  }
+}
+
+.page-template-without-sidebar main {
+  h1:not([class]),
+  h2:not([class]),
+  h3:not([class]),
+  h4:not([class]),
+  h5:not([class]),
+  h6:not([class]),
+  p:not([class]) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 850px;
+  }
+}
+
+.page-template-without-sidebar main {
+  > h1:not([class]),
+  > h2:not([class]),
+  > h3:not([class]),
+  > h4:not([class]),
+  > h5:not([class]),
+  > h6:not([class]),
+  > p:not([class]) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+small {
+  font-size: $milli-size;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+p.has-drop-cap:not(:focus)::first-letter {
+  margin-bottom: 30px;
+}
+
+p.has-small-font-size {
+  font-size: .9rem;
+}
+
+p.has-regular-font-size {
+  font-size: $base-font-size;
+}
+
+p.has-large-font-size {
+  font-size: 1.5rem;
+}
+
+p.has-larger-font-size {
+  font-size: 2rem;
+}
+
+.article-content {
+  p,
+  ul {
+    font-weight: 300;
+  }
+}

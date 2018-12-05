@@ -1,0 +1,59 @@
+/// Font size calculaition with vertical rhythm.
+/// @author Harry Robberts
+/// @link  https://github.com/inuitcss/tools.functions
+/// @link  twitter.com/redclov3r/status/250301539321798657
+/// @param {string}           $font-size - Font size in pixels.
+/// @param {string | boolean} $line-height [auto] - Specify line height.
+/// @require $base-font-size
+/// @require $base-line-height
+/// @example scss
+/// .foo {
+///   @include font-size(12px);
+/// }
+///
+/// // This will generate a rem-based font-size with its pixel fallback, as well as
+/// // a unitless line-height which will place the element on your baseline, e.g.:
+/// .foo {
+///   font-size: 12px;
+///   font-size: 0.75rem;
+///   line-height: 2;
+/// }
+///
+/// // If you do not want to auto generate a line-height automatically, you
+/// // simply pass in your own as a second paramater:
+/// .foo {
+///   @include font-size(12px, 1.5);
+/// }
+///
+/// // Output:
+/// .foo {
+///   font-size: 12px;
+///   font-size: 0.75rem;
+///   line-height: 1.5;
+/// }
+///
+/// // This parameter can be any integer, ‘inherit’, or ‘normal’. If you don’t want
+/// // a line-height at all, pass in a second paramater of ‘none’ or ‘false’:
+/// .foo {
+///   @include font-size(12px, none);
+/// }
+///
+/// // This will yield:
+/// .foo {
+///   font-size: 12px;
+///   font-size: 0.75rem;
+/// }
+@mixin font-size($font-size, $line-height: auto) {
+  font-size: $font-size;
+  // font-size: ($font-size / $base-font-size) * 1rem; // Don't need rem output, PostCSS handles this.
+
+  @if $line-height == auto {
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+  } @else {
+    @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+      line-height: $line-height;
+    } @elseif ($line-height != none and $line-height != false) {
+      @warn "D’oh! ‘#{$line-height}’ is not a valid value for `line-height`.";
+    }
+  }
+}

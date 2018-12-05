@@ -1,0 +1,65 @@
+/// Main colors
+
+/// Color Primary
+$color-primary: #fffce6;
+$color-primary: #c8dee5;
+$color-primary-state: #000;
+
+/// Color Secondary
+$color-secondary: #2196f3;
+
+/// Color Accent
+$color-accent: #2196f3;
+
+$color-white: #fff;
+$color-black: #000;
+
+// Grey colors
+$color-grey-brand: #b3b3b3;
+$color-grey-xx-light: #f7f7f7;
+$color-grey-x-light: #eee;
+$color-grey-sm-light: #e7e7e7;
+$color-grey-light: #e4e4e4;
+$color-grey-md-light: #b5b5b5;
+$color-grey-mid-light: #717272;
+$color-grey-base: #767676;
+$color-grey-mid-dark: #525252;
+$color-grey-dark: #262626;
+$color-grey-x-dark: #111;
+
+$color-figure-bgd: #f5f5f5;
+
+// Set up some type colors
+$body-color: $color-black;
+$heading-color: $color-grey-dark;
+$link-color: $color-primary;
+
+// Set up palettes. Useful for looping over.
+$palettes: (
+
+  // Primary
+  primary: (
+    base: $color-primary
+  ),
+
+  // Secondary
+  secondary: (
+    base: $color-secondary
+  ),
+
+  // Accent
+  accent: (
+    base: $color-accent
+  ),
+
+  // Grey
+  grey: (
+    x-light: $color-grey-x-light,
+    light: $color-grey-light,
+    mid-light: $color-grey-mid-light,
+    base: $color-grey-base,
+    mid-dark: $color-grey-mid-dark,
+    dark: $color-grey-dark,
+    x-dark: $color-grey-x-dark
+  )
+);

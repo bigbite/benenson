@@ -1,0 +1,62 @@
+.btn--white {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+  color: $color-black;
+
+  &:enter {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+.tweetAction-button,
+.actionBlock-button {
+  padding: 10px 20px;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font-family-primary;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+
+  &:enter {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
+
+.btn--outline {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+  color: $color-black !important;
+
+  &:enter {
+    background-color: $color-black;
+    color: $color-white !important;
+    border: 1px solid $color-white;
+  }
+}
+
+.btn--white-reverse {
+  border: 1px solid $color-black;
+  background-color: $color-white;
+  color: $color-black !important;
+
+  &:enter {
+    background-color: $color-black;
+    color: $color-white !important;
+    border: 1px solid $color-white;
+  }
+}
+
+.wp-block-file__button,
+.btn--dark {
+  background: $color-black;
+  color: $color-white;
+  border: 1px solid $color-black;
+
+  &:enter {
+    background-color: $color-white;
+    color: $color-black !important;
+  }
+}

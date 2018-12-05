@@ -1,0 +1,1076 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/scripts/blocks/PostMediaSelector.js:6
+msgid "Set Image"
+msgstr ""
+
+#: src/scripts/blocks/PostMediaSelector.js:7
+msgid "Replace Image"
+msgstr ""
+
+#: src/scripts/blocks/PostMediaSelector.js:8
+#: src/scripts/blocks/action/BlockEdit.js:78
+#: src/scripts/blocks/image/BlockEdit.js:224
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:60
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:60
+msgid "Remove Image"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:102
+#: src/scripts/blocks/columns/index.js:17
+msgid "Content"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:111
+#: src/scripts/blocks/action/index.js:137
+msgid "Act Now"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:57
+#: src/scripts/blocks/blockquote/index.js:222
+#: src/scripts/blocks/header/DisplayComponent.js:112
+#: src/scripts/blocks/tweet/index.js:85
+msgid "Size"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:61
+msgid "Standard"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:62
+#: src/scripts/blocks/section/DisplayComponent.js:53
+msgid "Wide"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:66
+msgid "Centre Aligned"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:67
+msgid "Centre align the action block."
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:95
+msgid "(Label)"
+msgstr ""
+
+#: src/scripts/blocks/action/index.js:53
+msgid "Action"
+msgstr ""
+
+#: src/scripts/blocks/action/index.js:54
+msgid "Add an Action block"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/PostSelect.js:133
+#: src/scripts/blocks/post-list/components/CategorySelect.js:78
+msgid "Loading"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/PostSelect.js:133
+msgid "Select a sidebar"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:107
+msgid "Share Buttons"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:109
+msgid "Disable Share Buttons for this page"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:35
+msgid "Appearance"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:37
+#: src/scripts/blocks/header/index.js:11
+msgid "Header"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:39
+msgid "Navigation Style:"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:41
+msgid "Global"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:44
+#: src/scripts/blocks/blockquote/index.js:238
+#: src/scripts/blocks/header/DisplayComponent.js:102
+#: src/scripts/blocks/menu/DisplayComponent.js:10
+#: src/scripts/blocks/section/DisplayComponent.js:20
+msgid "White"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:47
+#: src/scripts/blocks/blockquote/index.js:236
+#: src/scripts/blocks/header/DisplayComponent.js:105
+msgid "Black"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:56
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:26
+#: src/scripts/blocks/category-list/DisplayComponent.js:62
+#: src/scripts/blocks/columns/DisplayComponent.js:28
+#: src/scripts/blocks/header/DisplayComponent.js:75
+#: src/scripts/blocks/iframe/DisplayComponent.js:89
+#: src/scripts/blocks/menu/DisplayComponent.js:91
+#: src/scripts/blocks/post-list/DisplayComponent.js:54
+#: src/scripts/blocks/section/DisplayComponent.js:16
+#: src/scripts/blocks/slider/DisplayComponent.js:203
+msgid "Options"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:58
+msgid "Post Thumbnail Style"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:59
+msgid "Affects its display on the news index only."
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:61
+msgid "Half size"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:64
+msgid "Full Background"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:72
+msgid "Hide featured image"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:73
+msgid "Disables display of featured image on post single."
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:79
+msgid "Force full-width featured image"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:80
+msgid "Ensures a small featured image fills the width of the content area."
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:85
+msgid "Reduce Content Width"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:86
+msgid "Adds a small amount of padding to the content."
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:93
+msgid "Sidebar"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:95
+msgid "Disable Sidebar"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:96
+msgid "Hides the sidebar for this post"
+msgstr ""
+
+# text alignment. for RTL languages, localise as 'Right'
+#: src/scripts/blocks/blockquote/index.js:163
+#: src/scripts/blocks/header/DisplayComponent.js:80
+#: src/scripts/blocks/image/BlockEdit.js:205
+#: src/scripts/blocks/slider/DisplayComponent.js:35
+msgid "Left"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:164
+#: src/scripts/blocks/image/BlockEdit.js:203
+#: src/scripts/blocks/tweet/index.js:89
+msgid "Default"
+msgstr ""
+
+# text alignment. for RTL languages, localise as 'Left'
+#: src/scripts/blocks/blockquote/index.js:169
+#: src/scripts/blocks/header/DisplayComponent.js:87
+#: src/scripts/blocks/image/BlockEdit.js:208
+#: src/scripts/blocks/slider/DisplayComponent.js:38
+msgid "Right"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:21
+msgid "Blockquote"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:216
+#: src/scripts/blocks/header/DisplayComponent.js:77
+#: src/scripts/blocks/image/BlockEdit.js:198
+msgid "Alignment"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:22
+msgid "Add a blockquote block"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:226
+#: src/scripts/blocks/header/DisplayComponent.js:117
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
+#: src/scripts/blocks/section/DisplayComponent.js:35
+msgid "Small"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:227
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:146
+msgid "Medium"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:228
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:230
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:147
+msgid "Large"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:232
+msgid "Text Colour"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:237
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:33
+#: src/scripts/blocks/key-facts/index.js:59
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:67
+#: src/scripts/blocks/logo-list/BlockEdit.js:58
+#: src/scripts/blocks/menu/DisplayComponent.js:11
+#: src/scripts/blocks/section/DisplayComponent.js:23
+#: src/scripts/blocks/section/index.js:27
+msgid "Grey"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:242
+msgid "Capitalise"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:243
+msgid "Capitalise the content."
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:248
+msgid "Line"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:249
+msgid "Toggle display of line embellishment."
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:259
+msgid "(Insert Quote Text)"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:267
+msgid "(Insert Citation)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:28
+#: src/scripts/blocks/slider/DisplayComponent.js:248
+msgid "Background Style"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:40
+msgid "Button Style"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:42
+msgid "Primary (Yellow)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:45
+msgid "Dark"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:48
+msgid "Light"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:60
+msgid "(Pre-heading)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:69
+#: src/scripts/blocks/slider/DisplayComponent.js:301
+msgid "(Heading)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:78
+#: src/scripts/blocks/image/BlockEdit.js:271
+#: src/scripts/blocks/slider/DisplayComponent.js:323
+msgid "(Content)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+#: src/scripts/blocks/slider/DisplayComponent.js:334
+msgid "(Button Text)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/index.js:52
+msgid "Call To Action"
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:100
+msgid "No categories to show."
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:64
+msgid "Maximum number of categories to show"
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:65
+msgid "Set to 0 to show all."
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:81
+msgid "Title"
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:91
+msgid "Loading categories"
+msgstr ""
+
+#: src/scripts/blocks/category-list/DisplayComponent.js:96
+msgid "Something went wrong whilst trying to fetch the categories."
+msgstr ""
+
+#: src/scripts/blocks/category-list/index.js:11
+msgid "Categories"
+msgstr ""
+
+#: src/scripts/blocks/category-list/index.js:12
+msgid "Term"
+msgstr ""
+
+#: src/scripts/blocks/category-list/index.js:13
+msgid "Taxonomy"
+msgstr ""
+
+#: src/scripts/blocks/category-list/index.js:7
+msgid "Category List"
+msgstr ""
+
+#: src/scripts/blocks/columns/DisplayComponent.js:30
+msgid "Layout Style"
+msgstr ""
+
+#: src/scripts/blocks/columns/index.js:18
+msgid "Row"
+msgstr ""
+
+#: src/scripts/blocks/columns/index.js:19
+msgid "Columns"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:11
+msgid "66.6% | 33.3%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:17
+msgid "33.3% | 66.6%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:23
+msgid "33.3% | 33.3% | 33.3%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:29
+msgid "50% | 25% | 25%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:35
+msgid "25% | 50% | 25%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:41
+msgid "25% | 25% | 50%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:47
+msgid "25% | 25% | 25% | 25%"
+msgstr ""
+
+#: src/scripts/blocks/columns/layouts.js:5
+msgid "50% | 50%"
+msgstr ""
+
+#: src/scripts/blocks/columns/row-column.js:9
+msgid "Row Column"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:12
+msgid "Resource Download"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:13
+msgid "Add a button to download a resource"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:44
+msgid "File"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:45
+msgid "A File"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:67
+msgid "[Download Resource]"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:75
+msgid "Remove Resource"
+msgstr ""
+
+#: src/scripts/blocks/download/index.js:85
+msgid "Edit File"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:114
+#: src/scripts/blocks/section/DisplayComponent.js:47
+msgid "Normal"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:125
+#: src/scripts/blocks/image/BlockEdit.js:372
+msgid "Background Type"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:127
+#: src/scripts/blocks/image/BlockEdit.js:374
+msgid "Image"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:130
+#: src/scripts/blocks/image/BlockEdit.js:377
+msgid "Video"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:138
+msgid "Embed url"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:142
+msgid ""
+"Setting this will override the cta link and will now open a modal with the "
+"embed in the hero."
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:144
+msgid "Background Image"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:144
+msgid "Featured Image"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:147
+msgid "Featured Video"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:169
+msgid "(Header Title)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:178
+msgid "(Header Content)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:189
+msgid "(Call to action)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:83
+#: src/scripts/blocks/image/BlockEdit.js:206
+#: src/scripts/blocks/slider/DisplayComponent.js:36
+msgid "Centre"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:94
+#: src/scripts/blocks/key-facts/index.js:54
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:62
+#: src/scripts/blocks/logo-list/BlockEdit.js:53
+#: src/scripts/blocks/menu/DisplayComponent.js:102
+#: src/scripts/blocks/section/DisplayComponent.js:18
+msgid "Background Colour"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:96
+msgid "Translucent black"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:99
+#: src/scripts/blocks/key-facts/index.js:58
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:66
+#: src/scripts/blocks/logo-list/BlockEdit.js:57
+#: src/scripts/blocks/section/DisplayComponent.js:38
+msgid "None"
+msgstr ""
+
+#: src/scripts/blocks/header/PostFeaturedVideo.js:6
+msgid "Set featured video"
+msgstr ""
+
+#: src/scripts/blocks/header/PostFeaturedVideo.js:7
+msgid "Remove featured video"
+msgstr ""
+
+#: src/scripts/blocks/header/PostFeaturedVideo.js:85
+#: src/scripts/blocks/image/BlockEdit.js:321
+msgid "Replace Video"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:103
+msgid "Required when specifying a width"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:108
+msgid "Minimum Height"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:114
+msgid "Required if not using width/height, optional otherwise"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:117
+msgid "Reset Embed Url"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:34
+msgid "Iframe URL"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:44
+msgid "Enter URL to embed here…"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:49
+msgid "Embed"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:73
+msgid "Write caption…"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:91
+#: src/scripts/blocks/section/DisplayComponent.js:45
+msgid "Width"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:95
+msgid "Required when specifying a height"
+msgstr ""
+
+#: src/scripts/blocks/iframe/DisplayComponent.js:99
+msgid "Height"
+msgstr ""
+
+#: src/scripts/blocks/iframe/index.js:11
+msgid "Iframe"
+msgstr ""
+
+#: src/scripts/blocks/iframe/index.js:12
+msgid "Responsive"
+msgstr ""
+
+#: src/scripts/blocks/iframe/index.js:13
+msgid "Fluid"
+msgstr ""
+
+#: src/scripts/blocks/iframe/index.js:7
+msgid "Responsive Iframe"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:143
+msgid "(Link Text)"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:151
+msgid "Remove Button"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:189
+msgid "Image Style"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:193
+msgid "Fixed Height (600px)"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:194
+msgid "Actual Height"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:199
+msgid "Only has an effect on images smaller than their container"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:265
+msgid "(Title)"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:282
+msgid "Add Button"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:306
+msgid "Choose Video"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:325
+msgid "Remove Video"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:389
+msgid "Display Overlay"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:394
+msgid "Enable Parallax"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:414
+msgid "(Insert Caption, if required)"
+msgstr ""
+
+#: src/scripts/blocks/image/index.js:76
+msgid "Add a flexible image block with optional overlay"
+msgstr ""
+
+#: src/scripts/blocks/key-facts/fact.js:30
+#: src/scripts/blocks/key-facts/index.js:68
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:30
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:27
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:30
+msgid "(Insert Title)"
+msgstr ""
+
+#: src/scripts/blocks/key-facts/fact.js:39
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:46
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:46
+msgid "(Insert Content)"
+msgstr ""
+
+#: src/scripts/blocks/key-facts/index.js:16
+msgid "Key Facts"
+msgstr ""
+
+#: src/scripts/blocks/key-facts/index.js:17
+msgid "Add a key facts block"
+msgstr ""
+
+#: src/scripts/blocks/key-facts/index.js:47
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:46
+#: src/scripts/blocks/logo-list/BlockEdit.js:46
+msgid "Quantity"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:53
+msgid "Orientation"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:57
+msgid "Horizontal"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:58
+msgid "Vertical"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:71
+msgid "Hide Lines"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlock.js:70
+msgid "Links with Icons"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlock.js:71
+msgid "Add a links-with-icons block"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:103
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:84
+msgid "Pick an image"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:182
+msgid "(Insert Fact)"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:214
+#: src/scripts/blocks/post-list/DisplayComponent.js:56
+msgid "Style"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:218
+msgid "Use Image"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:219
+msgid "Use Text"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:220
+msgid "Plain"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:224
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:141
+msgid "Icon Size"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:234
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:151
+msgid "Hide Image Credit Display"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:239
+msgid "Has Underline"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:244
+msgid "Display Button"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:263
+msgid "(Insert Body Text)"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:274
+msgid "(Insert Link Text)"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/index.js:20
+msgid "Links with Icons Group"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/index.js:21
+msgid "Add a repeatable links-with-icons block"
+msgstr ""
+
+#: src/scripts/blocks/logo-list/InnerBlock.js:46
+msgid "Logo"
+msgstr ""
+
+#: src/scripts/blocks/logo-list/InnerBlock.js:47
+msgid "Add a logos block"
+msgstr ""
+
+#: src/scripts/blocks/logo-list/index.js:20
+msgid "Logo Group"
+msgstr ""
+
+#: src/scripts/blocks/logo-list/index.js:21
+msgid "Add a repeatable logo block"
+msgstr ""
+
+#: src/scripts/blocks/menu/DisplayComponent.js:110
+msgid "Select a menu in the sidebar"
+msgstr ""
+
+#: src/scripts/blocks/menu/DisplayComponent.js:111
+msgid "Loading Menu..."
+msgstr ""
+
+#: src/scripts/blocks/menu/DisplayComponent.js:22
+msgid "Select a menu..."
+msgstr ""
+
+#: src/scripts/blocks/menu/DisplayComponent.js:92
+msgid "Loading Menus..."
+msgstr ""
+
+#: src/scripts/blocks/menu/DisplayComponent.js:94
+#: src/scripts/blocks/menu/index.js:31
+msgid "Menu"
+msgstr ""
+
+#: src/scripts/blocks/menu/index.js:32
+msgid "Navigation"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:100
+msgid "Use related categories where supported"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:105
+msgid "Hide Preview"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:105
+msgid "Show Preview"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:58
+msgid "Link List"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:61
+msgid "Grid"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:64
+msgid "Post"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:71
+msgid "Type"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:73
+msgid "Category"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:76
+msgid "Object Selection"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:79
+msgid "Custom"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:86
+msgid "Category:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:93
+msgid "Number of posts to show:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/CategorySelect.js:78
+msgid "Select a category"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:161
+#: src/scripts/blocks/post-list/components/SelectPreview.js:9
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
+#: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
+msgid "Loading..."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:165
+msgid "Select a category."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:169
+msgid "No Items found"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:140
+msgid "Add another item"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/SelectPreview.js:13
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:31
+msgid "No Posts."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:14
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:14
+msgid "(Insert Tag)"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+msgid "(Tag Name)"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:21
+msgid "Loading Posts..."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:26
+msgid "Your query yielded no results, please try again."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
+msgid "Load More"
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:27
+msgid "Please enter your search query..."
+msgstr ""
+
+#: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:34
+msgid "Post Type:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/index.js:34
+msgid "Post List"
+msgstr ""
+
+#: src/scripts/blocks/post-list/index.js:38
+msgid "List"
+msgstr ""
+
+#: src/scripts/blocks/post-list/index.js:39
+msgid "post-list"
+msgstr ""
+
+#: src/scripts/blocks/post-list/index.js:40
+msgid "Posts"
+msgstr ""
+
+#: src/scripts/blocks/section/DisplayComponent.js:30
+msgid "Padding"
+msgstr ""
+
+#: src/scripts/blocks/section/DisplayComponent.js:50
+#: src/scripts/blocks/tweet/index.js:90
+msgid "Narrow"
+msgstr ""
+
+#: src/scripts/blocks/section/index.js:26
+msgid "Section"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:178
+msgid "Do you wish to delete this slide? This action is irreversible"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:205
+msgid "Show Arrows"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:211
+msgid "Has Content"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:214
+msgid ""
+"By disabling this you will hide the content in *ALL* slides. To disable "
+"this on only one slide, select the desired slide and toggle the \"Hide "
+"Content\" field in the \"Slide Options\" panel."
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:218
+msgid "Show Tabs"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:221
+msgid ""
+"Hide the tabs on the front end, these will still show in the panel to allow "
+"you to navigate through each slide."
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:226
+msgid "Slide Options"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:228
+msgid "Slide Title"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:242
+msgid "Content Alignment"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:254
+msgid "Hide Content"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:257
+msgid ""
+"By enabling this you will hide the content on *THIS* slide. To disable "
+"content on all slides go to the \"Options\" and toggle the \"Has Content\" "
+"field."
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:261
+msgid "Remove Slide"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:262
+msgid "This is irreversible."
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:275
+#: src/scripts/blocks/slider/index.js:59
+msgid "Next"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:276
+#: src/scripts/blocks/slider/index.js:60
+msgid "Previous"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:282
+msgid "Add a slide below."
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:312
+msgid "(Sub-Heading)"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:367
+msgid "(No Title)"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:372
+msgid "Add Slide"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:42
+msgid "Opaque"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:43
+msgid "Translucent"
+msgstr ""
+
+#: src/scripts/blocks/slider/DisplayComponent.js:44
+msgid "Transparent"
+msgstr ""
+
+#: src/scripts/blocks/slider/build-slide.js:193
+msgid "Tap here to return to gallery"
+msgstr ""
+
+#: src/scripts/blocks/slider/build-slide.js:200
+msgid "Toggle Content"
+msgstr ""
+
+#: src/scripts/blocks/slider/index.js:38
+msgid "Slider"
+msgstr ""
+
+#: src/scripts/blocks/slider/index.js:39
+msgid "Carousel"
+msgstr ""
+
+#: src/scripts/blocks/slider/index.js:40
+msgid "Scroller"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:106
+msgid "(Action Title)"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:114
+msgid "(Place Tweet text proforma here)"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:154
+msgid "Send this Tweet"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:25
+msgid "Tweet Action"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:26
+msgid "Add a Tweet Action block"
+msgstr ""
+
+#: src/scripts/blocks/tweet/index.js:94
+msgid "Centre Align"
+msgstr ""

@@ -1,0 +1,11 @@
+.wp-block-file__button,
+.btn--small {
+  font-size: $milli-size;
+  padding: spacing(quarter) spacing(half);
+}
+
+.btn--large {
+  font-size: 30px;
+  padding: 11px 20px;
+  line-height: 1;
+}

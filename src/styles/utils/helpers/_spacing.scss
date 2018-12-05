@@ -1,0 +1,189 @@
+// This file uses spacing to align, disable disalowing more than 1 space after colon.
+/* stylelint-disable declaration-block-single-line-max-declarations, declaration-colon-space-after, selector-combinator-space-before */
+
+////
+/// @group helpers
+/// @type Bool
+////
+
+/// Global spacing helper toggle
+/// > _Helper classes for adding/removing spacing._
+///
+/// @require $spacing-unit
+/// @require $spacing-unit--double
+/// @require $spacing-unit--quad
+/// @require $spacing-unit--half
+///
+/// @example md
+/// Explanation of classes:
+///
+/// (m|p) (a|t|r|b|l|h|v) (-|+|0)
+/// (margin|padding) (all|top|right|bottom|left|horizontal|vertical) (less|more|none)
+///
+/// horzontal = top  + bottom
+/// vertical  = left + right
+///
+///         h
+///     |‾‾‾‾‾‾‾|
+///   v |       | v
+///     |_______|
+///         h
+////
+$spacing-helpers: false !default;
+
+/// Standard margins
+///
+/// @example markup
+/// <div class="u-ma u-mt u-mr u-mb u-ml u-mv u-mh"></div>
+$spacing-margins: false !default;
+
+/// Double margins
+///
+/// @example markup
+/// <div class="u-ma+ u-mt+ u-mr+ u-mb+ u-ml+ u-mv+ u-mh+"></div>
+$spacing-margins--double: false !default;
+
+/// Half margins
+///
+/// @example markup
+/// <div class="u-ma- u-mt- u-mr- u-mb- u-ml- u-mv- u-mh-"></div>
+$spacing-margins--half: false !default;
+
+/// Zero margins
+///
+/// @example markup
+/// <div class="u-ma0 u-mt0 u-mr0 u-mb0 u-ml0 u-mv0 u-mh0"></div>
+$spacing-margins--zero: false !default;
+
+/// Standard paddings
+///
+/// @example markup
+/// <div class="u-pa u-pt u-pr u-pb u-pl u-pv u-ph"></div>
+$spacing-paddings: false !default;
+
+/// Double paddings
+///
+/// @example markup
+/// <div class="u-pa+ u-pt+ u-pr+ u-pb+ u-pl+ u-pv+ u-ph+"></div>
+$spacing-paddings--double: false !default;
+
+/// Half paddings
+///
+/// @example markup
+/// <div class="u-pa- u-pt- u-pr- u-pb- u-pl- u-pv- u-ph-"></div>
+$spacing-paddings--half: false !default;
+
+/// Zero paddings
+///
+/// @example markup
+/// <div class="u-pa0 u-pt0 u-pr0 u-pb0 u-pl0 u-pv0 u-ph0"></div>
+$spacing-paddings--zero: false !default;
+
+// Spacing namespace, useful if characters conflict with syntax highlighting (e.g. Pygments).
+// @group Helpers
+//
+// @example scss - Set to a string
+// $spacing-namespace: "u-"
+//
+// @example markup - Usage
+// <div class="u-mt"></div>
+$spacing-namespace: "u-" !default;
+
+@if $spacing-helpers {
+
+  //
+  // Margins
+  //
+
+  // Standard margin
+  @if $spacing-margins {
+    .#{$spacing-namespace}ma { margin:        $spacing-unit !important; }
+    .#{$spacing-namespace}mt { margin-top:    $spacing-unit !important; }
+    .#{$spacing-namespace}mr { margin-right:  $spacing-unit !important; }
+    .#{$spacing-namespace}mb { margin-bottom: $spacing-unit !important; }
+    .#{$spacing-namespace}ml { margin-left:   $spacing-unit !important; }
+    .#{$spacing-namespace}mh { margin-top:    $spacing-unit !important; margin-bottom: $spacing-unit !important; }
+    .#{$spacing-namespace}mv { margin-right:  $spacing-unit !important; margin-left:   $spacing-unit !important; }
+  }
+
+  // Double margin
+  @if $spacing-margins--double {
+    .#{$spacing-namespace}ma\+ { margin:        $spacing-unit--double !important; }
+    .#{$spacing-namespace}mt\+ { margin-top:    $spacing-unit--double !important; }
+    .#{$spacing-namespace}mr\+ { margin-right:  $spacing-unit--double !important; }
+    .#{$spacing-namespace}mb\+ { margin-bottom: $spacing-unit--double !important; }
+    .#{$spacing-namespace}ml\+ { margin-left:   $spacing-unit--double !important; }
+    .#{$spacing-namespace}mh\+ { margin-top:    $spacing-unit--double !important; margin-bottom: $spacing-unit--double !important; }
+    .#{$spacing-namespace}mv\+ { margin-right:  $spacing-unit--double !important; margin-left:   $spacing-unit--double !important; }
+  }
+
+  // Half margin
+  @if $spacing-margins--half {
+    .#{$spacing-namespace}ma- { margin:        $spacing-unit--half !important; }
+    .#{$spacing-namespace}mt- { margin-top:    $spacing-unit--half !important; }
+    .#{$spacing-namespace}mr- { margin-right:  $spacing-unit--half !important; }
+    .#{$spacing-namespace}mb- { margin-bottom: $spacing-unit--half !important; }
+    .#{$spacing-namespace}ml- { margin-left:   $spacing-unit--half !important; }
+    .#{$spacing-namespace}mh- { margin-top:    $spacing-unit--half !important; margin-bottom: $spacing-unit--half !important; }
+    .#{$spacing-namespace}mv- { margin-right:  $spacing-unit--half !important; margin-left:   $spacing-unit--half !important; }
+  }
+
+  // Zero margin
+  @if $spacing-margins--zero {
+    .#{$spacing-namespace}ma0 { margin:        0 !important; }
+    .#{$spacing-namespace}mt0 { margin-top:    0 !important; }
+    .#{$spacing-namespace}mr0 { margin-right:  0 !important; }
+    .#{$spacing-namespace}mb0 { margin-bottom: 0 !important; }
+    .#{$spacing-namespace}ml0 { margin-left:   0 !important; }
+    .#{$spacing-namespace}mh0 { margin-top:    0 !important; margin-bottom: 0 !important; }
+    .#{$spacing-namespace}mv0 { margin-right:  0 !important; margin-left:   0 !important; }
+  }
+
+  //
+  // Paddings
+  //
+
+  // Base padding
+  @if $spacing-paddings {
+    .#{$spacing-namespace}pa { padding:        $spacing-unit !important; }
+    .#{$spacing-namespace}pt { padding-top:    $spacing-unit !important; }
+    .#{$spacing-namespace}pr { padding-right:  $spacing-unit !important; }
+    .#{$spacing-namespace}pb { padding-bottom: $spacing-unit !important; }
+    .#{$spacing-namespace}pl { padding-left:   $spacing-unit !important; }
+    .#{$spacing-namespace}ph { padding-top:    $spacing-unit !important; padding-bottom: $spacing-unit !important; }
+    .#{$spacing-namespace}pv { padding-right:  $spacing-unit !important; padding-left:   $spacing-unit !important; }
+  }
+
+  // Double padding
+  @if $spacing-paddings--double {
+    .#{$spacing-namespace}pa\+ { padding:        $spacing-unit--double !important; }
+    .#{$spacing-namespace}pt\+ { padding-top:    $spacing-unit--double !important; }
+    .#{$spacing-namespace}pr\+ { padding-right:  $spacing-unit--double !important; }
+    .#{$spacing-namespace}pb\+ { padding-bottom: $spacing-unit--double !important; }
+    .#{$spacing-namespace}pl\+ { padding-left:   $spacing-unit--double !important; }
+    .#{$spacing-namespace}ph\+ { padding-top:    $spacing-unit--double !important; padding-bottom: $spacing-unit--double !important; }
+    .#{$spacing-namespace}pv\+ { padding-right:  $spacing-unit--double !important; padding-left:   $spacing-unit--double !important; }
+  }
+
+  // Half padding
+  @if $spacing-paddings--half {
+    .#{$spacing-namespace}pa- { padding:        $spacing-unit--half !important; }
+    .#{$spacing-namespace}pt- { padding-top:    $spacing-unit--half !important; }
+    .#{$spacing-namespace}pr- { padding-right:  $spacing-unit--half !important; }
+    .#{$spacing-namespace}pb- { padding-bottom: $spacing-unit--half !important; }
+    .#{$spacing-namespace}pl- { padding-left:   $spacing-unit--half !important; }
+    .#{$spacing-namespace}ph- { padding-top:    $spacing-unit--half !important; padding-bottom: $spacing-unit--half !important; }
+    .#{$spacing-namespace}pv- { padding-right:  $spacing-unit--half !important; padding-left:   $spacing-unit--half !important; }
+  }
+
+  // Zero padding
+  @if $spacing-paddings--zero {
+    .#{$spacing-namespace}pa0 { padding:        0 !important; }
+    .#{$spacing-namespace}pt0 { padding-top:    0 !important; }
+    .#{$spacing-namespace}pr0 { padding-right:  0 !important; }
+    .#{$spacing-namespace}pb0 { padding-bottom: 0 !important; }
+    .#{$spacing-namespace}pl0 { padding-left:   0 !important; }
+    .#{$spacing-namespace}ph0 { padding-top:    0 !important; padding-bottom: 0 !important; }
+    .#{$spacing-namespace}pv0 { padding-right:  0 !important; padding-left:   0 !important; }
+  }
+}

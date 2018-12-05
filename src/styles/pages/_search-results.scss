@@ -1,0 +1,34 @@
+body.search main {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+body.search .section {
+  padding: 24px;
+}
+
+body.search .post-pagination {
+  padding-bottom: 0;
+}
+
+body.search .section .page-search {
+  flex-direction: column;
+  background-color: unset;
+
+  @include mq(xx-small) {
+    flex-direction: row;
+  }
+}
+
+body.search .section .page-search input {
+  margin-bottom: 10px;
+
+  @include mq(xx-small) {
+    margin-bottom: 0;
+  }
+}
+
+.post--result {
+  @include state-background($color-grey-light);
+  position: relative;
+}

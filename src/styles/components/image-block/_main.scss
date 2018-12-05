@@ -1,0 +1,169 @@
+.imageBlock {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.imageBlock-wrapper.alignright .imageBlock,
+.imageBlock-caption.alignright,
+.imageBlock-wrapper.alignright .image-caption {
+  float: right;
+}
+
+.imageBlock-wrapper.aligncentre {
+  text-align: center;
+
+  .imageBlock {
+    display: inline-block;
+  }
+}
+
+.imageBlock-caption.aligncentre,
+.imageBlock-wrapper.aligncentre .image-caption {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imageBlock-wrapper.alignleft .imageBlock,
+.imageBlock-caption.alignleft,
+.imageBlock-wrapper.alignleft .image-caption {
+  float: left;
+}
+
+.imageBlock-caption.alignright,
+.imageBlock-caption.alignleft,
+.imageBlock-wrapper.alignright .image-caption,
+.imageBlock-wrapper.alignleft .image-caption {
+  width: 100%;
+}
+
+.imageBlock-caption.alignright,
+.imageBlock-wrapper.alignright .image-caption {
+  text-align: right;
+}
+
+.imageBlock--fixed {
+  display: block;
+  min-height: 600px;
+  height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.imageBlock-wrapper.aligncentre .imageBlock--fixed {
+  background-color: $color-grey-sm-light;
+}
+
+.imageBlock-wrapper.aligncentre .imageBlock-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.imageBlock--fixed .imageBlock-image {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.imageBlock-video {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.imageBlock--fixed .imageBlock-image.has-caption {
+  display: inline-block;
+  height: 100%;
+
+  img {
+    max-width: none;
+    min-height: 100%;
+  }
+}
+
+.imageBlock-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#000, .25);
+}
+
+.imageBlock-image .image-caption {
+  text-align: right;
+}
+
+.imageBlock-title,
+.imageBlock-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 50%;
+}
+
+.imageBlock-overlay > * + * {
+  margin-top: 30px;
+}
+
+.imageBlock-overlay .imageBlock-title + .imageBlock-content {
+  margin-top: 15px;
+}
+
+.imageBlock-title,
+.imageBlock-content {
+  text-align: center;
+  color: #fff;
+}
+
+.imageBlock-title {
+  font-family: $font-family-secondary;
+  font-size: 41px;
+  font-weight: bold;
+}
+
+.imageBlock-content {
+  font-family: $font-family-primary;
+  font-size: 21px;
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.imageBlock-buttonWrapper .btn + .btn {
+  margin-left: 24px;
+}
+
+.imageBlock-caption {
+  margin-top: 7px !important;
+  font-size: 14px;
+  font-family: $font-family-primary;
+  line-height: 1.4;
+  color: $color-grey-base;
+}
+
+.imageBlock.has-parallax {
+  display: block;
+  height: 600px;
+}
+
+.imageBlock.has-parallax .imageBlock-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(medium-sm) {
+    background-attachment: fixed;
+  }
+}

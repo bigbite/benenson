@@ -1,0 +1,1640 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Benenson Core\n"
+"POT-Creation-Date: 2018-11-12 14:27+0000\n"
+"PO-Revision-Date: 2018-09-21 16:53+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:5
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:6
+msgid "The page you are looking for does not exist."
+msgstr ""
+
+#: 404.php:7
+msgid "Go to the Homepage"
+msgstr ""
+
+#. translators: List of posts
+#: archive.php:6
+msgid "Results"
+msgstr ""
+
+#: footer.php:23 includes/theme-options.php:204
+msgid "Footer"
+msgstr ""
+
+#: footer.php:26
+msgid "Footer Menus"
+msgstr ""
+
+#: footer.php:29
+msgid "Site Language"
+msgstr ""
+
+#. translators: Social Media sharing options
+#: footer.php:69
+msgid "Follow us on:"
+msgstr ""
+
+#: footer.php:72
+msgid "Follow us on Facebook"
+msgstr ""
+
+#: footer.php:75
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: footer.php:78
+msgid "Subscribe to our YouTube channel"
+msgstr ""
+
+#: footer.php:81
+msgid "Follow us on Google Plus"
+msgstr ""
+
+#: footer.php:84
+msgid "Follow us on Instagram"
+msgstr ""
+
+#: header.php:69
+msgid "Benenson"
+msgstr ""
+
+#. translators: Label for screen reader/keyboard users
+#: header.php:82
+msgid "Skip to main content"
+msgstr ""
+
+#: header.php:84
+msgid "Language Selection"
+msgstr ""
+
+#: header.php:86
+msgid "Which language would you like to use this site in?"
+msgstr ""
+
+#: header.php:87
+msgid "Choose a language"
+msgstr ""
+
+#: header.php:105 header.php:140
+msgid "Benenson Group Websites"
+msgstr ""
+
+#: header.php:112
+msgid "Primary navigation"
+msgstr ""
+
+#: header.php:116
+msgid "Show search form"
+msgstr ""
+
+#: header.php:116 searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: header.php:120 header.php:138
+msgid "Donate"
+msgstr ""
+
+#: header.php:130 includes/navigation.php:127
+msgid "Main Menu"
+msgstr ""
+
+#: header.php:131
+msgid "Close navigation"
+msgstr ""
+
+#: header.php:134
+msgid "Primary"
+msgstr ""
+
+#: header.php:192
+msgid "Play Icon"
+msgstr ""
+
+#: includes/block-translations.php:5
+msgid "Set Image"
+msgstr ""
+
+#: includes/block-translations.php:8
+msgid "Replace Image"
+msgstr ""
+
+#: includes/block-translations.php:16
+msgid "Remove Image"
+msgstr ""
+
+#: includes/block-translations.php:20
+msgid "(Label)"
+msgstr ""
+
+#: includes/block-translations.php:25
+msgid "Content"
+msgstr ""
+
+#: includes/block-translations.php:31
+msgid "Act Now"
+msgstr ""
+
+#: includes/block-translations.php:40
+msgid "Size"
+msgstr ""
+
+#: includes/block-translations.php:44
+msgid "Standard"
+msgstr ""
+
+#: includes/block-translations.php:48
+msgid "Wide"
+msgstr ""
+
+#: includes/block-translations.php:53
+msgid "Button Style"
+msgstr ""
+
+#: includes/block-translations.php:57
+msgid "Yellow"
+msgstr ""
+
+#: includes/block-translations.php:69 includes/theme-options.php:67
+msgid "Grey"
+msgstr ""
+
+#: includes/block-translations.php:73
+msgid "Centre Aligned"
+msgstr ""
+
+#: includes/block-translations.php:77
+msgid "Centre align the action block."
+msgstr ""
+
+#: includes/block-translations.php:80
+msgid "Action"
+msgstr ""
+
+#: includes/block-translations.php:83
+msgid "Add an Action block"
+msgstr ""
+
+#: includes/block-translations.php:87
+msgid "Loading"
+msgstr ""
+
+#: includes/block-translations.php:90
+msgid "Select a sidebar"
+msgstr ""
+
+#: includes/block-translations.php:93
+msgid "Share Buttons"
+msgstr ""
+
+#: includes/block-translations.php:96
+msgid "Disable Share Buttons for this page"
+msgstr ""
+
+#: includes/block-translations.php:99
+msgid "Document Reference:"
+msgstr ""
+
+#: includes/block-translations.php:102
+msgid "Appearance"
+msgstr ""
+
+#: includes/block-translations.php:106 includes/theme-options.php:55
+msgid "Header"
+msgstr ""
+
+#: includes/block-translations.php:109
+msgid "Navigation Style:"
+msgstr ""
+
+#: includes/block-translations.php:112
+msgid "Global"
+msgstr ""
+
+#: includes/block-translations.php:120 includes/theme-options.php:66
+msgid "White"
+msgstr ""
+
+#: includes/block-translations.php:126
+msgid "Black"
+msgstr ""
+
+#: includes/block-translations.php:139
+msgid "Options"
+msgstr ""
+
+#: includes/block-translations.php:142
+msgid "Post Thumbnail Style"
+msgstr ""
+
+#: includes/block-translations.php:145
+msgid "Affects its display on the news index only."
+msgstr ""
+
+#: includes/block-translations.php:148
+msgid "Half size"
+msgstr ""
+
+#: includes/block-translations.php:151
+msgid "Full Background"
+msgstr ""
+
+#: includes/block-translations.php:154
+msgid "Hide featured image"
+msgstr ""
+
+#: includes/block-translations.php:157
+msgid "Disables display of featured image on post single."
+msgstr ""
+
+#: includes/block-translations.php:160
+msgid "Force full-width featured image"
+msgstr ""
+
+#: includes/block-translations.php:163
+msgid "Ensures a small featured image fills the width of the content area."
+msgstr ""
+
+#: includes/block-translations.php:166
+msgid "Reduce Content Width"
+msgstr ""
+
+#: includes/block-translations.php:169
+msgid "Adds a small amount of padding to the content."
+msgstr ""
+
+#: includes/block-translations.php:172 includes/post-types/sidebar.php:12
+#: includes/post-types/sidebar.php:39 single.php:103
+msgid "Sidebar"
+msgstr ""
+
+#: includes/block-translations.php:175
+msgid "Disable Sidebar"
+msgstr ""
+
+#: includes/block-translations.php:178
+msgid "Hides the sidebar for this post"
+msgstr ""
+
+#. translators: text alignment. for RTL languages, localise as 'Left'
+#: includes/block-translations.php:186
+msgid "Right"
+msgstr ""
+
+#: includes/block-translations.php:194
+msgid "Background Colour"
+msgstr ""
+
+#: includes/block-translations.php:198
+msgid "Translucent black"
+msgstr ""
+
+#: includes/block-translations.php:205
+msgid "None"
+msgstr ""
+
+#: includes/block-translations.php:210
+msgid "Normal"
+msgstr ""
+
+#: includes/block-translations.php:218
+msgid "Small"
+msgstr ""
+
+#: includes/block-translations.php:223
+msgid "Background Type"
+msgstr ""
+
+#: includes/block-translations.php:228
+msgid "Image"
+msgstr ""
+
+#: includes/block-translations.php:233
+msgid "Video"
+msgstr ""
+
+#: includes/block-translations.php:236
+msgid "Embed URL"
+msgstr ""
+
+#: includes/block-translations.php:239
+msgid ""
+"Setting this will override the call to action link and will now open a modal "
+"with the embed."
+msgstr ""
+
+#: includes/block-translations.php:243
+msgid "Featured Video"
+msgstr ""
+
+#: includes/block-translations.php:246
+msgid "(Banner Title)"
+msgstr ""
+
+#: includes/block-translations.php:249
+msgid "(Banner Content)"
+msgstr ""
+
+#: includes/block-translations.php:253
+msgid "(Call to action)"
+msgstr ""
+
+#: includes/block-translations.php:259
+msgid "Alignment"
+msgstr ""
+
+#. translators: text alignment. for RTL languages, localise as 'Right'
+#: includes/block-translations.php:267
+msgid "Left"
+msgstr ""
+
+#: includes/block-translations.php:273
+msgid "Centre"
+msgstr ""
+
+#: includes/block-translations.php:277
+msgid "Set featured video"
+msgstr ""
+
+#: includes/block-translations.php:281
+msgid "Remove featured video"
+msgstr ""
+
+#: includes/block-translations.php:286
+msgid "Replace Video"
+msgstr ""
+
+#: includes/block-translations.php:289
+msgid "Banner"
+msgstr ""
+
+#: includes/block-translations.php:294
+msgid "Default"
+msgstr ""
+
+#: includes/block-translations.php:299
+msgid "Medium"
+msgstr ""
+
+#: includes/block-translations.php:304
+msgid "Large"
+msgstr ""
+
+#: includes/block-translations.php:307
+msgid "Text Colour"
+msgstr ""
+
+#: includes/block-translations.php:310
+msgid "Capitalise"
+msgstr ""
+
+#: includes/block-translations.php:313
+msgid "Capitalise the content."
+msgstr ""
+
+#: includes/block-translations.php:316
+msgid "Line"
+msgstr ""
+
+#: includes/block-translations.php:319
+msgid "Toggle display of line embellishment."
+msgstr ""
+
+#: includes/block-translations.php:322
+msgid "(Insert Quote Text)"
+msgstr ""
+
+#: includes/block-translations.php:325
+msgid "(Insert Citation)"
+msgstr ""
+
+#: includes/block-translations.php:328
+msgid "Blockquote"
+msgstr ""
+
+#: includes/block-translations.php:331
+msgid "Add a blockquote block"
+msgstr ""
+
+#: includes/block-translations.php:335
+msgid "Background Style"
+msgstr ""
+
+#: includes/block-translations.php:338
+msgid "Primary (Yellow)"
+msgstr ""
+
+#: includes/block-translations.php:341
+msgid "Dark"
+msgstr ""
+
+#: includes/block-translations.php:344
+msgid "Light"
+msgstr ""
+
+#: includes/block-translations.php:347
+msgid "(Pre-heading)"
+msgstr ""
+
+#: includes/block-translations.php:351
+msgid "(Heading)"
+msgstr ""
+
+#: includes/block-translations.php:356
+msgid "(Content)"
+msgstr ""
+
+#: includes/block-translations.php:360
+msgid "(Button Text)"
+msgstr ""
+
+#: includes/block-translations.php:363
+msgid "Call To Action"
+msgstr ""
+
+#: includes/block-translations.php:366
+msgid "Layout Style"
+msgstr ""
+
+#: includes/block-translations.php:369
+msgid "Row"
+msgstr ""
+
+#: includes/block-translations.php:372
+msgid "Columns"
+msgstr ""
+
+#: includes/block-translations.php:375
+msgid "66.6% | 33.3%"
+msgstr ""
+
+#: includes/block-translations.php:378
+msgid "33.3% | 66.6%"
+msgstr ""
+
+#: includes/block-translations.php:381
+msgid "33.3% | 33.3% | 33.3%"
+msgstr ""
+
+#: includes/block-translations.php:384
+msgid "50% | 25% | 25%"
+msgstr ""
+
+#: includes/block-translations.php:387
+msgid "25% | 50% | 25%"
+msgstr ""
+
+#: includes/block-translations.php:390
+msgid "25% | 25% | 50%"
+msgstr ""
+
+#: includes/block-translations.php:393
+msgid "25% | 25% | 25% | 25%"
+msgstr ""
+
+#: includes/block-translations.php:396
+msgid "50% | 50%"
+msgstr ""
+
+#: includes/block-translations.php:399
+msgid "Row Column"
+msgstr ""
+
+#: includes/block-translations.php:402
+msgid "Resource Download"
+msgstr ""
+
+#: includes/block-translations.php:405
+msgid "Add a button to download a resource"
+msgstr ""
+
+#: includes/block-translations.php:408
+msgid "File"
+msgstr ""
+
+#: includes/block-translations.php:411
+msgid "A File"
+msgstr ""
+
+#: includes/block-translations.php:414
+msgid "[Download Resource]"
+msgstr ""
+
+#: includes/block-translations.php:417
+msgid "Remove Resource"
+msgstr ""
+
+#: includes/block-translations.php:420
+msgid "Edit File"
+msgstr ""
+
+#: includes/block-translations.php:423
+msgid "Embed url"
+msgstr ""
+
+#: includes/block-translations.php:426
+msgid ""
+"Setting this will override the cta link and will now open a modal with the "
+"embed in the hero."
+msgstr ""
+
+#: includes/block-translations.php:429
+msgid "Background Image"
+msgstr ""
+
+#: includes/block-translations.php:432 includes/post-types/sidebar.php:27
+msgid "Featured Image"
+msgstr ""
+
+#: includes/block-translations.php:435
+msgid "(Header Title)"
+msgstr ""
+
+#: includes/block-translations.php:438
+msgid "(Header Content)"
+msgstr ""
+
+#: includes/block-translations.php:441
+msgid "Required when specifying a width"
+msgstr ""
+
+#: includes/block-translations.php:444
+msgid "Minimum Height"
+msgstr ""
+
+#: includes/block-translations.php:447
+msgid "Required if not using width/height, optional otherwise"
+msgstr ""
+
+#: includes/block-translations.php:450
+msgid "Reset Embed Url"
+msgstr ""
+
+#: includes/block-translations.php:453
+msgid "Iframe URL"
+msgstr ""
+
+#: includes/block-translations.php:456
+msgid "Enter URL to embed here…"
+msgstr ""
+
+#: includes/block-translations.php:459
+msgid "Embed"
+msgstr ""
+
+#: includes/block-translations.php:462
+msgid "Write caption…"
+msgstr ""
+
+#: includes/block-translations.php:465
+msgid "Width"
+msgstr ""
+
+#: includes/block-translations.php:468
+msgid "Required when specifying a height"
+msgstr ""
+
+#: includes/block-translations.php:471
+msgid "Height"
+msgstr ""
+
+#: includes/block-translations.php:474
+msgid "Iframe"
+msgstr ""
+
+#: includes/block-translations.php:477
+msgid "Responsive"
+msgstr ""
+
+#: includes/block-translations.php:480
+msgid "Fluid"
+msgstr ""
+
+#: includes/block-translations.php:483
+msgid "Responsive Iframe"
+msgstr ""
+
+#: includes/block-translations.php:486
+msgid "(Link Text)"
+msgstr ""
+
+#: includes/block-translations.php:489
+msgid "Remove Button"
+msgstr ""
+
+#: includes/block-translations.php:492
+msgid "Image Style"
+msgstr ""
+
+#: includes/block-translations.php:495
+msgid "Fixed Height (600px)"
+msgstr ""
+
+#: includes/block-translations.php:498
+msgid "Actual Height"
+msgstr ""
+
+#: includes/block-translations.php:501
+msgid "Only has an effect on images smaller than their container"
+msgstr ""
+
+#: includes/block-translations.php:504
+msgid "(Title)"
+msgstr ""
+
+#: includes/block-translations.php:507
+msgid "Add Button"
+msgstr ""
+
+#: includes/block-translations.php:510
+msgid "Choose Video"
+msgstr ""
+
+#: includes/block-translations.php:513
+msgid "Remove Video"
+msgstr ""
+
+#: includes/block-translations.php:516
+msgid "Display Overlay"
+msgstr ""
+
+#: includes/block-translations.php:519
+msgid "Enable Parallax"
+msgstr ""
+
+#: includes/block-translations.php:522
+msgid "(Insert Caption, if required)"
+msgstr ""
+
+#: includes/block-translations.php:525
+msgid "Add a flexible image block with optional overlay"
+msgstr ""
+
+#: includes/block-translations.php:533
+msgid "(Insert Title)"
+msgstr ""
+
+#: includes/block-translations.php:537
+msgid "(Insert Content)"
+msgstr ""
+
+#: includes/block-translations.php:540
+msgid "Key Facts"
+msgstr ""
+
+#: includes/block-translations.php:543
+msgid "Add a key facts block"
+msgstr ""
+
+#: includes/block-translations.php:547
+msgid "Quantity"
+msgstr ""
+
+#: includes/block-translations.php:550
+msgid "Orientation"
+msgstr ""
+
+#: includes/block-translations.php:553
+msgid "Horizontal"
+msgstr ""
+
+#: includes/block-translations.php:556
+msgid "Vertical"
+msgstr ""
+
+#: includes/block-translations.php:559
+msgid "Hide Lines"
+msgstr ""
+
+#: includes/block-translations.php:562
+msgid "Links with Icons Group"
+msgstr ""
+
+#: includes/block-translations.php:565
+msgid "Add a repeatable links-with-icons block"
+msgstr ""
+
+#: includes/block-translations.php:569
+msgid "(Insert Fact)"
+msgstr ""
+
+#: includes/block-translations.php:575
+msgid "Style"
+msgstr ""
+
+#: includes/block-translations.php:579
+msgid "Use Image"
+msgstr ""
+
+#: includes/block-translations.php:583
+msgid "Use Text"
+msgstr ""
+
+#: includes/block-translations.php:587
+msgid "Plain"
+msgstr ""
+
+#: includes/block-translations.php:591
+msgid "Icon Size"
+msgstr ""
+
+#: includes/block-translations.php:595
+msgid "Hide Image Credit Display"
+msgstr ""
+
+#: includes/block-translations.php:599
+msgid "Has Underline"
+msgstr ""
+
+#: includes/block-translations.php:603
+msgid "Display Button"
+msgstr ""
+
+#: includes/block-translations.php:607
+msgid "(Insert Body Text)"
+msgstr ""
+
+#: includes/block-translations.php:611
+msgid "(Insert Link Text)"
+msgstr ""
+
+#: includes/block-translations.php:615
+msgid "Pick an image"
+msgstr ""
+
+#: includes/block-translations.php:618
+msgid "Links with Icons"
+msgstr ""
+
+#: includes/block-translations.php:621
+msgid "Add a links-with-icons block"
+msgstr ""
+
+#: includes/block-translations.php:624
+msgid "Select a menu in the sidebar"
+msgstr ""
+
+#: includes/block-translations.php:627
+msgid "Loading Menu..."
+msgstr ""
+
+#: includes/block-translations.php:630
+msgid "Select a menu..."
+msgstr ""
+
+#: includes/block-translations.php:633
+msgid "Loading Menus..."
+msgstr ""
+
+#: includes/block-translations.php:637
+msgid "Menu"
+msgstr ""
+
+#: includes/block-translations.php:640
+msgid "Navigation"
+msgstr ""
+
+#: includes/block-translations.php:644
+msgid "Hide Preview"
+msgstr ""
+
+#: includes/block-translations.php:648
+msgid "Show Preview"
+msgstr ""
+
+#: includes/block-translations.php:652
+msgid "Link List"
+msgstr ""
+
+#: includes/block-translations.php:656
+msgid "Grid"
+msgstr ""
+
+#: includes/block-translations.php:660
+msgid "Type"
+msgstr ""
+
+#: includes/block-translations.php:664
+msgid "Category"
+msgstr ""
+
+#: includes/block-translations.php:668
+msgid "Object Selection"
+msgstr ""
+
+#: includes/block-translations.php:672
+msgid "Custom"
+msgstr ""
+
+#: includes/block-translations.php:676
+msgid "Category:"
+msgstr ""
+
+#: includes/block-translations.php:680
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/block-translations.php:684
+msgid "Use related categories where supported"
+msgstr ""
+
+#: includes/block-translations.php:691
+msgid "Loading..."
+msgstr ""
+
+#: includes/block-translations.php:695
+msgid "Select a category."
+msgstr ""
+
+#: includes/block-translations.php:699
+msgid "No Items found"
+msgstr ""
+
+#: includes/block-translations.php:702
+msgid "Add another item"
+msgstr ""
+
+#: includes/block-translations.php:706
+msgid "No Posts."
+msgstr ""
+
+#: includes/block-translations.php:709
+msgid "Select a category"
+msgstr ""
+
+#: includes/block-translations.php:712
+msgid "(Insert Tag)"
+msgstr ""
+
+#: includes/block-translations.php:715
+msgid "(Tag Name)"
+msgstr ""
+
+#: includes/block-translations.php:718
+msgid "Loading Posts..."
+msgstr ""
+
+#: includes/block-translations.php:721
+msgid "Your query yielded no results, please try again."
+msgstr ""
+
+#: includes/block-translations.php:724
+msgid "Load More"
+msgstr ""
+
+#: includes/block-translations.php:727
+msgid "Please enter your search query..."
+msgstr ""
+
+#: includes/block-translations.php:730
+msgid "Post Type:"
+msgstr ""
+
+#: includes/block-translations.php:733
+msgid "Post List"
+msgstr ""
+
+#: includes/block-translations.php:736
+msgid "List"
+msgstr ""
+
+#: includes/block-translations.php:739
+msgid "post-list"
+msgstr ""
+
+#: includes/block-translations.php:742
+msgid "Posts"
+msgstr ""
+
+#: includes/block-translations.php:745
+msgid "Recipients"
+msgstr ""
+
+#: includes/block-translations.php:748
+msgid "Add a list of recipients"
+msgstr ""
+
+#: includes/block-translations.php:751
+msgid "Name"
+msgstr ""
+
+#: includes/block-translations.php:754
+msgid "Role"
+msgstr ""
+
+#: includes/block-translations.php:757
+msgid "Add Row"
+msgstr ""
+
+#: includes/block-translations.php:760
+msgid "Padding"
+msgstr ""
+
+#: includes/block-translations.php:763
+msgid "Section"
+msgstr ""
+
+#: includes/block-translations.php:766
+msgid "Do you wish to delete this slide? This action is irreversible"
+msgstr ""
+
+#: includes/block-translations.php:769
+msgid "Show Arrows"
+msgstr ""
+
+#: includes/block-translations.php:772
+msgid "Has Content"
+msgstr ""
+
+#: includes/block-translations.php:775
+msgid ""
+"By disabling this you will hide the content in *ALL* slides. To disable this "
+"on only one slide, select the desired slide and toggle the \"Hide Content\" "
+"field in the \"Slide Options\" panel."
+msgstr ""
+
+#: includes/block-translations.php:778
+msgid "Show Tabs"
+msgstr ""
+
+#: includes/block-translations.php:781
+msgid ""
+"Hide the tabs on the front end, these will still show in the panel to allow "
+"you to navigate through each slide."
+msgstr ""
+
+#: includes/block-translations.php:784
+msgid "Slide Options"
+msgstr ""
+
+#: includes/block-translations.php:787
+msgid "Slide Title"
+msgstr ""
+
+#: includes/block-translations.php:790
+msgid "Content Alignment"
+msgstr ""
+
+#: includes/block-translations.php:793
+msgid "Hide Content"
+msgstr ""
+
+#: includes/block-translations.php:796
+msgid ""
+"By enabling this you will hide the content on *THIS* slide. To disable "
+"content on all slides go to the \"Options\" and toggle the \"Has Content\" "
+"field."
+msgstr ""
+
+#: includes/block-translations.php:799
+msgid "Remove Slide"
+msgstr ""
+
+#: includes/block-translations.php:802
+msgid "This is irreversible."
+msgstr ""
+
+#. translators: Next post navigation label
+#: includes/block-translations.php:806 partials/archive-categories.php:51
+#: partials/pagination.php:6 partials/pagination.php:42
+msgid "Next"
+msgstr ""
+
+#. translators: Previous post navigation label
+#: includes/block-translations.php:810 partials/archive-categories.php:50
+#: partials/pagination.php:4 partials/pagination.php:27
+msgid "Previous"
+msgstr ""
+
+#: includes/block-translations.php:813
+msgid "Add a slide below."
+msgstr ""
+
+#: includes/block-translations.php:816
+msgid "(Sub-Heading)"
+msgstr ""
+
+#: includes/block-translations.php:819
+msgid "(No Title)"
+msgstr ""
+
+#: includes/block-translations.php:822
+msgid "Add Slide"
+msgstr ""
+
+#: includes/block-translations.php:825
+msgid "Opaque"
+msgstr ""
+
+#: includes/block-translations.php:828
+msgid "Translucent"
+msgstr ""
+
+#: includes/block-translations.php:831
+msgid "Transparent"
+msgstr ""
+
+#: includes/block-translations.php:834
+msgid "Tap here to return to gallery"
+msgstr ""
+
+#: includes/block-translations.php:838
+msgid "Toggle Content"
+msgstr ""
+
+#: includes/block-translations.php:841
+msgid "Slider"
+msgstr ""
+
+#: includes/block-translations.php:844
+msgid "Carousel"
+msgstr ""
+
+#: includes/block-translations.php:847
+msgid "Scroller"
+msgstr ""
+
+#: includes/block-translations.php:850
+msgid "Narrow"
+msgstr ""
+
+#: includes/block-translations.php:853
+msgid "Centre Align"
+msgstr ""
+
+#: includes/block-translations.php:856
+msgid "(Action Title)"
+msgstr ""
+
+#: includes/block-translations.php:859
+msgid "(Place Tweet text proforma here)"
+msgstr ""
+
+#: includes/block-translations.php:862
+msgid "Send this Tweet"
+msgstr ""
+
+#: includes/block-translations.php:865
+msgid "Tweet Action"
+msgstr ""
+
+#: includes/block-translations.php:868
+msgid "Add a Tweet Action block"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#: includes/blocks/block-category.php:15
+msgid "Benenson Core"
+msgstr ""
+
+#: includes/blocks/download/render.php:10
+msgid "Download Resource"
+msgstr ""
+
+#: includes/blocks/header/render.php:98
+msgid "Play video"
+msgstr ""
+
+#: includes/blocks/menu/render.php:17
+msgid "Category List"
+msgstr ""
+
+#: includes/localisation.php:4
+msgctxt "text direction"
+msgid "ltr"
+msgstr ""
+
+#: includes/localisation.php:5
+msgctxt "month name"
+msgid "January"
+msgstr ""
+
+#: includes/localisation.php:6
+msgctxt "month name"
+msgid "February"
+msgstr ""
+
+#: includes/localisation.php:7
+msgctxt "month name"
+msgid "March"
+msgstr ""
+
+#: includes/localisation.php:8
+msgctxt "month name"
+msgid "April"
+msgstr ""
+
+#: includes/localisation.php:9
+msgctxt "month name"
+msgid "May"
+msgstr ""
+
+#: includes/localisation.php:10
+msgctxt "month name"
+msgid "June"
+msgstr ""
+
+#: includes/localisation.php:11
+msgctxt "month name"
+msgid "July"
+msgstr ""
+
+#: includes/localisation.php:12
+msgctxt "month name"
+msgid "August"
+msgstr ""
+
+#: includes/localisation.php:13
+msgctxt "month name"
+msgid "September"
+msgstr ""
+
+#: includes/localisation.php:14
+msgctxt "month name"
+msgid "October"
+msgstr ""
+
+#: includes/localisation.php:15
+msgctxt "month name"
+msgid "November"
+msgstr ""
+
+#: includes/localisation.php:16
+msgctxt "month name"
+msgid "December"
+msgstr ""
+
+#. translators: Accessibility label for mobile navigation dropdown button
+#: includes/mobile-nav-walker.php:148
+#, php-format
+msgid "Expand %s sub-list"
+msgstr ""
+
+#: includes/navigation.php:29
+msgid "Benenson Logotype"
+msgstr ""
+
+#: includes/navigation.php:50
+msgid "Benenson Logomark"
+msgstr ""
+
+#: includes/navigation.php:57
+msgid "Visit the Benenson home page"
+msgstr ""
+
+#: includes/navigation.php:128
+msgid "Site Selector"
+msgstr ""
+
+#: includes/navigation.php:129
+msgid "Footer Main"
+msgstr ""
+
+#: includes/navigation.php:130
+msgid "Footer Legal"
+msgstr ""
+
+#. translators: page number prefix, e.g. "[Page] 1"
+#: includes/pagination.php:29
+msgid "Page"
+msgstr ""
+
+#. translators: Post sort by option
+#: includes/post-filters.php:11
+msgid "Most Recent"
+msgstr ""
+
+#. translators: Post sort by option
+#: includes/post-filters.php:12
+msgid "Oldest First"
+msgstr ""
+
+#. translators: Post sort by option
+#: includes/post-filters.php:13
+msgid "Title - Ascending"
+msgstr ""
+
+#. translators: Post sort by option
+#: includes/post-filters.php:14
+msgid "Title - Descending"
+msgstr ""
+
+#. translators: Post sort by option
+#: includes/post-filters.php:18
+msgid "Most Relevant"
+msgstr ""
+
+#: includes/post-types/sidebar.php:9
+msgctxt "Post Type General Name"
+msgid "Sidebars"
+msgstr ""
+
+#: includes/post-types/sidebar.php:10
+msgctxt "Post Type Singular Name"
+msgid "Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:11
+msgid "Sidebars"
+msgstr ""
+
+#: includes/post-types/sidebar.php:13
+msgid "Sidebar Archives"
+msgstr ""
+
+#: includes/post-types/sidebar.php:14
+msgid "Sidebar Attributes"
+msgstr ""
+
+#: includes/post-types/sidebar.php:15
+msgid "Parent Sidebar:"
+msgstr ""
+
+#: includes/post-types/sidebar.php:16
+msgid "All Sidebars"
+msgstr ""
+
+#: includes/post-types/sidebar.php:17
+msgid "Add New Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:18
+msgid "Add New"
+msgstr ""
+
+#: includes/post-types/sidebar.php:19
+msgid "New Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:20
+msgid "Edit Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:21
+msgid "Update Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:22
+msgid "View Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:23
+msgid "View Sidebars"
+msgstr ""
+
+#: includes/post-types/sidebar.php:24
+msgid "Search Sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:25
+msgid "Not Found"
+msgstr ""
+
+#: includes/post-types/sidebar.php:26
+msgid "Not Found in Trash"
+msgstr ""
+
+#: includes/post-types/sidebar.php:28
+msgid "Set featured image"
+msgstr ""
+
+#: includes/post-types/sidebar.php:29
+msgid "Remove featured image"
+msgstr ""
+
+#: includes/post-types/sidebar.php:30
+msgid "Use as featured image"
+msgstr ""
+
+#: includes/post-types/sidebar.php:31
+msgid "Insert into sidebar"
+msgstr ""
+
+#: includes/post-types/sidebar.php:32
+msgid "Uploaded to this item"
+msgstr ""
+
+#: includes/post-types/sidebar.php:33
+msgid "Sidebars list"
+msgstr ""
+
+#: includes/post-types/sidebar.php:34
+msgid "Sidebars list navigation"
+msgstr ""
+
+#: includes/post-types/sidebar.php:35
+msgid "Filter sidebar list"
+msgstr ""
+
+#: includes/post-types/sidebar.php:40
+msgid "Sidebar post type"
+msgstr ""
+
+#: includes/scripts-and-styles.php:108
+msgctxt "open double quote"
+msgid "“"
+msgstr ""
+
+#: includes/scripts-and-styles.php:109
+msgctxt "close double quote"
+msgid "”"
+msgstr ""
+
+#: includes/scripts-and-styles.php:110
+msgctxt "open single quote"
+msgid "‘"
+msgstr ""
+
+#: includes/scripts-and-styles.php:111
+msgctxt "close single quote"
+msgid "’"
+msgstr ""
+
+#: includes/theme-options.php:10 includes/theme-options.php:14
+msgid "Theme Options"
+msgstr ""
+
+#: includes/theme-options.php:19
+msgid "Social Media"
+msgstr ""
+
+#: includes/theme-options.php:25
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/theme-options.php:31
+msgid "Twitter Handle"
+msgstr ""
+
+#: includes/theme-options.php:37
+msgid "Youtube URL"
+msgstr ""
+
+#: includes/theme-options.php:43
+msgid "Google plus URL"
+msgstr ""
+
+#: includes/theme-options.php:49
+msgid "Instagram Handle"
+msgstr ""
+
+#: includes/theme-options.php:61
+msgid "Global Navigation Style"
+msgstr ""
+
+#: includes/theme-options.php:72
+msgid "CTA Label"
+msgstr ""
+
+#: includes/theme-options.php:78
+msgid "CTA URL"
+msgstr ""
+
+#: includes/theme-options.php:84
+msgid "Site Logotype"
+msgstr ""
+
+#: includes/theme-options.php:100
+msgid "Site Logomark"
+msgstr ""
+
+#: includes/theme-options.php:116
+msgid "Logo Link"
+msgstr ""
+
+#: includes/theme-options.php:122
+msgid "News"
+msgstr ""
+
+#: includes/theme-options.php:128
+msgid "Default Post sidebar"
+msgstr ""
+
+#: includes/theme-options.php:129 includes/theme-options.php:145
+msgid ""
+"Drag posts from the left column to the right column to attach them to this "
+"page.<br />Only the first sidebar selected will be used."
+msgstr ""
+
+#: includes/theme-options.php:144
+msgid "Default Page sidebar"
+msgstr ""
+
+#: includes/theme-options.php:162 includes/theme-options.php:165
+msgid "Analytics"
+msgstr ""
+
+#: includes/theme-options.php:172
+msgid "Google Tag Manager Script"
+msgstr ""
+
+#: includes/theme-options.php:173
+msgid ""
+"Paste your Google Tag Manager script here (including &lt;script&gt;&lt;/"
+"script&gt;)."
+msgstr ""
+
+#: includes/theme-options.php:179
+msgid "Google Analytics Code"
+msgstr ""
+
+#: includes/theme-options.php:180
+msgid "Paste your Google Analytics Code"
+msgstr ""
+
+#: includes/theme-options.php:186
+msgid "Hotjar Site ID:"
+msgstr ""
+
+#: includes/theme-options.php:187
+msgid "Paste your Hotjar Site ID (example: 552474)"
+msgstr ""
+
+#: includes/theme-options.php:193
+msgid "VWO Account ID"
+msgstr ""
+
+#: includes/theme-options.php:194
+msgid "Paste your VWO Account ID here"
+msgstr ""
+
+#: includes/theme-options.php:201
+msgid "Footer Options"
+msgstr ""
+
+#: includes/theme-options.php:210
+msgid "Section Title"
+msgstr ""
+
+#: includes/theme-options.php:216
+msgid "Section Content"
+msgstr ""
+
+#: includes/theme-options.php:222
+msgid "Section Call to Action text"
+msgstr ""
+
+#: includes/theme-options.php:228
+msgid "Section Call to Action url"
+msgstr ""
+
+#: includes/theme-supports.php:34
+msgid "Standard Post Template"
+msgstr ""
+
+#: partials/archive-categories.php:29
+msgid "Filter results by category"
+msgstr ""
+
+#: partials/archive-categories.php:58
+msgid "List of subcategories"
+msgstr ""
+
+#: partials/archive-categories.php:60
+msgid "List of second-level categories"
+msgstr ""
+
+#: partials/archive-categories.php:63 partials/archive-categories.php:94
+msgid "Select a sub filter"
+msgstr ""
+
+#: partials/archive-categories.php:91
+msgid "List of third-level categories"
+msgstr ""
+
+#. translators: Singular/Plural number of posts.
+#: partials/archive-header.php:10
+#, php-format
+msgid "%d result"
+msgid_plural "%d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
+#: partials/archive-header.php:14
+#, php-format
+msgid "%1$d result for '%2$s'"
+msgid_plural "%1$d results for '%2$s'"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: Label for post results count & sort options
+#: partials/archive-header.php:19
+msgid "Results information"
+msgstr ""
+
+#. translators: Label for post sorting options
+#: partials/archive-header.php:24
+msgid "Sort by"
+msgstr ""
+
+#: partials/article-share.php:2 single.php:99 templates/without-sidebar.php:11
+msgid "Social sharing options"
+msgstr ""
+
+#: partials/article-share.php:3
+msgid "Share"
+msgstr ""
+
+#: partials/article-share.php:6
+msgid "Share on Facebook"
+msgstr ""
+
+#: partials/article-share.php:7
+msgid "Facebook Logo"
+msgstr ""
+
+#: partials/article-share.php:11
+msgid "Share on Twitter"
+msgstr ""
+
+#: partials/article-share.php:12
+msgid "Twitter Logo"
+msgstr ""
+
+#: partials/pagination.php:20
+msgid "Pagination"
+msgstr ""
+
+#: partials/pagination.php:31
+msgid "Page numbers"
+msgstr ""
+
+#. translators: placeholder is category name
+#: partials/post/post-content.php:17
+#, php-format
+msgid "Article category %s"
+msgstr ""
+
+#: partials/post/post-content.php:20 partials/post/post-search.php:22
+msgid "Post published date"
+msgstr ""
+
+#: search.php:4
+msgid "Search form"
+msgstr ""
+
+#: search.php:7
+msgid "Search results"
+msgstr ""
+
+#. translators: screen reader text for search field
+#: searchform.php:2
+msgid "Search input"
+msgstr ""
+
+#: searchform.php:3
+msgid "What are you looking for?"
+msgstr ""
+
+#. translators: Link to return to all posts of category %s
+#: single.php:51
+#, php-format
+msgid "Back to %s"
+msgstr ""
+
+#: single.php:56
+msgid "Post published timestamp"
+msgstr ""
+
+#: single.php:83
+msgid "Document Reference: "
+msgstr ""
+
+#: single.php:91
+msgid "View Recipients"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://bigbitecreative.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Benenson Core Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Big Bite Creative"
+msgstr ""

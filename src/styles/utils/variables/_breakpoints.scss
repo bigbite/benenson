@@ -1,0 +1,19 @@
+// This file uses spacing to align, disable disalowing more than 1 space after colon.
+/* stylelint-disable declaration-colon-space-after */
+
+$mq-breakpoints: (
+  xxx-small: 320px,
+  xx-small: 465px,
+  x-small:  540px,
+  xm-small: 570px,
+  md-small: 596px,
+  small:    760px,
+  wp-adminbar: 782px,
+  medium-sm: 840px,
+  medium:   940px,
+  medium-lg: 988px,
+  large:    1110px,
+  x-large:  1200px,
+  xm-large:  1320px,
+  xx-large: 1400px
+);

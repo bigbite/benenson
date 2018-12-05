@@ -1,0 +1,27 @@
+/// Create color palettes.
+/// @link http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+/// @link https://github.com/ultimate-package/tools.color-palette
+/// @param {Map} $palette          - The palette
+/// @param {String} $tone ["base"] - The tone of from the palette
+/// @example scss - Example of palette
+/// $palette: (
+///   brand: (
+///     base:  #123456,
+///     light: #654321
+///   )
+/// )
+/// @example scss - Using the palette
+/// .block {
+///   color: palette(brand, light);
+/// }
+@function palette($palette, $tone: "base") {
+  @if map-has-key($palettes, $palette) {
+    @if map-has-key(map-get($palettes, $palette), $tone) {
+      @return map-get(map-get($palettes, $palette), $tone);
+    } @else {
+      @warn "`#{$tone}` is not a valid tone in the `#{$palette}` palette.";
+    }
+  } @else {
+    @warn "`#{$palette}` is not a palette.";
+  }
+}

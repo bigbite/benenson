@@ -1,0 +1,168 @@
+.page-header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: $color-white;
+}
+
+.admin-bar .page-header {
+  top: 46px;
+
+  @include mq(wp-adminbar) {
+    top: 32px;
+  }
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.page-header .page-nav {
+  margin-left: auto;
+
+  .rtl & {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.page-header--light {
+  position: static;
+  background-color: $color-white;
+  color: $color-black;
+  border-bottom: 1px solid $color-grey-light;
+
+  .has-hero & {
+    border-bottom: none;
+  }
+}
+
+.has-hero .page-header--sticky {
+  border-bottom: 1px solid $color-grey-light;
+}
+
+.page-header--shaded {
+  position: static;
+  background-color: $color-grey-mid-dark;
+}
+
+.page-header--transparent-dark {
+  color: $color-black;
+}
+
+.page-headerSearch {
+  position: relative;
+  display: flex;
+  text-indent: -1000vw;
+  padding: 0 30px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.page-headerSearch:active,
+.page-headerSearch:enter {
+  background-color: $color-black;
+  transition: background-color .3s ease-in-out;
+}
+
+.page-headerSearch:active,
+.page-headerSearch:focus {
+  border: 2px solid orange;
+}
+
+.page-headerSearch svg {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 9px);
+  display: block;
+  pointer-events: none;
+  transform: scale(.9);
+}
+
+.page-headerSearch::before {
+  @include icon_svg(20px, 20px,"black", "search-outline");
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.page-headerSearch:enter::before {
+  @include icon_svg(20px, 20px,"white", "search-outline");
+}
+
+.page-headerSearch:hover,
+.page-headerSearch:active,
+.page-headerSearch:focus {
+  svg {
+    fill: white;
+  }
+}
+
+.page-headerSearch:active::after,
+.page-headerSearch:enter::after {
+  background-position: -105px -240px;
+}
+
+.page-headerHamburger {
+  position: relative;
+}
+
+.page-headerHamburger:active,
+.page-headerHamburger:enter {
+  background-color: $color-black;
+}
+
+.btn.page-headerButton {
+  justify-content: center;
+  min-width: 135px;
+  max-width: 160px;
+  font-size: 20px;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+
+  @include mq(x-small) {
+    font-size: 28px;
+  }
+}
+
+.btn.page-headerButton:active,
+.btn.page-headerButton:enter {
+  border-color: darken($color-primary, 10%);
+}
+
+.page-header.page-header--sticky {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform .3s ease-in-out;
+
+  @include mq(small) {
+    .admin-bar & {
+      top: 46px;
+    }
+  }
+
+  @include mq(wp-adminbar) {
+    .admin-bar & {
+      top: 32px;
+    }
+  }
+}
+
+.page-header.page-header--sticky.is-stuck {
+  transform: translateY(0);
+}
+
+.page-header.page-header--sticky.is-hidden {
+  display: none;
+}

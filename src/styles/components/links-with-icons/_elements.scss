@@ -1,0 +1,88 @@
+.linksWithIcons {
+  position: relative;
+  max-width: 456px;
+  text-align: center;
+  padding: 10px;
+}
+
+.linksWithIcons > * {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 300px;
+
+  & + * {
+    margin-top: 20px;
+
+    @include mq(980px) {
+      margin-top: 24px;
+    }
+  }
+
+  .wp-block-columns.has-3-columns .wp-block-column & {
+    max-width: 285px;
+  }
+}
+
+.linksWithIcons-title,
+.linksWithIcons-bigtext {
+  font-family: $font-family-primary;
+}
+
+.linksWithIcons-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @include mq(x-small) {
+    font-size: 20px;
+  }
+}
+
+.linksWithIcons-imageWrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 30%;
+
+  @include mq(medium-sm) {
+    max-width: 35%;
+  }
+}
+
+.linksWithIcons-imageWrapper.is-uncredited .image-caption {
+  display: none;
+}
+
+.linksWithIcons-imageWrapper.is-large {
+  max-width: 55%;
+
+  @include mq(medium-sm) {
+    max-width: 75%;
+  }
+}
+
+.linksWithIcons-imageWrapper.is-small {
+  max-width: 25%;
+
+  @include mq(medium-sm) {
+    max-width: 30%;
+  }
+}
+
+.linksWithIcons-image {
+  display: block;
+  width: 100%;
+}
+
+.linksWithIcons-bigtext {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1em;
+  word-wrap: normal;
+  color: $color-grey-dark !important;
+}
+
+.linksWithIcons-bigtext.has-underline {
+  border-bottom: 8px solid $color-grey-dark;
+}

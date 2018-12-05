@@ -1,0 +1,14 @@
+{
+    "presets": ["env", "react", "stage-0"],
+    "plugins": [
+      ["transform-react-jsx", {
+        "pragma": "wp.element.createElement"
+      }],
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      [ "@wordpress/babel-plugin-makepot", {
+        "output": "block-languages/benenson-blocks.pot"
+      } ]
+    ]
+  }
+  

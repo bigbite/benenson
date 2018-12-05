@@ -1,0 +1,78 @@
+.wp-block-columns {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 4 {
+  .wp-block-columns.has-#{$i}-columns .wp-block-column {
+    flex: 1 1 100%;
+
+    @include mq(small) {
+      flex-basis: calc(50% - 58px);
+
+      @if $i % 2 != 0 {
+        &:last-child {
+          margin-top: 60px;
+          margin-right: auto;
+          margin-left: auto;
+          flex-grow: 0;
+        }
+      }
+    }
+
+    @include mq(medium) {
+      flex-wrap: nowrap;
+      flex-basis: calc((100% - (58px * #{$i})) / #{$i});
+
+      @if $i % 2 != 0 {
+        * + & {
+          margin-left: 58px;
+        }
+
+        &:last-child {
+          margin-top: 0;
+          margin-left: 58px;
+        }
+      }
+    }
+  }
+}
+
+.wp-block-columns * + .wp-block-column {
+  margin-top: 60px;
+
+  @include mq(small) {
+    margin-top: 0;
+    margin-left: 58px;
+  }
+}
+
+.wide-column-left .wp-block-column:first-child,
+.wide-column-right .wp-block-column:last-child {
+  flex-basis: 100%;
+
+  @include mq(700px) {
+    flex-basis: 60%;
+  }
+
+  @include mq(medium-sm) {
+    flex-basis: calc(((100% - 58px) / 3) * 2);
+  }
+}
+
+.wide-column-left .wp-block-column:not(:first-child),
+.wide-column-right .wp-block-column:not(:last-child) {
+  flex-basis: 50%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(700px) {
+    flex-basis: calc(40% - 58px);
+    margin-left: 58px;
+  }
+
+  @include mq(medium-sm) {
+    flex-basis: calc((100% - 58px) / 3);
+  }
+}

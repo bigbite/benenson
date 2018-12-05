@@ -1,0 +1,30 @@
+.page-header {
+  display: none;
+}
+
+.article-meta .btn {
+  display: none;
+}
+
+.article-share {
+  display: none;
+}
+
+.article-sidebar {
+  display: none;
+}
+
+.article,
+.article.has-sidebar {
+  width: 100%;
+  max-width: none;
+  flex: 1 1 100%
+}
+
+.btn--download {
+  display: none;
+}
+
+.page-footer {
+  display: none;
+}

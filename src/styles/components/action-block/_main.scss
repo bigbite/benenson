@@ -1,0 +1,58 @@
+.actionBlock {
+  margin: 0;
+  max-width: 350px;
+  font-family: $font-family-secondary;
+  font-weight: bold;
+  background-color: $color-grey-x-light;
+}
+
+.actionBlock.is-centred {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.actionBlock--wide {
+  max-width: 480px;
+}
+
+.actionBlock-figure {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.actionBlock-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, .25);
+}
+
+.actionBlock-image img {
+  object-fit: cover;
+  min-height: 100%;
+}
+
+.actionBlock-label {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: $font-family-primary;
+  letter-spacing: 2px;
+}
+
+.actionBlock-content {
+  padding: 16px;
+  font-size: 24px;
+}
+
+.actionBlock-content p {
+  font-family: $font-family-primary;
+  margin-bottom: 0;
+  min-height: 80px;
+}

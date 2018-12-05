@@ -1,0 +1,66 @@
+.row {
+  @include mq(small) {
+    display: flex;
+  }
+}
+
+.row + .row {
+  margin-top: flexy-gutter();
+}
+
+.rowColumn + .rowColumn {
+  margin-top: flexy-gutter();
+
+  @include mq(small) {
+    margin-left: flexy-gutter();
+    margin-top: 0;
+
+    .rtl & {
+      margin-right: flexy-gutter();
+      margin-left: 0;
+    }
+  }
+}
+
+.rowColumn {
+  flex: 0 0 100%;
+}
+
+.rowColumn > .blockquote[class*="align-"]:first-child {
+  margin-top: 0 !important;
+}
+
+.rowColumn > * + * {
+  margin-top: 16px;
+}
+
+@include mq(small) {
+  .row.layout-1\/2\|1\/4\|1\/4 > .rowColumn,
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn,
+  .row.layout-1\/4\|1\/4\|1\/2 > .rowColumn,
+  .row.layout-1\/2\|1\/2 > .rowColumn {
+    flex: 0 1 #{50% - (flexy-gutter() / 2)};
+  }
+
+  .row.layout-2\/3\|1\/3 > .rowColumn:first-child,
+  .row.layout-1\/3\|2\/3 > .rowColumn:last-child {
+    flex: 0 1 #{(100% / 3 * 2) - (flexy-gutter() / 2)};
+  }
+
+  .row.layout-2\/3\|1\/3 > .rowColumn:last-child,
+  .row.layout-1\/3\|2\/3 > .rowColumn:first-child {
+    flex: 0 1 #{(100% / 3) - (flexy-gutter() / 2)};
+  }
+
+  .row.layout-1\/3\|1\/3\|1\/3 > .rowColumn {
+    flex: 0 1 #{(100% / 3) - (flexy-gutter() / 2)};
+  }
+
+  .row.layout-1\/2\|1\/4\|1\/4 > .rowColumn:not(:first-child),
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn:first-child,
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn:last-child,
+  .row.layout-1\/4\|1\/4\|1\/2 > .rowColumn:not(:last-child),
+  .row.layout-1\/4\|1\/4\|1\/4\|1\/4 > .rowColumn {
+    flex: 0 1 #{25% - (flexy-gutter() * 3 / 4)};
+  }
+}

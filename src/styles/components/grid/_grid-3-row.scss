@@ -1,0 +1,50 @@
+@include mq(small) { // only needs to target above small as the columns disappear.
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn .grid-3 .grid-item, // 1/2 width
+  .row.layout-1\/2\|1\/2 > .rowColumn .grid-3 .grid-item { // 1/2 width
+    @include flexy-flex(100%);
+
+    & + .grid-item {
+      margin-left: 0;
+    }
+
+    &:nth-child(n + 2) {
+      margin-top: flexy-gutter();
+    }
+  }
+}
+
+@include mq(medium) {
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn .grid-3 .grid-item, // 1/2 width
+  .row.layout-1\/2\|1\/2 > .rowColumn .grid-3 .grid-item { // 1/2 width
+    @include flexy-grid(2, flexy-gutter());
+
+    &:first-child {
+      @include flexy-flex(100%);
+    }
+
+    & + .grid-item {
+      margin-left: flexy-gutter();
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    &:nth-child(n + 2) {
+      margin-top: flexy-gutter();
+    }
+  }
+
+  .row.layout-2\/3\|1\/3 > .rowColumn:first-child, // 2/3 width
+  .row.layout-1\/3\|2\/3 > .rowColumn:last-child {  // 2/3 width
+    flex: 0 0 #{(100% / 3 * 2) - (flexy-gutter() / 2)};
+  }
+
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn:first-child .grid-3 .grid-item, // 1/4 width
+  .row.layout-1\/4\|1\/2\|1\/4 > .rowColumn:last-child .grid-3 .grid-item, // 1/4 width
+  .row.layout-1\/4\|1\/4\|1\/4\|1\/4 > .rowColumn .grid-3 .grid-item, // 1/4 width
+  .row.layout-2\/3\|1\/3 > .rowColumn:last-child .grid-3 .grid-item, // 1/3 width
+  .row.layout-1\/3\|2\/3 > .rowColumn:first-child .grid-3 .grid-item { // 1/3 width
+    @include flexy-flex(100%);
+  }
+}

@@ -1,0 +1,36 @@
+.post--result {
+  width: 100%;
+  max-width: 100%;
+  background-color: $color-white;
+  min-height: 0;
+  padding: 12px;
+}
+
+.post--result + .post--result {
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+.post--result .post-title {
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 31px;
+  line-height: 1.2;
+}
+
+.post--result .post-excerpt p:last-of-type {
+  margin-bottom: 0;
+}
+
+.post--result .post-excerpt {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.post--result .post-byline {
+  font-size: 16px;
+}
+
+.post--result .post-category {
+  margin-bottom: 20px;
+}

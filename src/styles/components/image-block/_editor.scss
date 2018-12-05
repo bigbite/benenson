@@ -1,0 +1,107 @@
+.edit-post-visual-editor .editor-block-list__block[data-type="benenson/image-block"] {
+  max-width: 100%;
+  width: 100%;
+}
+
+.imageBlock {
+  display: block;
+  max-width: 100% !important;
+  min-height: 400px;
+  background-color: $color-grey-md-light;
+}
+
+.imageBlock.imageBlock.has-parallax {
+  overflow-y: hidden;
+}
+
+.imageBlock.has-parallax .imageBlock-overlay {
+  z-index: 1 !important;
+}
+
+.imageBlock.alignright .imageBlock-image {
+  float: right;
+}
+
+.imageBlock.aligncentre .imageBlock-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.imageBlock.alignleft .imageBlock-image {
+  float: left;
+}
+
+.imageBlock-overlay > * + * {
+  margin-top: 40px !important;
+}
+
+.imageBlock-title,
+.imageBlock-content {
+  max-width: none;
+  background-color: transparent !important;
+  text-align: center;
+  color: #fff !important;
+}
+
+.imageBlock-buttonsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  min-width: 600px;
+
+  > * {
+    margin: 0 10px;
+  }
+}
+
+.imageBlock-buttonsContainer .linkList-options {
+  position: static;
+  display: flex;
+  margin-top: 5px;
+  background: none;
+}
+
+.imageBlock-buttonWrapper {
+  position: relative;
+}
+
+.imageBlock-buttonWrapper .btn.btn--white {
+  padding: 10px !important;
+  color: $color-black !important;
+  border: 1px solid $color-black !important;
+  background-color: $color-white !important;
+  border-radius: 0 !important;
+  font-family: $font-family-secondary;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @include placeholder {
+    color: $color-black !important;
+  }
+}
+
+.imageBlock-overlay .editor-url-input__button button,
+.imageBlock-overlay .components-icon-button {
+  background-color: #fff;
+  border-radius: 0;
+  color: #191e23;
+}
+
+.imageBlock-copyright {
+  padding: 5px 10px 5px 5px !important;
+  width: auto !important;
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+.imageBlock-title,
+.imageBlock-content p,
+.imageBlock-copyright {
+  color: #fff !important;
+
+  @include placeholder {
+    color: #fff !important;
+  }
+}

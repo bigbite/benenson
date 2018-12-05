@@ -1,0 +1,82 @@
+.grid-1,
+.grid-2,
+.grid-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-1 .postGrid-item {
+  flex-basis: 100%;
+  padding: 0 20px;
+}
+
+.grid-2 .postGrid-item {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(50% - 10px);
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
+}
+
+.grid-3 .postGrid-item {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(50% - 10px);
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(large) {
+    flex-basis: calc(33.333333% - 20px);
+    &:nth-child(2n+2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.postGrid-item {
+  position: relative;
+}
+
+.postGrid-itemTitle {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.postGrid-content {
+  font-weight: 300;
+}
+
+.postGrid-item .postGrid-item-tag {
+  @include state-background(darken($color-grey-x-light, 10%));
+
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding: 4px 8px;
+  color: $color-grey-dark;
+  font-family: $font-family-primary;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: $color-grey-x-light;
+  letter-spacing: 2px;
+}
+
+.postGrid-item .postGrid-item-meta {
+  margin-top: 20px;
+}

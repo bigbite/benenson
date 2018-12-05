@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  max-width: 180px;
+  font-family: $font-family-secondary;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px;
+}
+
+.logo-logoType,
+.logo-logoMark {
+  height: 100%;
+}
+
+.logo-logoType {
+  display: block;
+}
+
+.logo-logoMark {
+  display: none;
+
+  @include mq(small) {
+    display: none;
+  }
+}

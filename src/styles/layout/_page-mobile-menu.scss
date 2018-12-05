@@ -1,0 +1,235 @@
+.page-mobileMenuOverlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-black, 0);
+  cursor: pointer;
+  overscroll-behavior: none;
+  overflow: hidden;
+  z-index: -999;
+  transition: background-color .3s ease-in-out, z-index .3s step-end;
+  backface-visibility: hidden;
+
+  @include mq(xm-large) {
+    display: none;
+  }
+}
+
+.menu-open .page-mobileMenuOverlay {
+  display: block;
+  background-color: rgba($color-black, .4);
+  z-index: 999;
+  transition: background-color .3s ease-in-out, z-index .3s step-start;
+
+  @include mq(xm-large) {
+    display: none;
+    z-index: -999;
+  }
+}
+
+.page-mobileMenuOverlay button {
+  cursor: pointer;
+  padding: 0;
+}
+
+.page-mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: calc(100% - 62px);
+  max-width: 400px;
+  overflow-y: auto;
+  background-color: $color-white;
+  cursor: initial;
+  overscroll-behavior: contain;
+  transform: translate3d(100%, 0, 0);
+  transition: transform .3s ease-in-out;
+  backface-visibility: hidden;
+
+  .rtl & {
+    right: initial;
+    left: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.admin-bar .page-mobileMenu,
+.admin-bar .page-mobileMenuOverlay {
+  top: 46px;
+  height: calc(100% - 46px);
+
+  @include mq(wp-adminbar) {
+    top: 32px;
+    height: calc(100% - 32px);
+  }
+}
+
+.menu-open .page-mobileMenu {
+  transform: translate3d(0, 0, 0);
+}
+
+.page-mobileMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 40px;
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+
+  @include mq(small) {
+    min-height: 40px;
+  }
+}
+
+.page-mobileMenuHeader h2 {
+  flex-grow: 1;
+  margin-bottom: 0;
+  padding: 20px 24px 12px 10px;
+  font-family: $font-family-primary;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 1;
+  border-bottom: 1px solid $color-grey-md-light;
+
+  @include mq(small) {
+    padding: 12px 18px;
+  }
+}
+
+.page-mobileMenuNav ul button,
+.page-mobileMenuHeader button {
+  @include state-background($color-grey-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  min-height: 60px;
+  background-color: $color-white;
+  border: none;
+  border-left: 1px solid $color-grey-md-light;
+
+  @include mq(small) {
+    width: 40px;
+    min-height: 40px;
+  }
+}
+
+.page-mobileMenuHeader button::before {
+  @include icon_svg(30px, 30px, "black", "close-outline" );
+  content: "";
+  display: block;
+  margin: auto;
+}
+
+.page-mobileMenuNav ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.page-mobileMenuNav a {
+  padding: 12px 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-black;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+  @include mq(small) {
+    padding: 14px 14px;
+    font-size: 18px;
+  }
+}
+
+.page-mobileMenuNav li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-mobileMenuNav li li {
+  background-color: $color-grey-light;
+}
+
+.page-mobileMenuNav li li:enter a,
+.page-mobileMenuNav li li:active a,
+.page-mobileMenuNav li li:focus-within {
+  background-color: $color-black !important;
+  color: $color-white;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.page-mobileMenuNav li:last-child li:last-child a,
+.page-mobileMenuNav li:last-child li:last-child button {
+  border-bottom: none;
+}
+
+.page-mobileMenuHeader button,
+.page-mobileMenuNav > ul > li, 
+.page-mobileMenuSubNav > li {
+  border-bottom: 1px solid $color-grey-md-light;
+}
+
+.page-mobileMenuNav li > a {
+  @include flexy-flex(calc(100% - 60px), 1);
+
+  @include mq(small) {
+    @include flexy-flex(calc(100% - 72px), 1);
+  }
+}
+
+.page-mobileMenuNav li > a:last-child {
+  @include flexy-flex(100%, 1);
+}
+
+.page-mobileMenuNav ul button::before {
+  @include icon_svg(30px, 30px, "black", "arrow-ios-downward-outline" );
+  content: "";
+  display: block;
+  margin: auto;
+}
+
+.page-mobileMenuNav ul .is-open button {
+  background-color: $color-black;
+}
+
+.page-mobileMenuNav ul .is-open button::before {
+  @include icon_svg(30px, 30px, "white", "arrow-ios-upward-outline" );
+}
+
+.page-mobileMenuNav ul button {
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+.page-mobileMenuNav li > ul {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+.no-js .page-mobileMenuNav li.is-open > ul {
+  display: block;
+}
+
+.page-mobileMenu .btn {
+  padding: 10px 25px;
+  font-size: 36px;
+  line-height: 1;
+
+  @include mq(small) {
+    padding: 16px 25px;
+  }
+}
+
+.page-mobileMenu a:not(.btn):enter,
+.page-mobileMenu li:not(.is-open) button:not(.btn):enter {
+  background-color: $color-grey-light;
+}
+
+.page-mobileMenuSubNav .current-menu-parent:not(.is-open) a,
+.page-mobileMenuSubNav .current-menu-item:not(.is-open) a {
+  background-color: #fff;
+}

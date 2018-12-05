@@ -1,0 +1,14 @@
+a {
+  color: $color-black;
+  transition: color .3s ease-in-out;
+  text-decoration: none;
+  text-decoration-skip: ink;
+}
+
+.section ul li > a,
+.section ol li > a,
+.section p > a,
+.article-content p > a {
+  font-weight: 600;
+  text-decoration: underline;
+}

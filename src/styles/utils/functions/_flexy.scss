@@ -1,0 +1,135 @@
+$flexy-outer-gutter: $flexy-gutter-width !default;
+
+/// A mixin for adding flex grow, shrink and basis with a width for IE11 support
+/// @author Jerome Duncan
+/// @param {string}           $basis - Desired Flex Basis
+/// @param {string}           $grow - Desired Flex Grow
+/// @example scss
+/// .thumbnails--small {
+///   @include flexy-flex(25%, 1, 0);
+/// }
+///
+/// // Output:
+/// .thumbnails--small {
+///   flex-basis: 25%;
+///   flex-grow: 1;
+///   flex-shrink: 0;
+///   width: 25%;
+/// }
+@mixin flexy-flex ($basis, $grow: 0, $shrink: 0) {
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+  flex-basis: $basis;
+  width: $basis;
+  max-width: $basis;
+}
+
+/// Calls flexy-flex but sets the basis to a set margin
+/// @author Jerome Duncan
+/// @param {string}           $noOfItems - Number of items per row
+/// @param {string}           $gutterWidth - Desired spacing between each element
+/// @example scss
+/// .thumbnails--small {
+///   @include flexy-grid(50%, 20px);
+/// }
+///
+/// // Output:
+/// .thumbnails--small {
+///   flex-basis: calc(50% - 10px);
+///   flex-grow: 0;
+///   flex-shrink: 0;
+///   width: calc(50% - 10px);
+/// }
+@mixin flexy-grid ($noOfItems, $gutterWidth: $flexy-gutter-width) {
+  @if unit($gutterWidth) == "%" {
+    @include flexy-flex(#{(100 / $noOfItems) - ($gutterWidth * ($noOfItems - 1) / $noOfItems)});
+  } @else {
+    @include flexy-flex(calc(#{(100 / $noOfItems) + "%"} - #{($gutterWidth * ($noOfItems - 1) / $noOfItems)}));
+  }
+}
+
+/// Returns a percentage gutter based on container width and taking into consideration outer gutter
+/// @param  {string} $containerWidth - Container Width
+/// @param  {string} $outer-gutter - Outer Gutter
+/// @return {number}
+@function flexy-gutter ($containerWidth: $flexy-container, $outer-gutter: $flexy-outer-gutter) {
+  $gutter: $flexy-gutter-width / ($containerWidth - 2 * $outer-gutter) * 100%;
+
+  @return $gutter;
+}
+
+/// Returns the width percentage for a specific column size
+/// @param  {string} $noOfColumns - Number of columns
+/// @param  {string} $containerWidth - Container Width
+/// @param  {string} $outer-gutter - Outer Gutter
+/// @return {number}
+@function flexy-col ($noOfColumns: 1, $containerWidth: $flexy-container, $outer-gutter: $flexy-outer-gutter) {
+  $col: $flexy-column-width / ($containerWidth - 2 * $outer-gutter) * 100;
+  $gutter: flexy-gutter($containerWidth);
+  $myValue: ($col * $noOfColumns) + ($gutter * ($noOfColumns - 1));
+
+  @return $myValue;
+}
+
+/// Calls flexy flex with the return value from flexy-col and adds a margin right of flex-gutter
+/// @author Jerome Duncan
+/// @param {string}           $noOfColumns - Number of columns to span
+/// @param {string}           $containerWidth - Size of the container
+/// @example scss
+/// .thumbnails--small {
+///   @include flexy-column(12);
+/// }
+///
+/// // Output:
+/// .thumbnails--small {
+///   flex-grow: 0;
+///   flex-shrink: 0;
+///   flex-basis: 49.33774834%;
+///   width: 49.33774834%;
+///   margin-right: 1.32450331%;
+/// }
+@mixin flexy-column ($noOfColumns, $containerWidth: $flexy-container) {
+  $col: flexy-col($noOfColumns, $containerWidth);
+
+  @include flexy-flex($col);
+  margin-right: flexy-gutter($containerWidth);
+}
+
+/// Mixin to add display flex and flex wrap to a element
+/// @author Jerome Duncan
+/// @example scss
+/// .thumbnails--small {
+///   @include flexy-wrapper;
+/// }
+///
+/// // Output:
+/// .thumbnails--small {
+///   display: flex;
+///   flex-wrap: wrap;
+/// }
+@mixin flexy-wrapper () {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/// Adds flexy-wrapper and adds max width and centers the element
+/// @author Jerome Duncan
+/// @example scss
+/// .thumbnails--small {
+///   @include flexy-wrapper;
+/// }
+///
+/// // Output:
+/// .thumbnails--small {
+///   display: flex;
+///   flex-wrap: wrap;
+///   max-width: 1240px;
+///   margin: 0 auto;
+///   padding: 0 20px;
+/// }
+@mixin flexy-container () {
+  @include flexy-wrapper;
+  max-width: $flexy-container;
+  margin: 0 auto;
+  padding: 0 $flexy-outer-gutter;
+}

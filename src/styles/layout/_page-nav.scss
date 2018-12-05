@@ -1,0 +1,260 @@
+.page-nav,
+.page-nav > ul {
+  display: flex;
+}
+
+.page-nav {
+  position: relative;
+  height: 60px;
+  font-family: $font-family-primary;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @include mq(small) {
+    height: 72px;
+  }
+}
+
+.page-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-nav li,
+.page-nav div {
+  height: 60px;
+
+  @include mq(small) {
+    height: 72px;
+  }
+}
+
+.page-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 22px;
+  height: 100%;
+  font-size: 12px;
+  color: $color-white;
+
+  // @include mq(1340px) {
+  //   font-size: 14px;
+  // }
+
+  // @include mq(1390px) {
+  //   font-size: 15px;
+  // }
+
+  @include mq(1450px) {
+    font-size: 12px;
+  }
+}
+
+.page-nav .sub-menu a {
+  color: $color-black;
+}
+
+.page-nav li {
+  display: none;
+
+  @include mq(medium-lg) {
+    display: block;
+  }
+}
+
+.page-nav--left > ul > li {
+  position: relative;
+
+  &:active::after,
+  &:enter::after,
+  &:focus-within::after {
+    border-right-color: transparent;
+
+    .rtl & {
+      border-left-color: transparent;
+    }
+  }
+}
+
+.page-nav--left > ul > li::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -1px;
+  width: 0;
+  height: 38px;
+  border-right: 1px solid $color-grey-md-light;
+  transition: border-color .3s ease-in-out;
+
+  @include mq(small) {
+    top: 17px;
+  }
+
+  .rtl & {
+    right: unset;
+    left: -1px;
+    border-right: none;
+    border-left: 1px solid $color-grey-md-light;
+  }
+}
+
+.page-nav:not(.page-nav--left) li.current-menu-item,
+.page-nav:not(.page-nav--left) li.current-menu-parent,
+.page-nav li:active,
+.page-nav li:enter,
+.page-nav li:focus-within {
+  background-color: $color-black;
+  transition: background-color .3s ease-in-out;
+
+  & > a {
+    color: $color-white;
+  }
+}
+
+.page-nav li:enter > a,
+.page-nav li:active > a,
+.page-nav li:focus-within > a {
+  color: $color-white;
+}
+
+.page-header--transparent-dark .page-nav a,
+.page-header--light .page-nav a {
+  color: $color-black;
+}
+
+.page-nav li.menu-item-has-children {
+  position: relative;
+}
+
+.page-nav li.menu-item-has-children ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  max-width: 100vw;
+  opacity: 0;
+  z-index: -10;
+  background-color: $color-grey-light;
+  pointer-events: none;
+  transition: top .3s ease-in-out, opacity .3s ease-in-out, z-index .3s step-end;
+
+  .rtl & {
+    left: initial;
+    right: 0;
+  }
+}
+
+.page-nav li.menu-item-has-children:enter ul,
+.page-nav li.menu-item-has-children:active ul,
+.page-nav li.menu-item-has-children:focus-within ul {
+  opacity: 1;
+  top: 100%;
+  z-index: 9;
+  transition: top .3s ease-in-out, opacity .3s ease-in-out, z-index .3s step-start;
+  pointer-events: all;
+}
+
+.page-nav li.menu-item-has-children ul li {
+  padding: 0;
+  height: auto;
+
+  a {
+    display: inline-block;
+    padding: 15px 22px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+  }
+
+  &.current-menu-item > a,
+  a:enter,
+  a:active,
+  a:focus-within {
+    color: $color-white;
+    background-color: $color-black;
+  }
+}
+
+.page-nav.page-nav--left {
+  margin-left: 0;
+
+  .rtl & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.page-headerHamburger {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 15px;
+  height: 100%;
+  border: 2px solid transparent;
+  font-family: $font-family-secondary;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include mq(small) {
+    padding: 20px;
+  }
+
+  @include mq(medium-lg) {
+    display: none;
+  }
+}
+
+.page-headerHamburger:active,
+.page-headerHamburger:focus {
+  border: 2px solid blue;
+}
+
+.page-headerHamburger span {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: $color-black;
+  pointer-events: none;
+}
+
+.page-headerHamburger span::before,
+.page-headerHamburger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  background-color: $color-black;
+  width: 20px;
+  height: 3px;
+  pointer-events: none;
+}
+
+.page-headerHamburger span::before {
+  top: -8px;
+}
+
+.page-headerHamburger span::after {
+  bottom: -8px;
+}
+
+.page-headerHamburger span,
+.page-headerHamburger span::before,
+.page-headerHamburger span::after {
+  background-color: $color-black;
+
+  .page-header--shaded &,
+  .page-header--transparent-light & {
+    background-color: $color-white;
+  }
+}
+
+.page-headerHamburger:focus,
+.page-headerHamburger:enter {
+  span,
+  span::before,
+  span::after {
+    background-color: $color-white;
+  }
+}

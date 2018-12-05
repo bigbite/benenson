@@ -1,0 +1,65 @@
+// /// Enable grid classes
+// /// @group Defaults
+// /// @type Boolean
+// /// @example
+// /// .gw-1, .gw-2, .gw-3 etc.
+// $enable-grid-classes: true;
+
+// /// Turn on to debug the grid classes
+// /// @group Defaults
+// /// @type Boolean
+// $debug-grid-classes: false;
+
+// /// Grid helper stacking breakpoing
+// /// @group Defaults
+// /// @type Neat breakpoint
+// $grid-classes-stack-breakpoint: tall;
+
+// $grid-columns: 12;
+
+// @if ($debug-grid-classes) {
+//   [class*="gw-"] {
+//     background: #eee;
+//   }
+// }
+
+// @if ($enable-grid-classes) {
+
+//   // Wrap grid glasses in a row for auto omega, else use `u-omega`
+//   .row {
+//     @include clearfix();
+//   }
+
+//   // Set up base grid styles
+//   [class*="gw-"] {
+//     float: left;
+//     display: block;
+
+//     // Remove margin from the last child.
+//     // Needs to be wrapped in a row to work per row.
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+
+//   // Generate grid widths.
+//   // $grid-columns is a Neat variable set in `_grid-settings.scss`
+//   @for $i from 1 through $grid-columns {
+//     [class*="gw-#{$i}"] {
+//       @include grid-column($i);
+//     }
+//   }
+
+//   // Full width at breaking point
+//   @include mq($until: $grid-classes-stack-breakpoint) {
+//     [class*="gw-"] {
+//       @include grid-column(12);
+//       margin-right: 0;
+//       margin-bottom: spacing();
+
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }

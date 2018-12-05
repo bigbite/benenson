@@ -1,0 +1,48 @@
+<?php
+/**
+ * Setup theme support.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if ( ! function_exists( 'benenson_theme_support' ) ) {
+	function benenson_theme_support() {
+		add_theme_support( 'menus' );
+		add_theme_support( 'post-thumbnails' );
+
+		remove_theme_support( 'post-formats' );
+
+		add_theme_support( 'editor-color-palette' );
+		add_theme_support( 'disable-custom-colors' );
+	}
+}
+
+add_action( 'after_setup_theme', 'benenson_theme_support' );
+
+/**
+ * Add excerpt support to pages to use on the grid blocks.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if ( ! function_exists( 'benenson_page_type_support' ) ) {
+	function benenson_page_type_support() {
+		add_post_type_support( 'page', 'excerpt' );
+	}
+}
+
+add_action( 'init', 'benenson_page_type_support' );
+
+/**
+ * Rename default template for clarity.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if ( ! function_exists( 'benenson_default_template_rename' ) ) {
+	function benenson_default_template_rename() {
+		return __( 'Standard Post Template', 'benenson' );
+	}
+}
+
+add_filter( 'default_page_template_title', 'benenson_default_template_rename' );

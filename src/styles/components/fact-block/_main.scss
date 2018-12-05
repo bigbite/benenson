@@ -1,0 +1,58 @@
+.factBlock {
+  max-width: $flexy-container / 3;
+  padding: 24px;
+  text-align: center;
+}
+
+.factBlock ol {
+  margin: 0;
+  list-style: none;
+}
+
+.factBlock-title {
+  text-transform: uppercase;
+}
+
+.factBlock-title,
+.factBlock-itemTitle {
+  font-family: $font-family-secondary;
+}
+
+.factBlock-item:last-of-type .factBlock-itemContent {
+  margin-bottom: 0;
+}
+
+.factBlock-item:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.factBlock-item:not(:last-of-type)::before,
+.factBlock-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $color-grey-dark;
+}
+
+.factBlock-item:not(:last-of-type)::before {
+  @include icon_svg(40px, 40px, "white" ,"arrow-ios-downward-outline");
+  left: calc(50% - 20px);
+  top: calc(100% + 10px);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.factBlock-item:not(:last-of-type)::after {
+  bottom: -31px; // margin/2 + height/2
+  left: 5%;
+  height: 2px;
+  width: 90%;
+}
+
+.factBlock-itemTitle {
+  margin-bottom: 16px;
+}
+
+// .factBlock-itemContent {}
