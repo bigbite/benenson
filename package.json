@@ -83,6 +83,8 @@
     "webpack": "^3.6.0"
   },
   "scripts": {
+    "lint": "yarn lint-scripts && yarn lint-styles && yarn lint-php",
+    "lint-php": "~/.composer/vendor/bin/phpcs .",
     "lint-scripts": "./node_modules/.bin/eslint ./src/",
     "lint-styles": "./node_modules/.bin/stylelint \"src/**/*.scss\"",
     "test": "./node_modules/.bin/jest",
