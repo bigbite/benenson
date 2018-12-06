@@ -280,7 +280,7 @@ class DisplayComponent extends Component {
                   <div className="slide">
                     <div className="slide-contentContainer">
                       <h1 className="slide-title">{ __('Add a slide below.', 'benenson') }</h1>
-                      <button className="btn btn--dark" onClick={this.addSlide}>{ __('Add Slide', 'benenson') }</button>
+                      <button className="btn btn--white" onClick={this.addSlide}>{ __('Add Slide', 'benenson') }</button>
                     </div>
                   </div>
                 ) }
@@ -328,7 +328,7 @@ class DisplayComponent extends Component {
                           />
                         </div>
                         <div className="slide-callToAction">
-                          <div className="btn">
+                          <div className="btn btn--white">
                             <RichText
                               tagname="span"
                               placeholder={ __('(Button Text)', 'benenson') }
