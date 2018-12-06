@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import DisplayComponent from './DisplayComponent';
-import { buildSlideDeprecated, SlideBuilder } from './build-slide';
+import { SlideBuilder } from './build-slide';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;

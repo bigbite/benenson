@@ -788,10 +788,10 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:44
 	__( 'Transparent', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/build-slide.js:193
+	// Reference: src/scripts/blocks/slider/build-slide.js:106
 	__( 'Tap here to return to gallery', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/build-slide.js:200
+	// Reference: src/scripts/blocks/slider/build-slide.js:113
 	__( 'Toggle Content', 'benenson' ),
 
 	// Reference: src/scripts/blocks/slider/index.js:38
