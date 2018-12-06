@@ -315,7 +315,12 @@ registerBlockType('benenson/links-with-icons', {
           tagName="div"
           value={ body }
         />
-        { hasButton && <a className="btn btn--white" href={ buttonLink }>{ buttonText }</a> }
+        { hasButton && <RichText.Content
+          className="btn btn--white"
+          tagName="a"
+          href={ buttonLink }
+          value={ buttonText }
+        /> }
       </div>
       <div class="linksWithIcons-spacer"></div>
     </Fragment>);

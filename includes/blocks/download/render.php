@@ -15,6 +15,7 @@ if ( ! function_exists( 'benenson_render_download_block' ) ) {
 		}
 
 		$button_text = benenson_get_meta_field( 'download_text' ) ?: __( 'Download Resource', 'benenson' );
+		$button_text = trim( preg_replace( '/(?:(?:(?:<|&lt;)br[^>]*?>)+)/', ' ', $button_text ) );
 		$file_url    = wp_get_attachment_url( $file_id );
 		$file_name   = explode( '/', $file_url );
 		$file_name   = array_pop( $file_name );
