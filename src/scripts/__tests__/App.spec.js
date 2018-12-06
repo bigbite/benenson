@@ -1,4 +1,4 @@
-import App from '../App';
+import App from '../app';
 
 describe('App', () => {
   beforeAll(() => {
