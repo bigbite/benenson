@@ -25,7 +25,6 @@ msgid "Content"
 msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:111
-#: src/scripts/blocks/action/index.js:137
 msgid "Act Now"
 msgstr ""
 
