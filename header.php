@@ -28,6 +28,9 @@ $hero_type       = benenson_get_meta_field( '_hero_type', $page_id );
 $hero_video_id   = benenson_get_meta_field( '_hero_video_id', $page_id );
 $hero_embed      = benenson_get_meta_field( '_hero_embed', $page_id );
 
+$hero_show = false;
+$media_lg  = false;
+
 if ( get_post_thumbnail_id( $page_id ) || $hero_title ) {
 	$hero_show = true;
 
