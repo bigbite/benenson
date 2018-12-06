@@ -239,7 +239,7 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
  */
 if ( ! function_exists( 'benenson_render_grid_item' ) ) {
 	function benenson_render_grid_item( $data ) {
-		$title = isset( $data['title'] ) ? $data['title'] : '';
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
 		$feature_image = $data['featured_image'];
 		?>
 		<article class="grid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" style="background-image: url(<?php echo esc_url( $feature_image ); ?>)" tabindex="0">
