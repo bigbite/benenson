@@ -44,6 +44,11 @@
   padding: 14px 24px !important;
   font-family: $font-family-secondary;
   color: $color-white;
+
+  &:enter,
+  &:active {
+    color: $color-black;
+  }
 }
 
 .actionBlock .editor-url-input__button {
