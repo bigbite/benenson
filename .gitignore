@@ -83,3 +83,7 @@ $RECYCLE.BIN/
 
 # Composer
 composer.lock
+
+# Production Assets
+assets/scripts
+assets/styles
