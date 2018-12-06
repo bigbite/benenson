@@ -25,7 +25,6 @@ msgid "Content"
 msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:111
-#: src/scripts/blocks/action/index.js:137
 msgid "Act Now"
 msgstr ""
 
@@ -1031,11 +1030,11 @@ msgstr ""
 msgid "Transparent"
 msgstr ""
 
-#: src/scripts/blocks/slider/build-slide.js:193
+#: src/scripts/blocks/slider/build-slide.js:106
 msgid "Tap here to return to gallery"
 msgstr ""
 
-#: src/scripts/blocks/slider/build-slide.js:200
+#: src/scripts/blocks/slider/build-slide.js:113
 msgid "Toggle Content"
 msgstr ""
 
