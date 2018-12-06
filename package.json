@@ -88,8 +88,8 @@
     "lint-scripts": "./node_modules/.bin/eslint ./src/",
     "lint-styles": "./node_modules/.bin/stylelint \"src/**/*.scss\"",
     "test": "./node_modules/.bin/jest",
-    "build": "[[ ! $NODE_ENV ]] && NODE_ENV='production' && export NODE_ENV; gulp --production",
-    "watch": "[[ ! $NODE_ENV ]] && NODE_ENV='production' && export NODE_ENV; gulp watch --production",
+    "build": "export \"${NODE_ENV:-production}\"; gulp --production",
+    "watch": "export \"${NODE_ENV:-production}\"; gulp watch --production",
     "lang": "npx pot-to-php block-languages/benenson-blocks.pot includes/block-translations.php benenson"
   },
   "jest": {
