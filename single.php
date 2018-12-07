@@ -74,8 +74,21 @@ if ( benenson_post_has_header() ) {
 					<div><?php array_map( 'display_letter_recipient', $recipients ); ?></div>
 				</details>
 			<?php endif; ?>
-				<?php the_content(); ?>
-				<?php true === apply_filters( 'benenson_comments_enabled', false ) && comments_template(); ?>
+
+			<?php
+
+			the_content();
+
+			wp_link_pages( [
+				'before' => sprintf( '<div class="page-links">%s', __( 'Pages:', 'benenson' ) ),
+				'after'  => '</div>',
+			] );
+
+			if ( true === apply_filters( 'benenson_comments_enabled', false ) ) {
+				comments_template();
+			}
+
+			?>
 			</article>
 		</section>
 

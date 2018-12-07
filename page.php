@@ -20,7 +20,16 @@ $sidebar_is_enabled    = benenson_get_meta_field( '_disable_sidebar' ) !== '1';
 				</header>
 			<?php endif; ?>
 				<section class="article-content">
-					<?php the_content(); ?>
+				<?php
+
+				the_content();
+
+				wp_link_pages( [
+					'before' => sprintf( '<div class="page-links">%s', __( 'Pages:', 'benenson' ) ),
+					'after'  => '</div>',
+				] );
+
+				?>
 				</section>
 			</article>
 			<aside class="article-shareContainer">
