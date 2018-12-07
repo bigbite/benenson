@@ -67,7 +67,7 @@ if ( benenson_post_has_header() ) {
 				<h1 id="article-title" class="article-title"><?php the_title(); ?></h1>
 			</header>
 
-			<article class="article-content <?php $reduced_width && print 'is-narrow'; ?>" role="article" aria-labelledby="article-title">
+			<article id="post-<?php the_ID(); ?>" <?php post_class( [ 'article-content', $reduced_width ? 'is-narrow' : '' ] ); ?> role="article" aria-labelledby="article-title">
 			<?php if ( $recipients ) : ?>
 				<details class="article-recipients">
 					<summary><?php esc_html_e( 'View Recipients', 'benenson' ); ?></summary>
