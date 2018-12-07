@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Benenson Core\n"
-"POT-Creation-Date: 2018-12-06 14:28+0000\n"
-"PO-Revision-Date: 2018-09-21 16:53+0100\n"
+"Project-Id-Version: Benenson\n"
+"POT-Creation-Date: 2018-12-06 16:24+0000\n"
+"PO-Revision-Date: 2018-12-06 16:23+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -72,35 +72,35 @@ msgid "Follow us on Instagram"
 msgstr ""
 
 #. translators: Label for screen reader/keyboard users
-#: header.php:82
+#: header.php:85
 msgid "Skip to main content"
 msgstr ""
 
-#: header.php:89
+#: header.php:92
 msgid "Primary navigation"
 msgstr ""
 
-#: header.php:94
+#: header.php:97
 msgid "Show search form"
 msgstr ""
 
-#: header.php:95 includes/theme-options.php:288 searchform.php:4
+#: header.php:98 includes/theme-options.php:288 searchform.php:4
 msgid "Search"
 msgstr ""
 
-#: header.php:108 includes/navigation.php:114
+#: header.php:111 includes/navigation.php:114
 msgid "Main Menu"
 msgstr ""
 
-#: header.php:109
+#: header.php:112
 msgid "Close navigation"
 msgstr ""
 
-#: header.php:112
+#: header.php:115
 msgid "Primary"
 msgstr ""
 
-#: header.php:163 header.php:188
+#: header.php:166 header.php:191
 msgid "Play Icon"
 msgstr ""
 
@@ -241,128 +241,11 @@ msgid "Adds a small amount of padding to the content."
 msgstr ""
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
-=======
-#: includes/block-translations.php:23
-msgid "Act Now"
+#: includes/post-types/sidebar.php:39 includes/theme-options.php:245
+#: single.php:85
+msgid "Sidebar"
 msgstr ""
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr ""
-
-#: includes/block-translations.php:32
-msgid "Standard"
-msgstr ""
-
-#: includes/block-translations.php:36
-msgid "Wide"
-msgstr ""
-
-#: includes/block-translations.php:39
-msgid "Centre Aligned"
-msgstr ""
-
-#: includes/block-translations.php:42
-msgid "Centre align the action block."
-msgstr ""
-
-#: includes/block-translations.php:45
-msgid "(Label)"
-msgstr ""
-
-#: includes/block-translations.php:48
-msgid "Action"
-msgstr ""
-
-#: includes/block-translations.php:51
-msgid "Add an Action block"
-msgstr ""
-
-#: includes/block-translations.php:55
-msgid "Loading"
-msgstr ""
-
-#: includes/block-translations.php:58
-msgid "Select a sidebar"
-msgstr ""
-
-#: includes/block-translations.php:61
-msgid "Share Buttons"
-msgstr ""
-
-#: includes/block-translations.php:64
-msgid "Disable Share Buttons for this page"
-msgstr ""
-
-#: includes/block-translations.php:67
-msgid "Appearance"
-msgstr ""
-
-#: includes/block-translations.php:71
-msgid "Header"
-msgstr ""
-
-#: includes/block-translations.php:74
-msgid "Navigation Style:"
-msgstr ""
-
-#: includes/block-translations.php:77
-msgid "Global"
-msgstr ""
-
-#: includes/block-translations.php:84
-msgid "White"
-msgstr ""
-
-#: includes/block-translations.php:89
-msgid "Black"
-msgstr ""
-
-#: includes/block-translations.php:101
-msgid "Options"
-msgstr ""
-
-#: includes/block-translations.php:104
-msgid "Post Thumbnail Style"
-msgstr ""
-
-#: includes/block-translations.php:107
-msgid "Affects its display on the news index only."
-msgstr ""
-
-#: includes/block-translations.php:110
-msgid "Half size"
-msgstr ""
-
-#: includes/block-translations.php:113
-msgid "Full Background"
-msgstr ""
-
-#: includes/block-translations.php:116
-msgid "Hide featured image"
-msgstr ""
-
-#: includes/block-translations.php:119
-msgid "Disables display of featured image on post single."
-msgstr ""
-
-#: includes/block-translations.php:122
-msgid "Force full-width featured image"
-msgstr ""
-
-#: includes/block-translations.php:125
-msgid "Ensures a small featured image fills the width of the content area."
-msgstr ""
-
-#: includes/block-translations.php:128
-msgid "Reduce Content Width"
-msgstr ""
-
-#: includes/block-translations.php:131
-msgid "Adds a small amount of padding to the content."
-msgstr ""
-
-#: includes/block-translations.php:134 includes/post-types/sidebar.php:12
 #: includes/block-translations.php:136
 msgid "Disable Sidebar"
 msgstr ""
@@ -618,7 +501,6 @@ msgid "Embed url"
 msgstr ""
 
 #: includes/block-translations.php:361
-
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
