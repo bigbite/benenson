@@ -122,7 +122,7 @@ if ( ! function_exists( 'benenson_is_post_type' ) ) {
  */
 if ( ! function_exists( 'benenson_add_admin_page' ) ) {
 	function benenson_add_admin_page() {
-		add_menu_page(
+		add_theme_page(
 			esc_html__( 'Theme Settings', 'benenson' ),
 			esc_html__( 'Theme Settings', 'benenson' ),
 			'manage_options',
