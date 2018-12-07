@@ -14,6 +14,9 @@ if ( ! function_exists( 'benenson_theme_support' ) ) {
 		add_theme_support( 'disable-custom-colors' );
 
 		remove_theme_support( 'post-formats' );
+
+		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+		$GLOBALS['content_width'] = apply_filters( 'benenson_content_width', 1200 );
 	}
 }
 

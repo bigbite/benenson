@@ -36,7 +36,7 @@ function array_reverse_polyfill() {
 		return;
 	}
 
-	wp_enqueue_script( 'benenson-array-reverse', get_template_directory_uri() . 'array-reverse-polyfill.js', [], '1.0.2', false );
+	wp_enqueue_script( 'benenson-array-reverse', get_template_directory_uri() . '/array-reverse-polyfill.js', [], '1.0.2', false );
 }
 
 add_action( 'admin_enqueue_scripts', 'array_reverse_polyfill' );
