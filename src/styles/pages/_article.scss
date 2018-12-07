@@ -212,12 +212,25 @@
   }
 }
 
-.article-meta .article-meta-date {
+.article-meta .article-meta-data {
   font-family: $font-family-primary;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.article-meta .article-meta-item,
+.article-meta .bypostauthor {
+  text-align: right;
+
+  .rtl & {
+    text-align: left;
+  }
+}
+
+.article-meta .bypostauthor {
+  margin-top: 5px;
 }
 
 .article-figure {

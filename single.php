@@ -42,7 +42,12 @@ if ( benenson_post_has_header() ) {
 					<span><?php echo esc_attr( $main_category->name ); ?></span>
 				</a>
 			<?php endif; ?>
-				<span class="article-meta-date" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_attr( $the_time ); ?></span>
+				<div class="article-meta-data">
+					<div class="article-meta-item" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_attr( $the_time ); ?></div>
+				<?php if ( true === apply_filters( 'benenson_display_author', false ) ) : ?>
+					<div class="bypostauthor"><?php echo esc_attr( sprintf( '%s %s', __( 'Authored by', 'benenson' ), get_the_author() ) ); ?></div>
+				<?php endif; ?>
+				</div>
 			</nav>
 
 		<?php if ( $featured_image ) : ?>
