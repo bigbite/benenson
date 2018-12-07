@@ -77,6 +77,10 @@ if ( ! function_exists( 'benenson_scripts' ) ) {
 
 		wp_enqueue_script( 'global-scripts', benenson_asset_uri( 'scripts' ) . '/bundle.js', [], '1.0.0', true );
 
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) && true === apply_filters( 'benenson_comments_enabled', false ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
+
 		if ( ! is_home() && ! is_archive() && ! is_search() ) {
 			return;
 		}

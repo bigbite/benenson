@@ -75,6 +75,7 @@ if ( benenson_post_has_header() ) {
 				</details>
 			<?php endif; ?>
 				<?php the_content(); ?>
+				<?php true === apply_filters( 'benenson_comments_enabled', false ) && comments_template(); ?>
 			</article>
 		</section>
 
