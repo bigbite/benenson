@@ -14,7 +14,6 @@ const config = {
   tasks: [
     'browsersync',
     'clean',
-    'favicons',
     'images',
     'static',
     'styles',

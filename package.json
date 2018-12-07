@@ -46,7 +46,6 @@
     "gulp-awspublish": "^3.3.0",
     "gulp-changed": "^3.1.0",
     "gulp-concat": "^2.6.1",
-    "gulp-favicons": "^2.2.7",
     "gulp-filter": "^5.0.1",
     "gulp-header": "^1.8.9",
     "gulp-imagemin": "^3.3.0",
