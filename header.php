@@ -61,10 +61,9 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title><?php wp_title( '&bull;', true, 'right' ); ?> <?php echo esc_attr( get_bloginfo( 'name' ) ); ?></title>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( sprintf( '%s/assets/favicons/apple-touch-icon.png', get_template_directory_uri() ) ); ?>">
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( sprintf( '%s/assets/favicons/favicon-32x32.png', get_template_directory_uri() ) ); ?>">

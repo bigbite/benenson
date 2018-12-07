@@ -27,3 +27,14 @@ if ( ! function_exists( 'benenson_get_meta_field' ) ) {
 		return get_post_meta( $post_id, $field, $single );
 	}
 }
+
+/**
+ * Append Site Title to `<title>`.
+ */
+add_filter( 'wp_title', function ( $title = '' ) {
+	if ( false === apply_filters( 'benenson_append_blogname_to_wp_title', true ) ) {
+		return $title;
+	}
+
+	return sprintf( '%s %s', $title, esc_attr( get_bloginfo( 'name' ) ) );
+} );
