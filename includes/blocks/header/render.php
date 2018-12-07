@@ -102,7 +102,7 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 					'<div class="page-heroCta"><a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i>%s</a></div>',
 					esc_url( $attributes['ctaLink'] ),
 					esc_url( $attributes['embed'] ),
-					esc_html__( 'Play video', 'amnnesty' ),
+					esc_html__( 'Play video', 'benenson' ),
 					esc_html( $attributes['ctaText'] )
 				);
 			}
