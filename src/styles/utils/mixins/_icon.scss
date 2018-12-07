@@ -1,6 +1,6 @@
 @mixin icon-wrapper () {
   pointer-events: none;
-  background-image: url("../images/sprite.svg"), none;
+  background-image: url("./assets/images/sprite.svg"), none;
   background-repeat: no-repeat;
   background-size: 313px 286px;
 }
@@ -14,7 +14,7 @@
 
 @mixin icon_scale($posx, $posy, $width, $height, $scale) {
   pointer-events: none;
-  background-image: url("../images/sprite.svg"), none;
+  background-image: url("./assets/images/sprite.svg"), none;
   background-repeat: no-repeat;
   background-size: 313px * $scale 286px * $scale;
   width: $width * $scale;
@@ -23,7 +23,7 @@
 }
 
 @mixin icon_svg($width, $height, $colour, $file) {
-  background-image: url("../images/svg/#{$colour}/#{$file}.svg"), none;
+  background-image: url("./assets/images/svg/#{$colour}/#{$file}.svg"), none;
   background-repeat: no-repeat;
   background-size: $width $height;
   width: $width;

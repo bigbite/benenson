@@ -90,6 +90,22 @@ if ( benenson_post_has_header() ) {
 
 			?>
 			</article>
+
+			<div class="article-tags">
+			<?php
+
+			$tags_list = get_the_tag_list( '', '' );
+			if ( $tags_list ) {
+				/* translators: 1: posted in label, only visible to screen readers. 2: list of tags. */
+				printf(
+					'<span class="screen-reader-text">%1$s </span>%2$s',
+					__( 'Tags:', 'benenson' ),
+					$tags_list
+				); // WPCS: XSS OK.
+			}
+
+			?>
+			</div>
 		</section>
 
 		<aside class="article-shareContainer" aria-label="<?php echo esc_attr( __( 'Social sharing options', 'benenson' ) ); ?>">

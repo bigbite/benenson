@@ -281,6 +281,19 @@
   }
 }
 
+.article-tags {
+  margin-top: 20px;
+
+  .post-category + .post-category {
+    margin-left: 5px;
+
+    .rtl & {
+      margin-right: 5px;
+      margin-left: 0;
+    }
+  }
+}
+
 .article-share {
   position: static;
   top: 20px;

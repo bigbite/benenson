@@ -216,3 +216,16 @@ if ( ! function_exists( 'benenson_strip_empty_sections' ) ) {
 }
 
 add_filter( 'the_content', 'benenson_strip_empty_sections', 20 );
+
+/**
+ * Add a classname to post tag term links
+ */
+add_filter( 'term_links-post_tag', function ( $links = [] ) {
+	$tag_class = apply_filters( 'benenson_post_tag_classname', 'post-category' );
+
+	foreach ( $links as &$link ) {
+		$link = str_replace( '<a ', sprintf( '<a class="%s" ', $tag_class ), $link );
+	}
+
+	return $links;
+} );
