@@ -29,5 +29,6 @@ jobs:
       file: "../benenson.zip"
       skip_cleanup: true
       draft: true
+      overwrite: true
       on:
         repo: bigbitecreative/benenson
