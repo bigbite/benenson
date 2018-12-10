@@ -3,7 +3,11 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Benenson Core\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2018-12-07 21:46+0000\n"
+=======
+"POT-Creation-Date: 2018-12-07 13:48+0000\n"
+>>>>>>> develop
 "PO-Revision-Date: 2018-09-21 16:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -108,6 +112,7 @@ msgid "Follow us on Instagram"
 msgstr ""
 
 #. translators: Label for screen reader/keyboard users
+<<<<<<< HEAD
 #: header.php:76
 msgid "Skip to main content"
 msgstr ""
@@ -137,6 +142,37 @@ msgid "Primary"
 msgstr ""
 
 #: header.php:157 header.php:182
+=======
+#: header.php:85
+msgid "Skip to main content"
+msgstr ""
+
+#: header.php:92
+msgid "Primary navigation"
+msgstr ""
+
+#: header.php:97
+msgid "Show search form"
+msgstr ""
+
+#: header.php:98 includes/theme-options.php:288 searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: header.php:111 includes/navigation.php:114
+msgid "Main Menu"
+msgstr ""
+
+#: header.php:112
+msgid "Close navigation"
+msgstr ""
+
+#: header.php:115
+msgid "Primary"
+msgstr ""
+
+#: header.php:166 header.php:191
+>>>>>>> develop
 msgid "Play Icon"
 msgstr ""
 
@@ -278,7 +314,11 @@ msgstr ""
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
+<<<<<<< HEAD
 #: single.php:86
+=======
+#: single.php:85
+>>>>>>> develop
 msgid "Sidebar"
 msgstr ""
 
