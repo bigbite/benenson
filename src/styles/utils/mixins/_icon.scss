@@ -1,8 +1,8 @@
 @mixin icon_svg($width, $height, $colour, $file) {
-  background-image: url("../images/svg/#{$colour}/#{$file}.svg"), none;
+  background-image: url("./assets/images/svg/#{$colour}/#{$file}.svg"), none;
   background-repeat: no-repeat;
   background-size: $width $height;
   width: $width;
-  height: $height;
+  height: $height; 
   pointer-events: none;
 }
