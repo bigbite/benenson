@@ -80,7 +80,7 @@ button.language-selectorClose {
 }
 
 .language-selectorClose::after {
-  @include icon(194px, 265px, 16px, 16px);
+  @include icon_svg(16px, 16px, "white", "close-outline");
   content: "";
   display: inline-block;
   margin-left: 11px;

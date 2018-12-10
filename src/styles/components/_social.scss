@@ -18,34 +18,29 @@
 .social-twitter::after,
 .social-youtube::after {
   content: "";
-  position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 10px);
-  display: block;
   width: 20px;
   height: 20px;
-  background-image: url("../images/sprite.svg"), none;
-  background-repeat: no-repeat;
-  background-size: 313px 286px;
-  visibility: visible;
+  display: inline-block;
+  margin-right: 20px;
+  transform: translateY(4px);
 }
 
 .social-facebook::after {
-  background-position: -246px -5px;
+  @include icon_svg(20px, 20px, "black", "facebook");
 }
 
 .social-google::after {
-  background-position: -246px -155px;
+  @include icon_svg(20px, 20px, "black", "google");
 }
 
 .social-instagram::after {
-  background-position: -246px -180px;
+  @include icon_svg(20px, 20px, "black", "instagram");
 }
 
 .social-twitter::after {
-  background-position: -246px -55px;
+  @include icon_svg(20px, 20px, "black", "twitter");
 }
 
 .social-youtube::after {
-  background-position: -246px -205px;
+  @include icon_svg(20px, 20px, "black", "youtube");
 }
