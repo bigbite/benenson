@@ -92,3 +92,5 @@ composer.lock
 /print.css
 /style.css
 /style-editor.css
+/assets/styles
+/assets/scripts
