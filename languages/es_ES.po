@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2018-12-06 16:26+0000\n"
-"PO-Revision-Date: 2018-12-06 16:27+0000\n"
+"POT-Creation-Date: 2018-12-10 15:10+0000\n"
+"PO-Revision-Date: 2018-12-10 15:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -38,6 +38,42 @@ msgstr "Ir a la página de inicio"
 msgid "Results"
 msgstr "Resultados"
 
+#. translators: 1: number of comments, 2: post title
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Responder a &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s respuestas a &ldquo;%2$s&rdquo;"
+
+#: comments.php:30
+msgid "Reply"
+msgstr "Responder"
+
+#. translators: Previous post navigation label
+#: comments.php:39 includes/block-translations.php:768
+#: partials/archive-categories.php:50 partials/pagination.php:4
+#: partials/pagination.php:27
+msgid "Previous"
+msgstr "Anterior"
+
+#. translators: Next post navigation label
+#: comments.php:40 includes/block-translations.php:764
+#: partials/archive-categories.php:51 partials/pagination.php:6
+#: partials/pagination.php:42
+msgid "Next"
+msgstr "Siguiente"
+
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: comments.php:59
+msgctxt "noun"
+msgid "Comment"
+msgstr "Comentario"
+
 #: footer.php:16
 msgid "Footer"
 msgstr "Pie de página"
@@ -71,36 +107,41 @@ msgstr "Síguenos en Google Plus"
 msgid "Follow us on Instagram"
 msgstr "Síguenos en Instagram"
 
+#: front-page.php:17 index.php:24 page-fullwidth.php:32 page.php:28
+#: single.php:88 templates/without-sidebar.php:13
+msgid "Pages:"
+msgstr "Páginas:"
+
 #. translators: Label for screen reader/keyboard users
-#: header.php:85
+#: header.php:76
 msgid "Skip to main content"
 msgstr "Saltar al contenido principal"
 
-#: header.php:92
+#: header.php:83
 msgid "Primary navigation"
 msgstr "Navegación primaria"
 
-#: header.php:97
+#: header.php:88
 msgid "Show search form"
 msgstr "Mostrar el formulario de búsqueda"
 
-#: header.php:98 includes/theme-options.php:288 searchform.php:4
+#: header.php:89 includes/theme-options.php:288 searchform.php:4
 msgid "Search"
 msgstr "Buscar"
 
-#: header.php:111 includes/navigation.php:114
+#: header.php:102 includes/navigation.php:114
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: header.php:112
+#: header.php:103
 msgid "Close navigation"
 msgstr "Navegación cercana"
 
-#: header.php:115
+#: header.php:106
 msgid "Primary"
 msgstr "Primario"
 
-#: header.php:166 header.php:191
+#: header.php:157 header.php:182
 msgid "Play Icon"
 msgstr "Ícono de reproducción"
 
@@ -244,7 +285,7 @@ msgstr "Agrega una pequeña cantidad de relleno al contenido."
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
-#: single.php:85
+#: single.php:120
 msgid "Sidebar"
 msgstr "Barra lateral"
 
@@ -376,7 +417,7 @@ msgstr "Número máximo de categorías que se deben mostrar"
 
 #: includes/block-translations.php:261
 msgid "Set to 0 to show all."
-msgstr ""
+msgstr "Se establece en 0 para mostrar todo."
 
 #: includes/block-translations.php:264
 msgid "Title"
@@ -388,7 +429,7 @@ msgstr "Lista de subcategorías"
 
 #: includes/block-translations.php:270
 msgid "Something went wrong whilst trying to fetch the categories."
-msgstr ""
+msgstr "Algo salió mal mientras intentaba buscar las categorías."
 
 #: includes/block-translations.php:273
 msgid "Categories"
@@ -402,7 +443,7 @@ msgstr "Término"
 msgid "Taxonomy"
 msgstr "Taxonomía"
 
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:24
+#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
 msgid "Category List"
 msgstr "Lista de categorías"
 
@@ -789,7 +830,7 @@ msgstr "Agregar un bloque blockquote"
 
 #: includes/block-translations.php:597
 msgid "Logo Group"
-msgstr ""
+msgstr "Grupo de logotipos"
 
 #: includes/block-translations.php:600
 msgid "Add a repeatable logo block"
@@ -1015,18 +1056,6 @@ msgstr "Remover dispositiva"
 #: includes/block-translations.php:760
 msgid "This is irreversible."
 msgstr "Esto es irreversible."
-
-#. translators: Next post navigation label
-#: includes/block-translations.php:764 partials/archive-categories.php:51
-#: partials/pagination.php:6 partials/pagination.php:42
-msgid "Next"
-msgstr "Siguiente"
-
-#. translators: Previous post navigation label
-#: includes/block-translations.php:768 partials/archive-categories.php:50
-#: partials/pagination.php:4 partials/pagination.php:27
-msgid "Previous"
-msgstr "Anterior"
 
 #: includes/block-translations.php:771
 msgid "Add a slide below."
@@ -1332,22 +1361,22 @@ msgstr "Filtrar lista de Sidebar"
 msgid "Sidebar post type"
 msgstr "Tipo de post Sidebar"
 
-#: includes/scripts-and-styles.php:133
+#: includes/scripts-and-styles.php:143
 msgctxt "open double quote"
 msgid "“"
 msgstr "“"
 
-#: includes/scripts-and-styles.php:134
+#: includes/scripts-and-styles.php:144
 msgctxt "close double quote"
 msgid "”"
 msgstr "”"
 
-#: includes/scripts-and-styles.php:135
+#: includes/scripts-and-styles.php:145
 msgctxt "open single quote"
 msgid "‘"
 msgstr "‘"
 
-#: includes/scripts-and-styles.php:136
+#: includes/scripts-and-styles.php:146
 msgctxt "close single quote"
 msgid "’"
 msgstr "’"
@@ -1416,7 +1445,7 @@ msgstr "Desactivar la búsqueda en la navegación"
 msgid "Logo URL"
 msgstr "URL del Logo"
 
-#: includes/theme-supports.php:44
+#: includes/theme-supports.php:47
 msgid "Standard Post Template"
 msgstr "Plantilla de post estándar"
 
@@ -1466,7 +1495,7 @@ msgstr "Información de resultados"
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: partials/article-share.php:2 single.php:81 templates/without-sidebar.php:11
+#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
 msgid "Social sharing options"
 msgstr "Botones para compartir"
 
@@ -1531,18 +1560,25 @@ msgstr "¿Qué estás buscando?"
 msgid "Back to %s"
 msgstr "Volver a %s"
 
-#: single.php:45
+#: single.php:46
 msgid "Post published timestamp"
 msgstr "Fecha de publicación"
 
-#: single.php:73
+#: single.php:48
+msgid "Authored by"
+msgstr "Autor por"
+
+#: single.php:78
 msgid "View Recipients"
 msgstr "Ver destinatarios"
 
+#: single.php:107
+msgid "Tags:"
+msgstr "Etiquetas:"
+
 #. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
+msgid "https://benenson.co"
+msgstr "https://Benenson.co"
 
 #. Description of the plugin/theme
 msgid "Benenson Theme"
@@ -1551,6 +1587,10 @@ msgstr "Benenson Theme"
 #. Author of the plugin/theme
 msgid "Big Bite Creative"
 msgstr "Gran mordida creativa"
+
+#. Author URI of the plugin/theme
+msgid "https://bigbitecreative.com"
+msgstr "https://bigbitecreative.com"
 
 #. Template Name of the plugin/theme
 msgid "Full-width layout"

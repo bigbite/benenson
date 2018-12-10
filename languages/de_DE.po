@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2018-12-06 16:26+0000\n"
-"PO-Revision-Date: 2018-12-06 16:27+0000\n"
+"POT-Creation-Date: 2018-12-10 15:11+0000\n"
+"PO-Revision-Date: 2018-12-10 15:11+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -38,6 +38,42 @@ msgstr "Zur Homepage"
 msgid "Results"
 msgstr "Ergebnisse"
 
+#. translators: 1: number of comments, 2: post title
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Antwort auf &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Antworten auf &ldquo;%2$s&rdquo;"
+
+#: comments.php:30
+msgid "Reply"
+msgstr "Antworten"
+
+#. translators: Previous post navigation label
+#: comments.php:39 includes/block-translations.php:768
+#: partials/archive-categories.php:50 partials/pagination.php:4
+#: partials/pagination.php:27
+msgid "Previous"
+msgstr "Zurück"
+
+#. translators: Next post navigation label
+#: comments.php:40 includes/block-translations.php:764
+#: partials/archive-categories.php:51 partials/pagination.php:6
+#: partials/pagination.php:42
+msgid "Next"
+msgstr "Weiter"
+
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: comments.php:59
+msgctxt "noun"
+msgid "Comment"
+msgstr "Kommentar"
+
 #: footer.php:16
 msgid "Footer"
 msgstr "Footer"
@@ -71,36 +107,41 @@ msgstr "Folgen Sie uns auf Google Plus"
 msgid "Follow us on Instagram"
 msgstr "Folge uns auf Instagram"
 
+#: front-page.php:17 index.php:24 page-fullwidth.php:32 page.php:28
+#: single.php:88 templates/without-sidebar.php:13
+msgid "Pages:"
+msgstr "Seiten:"
+
 #. translators: Label for screen reader/keyboard users
-#: header.php:85
+#: header.php:76
 msgid "Skip to main content"
 msgstr "Zum Hauptinhalt springen"
 
-#: header.php:92
+#: header.php:83
 msgid "Primary navigation"
 msgstr "Hauptnavigation"
 
-#: header.php:97
+#: header.php:88
 msgid "Show search form"
 msgstr "Suchformular anzeigen"
 
-#: header.php:98 includes/theme-options.php:288 searchform.php:4
+#: header.php:89 includes/theme-options.php:288 searchform.php:4
 msgid "Search"
 msgstr "Suche"
 
-#: header.php:111 includes/navigation.php:114
+#: header.php:102 includes/navigation.php:114
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: header.php:112
+#: header.php:103
 msgid "Close navigation"
 msgstr "Navigation schließen"
 
-#: header.php:115
+#: header.php:106
 msgid "Primary"
 msgstr "Primär"
 
-#: header.php:166 header.php:191
+#: header.php:157 header.php:182
 msgid "Play Icon"
 msgstr "Play-Icon"
 
@@ -242,7 +283,7 @@ msgstr "Fügt dem Inhalt eine kleine Menge Polsterung hinzu."
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
-#: single.php:85
+#: single.php:120
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
@@ -400,7 +441,7 @@ msgstr "Begriff"
 msgid "Taxonomy"
 msgstr "Taxonomie"
 
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:24
+#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
 msgid "Category List"
 msgstr "Kategorie Liste"
 
@@ -787,7 +828,7 @@ msgstr "Fügen Sie einen Blockquotenblock hinzu"
 
 #: includes/block-translations.php:597
 msgid "Logo Group"
-msgstr ""
+msgstr "Logogruppe"
 
 #: includes/block-translations.php:600
 msgid "Add a repeatable logo block"
@@ -1014,18 +1055,6 @@ msgstr "Folie entfernen"
 #: includes/block-translations.php:760
 msgid "This is irreversible."
 msgstr "Das ist unumkehrbar."
-
-#. translators: Next post navigation label
-#: includes/block-translations.php:764 partials/archive-categories.php:51
-#: partials/pagination.php:6 partials/pagination.php:42
-msgid "Next"
-msgstr "Weiter"
-
-#. translators: Previous post navigation label
-#: includes/block-translations.php:768 partials/archive-categories.php:50
-#: partials/pagination.php:4 partials/pagination.php:27
-msgid "Previous"
-msgstr "Zurück"
 
 #: includes/block-translations.php:771
 msgid "Add a slide below."
@@ -1331,22 +1360,22 @@ msgstr "Filter-Sidebar-Liste"
 msgid "Sidebar post type"
 msgstr "Sidebar post type"
 
-#: includes/scripts-and-styles.php:133
+#: includes/scripts-and-styles.php:143
 msgctxt "open double quote"
 msgid "“"
 msgstr "\""
 
-#: includes/scripts-and-styles.php:134
+#: includes/scripts-and-styles.php:144
 msgctxt "close double quote"
 msgid "”"
 msgstr "\""
 
-#: includes/scripts-and-styles.php:135
+#: includes/scripts-and-styles.php:145
 msgctxt "open single quote"
 msgid "‘"
 msgstr "'"
 
-#: includes/scripts-and-styles.php:136
+#: includes/scripts-and-styles.php:146
 msgctxt "close single quote"
 msgid "’"
 msgstr "'"
@@ -1415,7 +1444,7 @@ msgstr "Suche in der Navigation deaktivieren"
 msgid "Logo URL"
 msgstr "Logo URL"
 
-#: includes/theme-supports.php:44
+#: includes/theme-supports.php:47
 msgid "Standard Post Template"
 msgstr "Standard-Post-Vorlage"
 
@@ -1465,7 +1494,7 @@ msgstr "Ergebnisinformationen"
 msgid "Sort by"
 msgstr "Sortieren nach"
 
-#: partials/article-share.php:2 single.php:81 templates/without-sidebar.php:11
+#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
 msgid "Social sharing options"
 msgstr "Optionen zur sozialen Teilhabe"
 
@@ -1530,18 +1559,25 @@ msgstr "Wonach suchen Sie?"
 msgid "Back to %s"
 msgstr "Zurück zu %s"
 
-#: single.php:45
+#: single.php:46
 msgid "Post published timestamp"
 msgstr "Post veröffentlicht Zeitstempel"
 
-#: single.php:73
+#: single.php:48
+msgid "Authored by"
+msgstr "Beerbt von"
+
+#: single.php:78
 msgid "View Recipients"
 msgstr "Empfänger anzeigen"
 
+#: single.php:107
+msgid "Tags:"
+msgstr "Tags:"
+
 #. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
+msgid "https://benenson.co"
+msgstr "https://benenson.co"
 
 #. Description of the plugin/theme
 msgid "Benenson Theme"
@@ -1550,6 +1586,10 @@ msgstr "Benenson Thema"
 #. Author of the plugin/theme
 msgid "Big Bite Creative"
 msgstr "Big Bite Creative"
+
+#. Author URI of the plugin/theme
+msgid "https://bigbitecreative.com"
+msgstr "https://bigbitecreative.com"
 
 #. Template Name of the plugin/theme
 msgid "Full-width layout"

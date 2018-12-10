@@ -1,14 +1,16 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2018-12-06 16:24+0000\n"
-"PO-Revision-Date: 2018-12-08 13:20+0000\n"
+"POT-Creation-Date: 2018-12-10 15:11+0000\n"
+"PO-Revision-Date: 2018-12-10 15:14+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -17,8 +19,6 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: ar\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -38,6 +38,46 @@ msgstr "انتقل إلى الصفحة الرئيسية"
 #: archive.php:8 author.php:16
 msgid "Results"
 msgstr "النتائج"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "‫%1$s رد على \"%2$s\""
+msgstr[1] "‫ %1$s  رد على &ldquo;%2$s&rdquo;"
+msgstr[2] "‏‫ %1$s الردود على &ldquo;%2$s&rdqu"
+msgstr[3] "‏‫ %1$s الردود على &ldquo;%2$s&rdqu"
+msgstr[4] "‏‫ %1$s الردود على &ldquo;%2$s&rdqu"
+msgstr[5] "‏‫ %1$s الردود على &ldquo;%2$s&rdqu"
+
+#: comments.php:30
+msgid "Reply"
+msgstr "الرد"
+
+#. translators: Previous post navigation label
+#: comments.php:39 includes/block-translations.php:768
+#: partials/archive-categories.php:50 partials/pagination.php:4
+#: partials/pagination.php:27
+msgid "Previous"
+msgstr "السابق"
+
+#. translators: Next post navigation label
+#: comments.php:40 includes/block-translations.php:764
+#: partials/archive-categories.php:51 partials/pagination.php:6
+#: partials/pagination.php:42
+msgid "Next"
+msgstr "التالي"
+
+#: comments.php:49
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+#: comments.php:59
+msgctxt "noun"
+msgid "Comment"
+msgstr "تعليق"
 
 #: footer.php:16
 msgid "Footer"
@@ -72,36 +112,41 @@ msgstr "تابعنا علي جوجل بلس"
 msgid "Follow us on Instagram"
 msgstr "تابعنا علي انستجرام"
 
+#: front-page.php:17 index.php:24 page-fullwidth.php:32 page.php:28
+#: single.php:88 templates/without-sidebar.php:13
+msgid "Pages:"
+msgstr "الصفحات:"
+
 #. translators: Label for screen reader/keyboard users
-#: header.php:85
+#: header.php:76
 msgid "Skip to main content"
 msgstr "الاطلاع على آخر التطورات"
 
-#: header.php:92
+#: header.php:83
 msgid "Primary navigation"
 msgstr "الملاحة الاوليه"
 
-#: header.php:97
+#: header.php:88
 msgid "Show search form"
 msgstr "إظهار نموذج البحث"
 
-#: header.php:98 includes/theme-options.php:288 searchform.php:4
+#: header.php:89 includes/theme-options.php:288 searchform.php:4
 msgid "Search"
 msgstr "بحث"
 
-#: header.php:111 includes/navigation.php:114
+#: header.php:102 includes/navigation.php:114
 msgid "Main Menu"
 msgstr "القائمة الرئيسية"
 
-#: header.php:112
+#: header.php:103
 msgid "Close navigation"
 msgstr "إغلاق التنقل"
 
-#: header.php:115
+#: header.php:106
 msgid "Primary"
 msgstr "ابتدائي"
 
-#: header.php:166 header.php:191
+#: header.php:157 header.php:182
 msgid "Play Icon"
 msgstr "رمز التشغيل"
 
@@ -243,7 +288,7 @@ msgstr "يضيف كميه صغيره من الحشو إلى المحتوي."
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
-#: single.php:85
+#: single.php:120
 msgid "Sidebar"
 msgstr "الشريط الجانبي"
 
@@ -401,7 +446,7 @@ msgstr "إسم الخاصية المختاره"
 msgid "Taxonomy"
 msgstr "التصنيف"
 
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:24
+#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
 msgid "Category List"
 msgstr "قائمه الفئات"
 
@@ -1013,18 +1058,6 @@ msgstr "أزاله الشريحة"
 msgid "This is irreversible."
 msgstr "وهذا أمر لا رجعه فيه."
 
-#. translators: Next post navigation label
-#: includes/block-translations.php:764 partials/archive-categories.php:51
-#: partials/pagination.php:6 partials/pagination.php:42
-msgid "Next"
-msgstr "التالي"
-
-#. translators: Previous post navigation label
-#: includes/block-translations.php:768 partials/archive-categories.php:50
-#: partials/pagination.php:4 partials/pagination.php:27
-msgid "Previous"
-msgstr "السابق"
-
 #: includes/block-translations.php:771
 msgid "Add a slide below."
 msgstr "أضافه شريحة أدناه."
@@ -1329,22 +1362,22 @@ msgstr "تصفيه قائمه الشريط الجانبي"
 msgid "Sidebar post type"
 msgstr "نوع آخر من الشريط الجانبي"
 
-#: includes/scripts-and-styles.php:133
+#: includes/scripts-and-styles.php:143
 msgctxt "open double quote"
 msgid "“"
 msgstr "\""
 
-#: includes/scripts-and-styles.php:134
+#: includes/scripts-and-styles.php:144
 msgctxt "close double quote"
 msgid "”"
 msgstr "\""
 
-#: includes/scripts-and-styles.php:135
+#: includes/scripts-and-styles.php:145
 msgctxt "open single quote"
 msgid "‘"
 msgstr "'"
 
-#: includes/scripts-and-styles.php:136
+#: includes/scripts-and-styles.php:146
 msgctxt "close single quote"
 msgid "’"
 msgstr "'"
@@ -1413,7 +1446,7 @@ msgstr "تعطيل البحث في التنقل"
 msgid "Logo URL"
 msgstr "رابط الشعار"
 
-#: includes/theme-supports.php:44
+#: includes/theme-supports.php:47
 msgid "Standard Post Template"
 msgstr "قالب النشر القياسي"
 
@@ -1471,7 +1504,7 @@ msgstr "معلومات النتائج"
 msgid "Sort by"
 msgstr "ترتيب حسب"
 
-#: partials/article-share.php:2 single.php:81 templates/without-sidebar.php:11
+#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
 msgid "Social sharing options"
 msgstr "خيارات المشاركة الاجتماعية"
 
@@ -1536,18 +1569,25 @@ msgstr "ما الذي تبحث عنه؟"
 msgid "Back to %s"
 msgstr "عودة الى  %s"
 
-#: single.php:45
+#: single.php:46
 msgid "Post published timestamp"
 msgstr "نشر الطابع الزمني المنشور"
 
-#: single.php:73
+#: single.php:48
+msgid "Authored by"
+msgstr "تاليف"
+
+#: single.php:78
 msgid "View Recipients"
 msgstr "عرض المستلمين"
 
+#: single.php:107
+msgid "Tags:"
+msgstr "العلامات:"
+
 #. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
+msgid "https://benenson.co"
+msgstr "https://benenson.co"
 
 #. Description of the plugin/theme
 msgid "Benenson Theme"
@@ -1556,6 +1596,10 @@ msgstr "بيننسون الموضوع"
 #. Author of the plugin/theme
 msgid "Big Bite Creative"
 msgstr "بيج بايت الابداعيه"
+
+#. Author URI of the plugin/theme
+msgid "https://bigbitecreative.com"
+msgstr "https://bigbitecreative.com"
 
 #. Template Name of the plugin/theme
 msgid "Full-width layout"
