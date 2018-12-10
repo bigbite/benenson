@@ -12,17 +12,18 @@ const browserSync = require('browser-sync').get('bigbite');
 const transforms = require('../common/postcssTransforms');
 const errorHandler = require('../utils/errorHandler');
 const config = require('../config');
+const postcssBanner = require('postcss-banner');
 
 const paths = {
   includePaths: Array.prototype.concat(require('node-normalize-scss').includePaths),
   src: [
-    `${config.src}/styles/app.scss`,
-    `${config.src}/styles/gutenberg.scss`,
+    `${config.src}/styles/style.scss`,
+    `${config.src}/styles/style-editor.scss`,
   ],
   lint: [
     `./${config.src}/styles/**/*.scss`,
   ],
-  out: `${config.dist}/styles`,
+  out: `${config.dist}/`,
 };
 
 const lintTransforms = [
@@ -32,6 +33,20 @@ const lintTransforms = [
     throwError: true,
   }),
 ];
+
+transforms.push(postcssBanner({ banner: `
+	Theme Name: Benenson
+	Theme URI: https://benenson.co
+	Description: Benenson Theme
+	Version: 1.0.2
+	Author: Big Bite Creative
+	Author URI: https://bigbitecreative.com
+	Text Domain: benenson
+  Domain Path: /languages
+  License: GNU General Public License v3
+  License URI: LICENSE
+  Tags: theme-options, rtl-language-support, full-width-template, custom-menu, blog, education, news
+` }));
 
 module.exports = () => {
   gulp.task('styles:lint', () => gulp.src(paths.lint)

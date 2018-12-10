@@ -13,7 +13,7 @@ if ( ! function_exists( 'benenson_theme_options_scripts' ) ) {
 		}
 
 		wp_enqueue_media();
-		wp_register_script( 'benenson-admin-scripts', get_template_directory_uri() . '/assets/scripts/admin.js', [ 'jquery' ], '1.0', true );
+		wp_register_script( 'benenson-admin-scripts', get_template_directory_uri() . '/admin.js', [ 'jquery' ], '1.0', true );
 		wp_enqueue_script( 'benenson-admin-scripts' );
 	}
 }
@@ -122,7 +122,7 @@ if ( ! function_exists( 'benenson_is_post_type' ) ) {
  */
 if ( ! function_exists( 'benenson_add_admin_page' ) ) {
 	function benenson_add_admin_page() {
-		add_menu_page(
+		add_theme_page(
 			esc_html__( 'Theme Settings', 'benenson' ),
 			esc_html__( 'Theme Settings', 'benenson' ),
 			'manage_options',

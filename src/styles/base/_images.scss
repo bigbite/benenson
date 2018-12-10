@@ -33,6 +33,7 @@ figure {
   padding: 0;
 }
 
+.wp-caption,
 .has-caption {
   position: relative;
 
@@ -41,6 +42,7 @@ figure {
   }
 }
 
+.wp-caption-text,
 .image-caption {
   position: absolute;
   z-index: 1;

@@ -1,0 +1,16 @@
+/*
+ * 
+ * 	Theme Name: Benenson
+ * 	Theme URI: https://benenson.co
+ * 	Description: Benenson Theme
+ * 	Version: 1.0.2
+ * 	Author: Big Bite Creative
+ * 	Author URI: https://bigbitecreative.com
+ * 	Text Domain: benenson
+ *   Domain Path: /languages
+ *   License: GNU General Public License v3
+ *   License URI: LICENSE
+ *   Tags: theme-options, rtl-language-support, full-width-template, custom-menu, blog, education, news
+ * 
+ */
+.article-meta .btn,.article-share,.article-sidebar,.page-header{display:none}.article,.article.has-sidebar{width:100%;max-width:none;-webkit-box-flex:1;flex:1 1 100%}.btn--download,.page-footer{display:none}

@@ -9,9 +9,15 @@
   display: none !important;
 }
 
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
 /**
  * Completely remove from the flow but leave available to screen readers.
  */
+.screen-reader-text,
 .u-hiddenVisually {
   position: absolute !important;
   overflow: hidden !important;

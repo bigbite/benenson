@@ -6,8 +6,8 @@ const BBErrorNotify = require('./gulp/utils/BBErrorNotify');
 const paths = {
   entry: `${config.src}/scripts/app.js`,
   blocks: `${config.src}/scripts/blocks.js`,
-  out: `${config.dist}/scripts`,
   admin: `${config.src}/scripts/admin.js`,
+  out: `${config.dist}/`,
 };
 
 const webpackConfig = {

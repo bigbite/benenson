@@ -16,7 +16,6 @@ if ( ! function_exists( 'benenson_render_menu_block' ) ) {
 
 		$menu       = wp_get_nav_menu_object( absint( $menu_id ) );
 		$menu_count = $menu->count;
-		$key        = base64_encode( $menu->name );
 
 		ob_start();
 		?>

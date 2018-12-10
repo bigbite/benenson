@@ -2,14 +2,16 @@ const gulp = require('gulp');
 const del = require('del');
 const config = require('../config');
 
-const paths = {
-  dev: `${config.dist}`,
-  production: [
-    `${config.dist}/scripts`,
-    `${config.dist}/styles`,
-  ],
-};
+const paths = [
+  `${config.dist}/style.css`,
+  `${config.dist}/style-editor.css`,
+  `${config.dist}/print.css`,
+  `${config.dist}/admin.js`,
+  `${config.dist}/array-reverse-polyfill.js`,
+  `${config.dist}/blocks.js`,
+  `${config.dist}/bundle.js`,
+];
 
 module.exports = () => {
-  gulp.task('clean', () => del(config.ENV === 'dev' ? paths.dev : paths.production));
+  gulp.task('clean', () => del(paths));
 };
