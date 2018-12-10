@@ -1,0 +1,33 @@
+sudo: false
+language: php
+cache:
+  directories:
+  - "$HOME/.composer/cache"
+  - "$HOME/.yarn"
+  - "./node_modules"
+before_install:
+- yarn
+jobs:
+  include:
+  - stage: lint
+    php: 5.6
+    script:
+    - "./bin/lint.sh"
+  - stage: lint
+    php: 7.2
+    script:
+    - "./bin/lint.sh"
+  - stage: deploy
+    php: 7.2
+    script:
+    - "./bin/build.sh"
+    if: branch = master
+    deploy:
+      provider: releases
+      api_key:
+        secure: ZJk3Z638wSch+7E24kRcryHxKeb+kLQ4eb8FTPoGMeawXK8e34EbapXd5Cw0jnlG7Oi5lBVilmzXYqdjx/nA/nB2XRElXaveHGfKe77fRLDtbVxW1fkJiraQxy1FQ1shDmf1DqI/RtA95zvasqXjVNzf66dqSUmhGMu/Mdypn5RzoDz3wkpWExP+Jhw/zR+s957PYcNKXWCdvfyB6gq14ZHI5zuqrRcsPjnvGCTUW5AXFOhr1IxbdjICAo/n/s3RZluL5lvOsHRAdUBX/q32A5m2VRd5IvpRoBXnC/lfrfsvr2nGwi7LeLb/nNoX09Ysdcc1I6CQ6aS/RYJBbTcJbbLIn8GPZWWxfmzc59QqOmXLZVISRJk3b80Tgn++CxaI79qaIM0vB++AVsrBEXI6pVpSz3H4GcI6+9XJ2WvuYZknS4tkGypVvGA9gcStzjqdWmtlgotc1XhyuxKAKFJhxUdwil49CR/MKyRG6SDXK0AiSRfLhGzoqWE7HCAUcNpGk6N3cR/0ZPJszbYg2p7SmOLBdrzymlHjdeNtByKSxPU4usyXWiRsB2KlDTbISe+ByDSIXhazw4ZZOcAOxk+YQZhSuCuWQDyC7ca8AsU5lapLtWHZwydNbtKzlrOqvKpR5DovxpdJP8ir2qpSCBhhUc4yv3zPF8inUkQ84IMyCCc=
+      file: "../benenson.zip"
+      skip_cleanup: true
+      draft: true
+      on:
+        repo: bigbitecreative/benenson
