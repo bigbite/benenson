@@ -17,7 +17,7 @@
 }
 
 .edit-post-visual-editor .editor-block-list__block[data-type="benenson/key-fact"]:not(:last-of-type)::before {
-  @include icon(10px, 162px, 40px, 40px);
+  @include icon_svg(40px, 40px, "white" ,"arrow-ios-downward-outline");
   left: calc(50% - 20px);
   top: calc(100% + 5px);
   z-index: 1;

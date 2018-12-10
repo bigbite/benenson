@@ -408,14 +408,14 @@
 }
 
 .article-recipients summary::after {
-  @include icon(271px, 131px, 16px, 16px);
+  @include icon_svg(16px, 16px, "black", "arrow-ios-downward-outline");
   content: "";
   display: inline-block;
   margin-left: auto;
 }
 
 .article-recipients[open] summary::after {
-  @include icon(271px, 194px, 16px, 16px);
+  @include icon_svg(16px, 16px, "black", "arrow-ios-upward-outline");
 }
 
 .article-recipients[open] div {
