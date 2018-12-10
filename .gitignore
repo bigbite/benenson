@@ -94,3 +94,8 @@ composer.lock
 /style-editor.css
 /assets/styles
 /assets/scripts
+/admin.js.map
+/blocks.js.map
+/bundle.js.map
+/style-editor.css.map
+/style.css.map
