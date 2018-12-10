@@ -61,18 +61,9 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title><?php wp_title( '&bull;', true, 'right' ); ?> <?php echo esc_attr( get_bloginfo( 'name' ) ); ?></title>
-
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( sprintf( '%s/assets/favicons/apple-touch-icon.png', get_template_directory_uri() ) ); ?>">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( sprintf( '%s/assets/favicons/favicon-32x32.png', get_template_directory_uri() ) ); ?>">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( sprintf( '%s/assets/favicons/favicon-16x16.png', get_template_directory_uri() ) ); ?>">
-	<link rel="manifest" href="<?php echo esc_url( sprintf( '%s/assets/favicons/site.webmanifest', get_template_directory_uri() ) ); ?>">
-	<link rel="mask-icon" href="<?php echo esc_url( sprintf( '%s/assets/favicons/safari-pinned-tab.svg', get_template_directory_uri() ) ); ?>" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#ffc40d">
-	<meta name="theme-color" content="#ffffff">
 	<script>(function(h){h.classList.remove('no-js');h.classList.add('js');})(document.documentElement);</script>
 	<?php wp_head(); ?>
 </head>

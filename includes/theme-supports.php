@@ -7,13 +7,16 @@
  */
 if ( ! function_exists( 'benenson_theme_support' ) ) {
 	function benenson_theme_support() {
-		add_theme_support( 'menus' );
+		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'editor-color-palette' );
+		add_theme_support( 'disable-custom-colors' );
 
 		remove_theme_support( 'post-formats' );
 
-		add_theme_support( 'editor-color-palette' );
-		add_theme_support( 'disable-custom-colors' );
+		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+		$GLOBALS['content_width'] = apply_filters( 'benenson_content_width', 1200 );
 	}
 }
 
