@@ -3,11 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Benenson Core\n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2018-12-07 21:46+0000\n"
-=======
-"POT-Creation-Date: 2018-12-07 13:48+0000\n"
->>>>>>> develop
+"POT-Creation-Date: 2018-12-10 13:32+0000\n"
 "PO-Revision-Date: 2018-09-21 16:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -111,8 +107,12 @@ msgstr ""
 msgid "Follow us on Instagram"
 msgstr ""
 
+#: front-page.php:17 index.php:24 page-fullwidth.php:32 page.php:28
+#: single.php:88 templates/without-sidebar.php:13
+msgid "Pages:"
+msgstr ""
+
 #. translators: Label for screen reader/keyboard users
-<<<<<<< HEAD
 #: header.php:76
 msgid "Skip to main content"
 msgstr ""
@@ -142,37 +142,6 @@ msgid "Primary"
 msgstr ""
 
 #: header.php:157 header.php:182
-=======
-#: header.php:85
-msgid "Skip to main content"
-msgstr ""
-
-#: header.php:92
-msgid "Primary navigation"
-msgstr ""
-
-#: header.php:97
-msgid "Show search form"
-msgstr ""
-
-#: header.php:98 includes/theme-options.php:288 searchform.php:4
-msgid "Search"
-msgstr ""
-
-#: header.php:111 includes/navigation.php:114
-msgid "Main Menu"
-msgstr ""
-
-#: header.php:112
-msgid "Close navigation"
-msgstr ""
-
-#: header.php:115
-msgid "Primary"
-msgstr ""
-
-#: header.php:166 header.php:191
->>>>>>> develop
 msgid "Play Icon"
 msgstr ""
 
@@ -314,11 +283,7 @@ msgstr ""
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
-<<<<<<< HEAD
-#: single.php:86
-=======
-#: single.php:85
->>>>>>> develop
+#: single.php:120
 msgid "Sidebar"
 msgstr ""
 
@@ -1467,7 +1432,7 @@ msgstr ""
 msgid "Logo URL"
 msgstr ""
 
-#: includes/theme-supports.php:44
+#: includes/theme-supports.php:47
 msgid "Standard Post Template"
 msgstr ""
 
@@ -1517,7 +1482,7 @@ msgstr ""
 msgid "Sort by"
 msgstr ""
 
-#: partials/article-share.php:2 single.php:82 templates/without-sidebar.php:11
+#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
 msgid "Social sharing options"
 msgstr ""
 
@@ -1582,12 +1547,20 @@ msgstr ""
 msgid "Back to %s"
 msgstr ""
 
-#: single.php:45
+#: single.php:46
 msgid "Post published timestamp"
 msgstr ""
 
-#: single.php:73
+#: single.php:48
+msgid "Authored by"
+msgstr ""
+
+#: single.php:78
 msgid "View Recipients"
+msgstr ""
+
+#: single.php:107
+msgid "Tags:"
 msgstr ""
 
 #. Theme URI of the plugin/theme
