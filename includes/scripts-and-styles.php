@@ -105,11 +105,15 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			'wp-data',
 		], true, false );
 
-		wp_add_inline_script(
-			'benenson-blocks-js',
-			sprintf( "wp.i18n.setLocaleData(%s, 'benenson')", wp_json_encode( gutenberg_get_jed_locale_data( 'benenson' ) ) ),
-			'before'
-		);
+		if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {
+			wp_add_inline_script(
+				'benenson-blocks-js',
+				sprintf( "wp.i18n.setLocaleData(%s, 'benenson')", wp_json_encode( gutenberg_get_jed_locale_data( 'benenson' ) ) ),
+				'before'
+			);
+		} elseif ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'benenson-blocks-js', 'benenson' );
+		}
 
 		wp_enqueue_style( 'benenson-gutenberg', benenson_asset_uri( 'styles' ) . '/gutenberg.css', [ 'wp-block-library-theme' ], '1', 'all' );
 	}
