@@ -42,7 +42,12 @@ if ( benenson_post_has_header() ) {
 					<span><?php echo esc_attr( $main_category->name ); ?></span>
 				</a>
 			<?php endif; ?>
-				<span class="article-meta-date" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_attr( $the_time ); ?></span>
+				<div class="article-meta-data">
+					<div class="article-meta-item" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_attr( $the_time ); ?></div>
+				<?php if ( true === apply_filters( 'benenson_display_author', false ) ) : ?>
+					<div class="bypostauthor"><?php echo esc_attr( sprintf( '%s %s', __( 'Authored by', 'benenson' ), get_the_author() ) ); ?></div>
+				<?php endif; ?>
+				</div>
 			</nav>
 
 		<?php if ( $featured_image ) : ?>
@@ -67,15 +72,45 @@ if ( benenson_post_has_header() ) {
 				<h1 id="article-title" class="article-title"><?php the_title(); ?></h1>
 			</header>
 
-			<article class="article-content <?php $reduced_width && print 'is-narrow'; ?>" role="article" aria-labelledby="article-title">
+			<article id="post-<?php the_ID(); ?>" <?php post_class( [ 'article-content', $reduced_width ? 'is-narrow' : '' ] ); ?> role="article" aria-labelledby="article-title">
 			<?php if ( $recipients ) : ?>
 				<details class="article-recipients">
 					<summary><?php esc_html_e( 'View Recipients', 'benenson' ); ?></summary>
 					<div><?php array_map( 'display_letter_recipient', $recipients ); ?></div>
 				</details>
 			<?php endif; ?>
-				<?php the_content(); ?>
+
+			<?php
+
+			the_content();
+
+			wp_link_pages( [
+				'before' => sprintf( '<div class="page-links">%s', __( 'Pages:', 'benenson' ) ),
+				'after'  => '</div>',
+			] );
+
+			if ( true === apply_filters( 'benenson_comments_enabled', false ) ) {
+				comments_template();
+			}
+
+			?>
 			</article>
+
+			<div class="article-tags">
+			<?php
+
+			$tags_list = get_the_tag_list( '', '' );
+			if ( $tags_list ) {
+				/* translators: 1: posted in label, only visible to screen readers. 2: list of tags. */
+				printf(
+					'<span class="screen-reader-text">%1$s </span>%2$s',
+					__( 'Tags:', 'benenson' ),
+					$tags_list
+				); // WPCS: XSS OK.
+			}
+
+			?>
+			</div>
 		</section>
 
 		<aside class="article-shareContainer" aria-label="<?php echo esc_attr( __( 'Social sharing options', 'benenson' ) ); ?>">

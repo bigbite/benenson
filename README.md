@@ -25,5 +25,5 @@ In the interest of fostering an open and welcoming environment, we are using the
 Please refer to the [Github Wiki](https://github.com/bigbitecreative/benenson/wiki) for development details for Benenson.
 
 ## Changelog
-#### 1.0.0
-- Initial Release
+
+Please refer to the [Releases page](https://github.com/bigbitecreative/benenson/releases) for the changelog.

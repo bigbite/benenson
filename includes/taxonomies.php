@@ -1,35 +1,6 @@
 <?php
 
 /**
- * Register taxonomy with default args.
- *
- * @since 1.0.0
- * @param array  $labels    Taxonomy labels.
- * @param string $slug      Taxonomy slug.
- * @param array  $posttypes Post types to apply taxonomy to.
- * @param array  $args      Taxonomy arguments.
- * @return void
- */
-if ( ! function_exists( 'benenson_register_taxonomy' ) ) {
-	function benenson_register_taxonomy( $labels, $slug, $posttypes, $args = [] ) {
-		$default_args = [
-			'labels'            => $labels,
-			'hierarchical'      => false,
-			'public'            => true,
-			'show_ui'           => true,
-			'show_admin_column' => false,
-			'show_in_nav_menus' => true,
-			'show_tagcloud'     => false,
-			'show_in_rest'      => true,
-		];
-
-		$merged_args = array_merge_recursive( $default_args, $args );
-
-		register_taxonomy( $slug, $posttypes, $merged_args );
-	}
-}
-
-/**
  * A more performant version of wp_get_object_terms.
  *
  * @since 1.0.0

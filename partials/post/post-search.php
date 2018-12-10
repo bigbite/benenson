@@ -11,7 +11,7 @@ $epoch = get_post_time( 'U', true );
 $date  = benenson_locale_date( $epoch );
 
 ?>
-<article class="post post--result" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( get_the_title() ) ); ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class( [ 'post--result' ] ); ?> role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( get_the_title() ) ); ?>">
 	<a class="floating-anchor" href="<?php the_permalink(); ?>" aria-hidden="true"></a>
 <?php if ( $post_term ) : ?>
 	<?php $post_term_link = get_term_link( $post_term, $post_term->taxonomy ); ?>

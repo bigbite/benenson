@@ -138,6 +138,16 @@
   max-width: 100%;
   order: 1;
 
+  .post {
+    border: none;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
   @include mq(medium-sm) {
     flex: 1 1 calc(100% - 88px);
     order: 2;
@@ -202,12 +212,25 @@
   }
 }
 
-.article-meta .article-meta-date {
+.article-meta .article-meta-data {
   font-family: $font-family-primary;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.article-meta .article-meta-item,
+.article-meta .bypostauthor {
+  text-align: right;
+
+  .rtl & {
+    text-align: left;
+  }
+}
+
+.article-meta .bypostauthor {
+  margin-top: 5px;
 }
 
 .article-figure {
@@ -268,6 +291,19 @@
   &:focus-within,
   &:enter {
     text-decoration: none;
+  }
+}
+
+.article-tags {
+  margin-top: 20px;
+
+  .post-category + .post-category {
+    margin-left: 5px;
+
+    .rtl & {
+      margin-right: 5px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -332,7 +368,6 @@
   align-items: center;
   width: 50px;
   height: 50px;
-  //background-color: $color-black;
   border-radius: 50%;
   border: 1px solid $color-grey-x-light;
 }
@@ -342,17 +377,7 @@
 }
 
 .article-share ul li + li {
-  //border-left: 1px solid $color-grey-light;
-
-  .rtl & {
-    //border-right: 1px solid $color-grey-light;
-    //border-left: none;
-  }
-
   @include mq(small) {
-    //border-top: 1px solid $color-grey-light;
-    //border-left: none;
-
     .rtl & {
       border-right: none;
     }

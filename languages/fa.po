@@ -5,11 +5,11 @@ msgstr ""
 "PO-Revision-Date: 2018-12-10 15:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: es_ES\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -23,20 +23,20 @@ msgstr ""
 
 #: 404.php:5
 msgid "Page Not Found"
-msgstr "Página no encontrada"
+msgstr "صفحه پیدا نشد"
 
 #: 404.php:6
 msgid "The page you are looking for does not exist."
-msgstr "La página que busca no existe."
+msgstr "صفحه مورد نظر شما وجود ندارد…"
 
 #: 404.php:7
 msgid "Go to the Homepage"
-msgstr "Ir a la página de inicio"
+msgstr "رفتن به صفحه اصلی"
 
 #. translators: List of posts
 #: archive.php:8 author.php:16
 msgid "Results"
-msgstr "Resultados"
+msgstr "نتایج"
 
 #. translators: 1: number of comments, 2: post title
 #: comments.php:15
@@ -44,432 +44,430 @@ msgstr "Resultados"
 msgctxt "comments title"
 msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s Responder a &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s respuestas a &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s پاسخ به &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s پاسخ به &ldquo;%2$s&rdquo;"
 
 #: comments.php:30
 msgid "Reply"
-msgstr "Responder"
+msgstr "پاسخ"
 
 #. translators: Previous post navigation label
 #: comments.php:39 includes/block-translations.php:768
 #: partials/archive-categories.php:50 partials/pagination.php:4
 #: partials/pagination.php:27
 msgid "Previous"
-msgstr "Anterior"
+msgstr "قبلی"
 
 #. translators: Next post navigation label
 #: comments.php:40 includes/block-translations.php:764
 #: partials/archive-categories.php:51 partials/pagination.php:6
 #: partials/pagination.php:42
 msgid "Next"
-msgstr "Siguiente"
+msgstr "بعدی"
 
 #: comments.php:49
 msgid "Comments are closed."
-msgstr "Los comentarios están cerrados."
+msgstr "نظرات بسته شده اند"
 
 #: comments.php:59
 msgctxt "noun"
 msgid "Comment"
-msgstr "Comentario"
+msgstr "نظر"
 
 #: footer.php:16
 msgid "Footer"
-msgstr "Pie de página"
+msgstr "فوتر"
 
 #: footer.php:19
 msgid "Footer Menus"
-msgstr "Menús de pie"
+msgstr "پاورقی منوها"
 
 #. translators: Social Media sharing options
 #: footer.php:48
 msgid "Follow us on:"
-msgstr "Síguenos en:"
+msgstr "تماس با ما:"
 
 #: footer.php:51
 msgid "Follow us on Facebook"
-msgstr "Síguenos en Facebook"
+msgstr "ما را در فیسبوک دنبال کنید"
 
 #: footer.php:54
 msgid "Follow us on Twitter"
-msgstr "Síguenos en Twitter"
+msgstr "ما را در توییتر دنبال کنید"
 
 #: footer.php:57
 msgid "Subscribe to our YouTube channel"
-msgstr "Suscríbete a nuestro canal de YouTube"
+msgstr "مشترک شدن در یوتیوب کانال ما"
 
 #: footer.php:60
 msgid "Follow us on Google Plus"
-msgstr "Síguenos en Google Plus"
+msgstr "ما در گوگل پلاس دنبال کنید"
 
 #: footer.php:63
 msgid "Follow us on Instagram"
-msgstr "Síguenos en Instagram"
+msgstr "ما را در اینستاگرام دنبال کنید"
 
 #: front-page.php:17 index.php:24 page-fullwidth.php:32 page.php:28
 #: single.php:88 templates/without-sidebar.php:13
 msgid "Pages:"
-msgstr "Páginas:"
+msgstr "صفحات:"
 
 #. translators: Label for screen reader/keyboard users
 #: header.php:76
 msgid "Skip to main content"
-msgstr "Saltar al contenido principal"
+msgstr "رفتن به محتوای اصلی"
 
 #: header.php:83
 msgid "Primary navigation"
-msgstr "Navegación primaria"
+msgstr "ناوبری اولیه"
 
 #: header.php:88
 msgid "Show search form"
-msgstr "Mostrar el formulario de búsqueda"
+msgstr "نمایش فرم جستجو"
 
 #: header.php:89 includes/theme-options.php:288 searchform.php:4
 msgid "Search"
-msgstr "Buscar"
+msgstr "جستجو"
 
 #: header.php:102 includes/navigation.php:114
 msgid "Main Menu"
-msgstr "Menú principal"
+msgstr "منوی اصلی"
 
 #: header.php:103
 msgid "Close navigation"
-msgstr "Navegación cercana"
+msgstr "نزدیک ناوبری"
 
 #: header.php:106
 msgid "Primary"
-msgstr "Primario"
+msgstr "اصلی"
 
 #: header.php:157 header.php:182
 msgid "Play Icon"
-msgstr "Ícono de reproducción"
+msgstr "نماد پخش"
 
 #: includes/block-translations.php:5
 msgid "Set Image"
-msgstr "Asignar imagen"
+msgstr "تنظیم تصویر"
 
 #: includes/block-translations.php:8
 msgid "Replace Image"
-msgstr "Reemplazar Imagen"
+msgstr "جایگزین تصویر"
 
 #: includes/block-translations.php:15
 msgid "Remove Image"
-msgstr "Eliminar imagen"
+msgstr "حذف تصویر"
 
 #: includes/block-translations.php:19
 msgid "Content"
-msgstr "Contenido"
+msgstr "محتوا"
 
 #: includes/block-translations.php:22
 msgid "Act Now"
-msgstr "Actuar ahora"
+msgstr "هم اکنون اقدام"
 
 #: includes/block-translations.php:28
 msgid "Size"
-msgstr "Tamaño"
+msgstr "اندازه"
 
 #: includes/block-translations.php:31
 msgid "Standard"
-msgstr "Estándar"
+msgstr "استاندارد"
 
 #: includes/block-translations.php:35
 msgid "Wide"
-msgstr "Ancho"
+msgstr "عریض"
 
 #: includes/block-translations.php:38
 msgid "Centre Aligned"
-msgstr "Centro alineado"
+msgstr "مرکز تراز وسط قرار دارد"
 
 #: includes/block-translations.php:41
 msgid "Centre align the action block."
-msgstr "Centre Alinee el bloque de acción."
+msgstr "تراز مرکز بلوک اقدام کنید."
 
 #: includes/block-translations.php:44
 msgid "(Label)"
-msgstr "(Etiqueta)"
+msgstr "(برچسب)"
 
 #: includes/block-translations.php:47
 msgid "Action"
-msgstr "Acción"
+msgstr "عمل"
 
 #: includes/block-translations.php:50
 msgid "Add an Action block"
-msgstr "Agregar un bloque de acción"
+msgstr "اضافه کردن بلوک اقدام"
 
 #: includes/block-translations.php:54
 msgid "Loading"
-msgstr "Cargando"
+msgstr "بارگذاری"
 
 #: includes/block-translations.php:57
 msgid "Select a sidebar"
-msgstr "Seleccione una barra lateral"
+msgstr "نوار کناری را انتخاب کنید"
 
 #: includes/block-translations.php:60
 msgid "Share Buttons"
-msgstr "Botones de compartir"
+msgstr "دکمه های اشتراک گذاری"
 
 #: includes/block-translations.php:63
 msgid "Disable Share Buttons for this page"
-msgstr "DesHabilitar compartir botones para esta página"
+msgstr "غیر فعال کردن دکمه های اشتراک گذاری برای این صفحه"
 
 #: includes/block-translations.php:66
 msgid "Appearance"
-msgstr "Apariencia"
+msgstr "ظاهر"
 
 #: includes/block-translations.php:70
 msgid "Header"
-msgstr "Cabecera"
+msgstr "سربرگ"
 
 #: includes/block-translations.php:73
 msgid "Navigation Style:"
-msgstr "Estilo de navegación:"
+msgstr "ناوبری سبک:"
 
 #: includes/block-translations.php:76
 msgid "Global"
-msgstr "Global"
+msgstr "جهانی"
 
 #: includes/block-translations.php:83
 msgid "White"
-msgstr "Blanco"
+msgstr "سفید"
 
 #: includes/block-translations.php:88
 msgid "Black"
-msgstr "Negro"
+msgstr "سیاه"
 
 #: includes/block-translations.php:100
 msgid "Options"
-msgstr "Opciones"
+msgstr "تنظیمات"
 
 #: includes/block-translations.php:103
 msgid "Post Thumbnail Style"
-msgstr "Estilo de la miniatura posterior"
+msgstr "استایل تصویرکِ نوشته"
 
 #: includes/block-translations.php:106
 msgid "Affects its display on the news index only."
-msgstr "Afecta únicamente a su visualización en el índice de noticias."
+msgstr "صفحه نمایش خود را در فهرست اخبار تنها تاثیر می گذارد."
 
 #: includes/block-translations.php:109
 msgid "Half size"
-msgstr "Medio tamaño"
+msgstr "سایز نیم"
 
 #: includes/block-translations.php:112
 msgid "Full Background"
-msgstr "Fondo completo"
+msgstr "پس زمینه کامل"
 
 #: includes/block-translations.php:115
 msgid "Hide featured image"
-msgstr "Ocultar Foto principal"
+msgstr "پنهان کردن تصویر شاخص"
 
 #: includes/block-translations.php:118
 msgid "Disables display of featured image on post single."
-msgstr "Deshabilita la visualización de la imagen destacada en post Single."
+msgstr "غیر فعال می کند تصویر ویژه در تک پست نمایش می دهد."
 
 #: includes/block-translations.php:121
 msgid "Force full-width featured image"
-msgstr "Forzar imagen de ancho completo"
+msgstr "نیروی تمام عرض تصویر برجسته"
 
 #: includes/block-translations.php:124
 msgid "Ensures a small featured image fills the width of the content area."
-msgstr ""
-"Asegura que una pequeña imagen con funciones rellene el ancho del área de "
-"contenido."
+msgstr "تصویر کوچک برجسته پر عرض قسمت مطالب را تضمین می کند."
 
 #: includes/block-translations.php:127
 msgid "Reduce Content Width"
-msgstr "Reducir el ancho del contenido"
+msgstr "کاهش عرض محتوا"
 
 #: includes/block-translations.php:130
 msgid "Adds a small amount of padding to the content."
-msgstr "Agrega una pequeña cantidad de relleno al contenido."
+msgstr "بالشتک کوچکی را به مطالب اضافه می کند."
 
 #: includes/block-translations.php:133 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
 #: single.php:120
 msgid "Sidebar"
-msgstr "Barra lateral"
+msgstr "سایدبار"
 
 #: includes/block-translations.php:136
 msgid "Disable Sidebar"
-msgstr "Desactivar Barra derecha"
+msgstr "غیر فعال کردن نوار جانبی"
 
 #: includes/block-translations.php:139
 msgid "Hides the sidebar for this post"
-msgstr "Oculta la barra lateral de este post"
+msgstr "نمایش نوار جانبی برای این پست"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:146
 msgid "Left"
-msgstr "Izquierda"
+msgstr "چپ"
 
 #: includes/block-translations.php:151
 msgid "Default"
-msgstr "Por defecto"
+msgstr "پیش فرض"
 
 #. translators: text alignment. for RTL languages, localise as 'Left'
 #: includes/block-translations.php:158
 msgid "Right"
-msgstr "Derecha"
+msgstr "راست"
 
 #: includes/block-translations.php:161
 msgid "Blockquote"
-msgstr "Blockquote"
+msgstr "نقل قول"
 
 #: includes/block-translations.php:166
 msgid "Alignment"
-msgstr "Alineación"
+msgstr "هم ترازی"
 
 #: includes/block-translations.php:169
 msgid "Add a blockquote block"
-msgstr "Agregar un bloque blockquote"
+msgstr "اضافه کردن بلوک blockquote"
 
 #: includes/block-translations.php:176
 msgid "Small"
-msgstr "Pequeño"
+msgstr "کوچک"
 
 #: includes/block-translations.php:181
 msgid "Medium"
-msgstr "Mediano"
+msgstr "متوسط"
 
 #: includes/block-translations.php:186
 msgid "Large"
-msgstr "Grande"
+msgstr "بزرگ"
 
 #: includes/block-translations.php:189
 msgid "Text Colour"
-msgstr "Color de texto"
+msgstr "رنگ متن"
 
 #: includes/block-translations.php:199
 msgid "Grey"
-msgstr "Gris"
+msgstr "خاکستری"
 
 #: includes/block-translations.php:202
 msgid "Capitalise"
-msgstr "Capitalizar"
+msgstr "امکان"
 
 #: includes/block-translations.php:205
 msgid "Capitalise the content."
-msgstr "Capitalizar el contenido."
+msgstr "محتوای ارتباطی."
 
 #: includes/block-translations.php:208
 msgid "Line"
-msgstr "Línea"
+msgstr "خط"
 
 #: includes/block-translations.php:211
 msgid "Toggle display of line embellishment."
-msgstr "Alternar la visualización del adorno de la línea."
+msgstr "تغییر چگونگی نمایش خط ارایش."
 
 #: includes/block-translations.php:214
 msgid "(Insert Quote Text)"
-msgstr "(Insertar texto de cotización)"
+msgstr "(درج متن نقل قول)"
 
 #: includes/block-translations.php:217
 msgid "(Insert Citation)"
-msgstr "(Insertar citación)"
+msgstr "(درج استناد)"
 
 #: includes/block-translations.php:221
 msgid "Background Style"
-msgstr "Estilo de fondo"
+msgstr "استایل پس زمینه"
 
 #: includes/block-translations.php:224
 msgid "Button Style"
-msgstr "Estilo del botón"
+msgstr "استایل دکمه"
 
 #: includes/block-translations.php:227
 msgid "Primary (Yellow)"
-msgstr "Primario (amarillo)"
+msgstr "اولیه (زرد)"
 
 #: includes/block-translations.php:230
 msgid "Dark"
-msgstr "Oscuro"
+msgstr "تیره"
 
 #: includes/block-translations.php:233
 msgid "Light"
-msgstr "Claro"
+msgstr "روشن"
 
 #: includes/block-translations.php:236
 msgid "(Pre-heading)"
-msgstr "(Pre-partida)"
+msgstr "(عنوان پیش)"
 
 #: includes/block-translations.php:240
 msgid "(Heading)"
-msgstr "(Hacia)"
+msgstr "(عنوان)"
 
 #: includes/block-translations.php:245
 msgid "(Content)"
-msgstr "(Contenido)"
+msgstr "(مطالب)"
 
 #: includes/block-translations.php:249
 msgid "(Button Text)"
-msgstr "(Texto de botón)"
+msgstr "(دکمه متن)"
 
 #: includes/block-translations.php:252
 msgid "Call To Action"
-msgstr "Llamada a acción"
+msgstr "فراخوانی برای اقدام"
 
 #: includes/block-translations.php:255
 msgid "No categories to show."
-msgstr "No hay categorías que mostrar."
+msgstr "بدون دسته بندی را نشان می دهد."
 
 #: includes/block-translations.php:258
 msgid "Maximum number of categories to show"
-msgstr "Número máximo de categorías que se deben mostrar"
+msgstr "حداکثر تعداد دسته ها برای نشان دادن"
 
 #: includes/block-translations.php:261
 msgid "Set to 0 to show all."
-msgstr "Se establece en 0 para mostrar todo."
+msgstr "تنظیم به 0 به همه نشان می دهد."
 
 #: includes/block-translations.php:264
 msgid "Title"
-msgstr "(Título)"
+msgstr "عنوان"
 
 #: includes/block-translations.php:267
 msgid "Loading categories"
-msgstr "Lista de subcategorías"
+msgstr "ردههای صفحه بارگذاری"
 
 #: includes/block-translations.php:270
 msgid "Something went wrong whilst trying to fetch the categories."
-msgstr "Algo salió mal mientras intentaba buscar las categorías."
+msgstr "چیزی اشتباه رفت در حالی که تلاش برای واکشی دسته ها."
 
 #: includes/block-translations.php:273
 msgid "Categories"
-msgstr "Lista de categorías"
+msgstr "دسته بندی ها"
 
 #: includes/block-translations.php:276
 msgid "Term"
-msgstr "Término"
+msgstr "مدت"
 
 #: includes/block-translations.php:279
 msgid "Taxonomy"
-msgstr "Taxonomía"
+msgstr "طبقه بندی"
 
 #: includes/block-translations.php:282 includes/blocks/menu/render.php:23
 msgid "Category List"
-msgstr "Lista de categorías"
+msgstr "لیست دسته بندی"
 
 #: includes/block-translations.php:285
 msgid "Layout Style"
-msgstr "Estilo de maquetación"
+msgstr "سبک چیدمان"
 
 #: includes/block-translations.php:288
 msgid "Row"
-msgstr "Fila"
+msgstr "ردیف"
 
 #: includes/block-translations.php:291
 msgid "Columns"
-msgstr "Columnas"
+msgstr "ستون ها"
 
 #: includes/block-translations.php:294
 msgid "66.6% | 33.3%"
-msgstr "66,6% | 33,3%"
+msgstr "66.6% | 33.3%"
 
 #: includes/block-translations.php:297
 msgid "33.3% | 66.6%"
-msgstr "33,3% | 66,6%"
+msgstr "33.3% | 66.6%"
 
 #: includes/block-translations.php:300
 msgid "33.3% | 33.3% | 33.3%"
-msgstr "33,3% | 33,3% | 33,3%"
+msgstr "33.3% | 33.3% | 33.3%"
 
 #: includes/block-translations.php:303
 msgid "50% | 25% | 25%"
@@ -493,512 +491,510 @@ msgstr "50% | 50%"
 
 #: includes/block-translations.php:318
 msgid "Row Column"
-msgstr "Fila Columna"
+msgstr "ردیف ستون"
 
 #: includes/block-translations.php:321
 msgid "Resource Download"
-msgstr "Descarga de recursos"
+msgstr "منابع دانلود"
 
 #: includes/block-translations.php:324
 msgid "Add a button to download a resource"
-msgstr "Agregar un botón para descargar un recurso"
+msgstr "اضافه کردن یک دکمه برای دانلود منابع"
 
 #: includes/block-translations.php:327
 msgid "File"
-msgstr "Archivo"
+msgstr "فایل"
 
 #: includes/block-translations.php:330
 msgid "A File"
-msgstr "Un archivo"
+msgstr "دریافت فایل"
 
 #: includes/block-translations.php:333
 msgid "[Download Resource]"
-msgstr "[Descargar recurso]"
+msgstr "[دانلود منابع]"
 
 #: includes/block-translations.php:336
 msgid "Remove Resource"
-msgstr "Remover  recurso"
+msgstr "حذف منابع"
 
 #: includes/block-translations.php:339
 msgid "Edit File"
-msgstr "Editar archivo"
+msgstr "ویرایش فایل"
 
 #: includes/block-translations.php:343
 msgid "Normal"
-msgstr "Normal"
+msgstr "معمولی"
 
 #: includes/block-translations.php:347
 msgid "Background Type"
-msgstr "Tipo de fondo"
+msgstr "نوع پس زمینه"
 
 #: includes/block-translations.php:351
 msgid "Image"
-msgstr "Imagen"
+msgstr "تصویر"
 
 #: includes/block-translations.php:355
 msgid "Video"
-msgstr "Video"
+msgstr "ویدئو"
 
 #: includes/block-translations.php:358
 msgid "Embed url"
-msgstr "Incrustar URL"
+msgstr "قراردادن آدرس"
 
 #: includes/block-translations.php:361
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
-msgstr ""
-"Al establecer esto se anulará el enlace CTA y ahora se abrirá un modal con "
-"la incrustación en el héroe."
+msgstr "تنظیم این لینک cta باطل و معین با جاسازی در قهرمان گشوده خواهد شد."
 
 #: includes/block-translations.php:364
 msgid "Background Image"
-msgstr "Imagen de fondo"
+msgstr "تصویر پس زمینه"
 
 #: includes/block-translations.php:367 includes/post-types/sidebar.php:27
 msgid "Featured Image"
-msgstr "Imagen destacada"
+msgstr "تصویر ویژه"
 
 #: includes/block-translations.php:370
 msgid "Featured Video"
-msgstr "Video Destacado"
+msgstr "ویدئو های ویژه"
 
 #: includes/block-translations.php:373
 msgid "(Header Title)"
-msgstr "(Título de encabezado)"
+msgstr "(سر صفحه عنوان)"
 
 #: includes/block-translations.php:376
 msgid "(Header Content)"
-msgstr "(Contenido de encabezado)"
+msgstr "(سر صفحه مطالب)"
 
 #: includes/block-translations.php:379
 msgid "(Call to action)"
-msgstr "(Llamado a la acción)"
+msgstr "(استعلام به عمل)"
 
 #: includes/block-translations.php:384
 msgid "Centre"
-msgstr "Centro"
+msgstr "مرکز"
 
 #: includes/block-translations.php:392
 msgid "Background Colour"
-msgstr "Color de fondo"
+msgstr "رنگ پس زمینه"
 
 #: includes/block-translations.php:395
 msgid "Translucent black"
-msgstr "Negro traslúcido"
+msgstr "سیاه و سفید شفاف"
 
 #: includes/block-translations.php:402
 msgid "None"
-msgstr "Ninguno"
+msgstr "هیچ"
 
 #: includes/block-translations.php:405
 msgid "Set featured video"
-msgstr "Establecer vídeo destacado"
+msgstr "مجموعه کلیپ های برجسته"
 
 #: includes/block-translations.php:408
 msgid "Remove featured video"
-msgstr "Quitar vídeo destacado"
+msgstr "حذف ویدیو"
 
 #: includes/block-translations.php:412
 msgid "Replace Video"
-msgstr "Cambiar Video"
+msgstr "ویدیو جایگزین"
 
 #: includes/block-translations.php:415
 msgid "Required when specifying a width"
-msgstr "Necesario al especificar un ancho"
+msgstr "مورد نیاز هنگام تعیین عرض"
 
 #: includes/block-translations.php:418
 msgid "Minimum Height"
-msgstr "Altura mínima"
+msgstr "حداقل ارتفاع"
 
 #: includes/block-translations.php:421
 msgid "Required if not using width/height, optional otherwise"
-msgstr "Requerido si no usando anchura/altura, opcional de otra manera"
+msgstr "اگر هنوز با استفاده از عرض/ارتفاع اختیاری در غیر این صورت مورد نیاز"
 
 #: includes/block-translations.php:424
 msgid "Reset Embed Url"
-msgstr "Restablecer URL incrustada"
+msgstr "تنظیم مجدد تنظیمات دلخواه شما آدرس"
 
 #: includes/block-translations.php:427
 msgid "Iframe URL"
-msgstr "Iframe URL"
+msgstr "قالب آدرس URL"
 
 #: includes/block-translations.php:430
 msgid "Enter URL to embed here…"
-msgstr "Ingrese la URL para incrustar aquí…"
+msgstr "نشانی اینترنتی را برای جاسازی اینجا وارد کنید…"
 
 #: includes/block-translations.php:433
 msgid "Embed"
-msgstr "Incrustar"
+msgstr "قراردادن"
 
 #: includes/block-translations.php:436
 msgid "Write caption…"
-msgstr "Escribir título…"
+msgstr "نوشتن توضیحات…"
 
 #: includes/block-translations.php:440
 msgid "Width"
-msgstr "Ancho"
+msgstr "عرض"
 
 #: includes/block-translations.php:443
 msgid "Required when specifying a height"
-msgstr "Requerido cuando se especifica una altura"
+msgstr "مورد نیاز هنگام تعیین ارتفاع"
 
 #: includes/block-translations.php:446
 msgid "Height"
-msgstr "Altura"
+msgstr "ارتفاع"
 
 #: includes/block-translations.php:449
 msgid "Iframe"
-msgstr "Iframe"
+msgstr "آی‌فرم"
 
 #: includes/block-translations.php:452
 msgid "Responsive"
-msgstr "Responsivo"
+msgstr "ریسپانسیو"
 
 #: includes/block-translations.php:455
 msgid "Fluid"
-msgstr "Fluído"
+msgstr "مایع"
 
 #: includes/block-translations.php:458
 msgid "Responsive Iframe"
-msgstr "Iframe receptivo"
+msgstr "Iframe پاسخگو"
 
 #: includes/block-translations.php:461
 msgid "(Link Text)"
-msgstr "(Texto del enlace)"
+msgstr "(لینک متن)"
 
 #: includes/block-translations.php:464
 msgid "Remove Button"
-msgstr "Botón Quitar"
+msgstr "حذف دکمه"
 
 #: includes/block-translations.php:467
 msgid "Image Style"
-msgstr "Estilo de la imagen"
+msgstr "استایل تصویر"
 
 #: includes/block-translations.php:470
 msgid "Fixed Height (600px)"
-msgstr "Altura fija (600px)"
+msgstr "ارتفاع ثابت (600px)"
 
 #: includes/block-translations.php:473
 msgid "Actual Height"
-msgstr "Altura real"
+msgstr "ارتفاع واقعی"
 
 #: includes/block-translations.php:476
 msgid "Only has an effect on images smaller than their container"
-msgstr "Sólo tiene un efecto en las imágenes más pequeñas que su contenedor"
+msgstr "تنها اثر بر روی تصاویر کوچکتر از خود را ظرف است"
 
 #: includes/block-translations.php:479
 msgid "(Title)"
-msgstr "(Título)"
+msgstr "(عنوان)"
 
 #: includes/block-translations.php:482
 msgid "Add Button"
-msgstr "Añadir Botón"
+msgstr "افزودن دکمه"
 
 #: includes/block-translations.php:485
 msgid "Choose Video"
-msgstr "Elegir Vídeo"
+msgstr "انتخاب ویدئو"
 
 #: includes/block-translations.php:488
 msgid "Remove Video"
-msgstr "Eliminar Video"
+msgstr "حذف ویدیو"
 
 #: includes/block-translations.php:491
 msgid "Display Overlay"
-msgstr "Mostrar superPosición"
+msgstr "نشان دادن جای گذاشتن"
 
 #: includes/block-translations.php:494
 msgid "Enable Parallax"
-msgstr "Activar Parallax"
+msgstr "فعال‌سازی پارالاکس"
 
 #: includes/block-translations.php:497
 msgid "(Insert Caption, if required)"
-msgstr "(Inserte el título, si es necesario)"
+msgstr "(وارد کردن عنوان، در صورت لزوم)"
 
 #: includes/block-translations.php:500
 msgid "Add a flexible image block with optional overlay"
-msgstr "Agregar un bloque de imagen flexible con superposición opcional"
+msgstr "اضافه کردن بلوک تصویر انعطاف پذیر با روکش های اختیاری"
 
 #: includes/block-translations.php:508
 msgid "(Insert Title)"
-msgstr "(Insertar título)"
+msgstr "(با وارد کردن عنوان)"
 
 #: includes/block-translations.php:513
 msgid "(Insert Content)"
-msgstr "(Insertar contenido)"
+msgstr "(درج مطالب)"
 
 #: includes/block-translations.php:516
 msgid "Key Facts"
-msgstr "Datos clave"
+msgstr "آمار کلیدی"
 
 #: includes/block-translations.php:519
 msgid "Add a key facts block"
-msgstr "Agregar un bloque de datos clave"
+msgstr "افزودن بلوک آمار کلیدی"
 
 #: includes/block-translations.php:524
 msgid "Quantity"
-msgstr "Cantidad"
+msgstr "مقدار"
 
 #: includes/block-translations.php:527
 msgid "Orientation"
-msgstr "Orientación"
+msgstr "جهت"
 
 #: includes/block-translations.php:530
 msgid "Horizontal"
-msgstr "Horizontal"
+msgstr "افقی"
 
 #: includes/block-translations.php:533
 msgid "Vertical"
-msgstr "Vertical"
+msgstr "عمودی"
 
 #: includes/block-translations.php:536
 msgid "Hide Lines"
-msgstr "Esconder líneas"
+msgstr "مخفی کردن خطوط"
 
 #: includes/block-translations.php:539
 msgid "Links with Icons"
-msgstr "Enlaces con iconos"
+msgstr "ارتباط با آیکون"
 
 #: includes/block-translations.php:542
 msgid "Add a links-with-icons block"
-msgstr "Agregar un bloque de vínculos con iconos"
+msgstr "اضافه کردن بلوک لینک با آیکون"
 
 #: includes/block-translations.php:546
 msgid "Pick an image"
-msgstr "Escoge una imagen"
+msgstr "یک تصویر انتخاب کنید"
 
 #: includes/block-translations.php:549
 msgid "(Insert Fact)"
-msgstr "(Insertar hecho)"
+msgstr "(درج این واقعیت)"
 
 #: includes/block-translations.php:553
 msgid "Style"
-msgstr "Estilo"
+msgstr "استایل"
 
 #: includes/block-translations.php:556
 msgid "Use Image"
-msgstr "Usar imagen"
+msgstr "استفاده از تصویر"
 
 #: includes/block-translations.php:559
 msgid "Use Text"
-msgstr "Usar texto"
+msgstr "استفاده از متن"
 
 #: includes/block-translations.php:562
 msgid "Plain"
-msgstr "Plano"
+msgstr "ساده"
 
 #: includes/block-translations.php:566
 msgid "Icon Size"
-msgstr "Tamaño del Icono"
+msgstr "اندازه آیکون"
 
 #: includes/block-translations.php:570
 msgid "Hide Image Credit Display"
-msgstr "Ocultar visualización de crédito de imagen"
+msgstr "عدم نمایش تصویر اعتباری"
 
 #: includes/block-translations.php:573
 msgid "Has Underline"
-msgstr "Ha subRayado"
+msgstr "زیر خط است"
 
 #: includes/block-translations.php:576
 msgid "Display Button"
-msgstr "Botón Display"
+msgstr "نمایش دکمه"
 
 #: includes/block-translations.php:579
 msgid "(Insert Body Text)"
-msgstr "(Insertar texto del cuerpo)"
+msgstr "(با وارد کردن متن)"
 
 #: includes/block-translations.php:582
 msgid "(Insert Link Text)"
-msgstr "(Insertar texto de vínculo)"
+msgstr "(متن لینک را وارد کنید)"
 
 #: includes/block-translations.php:585
 msgid "Links with Icons Group"
-msgstr "Enlaces con Icons Group"
+msgstr "ارتباط با گروه آیکون"
 
 #: includes/block-translations.php:588
 msgid "Add a repeatable links-with-icons block"
-msgstr "Agregar un bloque de enlaces-con-iconos repetibles"
+msgstr "اضافه کردن بلوک لینک با نمادهای قابل تکرار"
 
 #: includes/block-translations.php:591 includes/theme-options.php:306
 #: includes/theme-options.php:309
 msgid "Logo"
-msgstr "Logo"
+msgstr "لوگو"
 
 #: includes/block-translations.php:594
 msgid "Add a logos block"
-msgstr "Agregar un bloque blockquote"
+msgstr "اضافه کردن بلوک آرم"
 
 #: includes/block-translations.php:597
 msgid "Logo Group"
-msgstr "Grupo de logotipos"
+msgstr "آرم گروه"
 
 #: includes/block-translations.php:600
 msgid "Add a repeatable logo block"
-msgstr "Agregar un bloque de enlaces-con-iconos repetibles"
+msgstr "اضافه کردن بلوک نشان قابل تکرار"
 
 #: includes/block-translations.php:603
 msgid "Select a menu in the sidebar"
-msgstr "Seleccione un menú en la barra lateral"
+msgstr "منوی را انتخاب کنید در نوار کناری"
 
 #: includes/block-translations.php:606
 msgid "Loading Menu..."
-msgstr "Menú de carga..."
+msgstr "در حال بارگذاری منو..."
 
 #: includes/block-translations.php:609
 msgid "Select a menu..."
-msgstr "Seleccione un menú..."
+msgstr "منوی را انتخاب کنید..."
 
 #: includes/block-translations.php:612
 msgid "Loading Menus..."
-msgstr "Cargando menús..."
+msgstr "در حال بارگذاری منوها..."
 
 #: includes/block-translations.php:616
 msgid "Menu"
-msgstr "Menú"
+msgstr "منو"
 
 #: includes/block-translations.php:619
 msgid "Navigation"
-msgstr "Navegación"
+msgstr "ناوبری"
 
 #: includes/block-translations.php:622
 msgid "Use related categories where supported"
-msgstr "Utilizar categorías relacionadas cuando se admita"
+msgstr "استفاده از مقوله های مرتبط با پشتیبانی شود"
 
 #: includes/block-translations.php:625
 msgid "Hide Preview"
-msgstr "Ocultar vista previa"
+msgstr "پنهان کردن پیش نمایش"
 
 #: includes/block-translations.php:628
 msgid "Show Preview"
-msgstr "Mostrar vista previa"
+msgstr "نمایش"
 
 #: includes/block-translations.php:631
 msgid "Link List"
-msgstr "Lista de Enlaces"
+msgstr "فهرست لینک"
 
 #: includes/block-translations.php:634
 msgid "Grid"
-msgstr "Cuadrícula"
+msgstr "شبکه ای"
 
 #: includes/block-translations.php:637
 msgid "Post"
-msgstr "Entradas"
+msgstr "پست"
 
 #: includes/block-translations.php:640
 msgid "Type"
-msgstr "Tipo"
+msgstr "نوع"
 
 #: includes/block-translations.php:643
 msgid "Category"
-msgstr "Categoría"
+msgstr "دسته بندی"
 
 #: includes/block-translations.php:646
 msgid "Object Selection"
-msgstr "Selección de objetos"
+msgstr "انتخاب شئ"
 
 #: includes/block-translations.php:649
 msgid "Custom"
-msgstr "Personalizado"
+msgstr "سفارشی"
 
 #: includes/block-translations.php:652
 msgid "Category:"
-msgstr "Categoría:"
+msgstr "دسته بندی:"
 
 #: includes/block-translations.php:655
 msgid "Number of posts to show:"
-msgstr "Número de publicaciones a mostrar:"
+msgstr "تعداد پست ها برای نمایش:"
 
 #: includes/block-translations.php:658
 msgid "Select a category"
-msgstr "Seleccione una categoría"
+msgstr "انتخاب دسته بندی"
 
 #: includes/block-translations.php:664
 msgid "Loading..."
-msgstr "Cargando..."
+msgstr "بارگذاری..."
 
 #: includes/block-translations.php:667
 msgid "Select a category."
-msgstr "Selecciona una categoría."
+msgstr "دسته بندی."
 
 #: includes/block-translations.php:670
 msgid "No Items found"
-msgstr "No se encontraron empresas"
+msgstr "موردی یافت نشد"
 
 #: includes/block-translations.php:673
 msgid "Add another item"
-msgstr "Añadir más artículos al siniestro"
+msgstr "اضافه کردن آیتمهای دیگه"
 
 #: includes/block-translations.php:677
 msgid "No Posts."
-msgstr "No hay publicaciones."
+msgstr "بدون پست."
 
 #: includes/block-translations.php:681
 msgid "(Insert Tag)"
-msgstr "(Insertar etiqueta)"
+msgstr "(درج برچسب)"
 
 #: includes/block-translations.php:684
 msgid "(Tag Name)"
-msgstr "(Nombre de etiqueta)"
+msgstr "(نام برچسب)"
 
 #: includes/block-translations.php:687
 msgid "Loading Posts..."
-msgstr "Cargando posts..."
+msgstr "پست بارگذاری..."
 
 #: includes/block-translations.php:690
 msgid "Your query yielded no results, please try again."
-msgstr "Su consulta no dió resultados, por favor inténtelo de nuevo."
+msgstr "پرس و جو شما هیچ نتیجه را به همراه داشت لطفا مجددا سعی کنید."
 
 #: includes/block-translations.php:693
 msgid "Load More"
-msgstr "Cargar más"
+msgstr "بارگذاری بیشتر"
 
 #: includes/block-translations.php:696
 msgid "Please enter your search query..."
-msgstr "Por favor ingrese su consulta de búsqueda..."
+msgstr "لطفاً جستجوی خود را وارد کنید..."
 
 #: includes/block-translations.php:699
 msgid "Post Type:"
-msgstr "Tipos de Entrada:"
+msgstr "نوع پست:"
 
 #: includes/block-translations.php:702
 msgid "Post List"
-msgstr "Lista de entradas"
+msgstr "لیست پست"
 
 #: includes/block-translations.php:705
 msgid "List"
-msgstr "Lista"
+msgstr "لیست"
 
 #: includes/block-translations.php:708
 msgid "post-list"
-msgstr "post-List"
+msgstr "بعد از لیست"
 
 #: includes/block-translations.php:711
 msgid "Posts"
-msgstr "Entradas"
+msgstr "پست ها"
 
 #: includes/block-translations.php:714
 msgid "Padding"
-msgstr "Relleno"
+msgstr "فاصله"
 
 #: includes/block-translations.php:718
 msgid "Narrow"
-msgstr "Estrecho"
+msgstr "باریک"
 
 #: includes/block-translations.php:721
 msgid "Section"
-msgstr "Sección"
+msgstr "بخش"
 
 #: includes/block-translations.php:724
 msgid "Do you wish to delete this slide? This action is irreversible"
-msgstr "¿Desea eliminar esta diapositiva? Esta acción es irreversible"
+msgstr "آیا مایلید که حذف این اسلاید این عمل غیر قابل برگشت است"
 
 #: includes/block-translations.php:727
 msgid "Show Arrows"
-msgstr "Mostrar Flechas"
+msgstr "نمایش فلش ها"
 
 #: includes/block-translations.php:730
 msgid "Has Content"
-msgstr "Tiene contenido"
+msgstr "محتوای"
 
 #: includes/block-translations.php:733
 msgid ""
@@ -1006,38 +1002,37 @@ msgid ""
 "on only one slide, select the desired slide and toggle the \"Hide Content\" "
 "field in the \"Slide Options\" panel."
 msgstr ""
-"Al deshabilitarlo, ocultará el contenido en las diapositivas * ALL *. Para "
-"deshabilitar esto en una sola diapositiva, seleccione la diapositiva deseada "
-"y alterne el campo \"ocultar contenido\" en el panel \"opciones de "
-"diapositivas\"."
+"با غیر فعال کردن این شما پنهان کردن محتوا در * همه * اسلاید. به در فقط یک "
+"اسلاید غیرفعال کردن اسلاید مورد نظر را انتخاب نمایید و ضامن \"پنهان کردن "
+"محتوا\" زمینه در صفحه \"تنظیمات اسلاید\"."
 
 #: includes/block-translations.php:736
 msgid "Show Tabs"
-msgstr "Mostrar pestañas"
+msgstr "نمایش تب ها"
 
 #: includes/block-translations.php:739
 msgid ""
 "Hide the tabs on the front end, these will still show in the panel to allow "
 "you to navigate through each slide."
 msgstr ""
-"Oculte las lengüetas en el front-end, éstas todavía se mostrarán en el panel "
-"para permitirle navegar a través de cada diapositiva."
+"مخفی کردن زبانه در بخش جلویی این را هنوز در پانل اجازه می دهد تا شما را از "
+"طریق هر اسلاید حرکت نشان دهد."
 
 #: includes/block-translations.php:742
 msgid "Slide Options"
-msgstr "Opciones de diapositiva"
+msgstr "تنظیمات اسلاید"
 
 #: includes/block-translations.php:745
 msgid "Slide Title"
-msgstr "Título de la diapositiva"
+msgstr "عنوان اسلاید"
 
 #: includes/block-translations.php:748
 msgid "Content Alignment"
-msgstr "Alineación del contenido"
+msgstr "تراز محتوا"
 
 #: includes/block-translations.php:751
 msgid "Hide Content"
-msgstr "Ocultar el contenido"
+msgstr "پنهان کردن محتوا"
 
 #: includes/block-translations.php:754
 msgid ""
@@ -1045,89 +1040,88 @@ msgid ""
 "content on all slides go to the \"Options\" and toggle the \"Has Content\" "
 "field."
 msgstr ""
-"Al habilitar esto, esconderá el contenido en * THIS * Slide. Para "
-"deshabilitar el contenido de todas las diapositivas, vaya a las \"opciones\" "
-"y alterne el campo \"tiene contenido\"."
+"این را قادر می سازد شما محتوا در پنهان است * این * اسلاید. برای غیر فعال "
+"کردن محتوا بر همه اسلایدها برو به \"گزینه ها\" و تبدیل میدان \"محتوا است\"."
 
 #: includes/block-translations.php:757
 msgid "Remove Slide"
-msgstr "Remover dispositiva"
+msgstr "حذف اسلاید"
 
 #: includes/block-translations.php:760
 msgid "This is irreversible."
-msgstr "Esto es irreversible."
+msgstr "این غیر قابل برگشت است."
 
 #: includes/block-translations.php:771
 msgid "Add a slide below."
-msgstr "Añada una diapositiva a continuación."
+msgstr "اسلاید زیر را اضافه کنید."
 
 #: includes/block-translations.php:774
 msgid "(Sub-Heading)"
-msgstr "(Sub-título)"
+msgstr "(زیر عنوان)"
 
 #: includes/block-translations.php:777
 msgid "(No Title)"
-msgstr "(Sin título)"
+msgstr "(بدون عنوان)"
 
 #: includes/block-translations.php:780
 msgid "Add Slide"
-msgstr "Agregar slide"
+msgstr "افزودن اسلاید"
 
 #: includes/block-translations.php:783
 msgid "Opaque"
-msgstr "Opaco"
+msgstr "مبهم"
 
 #: includes/block-translations.php:786
 msgid "Translucent"
-msgstr "Translúcido"
+msgstr "شفاف"
 
 #: includes/block-translations.php:789
 msgid "Transparent"
-msgstr "Transparente"
+msgstr "شفاف"
 
 #: includes/block-translations.php:792
 msgid "Tap here to return to gallery"
-msgstr "Pulsa aquí para volver a la galería"
+msgstr "شیر برای بازگشت به گالری"
 
 #: includes/block-translations.php:795
 msgid "Toggle Content"
-msgstr "Contenido desplegable"
+msgstr "محتوا را تغییر دهید"
 
 #: includes/block-translations.php:798
 msgid "Slider"
-msgstr "Slider"
+msgstr "اسلایدر"
 
 #: includes/block-translations.php:801
 msgid "Carousel"
-msgstr "Carrusel"
+msgstr "چرخ فلک"
 
 #: includes/block-translations.php:804
 msgid "Scroller"
-msgstr "Scroller"
+msgstr "اسکرولر"
 
 #: includes/block-translations.php:807
 msgid "(Action Title)"
-msgstr "(Título de la acción)"
+msgstr "(عنوان عمل)"
 
 #: includes/block-translations.php:810
 msgid "(Place Tweet text proforma here)"
-msgstr "(Lugar texto de Tweet proforma aquí)"
+msgstr "(صدای جیر جیر متن proforma اینجا محل)"
 
 #: includes/block-translations.php:813
 msgid "Send this Tweet"
-msgstr "Enviar este Tweet"
+msgstr "این صدای جیر جیر ارسال"
 
 #: includes/block-translations.php:816
 msgid "Tweet Action"
-msgstr "Tweet acción"
+msgstr "صدای جیر جیر اقدام"
 
 #: includes/block-translations.php:819
 msgid "Add a Tweet Action block"
-msgstr "Agregar un bloque de acción de Tweet"
+msgstr "اضافه کردن بلوک عمل صدای جیر جیر"
 
 #: includes/block-translations.php:822
 msgid "Centre Align"
-msgstr "Alineación del centro"
+msgstr "تراز به مرکز"
 
 #. Theme Name of the plugin/theme
 #: includes/blocks/block-category.php:14
@@ -1136,11 +1130,11 @@ msgstr "Benenson"
 
 #: includes/blocks/download/render.php:17
 msgid "Download Resource"
-msgstr "Descargar recurso"
+msgstr "دانلود منابع"
 
 #: includes/blocks/header/render.php:105
 msgid "Play video"
-msgstr "Mirar video"
+msgstr "پخش ویدئو"
 
 #: includes/localisation.php:4
 msgctxt "text direction"
@@ -1150,443 +1144,443 @@ msgstr "ltr"
 #: includes/localisation.php:5
 msgctxt "month name"
 msgid "January"
-msgstr "Enero"
+msgstr "ژانویه"
 
 #: includes/localisation.php:6
 msgctxt "month name"
 msgid "February"
-msgstr "Febrero"
+msgstr "فوریه"
 
 #: includes/localisation.php:7
 msgctxt "month name"
 msgid "March"
-msgstr "Marzo"
+msgstr "مارس"
 
 #: includes/localisation.php:8
 msgctxt "month name"
 msgid "April"
-msgstr "Abril"
+msgstr "آوریل"
 
 #: includes/localisation.php:9
 msgctxt "month name"
 msgid "May"
-msgstr "Mayo"
+msgstr "می"
 
 #: includes/localisation.php:10
 msgctxt "month name"
 msgid "June"
-msgstr "Junio"
+msgstr "ژوئن"
 
 #: includes/localisation.php:11
 msgctxt "month name"
 msgid "July"
-msgstr "Julio"
+msgstr "جولای"
 
 #: includes/localisation.php:12
 msgctxt "month name"
 msgid "August"
-msgstr "Agosto"
+msgstr "آگوست"
 
 #: includes/localisation.php:13
 msgctxt "month name"
 msgid "September"
-msgstr "Septiembre"
+msgstr "سپتامبر"
 
 #: includes/localisation.php:14
 msgctxt "month name"
 msgid "October"
-msgstr "Octubre"
+msgstr "اکتبر"
 
 #: includes/localisation.php:15
 msgctxt "month name"
 msgid "November"
-msgstr "Noviembre"
+msgstr "نوامبر"
 
 #: includes/localisation.php:16
 msgctxt "month name"
 msgid "December"
-msgstr "Diciembre"
+msgstr "دسامبر"
 
 #. translators: Accessibility label for mobile navigation dropdown button
 #: includes/mobile-nav-walker.php:149
 #, php-format
 msgid "Expand %s sub-list"
-msgstr "Expandir %s sub-lista"
+msgstr "گسترش %s لیست زیر"
 
 #: includes/navigation.php:35
 msgid "Visit the Benenson home page"
-msgstr "Visite la Página principal de Benenson"
+msgstr "بازدید از صفحه اصلی Benenson"
 
 #: includes/navigation.php:115
 msgid "Footer Main"
-msgstr "Pie principal"
+msgstr "پاورقی اصلی"
 
 #: includes/navigation.php:116
 msgid "Footer Legal"
-msgstr "Pie de igualdad legal"
+msgstr "بالا و پایین صفحه حقوقی"
 
 #. translators: page number prefix, e.g. "[Page] 1"
 #: includes/pagination.php:27
 msgid "Page"
-msgstr "Página"
+msgstr "صفحه"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:12
 msgid "Most Recent"
-msgstr "Más reciente"
+msgstr "اخیرا"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:14
 msgid "Oldest First"
-msgstr "Antiguos Primero"
+msgstr "قدیمی ترها در اولویت"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:16
 msgid "Title - Ascending"
-msgstr "Título-ascendente"
+msgstr "عنوان- صعودی"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:18
 msgid "Title - Descending"
-msgstr "Título descendente"
+msgstr "عنوان- نزولی"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:23
 msgid "Most Relevant"
-msgstr "Lo m ás relevante"
+msgstr "مربوطه"
 
 #: includes/post-types/sidebar.php:9
 msgctxt "Post Type General Name"
 msgid "Sidebars"
-msgstr "Barras Laterales"
+msgstr "سایدبارها"
 
 #: includes/post-types/sidebar.php:10
 msgctxt "Post Type Singular Name"
 msgid "Sidebar"
-msgstr "Barra lateral"
+msgstr "سایدبار"
 
 #: includes/post-types/sidebar.php:11
 msgid "Sidebars"
-msgstr "Barras Laterales"
+msgstr "سایدبارها"
 
 #: includes/post-types/sidebar.php:13
 msgid "Sidebar Archives"
-msgstr "Archivos Sidebar"
+msgstr "آرشیو نوار جانبی"
 
 #: includes/post-types/sidebar.php:14
 msgid "Sidebar Attributes"
-msgstr "Atributos de Sidebar"
+msgstr "ویژگی های نوار جانبی"
 
 #: includes/post-types/sidebar.php:15
 msgid "Parent Sidebar:"
-msgstr "Barra lateral superior:"
+msgstr "پدر و مادر خوانده:"
 
 #: includes/post-types/sidebar.php:16
 msgid "All Sidebars"
-msgstr "All Sidebars"
+msgstr "همه سایدبارها"
 
 #: includes/post-types/sidebar.php:17
 msgid "Add New Sidebar"
-msgstr "Agregar nueva barra lateral"
+msgstr "افزودن سایدبار جدید"
 
 #: includes/post-types/sidebar.php:18
 msgid "Add New"
-msgstr "Añadir nuevo"
+msgstr "افزودن جدید"
 
 #: includes/post-types/sidebar.php:19
 msgid "New Sidebar"
-msgstr "Nueva barra lateral"
+msgstr "سایدبار جدید"
 
 #: includes/post-types/sidebar.php:20
 msgid "Edit Sidebar"
-msgstr "Editar barra lateral"
+msgstr "ویرایش سایدبار"
 
 #: includes/post-types/sidebar.php:21
 msgid "Update Sidebar"
-msgstr "Actualizar barra lateral"
+msgstr "به روزرسانی سایدبار"
 
 #: includes/post-types/sidebar.php:22
 msgid "View Sidebar"
-msgstr "Ver barra lateral"
+msgstr "مشاهده سایدبار"
 
 #: includes/post-types/sidebar.php:23
 msgid "View Sidebars"
-msgstr "Ver barras laterales"
+msgstr "میلههایجانبی مشاهده"
 
 #: includes/post-types/sidebar.php:24
 msgid "Search Sidebar"
-msgstr "Barra Lateral de busqueda"
+msgstr "جستجو سایدبار"
 
 #: includes/post-types/sidebar.php:25
 msgid "Not Found"
-msgstr "No encontrado"
+msgstr "پیدا نشد"
 
 #: includes/post-types/sidebar.php:26
 msgid "Not Found in Trash"
-msgstr "No se encuentra en la papelera"
+msgstr "در سطل زباله یافت نشد"
 
 #: includes/post-types/sidebar.php:28
 msgid "Set featured image"
-msgstr "Establecer imagen destacada"
+msgstr "تنظیم تصویر برجسته"
 
 #: includes/post-types/sidebar.php:29
 msgid "Remove featured image"
-msgstr "Eliminar la imagen destacada"
+msgstr "حذف تصویر شاخص"
 
 #: includes/post-types/sidebar.php:30
 msgid "Use as featured image"
-msgstr "Usar como imagen destacada"
+msgstr "استفاده به عنوان تصویر شاخص"
 
 #: includes/post-types/sidebar.php:31
 msgid "Insert into sidebar"
-msgstr "Insertar en la barra lateral"
+msgstr "قرار دادن به نوار جانبی"
 
 #: includes/post-types/sidebar.php:32
 msgid "Uploaded to this item"
-msgstr "Subido a este elemento"
+msgstr "بارگذاری در این آیتم"
 
 #: includes/post-types/sidebar.php:33
 msgid "Sidebars list"
-msgstr "Lista de barras laterales"
+msgstr "لیست ستون های فرعی"
 
 #: includes/post-types/sidebar.php:34
 msgid "Sidebars list navigation"
-msgstr "Navegación de lista de barras laterales"
+msgstr "میلههایجانبی لیست ناوبری"
 
 #: includes/post-types/sidebar.php:35
 msgid "Filter sidebar list"
-msgstr "Filtrar lista de Sidebar"
+msgstr "فیلتر لیست نوار جانبی"
 
 #: includes/post-types/sidebar.php:40
 msgid "Sidebar post type"
-msgstr "Tipo de post Sidebar"
+msgstr "نوار نوع پست"
 
 #: includes/scripts-and-styles.php:143
 msgctxt "open double quote"
 msgid "“"
-msgstr "“"
+msgstr "\""
 
 #: includes/scripts-and-styles.php:144
 msgctxt "close double quote"
 msgid "”"
-msgstr "”"
+msgstr "\""
 
 #: includes/scripts-and-styles.php:145
 msgctxt "open single quote"
 msgid "‘"
-msgstr "‘"
+msgstr "'"
 
 #: includes/scripts-and-styles.php:146
 msgctxt "close single quote"
 msgid "’"
-msgstr "’"
+msgstr "'"
 
 #: includes/theme-options.php:126 includes/theme-options.php:127
 msgid "Theme Settings"
-msgstr "Ajustes de tema"
+msgstr "تنظیمات قالب"
 
 #: includes/theme-options.php:191
 msgid "Theme Options"
-msgstr "Opciones del Tema"
+msgstr "تنظیمات قالب"
 
 #: includes/theme-options.php:195
 msgid "Social"
-msgstr "Social"
+msgstr "اجتماعی"
 
 #: includes/theme-options.php:198
 msgid "Facebook"
-msgstr "Facebook"
+msgstr "فیسبوک"
 
 #: includes/theme-options.php:205
 msgid "Twitter"
-msgstr "Twitter"
+msgstr "توییتر"
 
 #: includes/theme-options.php:212
 msgid "YouTube"
-msgstr "YouTube"
+msgstr "یوتیوب"
 
 #: includes/theme-options.php:219
 msgid "Instagram"
-msgstr "Instagram"
+msgstr "اینستاگرام"
 
 #: includes/theme-options.php:227
 msgid "Analytics"
-msgstr "Analytics"
+msgstr "تجزیه و تحلیل"
 
 #: includes/theme-options.php:230
 msgid "Google Tag Manager"
-msgstr "Google Tag Manager"
+msgstr "مديريت برچسب Google"
 
 #: includes/theme-options.php:237
 msgid "Google Analytics"
-msgstr "Google Analytics"
+msgstr "گوگل آنالیز"
 
 #: includes/theme-options.php:248
 msgid "Default Sidebar"
-msgstr "Barra lateral por defecto"
+msgstr "سایدبار پیش فرض"
 
 #: includes/theme-options.php:261
 msgid "Default Page Sidebar"
-msgstr "Barra lateral de página predeterminada"
+msgstr "نوارکناری پیش فرض صفحه"
 
 #: includes/theme-options.php:274
 msgid "Default Archive Sidebar"
-msgstr "Sidebar de archivo predeterminado"
+msgstr "پیش فرض آرشیو نوار جانبی"
 
 #: includes/theme-options.php:291
 msgid "Disable All Search"
-msgstr "Desactivar todas las búsquedas"
+msgstr "غیر فعال کردن همه جستجو"
 
 #: includes/theme-options.php:298
 msgid "Disable Search in Navigation"
-msgstr "Desactivar la búsqueda en la navegación"
+msgstr "غیر فعال کردن جستجو در ناوبری"
 
 #: includes/theme-options.php:330
 msgid "Logo URL"
-msgstr "URL del Logo"
+msgstr "نشانی لوگو"
 
 #: includes/theme-supports.php:47
 msgid "Standard Post Template"
-msgstr "Plantilla de post estándar"
+msgstr "قالب استاندارد پست"
 
 #: partials/archive-categories.php:29
 msgid "Filter results by category"
-msgstr "Filtrar resultados por categoría"
+msgstr "فیلتر کردن نتایج بر اساس طبقه بندی"
 
 #: partials/archive-categories.php:61
 msgid "List of subcategories"
-msgstr "Lista de subcategorías"
+msgstr "فهرست زیر شاخه"
 
 #: partials/archive-categories.php:63
 msgid "List of second-level categories"
-msgstr "Lista de categorías de segundo nivel"
+msgstr "فهرست دسته بندی های سطح"
 
 #: partials/archive-categories.php:66 partials/archive-categories.php:97
 msgid "Select a sub filter"
-msgstr "Seleccionar un subfiltro"
+msgstr "فیلتر زیر را انتخاب کنید"
 
 #: partials/archive-categories.php:94
 msgid "List of third-level categories"
-msgstr "Lista de categorías de tercer nivel"
+msgstr "لیست دسته بندی سطح سوم"
 
 #. translators: Singular/Plural number of posts.
 #: partials/archive-header.php:10
 #, php-format
 msgid "%d result"
 msgid_plural "%d results"
-msgstr[0] "% d resultado"
-msgstr[1] "%d resultados"
+msgstr[0] "%d نتیجه"
+msgstr[1] "%d نتیجه"
 
 #. translators: 1: number of results for search query, 2: don't translate (dynamic search term)
 #: partials/archive-header.php:14
 #, php-format
 msgid "%1$d result for '%2$s'"
 msgid_plural "%1$d results for '%2$s'"
-msgstr[0] "%1$d resultado para %2$s"
-msgstr[1] "%1$d resultados para %2$s"
+msgstr[0] "%1$ d نتیجه برای '%2$s'"
+msgstr[1] "%1$ d را برای '%2$s' نتایج"
 
 #. translators: Label for post results count & sort options
 #: partials/archive-header.php:19
 msgid "Results information"
-msgstr "Información de resultados"
+msgstr "نتایج اطلاعات"
 
 #. translators: Label for post sorting options
 #: partials/archive-header.php:24
 msgid "Sort by"
-msgstr "Ordenar por"
+msgstr "مرتب سازی بر اساس"
 
 #: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
 msgid "Social sharing options"
-msgstr "Botones para compartir"
+msgstr "گزینه های اشتراک گذاری اجتماعی"
 
 #: partials/article-share.php:3
 msgid "Share"
-msgstr "Compartir"
+msgstr "اشتراک گذاری"
 
 #: partials/article-share.php:6
 msgid "Share on Facebook"
-msgstr "Compartir en Facebook"
+msgstr "اشتراک گذاری در فیسبوک"
 
 #: partials/article-share.php:7
 msgid "Facebook Logo"
-msgstr "Logotipo de Facebook"
+msgstr "نشان های فیس بوک"
 
 #: partials/article-share.php:11
 msgid "Share on Twitter"
-msgstr "Compartir en Twitter"
+msgstr "اشتراک گذاری در توییتر"
 
 #: partials/article-share.php:12
 msgid "Twitter Logo"
-msgstr "Logotipo de Twitter"
+msgstr "آرم توییتر"
 
 #: partials/pagination.php:20
 msgid "Pagination"
-msgstr "Paginación"
+msgstr "صفحه بندی"
 
 #: partials/pagination.php:31
 msgid "Page numbers"
-msgstr "Número de página"
+msgstr "شماره صفحات"
 
 #. translators: placeholder is category name
 #: partials/post/post-content.php:17
 #, php-format
 msgid "Article category %s"
-msgstr "Artículo categoría %s"
+msgstr "مقاله دسته %s"
 
 #: partials/post/post-content.php:19 partials/post/post-search.php:22
 msgid "Post published date"
-msgstr "Fecha de publicación"
+msgstr "زمان انتشار پست"
 
 #: search.php:4
 msgid "Search form"
-msgstr "Formulario de búsqueda"
+msgstr "فرم جستجو"
 
 #: search.php:7
 msgid "Search results"
-msgstr "Resultados de la búsqueda"
+msgstr "نتایج جستجو"
 
 #. translators: screen reader text for search field
 #: searchform.php:2
 msgid "Search input"
-msgstr "Buscar entrada"
+msgstr "ورودی جستجو"
 
 #: searchform.php:3
 msgid "What are you looking for?"
-msgstr "¿Qué estás buscando?"
+msgstr "دنبال چی میگردی؟"
 
 #. translators: Link to return to all posts of category %s
 #: single.php:40
 #, php-format
 msgid "Back to %s"
-msgstr "Volver a %s"
+msgstr "بازگشت به %s"
 
 #: single.php:46
 msgid "Post published timestamp"
-msgstr "Fecha de publicación"
+msgstr "پست برچسب زمان منتشر شده"
 
 #: single.php:48
 msgid "Authored by"
-msgstr "Autor por"
+msgstr "نوشته شده توسط"
 
 #: single.php:78
 msgid "View Recipients"
-msgstr "Ver destinatarios"
+msgstr "مشاهده گیرندگان"
 
 #: single.php:107
 msgid "Tags:"
-msgstr "Etiquetas:"
+msgstr "برچسب ها:"
 
 #. Theme URI of the plugin/theme
 msgid "https://benenson.co"
-msgstr "https://Benenson.co"
+msgstr "‫https://benenson.co"
 
 #. Description of the plugin/theme
 msgid "Benenson Theme"
-msgstr "Benenson Theme"
+msgstr "تم Benenson"
 
 #. Author of the plugin/theme
 msgid "Big Bite Creative"
-msgstr "Gran mordida creativa"
+msgstr "خلاق بزرگ نیش"
 
 #. Author URI of the plugin/theme
 msgid "https://bigbitecreative.com"
@@ -1594,44 +1588,4 @@ msgstr "https://bigbitecreative.com"
 
 #. Template Name of the plugin/theme
 msgid "Full-width layout"
-msgstr "Diseño de ancho completo"
-
-#~ msgid "Yellow"
-#~ msgstr "Amarillo"
-
-#~ msgid "Document Reference:"
-#~ msgstr "Referencia del documento:"
-
-#~ msgid "Embed URL"
-#~ msgstr "Incrustar URL"
-
-#~ msgid ""
-#~ "Setting this will override the call to action link and will now open a "
-#~ "modal with the embed."
-#~ msgstr ""
-#~ "Al establecer esto se anulará el enlace de llamada a acción y ahora se "
-#~ "abrirá un modal con la incrustación."
-
-#~ msgid "(Banner Title)"
-#~ msgstr "(Título de la bandera)"
-
-#~ msgid "(Banner Content)"
-#~ msgstr "(Contenido de banner)"
-
-#~ msgid "Banner"
-#~ msgstr "Banner"
-
-#~ msgid "Recipients"
-#~ msgstr "Destinatarios"
-
-#~ msgid "Add a list of recipients"
-#~ msgstr "Agregar una lista de destinatarios"
-
-#~ msgid "Name"
-#~ msgstr "Nombre"
-
-#~ msgid "Role"
-#~ msgstr "Rol"
-
-#~ msgid "Add Row"
-#~ msgstr "Añadir fila"
+msgstr "طرح تمام پهنا"

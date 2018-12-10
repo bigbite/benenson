@@ -7,7 +7,7 @@ if ( false === $featured_image ) {
 }
 
 ?>
-<article class="post post--horizontal postImage--small" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( get_the_title() ) ); ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class( [ 'post--horizontal', 'postImage--small' ] ); ?> role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( get_the_title() ) ); ?>">
 	<figure class="post-figure">
 		<div class="post-figure-ratio" style="background-image: url( <?php echo esc_url( $featured_image ); ?> )">
 			<img src="<?php echo esc_url( $featured_image ); ?>" alt="">

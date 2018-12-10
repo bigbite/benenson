@@ -9,6 +9,15 @@ the_post();
 
 ?>
 <main id="main" role="main">
-	<?php the_content(); ?>
+<?php
+
+the_content();
+
+wp_link_pages( [
+	'before' => sprintf( '<div class="page-links">%s', __( 'Pages:', 'benenson' ) ),
+	'after'  => '</div>',
+] );
+
+?>
 </main>
 <?php get_footer(); ?>

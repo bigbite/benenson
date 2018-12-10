@@ -2,7 +2,7 @@
  * Main dirs.
  */
 const srcDir = 'src';
-const distDir = 'assets';
+const distDir = '.';
 
 /**
  * Globally accessible options.
@@ -14,7 +14,6 @@ const config = {
   tasks: [
     'browsersync',
     'clean',
-    'favicons',
     'images',
     'static',
     'styles',
