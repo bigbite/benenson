@@ -20,7 +20,7 @@ const blockAttributes = {
     type: 'boolean',
   },
   amount: {
-    type: 'string',
+    type: 'integer',
   },
   custom: {
     type: 'array',
