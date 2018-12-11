@@ -40,6 +40,20 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 			'priority' => 10,
 		] );
 
+		$customiser->add_setting( '_social_googleplus', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_social_googleplus', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_social_googleplus', [
+			'label'    => __( 'Google Plus', 'benenson' ),
+			'section'  => 'benenson_social_networks',
+			'type'     => 'text',
+			'priority' => 10,
+		] );
+
 		$customiser->add_setting( '_social_youtube', [
 			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
@@ -267,6 +281,7 @@ if ( ! function_exists( 'benenson_override_get_option' ) ) {
 
 add_filter( 'benenson_option__social_facebook', 'benenson_override_get_option', 10, 3 );
 add_filter( 'benenson_option__social_twitter', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__social_googleplus', 'benenson_override_get_option', 10, 3 );
 add_filter( 'benenson_option__social_youtube', 'benenson_override_get_option', 10, 3 );
 add_filter( 'benenson_option__social_instagram', 'benenson_override_get_option', 10, 3 );
 add_filter( 'benenson_option__logo', 'benenson_override_get_option', 10, 3 );
