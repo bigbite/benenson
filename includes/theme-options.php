@@ -9,12 +9,12 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 			'title'       => __( 'Social Networks', 'benenson' ),
 			'description' => __( 'Manage your social network accounts', 'benenson' ),
 			'priority'    => 30,
-			'capability'  => 'manage_options',
+			'capability'  => 'edit_theme_options',
 		] );
 
 		$customiser->add_setting( '_social_facebook', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_social_facebook', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -28,7 +28,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_social_twitter', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_social_twitter', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -42,7 +42,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_social_youtube', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_social_youtube', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -56,7 +56,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_social_instagram', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_social_instagram', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -73,7 +73,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		 */
 		$customiser->add_setting( '_logo', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_logo', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -86,7 +86,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_logo_url', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_logo_url', '', true ),
 			'sanitize_callback' => 'sanitize_url',
 		] );
@@ -106,7 +106,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 			'title'       => __( 'Sidebars', 'benenson' ),
 			'description' => __( 'Manage your sidebar settings', 'benenson' ),
 			'priority'    => 35,
-			'capability'  => 'manage_options',
+			'capability'  => 'edit_theme_options',
 		] );
 
 		$sidebar_post_list = [];
@@ -124,7 +124,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_default_sidebar_page', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_default_sidebar_page', '', true ),
 			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
 		] );
@@ -139,7 +139,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_default_sidebar_archive', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_default_sidebar_archive', '', true ),
 			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
 		] );
@@ -154,7 +154,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_default_sidebar', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_default_sidebar', '', true ),
 			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
 		] );
@@ -174,12 +174,12 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 			'title'       => __( 'Search', 'benenson' ),
 			'description' => __( 'Manage your search settings', 'benenson' ),
 			'priority'    => 60,
-			'capability'  => 'manage_options',
+			'capability'  => 'edit_theme_options',
 		] );
 
 		$customiser->add_setting( '_search_disabled', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_search_disabled', '', true ),
 			'sanitize_callback' => 'benenson_sanitize_boolean',
 		] );
@@ -192,7 +192,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_search_navigation_disabled', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_search_navigation_disabled', '', true ),
 			'sanitize_callback' => 'benenson_sanitize_boolean',
 		] );
@@ -210,12 +210,12 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 			'title'       => __( 'Analytics', 'benenson' ),
 			'description' => __( 'Manage your Analytics settings', 'benenson' ),
 			'priority'    => 20,
-			'capability'  => 'manage_options',
+			'capability'  => 'edit_theme_options',
 		] );
 
 		$customiser->add_setting( '_analytics_gtm', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_analytics_gtm', '', true ),
 			'sanitize_callback' => 'sanitize_text_field',
 		] );
@@ -229,7 +229,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 
 		$customiser->add_setting( '_analytics_ga', [
 			'type'              => 'theme_mod',
-			'capability'        => 'manage_options',
+			'capability'        => 'edit_theme_options',
 			'default'           => benenson_get_option( '_analytics_ga', '', true ),
 			'sanitize_callback' => 'sanitize_text_field',
 		] );
