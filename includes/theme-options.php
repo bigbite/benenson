@@ -22,7 +22,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		$customiser->add_control( '_social_facebook', [
 			'label'    => __( 'Facebook', 'benenson' ),
 			'section'  => 'benenson_social_networks',
-			'type'     => 'text',
+			'type'     => 'url',
 			'priority' => 10,
 		] );
 
@@ -36,7 +36,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		$customiser->add_control( '_social_twitter', [
 			'label'    => __( 'Twitter', 'benenson' ),
 			'section'  => 'benenson_social_networks',
-			'type'     => 'text',
+			'type'     => 'url',
 			'priority' => 10,
 		] );
 
@@ -50,7 +50,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		$customiser->add_control( '_social_googleplus', [
 			'label'    => __( 'Google Plus', 'benenson' ),
 			'section'  => 'benenson_social_networks',
-			'type'     => 'text',
+			'type'     => 'url',
 			'priority' => 10,
 		] );
 
@@ -64,7 +64,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		$customiser->add_control( '_social_youtube', [
 			'label'    => __( 'YouTube', 'benenson' ),
 			'section'  => 'benenson_social_networks',
-			'type'     => 'text',
+			'type'     => 'url',
 			'priority' => 10,
 		] );
 
@@ -78,7 +78,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		$customiser->add_control( '_social_instagram', [
 			'label'    => __( 'Instagram', 'benenson' ),
 			'section'  => 'benenson_social_networks',
-			'type'     => 'text',
+			'type'     => 'url',
 			'priority' => 10,
 		] );
 
