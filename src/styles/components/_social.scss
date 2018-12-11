@@ -9,7 +9,6 @@
   width: 20px;
   height: 20px;
   color: transparent;
-  visibility: hidden;
 }
 
 .social-facebook::after,
@@ -17,6 +16,9 @@
 .social-instagram::after,
 .social-twitter::after,
 .social-youtube::after {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 14px);
   content: "";
   width: 20px;
   height: 20px;
@@ -26,21 +28,21 @@
 }
 
 .social-facebook::after {
-  @include icon_svg(20px, 20px, "black", "facebook");
+  @include icon_svg(20px, 20px, "white", "facebook");
 }
 
 .social-google::after {
-  @include icon_svg(20px, 20px, "black", "google");
+  @include icon_svg(20px, 20px, "white", "google");
 }
 
 .social-instagram::after {
-  @include icon_svg(20px, 20px, "black", "instagram");
+  @include icon_svg(20px, 20px, "white", "instagram");
 }
 
 .social-twitter::after {
-  @include icon_svg(20px, 20px, "black", "twitter");
+  @include icon_svg(20px, 20px, "white", "twitter");
 }
 
 .social-youtube::after {
-  @include icon_svg(20px, 20px, "black", "youtube");
+  @include icon_svg(20px, 20px, "white", "youtube");
 }

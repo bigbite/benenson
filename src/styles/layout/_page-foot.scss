@@ -263,7 +263,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  margin-left: 18px;
+  margin-left: 10px;
   list-style: none;
 
   .rtl & {
@@ -273,12 +273,13 @@
 }
 
 .page-footerSocial a {
-  @include state-background(lighten($color-black, 20%));
   display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-.page-footerSocial a span {
-  padding: 10px;
-  width: 40px;
-  height: 40px;
+.page-footerSocial a {
+  margin: 0 5px;
 }
