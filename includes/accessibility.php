@@ -45,10 +45,6 @@ add_filter( 'wp_kses_allowed_html', 'benenson_kses_accessibility_attrs' );
  */
 if ( ! function_exists( 'benenson_add_table_accessibility' ) ) {
 	function benenson_add_table_accessibility( $content = '' ) {
-		if ( false === strpos( $content, '<table' ) ) {
-			return $content;
-		}
-
 		/**
 		 * Sets whether accessibility `role` attributes should be
 		 * added to tables within post content.
@@ -58,6 +54,10 @@ if ( ! function_exists( 'benenson_add_table_accessibility' ) ) {
 		 * @param boolean $apply Whether to attributes should be added.
 		 */
 		if ( false === apply_filters( 'benenson_add_a11y_to_tables', true ) ) {
+			return $content;
+		}
+
+		if ( false === strpos( $content, '<table' ) ) {
 			return $content;
 		}
 
