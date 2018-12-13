@@ -7,10 +7,7 @@ Template Post Type: post, page, event
 get_header();
 the_post();
 
-$featured_image        = benenson_featured_image( get_the_ID(), 'post-featured' );
-$featured_image_retina = benenson_featured_image( get_the_ID(), 'post-featured@2x' );
-$hero_title            = benenson_get_meta_field( '_hero_title' );
-$sidebar_is_enabled    = benenson_get_meta_field( '_disable_sidebar' ) !== '1';
+$hero_title = benenson_get_meta_field( '_hero_title' );
 
 ?>
 
