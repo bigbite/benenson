@@ -239,6 +239,7 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
  */
 if ( ! function_exists( 'benenson_render_grid_item' ) ) {
 	function benenson_render_grid_item( $data ) {
+		spaceless();
 		$title         = isset( $data['title'] ) ? $data['title'] : '';
 		$feature_image = $data['featured_image'];
 		?>
@@ -274,6 +275,7 @@ if ( ! function_exists( 'benenson_render_grid_item' ) ) {
 			</div>
 		</article>
 		<?php
+		endspaceless();
 	}
 }
 
