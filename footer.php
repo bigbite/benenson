@@ -56,9 +56,6 @@ $footer_section = [
 					<?php if ( $youtube ) : ?>
 						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $youtube ); ?>" aria-label="<?php echo esc_attr( __( 'Subscribe to our YouTube channel', 'benenson' ) ); ?>"><span class="social-youtube">YouTube</span></a></li>
 					<?php endif; ?>
-					<?php if ( $googleplus ) : ?>
-						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $googleplus ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Google Plus', 'benenson' ) ); ?>"><span class="social-google">Google+</span></a></li>
-					<?php endif; ?>
 					<?php if ( $instagram ) : ?>
 						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $instagram ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Instagram', 'benenson' ) ); ?>"><span class="social-instagram">Instagram</span></a></li>
 					<?php endif; ?>
