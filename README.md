@@ -1,5 +1,5 @@
 # Benenson
-![Benenson Theme Screenshot](./screenshot.png)
+![Benenson Theme Screenshot](./screenshot.jpg)
 Benenson is a WordPress theme 
 
 # Features
