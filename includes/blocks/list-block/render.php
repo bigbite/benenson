@@ -287,6 +287,7 @@ if ( ! function_exists( 'benenson_render_grid_item' ) ) {
  */
 if ( ! function_exists( 'benenson_render_post_item' ) ) {
 	function benenson_render_post_item( $data ) {
+		spaceless();
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 
@@ -335,6 +336,7 @@ if ( ! function_exists( 'benenson_render_post_item' ) ) {
 			</div>
 		</article>
 		<?php
+		endspaceless();
 	}
 }
 
