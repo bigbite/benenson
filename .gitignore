@@ -85,15 +85,6 @@ $RECYCLE.BIN/
 composer.lock
 
 # Production Assets
-/admin.js
-/array-reverse-polyfill.js
-/blocks.js
-/bundle.js
-/print.css
-/style.css
-/style-editor.css
-/assets/styles
-/assets/scripts
 /admin.js.map
 /blocks.js.map
 /bundle.js.map
