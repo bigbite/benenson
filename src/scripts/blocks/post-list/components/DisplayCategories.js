@@ -3,6 +3,7 @@ import isString from 'lodash-es/isString';
 import LinkList from './display/LinkList';
 import GridItem from './display/GridItem';
 import PostItem from './display/PostItem';
+import SplitGridItem from './display/SplitGridItem';
 
 const { __ } = wp.i18n;
 const { Component } = wp.element;
@@ -153,6 +154,7 @@ class DisplayCategories extends Component {
     const isList = style === 'list';
     const isGrid = style === 'grid';
     const isPost = style === 'post';
+    const isSplitGrid = style === 'splitgrid';
 
     const hasCategory = category.length > 0;
     const hasResults = results.length > 0;
@@ -194,6 +196,16 @@ class DisplayCategories extends Component {
         <div>
           <div className={ `grid grid-${this.props.amount}` }>
             {results.filter((item, i) => i < this.props.amount).map(result => <PostItem key={ `${prefix}-${result.id}` } { ...result } />)}
+          </div>
+        </div>
+      );
+    }
+
+    if (isSplitGrid) {
+      return (
+        <div>
+          <div className={ `grid grid-${this.props.amount}` }>
+            {results.filter((item, i) => i < this.props.amount).map(result => <GridItem key={ `${prefix}-${result.id}` } { ...result } />)}
           </div>
         </div>
       );

@@ -341,6 +341,68 @@ if ( ! function_exists( 'benenson_render_post_item' ) ) {
 }
 
 /**
+ * Render the current block item as a grid item.
+ *
+ * @param array $data Item data.
+ * @return string
+ */
+if ( ! function_exists( 'benenson_render_split_grid_item' ) ) {
+	function benenson_render_split_grid_item( $data, $index, $total ) {
+		spaceless();
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
+		$feature_image = $data['featured_image'];
+		?>
+
+		<?php if ( ( 4 === $total || 3 === $total ) && 0 === $index ) : ?>
+			<div class="grid-col grid-col-1">
+		<?php elseif ( 4 === $total && 1 === $index ) : ?>
+			<div class="grid-col grid-col-3">
+		<?php elseif ( 3 === $total && 1 === $index ) : ?>
+			<div class="grid-col grid-col-2">
+		<?php endif; ?>
+
+		<article class="splitGrid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" style="background-image: url(<?php echo esc_url( $feature_image ); ?>)" tabindex="0">
+		<?php if ( ! empty( $data['link'] ) ) : ?>
+			<a class="floating-anchor" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"></a>
+		<?php endif; ?>
+
+			<div class="splitGrid-content">
+			<?php if ( ! empty( $data['tag'] ) ) : ?>
+				<span class="splitGrid-itemMeta">
+				<?php
+				if ( ! empty( $data['tag_link'] ) ) {
+					printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['tag_link'] ), esc_html( $data['tag'] ) );
+				} else {
+					echo esc_attr( $data['tag'] );
+				}
+				?>
+				</span>
+			<?php endif; ?>
+
+			<?php if ( $title ) : ?>
+				<h3 class="splitGrid-itemTitle">
+				<?php
+				if ( ! empty( $data['link'] ) ) {
+					printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['link'] ), esc_html( $title ) );
+				} else {
+					printf( '<span>%s</span>', esc_html( $title ) );
+				}
+				?>
+				</h3>
+			<?php endif; ?>
+			</div>
+		</article>
+		<?php if ( ( 4 === $total || 3 === $total ) && 0 === $index ) : ?>
+			</div>
+		<?php elseif ( $total > 2 && $total === $index ) : ?>
+			</div>
+		<?php endif; ?>
+		<?php
+		endspaceless();
+	}
+}
+
+/**
  * Render the list item block.
  *
  * @param array $attributes Current block attributes.
@@ -378,6 +440,19 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		if ( isset( $attributes['style'] ) && 'post' === $attributes['style'] ) {
 			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
 			array_map( 'benenson_render_post_item', $data );
+			print '</div>';
+
+			return ob_get_clean();
+		}
+
+		if ( isset( $attributes['style'] ) && 'splitgrid' === $attributes['style'] ) {
+			printf( '<div class="grid grid--split grid-%s">', esc_attr( count( $data ) ) );
+			$index = 0;
+			$total = count( $data );
+			foreach ( $data as $item ) {
+				benenson_render_split_grid_item( $item, $index, $total );
+				$index++;
+			}
 			print '</div>';
 
 			return ob_get_clean();
