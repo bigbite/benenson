@@ -204,8 +204,8 @@ class DisplayCategories extends Component {
     if (isSplitGrid) {
       return (
         <div>
-          <div className={ `grid grid-${this.props.amount}` }>
-            {results.filter((item, i) => i < this.props.amount).map(result => <GridItem key={ `${prefix}-${result.id}` } { ...result } />)}
+          <div className={ `splitGrid splitGrid-${this.props.amount}` }>
+            {results.filter((item, i) => i < this.props.amount).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
           </div>
         </div>
       );

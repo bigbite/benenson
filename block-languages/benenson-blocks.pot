@@ -16,6 +16,7 @@ msgstr ""
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:60
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:60
 msgid "Remove Image"
 msgstr ""
 
@@ -650,12 +651,14 @@ msgstr ""
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:30
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:30
 msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:46
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:46
 msgid "(Insert Content)"
 msgstr ""
 
@@ -855,7 +858,7 @@ msgid "Select a category"
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/DisplayCategories.js:163
-#: src/scripts/blocks/post-list/components/SelectPreview.js:9
+#: src/scripts/blocks/post-list/components/SelectPreview.js:10
 #: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
 #: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
 msgid "Loading..."
@@ -869,17 +872,18 @@ msgstr ""
 msgid "No Items found"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCustom.js:152
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:153
 msgid "Add another item"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/SelectPreview.js:13
+#: src/scripts/blocks/post-list/components/SelectPreview.js:14
 #: src/scripts/blocks/post-list/components/post-selector/PostList.js:31
 msgid "No Posts."
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:14
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:14
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:14
 msgid "(Insert Tag)"
 msgstr ""
 
