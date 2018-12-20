@@ -63,6 +63,10 @@ class DisplayComponent extends Component {
             }, {
               label: __('Post', 'benenson'),
               value: 'post',
+            },
+            {
+              label: __('Split Grid', 'benenson'),
+              value: 'splitgrid',
             }] }
             value={ attributes.style }
             onChange={ this.createUpdateAttribute('style') }

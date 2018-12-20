@@ -798,15 +798,15 @@ msgstr ""
 msgid "Navigation"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:100
+#: src/scripts/blocks/post-list/DisplayComponent.js:104
 msgid "Use related categories where supported"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:105
+#: src/scripts/blocks/post-list/DisplayComponent.js:109
 msgid "Hide Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:105
+#: src/scripts/blocks/post-list/DisplayComponent.js:109
 msgid "Show Preview"
 msgstr ""
 
@@ -822,27 +822,31 @@ msgstr ""
 msgid "Post"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:71
+#: src/scripts/blocks/post-list/DisplayComponent.js:68
+msgid "Split Grid"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:75
 msgid "Type"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:73
+#: src/scripts/blocks/post-list/DisplayComponent.js:77
 msgid "Category"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:76
+#: src/scripts/blocks/post-list/DisplayComponent.js:80
 msgid "Object Selection"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:79
+#: src/scripts/blocks/post-list/DisplayComponent.js:83
 msgid "Custom"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:86
+#: src/scripts/blocks/post-list/DisplayComponent.js:90
 msgid "Category:"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:93
+#: src/scripts/blocks/post-list/DisplayComponent.js:97
 msgid "Number of posts to show:"
 msgstr ""
 
@@ -850,22 +854,22 @@ msgstr ""
 msgid "Select a category"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:161
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:163
 #: src/scripts/blocks/post-list/components/SelectPreview.js:9
 #: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
 #: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
 msgid "Loading..."
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:165
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:167
 msgid "Select a category."
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:169
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:171
 msgid "No Items found"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCustom.js:140
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:152
 msgid "Add another item"
 msgstr ""
 

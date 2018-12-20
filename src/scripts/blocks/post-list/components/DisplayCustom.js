@@ -135,6 +135,18 @@ class DisplayCustom extends Component {
         )) }
       </ul> }
 
+      { style === 'splitgrid' && <div className={ `grid grid-${custom.length}` }>
+        { custom.map((item, index) => (
+          <GridItem
+            key={ `${prefix}-${index}` }
+            { ...item }
+            createUpdate={ this.createUpdateAttribute(index) }
+            createRemove={ this.createRemoveItem(index) }
+            updateMedia={ this.createUpdateMediaAttribute(index) }
+          />
+        )) }
+      </div> }
+
       { custom.length < 8 && <button onClick={this.addItem} className="add-more-button">
         <BlockIcon icon="plus-alt" />
         <span>{ __('Add another item', 'benenson') }</span>
