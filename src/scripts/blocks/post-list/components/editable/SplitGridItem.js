@@ -2,11 +2,11 @@ const { __ } = wp.i18n;
 const { RichText, URLInputButton, MediaUpload } = wp.editor;
 const { IconButton } = wp.components;
 
-const GridItem = props => (
-  <article className="grid-item" style={ {
+const SplitGridItem = props => (
+  <article className="splitGrid-item" style={ {
     backgroundImage: `url(${props.featured_image})`,
   } }>
-    <span className="grid-itemMeta">
+    <span className="splitGrid-itemMeta">
       <RichText
         tagName="span"
         onChange={ props.createUpdate('tagText') }
@@ -21,7 +21,7 @@ const GridItem = props => (
         onChange={ props.createUpdate('tagLink') }
       />
     </span>
-    <h3 className="grid-itemTitle">
+    <h3 className="splitGrid-itemTitle">
       <a>
         <RichText
           tagName="span"
@@ -38,7 +38,7 @@ const GridItem = props => (
         />
       </a>
     </h3>
-    <div className="grid-itemContent">
+    <div className="splitGrid-itemContent">
       <RichText
         tagName="p"
         onChange={ props.createUpdate('excerpt') }
@@ -76,4 +76,4 @@ const GridItem = props => (
   </article>
 );
 
-export default GridItem;
+export default SplitGridItem;
