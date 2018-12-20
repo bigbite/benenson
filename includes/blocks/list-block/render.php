@@ -446,7 +446,7 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		}
 
 		if ( isset( $attributes['style'] ) && 'splitgrid' === $attributes['style'] ) {
-			printf( '<div class="grid grid--split grid-%s">', esc_attr( count( $data ) ) );
+			printf( '<div class="splitGrid splitGrid-%s">', esc_attr( count( $data ) ) );
 			$index = 0;
 			$total = count( $data );
 			foreach ( $data as $item ) {

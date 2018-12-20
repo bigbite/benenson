@@ -1,6 +1,7 @@
 import LinkList from './editable/LinkList';
 import GridItem from './editable/GridItem';
 import PostItem from './editable/PostItem';
+import SplitGridItem from './editable/SplitGridItem';
 
 const { __ } = wp.i18n;
 const { Component } = wp.element;
@@ -124,7 +125,7 @@ class DisplayCustom extends Component {
         )) }
       </div> }
 
-      { style === 'post' && <ul className="postList">
+      { style === 'post' && <div className={ `grid grid-${custom.length}` }>
         { custom.map((item, index) => (
           <PostItem
             key={ `${prefix}-${index}` }
@@ -133,11 +134,11 @@ class DisplayCustom extends Component {
             createRemove={ this.createRemoveItem(index) }
           />
         )) }
-      </ul> }
+      </div> }
 
-      { style === 'splitgrid' && <div className={ `grid grid-${custom.length}` }>
+      { style === 'splitgrid' && <div className={ `splitGrid splitGrid-${custom.length}` }>
         { custom.map((item, index) => (
-          <GridItem
+          <SplitGridItem
             key={ `${prefix}-${index}` }
             { ...item }
             createUpdate={ this.createUpdateAttribute(index) }

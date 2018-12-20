@@ -1,6 +1,7 @@
 import LinkList from './display/LinkList';
 import GridItem from './display/GridItem';
 import PostItem from './display/PostItem';
+import SplitGridItem from './display/SplitGridItem';
 
 const { __ } = wp.i18n;
 
@@ -25,6 +26,14 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
     return (
       <div className={ `grid grid-${posts.length}` }>
         {posts.map(result => <PostItem key={ `${props.prefix}-${result.id}` } { ...result } />)}
+      </div>
+    );
+  }
+
+  if (props.style === 'splitgrid') {
+    return (
+      <div className={ `grid grid-${posts.length}` }>
+        {posts.map(result => <SplitGridItem key={ `${props.prefix}-${result.id}` } { ...result } />)}
       </div>
     );
   }
