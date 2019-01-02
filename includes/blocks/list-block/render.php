@@ -33,6 +33,7 @@ if ( ! function_exists( 'benenson_list_process_query' ) ) {
 					'tag_link'       => $tag ? get_term_link( $tag, $tag->taxonomy ) : false,
 					'featured_image' => benenson_featured_image( get_the_ID(), 'grid-item' ),
 					'excerpt'        => get_the_excerpt(),
+					'date'           => get_the_date(),
 				];
 			}
 
@@ -130,6 +131,7 @@ if ( ! function_exists( 'benenson_list_process_custom' ) ) {
 				'tag_link'       => isset( $array['tagLink'] ) ? $array['tagLink'] : false,
 				'featured_image' => $featured_image,
 				'excerpt'        => isset( $array['excerpt'] ) ? $array['excerpt'] : false,
+				'date'        => isset( $array['date'] ) ? $array['date'] : false,
 			];
 
 		}, $attributes['custom'] );
@@ -389,6 +391,12 @@ if ( ! function_exists( 'benenson_render_split_grid_item' ) ) {
 				}
 				?>
 				</h3>
+			<?php endif; ?>
+
+			<?php if ( ! empty( $data['date'] ) ) : ?>
+				<p class="splitGrid-itemDate">
+					<?php echo esc_html( $data['date'] ); ?>
+				</p>
 			<?php endif; ?>
 			</div>
 		</article>

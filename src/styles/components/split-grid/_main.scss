@@ -1,3 +1,64 @@
 .splitGrid {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.splitGrid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.splitGrid-item .splitGrid-content {
+  margin-top: auto;
+}
+
+.splitGrid-item .splitGrid-content .splitGrid-itemDate {
+  margin-bottom: 0px;
+}
+
+.splitGrid-2 .splitGrid-item,
+.splitGrid-3 .grid-col,
+.splitGrid-4 .grid-col {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(58% - 10px);
+
+    &:last-child {
+      flex-basis: calc(42% - 10px);
+      margin-right: 0;
+    }
+  }
+}
+
+.splitGrid .grid-col:not(.grid-col-1) {
+  height: 100%;
+}
+
+.splitGrid .grid-col-1 .splitGrid-item {
+  min-height: 100%;
+}
+
+.splitGrid-3 .grid-col-2 .splitGrid-item {
+  min-height: calc(50% - 10px);
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.splitGrid-4 .grid-col-3 .splitGrid-item {
+  min-height: calc(33.33333% - 13px);
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }

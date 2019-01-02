@@ -114,6 +114,7 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			'wp-element',
 			'wp-edit-post',
 			'wp-data',
+			'wp-date',
 		], true, false );
 
 		if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {

@@ -857,22 +857,22 @@ msgstr ""
 msgid "Select a category"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:163
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:167
 #: src/scripts/blocks/post-list/components/SelectPreview.js:10
 #: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
 #: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
 msgid "Loading..."
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:167
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:171
 msgid "Select a category."
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:171
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:175
 msgid "No Items found"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCustom.js:153
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:154
 msgid "Add another item"
 msgstr ""
 

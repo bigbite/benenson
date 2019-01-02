@@ -7,7 +7,7 @@ import SplitGridItem from './display/SplitGridItem';
 
 const { __ } = wp.i18n;
 const { Component } = wp.element;
-
+const { dateI18n, format, __experimentalGetSettings } = wp.date;
 
 class DisplayCategories extends Component {
   constructor(...args) {
@@ -136,6 +136,9 @@ class DisplayCategories extends Component {
     let excerpt = this.strip(resp.excerpt.rendered);
     excerpt = excerpt.length > 250 ? `${excerpt.slice(0, 250)}...` : '';
 
+    const dateFormat = __experimentalGetSettings().formats.date;
+    const publishedDate = dateI18n(dateFormat, resp.date);
+
     return {
       id: resp.id,
       title: resp.title.rendered,
@@ -143,6 +146,7 @@ class DisplayCategories extends Component {
       tag: tags.shift(),
       excerpt,
       featured_image: featuredImage,
+      date: publishedDate,
     };
   });
 
@@ -203,9 +207,12 @@ class DisplayCategories extends Component {
 
     if (isSplitGrid) {
       return (
-        <div>
-          <div className={ `splitGrid splitGrid-${this.props.amount}` }>
-            {results.filter((item, i) => i < this.props.amount).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
+        <div className={ `splitGrid splitGrid-${this.props.amount}` }>
+          <div className="grid-col grid-col-1">
+            <SplitGridItem key={ `${prefix}-${results[0].id}` } { ...results[0] } />
+          </div>
+          <div className={ `grid-col grid-col-${this.props.amount -1}` }>
+            {results.splice(1).filter((item, i) => i < this.props.amount -1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
           </div>
         </div>
       );
