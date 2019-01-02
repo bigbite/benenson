@@ -16,6 +16,7 @@ class DisplayCustom extends Component {
     excerpt: '',
     featured_image: '',
     featured_image_id: '',
+    date: '',
   };
 
   createUpdateMediaAttribute = index => ({ featuredImageId, featuredImage }) => {
