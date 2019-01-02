@@ -131,7 +131,7 @@ if ( ! function_exists( 'benenson_list_process_custom' ) ) {
 				'tag_link'       => isset( $array['tagLink'] ) ? $array['tagLink'] : false,
 				'featured_image' => $featured_image,
 				'excerpt'        => isset( $array['excerpt'] ) ? $array['excerpt'] : false,
-				'date'        => isset( $array['date'] ) ? $array['date'] : false,
+				'date'           => isset( $array['date'] ) ? $array['date'] : false,
 			];
 
 		}, $attributes['custom'] );
