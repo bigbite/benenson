@@ -2,6 +2,14 @@ const { __ } = wp.i18n;
 const { RichText, URLInputButton, MediaUpload } = wp.editor;
 const { IconButton } = wp.components;
 
+const setURL = (image) => {
+  if (!image.sizes || !Object.prototype.hasOwnProperty.call(image.sizes, 'large')) {
+    return image.url;
+  }
+
+  return image.sizes.large.url;
+};
+
 const SplitGridItem = props => (
   <article className="splitGrid-item" style={ {
     backgroundImage: `url(${props.featured_image})`,
@@ -54,16 +62,16 @@ const SplitGridItem = props => (
         props.featured_image_id &&
         props.featured_image_id !== -1 &&
         <IconButton icon="no-alt" onClick={ () => props.updateMedia({
-          featured_image_id: '',
-          featured_image: '',
+          featuredImageId: '',
+          featuredImage: '',
         }) }>
           { __('Remove Image', 'benenson') }
         </IconButton>
       }
       <MediaUpload
-        onSelect={ ({ id, url }) => props.updateMedia({
-          featured_image_id: id,
-          featured_image: url,
+        onSelect={ media => props.updateMedia({
+          featuredImageId: media.id,
+          featuredImage: setURL(media),
         }) }
         value={ props.featured_image_id }
         allowedTypes={ ['image'] }

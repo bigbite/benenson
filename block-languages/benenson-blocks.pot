@@ -16,7 +16,7 @@ msgstr ""
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:60
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:60
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
 msgid "Remove Image"
 msgstr ""
 
@@ -651,14 +651,14 @@ msgstr ""
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:30
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:30
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:46
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:46
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
 msgstr ""
 
@@ -883,7 +883,7 @@ msgstr ""
 
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:14
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:14
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:14
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 msgid "(Insert Tag)"
 msgstr ""
 
