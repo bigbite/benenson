@@ -211,8 +211,8 @@ class DisplayCategories extends Component {
           <div className="grid-col grid-col-1">
             <SplitGridItem key={ `${prefix}-${results[0].id}` } { ...results[0] } />
           </div>
-          <div className={ `grid-col grid-col-${this.props.amount -1}` }>
-            {results.splice(1).filter((item, i) => i < this.props.amount -1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
+          <div className={ `grid-col grid-col-${this.props.amount - 1}` }>
+            {results.splice(1).filter((item, i) => i < this.props.amount - 1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
           </div>
         </div>
       );
