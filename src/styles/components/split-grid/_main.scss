@@ -14,6 +14,17 @@
 
 .splitGrid-item .splitGrid-content {
   margin-top: auto;
+  color: $color-white;
+}
+
+.splitGrid-item .image-caption {
+  visibility: hidden;
+}
+
+.splitGrid-item .splitGrid-content .splitGrid-itemDate,
+.splitGrid-item .splitGrid-content .splitGrid-itemMeta a,
+.splitGrid-item .splitGrid-content .splitGrid-itemTitle a {
+  color: $color-white;
 }
 
 .splitGrid-item .splitGrid-content .splitGrid-itemDate {
