@@ -1,6 +1,5 @@
 import classnames from 'classnames';
 import PostMediaSelector from '../PostMediaSelector';
-import PostFeaturedVideo from '../header/PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
@@ -10,8 +9,6 @@ const { InspectorControls, RichText, URLInputButton } = wp.editor;
 class DisplayComponent extends Component {
   constructor(...args) {
     super(...args);
-    this.state = {
-    };
   }
 
   handleMediaChange = (media) => {

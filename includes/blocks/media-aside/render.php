@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Renders the header block.
+ * Renders the media aside block.
  *
  * @since 1.0.0
  * @return string
@@ -9,7 +9,7 @@
 if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 	function benenson_render_media_aside_block( array $attributes = [] ) {
 
-		$required = [ 'title', 'content', 'ctaLink', 'ctaText', 'mediaId' ];
+		$required = [ 'title', 'mediaId' ];
 		foreach ( $required as $req ) {
 			if ( ! isset( $attributes[ $req ] ) ) {
 				$attributes[ $req ] = '';
@@ -17,13 +17,6 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		}
 
 		spaceless();
-
-		if ( ! empty( $attributes['embedId'] ) && 0 !== $attributes['embedId'] ) {
-			printf(
-				'<div class="page-heroVideoContainer"><video class="page-heroVideo" autoplay loop muted><source src="%s"></video></div>',
-				esc_url( wp_get_attachment_url( $attributes['embedId'] ) )
-			);
-		}
 
 		print '<div class="mediaAside"><div class="mediaAside-col"><div class="mediaAside-content">';
 
@@ -41,13 +34,18 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 
 		print '</div></div><div class="mediaAside-col">';
 
-		if ( $attributes['mediaId'] ) {
+		if ( $attributes['mediaId'] && ! empty ( $attributes['embed'] ) ) {
 			printf(
 				'<div class="mediaAside-image">%s <a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i></a></div>',
 				wp_get_attachment_image( $attributes['mediaId'], 'full' ),
 				esc_url( $attributes['ctaLink'] ),
 				esc_url( $attributes['embed'] ),
 				esc_html__( 'Play video', 'benenson' )
+			);
+		} else if ( $attributes['mediaId'] ) {
+			printf(
+				'<div class="mediaAside-image">%s</div>',
+				wp_get_attachment_image( $attributes['mediaId'], 'full' )
 			);
 		}
 

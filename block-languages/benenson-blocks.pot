@@ -660,7 +660,6 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:39
 #: src/scripts/blocks/media-aside/DisplayComponent.js:80
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
-#: src/scripts/blocks/media-aside/DisplayComponent.js:81
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:46
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"

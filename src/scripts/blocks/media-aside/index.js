@@ -1,5 +1,5 @@
 /**
- * BLOCK: iframe-embed
+ * BLOCK: media-aside
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -50,9 +50,6 @@ registerBlockType('benenson/media-aside', {
       type: 'string',
     },
     mediaId: {
-      type: 'integer',
-    },
-    videoId: {
       type: 'integer',
     },
     embed: {

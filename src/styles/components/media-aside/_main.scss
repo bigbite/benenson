@@ -18,7 +18,10 @@
 }
 
 .mediaAside .mediaAside-col + .mediaAside-col {
+  margin-top: 25px;
+
   @include mq(x-small) {
+    margin-top: 0px;
     margin-left: flexy-gutter();
   }
 }
