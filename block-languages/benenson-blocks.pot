@@ -455,6 +455,7 @@ msgid "Video"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:138
+#: src/scripts/blocks/media-aside/DisplayComponent.js:50
 msgid "Embed url"
 msgstr ""
 
@@ -648,6 +649,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
+#: src/scripts/blocks/media-aside/DisplayComponent.js:69
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:30
@@ -656,7 +658,9 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
+#: src/scripts/blocks/media-aside/DisplayComponent.js:80
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
+#: src/scripts/blocks/media-aside/DisplayComponent.js:81
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:46
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
@@ -774,6 +778,22 @@ msgstr ""
 
 #: src/scripts/blocks/logo-list/index.js:21
 msgid "Add a repeatable logo block"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:54
+msgid "Image/Video Poster"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:90
+msgid "(Insert Link text)"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/index.js:27
+msgid "Media aside"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/index.js:34
+msgid "Media"
 msgstr ""
 
 #: src/scripts/blocks/menu/DisplayComponent.js:110
