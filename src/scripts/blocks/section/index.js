@@ -36,13 +36,16 @@ registerBlockType('benenson/block-section', {
     width: {
       type: 'string',
     },
+    id: {
+      type: 'string',
+    },
   },
 
   edit: DisplayComponent,
 
   // Returns null due to the component being rendered server side
   save: ({ attributes }) => (
-    <section className={ classNames({
+    <section id={attributes.id} className={ classNames({
       section: true,
       'section--tinted': attributes.background === 'grey',
       [`section--${attributes.padding}`]: !!attributes.padding,

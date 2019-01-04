@@ -1,0 +1,41 @@
+// Additional styles for link gutenberg block
+.btn.icon--downArrow,
+.btn.icon--upArrow {
+  position: relative;
+  padding: 14px 60px 14px 24px;
+}
+
+.btn.icon--downArrow::before,
+.btn.icon--upArrow::before {
+  @include icon_svg(40px, 40px, "white" ,"arrow-ios-downward-outline");
+  content: "";
+  position: absolute;
+  left: calc(100% - 50px);
+  top: calc(50% - 20px);
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.btn.icon--downArrow:enter::before,
+.btn.icon--upArrow:enter::before {
+  @include icon_svg(40px, 40px, "black" ,"arrow-ios-downward-outline");
+}
+
+.btn.icon--upArrow::before {
+  transform: rotate(180deg);
+}
+
+.btn.btn--primaryOutline {
+  @extend .btn--outline;
+}
+
+.btn.btn--primaryOutline.icon--downArrow::before,
+.btn.btn--primaryOutline.icon--upArrow::before {
+  @include icon_svg(40px, 40px, "black" ,"arrow-ios-downward-outline");
+}
+
+.btn.btn--primaryOutline.icon--downArrow:enter::before,
+.btn.btn--primaryOutline.icon--upArrow:enter::before {
+  @include icon_svg(40px, 40px, "white" ,"arrow-ios-downward-outline");
+}
