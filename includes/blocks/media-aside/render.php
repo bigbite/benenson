@@ -42,7 +42,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 				esc_url( $attributes['embed'] ),
 				esc_html__( 'Play video', 'benenson' )
 			);
-		} else if ( $attributes['mediaId'] ) {
+		} elseif ( $attributes['mediaId'] ) {
 			printf(
 				'<div class="mediaAside-image">%s</div>',
 				wp_get_attachment_image( $attributes['mediaId'], 'full' )
