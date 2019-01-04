@@ -17,16 +17,18 @@ class DisplayCustom extends Component {
     featured_image: '',
     featured_image_id: '',
     date: '',
+    buttonText: '',
+    buttonLink: '',
   };
-
-  createUpdateMediaAttribute = index => ({ featuredImageId, featuredImage }) => {
+  // eslint-disable-next-line
+  createUpdateMediaAttribute = index => ({ featured_image_id, featured_image }) => {
     if (this.props.custom[index]) {
       return this.props.setAttributes({
         custom: [
           ...this.props.custom.map((item, i) => (index === i ? ({
             ...item,
-            featuredImage,
-            featuredImageId,
+            featured_image,
+            featured_image_id,
           }) : item)),
         ],
       });
@@ -37,8 +39,8 @@ class DisplayCustom extends Component {
         ...this.props.custom,
         {
           ...DisplayCustom.defaultObject,
-          featuredImage,
-          featuredImageId,
+          featured_image,
+          featured_image_id,
         },
       ],
     });
@@ -133,6 +135,7 @@ class DisplayCustom extends Component {
             { ...item }
             createUpdate={ this.createUpdateAttribute(index) }
             createRemove={ this.createRemoveItem(index) }
+            updateMedia={ this.createUpdateMediaAttribute(index) }
           />
         )) }
       </div> }

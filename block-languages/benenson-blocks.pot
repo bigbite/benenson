@@ -15,7 +15,7 @@ msgstr ""
 #: src/scripts/blocks/action/BlockEdit.js:78
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:60
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:103
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
 msgid "Remove Image"
 msgstr ""
@@ -315,6 +315,7 @@ msgid "(Content)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 #: src/scripts/blocks/slider/DisplayComponent.js:334
 msgid "(Button Text)"
 msgstr ""
@@ -460,6 +461,7 @@ msgid "Video"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:138
+#: src/scripts/blocks/media-aside/DisplayComponent.js:43
 msgid "Embed url"
 msgstr ""
 
@@ -654,16 +656,18 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
+#: src/scripts/blocks/media-aside/DisplayComponent.js:62
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:30
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
+#: src/scripts/blocks/media-aside/DisplayComponent.js:73
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:46
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
 msgstr ""
@@ -834,6 +838,22 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
+#: src/scripts/blocks/media-aside/DisplayComponent.js:47
+msgid "Image/Video Poster"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:83
+msgid "(Insert Link text)"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/index.js:27
+msgid "Media aside"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/index.js:34
+msgid "Media"
+msgstr ""
+
 #: src/scripts/blocks/menu/DisplayComponent.js:110
 msgid "Select a menu in the sidebar"
 msgstr ""
@@ -930,7 +950,7 @@ msgstr ""
 msgid "No Items found"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCustom.js:154
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:157
 msgid "Add another item"
 msgstr ""
 
@@ -940,7 +960,7 @@ msgid "No Posts."
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:14
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:14
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:39
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 msgid "(Insert Tag)"
 msgstr ""
