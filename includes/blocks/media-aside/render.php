@@ -27,7 +27,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		<?php
 
 		if ( $attributes['title'] ) {
-			printf( '<h1 class="mediaAside-title"><span>%s</span></h1>', wp_kses_post( $attributes['title'] ) );
+			printf( '<h2 class="mediaAside-title"><span>%s</span></h2>', wp_kses_post( $attributes['title'] ) );
 		}
 
 		if ( $attributes['content'] ) {
