@@ -7,10 +7,6 @@ const { TextControl, PanelBody } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
 
 class DisplayComponent extends Component {
-  constructor(...args) {
-    super(...args);
-  }
-
   handleMediaChange = (media) => {
     const { setAttributes } = this.props;
 
