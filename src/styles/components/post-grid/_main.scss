@@ -2,7 +2,9 @@
 .grid-2,
 .grid-3 {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .grid-1 .postGrid-item {
@@ -24,6 +26,75 @@
 }
 
 .grid-3 .postGrid-item {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(50% - 10px);
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(large) {
+    flex-basis: calc(33.333333% - 20px);
+    &:nth-child(2n+2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.grid-4 .postGrid-item {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(50% - 10px);
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(large) {
+    flex-basis: calc(33.333333% - 20px);
+    &:nth-child(2n+2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.grid-5 .postGrid-item {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+
+  @include mq(medium) {
+    margin-right: 20px;
+    flex-basis: calc(50% - 10px);
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+  @include mq(large) {
+    flex-basis: calc(33.333333% - 20px);
+    &:nth-child(2n+2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.grid-6 .postGrid-item {
   flex-basis: 100%;
   margin-bottom: 20px;
 
@@ -79,4 +150,11 @@
 
 .postGrid-item .postGrid-item-meta {
   margin-top: 20px;
+}
+
+.postGrid-item .postGrid-item-image {
+  position: relative;
+  padding-top: 65%;
+  margin: 0 0 10px 0;
+  background-size: cover;
 }
