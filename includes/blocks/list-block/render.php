@@ -292,11 +292,11 @@ if ( ! function_exists( 'benenson_render_grid_item' ) ) {
 if ( ! function_exists( 'benenson_render_post_item' ) ) {
 	function benenson_render_post_item( $data ) {
 		spaceless();
-		$title   = isset( $data['title'] ) ? $data['title'] : '';
-		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
+		$excerpt       = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 		$feature_image = $data['featured_image'];
-		$button_text = $data['buttonText'];
-		$button_link = $data['buttonLink'];
+		$button_text   = $data['buttonText'];
+		$button_link   = $data['buttonLink'];
 		?>
 		<article class="postGrid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" tabindex="0">
 
