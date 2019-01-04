@@ -15,7 +15,7 @@ msgstr ""
 #: src/scripts/blocks/action/BlockEdit.js:78
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:60
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:103
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
 msgid "Remove Image"
 msgstr ""
@@ -310,6 +310,7 @@ msgid "(Content)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 #: src/scripts/blocks/slider/DisplayComponent.js:334
 msgid "(Button Text)"
 msgstr ""
@@ -650,14 +651,14 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:30
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:46
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
 msgstr ""
@@ -872,7 +873,7 @@ msgstr ""
 msgid "No Items found"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/DisplayCustom.js:154
+#: src/scripts/blocks/post-list/components/DisplayCustom.js:157
 msgid "Add another item"
 msgstr ""
 
@@ -882,7 +883,7 @@ msgid "No Posts."
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:14
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:14
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:39
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 msgid "(Insert Tag)"
 msgstr ""

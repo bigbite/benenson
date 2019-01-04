@@ -132,6 +132,8 @@ if ( ! function_exists( 'benenson_list_process_custom' ) ) {
 				'featured_image' => $featured_image,
 				'excerpt'        => isset( $array['excerpt'] ) ? $array['excerpt'] : false,
 				'date'           => isset( $array['date'] ) ? $array['date'] : false,
+				'buttonText'     => isset( $array['buttonText'] ) ? $array['buttonText'] : false,
+				'buttonLink'     => isset( $array['buttonLink'] ) ? $array['buttonLink'] : false,
 			];
 
 		}, $attributes['custom'] );
@@ -290,15 +292,20 @@ if ( ! function_exists( 'benenson_render_grid_item' ) ) {
 if ( ! function_exists( 'benenson_render_post_item' ) ) {
 	function benenson_render_post_item( $data ) {
 		spaceless();
-		$title   = isset( $data['title'] ) ? $data['title'] : '';
-		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
-
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
+		$excerpt       = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
+		$feature_image = $data['featured_image'];
+		$button_text   = $data['buttonText'];
+		$button_link   = $data['buttonLink'];
 		?>
 		<article class="postGrid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" tabindex="0">
 
 		<?php if ( ! empty( $data['link'] ) ) : ?>
 			<a class="floating-anchor" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"></a>
 		<?php endif; ?>
+
+			<figure class="postGrid-item-image" style="background-image: url(<?php echo esc_url( $feature_image ); ?>)">
+			</figure>
 
 			<div class="postGrid-content">
 			<?php if ( $title ) : ?>
@@ -335,6 +342,9 @@ if ( ! function_exists( 'benenson_render_post_item' ) ) {
 						</span>
 					<?php endif; ?>
 				</div>
+				<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
+					<a className="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+				<?php endif; ?>
 			</div>
 		</article>
 		<?php

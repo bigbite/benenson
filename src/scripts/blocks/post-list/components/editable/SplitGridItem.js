@@ -62,16 +62,16 @@ const SplitGridItem = props => (
         props.featured_image_id &&
         props.featured_image_id !== -1 &&
         <IconButton icon="no-alt" onClick={ () => props.updateMedia({
-          featuredImageId: '',
-          featuredImage: '',
+          featured_image_id: '',
+          featured_image: '',
         }) }>
           { __('Remove Image', 'benenson') }
         </IconButton>
       }
       <MediaUpload
         onSelect={ media => props.updateMedia({
-          featuredImageId: media.id,
-          featuredImage: setURL(media),
+          featured_image_id: media.id,
+          featured_image: setURL(media),
         }) }
         value={ props.featured_image_id }
         allowedTypes={ ['image'] }

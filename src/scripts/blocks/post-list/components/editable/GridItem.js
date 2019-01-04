@@ -54,16 +54,16 @@ const GridItem = props => (
         props.featured_image_id &&
         props.featured_image_id !== -1 &&
         <IconButton icon="no-alt" onClick={ () => props.updateMedia({
-          featuredImageId: '',
-          featuredImage: '',
+          featured_image_id: '',
+          featured_image: '',
         }) }>
           { __('Remove Image', 'benenson') }
         </IconButton>
       }
       <MediaUpload
         onSelect={ ({ id, url }) => props.updateMedia({
-          featuredImageId: id,
-          featuredImage: url,
+          featured_image_id: id,
+          featured_image: url,
         }) }
         value={ props.featured_image_id }
         allowedTypes={ ['image'] }
