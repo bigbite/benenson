@@ -184,7 +184,6 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/link/DisplayComponent.js:60
-#: src/scripts/blocks/link/DisplayComponent.js:63
 #: src/scripts/blocks/slider/DisplayComponent.js:35
 msgid "Left"
 msgstr ""
@@ -200,7 +199,6 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:87
 #: src/scripts/blocks/image/BlockEdit.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:66
-#: src/scripts/blocks/link/DisplayComponent.js:69
 #: src/scripts/blocks/slider/DisplayComponent.js:38
 msgid "Right"
 msgstr ""
