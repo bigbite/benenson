@@ -4,6 +4,7 @@
  * Renders the media aside block.
  *
  * @since 1.0.0
+ * @param array $attributes array of attributes from saved block.
  * @return string
  */
 if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
@@ -17,11 +18,16 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		}
 
 		spaceless();
+		?>
 
-		print '<div class="mediaAside"><div class="mediaAside-col"><div class="mediaAside-content">';
+		<div class="mediaAside">
+			<div class="mediaAside-col">
+				<div class="mediaAside-content">
+
+		<?php
 
 		if ( $attributes['title'] ) {
-			printf( '<h1 class="mediaAside-title"><span>%s</span></h1>', wp_kses_post( $attributes['title'] ) );
+			printf( '<h2 class="mediaAside-title"><span>%s</span></h2>', wp_kses_post( $attributes['title'] ) );
 		}
 
 		if ( $attributes['content'] ) {
@@ -32,7 +38,14 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 			printf( '<div><a class="mediaAside-link btn" href="%s">%s</a></div>', esc_url( $attributes['ctaLink'] ), wp_kses_post( $attributes['ctaText'] ) );
 		}
 
-		print '</div></div><div class="mediaAside-col">';
+		?>
+
+			</div>
+		</div>
+
+		<div class="mediaAside-col">
+
+		<?php
 
 		if ( $attributes['mediaId'] && ! empty ( $attributes['embed'] ) ) {
 			printf(
@@ -49,7 +62,12 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 			);
 		}
 
-		print '</div></div>';
+		?>
+
+			</div>
+		</div>
+
+		<?php
 
 		return endspaceless( false );
 	}

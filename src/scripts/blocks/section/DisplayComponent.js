@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { PanelBody, SelectControl } = wp.components;
+const { PanelBody, SelectControl, TextControl } = wp.components;
 const { InspectorControls, InnerBlocks } = wp.editor;
 
 class DisplayComponent extends Component {
@@ -55,6 +55,11 @@ class DisplayComponent extends Component {
             }] }
             value={ attributes.width }
             onChange={ this.createUpdateAttribute('width') }
+          />
+          <TextControl
+            label={ __('Id (scroll location)', 'benenson') }
+            onChange={ this.createUpdateAttribute('id') }
+            value={ attributes.id }
           />
         </PanelBody>
       </InspectorControls>
