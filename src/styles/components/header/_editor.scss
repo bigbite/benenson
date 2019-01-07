@@ -7,3 +7,8 @@
   padding-right: 60px;
   padding-left: 60px;
 }
+
+// Stop the placeholder from causing capturing mouse events.
+.hero-content .editor-rich-text .editor-rich-text__tinymce:not([contenteditable]) {
+  pointer-events: none;
+}
