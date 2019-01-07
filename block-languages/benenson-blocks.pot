@@ -119,6 +119,7 @@ msgstr ""
 #: src/scripts/blocks/columns/DisplayComponent.js:28
 #: src/scripts/blocks/header/DisplayComponent.js:75
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
+#: src/scripts/blocks/link/DisplayComponent.js:16
 #: src/scripts/blocks/menu/DisplayComponent.js:91
 #: src/scripts/blocks/post-list/DisplayComponent.js:54
 #: src/scripts/blocks/section/DisplayComponent.js:16
@@ -182,6 +183,8 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:163
 #: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
+#: src/scripts/blocks/link/DisplayComponent.js:60
+#: src/scripts/blocks/link/DisplayComponent.js:63
 #: src/scripts/blocks/slider/DisplayComponent.js:35
 msgid "Left"
 msgstr ""
@@ -196,6 +199,8 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:169
 #: src/scripts/blocks/header/DisplayComponent.js:87
 #: src/scripts/blocks/image/BlockEdit.js:208
+#: src/scripts/blocks/link/DisplayComponent.js:66
+#: src/scripts/blocks/link/DisplayComponent.js:69
 #: src/scripts/blocks/slider/DisplayComponent.js:38
 msgid "Right"
 msgstr ""
@@ -511,6 +516,7 @@ msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:99
 #: src/scripts/blocks/key-facts/index.js:58
+#: src/scripts/blocks/link/DisplayComponent.js:45
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 #: src/scripts/blocks/logo-list/BlockEdit.js:57
 #: src/scripts/blocks/section/DisplayComponent.js:38
@@ -678,6 +684,58 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:46
 #: src/scripts/blocks/logo-list/BlockEdit.js:46
 msgid "Quantity"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:18
+msgid "Link text"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:23
+msgid "Link url"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:28
+msgid "Link style"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:30
+msgid "Primary"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:33
+msgid "Primary Outline"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:36
+msgid "Primary Solid"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:43
+msgid "Link icon"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:48
+msgid "Up arrow"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:51
+msgid "Down arrow"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:58
+msgid "Link alignment"
+msgstr ""
+
+#: src/scripts/blocks/link/DisplayComponent.js:63
+msgid "Center"
+msgstr ""
+
+#: src/scripts/blocks/link/index.js:15
+msgid "Link"
+msgstr ""
+
+#: src/scripts/blocks/link/index.js:16
+msgid "Add a link to section within page, another page or an external URL."
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:53
@@ -954,6 +1012,10 @@ msgstr ""
 #: src/scripts/blocks/section/DisplayComponent.js:50
 #: src/scripts/blocks/tweet/index.js:90
 msgid "Narrow"
+msgstr ""
+
+#: src/scripts/blocks/section/DisplayComponent.js:60
+msgid "Id (scroll location)"
 msgstr ""
 
 #: src/scripts/blocks/section/index.js:26

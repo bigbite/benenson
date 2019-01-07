@@ -13,6 +13,7 @@ import sliderBlock from './modules/slider-block';
 import subcatDrops from './modules/subcategory-dropdown';
 import categoryExpander from './modules/category-expander';
 import fluidText from './modules/fluid-text';
+import scrollTo from './modules/scrollTo';
 
 import './polyfills';
 
@@ -30,6 +31,7 @@ const App = () => {
   sliderBlock();
   subcatDrops();
   categoryExpander();
+  scrollTo();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
 
