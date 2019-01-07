@@ -30,6 +30,12 @@ registerBlockType('benenson/block-section', {
     background: {
       type: 'string',
     },
+    mediaUrl: {
+      type: 'string',
+    },
+    mediaId: {
+      type: 'integer',
+    },
     padding: {
       type: 'string',
     },
