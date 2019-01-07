@@ -197,8 +197,13 @@ if ( ! function_exists( 'benenson_list_process_content' ) ) {
  * @param array $data Item data.
  */
 if ( ! function_exists( 'benenson_render_list_item' ) ) {
-	function benenson_render_list_item( $data ) {
-		$title = isset( $data['title'] ) ? $data['title'] : '';
+	function benenson_render_list_item( $data, $display_excerpt ) {
+		$title   = isset( $data['title'] ) ? $data['title'] : '';
+		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
+
+		if ( ! empty( $display_excerpt ) && 1 === $display_excerpt ) {
+			$display_excerpt = true;
+		}
 		?>
 		<li>
 			<article class="linkList-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>">
@@ -228,6 +233,13 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 				}
 				?>
 				</h3>
+			<?php endif; ?>
+			<?php if ( $display_excerpt && isset( $excerpt ) ) : ?>
+				<p>
+				<?php
+					echo esc_html( $excerpt );
+				?>
+				</p>
 			<?php endif; ?>
 			</article>
 		</li>
@@ -343,7 +355,7 @@ if ( ! function_exists( 'benenson_render_post_item' ) ) {
 					<?php endif; ?>
 				</div>
 				<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
-					<a className="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+					<a class="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
 				<?php endif; ?>
 			</div>
 		</article>
@@ -475,9 +487,13 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 
 			return ob_get_clean();
 		}
-
 		print '<ul class="linkList">';
-		array_map( 'benenson_render_list_item', $data );
+		$index = 0;
+		$total = count( $data );
+		foreach ( $data as $item ) {
+			benenson_render_list_item( $item, $attributes['displayExcerpt'] );
+			$index++;
+		}
 		print '</ul>';
 
 		return ob_get_clean();

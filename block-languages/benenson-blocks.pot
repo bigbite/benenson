@@ -826,10 +826,14 @@ msgid "Use related categories where supported"
 msgstr ""
 
 #: src/scripts/blocks/post-list/DisplayComponent.js:109
+msgid "Display excerpt"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:114
 msgid "Hide Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:109
+#: src/scripts/blocks/post-list/DisplayComponent.js:114
 msgid "Show Preview"
 msgstr ""
 
@@ -931,19 +935,19 @@ msgstr ""
 msgid "Post Type:"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:34
+#: src/scripts/blocks/post-list/index.js:40
 msgid "Post List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:38
+#: src/scripts/blocks/post-list/index.js:44
 msgid "List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:39
+#: src/scripts/blocks/post-list/index.js:45
 msgid "post-list"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:40
+#: src/scripts/blocks/post-list/index.js:46
 msgid "Posts"
 msgstr ""
 

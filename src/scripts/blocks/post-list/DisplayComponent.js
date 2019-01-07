@@ -105,6 +105,11 @@ class DisplayComponent extends Component {
               checked={ attributes.categoryRelated }
               onChange={ this.createUpdateAttribute('categoryRelated') }
             />}
+            { attributes.type === 'select' && <ToggleControl
+              label={ __('Display excerpt', 'benenson') }
+              checked={ attributes.displayExcerpt }
+              onChange={ this.createUpdateAttribute('displayExcerpt') }
+            />}
           { attributes.type === 'select' && <button onClick={ this.togglePreview }>
             { this.state.preview ? __('Hide Preview', 'benenson') : __('Show Preview', 'benenson') }
           </button> }
