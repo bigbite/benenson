@@ -121,13 +121,8 @@ msgstr ""
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:16
 #: src/scripts/blocks/menu/DisplayComponent.js:91
-<<<<<<< HEAD
-#: src/scripts/blocks/post-list/DisplayComponent.js:54
-#: src/scripts/blocks/section/DisplayComponent.js:37
-=======
 #: src/scripts/blocks/post-list/DisplayComponent.js:58
-#: src/scripts/blocks/section/DisplayComponent.js:16
->>>>>>> develop
+#: src/scripts/blocks/section/DisplayComponent.js:37
 #: src/scripts/blocks/slider/DisplayComponent.js:203
 msgid "Options"
 msgstr ""

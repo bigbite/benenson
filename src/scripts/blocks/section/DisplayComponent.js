@@ -29,7 +29,7 @@ class DisplayComponent extends Component {
     const styles = {
       backgroundImage: `url(${attributes.mediaUrl})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center center',
+      backgroundPosition: 'center',
     };
 
     return (<Fragment>

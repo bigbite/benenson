@@ -54,7 +54,7 @@ registerBlockType('benenson/block-section', {
     const styles = {
       backgroundImage: `url(${attributes.mediaUrl})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center center',
+      backgroundPosition: 'center',
     };
 
     return (<section id={attributes.id} className={ classNames({
