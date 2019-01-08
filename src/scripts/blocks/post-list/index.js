@@ -19,8 +19,17 @@ const blockAttributes = {
   categoryRelated: {
     type: 'boolean',
   },
+  displayExcerpt: {
+    type: 'boolean',
+  },
+  displayFeatureImage: {
+    type: 'boolean',
+  },
   amount: {
     type: 'integer',
+  },
+  ctaText: {
+    type: 'string',
   },
   custom: {
     type: 'array',
@@ -43,6 +52,12 @@ registerBlockType('benenson/block-list', {
     multiple: true,
   },
   attributes: blockAttributes,
+
+  deprecated: [{
+    attributes: blockAttributes,
+    save: () => null,
+  },
+  ],
 
   edit: DisplayComponent,
 

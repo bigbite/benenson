@@ -1,3 +1,11 @@
 .editor-block-list__block-edit .postGrid-item {
   margin: 20px;
 }
+
+.editor-rich-text__tinymce.editorButtonText {
+  display: block;
+  padding: 4px;
+  height: 30px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
