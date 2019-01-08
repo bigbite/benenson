@@ -11,7 +11,8 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/action/BlockEdit.js:78
 	// Reference: src/scripts/blocks/image/BlockEdit.js:224
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:60
-	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:60
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:103
+	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
 	__( 'Remove Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:102
@@ -94,7 +95,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:75
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:54
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:58
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:16
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:203
 	__( 'Options', 'benenson' ),
@@ -245,6 +246,7 @@ $generated_i18n_strings = array(
 	__( '(Content)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:334
 	__( '(Button Text)', 'benenson' ),
 
@@ -355,6 +357,7 @@ $generated_i18n_strings = array(
 	__( 'Video', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:138
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:43
 	__( 'Embed url', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:142
@@ -502,14 +505,18 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:68
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
-	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:30
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
+	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:73
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
-	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:46
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
+	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 	__( '(Insert Content)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/index.js:16
@@ -549,7 +556,7 @@ $generated_i18n_strings = array(
 	__( '(Insert Fact)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:214
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:56
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:60
 	__( 'Style', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:218
@@ -599,6 +606,18 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:47
+	__( 'Image/Video Poster', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
+	__( '(Insert Link text)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/index.js:27
+	__( 'Media aside', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/index.js:34
+	__( 'Media', 'benenson' ),
+
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:110
 	__( 'Select a menu in the sidebar', 'benenson' ),
 
@@ -618,66 +637,79 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/menu/index.js:32
 	__( 'Navigation', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:100
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:101
+	__( 'Number of posts to show:', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:108
 	__( 'Use related categories where supported', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:105
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:113
+	__( 'Display excerpt', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:118
+	__( 'Button Text:', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:122
+	__( '(CTA Text)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:128
 	__( 'Hide Preview', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:105
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:128
 	__( 'Show Preview', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:58
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:62
 	__( 'Link List', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:61
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:65
 	__( 'Grid', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:64
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:68
 	__( 'Post', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:71
-	__( 'Type', 'benenson' ),
-
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:73
-	__( 'Category', 'benenson' ),
-
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:76
-	__( 'Object Selection', 'benenson' ),
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:72
+	__( 'Split Grid', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:79
+	__( 'Type', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:81
+	__( 'Category', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:84
+	__( 'Object Selection', 'benenson' ),
+
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:87
 	__( 'Custom', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:86
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:94
 	__( 'Category:', 'benenson' ),
-
-	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:93
-	__( 'Number of posts to show:', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/CategorySelect.js:78
 	__( 'Select a category', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:161
-	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:9
+	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:167
+	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:10
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
 	__( 'Loading...', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:165
+	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:171
 	__( 'Select a category.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:169
+	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:175
 	__( 'No Items found', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/DisplayCustom.js:140
+	// Reference: src/scripts/blocks/post-list/components/DisplayCustom.js:157
 	__( 'Add another item', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:13
+	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:14
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:31
 	__( 'No Posts.', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:14
-	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:14
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:39
+	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 	__( '(Insert Tag)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:12
@@ -698,16 +730,16 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:34
 	__( 'Post Type:', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/index.js:34
+	// Reference: src/scripts/blocks/post-list/index.js:43
 	__( 'Post List', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/index.js:38
+	// Reference: src/scripts/blocks/post-list/index.js:47
 	__( 'List', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/index.js:39
+	// Reference: src/scripts/blocks/post-list/index.js:48
 	__( 'post-list', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/index.js:40
+	// Reference: src/scripts/blocks/post-list/index.js:49
 	__( 'Posts', 'benenson' ),
 
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:30
