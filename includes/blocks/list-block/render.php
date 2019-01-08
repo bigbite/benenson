@@ -197,7 +197,7 @@ if ( ! function_exists( 'benenson_list_process_content' ) ) {
  * @param array $data Item data.
  */
 if ( ! function_exists( 'benenson_render_list_item' ) ) {
-	function benenson_render_list_item( $data, $display_excerpt ) {
+	function benenson_render_list_item( $data, $display_excerpt, $cta_text ) {
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 
@@ -240,6 +240,12 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 					echo esc_html( $excerpt );
 				?>
 				</p>
+			<?php endif; ?>
+			<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
+					<a class="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+				<?php endif; ?>
+			<?php if ( ! empty( $cta_text ) && ! empty( $data['link'] ) ) : ?>
+				<a class="postGrid-item-button" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"><?php echo esc_html( $cta_text ); ?></a>
 			<?php endif; ?>
 			</article>
 		</li>
@@ -491,7 +497,7 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		$index = 0;
 		$total = count( $data );
 		foreach ( $data as $item ) {
-			benenson_render_list_item( $item, $attributes['displayExcerpt'] );
+			benenson_render_list_item( $item, $attributes['displayExcerpt'], $attributes['ctaText'] );
 			$index++;
 		}
 		print '</ul>';

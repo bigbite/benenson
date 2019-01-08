@@ -28,6 +28,9 @@ const blockAttributes = {
   amount: {
     type: 'integer',
   },
+  ctaText: {
+    type: 'string',
+  },
   custom: {
     type: 'array',
   },
