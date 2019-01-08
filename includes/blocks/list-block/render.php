@@ -200,10 +200,6 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 	function benenson_render_list_item( $data, $display_excerpt = 0, $cta_text = '' ) {
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
-
-		if ( 1 === $display_excerpt ) {
-			$display_excerpt = true;
-		}
 		?>
 		<li>
 			<article class="linkList-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>">
@@ -234,7 +230,7 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 				?>
 				</h3>
 			<?php endif; ?>
-			<?php if ( $display_excerpt && isset( $excerpt ) ) : ?>
+			<?php if ( 1 === $display_excerpt && isset( $excerpt ) ) : ?>
 				<p>
 				<?php
 					echo esc_html( $excerpt );
