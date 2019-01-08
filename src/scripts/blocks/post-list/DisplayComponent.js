@@ -8,7 +8,10 @@ const { Component, Fragment } = wp.element;
 const {
   PanelBody, SelectControl, RangeControl, ToggleControl,
 } = wp.components;
-const { InspectorControls } = wp.editor;
+const {
+  InspectorControls,
+  RichText,
+} = wp.editor;
 
 const createRange = (min, max) => num => Math.max(min, Math.min(max, num));
 
@@ -19,6 +22,7 @@ class DisplayComponent extends Component {
       results: [],
       loading: false,
       preview: (this.props.attributes.selectedPosts || []).length > 0,
+      ctaText: this.props.attributes.ctaText,
       // Generate a key prefix as post id may not be unique.
       keyPrefix: Math.random().toString(36).substring(7),
     };
@@ -104,7 +108,22 @@ class DisplayComponent extends Component {
               label={ __('Use related categories where supported', 'benenson') }
               checked={ attributes.categoryRelated }
               onChange={ this.createUpdateAttribute('categoryRelated') }
-            />}
+            /> }
+            { attributes.type === 'select' && <ToggleControl
+              label={ __('Display excerpt', 'benenson') }
+              checked={ attributes.displayExcerpt }
+              onChange={ this.createUpdateAttribute('displayExcerpt') }
+            /> }
+            { attributes.type === 'select' && (<div>
+              <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') }</label>
+              <RichText
+                name="editorButtonText"
+                className="editorButtonText"
+                placeholder={ __('(CTA Text)', 'benenson') }
+                value={ attributes.ctaText }
+                keepPlaceholderOnFocus={ true }
+                onChange={ this.createUpdateAttribute('ctaText') }
+              /></div>) }
           { attributes.type === 'select' && <button onClick={ this.togglePreview }>
             { this.state.preview ? __('Hide Preview', 'benenson') : __('Show Preview', 'benenson') }
           </button> }
@@ -129,6 +148,7 @@ class DisplayComponent extends Component {
           preview={ this.state.preview }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
+          ctaText={ attributes.ctaText }
         /> }
       </div>
     </Fragment>);

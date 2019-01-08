@@ -40,7 +40,7 @@ const SelectPreview = ({ loading, posts = [], ...props }) => {
 
   return (
     <ul className="linkList">
-      {posts.map(result => <LinkList key={ `${props.prefix}-${result.id}` } { ...result } />)}
+      {posts.map(result => <LinkList key={ `${props.prefix}-${result.id}` } ctaText={ props.ctaText } { ...result } />)}
     </ul>
   );
 };

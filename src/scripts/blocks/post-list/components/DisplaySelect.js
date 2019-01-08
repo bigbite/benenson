@@ -405,6 +405,7 @@ class DisplaySelect extends Component {
         loading={ this.state.initialLoading }
         style={ this.props.style }
         prefix={ this.props.prefix }
+        ctaText={ this.props.ctaText }
       /> }
       { !this.props.preview && <PostSelect
         state={ this.state }
