@@ -121,7 +121,7 @@ msgstr ""
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:16
 #: src/scripts/blocks/menu/DisplayComponent.js:91
-#: src/scripts/blocks/post-list/DisplayComponent.js:54
+#: src/scripts/blocks/post-list/DisplayComponent.js:58
 #: src/scripts/blocks/section/DisplayComponent.js:16
 #: src/scripts/blocks/slider/DisplayComponent.js:203
 msgid "Options"
@@ -770,7 +770,7 @@ msgid "(Insert Fact)"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:214
-#: src/scripts/blocks/post-list/DisplayComponent.js:56
+#: src/scripts/blocks/post-list/DisplayComponent.js:60
 msgid "Style"
 msgstr ""
 
@@ -877,56 +877,68 @@ msgstr ""
 msgid "Navigation"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:104
+#: src/scripts/blocks/post-list/DisplayComponent.js:101
+msgid "Number of posts to show:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:108
 msgid "Use related categories where supported"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:109
+#: src/scripts/blocks/post-list/DisplayComponent.js:113
+msgid "Display excerpt"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:118
+msgid "Button Text:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:122
+msgid "(CTA Text)"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:128
 msgid "Hide Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:109
+#: src/scripts/blocks/post-list/DisplayComponent.js:128
 msgid "Show Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:58
+#: src/scripts/blocks/post-list/DisplayComponent.js:62
 msgid "Link List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:61
+#: src/scripts/blocks/post-list/DisplayComponent.js:65
 msgid "Grid"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:64
+#: src/scripts/blocks/post-list/DisplayComponent.js:68
 msgid "Post"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:68
+#: src/scripts/blocks/post-list/DisplayComponent.js:72
 msgid "Split Grid"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:75
+#: src/scripts/blocks/post-list/DisplayComponent.js:79
 msgid "Type"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:77
+#: src/scripts/blocks/post-list/DisplayComponent.js:81
 msgid "Category"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:80
+#: src/scripts/blocks/post-list/DisplayComponent.js:84
 msgid "Object Selection"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:83
+#: src/scripts/blocks/post-list/DisplayComponent.js:87
 msgid "Custom"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:90
+#: src/scripts/blocks/post-list/DisplayComponent.js:94
 msgid "Category:"
-msgstr ""
-
-#: src/scripts/blocks/post-list/DisplayComponent.js:97
-msgid "Number of posts to show:"
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/CategorySelect.js:78
@@ -987,19 +999,19 @@ msgstr ""
 msgid "Post Type:"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:34
+#: src/scripts/blocks/post-list/index.js:43
 msgid "Post List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:38
+#: src/scripts/blocks/post-list/index.js:47
 msgid "List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:39
+#: src/scripts/blocks/post-list/index.js:48
 msgid "post-list"
 msgstr ""
 
-#: src/scripts/blocks/post-list/index.js:40
+#: src/scripts/blocks/post-list/index.js:49
 msgid "Posts"
 msgstr ""
 
