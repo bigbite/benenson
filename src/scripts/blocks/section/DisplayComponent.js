@@ -11,13 +11,17 @@ class DisplayComponent extends Component {
 
   onMediaChange = (media) => {
     if (media) {
-      this.props.setAttributes({ mediaId: media.id });
-      this.props.setAttributes({ mediaUrl: media.source_url });
+      this.props.setAttributes({
+        mediaId: media.id,
+        mediaUrl: media.source_url,
+      });
       return;
     }
 
-    this.props.setAttributes({ mediaId: null });
-    this.props.setAttributes({ mediaUrl: null });
+    this.props.setAttributes({
+      mediaId: null,
+      mediaUrl: null,
+    });
   };
 
   render() {
