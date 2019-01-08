@@ -26,6 +26,8 @@ import './blocks/download';
 import './blocks/key-facts';
 import './blocks/category-list';
 import './blocks/logo-list';
+import './blocks/link';
+import './blocks/media-aside';
 
 wp.blocks.registerBlockStyle('core/table', {
   name: 'responsive',

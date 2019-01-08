@@ -33,6 +33,7 @@ if ( ! function_exists( 'benenson_list_process_query' ) ) {
 					'tag_link'       => $tag ? get_term_link( $tag, $tag->taxonomy ) : false,
 					'featured_image' => benenson_featured_image( get_the_ID(), 'grid-item' ),
 					'excerpt'        => get_the_excerpt(),
+					'date'           => get_the_date(),
 				];
 			}
 
@@ -130,6 +131,9 @@ if ( ! function_exists( 'benenson_list_process_custom' ) ) {
 				'tag_link'       => isset( $array['tagLink'] ) ? $array['tagLink'] : false,
 				'featured_image' => $featured_image,
 				'excerpt'        => isset( $array['excerpt'] ) ? $array['excerpt'] : false,
+				'date'           => isset( $array['date'] ) ? $array['date'] : false,
+				'buttonText'     => isset( $array['buttonText'] ) ? $array['buttonText'] : false,
+				'buttonLink'     => isset( $array['buttonLink'] ) ? $array['buttonLink'] : false,
 			];
 
 		}, $attributes['custom'] );
@@ -287,15 +291,21 @@ if ( ! function_exists( 'benenson_render_grid_item' ) ) {
  */
 if ( ! function_exists( 'benenson_render_post_item' ) ) {
 	function benenson_render_post_item( $data ) {
-		$title   = isset( $data['title'] ) ? $data['title'] : '';
-		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
-
+		spaceless();
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
+		$excerpt       = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
+		$feature_image = $data['featured_image'];
+		$button_text   = $data['buttonText'];
+		$button_link   = $data['buttonLink'];
 		?>
 		<article class="postGrid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" tabindex="0">
 
 		<?php if ( ! empty( $data['link'] ) ) : ?>
 			<a class="floating-anchor" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"></a>
 		<?php endif; ?>
+
+			<figure class="postGrid-item-image" style="background-image: url(<?php echo esc_url( $feature_image ); ?>)">
+			</figure>
 
 			<div class="postGrid-content">
 			<?php if ( $title ) : ?>
@@ -332,9 +342,81 @@ if ( ! function_exists( 'benenson_render_post_item' ) ) {
 						</span>
 					<?php endif; ?>
 				</div>
+				<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
+					<a className="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+				<?php endif; ?>
 			</div>
 		</article>
 		<?php
+		endspaceless();
+	}
+}
+
+/**
+ * Render the current block item as a grid item.
+ *
+ * @param array $data Item data.
+ * @return string
+ */
+if ( ! function_exists( 'benenson_render_split_grid_item' ) ) {
+	function benenson_render_split_grid_item( $data, $index, $total ) {
+		spaceless();
+		$title         = isset( $data['title'] ) ? $data['title'] : '';
+		$feature_image = $data['featured_image'];
+		?>
+
+		<?php if ( ( 4 === $total || 3 === $total ) && 0 === $index ) : ?>
+			<div class="grid-col grid-col-1">
+		<?php elseif ( 4 === $total && 1 === $index ) : ?>
+			<div class="grid-col grid-col-3">
+		<?php elseif ( 3 === $total && 1 === $index ) : ?>
+			<div class="grid-col grid-col-2">
+		<?php endif; ?>
+
+		<article class="splitGrid-item" role="article" aria-label="Article: <?php echo esc_attr( format_for_aria_label( $title ) ); ?>" style="background-image: url(<?php echo esc_url( $feature_image ); ?>)" tabindex="0">
+		<?php if ( ! empty( $data['link'] ) ) : ?>
+			<a class="floating-anchor" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"></a>
+		<?php endif; ?>
+
+			<div class="splitGrid-content">
+			<?php if ( ! empty( $data['tag'] ) ) : ?>
+				<span class="splitGrid-itemMeta">
+				<?php
+				if ( ! empty( $data['tag_link'] ) ) {
+					printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['tag_link'] ), esc_html( $data['tag'] ) );
+				} else {
+					echo esc_attr( $data['tag'] );
+				}
+				?>
+				</span>
+			<?php endif; ?>
+
+			<?php if ( $title ) : ?>
+				<h3 class="splitGrid-itemTitle">
+				<?php
+				if ( ! empty( $data['link'] ) ) {
+					printf( '<a href="%s" tabindex="0">%s</a>', esc_url( $data['link'] ), esc_html( $title ) );
+				} else {
+					printf( '<span>%s</span>', esc_html( $title ) );
+				}
+				?>
+				</h3>
+			<?php endif; ?>
+
+			<?php if ( ! empty( $data['date'] ) ) : ?>
+				<p class="splitGrid-itemDate">
+					<?php echo esc_html( $data['date'] ); ?>
+				</p>
+			<?php endif; ?>
+			</div>
+		</article>
+		<?php if ( ( 4 === $total || 3 === $total ) && 0 === $index ) : ?>
+			</div>
+		<?php elseif ( $total > 2 && $total === $index ) : ?>
+			</div>
+		<?php endif; ?>
+		<?php
+		endspaceless();
 	}
 }
 
@@ -376,6 +458,19 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		if ( isset( $attributes['style'] ) && 'post' === $attributes['style'] ) {
 			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
 			array_map( 'benenson_render_post_item', $data );
+			print '</div>';
+
+			return ob_get_clean();
+		}
+
+		if ( isset( $attributes['style'] ) && 'splitgrid' === $attributes['style'] ) {
+			printf( '<div class="splitGrid splitGrid-%s">', esc_attr( count( $data ) ) );
+			$index = 0;
+			$total = count( $data );
+			foreach ( $data as $item ) {
+				benenson_render_split_grid_item( $item, $index, $total );
+				$index++;
+			}
 			print '</div>';
 
 			return ob_get_clean();

@@ -1,9 +1,14 @@
-import classNames from 'classnames';
+/**
+ * BLOCK: media-aside
+ *
+ * Registering a basic block with Gutenberg.
+ * Simple block, renders and saves the same content without any interactivity.
+ */
+
 import DisplayComponent from './DisplayComponent';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-const { InnerBlocks } = wp.editor;
 
 /**
  * Register: aa Gutenberg Block.
@@ -18,25 +23,36 @@ const { InnerBlocks } = wp.editor;
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType('benenson/block-section', {
-  title: __('Section', 'benenson'),
-  icon: 'editor-table',
+registerBlockType('benenson/media-aside', {
+  title: __('Media aside', 'benenson'),
+  icon: 'welcome-widgets-menus',
   category: 'benenson',
+  supports: {
+    className: false,
+  },
   keywords: [
-    __('Section', 'benenson'),
-    __('Grey', 'benenson'),
+    __('Media', 'benenson'),
   ],
   attributes: {
-    background: {
+    title: {
       type: 'string',
     },
-    padding: {
+    content: {
       type: 'string',
     },
-    width: {
+    ctaLink: {
       type: 'string',
     },
-    id: {
+    ctaText: {
+      type: 'string',
+    },
+    mediaUrl: {
+      type: 'string',
+    },
+    mediaId: {
+      type: 'integer',
+    },
+    embed: {
       type: 'string',
     },
   },
@@ -44,16 +60,5 @@ registerBlockType('benenson/block-section', {
   edit: DisplayComponent,
 
   // Returns null due to the component being rendered server side
-  save: ({ attributes }) => (
-    <section id={attributes.id} className={ classNames({
-      section: true,
-      'section--tinted': attributes.background === 'grey',
-      [`section--${attributes.padding}`]: !!attributes.padding,
-      [`section--${attributes.width}`]: !!attributes.width,
-    }) }>
-      <div className="container">
-        <InnerBlocks.Content />
-      </div>
-    </section>
-  ),
+  save: () => null,
 });
