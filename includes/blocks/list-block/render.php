@@ -197,11 +197,11 @@ if ( ! function_exists( 'benenson_list_process_content' ) ) {
  * @param array $data Item data.
  */
 if ( ! function_exists( 'benenson_render_list_item' ) ) {
-	function benenson_render_list_item( $data, $display_excerpt, $cta_text ) {
+	function benenson_render_list_item( $data, $display_excerpt = 0, $cta_text = '' ) {
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 
-		if ( ! empty( $display_excerpt ) && 1 === $display_excerpt ) {
+		if ( 1 === $display_excerpt ) {
 			$display_excerpt = true;
 		}
 		?>
@@ -494,11 +494,8 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 			return ob_get_clean();
 		}
 		print '<ul class="linkList">';
-		$index = 0;
-		$total = count( $data );
 		foreach ( $data as $item ) {
 			benenson_render_list_item( $item, $attributes['displayExcerpt'], $attributes['ctaText'] );
-			$index++;
 		}
 		print '</ul>';
 

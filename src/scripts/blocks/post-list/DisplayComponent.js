@@ -108,22 +108,22 @@ class DisplayComponent extends Component {
               label={ __('Use related categories where supported', 'benenson') }
               checked={ attributes.categoryRelated }
               onChange={ this.createUpdateAttribute('categoryRelated') }
-            />}
+            /> }
             { attributes.type === 'select' && <ToggleControl
               label={ __('Display excerpt', 'benenson') }
               checked={ attributes.displayExcerpt }
               onChange={ this.createUpdateAttribute('displayExcerpt') }
-            />}
+            /> }
             { attributes.type === 'select' && (<div>
-            <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') } </label>
-             <RichText
-              name={ 'editorButtonText' }
-              className={ ['editorButtonText'] }
-              placeholder={ __('(CTA Text)', 'benenson') }
-              value={ attributes.ctaText }
-              keepPlaceholderOnFocus={ true }
-              onChange={ this.createUpdateAttribute('ctaText') }
-            ></RichText></div>)}
+              <label name="editorButtonText">{ __('Button Text:', 'benenson') } </label>
+              <RichText
+                name={ 'editorButtonText' }
+                className="editorButtonText"
+                placeholder={ __('(CTA Text)', 'benenson') }
+                value={ attributes.ctaText }
+                keepPlaceholderOnFocus={ true }
+                onChange={ this.createUpdateAttribute('ctaText') }
+              /></div>) }
           { attributes.type === 'select' && <button onClick={ this.togglePreview }>
             { this.state.preview ? __('Hide Preview', 'benenson') : __('Show Preview', 'benenson') }
           </button> }
@@ -148,7 +148,7 @@ class DisplayComponent extends Component {
           preview={ this.state.preview }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
-          ctaText={ this.state.ctaText }
+          ctaText={ attributes.ctaText }
         /> }
       </div>
     </Fragment>);
