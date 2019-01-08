@@ -2,7 +2,7 @@
   "name": "benenson",
   "description": "Named after the founder of the human rights group, Amnesty International, Benenson is an open-source WordPress theme built using Gutenberg",
   "author": "Big Big Creative",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@wordpress/babel-plugin-makepot": "^2.0.1",
     "@wordpress/i18n": "^1.2.1",
