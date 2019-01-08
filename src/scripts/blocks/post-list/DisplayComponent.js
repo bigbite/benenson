@@ -115,7 +115,7 @@ class DisplayComponent extends Component {
               onChange={ this.createUpdateAttribute('displayExcerpt') }
             /> }
             { attributes.type === 'select' && (<div>
-              <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') } </label>
+              <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') }</label>
               <RichText
                 name="editorButtonText"
                 className="editorButtonText"
