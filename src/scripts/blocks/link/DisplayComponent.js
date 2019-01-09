@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
@@ -10,7 +10,7 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
-    const linkClasses = classNames('link', {
+    const linkClasses = classnames('link', {
       [attributes.linkAlignment]: !!attributes.linkAlignment,
     });
 
