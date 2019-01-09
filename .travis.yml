@@ -5,7 +5,7 @@ cache:
   - "$HOME/.yarn"
   - "./node_modules"
 before_install:
-- yarn
+- travis_retry yarn
 jobs:
   include:
   - stage: lint
