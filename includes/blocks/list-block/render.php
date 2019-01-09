@@ -490,8 +490,10 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 			return ob_get_clean();
 		}
 		print '<ul class="linkList">';
+		$display_excerpt = isset( $attributes['displayExcerpt'] ) ? $attributes['displayExcerpt'] : 0;
+		$cta_text        = isset( $attributes['ctaText'] ) ? $attributes['ctaText'] : '';
 		foreach ( $data as $item ) {
-			benenson_render_list_item( $item, $attributes['displayExcerpt'], $attributes['ctaText'] );
+			benenson_render_list_item( $item, $display_excerpt, $cta_text );
 		}
 		print '</ul>';
 
