@@ -61,7 +61,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 			} else {
 				printf(
 					'<div><div class="inlineVideo mediaAside-videoContainer"><div class="inlineVideo-poster" style="background-image:url(%s);"></div><a class="btn"><i class="play-icon">%s</i></a><iframe width="560" height="349" data-src="%s" frameborder="0" allow="" allowfullscreen></iframe></div></div>',
-					wp_get_attachment_url( $attributes['mediaId'] ),
+					esc_url( wp_get_attachment_url( $attributes['mediaId'] ) ),
 					esc_html__( 'Play video', 'benenson' ),
 					esc_url( $video_url )
 				);
