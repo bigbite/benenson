@@ -30,6 +30,12 @@ registerBlockType('benenson/block-section', {
     background: {
       type: 'string',
     },
+    mediaUrl: {
+      type: 'string',
+    },
+    mediaId: {
+      type: 'integer',
+    },
     padding: {
       type: 'string',
     },
@@ -44,16 +50,22 @@ registerBlockType('benenson/block-section', {
   edit: DisplayComponent,
 
   // Returns null due to the component being rendered server side
-  save: ({ attributes }) => (
-    <section id={attributes.id} className={ classNames({
-      section: true,
-      'section--tinted': attributes.background === 'grey',
-      [`section--${attributes.padding}`]: !!attributes.padding,
-      [`section--${attributes.width}`]: !!attributes.width,
-    }) }>
-      <div className="container">
-        <InnerBlocks.Content />
-      </div>
-    </section>
-  ),
+  save: ({ attributes }) => {
+    const styles = {
+      backgroundImage: `url(${attributes.mediaUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    };
+
+    return (<section id={attributes.id} className={ classNames({
+        section: true,
+        'section--tinted': attributes.background === 'grey',
+        [`section--${attributes.padding}`]: !!attributes.padding,
+        [`section--${attributes.width}`]: !!attributes.width,
+      }) } style={ attributes.mediaUrl ? styles : null }>
+        <div className="container">
+          <InnerBlocks.Content />
+        </div>
+      </section>);
+  },
 });
