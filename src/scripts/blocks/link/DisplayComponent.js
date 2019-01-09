@@ -10,6 +10,9 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
+    const linkClasses = classNames('link', {
+      [attributes.linkAlignment]: !!attributes.linkAlignment,
+    });
 
     return (<Fragment>
       <InspectorControls>
@@ -71,7 +74,7 @@ class DisplayComponent extends Component {
           />
         </PanelBody>
       </InspectorControls>
-      <div className={`link ${attributes.linkAlignment}`}>
+      <div className={ linkClasses }>
         <a className={ ['btn', attributes.linkStyle, attributes.linkIcon].join(' ') }>
           <RichText
             tagName="span"
