@@ -41,7 +41,7 @@ msgid "Standard"
 msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:62
-#: src/scripts/blocks/section/DisplayComponent.js:53
+#: src/scripts/blocks/section/DisplayComponent.js:74
 msgid "Wide"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:238
 #: src/scripts/blocks/header/DisplayComponent.js:102
 #: src/scripts/blocks/menu/DisplayComponent.js:10
-#: src/scripts/blocks/section/DisplayComponent.js:20
+#: src/scripts/blocks/section/DisplayComponent.js:41
 msgid "White"
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr ""
 #: src/scripts/blocks/link/DisplayComponent.js:16
 #: src/scripts/blocks/menu/DisplayComponent.js:91
 #: src/scripts/blocks/post-list/DisplayComponent.js:58
-#: src/scripts/blocks/section/DisplayComponent.js:16
+#: src/scripts/blocks/section/DisplayComponent.js:37
 #: src/scripts/blocks/slider/DisplayComponent.js:203
 msgid "Options"
 msgstr ""
@@ -221,7 +221,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:117
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
-#: src/scripts/blocks/section/DisplayComponent.js:35
+#: src/scripts/blocks/section/DisplayComponent.js:56
 msgid "Small"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
 #: src/scripts/blocks/logo-list/BlockEdit.js:58
 #: src/scripts/blocks/menu/DisplayComponent.js:11
-#: src/scripts/blocks/section/DisplayComponent.js:23
+#: src/scripts/blocks/section/DisplayComponent.js:44
 #: src/scripts/blocks/section/index.js:27
 msgid "Grey"
 msgstr ""
@@ -439,7 +439,7 @@ msgid "Edit File"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:114
-#: src/scripts/blocks/section/DisplayComponent.js:47
+#: src/scripts/blocks/section/DisplayComponent.js:68
 msgid "Normal"
 msgstr ""
 
@@ -470,6 +470,7 @@ msgid ""
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:144
+#: src/scripts/blocks/section/DisplayComponent.js:86
 msgid "Background Image"
 msgstr ""
 
@@ -504,7 +505,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:62
 #: src/scripts/blocks/logo-list/BlockEdit.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:102
-#: src/scripts/blocks/section/DisplayComponent.js:18
+#: src/scripts/blocks/section/DisplayComponent.js:39
 msgid "Background Colour"
 msgstr ""
 
@@ -517,7 +518,7 @@ msgstr ""
 #: src/scripts/blocks/link/DisplayComponent.js:45
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 #: src/scripts/blocks/logo-list/BlockEdit.js:57
-#: src/scripts/blocks/section/DisplayComponent.js:38
+#: src/scripts/blocks/section/DisplayComponent.js:59
 msgid "None"
 msgstr ""
 
@@ -567,7 +568,7 @@ msgid "Write caption…"
 msgstr ""
 
 #: src/scripts/blocks/iframe/DisplayComponent.js:91
-#: src/scripts/blocks/section/DisplayComponent.js:45
+#: src/scripts/blocks/section/DisplayComponent.js:66
 msgid "Width"
 msgstr ""
 
@@ -1015,16 +1016,16 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: src/scripts/blocks/section/DisplayComponent.js:30
+#: src/scripts/blocks/section/DisplayComponent.js:51
 msgid "Padding"
 msgstr ""
 
-#: src/scripts/blocks/section/DisplayComponent.js:50
+#: src/scripts/blocks/section/DisplayComponent.js:71
 #: src/scripts/blocks/tweet/index.js:90
 msgid "Narrow"
 msgstr ""
 
-#: src/scripts/blocks/section/DisplayComponent.js:60
+#: src/scripts/blocks/section/DisplayComponent.js:81
 msgid "Id (scroll location)"
 msgstr ""
 
