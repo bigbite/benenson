@@ -198,6 +198,7 @@ if ( ! function_exists( 'benenson_list_process_content' ) ) {
  */
 if ( ! function_exists( 'benenson_render_list_item' ) ) {
 	function benenson_render_list_item( $data, $display_excerpt = 0, $cta_text = '' ) {
+		spaceless();
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 		?>
@@ -238,14 +239,15 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 				</p>
 			<?php endif; ?>
 			<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
-					<a class="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
-				<?php endif; ?>
+				<a class="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+			<?php endif; ?>
 			<?php if ( ! empty( $cta_text ) && ! empty( $data['link'] ) ) : ?>
-				<a class="postGrid-item-button" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"><?php echo esc_html( $cta_text ); ?></a>
+				<a class="postGrid-item-button btn" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"><?php echo esc_html( $cta_text ); ?></a>
 			<?php endif; ?>
 			</article>
 		</li>
 		<?php
+		endspaceless();
 	}
 }
 
@@ -490,8 +492,10 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 			return ob_get_clean();
 		}
 		print '<ul class="linkList">';
+		$display_excerpt = isset( $attributes['displayExcerpt'] ) ? $attributes['displayExcerpt'] : 0;
+		$cta_text        = isset( $attributes['ctaText'] ) ? $attributes['ctaText'] : '';
 		foreach ( $data as $item ) {
-			benenson_render_list_item( $item, $attributes['displayExcerpt'], $attributes['ctaText'] );
+			benenson_render_list_item( $item, $display_excerpt, $cta_text );
 		}
 		print '</ul>';
 
