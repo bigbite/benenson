@@ -1,18 +1,27 @@
 import classnames from 'classnames';
 import PostMediaSelector from '../PostMediaSelector';
+import PostFeaturedVideo from '../header/PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { TextControl, PanelBody } = wp.components;
+const { TextControl, PanelBody, ToggleControl } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
 
 class DisplayComponent extends Component {
   handleMediaChange = (media) => {
     const { setAttributes } = this.props;
 
+    if (media) {
+      setAttributes({
+        mediaId: media.id,
+        mediaUrl: media.source_url,
+      });
+      return;
+    }
+
     setAttributes({
-      mediaId: media.id,
-      mediaUrl: media.source_url,
+      mediaId: null,
+      mediaUrl: null,
     });
   }
 
@@ -44,10 +53,22 @@ class DisplayComponent extends Component {
             value={ attributes.embed }
             onChange={ this.handleEmbedChange }
           />
+          <ToggleControl
+            label={ __('Display in modal', 'benenson') }
+            help={ __('Clicking play will open up the video in a modal.', 'benenson') }
+            checked={ attributes.modal }
+            onChange={ displayModal => setAttributes({ modal: displayModal }) }
+          />
           <PanelBody title={__('Image/Video Poster', 'benenson') }>
             <PostMediaSelector
               onUpdate={ this.handleMediaChange }
               mediaId={ attributes.mediaId }
+            />
+          </PanelBody>
+          <PanelBody title={__('Video (will override embed)', 'benenson') }>
+            <PostFeaturedVideo
+              onUpdate={ this.handleVideoChange }
+              featuredVideoId={ attributes.videoId }
             />
           </PanelBody>
         </InspectorControls>

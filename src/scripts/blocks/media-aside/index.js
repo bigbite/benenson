@@ -55,6 +55,12 @@ registerBlockType('benenson/media-aside', {
     embed: {
       type: 'string',
     },
+    videoId: {
+      type: 'integer',
+    },
+    modal: {
+      type: 'boolean',
+    },
   },
 
   edit: DisplayComponent,

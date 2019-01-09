@@ -459,7 +459,7 @@ msgid "Video"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:138
-#: src/scripts/blocks/media-aside/DisplayComponent.js:43
+#: src/scripts/blocks/media-aside/DisplayComponent.js:52
 msgid "Embed url"
 msgstr ""
 
@@ -655,7 +655,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
-#: src/scripts/blocks/media-aside/DisplayComponent.js:62
+#: src/scripts/blocks/media-aside/DisplayComponent.js:83
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:27
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
@@ -664,7 +664,7 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
-#: src/scripts/blocks/media-aside/DisplayComponent.js:73
+#: src/scripts/blocks/media-aside/DisplayComponent.js:94
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -837,12 +837,24 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:47
+#: src/scripts/blocks/media-aside/DisplayComponent.js:104
+msgid "(Insert Link text)"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:57
+msgid "Display in modal"
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:58
+msgid "Clicking play will open up the video in a modal."
+msgstr ""
+
+#: src/scripts/blocks/media-aside/DisplayComponent.js:62
 msgid "Image/Video Poster"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:83
-msgid "(Insert Link text)"
+#: src/scripts/blocks/media-aside/DisplayComponent.js:68
+msgid "Video (will override embed)"
 msgstr ""
 
 #: src/scripts/blocks/media-aside/index.js:27
