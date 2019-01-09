@@ -238,6 +238,9 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 				?>
 				</p>
 			<?php endif; ?>
+			<?php if ( ! empty( $data['buttonText'] ) && ! empty( $data['buttonLink'] ) ) : ?>
+				<a class="postGrid-item-button" href="<?php echo esc_url( $data['buttonLink'] ); ?>" aria-hidden="true"><?php echo esc_html( $data['buttonText'] ); ?></a>
+			<?php endif; ?>
 			<?php if ( ! empty( $cta_text ) && ! empty( $data['link'] ) ) : ?>
 				<a class="postGrid-item-button btn" href="<?php echo esc_url( $data['link'] ); ?>" aria-hidden="true"><?php echo esc_html( $cta_text ); ?></a>
 			<?php endif; ?>
