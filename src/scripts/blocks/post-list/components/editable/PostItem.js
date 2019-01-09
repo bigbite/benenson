@@ -2,11 +2,36 @@ const { __ } = wp.i18n;
 const { RichText, URLInputButton, MediaUpload } = wp.editor;
 const { IconButton } = wp.components;
 
+const setURL = (image) => {
+  if (!image.sizes || !Object.prototype.hasOwnProperty.call(image.sizes, 'large')) {
+    return image.url;
+  }
+
+  return image.sizes.large.url;
+};
+
 const PostItem = props => (
-  <article className="grid-item post-item" style={ {
-    backgroundImage: `url(${props.featured_image})`,
-  } }>
-    <span className="grid-itemMeta">
+  <article className="postGrid-item">
+
+      <MediaUpload
+        onSelect={ media => props.updateMedia({
+          featured_image_id: media.id,
+          featured_image: setURL(media),
+        }) }
+        value={ props.featured_image_id }
+        allowedTypes={ ['image'] }
+        render={ ({ open }) => (
+        <IconButton icon="format-image" onClick={ open } />
+        ) }
+      />
+
+      <figure class="postGrid-item-image" style={ {
+        backgroundImage: `url(${props.featured_image})`,
+      } }></figure>
+
+    <div className="postGrid-content">
+
+    <span className="postGrid-item-meta">
       <RichText
         tagName="span"
         onChange={ props.createUpdate('tagText') }
@@ -21,7 +46,7 @@ const PostItem = props => (
         onChange={ props.createUpdate('tagLink') }
       />
     </span>
-    <h3 className="grid-itemTitle">
+    <h3 className="postGrid-item-title">
       <a>
         <RichText
           tagName="span"
@@ -38,7 +63,7 @@ const PostItem = props => (
         />
       </a>
     </h3>
-    <div className="grid-itemContent">
+    <div className="postGrid-item-excerpt">
       <RichText
         tagName="p"
         onChange={ props.createUpdate('excerpt') }
@@ -48,6 +73,24 @@ const PostItem = props => (
         formattingControls={ [] }
         format="string"
       />
+    </div>
+
+    <span className="postGrid-item-button">
+      <RichText
+        tagName="a"
+        onChange={ props.createUpdate('buttonText') }
+        value={ props.buttonText }
+        placeholder={ __('(Button Text)', 'benenson') }
+        keepPlaceholderOnFocus={ true }
+        formattingControls={ [] }
+        format="string"
+      />
+      <URLInputButton
+        url={ props.buttonLink }
+        onChange={ props.createUpdate('buttonLink') }
+      />
+    </span>
+
     </div>
     <div className="linkList-options">
       {
@@ -60,17 +103,7 @@ const PostItem = props => (
           { __('Remove Image', 'benenson') }
         </IconButton>
       }
-      <MediaUpload
-        onSelect={ ({ id, url }) => props.updateMedia({
-          featured_image_id: id,
-          featured_image: url,
-        }) }
-        value={ props.featured_image_id }
-        allowedTypes={ ['image'] }
-        render={ ({ open }) => (
-        <IconButton icon="format-image" onClick={ open } />
-        ) }
-      />
+
       <IconButton onClick={ props.createRemove } icon="trash" />
     </div>
   </article>

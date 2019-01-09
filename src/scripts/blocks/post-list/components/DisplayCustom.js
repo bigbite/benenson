@@ -1,6 +1,7 @@
 import LinkList from './editable/LinkList';
 import GridItem from './editable/GridItem';
 import PostItem from './editable/PostItem';
+import SplitGridItem from './editable/SplitGridItem';
 
 const { __ } = wp.i18n;
 const { Component } = wp.element;
@@ -15,16 +16,19 @@ class DisplayCustom extends Component {
     excerpt: '',
     featured_image: '',
     featured_image_id: '',
+    date: '',
+    buttonText: '',
+    buttonLink: '',
   };
-
-  createUpdateMediaAttribute = index => ({ featuredImageId, featuredImage }) => {
+  // eslint-disable-next-line
+  createUpdateMediaAttribute = index => ({ featured_image_id, featured_image }) => {
     if (this.props.custom[index]) {
       return this.props.setAttributes({
         custom: [
           ...this.props.custom.map((item, i) => (index === i ? ({
             ...item,
-            featuredImage,
-            featuredImageId,
+            featured_image,
+            featured_image_id,
           }) : item)),
         ],
       });
@@ -35,8 +39,8 @@ class DisplayCustom extends Component {
         ...this.props.custom,
         {
           ...DisplayCustom.defaultObject,
-          featuredImage,
-          featuredImageId,
+          featured_image,
+          featured_image_id,
         },
       ],
     });
@@ -124,16 +128,29 @@ class DisplayCustom extends Component {
         )) }
       </div> }
 
-      { style === 'post' && <ul className="postList">
+      { style === 'post' && <div className={ `grid grid-${custom.length}` }>
         { custom.map((item, index) => (
           <PostItem
             key={ `${prefix}-${index}` }
             { ...item }
             createUpdate={ this.createUpdateAttribute(index) }
             createRemove={ this.createRemoveItem(index) }
+            updateMedia={ this.createUpdateMediaAttribute(index) }
           />
         )) }
-      </ul> }
+      </div> }
+
+      { style === 'splitgrid' && <div className={ `splitGrid splitGrid-${custom.length}` }>
+        { custom.map((item, index) => (
+          <SplitGridItem
+            key={ `${prefix}-${index}` }
+            { ...item }
+            createUpdate={ this.createUpdateAttribute(index) }
+            createRemove={ this.createRemoveItem(index) }
+            updateMedia={ this.createUpdateMediaAttribute(index) }
+          />
+        )) }
+      </div> }
 
       { custom.length < 8 && <button onClick={this.addItem} className="add-more-button">
         <BlockIcon icon="plus-alt" />
