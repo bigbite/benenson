@@ -198,6 +198,7 @@ if ( ! function_exists( 'benenson_list_process_content' ) ) {
  */
 if ( ! function_exists( 'benenson_render_list_item' ) ) {
 	function benenson_render_list_item( $data, $display_excerpt = 0, $cta_text = '' ) {
+		spaceless();
 		$title   = isset( $data['title'] ) ? $data['title'] : '';
 		$excerpt = isset( $data['excerpt'] ) ? $data['excerpt'] : '';
 		?>
@@ -246,6 +247,7 @@ if ( ! function_exists( 'benenson_render_list_item' ) ) {
 			</article>
 		</li>
 		<?php
+		endspaceless();
 	}
 }
 
