@@ -1,12 +1,11 @@
 <?php
 
-$twitter    = benenson_get_option( '_social_twitter' );
-$facebook   = benenson_get_option( '_social_facebook' );
-$googleplus = benenson_get_option( '_social_googleplus' );
-$instagram  = benenson_get_option( '_social_instagram' );
-$youtube    = benenson_get_option( '_social_youtube' );
+$twitter   = benenson_get_option( '_social_twitter' );
+$facebook  = benenson_get_option( '_social_facebook' );
+$instagram = benenson_get_option( '_social_instagram' );
+$youtube   = benenson_get_option( '_social_youtube' );
 
-$has_social = ( $twitter || $facebook || $googleplus || $instagram || $youtube );
+$has_social = ( $twitter || $facebook || $instagram || $youtube );
 
 $footer_section = [
 	'title'   => benenson_get_option( '_footer_title' ),
