@@ -9,6 +9,7 @@ import tweetAction from './modules/tweet-action';
 import stickyNav from './modules/sticky-nav';
 import categorySlider from './modules/category-slider';
 import modalEmbed from './modules/modal-embed';
+import inlineEmbed from './modules/inline-embed';
 import sliderBlock from './modules/slider-block';
 import subcatDrops from './modules/subcategory-dropdown';
 import categoryExpander from './modules/category-expander';
@@ -28,6 +29,7 @@ const App = () => {
   stickyNav();
   categorySlider();
   modalEmbed();
+  inlineEmbed();
   sliderBlock();
   subcatDrops();
   categoryExpander();

@@ -18,12 +18,22 @@
 }
 
 .mediaAside .mediaAside-col + .mediaAside-col {
+  display: block;
   margin-top: 25px;
 
   @include mq(x-small) {
     margin-top: 0px;
     margin-left: flexy-gutter();
   }
+}
+
+.mediaAside-videoContainer {
+  position: relative;
+}
+
+.mediaAside-videoContainer .mediaAside-video {
+  width: 100%;
+  height: auto;
 }
 
 .mediaAside-image {
@@ -35,7 +45,8 @@
   height: auto;
 }
 
-.mediaAside-image a {
+.mediaAside-image a,
+.mediaAside-videoContainer a {
   position: absolute;
   right: 0;
   top: 0;
@@ -50,4 +61,38 @@
   i {
     border-color: transparent transparent transparent #fff;
   }
+}
+
+.inlineVideo {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.inlineVideo iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.inlineVideo .inlineVideo-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.inlineVideo a {
+  z-index: 10;
+}
+
+.inlineVideo.inlineVideo--played a,
+.inlineVideo.inlineVideo--played .inlineVideo-poster {
+  display: none;
 }
