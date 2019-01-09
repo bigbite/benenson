@@ -88,6 +88,16 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:105
 	__( 'Black', 'benenson' ),
 
+	// Reference: src/scripts/blocks/appearance-options/index.js:56
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:26
+	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
+	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:75
+	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:16
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:91
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:58
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:203
 	__( 'Options', 'benenson' ),
 
@@ -350,7 +360,7 @@ $generated_i18n_strings = array(
 	__( 'Video', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:138
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:43
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:52
 	__( 'Embed url', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:142
@@ -500,7 +510,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:68
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:62
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
@@ -508,7 +518,7 @@ $generated_i18n_strings = array(
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:73
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:94
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -640,11 +650,20 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:47
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:104
+	__( '(Insert Link text)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:57
+	__( 'Display in modal', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:58
+	__( 'Clicking play will open up the video in a modal.', 'benenson' ),
+
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:62
 	__( 'Image/Video Poster', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
-	__( '(Insert Link text)', 'benenson' ),
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:68
+	__( 'Video (will override embed)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/index.js:27
 	__( 'Media aside', 'benenson' ),
