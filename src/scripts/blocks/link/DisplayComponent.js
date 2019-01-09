@@ -75,7 +75,7 @@ class DisplayComponent extends Component {
         </PanelBody>
       </InspectorControls>
       <div className={ linkClasses }>
-        <a className={ ['btn', attributes.linkStyle, attributes.linkIcon].join(' ') }>
+        <a className={ classnames('btn', attributes.linkStyle, attributes.linkIcon) }>
           <RichText
             tagName="span"
             onChange={ this.createUpdateAttribute('linkText') }
