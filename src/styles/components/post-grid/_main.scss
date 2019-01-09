@@ -165,3 +165,11 @@
   color: $color-secondary;
   margin: 15px 0;
 }
+
+.linkList-item .postGrid-item-button.btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: $color-white;
+  padding: 10px 20px;
+}
