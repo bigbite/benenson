@@ -597,6 +597,7 @@ msgid "Responsive Iframe"
 msgstr ""
 
 #: src/scripts/blocks/image/BlockEdit.js:143
+#: src/scripts/blocks/link/DisplayComponent.js:80
 msgid "(Link Text)"
 msgstr ""
 

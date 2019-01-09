@@ -87,6 +87,9 @@
 @import "components/media-aside/main";
 @import "components/media-aside/editor";
 
+// helpers
+@import "utils/helpers/type";
+
 p.has-small-font-size {
   font-size: .9rem !important;
 }
