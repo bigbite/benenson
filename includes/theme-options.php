@@ -42,7 +42,7 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 		register_setting( 'theme_options', '_social_youtube', $text_field_args );
 		register_setting( 'theme_options', '_social_instagram', $text_field_args );
 
-		register_setting( 'theme_options', '_logo', [ 'sanitize_callback', 'benenson_sanitize_attachment_id' ] );
+		register_setting( 'theme_options', '_logo', [ 'sanitize_callback' => 'benenson_sanitize_attachment_id' ] );
 		register_setting( 'theme_options', '_logo_url', $text_field_args );
 
 		register_setting( 'theme_options', '_default_sidebar_page', $sidebar_args );
