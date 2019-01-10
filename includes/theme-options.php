@@ -186,9 +186,14 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 		array_walk( $posts, function( &$item ) use ( &$sidebar_post_list ) {
 			$sidebar_post_list[ $item->ID ] = $item->post_title;
 		} );
+
+		$sidebar_post_list = apply_filters( 'benenson_settings_sidebar_post_list', $sidebar_post_list );
 		?>
 <div class="wrap">
 	<h1><?php esc_html_e( 'Theme Options', 'benenson' ); ?></h1>
+
+		<?php do_action( 'benenson_settings_before_form' ); ?>
+
 	<form method="post" action="options.php">
 		<?php settings_fields( 'theme_options' ); ?>
 
@@ -222,6 +227,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="url" name="_social_instagram" value="<?php echo esc_attr( $value ); ?>" placeholder="https://">
 				</td>
 			</tr>
+			<?php do_action( 'benenson_settings_social' ); ?>
 		</table>
 
 		<h2><?php esc_html_e( 'Analytics', 'benenson' ); ?></h2>
@@ -240,6 +246,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="text" name="_analytics_ga" value="<?php echo esc_html( $value ); ?>" placeholder="UA-XXXXX-X">
 				</td>
 			</tr>
+			<?php do_action( 'benenson_settings_analytics' ); ?>
 		</table>
 
 		<h2><?php esc_html_e( 'Sidebar', 'benenson' ); ?></h2>
@@ -283,6 +290,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					</select>
 				</td>
 			</tr>
+			<?php do_action( 'benenson_settings_sidebar' ); ?>
 		</table>
 
 		<h2><?php esc_html_e( 'Search', 'benenson' ); ?></h2>
@@ -301,6 +309,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="checkbox" name="_search_navigation_disabled" <?php echo esc_attr( $value ); ?> />
 				</td>
 			</tr>
+			<?php do_action( 'benenson_settings_search' ); ?>
 		</table>
 
 		<h2><?php esc_html_e( 'Logo', 'benenson' ); ?></h2>
@@ -333,6 +342,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="url" name="_logo_url" value="<?php echo esc_attr( $value ); ?>" placeholder="https://">
 				</td>
 			</tr>
+			<?php do_action( 'benenson_settings_logo' ); ?>
 		</table>
 		<?php submit_button(); ?>
 	</form>
