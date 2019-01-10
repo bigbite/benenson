@@ -1,0 +1,19 @@
+.teaser {
+  display: flex;
+}
+
+.teaser-col:first-of-type {
+  width: calc(40% - 15px);
+  flex-basis: calc(40% - 15px);
+}
+
+.teaser-col:last-of-type {
+  margin-left: 30px;
+  width: calc(60% - 15px);
+  flex-basis: calc(60% - 15px);
+}
+
+.teaser .teaser-image img {
+  max-width: 100%;
+  height: auto;
+}
