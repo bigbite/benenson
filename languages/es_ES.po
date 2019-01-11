@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:03+0000\n"
-"PO-Revision-Date: 2019-01-09 16:03+0000\n"
+"POT-Creation-Date: 2019-01-11 14:47+0000\n"
+"PO-Revision-Date: 2019-01-11 14:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -935,52 +935,52 @@ msgid "Navigation"
 msgstr "Navegación"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "Categoría:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "Número de publicaciones a mostrar:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "Utilizar categorías relacionadas cuando se admita"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "Mostrar extracto"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "Texto del botón:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(Texto de la CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "Ocultar vista previa"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "Mostrar vista previa"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "Lista de Enlaces"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "Cuadrícula"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "Entradas"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "Cuadrícula dividida"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "Tipo"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -995,8 +995,8 @@ msgid "Custom"
 msgstr "Personalizado"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "Categoría:"
+msgid "Type"
+msgstr "Tipo"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
