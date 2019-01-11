@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/scripts/blocks/PostMediaSelector.js:8
 #: src/scripts/blocks/action/BlockEdit.js:78
-#: src/scripts/blocks/image/BlockEdit.js:224
+#: src/scripts/blocks/image/BlockEdit.js:239
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:103
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
@@ -182,14 +182,14 @@ msgstr ""
 # text alignment. for RTL languages, localise as 'Right'
 #: src/scripts/blocks/blockquote/index.js:163
 #: src/scripts/blocks/header/DisplayComponent.js:80
-#: src/scripts/blocks/image/BlockEdit.js:205
+#: src/scripts/blocks/image/BlockEdit.js:201
 #: src/scripts/blocks/link/DisplayComponent.js:63
 #: src/scripts/blocks/slider/DisplayComponent.js:35
 msgid "Left"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:164
-#: src/scripts/blocks/image/BlockEdit.js:203
+#: src/scripts/blocks/image/BlockEdit.js:197
 #: src/scripts/blocks/tweet/index.js:89
 msgid "Default"
 msgstr ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:216
 #: src/scripts/blocks/header/DisplayComponent.js:77
-#: src/scripts/blocks/image/BlockEdit.js:198
+#: src/scripts/blocks/image/BlockEdit.js:220
 msgid "Alignment"
 msgstr ""
 
@@ -307,7 +307,7 @@ msgid "(Heading)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:78
-#: src/scripts/blocks/image/BlockEdit.js:271
+#: src/scripts/blocks/image/BlockEdit.js:286
 #: src/scripts/blocks/slider/DisplayComponent.js:323
 msgid "(Content)"
 msgstr ""
@@ -444,17 +444,17 @@ msgid "Normal"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:125
-#: src/scripts/blocks/image/BlockEdit.js:372
+#: src/scripts/blocks/image/BlockEdit.js:387
 msgid "Background Type"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:127
-#: src/scripts/blocks/image/BlockEdit.js:374
+#: src/scripts/blocks/image/BlockEdit.js:389
 msgid "Image"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:130
-#: src/scripts/blocks/image/BlockEdit.js:377
+#: src/scripts/blocks/image/BlockEdit.js:392
 msgid "Video"
 msgstr ""
 
@@ -495,7 +495,7 @@ msgid "(Call to action)"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:83
-#: src/scripts/blocks/image/BlockEdit.js:206
+#: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/slider/DisplayComponent.js:36
 msgid "Centre"
 msgstr ""
@@ -531,7 +531,7 @@ msgid "Remove featured video"
 msgstr ""
 
 #: src/scripts/blocks/header/PostFeaturedVideo.js:85
-#: src/scripts/blocks/image/BlockEdit.js:321
+#: src/scripts/blocks/image/BlockEdit.js:336
 msgid "Replace Video"
 msgstr ""
 
@@ -596,56 +596,56 @@ msgstr ""
 msgid "Responsive Iframe"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:143
+#: src/scripts/blocks/image/BlockEdit.js:144
 #: src/scripts/blocks/link/DisplayComponent.js:83
 msgid "(Link Text)"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:151
+#: src/scripts/blocks/image/BlockEdit.js:152
 msgid "Remove Button"
 msgstr ""
 
 #: src/scripts/blocks/image/BlockEdit.js:189
-msgid "Image Style"
-msgstr ""
-
-#: src/scripts/blocks/image/BlockEdit.js:193
 msgid "Fixed Height (600px)"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:194
+#: src/scripts/blocks/image/BlockEdit.js:192
 msgid "Actual Height"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:199
+#: src/scripts/blocks/image/BlockEdit.js:214
+msgid "Image Style"
+msgstr ""
+
+#: src/scripts/blocks/image/BlockEdit.js:221
 msgid "Only has an effect on images smaller than their container"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:265
+#: src/scripts/blocks/image/BlockEdit.js:280
 msgid "(Title)"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:282
+#: src/scripts/blocks/image/BlockEdit.js:297
 msgid "Add Button"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:306
+#: src/scripts/blocks/image/BlockEdit.js:321
 msgid "Choose Video"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:325
+#: src/scripts/blocks/image/BlockEdit.js:340
 msgid "Remove Video"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:389
+#: src/scripts/blocks/image/BlockEdit.js:404
 msgid "Display Overlay"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:394
+#: src/scripts/blocks/image/BlockEdit.js:409
 msgid "Enable Parallax"
 msgstr ""
 
-#: src/scripts/blocks/image/BlockEdit.js:414
+#: src/scripts/blocks/image/BlockEdit.js:429
 msgid "(Insert Caption, if required)"
 msgstr ""
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:06+0000\n"
-"PO-Revision-Date: 2019-01-09 16:07+0000\n"
+"POT-Creation-Date: 2019-01-11 15:29+0000\n"
+"PO-Revision-Date: 2019-01-11 15:29+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -670,16 +670,16 @@ msgid "Remove Button"
 msgstr "Bouton supprimer"
 
 #: includes/block-translations.php:476
-msgid "Image Style"
-msgstr "Style d’image"
-
-#: includes/block-translations.php:479
 msgid "Fixed Height (600px)"
 msgstr "Hauteur fixe (600px)"
 
-#: includes/block-translations.php:482
+#: includes/block-translations.php:479
 msgid "Actual Height"
 msgstr "Hauteur réelle"
+
+#: includes/block-translations.php:482
+msgid "Image Style"
+msgstr "Style d’image"
 
 #: includes/block-translations.php:485
 msgid "Only has an effect on images smaller than their container"
