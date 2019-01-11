@@ -220,20 +220,20 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:226
 #: src/scripts/blocks/header/DisplayComponent.js:117
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
 #: src/scripts/blocks/section/DisplayComponent.js:56
 msgid "Small"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:227
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:146
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:142
 msgid "Medium"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:228
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:230
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:147
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
 msgid "Large"
 msgstr ""
 
@@ -245,7 +245,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:33
 #: src/scripts/blocks/key-facts/index.js:59
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
-#: src/scripts/blocks/logo-list/BlockEdit.js:58
+#: src/scripts/blocks/logo-list/BlockEdit.js:52
 #: src/scripts/blocks/menu/DisplayComponent.js:11
 #: src/scripts/blocks/section/DisplayComponent.js:44
 #: src/scripts/blocks/section/index.js:27
@@ -503,7 +503,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:94
 #: src/scripts/blocks/key-facts/index.js:54
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:62
-#: src/scripts/blocks/logo-list/BlockEdit.js:53
+#: src/scripts/blocks/logo-list/BlockEdit.js:67
 #: src/scripts/blocks/menu/DisplayComponent.js:102
 #: src/scripts/blocks/section/DisplayComponent.js:39
 msgid "Background Colour"
@@ -517,7 +517,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/index.js:58
 #: src/scripts/blocks/link/DisplayComponent.js:48
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:66
-#: src/scripts/blocks/logo-list/BlockEdit.js:57
+#: src/scripts/blocks/logo-list/BlockEdit.js:49
 #: src/scripts/blocks/section/DisplayComponent.js:59
 msgid "None"
 msgstr ""
@@ -682,7 +682,7 @@ msgstr ""
 
 #: src/scripts/blocks/key-facts/index.js:47
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:46
-#: src/scripts/blocks/logo-list/BlockEdit.js:46
+#: src/scripts/blocks/logo-list/BlockEdit.js:60
 msgid "Quantity"
 msgstr ""
 
@@ -763,7 +763,7 @@ msgid "Add a links-with-icons block"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:103
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:84
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:85
 msgid "Pick an image"
 msgstr ""
 
@@ -789,12 +789,12 @@ msgid "Plain"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:224
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:141
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:153
 msgid "Icon Size"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:234
-#: src/scripts/blocks/logo-list/InnerBlockEdit.js:151
+#: src/scripts/blocks/logo-list/InnerBlockEdit.js:159
 msgid "Hide Image Credit Display"
 msgstr ""
 
