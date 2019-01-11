@@ -121,7 +121,6 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			'benenson-packages-js',
 		], true, false );
 
-
 		if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {
 			// gutenberg plugin
 			wp_add_inline_script(
