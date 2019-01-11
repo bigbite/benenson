@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:04+0000\n"
-"PO-Revision-Date: 2019-01-09 16:04+0000\n"
+"POT-Creation-Date: 2019-01-11 15:51+0000\n"
+"PO-Revision-Date: 2019-01-11 15:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -133,7 +133,7 @@ msgstr "منوی اصلی"
 msgid "Close navigation"
 msgstr "نزدیک ناوبری"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "اصلی"
 
@@ -731,45 +731,45 @@ msgstr "افزودن بلوک آمار کلیدی"
 msgid "Quantity"
 msgstr "مقدار"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "متن لینک"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "آدرس لینک"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "سبک لینک"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Primary Outline"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "جامد اولیه"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "لینک آیکون"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "فلش بالا"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "فلش پایین"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "لینک تراز"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "وسط"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "متن لینک"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "آدرس لینک"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "سبک لینک"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "لینک آیکون"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "لینک تراز"
 
 #: includes/block-translations.php:573
 msgid "Link"

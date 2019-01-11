@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:07+0000\n"
-"PO-Revision-Date: 2019-01-09 16:07+0000\n"
+"POT-Creation-Date: 2019-01-11 15:51+0000\n"
+"PO-Revision-Date: 2019-01-11 15:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -133,7 +133,7 @@ msgstr "Menu Principal"
 msgid "Close navigation"
 msgstr "Fechar a navegação"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "Primário"
 
@@ -736,45 +736,45 @@ msgstr "Adicionar um bloco de fatos-chave"
 msgid "Quantity"
 msgstr "Quantidade"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "Texto do link"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "Link url"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "Estilo da ligação"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Esboço Primário/Primary Outline"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "Sólido primário"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "Ícone do link"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "Seta para cima"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "Seta para baixo"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "Alinhamento do link"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "Centro"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "Texto do link"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "Link url"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "Estilo da ligação"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "Ícone do link"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "Alinhamento do link"
 
 #: includes/block-translations.php:573
 msgid "Link"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:02+0000\n"
-"PO-Revision-Date: 2019-01-09 16:03+0000\n"
+"POT-Creation-Date: 2019-01-11 15:51+0000\n"
+"PO-Revision-Date: 2019-01-11 15:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -133,7 +133,7 @@ msgstr "Main Menu"
 msgid "Close navigation"
 msgstr "Close navigation"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "Primary"
 
@@ -733,45 +733,45 @@ msgstr "Add a key facts block"
 msgid "Quantity"
 msgstr "Quantity"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "Link text"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "Link url"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "Link style"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Primary Outline"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "Primary Solid"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "Link icon"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "Up arrow"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "Down arrow"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "Link alignment"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "Center"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "Link text"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "Link url"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "Link style"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "Link icon"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "Link alignment"
 
 #: includes/block-translations.php:573
 msgid "Link"
