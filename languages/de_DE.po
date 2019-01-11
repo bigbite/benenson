@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:02+0000\n"
-"PO-Revision-Date: 2019-01-09 16:02+0000\n"
+"POT-Creation-Date: 2019-01-11 14:26+0000\n"
+"PO-Revision-Date: 2019-01-11 14:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -518,26 +518,30 @@ msgid "Edit File"
 msgstr "Datei bearbeiten"
 
 #: includes/block-translations.php:348
-msgid "Normal"
-msgstr "Normal"
-
-#: includes/block-translations.php:352
-msgid "Background Type"
-msgstr "Hintergrund Typ"
-
-#: includes/block-translations.php:356
 msgid "Image"
 msgstr "Bild"
 
-#: includes/block-translations.php:360
+#: includes/block-translations.php:352
 msgid "Video"
 msgstr "Video"
 
+#: includes/block-translations.php:356
+msgid "Normal"
+msgstr "Normal"
+
 #: includes/block-translations.php:364
+msgid "Background Colour"
+msgstr "Hintergrundfarbe"
+
+#: includes/block-translations.php:368
+msgid "Background Type"
+msgstr "Hintergrund Typ"
+
+#: includes/block-translations.php:372
 msgid "Embed url"
 msgstr "URL einbetten"
 
-#: includes/block-translations.php:367
+#: includes/block-translations.php:375
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
@@ -545,37 +549,33 @@ msgstr ""
 "Wenn Sie dies setzen, wird der cta-Link überschrieben und öffnet nun ein "
 "Modal mit dem Einbetten in den Helden."
 
-#: includes/block-translations.php:371
+#: includes/block-translations.php:379
 msgid "Background Image"
 msgstr "Hintergrundbild"
 
-#: includes/block-translations.php:374 includes/post-types/sidebar.php:27
+#: includes/block-translations.php:382 includes/post-types/sidebar.php:27
 msgid "Featured Image"
 msgstr "Beitragsbild"
 
-#: includes/block-translations.php:377
+#: includes/block-translations.php:385
 msgid "Featured Video"
 msgstr "Featured Video"
 
-#: includes/block-translations.php:380
+#: includes/block-translations.php:388
 msgid "(Header Title)"
 msgstr "(Header Titel)"
 
-#: includes/block-translations.php:383
+#: includes/block-translations.php:391
 msgid "(Header Content)"
 msgstr "(Header Content)"
 
-#: includes/block-translations.php:386
+#: includes/block-translations.php:394
 msgid "(Call to action)"
 msgstr "(Aufruf zum Handeln)"
 
-#: includes/block-translations.php:391
+#: includes/block-translations.php:399
 msgid "Centre"
 msgstr "Zentriert"
-
-#: includes/block-translations.php:399
-msgid "Background Colour"
-msgstr "Hintergrundfarbe"
 
 #: includes/block-translations.php:402
 msgid "Translucent black"

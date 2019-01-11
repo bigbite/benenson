@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:57
 #: src/scripts/blocks/blockquote/index.js:222
-#: src/scripts/blocks/header/DisplayComponent.js:112
+#: src/scripts/blocks/header/DisplayComponent.js:134
 #: src/scripts/blocks/tweet/index.js:85
 msgid "Size"
 msgstr ""
@@ -101,7 +101,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:44
 #: src/scripts/blocks/blockquote/index.js:238
-#: src/scripts/blocks/header/DisplayComponent.js:102
+#: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:10
 #: src/scripts/blocks/section/DisplayComponent.js:41
 msgid "White"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:47
 #: src/scripts/blocks/blockquote/index.js:236
-#: src/scripts/blocks/header/DisplayComponent.js:105
+#: src/scripts/blocks/header/DisplayComponent.js:98
 msgid "Black"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
-#: src/scripts/blocks/header/DisplayComponent.js:75
+#: src/scripts/blocks/header/DisplayComponent.js:120
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:19
 #: src/scripts/blocks/menu/DisplayComponent.js:91
@@ -181,7 +181,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
 #: src/scripts/blocks/blockquote/index.js:163
-#: src/scripts/blocks/header/DisplayComponent.js:80
+#: src/scripts/blocks/header/DisplayComponent.js:76
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/link/DisplayComponent.js:63
 #: src/scripts/blocks/slider/DisplayComponent.js:35
@@ -196,7 +196,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Left'
 #: src/scripts/blocks/blockquote/index.js:169
-#: src/scripts/blocks/header/DisplayComponent.js:87
+#: src/scripts/blocks/header/DisplayComponent.js:83
 #: src/scripts/blocks/image/BlockEdit.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:69
 #: src/scripts/blocks/slider/DisplayComponent.js:38
@@ -208,7 +208,7 @@ msgid "Blockquote"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:216
-#: src/scripts/blocks/header/DisplayComponent.js:77
+#: src/scripts/blocks/header/DisplayComponent.js:122
 #: src/scripts/blocks/image/BlockEdit.js:198
 msgid "Alignment"
 msgstr ""
@@ -218,7 +218,7 @@ msgid "Add a blockquote block"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:226
-#: src/scripts/blocks/header/DisplayComponent.js:117
+#: src/scripts/blocks/header/DisplayComponent.js:114
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
 #: src/scripts/blocks/section/DisplayComponent.js:56
@@ -438,69 +438,22 @@ msgstr ""
 msgid "Edit File"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:114
-#: src/scripts/blocks/section/DisplayComponent.js:68
-msgid "Normal"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:125
-#: src/scripts/blocks/image/BlockEdit.js:372
-msgid "Background Type"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:127
+#: src/scripts/blocks/header/DisplayComponent.js:103
 #: src/scripts/blocks/image/BlockEdit.js:374
 msgid "Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:130
+#: src/scripts/blocks/header/DisplayComponent.js:106
 #: src/scripts/blocks/image/BlockEdit.js:377
 msgid "Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:138
-#: src/scripts/blocks/media-aside/DisplayComponent.js:52
-msgid "Embed url"
+#: src/scripts/blocks/header/DisplayComponent.js:111
+#: src/scripts/blocks/section/DisplayComponent.js:68
+msgid "Normal"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:142
-msgid ""
-"Setting this will override the cta link and will now open a modal with the "
-"embed in the hero."
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:144
-#: src/scripts/blocks/section/DisplayComponent.js:86
-msgid "Background Image"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:144
-msgid "Featured Image"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:147
-msgid "Featured Video"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:169
-msgid "(Header Title)"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:178
-msgid "(Header Content)"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:189
-msgid "(Call to action)"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:83
-#: src/scripts/blocks/image/BlockEdit.js:206
-#: src/scripts/blocks/slider/DisplayComponent.js:36
-msgid "Centre"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:94
+#: src/scripts/blocks/header/DisplayComponent.js:128
 #: src/scripts/blocks/key-facts/index.js:54
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:62
 #: src/scripts/blocks/logo-list/BlockEdit.js:53
@@ -509,11 +462,58 @@ msgstr ""
 msgid "Background Colour"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:96
+#: src/scripts/blocks/header/DisplayComponent.js:140
+#: src/scripts/blocks/image/BlockEdit.js:372
+msgid "Background Type"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:146
+#: src/scripts/blocks/media-aside/DisplayComponent.js:52
+msgid "Embed url"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:150
+msgid ""
+"Setting this will override the cta link and will now open a modal with the "
+"embed in the hero."
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/section/DisplayComponent.js:86
+msgid "Background Image"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:152
+msgid "Featured Image"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:155
+msgid "Featured Video"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:177
+msgid "(Header Title)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:186
+msgid "(Header Content)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:197
+msgid "(Call to action)"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:79
+#: src/scripts/blocks/image/BlockEdit.js:206
+#: src/scripts/blocks/slider/DisplayComponent.js:36
+msgid "Centre"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:89
 msgid "Translucent black"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:99
+#: src/scripts/blocks/header/DisplayComponent.js:92
 #: src/scripts/blocks/key-facts/index.js:58
 #: src/scripts/blocks/link/DisplayComponent.js:48
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:66
