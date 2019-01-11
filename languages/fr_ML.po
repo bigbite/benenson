@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:07+0000\n"
-"PO-Revision-Date: 2019-01-09 16:07+0000\n"
+"POT-Creation-Date: 2019-01-11 12:59+0000\n"
+"PO-Revision-Date: 2019-01-11 12:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_ML\n"
@@ -202,95 +202,95 @@ msgid "Select a sidebar"
 msgstr "Sélectionnez une barre latérale"
 
 #: includes/block-translations.php:61
+msgid "Disable Sidebar"
+msgstr "Désactiver la barre latérale"
+
+#: includes/block-translations.php:64
+msgid "Hides the sidebar for this post"
+msgstr "Masque la barre latérale de ce message"
+
+#: includes/block-translations.php:67
 msgid "Share Buttons"
 msgstr "Boutons de partage"
 
-#: includes/block-translations.php:64
+#: includes/block-translations.php:70
 msgid "Disable Share Buttons for this page"
 msgstr "Désactiver les boutons de partage pour cette page"
 
-#: includes/block-translations.php:67
-msgid "Appearance"
-msgstr "Apparence"
-
-#: includes/block-translations.php:71
-msgid "Header"
-msgstr "En-tête"
-
-#: includes/block-translations.php:74
-msgid "Navigation Style:"
-msgstr "Style de navigation:"
-
-#: includes/block-translations.php:77
+#: includes/block-translations.php:73
 msgid "Global"
 msgstr "Mondiale"
 
-#: includes/block-translations.php:84
+#: includes/block-translations.php:80
 msgid "White"
 msgstr "Blanc"
 
-#: includes/block-translations.php:89
+#: includes/block-translations.php:85
 msgid "Black"
 msgstr "Noir"
 
-#: includes/block-translations.php:102
-msgid "Options"
-msgstr "Options"
-
-#: includes/block-translations.php:105
-msgid "Post Thumbnail Style"
-msgstr "Poster un style miniature"
-
-#: includes/block-translations.php:108
-msgid "Affects its display on the news index only."
-msgstr "Affecte son affichage uniquement sur l'index des nouvelles."
-
-#: includes/block-translations.php:111
+#: includes/block-translations.php:88
 msgid "Half size"
 msgstr "Demi-pointure"
 
-#: includes/block-translations.php:114
+#: includes/block-translations.php:91
 msgid "Full Background"
 msgstr "Fond complet"
 
+#: includes/block-translations.php:94
+msgid "Appearance"
+msgstr "Apparence"
+
+#: includes/block-translations.php:98
+msgid "Header"
+msgstr "En-tête"
+
+#: includes/block-translations.php:101
+msgid "Navigation Style:"
+msgstr "Style de navigation:"
+
+#: includes/block-translations.php:114
+msgid "Options"
+msgstr "Options"
+
 #: includes/block-translations.php:117
+msgid "Post Thumbnail Style"
+msgstr "Poster un style miniature"
+
+#: includes/block-translations.php:120
+msgid "Affects its display on the news index only."
+msgstr "Affecte son affichage uniquement sur l'index des nouvelles."
+
+#: includes/block-translations.php:123
 msgid "Hide featured image"
 msgstr "Masquer l'image en vedette"
 
-#: includes/block-translations.php:120
+#: includes/block-translations.php:126
 msgid "Disables display of featured image on post single."
 msgstr "Désactive l'affichage de l'image en vedette sur le post-Single."
 
-#: includes/block-translations.php:123
+#: includes/block-translations.php:129
 msgid "Force full-width featured image"
 msgstr "Force pleine largeur image en vedette"
 
-#: includes/block-translations.php:126
+#: includes/block-translations.php:132
 msgid "Ensures a small featured image fills the width of the content area."
 msgstr ""
 "Assure une petite image en vedette remplit la largeur de la zone de contenu."
 
-#: includes/block-translations.php:129
+#: includes/block-translations.php:135
 msgid "Reduce Content Width"
 msgstr "Réduire la largeur du contenu"
 
-#: includes/block-translations.php:132
+#: includes/block-translations.php:138
 msgid "Adds a small amount of padding to the content."
 msgstr "Ajoute une petite quantité de remplissage au contenu."
 
-#: includes/block-translations.php:135 includes/post-types/sidebar.php:12
+#: includes/block-translations.php:141 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
 #: single.php:120
 msgid "Sidebar"
 msgstr "Barre latérale"
-
-#: includes/block-translations.php:138
-msgid "Disable Sidebar"
-msgstr "Désactiver la barre latérale"
-
-#: includes/block-translations.php:141
-msgid "Hides the sidebar for this post"
-msgstr "Masque la barre latérale de ce message"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:149

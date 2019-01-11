@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:02+0000\n"
-"PO-Revision-Date: 2019-01-09 16:02+0000\n"
+"POT-Creation-Date: 2019-01-11 12:59+0000\n"
+"PO-Revision-Date: 2019-01-11 13:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -202,94 +202,94 @@ msgid "Select a sidebar"
 msgstr "Wähle eine Seitenleiste aus"
 
 #: includes/block-translations.php:61
+msgid "Disable Sidebar"
+msgstr "Sidebar deaktivieren"
+
+#: includes/block-translations.php:64
+msgid "Hides the sidebar for this post"
+msgstr "Versteckt die Sidebar für diesen Beitrag"
+
+#: includes/block-translations.php:67
 msgid "Share Buttons"
 msgstr "Teilen Schaltflächen"
 
-#: includes/block-translations.php:64
+#: includes/block-translations.php:70
 msgid "Disable Share Buttons for this page"
 msgstr "Deaktivieren Sie Share Buttons für diese Seite"
 
-#: includes/block-translations.php:67
-msgid "Appearance"
-msgstr "Aussehen"
-
-#: includes/block-translations.php:71
-msgid "Header"
-msgstr "Header"
-
-#: includes/block-translations.php:74
-msgid "Navigation Style:"
-msgstr "Navigationsstil:"
-
-#: includes/block-translations.php:77
+#: includes/block-translations.php:73
 msgid "Global"
 msgstr "Global"
 
-#: includes/block-translations.php:84
+#: includes/block-translations.php:80
 msgid "White"
 msgstr "Weiß"
 
-#: includes/block-translations.php:89
+#: includes/block-translations.php:85
 msgid "Black"
 msgstr "Schwarz"
 
-#: includes/block-translations.php:102
-msgid "Options"
-msgstr "Optionen"
-
-#: includes/block-translations.php:105
-msgid "Post Thumbnail Style"
-msgstr "Post Thumbnail Style"
-
-#: includes/block-translations.php:108
-msgid "Affects its display on the news index only."
-msgstr "Wirkt sich nur auf die Anzeige im News-Index aus."
-
-#: includes/block-translations.php:111
+#: includes/block-translations.php:88
 msgid "Half size"
 msgstr "Halbe Größe"
 
-#: includes/block-translations.php:114
+#: includes/block-translations.php:91
 msgid "Full Background"
 msgstr "Voller Hintergrund"
 
+#: includes/block-translations.php:94
+msgid "Appearance"
+msgstr "Aussehen"
+
+#: includes/block-translations.php:98
+msgid "Header"
+msgstr "Header"
+
+#: includes/block-translations.php:101
+msgid "Navigation Style:"
+msgstr "Navigationsstil:"
+
+#: includes/block-translations.php:114
+msgid "Options"
+msgstr "Optionen"
+
 #: includes/block-translations.php:117
+msgid "Post Thumbnail Style"
+msgstr "Post Thumbnail Style"
+
+#: includes/block-translations.php:120
+msgid "Affects its display on the news index only."
+msgstr "Wirkt sich nur auf die Anzeige im News-Index aus."
+
+#: includes/block-translations.php:123
 msgid "Hide featured image"
 msgstr "Beitragsbild ausblenden"
 
-#: includes/block-translations.php:120
+#: includes/block-translations.php:126
 msgid "Disables display of featured image on post single."
 msgstr "Deaktiviert die Anzeige des vorgestellten Bildes auf der Post Single."
 
-#: includes/block-translations.php:123
+#: includes/block-translations.php:129
 msgid "Force full-width featured image"
 msgstr "Kraftvolle Breite vorgestellten Bild"
 
-#: includes/block-translations.php:126
+#: includes/block-translations.php:132
 msgid "Ensures a small featured image fills the width of the content area."
 msgstr "Sorgt, dass ein kleines Bild die Breite des Content-Bereichs ausfüllt."
 
-#: includes/block-translations.php:129
+#: includes/block-translations.php:135
 msgid "Reduce Content Width"
 msgstr "Inhaltsbreite reduzieren"
 
-#: includes/block-translations.php:132
+#: includes/block-translations.php:138
 msgid "Adds a small amount of padding to the content."
 msgstr "Fügt dem Inhalt eine kleine Menge Polsterung hinzu."
 
-#: includes/block-translations.php:135 includes/post-types/sidebar.php:12
+#: includes/block-translations.php:141 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
 #: single.php:120
 msgid "Sidebar"
 msgstr "Seitenleiste"
-
-#: includes/block-translations.php:138
-msgid "Disable Sidebar"
-msgstr "Sidebar deaktivieren"
-
-#: includes/block-translations.php:141
-msgid "Hides the sidebar for this post"
-msgstr "Versteckt die Sidebar für diesen Beitrag"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:149

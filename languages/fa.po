@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:05+0000\n"
-"PO-Revision-Date: 2019-01-09 16:06+0000\n"
+"POT-Creation-Date: 2019-01-11 12:59+0000\n"
+"PO-Revision-Date: 2019-01-11 12:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -202,94 +202,94 @@ msgid "Select a sidebar"
 msgstr "نوار کناری را انتخاب کنید"
 
 #: includes/block-translations.php:61
+msgid "Disable Sidebar"
+msgstr "غیر فعال کردن نوار جانبی"
+
+#: includes/block-translations.php:64
+msgid "Hides the sidebar for this post"
+msgstr "نمایش نوار جانبی برای این پست"
+
+#: includes/block-translations.php:67
 msgid "Share Buttons"
 msgstr "دکمه های اشتراک گذاری"
 
-#: includes/block-translations.php:64
+#: includes/block-translations.php:70
 msgid "Disable Share Buttons for this page"
 msgstr "غیر فعال کردن دکمه های اشتراک گذاری برای این صفحه"
 
-#: includes/block-translations.php:67
-msgid "Appearance"
-msgstr "ظاهر"
-
-#: includes/block-translations.php:71
-msgid "Header"
-msgstr "سربرگ"
-
-#: includes/block-translations.php:74
-msgid "Navigation Style:"
-msgstr "ناوبری سبک:"
-
-#: includes/block-translations.php:77
+#: includes/block-translations.php:73
 msgid "Global"
 msgstr "جهانی"
 
-#: includes/block-translations.php:84
+#: includes/block-translations.php:80
 msgid "White"
 msgstr "سفید"
 
-#: includes/block-translations.php:89
+#: includes/block-translations.php:85
 msgid "Black"
 msgstr "سیاه"
 
-#: includes/block-translations.php:102
-msgid "Options"
-msgstr "تنظیمات"
-
-#: includes/block-translations.php:105
-msgid "Post Thumbnail Style"
-msgstr "استایل تصویرکِ نوشته"
-
-#: includes/block-translations.php:108
-msgid "Affects its display on the news index only."
-msgstr "صفحه نمایش خود را در فهرست اخبار تنها تاثیر می گذارد."
-
-#: includes/block-translations.php:111
+#: includes/block-translations.php:88
 msgid "Half size"
 msgstr "سایز نیم"
 
-#: includes/block-translations.php:114
+#: includes/block-translations.php:91
 msgid "Full Background"
 msgstr "پس زمینه کامل"
 
+#: includes/block-translations.php:94
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: includes/block-translations.php:98
+msgid "Header"
+msgstr "سربرگ"
+
+#: includes/block-translations.php:101
+msgid "Navigation Style:"
+msgstr "ناوبری سبک:"
+
+#: includes/block-translations.php:114
+msgid "Options"
+msgstr "تنظیمات"
+
 #: includes/block-translations.php:117
+msgid "Post Thumbnail Style"
+msgstr "استایل تصویرکِ نوشته"
+
+#: includes/block-translations.php:120
+msgid "Affects its display on the news index only."
+msgstr "صفحه نمایش خود را در فهرست اخبار تنها تاثیر می گذارد."
+
+#: includes/block-translations.php:123
 msgid "Hide featured image"
 msgstr "پنهان کردن تصویر شاخص"
 
-#: includes/block-translations.php:120
+#: includes/block-translations.php:126
 msgid "Disables display of featured image on post single."
 msgstr "غیر فعال می کند تصویر ویژه در تک پست نمایش می دهد."
 
-#: includes/block-translations.php:123
+#: includes/block-translations.php:129
 msgid "Force full-width featured image"
 msgstr "نیروی تمام عرض تصویر برجسته"
 
-#: includes/block-translations.php:126
+#: includes/block-translations.php:132
 msgid "Ensures a small featured image fills the width of the content area."
 msgstr "تصویر کوچک برجسته پر عرض قسمت مطالب را تضمین می کند."
 
-#: includes/block-translations.php:129
+#: includes/block-translations.php:135
 msgid "Reduce Content Width"
 msgstr "کاهش عرض محتوا"
 
-#: includes/block-translations.php:132
+#: includes/block-translations.php:138
 msgid "Adds a small amount of padding to the content."
 msgstr "بالشتک کوچکی را به مطالب اضافه می کند."
 
-#: includes/block-translations.php:135 includes/post-types/sidebar.php:12
+#: includes/block-translations.php:141 includes/post-types/sidebar.php:12
 #: includes/post-types/sidebar.php:39 includes/theme-options.php:245
 #: single.php:120
 msgid "Sidebar"
 msgstr "سایدبار"
-
-#: includes/block-translations.php:138
-msgid "Disable Sidebar"
-msgstr "غیر فعال کردن نوار جانبی"
-
-#: includes/block-translations.php:141
-msgid "Hides the sidebar for this post"
-msgstr "نمایش نوار جانبی برای این پست"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:149

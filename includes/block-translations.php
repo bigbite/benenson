@@ -57,93 +57,93 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/appearance-options/PostSelect.js:133
 	__( 'Select a sidebar', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:107
+	// Reference: src/scripts/blocks/appearance-options/index.js:100
+	__( 'Disable Sidebar', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:101
+	__( 'Hides the sidebar for this post', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:112
 	__( 'Share Buttons', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:109
+	// Reference: src/scripts/blocks/appearance-options/index.js:114
 	__( 'Disable Share Buttons for this page', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:35
-	__( 'Appearance', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:37
-	// Reference: src/scripts/blocks/header/index.js:11
-	__( 'Header', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:39
-	__( 'Navigation Style:', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:41
+	// Reference: src/scripts/blocks/appearance-options/index.js:36
 	__( 'Global', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:44
+	// Reference: src/scripts/blocks/appearance-options/index.js:39
 	// Reference: src/scripts/blocks/blockquote/index.js:238
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:102
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:10
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:41
 	__( 'White', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:47
+	// Reference: src/scripts/blocks/appearance-options/index.js:42
 	// Reference: src/scripts/blocks/blockquote/index.js:236
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:105
 	__( 'Black', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:56
+	// Reference: src/scripts/blocks/appearance-options/index.js:47
+	__( 'Half size', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:50
+	__( 'Full Background', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:55
+	__( 'Appearance', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:57
+	// Reference: src/scripts/blocks/header/index.js:11
+	__( 'Header', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:59
+	__( 'Navigation Style:', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:67
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:75
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:16
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:19
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:58
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:203
 	__( 'Options', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:58
+	// Reference: src/scripts/blocks/appearance-options/index.js:69
 	__( 'Post Thumbnail Style', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:59
+	// Reference: src/scripts/blocks/appearance-options/index.js:70
 	__( 'Affects its display on the news index only.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:61
-	__( 'Half size', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:64
-	__( 'Full Background', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:72
+	// Reference: src/scripts/blocks/appearance-options/index.js:77
 	__( 'Hide featured image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:73
+	// Reference: src/scripts/blocks/appearance-options/index.js:78
 	__( 'Disables display of featured image on post single.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:79
+	// Reference: src/scripts/blocks/appearance-options/index.js:84
 	__( 'Force full-width featured image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:80
+	// Reference: src/scripts/blocks/appearance-options/index.js:85
 	__( 'Ensures a small featured image fills the width of the content area.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:85
+	// Reference: src/scripts/blocks/appearance-options/index.js:90
 	__( 'Reduce Content Width', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:86
+	// Reference: src/scripts/blocks/appearance-options/index.js:91
 	__( 'Adds a small amount of padding to the content.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:93
+	// Reference: src/scripts/blocks/appearance-options/index.js:98
 	__( 'Sidebar', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:95
-	__( 'Disable Sidebar', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:96
-	__( 'Hides the sidebar for this post', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:163
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/image/BlockEdit.js:205
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:60
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:63
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:35
 	/* translators: text alignment. for RTL languages, localise as 'Right' */
 	__( 'Left', 'benenson' ),
@@ -156,7 +156,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:169
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:87
 	// Reference: src/scripts/blocks/image/BlockEdit.js:208
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:66
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:69
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:38
 	/* translators: text alignment. for RTL languages, localise as 'Left' */
 	__( 'Right', 'benenson' ),
@@ -403,7 +403,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:99
 	// Reference: src/scripts/blocks/key-facts/index.js:58
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:45
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:57
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
@@ -466,7 +466,7 @@ $generated_i18n_strings = array(
 	__( 'Responsive Iframe', 'benenson' ),
 
 	// Reference: src/scripts/blocks/image/BlockEdit.js:143
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:80
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:83
 	__( '(Link Text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/image/BlockEdit.js:151
@@ -536,37 +536,37 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:46
 	__( 'Quantity', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:18
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:21
 	__( 'Link text', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:23
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:26
 	__( 'Link url', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:28
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:31
 	__( 'Link style', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:30
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:33
 	__( 'Primary', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:33
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:36
 	__( 'Primary Outline', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:36
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:39
 	__( 'Primary Solid', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:43
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:46
 	__( 'Link icon', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:51
 	__( 'Up arrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:51
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:54
 	__( 'Down arrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:58
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:61
 	__( 'Link alignment', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:63
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:66
 	__( 'Center', 'benenson' ),
 
 	// Reference: src/scripts/blocks/link/index.js:15
