@@ -1,10 +1,10 @@
 import classNames from 'classnames';
-import PostMediaSelector from '../PostMediaSelector';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl, TextControl } = wp.components;
 const { InspectorControls, InnerBlocks } = wp.editor;
+const { PostMediaSelector } = benenson.components;
 
 class DisplayComponent extends Component {
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });

@@ -7,6 +7,7 @@ const paths = {
   entry: `${config.src}/scripts/app.js`,
   blocks: `${config.src}/scripts/blocks.js`,
   admin: `${config.src}/scripts/admin.js`,
+  packages: `${config.src}/scripts/packages/index.js`,
   out: `${config.dist}/`,
 };
 
@@ -18,6 +19,7 @@ const webpackConfig = {
     bundle: path.join(__dirname, paths.entry),
     blocks: path.join(__dirname, paths.blocks),
     admin: path.join(__dirname, paths.admin),
+    packages: path.join(__dirname, paths.packages),
     // If using a library/libraries include them in their own vendor bundle. Example below:
     // vendor: [ 'jquery' ]
   },
@@ -27,6 +29,12 @@ const webpackConfig = {
     filename: '[name].js',
   },
 
+  externals: {
+    benenson: {
+      this: 'benenson',
+    },
+  },
+
   module: {
     rules: [
       // Expose App to window.
@@ -34,6 +42,13 @@ const webpackConfig = {
         test: /app\.js$/,
         loader: 'expose-loader',
         query: 'App',
+      },
+
+      // expose `benenson` to window
+      {
+        test: /packages\/index\.js$/,
+        loader: 'expose-loader',
+        query: 'benenson',
       },
 
       // Run Babel and lint JS
