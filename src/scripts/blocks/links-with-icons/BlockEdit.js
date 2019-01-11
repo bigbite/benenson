@@ -10,6 +10,7 @@ import memoize from 'memize';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   PanelBody, RangeControl, SelectControl, ToggleControl,
 } = wp.components;
@@ -39,6 +40,27 @@ export default class BlockEdit extends Component {
       [`has-${backgroundColor}-background-color`]: !!backgroundColor,
     });
 
+    const quantityOptions = applyFilters('benenson.block.linksWithIcons.quantityOptions', {
+      min: 1,
+      max: 4,
+    });
+
+    const orientationOptions = applyFilters('benenson.block.linksWithIcons.orientationOptions', [{
+      label: __('Horizontal', 'benenson'),
+      value: 'horizontal',
+    }, {
+      label: __('Vertical', 'benenson'),
+      value: 'vertical',
+    }]);
+
+    const backgroundOptions = applyFilters('benenson.block.linksWithIcons.backgroundOptions', [{
+      label: __('None', 'benenson'),
+      value: '',
+    }, {
+      label: __('Grey', 'benenson'),
+      value: 'very-light-gray',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
@@ -46,26 +68,20 @@ export default class BlockEdit extends Component {
             label={ __('Quantity', 'benenson') }
             value={ quantity }
             onChange={ newQuantity => setAttributes({ quantity: newQuantity }) }
-            min={ 1 }
-            max={ 4 }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
           />
           <SelectControl
             label={ __('Orientation', 'benenson') }
             value={ orientation }
             onChange={ newOrientation => setAttributes({ orientation: newOrientation }) }
-            options={ [
-              { value: 'horizontal', label: __('Horizontal', 'benenson') },
-              { value: 'vertical', label: __('Vertical', 'benenson') },
-            ] }
+            options={ orientationOptions }
           />
           <SelectControl
             label={ __('Background Colour', 'benenson') }
             value={ backgroundColor }
             onChange={ newBgColor => setAttributes({ backgroundColor: newBgColor }) }
-            options={ [
-              { value: '', label: __('None', 'benenson') },
-              { value: 'very-light-gray', label: __('Grey', 'benenson') },
-            ] }
+            options={ backgroundOptions }
           />
           <ToggleControl
             label={ __('Hide Lines', 'benenson') }

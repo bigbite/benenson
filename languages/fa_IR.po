@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:04+0000\n"
-"PO-Revision-Date: 2019-01-09 16:04+0000\n"
+"POT-Creation-Date: 2019-01-11 16:07+0000\n"
+"PO-Revision-Date: 2019-01-11 16:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -780,16 +780,16 @@ msgid "Add a link to section within page, another page or an external URL."
 msgstr "اضافه کردن لینک به بخش صفحه، یک صفحه و یا آدرس خارجی."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "جهت"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "افقی"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "عمودی"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "جهت"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -811,21 +811,21 @@ msgstr "یک تصویر انتخاب کنید"
 msgid "(Insert Fact)"
 msgstr "(درج این واقعیت)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "استایل"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "استفاده از تصویر"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "استفاده از متن"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "ساده"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "استایل"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"

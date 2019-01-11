@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:03+0000\n"
-"PO-Revision-Date: 2019-01-09 16:03+0000\n"
+"POT-Creation-Date: 2019-01-11 16:07+0000\n"
+"PO-Revision-Date: 2019-01-11 16:07+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -786,16 +786,16 @@ msgstr ""
 "dirección URL externa."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "Orientación"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "Vertical"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "Orientación"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -817,21 +817,21 @@ msgstr "Escoge una imagen"
 msgid "(Insert Fact)"
 msgstr "(Insertar hecho)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "Estilo"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "Usar imagen"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "Usar texto"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "Plano"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "Estilo"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
