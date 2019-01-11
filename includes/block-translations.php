@@ -94,11 +94,11 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:75
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:16
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:19
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:58
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:203
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:214
 	__( 'Options', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:58
@@ -143,8 +143,8 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:163
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/image/BlockEdit.js:205
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:60
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:35
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:63
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:36
 	/* translators: text alignment. for RTL languages, localise as 'Right' */
 	__( 'Left', 'benenson' ),
 
@@ -156,8 +156,8 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:169
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:87
 	// Reference: src/scripts/blocks/image/BlockEdit.js:208
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:66
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:38
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:69
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:43
 	/* translators: text alignment. for RTL languages, localise as 'Left' */
 	__( 'Right', 'benenson' ),
 
@@ -221,7 +221,7 @@ $generated_i18n_strings = array(
 	__( '(Insert Citation)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:28
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:248
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:259
 	__( 'Background Style', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:40
@@ -240,17 +240,17 @@ $generated_i18n_strings = array(
 	__( '(Pre-heading)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:69
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:301
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:312
 	__( '(Heading)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:78
 	// Reference: src/scripts/blocks/image/BlockEdit.js:271
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:323
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:334
 	__( '(Content)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:87
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:83
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:334
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:345
 	__( '(Button Text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/index.js:52
@@ -387,7 +387,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/image/BlockEdit.js:206
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:36
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:39
 	__( 'Centre', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:94
@@ -403,7 +403,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:99
 	// Reference: src/scripts/blocks/key-facts/index.js:58
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:45
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:57
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
@@ -466,7 +466,7 @@ $generated_i18n_strings = array(
 	__( 'Responsive Iframe', 'benenson' ),
 
 	// Reference: src/scripts/blocks/image/BlockEdit.js:143
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:80
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:83
 	__( '(Link Text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/image/BlockEdit.js:151
@@ -536,37 +536,37 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:46
 	__( 'Quantity', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:18
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:21
 	__( 'Link text', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:23
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:26
 	__( 'Link url', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:28
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:31
 	__( 'Link style', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:30
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:33
 	__( 'Primary', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:33
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:36
 	__( 'Primary Outline', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:36
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:39
 	__( 'Primary Solid', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:43
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:46
 	__( 'Link icon', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:51
 	__( 'Up arrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:51
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:54
 	__( 'Down arrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:58
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:61
 	__( 'Link alignment', 'benenson' ),
 
-	// Reference: src/scripts/blocks/link/DisplayComponent.js:63
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:66
 	__( 'Center', 'benenson' ),
 
 	// Reference: src/scripts/blocks/link/index.js:15
@@ -809,72 +809,72 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/section/index.js:26
 	__( 'Section', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:178
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:189
 	__( 'Do you wish to delete this slide? This action is irreversible', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:205
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:216
 	__( 'Show Arrows', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:211
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:222
 	__( 'Has Content', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:214
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:225
 	__( 'By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the "Hide Content" field in the "Slide Options" panel.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:218
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:229
 	__( 'Show Tabs', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:221
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:232
 	__( 'Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:226
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:237
 	__( 'Slide Options', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:228
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:239
 	__( 'Slide Title', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:242
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:253
 	__( 'Content Alignment', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:254
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:265
 	__( 'Hide Content', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:257
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:268
 	__( 'By enabling this you will hide the content on *THIS* slide. To disable content on all slides go to the "Options" and toggle the "Has Content" field.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:261
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:272
 	__( 'Remove Slide', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:262
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:273
 	__( 'This is irreversible.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:275
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:286
 	// Reference: src/scripts/blocks/slider/index.js:59
 	__( 'Next', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:276
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:287
 	// Reference: src/scripts/blocks/slider/index.js:60
 	__( 'Previous', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:282
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:293
 	__( 'Add a slide below.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:312
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:323
 	__( '(Sub-Heading)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:367
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:378
 	__( '(No Title)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:372
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:383
 	__( 'Add Slide', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:42
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:48
 	__( 'Opaque', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:43
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:51
 	__( 'Translucent', 'benenson' ),
 
-	// Reference: src/scripts/blocks/slider/DisplayComponent.js:44
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:54
 	__( 'Transparent', 'benenson' ),
 
 	// Reference: src/scripts/blocks/slider/build-slide.js:106
