@@ -30,7 +30,7 @@ msgid "Act Now"
 msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:57
-#: src/scripts/blocks/blockquote/index.js:222
+#: src/scripts/blocks/blockquote/index.js:246
 #: src/scripts/blocks/header/DisplayComponent.js:112
 #: src/scripts/blocks/tweet/index.js:85
 msgid "Size"
@@ -100,7 +100,7 @@ msgid "Global"
 msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:44
-#: src/scripts/blocks/blockquote/index.js:238
+#: src/scripts/blocks/blockquote/index.js:232
 #: src/scripts/blocks/header/DisplayComponent.js:102
 #: src/scripts/blocks/menu/DisplayComponent.js:10
 #: src/scripts/blocks/section/DisplayComponent.js:41
@@ -108,7 +108,7 @@ msgid "White"
 msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:47
-#: src/scripts/blocks/blockquote/index.js:236
+#: src/scripts/blocks/blockquote/index.js:226
 #: src/scripts/blocks/header/DisplayComponent.js:105
 msgid "Black"
 msgstr ""
@@ -180,7 +180,7 @@ msgid "Hides the sidebar for this post"
 msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
-#: src/scripts/blocks/blockquote/index.js:163
+#: src/scripts/blocks/blockquote/index.js:164
 #: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/link/DisplayComponent.js:63
@@ -188,14 +188,14 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:164
+#: src/scripts/blocks/blockquote/index.js:165
 #: src/scripts/blocks/image/BlockEdit.js:203
 #: src/scripts/blocks/tweet/index.js:89
 msgid "Default"
 msgstr ""
 
 # text alignment. for RTL languages, localise as 'Left'
-#: src/scripts/blocks/blockquote/index.js:169
+#: src/scripts/blocks/blockquote/index.js:170
 #: src/scripts/blocks/header/DisplayComponent.js:87
 #: src/scripts/blocks/image/BlockEdit.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:69
@@ -203,21 +203,7 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:21
-msgid "Blockquote"
-msgstr ""
-
-#: src/scripts/blocks/blockquote/index.js:216
-#: src/scripts/blocks/header/DisplayComponent.js:77
-#: src/scripts/blocks/image/BlockEdit.js:198
-msgid "Alignment"
-msgstr ""
-
-#: src/scripts/blocks/blockquote/index.js:22
-msgid "Add a blockquote block"
-msgstr ""
-
-#: src/scripts/blocks/blockquote/index.js:226
+#: src/scripts/blocks/blockquote/index.js:214
 #: src/scripts/blocks/header/DisplayComponent.js:117
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
@@ -225,23 +211,23 @@ msgstr ""
 msgid "Small"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:227
+#: src/scripts/blocks/blockquote/index.js:217
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:146
 msgid "Medium"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:228
+#: src/scripts/blocks/blockquote/index.js:22
+msgid "Blockquote"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:220
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:230
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:147
 msgid "Large"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:232
-msgid "Text Colour"
-msgstr ""
-
-#: src/scripts/blocks/blockquote/index.js:237
+#: src/scripts/blocks/blockquote/index.js:229
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:33
 #: src/scripts/blocks/key-facts/index.js:59
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
@@ -252,27 +238,41 @@ msgstr ""
 msgid "Grey"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:242
+#: src/scripts/blocks/blockquote/index.js:23
+msgid "Add a blockquote block"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:240
+#: src/scripts/blocks/header/DisplayComponent.js:77
+#: src/scripts/blocks/image/BlockEdit.js:198
+msgid "Alignment"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:252
+msgid "Text Colour"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:258
 msgid "Capitalise"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:243
+#: src/scripts/blocks/blockquote/index.js:259
 msgid "Capitalise the content."
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:248
+#: src/scripts/blocks/blockquote/index.js:264
 msgid "Line"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:249
+#: src/scripts/blocks/blockquote/index.js:265
 msgid "Toggle display of line embellishment."
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:259
+#: src/scripts/blocks/blockquote/index.js:275
 msgid "(Insert Quote Text)"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:267
+#: src/scripts/blocks/blockquote/index.js:283
 msgid "(Insert Citation)"
 msgstr ""
 
