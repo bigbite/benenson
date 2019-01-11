@@ -32,7 +32,7 @@ msgstr ""
 #: src/scripts/blocks/action/BlockEdit.js:57
 #: src/scripts/blocks/blockquote/index.js:222
 #: src/scripts/blocks/header/DisplayComponent.js:112
-#: src/scripts/blocks/tweet/index.js:85
+#: src/scripts/blocks/tweet/index.js:91
 msgid "Size"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:164
 #: src/scripts/blocks/image/BlockEdit.js:203
-#: src/scripts/blocks/tweet/index.js:89
+#: src/scripts/blocks/tweet/index.js:26
 msgid "Default"
 msgstr ""
 
@@ -1034,7 +1034,7 @@ msgid "Padding"
 msgstr ""
 
 #: src/scripts/blocks/section/DisplayComponent.js:71
-#: src/scripts/blocks/tweet/index.js:90
+#: src/scripts/blocks/tweet/index.js:27
 msgid "Narrow"
 msgstr ""
 
@@ -1164,26 +1164,26 @@ msgstr ""
 msgid "Scroller"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:106
+#: src/scripts/blocks/tweet/index.js:109
 msgid "(Action Title)"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:114
+#: src/scripts/blocks/tweet/index.js:117
 msgid "(Place Tweet text proforma here)"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:154
+#: src/scripts/blocks/tweet/index.js:157
 msgid "Send this Tweet"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:25
+#: src/scripts/blocks/tweet/index.js:31
 msgid "Tweet Action"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:26
+#: src/scripts/blocks/tweet/index.js:32
 msgid "Add a Tweet Action block"
 msgstr ""
 
-#: src/scripts/blocks/tweet/index.js:94
+#: src/scripts/blocks/tweet/index.js:97
 msgid "Centre Align"
 msgstr ""
