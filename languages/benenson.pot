@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:00+0000\n"
+"POT-Creation-Date: 2019-01-11 14:52+0000\n"
 "POT-Creation-Date: 2018-12-07 13:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -362,24 +362,24 @@ msgstr ""
 msgid "(Insert Citation)"
 msgstr ""
 
-#: includes/block-translations.php:225
-msgid "Background Style"
-msgstr ""
-
-#: includes/block-translations.php:228
-msgid "Button Style"
-msgstr ""
-
-#: includes/block-translations.php:231
+#: includes/block-translations.php:224
 msgid "Primary (Yellow)"
 msgstr ""
 
-#: includes/block-translations.php:234
+#: includes/block-translations.php:227
 msgid "Dark"
 msgstr ""
 
-#: includes/block-translations.php:237
+#: includes/block-translations.php:230
 msgid "Light"
+msgstr ""
+
+#: includes/block-translations.php:234
+msgid "Background Style"
+msgstr ""
+
+#: includes/block-translations.php:237
+msgid "Button Style"
 msgstr ""
 
 #: includes/block-translations.php:240

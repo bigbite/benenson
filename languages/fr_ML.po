@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:07+0000\n"
-"PO-Revision-Date: 2019-01-09 16:07+0000\n"
+"POT-Creation-Date: 2019-01-11 14:52+0000\n"
+"PO-Revision-Date: 2019-01-11 14:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_ML\n"
@@ -362,25 +362,25 @@ msgstr "(Insérer le texte du devis)"
 msgid "(Insert Citation)"
 msgstr "(Insérer une citation)"
 
-#: includes/block-translations.php:225
-msgid "Background Style"
-msgstr "Style de fond"
-
-#: includes/block-translations.php:228
-msgid "Button Style"
-msgstr "Style de bouton"
-
-#: includes/block-translations.php:231
+#: includes/block-translations.php:224
 msgid "Primary (Yellow)"
 msgstr "Primaire (jaune)"
 
-#: includes/block-translations.php:234
+#: includes/block-translations.php:227
 msgid "Dark"
 msgstr "Sombre"
 
-#: includes/block-translations.php:237
+#: includes/block-translations.php:230
 msgid "Light"
 msgstr "Lumière"
+
+#: includes/block-translations.php:234
+msgid "Background Style"
+msgstr "Style de fond"
+
+#: includes/block-translations.php:237
+msgid "Button Style"
+msgstr "Style de bouton"
 
 #: includes/block-translations.php:240
 msgid "(Pre-heading)"

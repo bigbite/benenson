@@ -114,7 +114,7 @@ msgid "Black"
 msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:56
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:26
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
 #: src/scripts/blocks/header/DisplayComponent.js:75
@@ -242,7 +242,7 @@ msgid "Text Colour"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:237
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:33
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:29
 #: src/scripts/blocks/key-facts/index.js:59
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
 #: src/scripts/blocks/logo-list/BlockEdit.js:58
@@ -276,43 +276,43 @@ msgstr ""
 msgid "(Insert Citation)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:28
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:34
+msgid "Primary (Yellow)"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:37
+msgid "Dark"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:40
+msgid "Light"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:48
 #: src/scripts/blocks/slider/DisplayComponent.js:248
 msgid "Background Style"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:40
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:54
 msgid "Button Style"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:42
-msgid "Primary (Yellow)"
-msgstr ""
-
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:45
-msgid "Dark"
-msgstr ""
-
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:48
-msgid "Light"
-msgstr ""
-
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:60
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:65
 msgid "(Pre-heading)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:69
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:74
 #: src/scripts/blocks/slider/DisplayComponent.js:301
 msgid "(Heading)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:78
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:83
 #: src/scripts/blocks/image/BlockEdit.js:271
 #: src/scripts/blocks/slider/DisplayComponent.js:323
 msgid "(Content)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:92
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 #: src/scripts/blocks/slider/DisplayComponent.js:334
 msgid "(Button Text)"
