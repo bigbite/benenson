@@ -102,7 +102,7 @@ msgstr ""
 #: src/scripts/blocks/appearance-options/index.js:44
 #: src/scripts/blocks/blockquote/index.js:238
 #: src/scripts/blocks/header/DisplayComponent.js:102
-#: src/scripts/blocks/menu/DisplayComponent.js:10
+#: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:41
 msgid "White"
 msgstr ""
@@ -120,7 +120,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:75
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:19
-#: src/scripts/blocks/menu/DisplayComponent.js:91
+#: src/scripts/blocks/menu/DisplayComponent.js:96
 #: src/scripts/blocks/post-list/DisplayComponent.js:58
 #: src/scripts/blocks/section/DisplayComponent.js:37
 #: src/scripts/blocks/slider/DisplayComponent.js:203
@@ -246,7 +246,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/index.js:59
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
 #: src/scripts/blocks/logo-list/BlockEdit.js:58
-#: src/scripts/blocks/menu/DisplayComponent.js:11
+#: src/scripts/blocks/menu/DisplayComponent.js:15
 #: src/scripts/blocks/section/DisplayComponent.js:44
 #: src/scripts/blocks/section/index.js:27
 msgid "Grey"
@@ -504,7 +504,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/index.js:54
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:62
 #: src/scripts/blocks/logo-list/BlockEdit.js:53
-#: src/scripts/blocks/menu/DisplayComponent.js:102
+#: src/scripts/blocks/menu/DisplayComponent.js:107
 #: src/scripts/blocks/section/DisplayComponent.js:39
 msgid "Background Colour"
 msgstr ""
@@ -866,23 +866,23 @@ msgstr ""
 msgid "Media"
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:110
+#: src/scripts/blocks/menu/DisplayComponent.js:115
 msgid "Select a menu in the sidebar"
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:111
+#: src/scripts/blocks/menu/DisplayComponent.js:116
 msgid "Loading Menu..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:22
+#: src/scripts/blocks/menu/DisplayComponent.js:27
 msgid "Select a menu..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:92
+#: src/scripts/blocks/menu/DisplayComponent.js:97
 msgid "Loading Menus..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:94
+#: src/scripts/blocks/menu/DisplayComponent.js:99
 #: src/scripts/blocks/menu/index.js:31
 msgid "Menu"
 msgstr ""
