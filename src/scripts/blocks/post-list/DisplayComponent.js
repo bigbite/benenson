@@ -55,7 +55,7 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
-    const styleOptions = applyFilters('benenson.blocks.list.styleOptions', [{
+    const styleOptions = applyFilters('benenson.block.list.styleOptions', [{
       label: __('Link List', 'benenson'),
       value: 'list',
     }, {
@@ -70,7 +70,7 @@ class DisplayComponent extends Component {
       value: 'splitgrid',
     }]);
 
-    const typeOptions = applyFilters('benenson.blocks.list.typeOptions', [{
+    const typeOptions = applyFilters('benenson.block.list.typeOptions', [{
       label: __('Category', 'benenson'),
       value: 'category',
     }, {
@@ -81,7 +81,7 @@ class DisplayComponent extends Component {
       value: 'custom',
     }]);
 
-    const amount = applyFilters('benenson.blocks.list.amount', {
+    const amount = applyFilters('benenson.block.list.amount', {
       min: 1,
       max: 8,
     });
