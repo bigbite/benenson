@@ -243,7 +243,7 @@ msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:237
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:33
-#: src/scripts/blocks/key-facts/index.js:59
+#: src/scripts/blocks/key-facts/index.js:53
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:67
 #: src/scripts/blocks/logo-list/BlockEdit.js:58
 #: src/scripts/blocks/menu/DisplayComponent.js:11
@@ -501,7 +501,7 @@ msgid "Centre"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:94
-#: src/scripts/blocks/key-facts/index.js:54
+#: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:62
 #: src/scripts/blocks/logo-list/BlockEdit.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:102
@@ -514,7 +514,7 @@ msgid "Translucent black"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:99
-#: src/scripts/blocks/key-facts/index.js:58
+#: src/scripts/blocks/key-facts/index.js:50
 #: src/scripts/blocks/link/DisplayComponent.js:48
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 #: src/scripts/blocks/logo-list/BlockEdit.js:57
@@ -654,7 +654,7 @@ msgid "Add a flexible image block with optional overlay"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:30
-#: src/scripts/blocks/key-facts/index.js:68
+#: src/scripts/blocks/key-facts/index.js:79
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
 #: src/scripts/blocks/media-aside/DisplayComponent.js:83
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
@@ -672,15 +672,15 @@ msgstr ""
 msgid "(Insert Content)"
 msgstr ""
 
-#: src/scripts/blocks/key-facts/index.js:16
+#: src/scripts/blocks/key-facts/index.js:17
 msgid "Key Facts"
 msgstr ""
 
-#: src/scripts/blocks/key-facts/index.js:17
+#: src/scripts/blocks/key-facts/index.js:18
 msgid "Add a key facts block"
 msgstr ""
 
-#: src/scripts/blocks/key-facts/index.js:47
+#: src/scripts/blocks/key-facts/index.js:61
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:46
 #: src/scripts/blocks/logo-list/BlockEdit.js:46
 msgid "Quantity"
