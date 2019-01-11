@@ -374,35 +374,35 @@ msgstr ""
 msgid "Columns"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:11
+#: src/scripts/blocks/columns/layouts.js:12
 msgid "66.6% | 33.3%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:17
+#: src/scripts/blocks/columns/layouts.js:18
 msgid "33.3% | 66.6%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:23
+#: src/scripts/blocks/columns/layouts.js:24
 msgid "33.3% | 33.3% | 33.3%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:29
+#: src/scripts/blocks/columns/layouts.js:30
 msgid "50% | 25% | 25%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:35
+#: src/scripts/blocks/columns/layouts.js:36
 msgid "25% | 50% | 25%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:41
+#: src/scripts/blocks/columns/layouts.js:42
 msgid "25% | 25% | 50%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:47
+#: src/scripts/blocks/columns/layouts.js:48
 msgid "25% | 25% | 25% | 25%"
 msgstr ""
 
-#: src/scripts/blocks/columns/layouts.js:5
+#: src/scripts/blocks/columns/layouts.js:6
 msgid "50% | 50%"
 msgstr ""
 
