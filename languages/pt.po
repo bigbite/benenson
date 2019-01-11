@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:07+0000\n"
-"PO-Revision-Date: 2019-01-09 16:07+0000\n"
+"POT-Creation-Date: 2019-01-11 12:03+0000\n"
+"PO-Revision-Date: 2019-01-11 12:03+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -161,17 +161,17 @@ msgstr "Conteúdo"
 msgid "Act Now"
 msgstr "Agir agora"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "Tamanho"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "Padrão"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "Largo"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "Tamanho"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
