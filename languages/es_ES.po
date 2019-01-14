@@ -133,7 +133,7 @@ msgstr "Menú principal"
 msgid "Close navigation"
 msgstr "Navegación cercana"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "Primario"
 
@@ -735,45 +735,45 @@ msgstr "Agregar un bloque de datos clave"
 msgid "Quantity"
 msgstr "Cantidad"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "(Texto del enlace)"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "Link"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "Lista de Enlaces"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Navegación primaria"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "Primario"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "Enlaces con iconos"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "Estrecho"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "Mostrar Flechas"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "Alineación"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "Centro"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "(Texto del enlace)"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "Link"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "Lista de Enlaces"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "Enlaces con iconos"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "Alineación"
 
 #: includes/block-translations.php:573
 msgid "Link"

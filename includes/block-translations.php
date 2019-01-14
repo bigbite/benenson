@@ -569,6 +569,21 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:66
 	__( 'Center', 'benenson' ),
 
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:55
+	__( 'Link text', 'benenson' ),
+
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:60
+	__( 'Link url', 'benenson' ),
+
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:65
+	__( 'Link style', 'benenson' ),
+
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:71
+	__( 'Link icon', 'benenson' ),
+
+	// Reference: src/scripts/blocks/link/DisplayComponent.js:77
+	__( 'Link alignment', 'benenson' ),
+
 	// Reference: src/scripts/blocks/link/index.js:15
 	__( 'Link', 'benenson' ),
 
