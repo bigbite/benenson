@@ -11,6 +11,7 @@ import pick from 'lodash-es/pick';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   Button,
   CheckboxControl,
@@ -207,6 +208,28 @@ export default class BlockEdit extends Component {
       buttonLink,
     } = attributes;
 
+    const styleOptions = applyFilters('benenson.block.linksWithIcons.styleOptions', [{
+      label: __('Use Image', 'benenson'),
+      value: 'icon',
+    }, {
+      label: __('Use Text', 'benenson'),
+      value: 'text',
+    }, {
+      label: __('Plain', 'benenson'),
+      value: 'none',
+    }]);
+
+    const sizeOptions = applyFilters('benenson.block.linksWithIcons.sizeOptions', [{
+      label: __('Small', 'benenson'),
+      value: 'small',
+    }, {
+      label: __('Medium', 'benenson'),
+      value: 'medium',
+    }, {
+      label: __('Large', 'benenson'),
+      value: 'large',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
@@ -214,21 +237,13 @@ export default class BlockEdit extends Component {
             label={ __('Style', 'benenson') }
             value={ style }
             onChange={ newStyle => setAttributes({ style: newStyle }) }
-            options={ [
-              { value: 'icon', label: __('Use Image', 'benenson') },
-              { value: 'text', label: __('Use Text', 'benenson') },
-              { value: 'none', label: __('Plain', 'benenson') },
-            ] }
+            options={ styleOptions }
           />
           { style === 'icon' && <SelectControl
             label={ __('Icon Size', 'benenson') }
             value={ iconSize }
             onChange={ newSize => setAttributes({ iconSize: newSize }) }
-            options={ [
-              { value: 'small', label: __('Small', 'benenson') },
-              { value: 'medium', label: __('Medium', 'benenson') },
-              { value: 'large', label: __('Large', 'benenson') },
-            ] }
+            options={ sizeOptions }
           /> }
           { style === 'icon' && <CheckboxControl
             label={ __('Hide Image Credit Display', 'benenson') }

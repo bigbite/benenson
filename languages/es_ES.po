@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-11 15:35+0000\n"
-"PO-Revision-Date: 2019-01-11 15:35+0000\n"
+"POT-Creation-Date: 2019-01-11 14:47+0000\n"
+"PO-Revision-Date: 2019-01-11 14:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -133,7 +133,7 @@ msgstr "Menú principal"
 msgid "Close navigation"
 msgstr "Navegación cercana"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "Primario"
 
@@ -161,17 +161,17 @@ msgstr "Contenido"
 msgid "Act Now"
 msgstr "Actuar ahora"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "Tamaño"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "Estándar"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "Ancho"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "Tamaño"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -735,45 +735,45 @@ msgstr "Agregar un bloque de datos clave"
 msgid "Quantity"
 msgstr "Cantidad"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "(Texto del enlace)"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "Link"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "Lista de Enlaces"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Navegación primaria"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "Primario"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "Enlaces con iconos"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "Estrecho"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "Mostrar Flechas"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "Alineación"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "Centro"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "(Texto del enlace)"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "Link"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "Lista de Enlaces"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "Enlaces con iconos"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "Alineación"
 
 #: includes/block-translations.php:573
 msgid "Link"
@@ -786,16 +786,16 @@ msgstr ""
 "dirección URL externa."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "Orientación"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "Vertical"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "Orientación"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -817,21 +817,21 @@ msgstr "Escoge una imagen"
 msgid "(Insert Fact)"
 msgstr "(Insertar hecho)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "Estilo"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "Usar imagen"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "Usar texto"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "Plano"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "Estilo"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
@@ -935,52 +935,52 @@ msgid "Navigation"
 msgstr "Navegación"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "Categoría:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "Número de publicaciones a mostrar:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "Utilizar categorías relacionadas cuando se admita"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "Mostrar extracto"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "Texto del botón:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(Texto de la CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "Ocultar vista previa"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "Mostrar vista previa"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "Lista de Enlaces"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "Cuadrícula"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "Entradas"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "Cuadrícula dividida"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "Tipo"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -995,8 +995,8 @@ msgid "Custom"
 msgstr "Personalizado"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "Categoría:"
+msgid "Type"
+msgstr "Tipo"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
@@ -1066,13 +1066,13 @@ msgstr "post-List"
 msgid "Posts"
 msgstr "Entradas"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "Relleno"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "Estrecho"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "Relleno"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"
