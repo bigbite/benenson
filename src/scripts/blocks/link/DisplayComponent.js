@@ -1,15 +1,18 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl, TextControl } = wp.components;
-const { InspectorControls, InnerBlocks } = wp.editor;
+const { InspectorControls, RichText, URLInputButton } = wp.editor;
 
 class DisplayComponent extends Component {
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
   render() {
     const { attributes } = this.props;
+    const linkClasses = classnames('link', {
+      [attributes.linkAlignment]: !!attributes.linkAlignment,
+    });
 
     return (<Fragment>
       <InspectorControls>
@@ -71,8 +74,22 @@ class DisplayComponent extends Component {
           />
         </PanelBody>
       </InspectorControls>
-      <div className={ attributes.linkAlignment }>
-        <a href={ attributes.linkUrl } className={ ['btn', attributes.linkStyle, attributes.linkIcon].join(' ') }>{ attributes.linkText }</a>
+      <div className={ linkClasses }>
+        <a className={ ['btn', attributes.linkStyle, attributes.linkIcon].join(' ') }>
+          <RichText
+            tagName="span"
+            onChange={ this.createUpdateAttribute('linkText') }
+            value={ attributes.linkText }
+            placeholder={ __('(Link Text)', 'benenson') }
+            keepPlaceholderOnFocus={ true }
+            formattingControls={ [] }
+            format="string"
+          />
+          <URLInputButton
+            url={ attributes.linkUrl }
+            onChange={ this.createUpdateAttribute('linkUrl') }
+          />
+        </a>
       </div>
     </Fragment>);
   }
