@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 const { Component, Fragment } = wp.element;
 const {
   IconButton,
@@ -14,7 +15,6 @@ const {
   PlainText,
   URLInputButton,
 } = wp.editor;
-
 
 export default class BlockEdit extends Component {
   render() {
@@ -31,6 +31,11 @@ export default class BlockEdit extends Component {
       linkText,
       buttonBackground,
     } = attributes;
+
+    const sizeOptions = applyFilters('benenson.block.action.sizeOptions', [
+      { value: 'standard', label: __('Standard', 'benenson') },
+      { value: 'wide', label: __('Wide', 'benenson') },
+    ]);
 
     const classes = classnames('actionBlock', {
       'actionBlock--wide': style === 'wide',
@@ -57,10 +62,7 @@ export default class BlockEdit extends Component {
             label={ __('Size', 'benenson') }
             value={ style }
             onChange={ newStyle => setAttributes({ style: newStyle }) }
-            options={ [
-              { value: 'standard', label: __('Standard', 'benenson') },
-              { value: 'wide', label: __('Wide', 'benenson') },
-            ] }
+            options={ sizeOptions }
           />
           <ToggleControl
             label={ __('Centre Aligned', 'benenson') }
