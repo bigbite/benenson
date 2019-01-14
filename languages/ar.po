@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-09 16:00+0000\n"
-"PO-Revision-Date: 2019-01-11 14:27+0000\n"
+"POT-Creation-Date: 2019-01-11 14:44+0000\n"
+"PO-Revision-Date: 2019-01-11 14:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -138,7 +138,7 @@ msgstr "القائمة الرئيسية"
 msgid "Close navigation"
 msgstr "إغلاق التنقل"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "ابتدائي"
 
@@ -166,17 +166,17 @@ msgstr "المحتوى"
 msgid "Act Now"
 msgstr "العمل الآن"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "الحجم"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "قياسي"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "واسع"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "الحجم"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -310,37 +310,37 @@ msgstr "افتراضي"
 msgid "Right"
 msgstr "يمين"
 
-#: includes/block-translations.php:165
-msgid "Blockquote"
-msgstr "اقتباس"
-
-#: includes/block-translations.php:170
-msgid "Alignment"
-msgstr "انحياز"
-
-#: includes/block-translations.php:173
-msgid "Add a blockquote block"
-msgstr "أضافه كتله عرض الأسعار الممتلئة"
-
-#: includes/block-translations.php:180
+#: includes/block-translations.php:169
 msgid "Small"
 msgstr "صغير"
 
-#: includes/block-translations.php:185
+#: includes/block-translations.php:174
 msgid "Medium"
 msgstr "متوسط"
 
-#: includes/block-translations.php:190
+#: includes/block-translations.php:177
+msgid "Blockquote"
+msgstr "اقتباس"
+
+#: includes/block-translations.php:182
 msgid "Large"
 msgstr "كبير"
 
-#: includes/block-translations.php:193
-msgid "Text Colour"
-msgstr "لون النص"
-
-#: includes/block-translations.php:203
+#: includes/block-translations.php:192
 msgid "Grey"
 msgstr "رمادي"
+
+#: includes/block-translations.php:195
+msgid "Add a blockquote block"
+msgstr "أضافه كتله عرض الأسعار الممتلئة"
+
+#: includes/block-translations.php:200
+msgid "Alignment"
+msgstr "انحياز"
+
+#: includes/block-translations.php:203
+msgid "Text Colour"
+msgstr "لون النص"
 
 #: includes/block-translations.php:206
 msgid "Capitalise"
@@ -671,16 +671,16 @@ msgid "Remove Button"
 msgstr "أزاله الزر"
 
 #: includes/block-translations.php:476
-msgid "Image Style"
-msgstr "نمط الصورة"
-
-#: includes/block-translations.php:479
 msgid "Fixed Height (600px)"
 msgstr "ثابت الارتفاع (600px)"
 
-#: includes/block-translations.php:482
+#: includes/block-translations.php:479
 msgid "Actual Height"
 msgstr "الارتفاع الفعلي"
+
+#: includes/block-translations.php:482
+msgid "Image Style"
+msgstr "نمط الصورة"
 
 #: includes/block-translations.php:485
 msgid "Only has an effect on images smaller than their container"
@@ -738,45 +738,45 @@ msgstr "أضافه كتله حقائق رئيسيه"
 msgid "Quantity"
 msgstr "الكمية"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "نص الرابط"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "رابط المشروع"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "نمط الارتباط"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "مخطط تفصيلي أساسي"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "الاساسيه الصلبة"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "أيقونه الرابط"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "سهم لاعلي"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "السهم"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "محاذاة الارتباط"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "وسط"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "نص الرابط"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "رابط المشروع"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "نمط الارتباط"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "أيقونه الرابط"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "محاذاة الارتباط"
 
 #: includes/block-translations.php:573
 msgid "Link"
@@ -787,16 +787,16 @@ msgid "Add a link to section within page, another page or an external URL."
 msgstr "أضافه ارتباط إلى مقطع داخل الصفحة أو صفحه أخرى أو عنوان URL خارجي."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "الاتجاه"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "أفقي"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "عمودي"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "الاتجاه"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -818,21 +818,21 @@ msgstr "اختيار صوره"
 msgid "(Insert Fact)"
 msgstr "(ادراج الحقيقة)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "النمط"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "استخدم صورة"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "استخدام النص"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "واضح"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "النمط"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
@@ -936,52 +936,52 @@ msgid "Navigation"
 msgstr "الصفحات"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "التصنيف:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "عدد المشاركات:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "استخدام الفئات ذات الصلة حيث يتم دعمها"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "عرض مقتطفات"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "نص الزر:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(نص CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "إخفاء المعاينة"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "إظهار المعاينة"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "قائمه الارتباطات"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "شبكة"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "منشور"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "تقسيم الشبكة"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "النوع"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -996,8 +996,8 @@ msgid "Custom"
 msgstr "مخصص"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "التصنيف:"
+msgid "Type"
+msgstr "النوع"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
@@ -1067,13 +1067,13 @@ msgstr "القائمة التالية"
 msgid "Posts"
 msgstr "المشاركات"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "صورة الحشو: (اختياري)"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "ضيق"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "صورة الحشو: (اختياري)"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

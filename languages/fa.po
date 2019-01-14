@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-11 14:25+0000\n"
-"PO-Revision-Date: 2019-01-11 14:25+0000\n"
+"POT-Creation-Date: 2019-01-11 14:48+0000\n"
+"PO-Revision-Date: 2019-01-11 14:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -133,7 +133,7 @@ msgstr "منوی اصلی"
 msgid "Close navigation"
 msgstr "نزدیک ناوبری"
 
-#: header.php:106 includes/block-translations.php:549
+#: header.php:106 includes/block-translations.php:540
 msgid "Primary"
 msgstr "اصلی"
 
@@ -161,17 +161,17 @@ msgstr "محتوا"
 msgid "Act Now"
 msgstr "هم اکنون اقدام"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "اندازه"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "استاندارد"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "عریض"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "اندازه"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -305,37 +305,37 @@ msgstr "پیش فرض"
 msgid "Right"
 msgstr "راست"
 
-#: includes/block-translations.php:165
-msgid "Blockquote"
-msgstr "نقل قول"
-
-#: includes/block-translations.php:170
-msgid "Alignment"
-msgstr "هم ترازی"
-
-#: includes/block-translations.php:173
-msgid "Add a blockquote block"
-msgstr "اضافه کردن بلوک blockquote"
-
-#: includes/block-translations.php:180
+#: includes/block-translations.php:169
 msgid "Small"
 msgstr "کوچک"
 
-#: includes/block-translations.php:185
+#: includes/block-translations.php:174
 msgid "Medium"
 msgstr "متوسط"
 
-#: includes/block-translations.php:190
+#: includes/block-translations.php:177
+msgid "Blockquote"
+msgstr "نقل قول"
+
+#: includes/block-translations.php:182
 msgid "Large"
 msgstr "بزرگ"
 
-#: includes/block-translations.php:193
-msgid "Text Colour"
-msgstr "رنگ متن"
-
-#: includes/block-translations.php:203
+#: includes/block-translations.php:192
 msgid "Grey"
 msgstr "خاکستری"
+
+#: includes/block-translations.php:195
+msgid "Add a blockquote block"
+msgstr "اضافه کردن بلوک blockquote"
+
+#: includes/block-translations.php:200
+msgid "Alignment"
+msgstr "هم ترازی"
+
+#: includes/block-translations.php:203
+msgid "Text Colour"
+msgstr "رنگ متن"
 
 #: includes/block-translations.php:206
 msgid "Capitalise"
@@ -664,16 +664,16 @@ msgid "Remove Button"
 msgstr "حذف دکمه"
 
 #: includes/block-translations.php:476
-msgid "Image Style"
-msgstr "استایل تصویر"
-
-#: includes/block-translations.php:479
 msgid "Fixed Height (600px)"
 msgstr "ارتفاع ثابت (600px)"
 
-#: includes/block-translations.php:482
+#: includes/block-translations.php:479
 msgid "Actual Height"
 msgstr "ارتفاع واقعی"
+
+#: includes/block-translations.php:482
+msgid "Image Style"
+msgstr "استایل تصویر"
 
 #: includes/block-translations.php:485
 msgid "Only has an effect on images smaller than their container"
@@ -731,45 +731,45 @@ msgstr "افزودن بلوک آمار کلیدی"
 msgid "Quantity"
 msgstr "مقدار"
 
-#: includes/block-translations.php:540
-msgid "Link text"
-msgstr "متن لینک"
-
 #: includes/block-translations.php:543
-msgid "Link url"
-msgstr "آدرس لینک"
-
-#: includes/block-translations.php:546
-msgid "Link style"
-msgstr "سبک لینک"
-
-#: includes/block-translations.php:552
 msgid "Primary Outline"
 msgstr "Primary Outline"
 
-#: includes/block-translations.php:555
+#: includes/block-translations.php:546
 msgid "Primary Solid"
 msgstr "جامد اولیه"
 
-#: includes/block-translations.php:558
-msgid "Link icon"
-msgstr "لینک آیکون"
-
-#: includes/block-translations.php:561
+#: includes/block-translations.php:549
 msgid "Up arrow"
 msgstr "فلش بالا"
 
-#: includes/block-translations.php:564
+#: includes/block-translations.php:552
 msgid "Down arrow"
 msgstr "فلش پایین"
 
-#: includes/block-translations.php:567
-msgid "Link alignment"
-msgstr "لینک تراز"
-
-#: includes/block-translations.php:570
+#: includes/block-translations.php:555
 msgid "Center"
 msgstr "وسط"
+
+#: includes/block-translations.php:558
+msgid "Link text"
+msgstr "متن لینک"
+
+#: includes/block-translations.php:561
+msgid "Link url"
+msgstr "آدرس لینک"
+
+#: includes/block-translations.php:564
+msgid "Link style"
+msgstr "سبک لینک"
+
+#: includes/block-translations.php:567
+msgid "Link icon"
+msgstr "لینک آیکون"
+
+#: includes/block-translations.php:570
+msgid "Link alignment"
+msgstr "لینک تراز"
 
 #: includes/block-translations.php:573
 msgid "Link"
@@ -780,16 +780,16 @@ msgid "Add a link to section within page, another page or an external URL."
 msgstr "اضافه کردن لینک به بخش صفحه، یک صفحه و یا آدرس خارجی."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "جهت"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "افقی"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "عمودی"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "جهت"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -811,21 +811,21 @@ msgstr "یک تصویر انتخاب کنید"
 msgid "(Insert Fact)"
 msgstr "(درج این واقعیت)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "استایل"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "استفاده از تصویر"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "استفاده از متن"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "ساده"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "استایل"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
@@ -929,52 +929,52 @@ msgid "Navigation"
 msgstr "ناوبری"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "دسته بندی:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "تعداد پست ها برای نمایش:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "استفاده از مقوله های مرتبط با پشتیبانی شود"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "نمایش خلاصه"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "متن دکمه:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(متن CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "پنهان کردن پیش نمایش"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "نمایش"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "فهرست لینک"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "شبکه ای"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "پست"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "تقسیم شبکه"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "نوع"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -989,8 +989,8 @@ msgid "Custom"
 msgstr "سفارشی"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "دسته بندی:"
+msgid "Type"
+msgstr "نوع"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
@@ -1060,13 +1060,13 @@ msgstr "بعد از لیست"
 msgid "Posts"
 msgstr "پست ها"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "فاصله"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "باریک"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "فاصله"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

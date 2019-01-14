@@ -3,6 +3,7 @@ import assign from 'lodash-es/assign';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const { createBlock, getPhrasingContentSchema, registerBlockType } = wp.blocks;
 const { InspectorControls, RichText } = wp.editor;
 const {
@@ -169,7 +170,7 @@ registerBlockType('benenson/quote', {
         directionalOptions.push({ value: 'end', label: __('Right', 'benenson') });
       }
 
-      return directionalOptions;
+      return applyFilters('benenson.block.blockquote.directionalOptions', directionalOptions);
     }
 
     getQuoteStyles() {
@@ -209,6 +210,29 @@ registerBlockType('benenson/quote', {
         'is-lined': lined,
       });
 
+      const sizeOptions = applyFilters('benenson.block.blockquote.sizeOptions', [{
+        label: __('Small', 'benenson'),
+        value: 'small',
+      }, {
+        label: __('Medium', 'benenson'),
+        value: 'medium',
+      }, {
+        label: __('Large', 'benenson'),
+        value: '',
+      }]);
+
+      // Note: US English spelling.
+      const colourOptions = applyFilters('benenson.block.blockquote.colorOptions', [{
+        label: __('Black', 'benenson'),
+        value: '',
+      }, {
+        label: __('Grey', 'benenson'),
+        value: 'grey',
+      }, {
+        label: __('White', 'benenson'),
+        value: 'white',
+      }]);
+
       return (<Fragment>
         <InspectorControls>
           <PanelBody>
@@ -222,21 +246,13 @@ registerBlockType('benenson/quote', {
               label={ __('Size', 'benenson') }
               value={ size }
               onChange={ newSize => setAttributes({ size: newSize }) }
-              options={ [
-                { value: 'small', label: __('Small', 'benenson') },
-                { value: 'medium', label: __('Medium', 'benenson') },
-                { value: '', label: __('Large', 'benenson') },
-              ] }
+              options={ sizeOptions }
             />
             <SelectControl
               label={ __('Text Colour', 'benenson') }
               value={ colour }
               onChange={ newColour => setAttributes({ colour: newColour }) }
-              options={ [
-                { value: '', label: __('Black', 'benenson') },
-                { value: 'grey', label: __('Grey', 'benenson') },
-                { value: 'white', label: __('White', 'benenson') },
-              ] }
+              options={ colourOptions }
             />
           { !this.isRightToLeft && <ToggleControl
             label={ __('Capitalise', 'benenson') }
