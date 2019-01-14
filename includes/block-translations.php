@@ -676,19 +676,19 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/media-aside/index.js:34
 	__( 'Media', 'benenson' ),
 
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:110
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:115
 	__( 'Select a menu in the sidebar', 'benenson' ),
 
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:111
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:116
 	__( 'Loading Menu...', 'benenson' ),
 
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:22
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:27
 	__( 'Select a menu...', 'benenson' ),
 
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:92
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:97
 	__( 'Loading Menus...', 'benenson' ),
 
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:94
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:99
 	// Reference: src/scripts/blocks/menu/index.js:31
 	__( 'Menu', 'benenson' ),
 

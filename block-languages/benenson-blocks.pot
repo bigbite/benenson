@@ -871,23 +871,23 @@ msgstr ""
 msgid "Media"
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:110
+#: src/scripts/blocks/menu/DisplayComponent.js:115
 msgid "Select a menu in the sidebar"
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:111
+#: src/scripts/blocks/menu/DisplayComponent.js:116
 msgid "Loading Menu..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:22
+#: src/scripts/blocks/menu/DisplayComponent.js:27
 msgid "Select a menu..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:92
+#: src/scripts/blocks/menu/DisplayComponent.js:97
 msgid "Loading Menus..."
 msgstr ""
 
-#: src/scripts/blocks/menu/DisplayComponent.js:94
+#: src/scripts/blocks/menu/DisplayComponent.js:99
 #: src/scripts/blocks/menu/index.js:31
 msgid "Menu"
 msgstr ""
