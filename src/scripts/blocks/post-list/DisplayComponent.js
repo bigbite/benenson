@@ -3,12 +3,16 @@ import DisplayCategories from './components/DisplayCategories';
 import DisplayCustom from './components/DisplayCustom';
 import DisplaySelect from './components/DisplaySelect';
 
+const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const {
   PanelBody, SelectControl, RangeControl, ToggleControl,
 } = wp.components;
-const { InspectorControls } = wp.editor;
+const {
+  InspectorControls,
+  RichText,
+} = wp.editor;
 
 const createRange = (min, max) => num => Math.max(min, Math.min(max, num));
 
@@ -19,9 +23,12 @@ class DisplayComponent extends Component {
       results: [],
       loading: false,
       preview: (this.props.attributes.selectedPosts || []).length > 0,
+      ctaText: this.props.attributes.ctaText,
       // Generate a key prefix as post id may not be unique.
       keyPrefix: Math.random().toString(36).substring(7),
     };
+
+    this.props.styleOptions = [];
 
     this.range = createRange(1, 8);
   }
@@ -48,37 +55,49 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
+    const styleOptions = applyFilters('benenson.block.list.styleOptions', [{
+      label: __('Link List', 'benenson'),
+      value: 'list',
+    }, {
+      label: __('Grid', 'benenson'),
+      value: 'grid',
+    }, {
+      label: __('Post', 'benenson'),
+      value: 'post',
+    },
+    {
+      label: __('Split Grid', 'benenson'),
+      value: 'splitgrid',
+    }]);
+
+    const typeOptions = applyFilters('benenson.block.list.typeOptions', [{
+      label: __('Category', 'benenson'),
+      value: 'category',
+    }, {
+      label: __('Object Selection', 'benenson'),
+      value: 'select',
+    }, {
+      label: __('Custom', 'benenson'),
+      value: 'custom',
+    }]);
+
+    const quantityOptions = applyFilters('benenson.block.list.quantityOptions', {
+      min: 1,
+      max: 8,
+    });
 
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={ __('Style', 'benenson') }
-            options={ [{
-              label: __('Link List', 'benenson'),
-              value: 'list',
-            }, {
-              label: __('Grid', 'benenson'),
-              value: 'grid',
-            }, {
-              label: __('Post', 'benenson'),
-              value: 'post',
-            }] }
+            options={ styleOptions }
             value={ attributes.style }
             onChange={ this.createUpdateAttribute('style') }
           />
           <SelectControl
             label={ __('Type', 'benenson') }
-            options={ [{
-              label: __('Category', 'benenson'),
-              value: 'category',
-            }, {
-              label: __('Object Selection', 'benenson'),
-              value: 'select',
-            }, {
-              label: __('Custom', 'benenson'),
-              value: 'custom',
-            }] }
+            options={ typeOptions }
             value={ attributes.type }
             onChange={ this.createUpdateAttribute('type') }
           />
@@ -91,8 +110,8 @@ class DisplayComponent extends Component {
           </label> }
           { attributes.type === 'category' && <RangeControl
             label={ __('Number of posts to show:', 'benenson') }
-            min={ 1 }
-            max={ 8 }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
             value={ attributes.amount || 3 }
             onChange={ this.createUpdateAttributeWithFilter('amount', this.range) }
           /> }
@@ -100,7 +119,22 @@ class DisplayComponent extends Component {
               label={ __('Use related categories where supported', 'benenson') }
               checked={ attributes.categoryRelated }
               onChange={ this.createUpdateAttribute('categoryRelated') }
-            />}
+            /> }
+            { attributes.type === 'select' && <ToggleControl
+              label={ __('Display excerpt', 'benenson') }
+              checked={ attributes.displayExcerpt }
+              onChange={ this.createUpdateAttribute('displayExcerpt') }
+            /> }
+            { attributes.type === 'select' && (<div>
+              <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') }</label>
+              <RichText
+                name="editorButtonText"
+                className="editorButtonText"
+                placeholder={ __('(CTA Text)', 'benenson') }
+                value={ attributes.ctaText }
+                keepPlaceholderOnFocus={ true }
+                onChange={ this.createUpdateAttribute('ctaText') }
+              /></div>) }
           { attributes.type === 'select' && <button onClick={ this.togglePreview }>
             { this.state.preview ? __('Hide Preview', 'benenson') : __('Show Preview', 'benenson') }
           </button> }
@@ -125,6 +159,7 @@ class DisplayComponent extends Component {
           preview={ this.state.preview }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
+          ctaText={ attributes.ctaText }
         /> }
       </div>
     </Fragment>);

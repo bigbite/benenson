@@ -74,6 +74,7 @@
 @import "components/social";
 @import "components/postlist/main";
 @import "components/linklist/main";
+@import "components/split-grid/main";
 @import "components/call-to-action/all";
 @import "components/form/all";
 @import "components/grid/all";
@@ -97,6 +98,7 @@
 @import "components/category-list/main";
 @import "components/logo-list/main";
 @import "components/post-grid/main";
+@import "components/media-aside/main";
 
 // Pages
 @import "pages/home";
@@ -110,7 +112,7 @@
 @import "utils/helpers/type";
 @import "utils/helpers/display";
 @import "utils/helpers/layout";
-@import "utils/helpers/grid-classes"; 
+@import "utils/helpers/grid-classes";
 
 .skipLink {
   @extend .btn;
