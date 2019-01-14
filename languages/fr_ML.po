@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-11 16:23+0000\n"
-"PO-Revision-Date: 2019-01-11 16:23+0000\n"
+"POT-Creation-Date: 2019-01-11 14:48+0000\n"
+"PO-Revision-Date: 2019-01-11 14:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_ML\n"
@@ -161,17 +161,17 @@ msgstr "Contenu"
 msgid "Act Now"
 msgstr "Agir maintenant"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "Taille"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "Standard"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "Large"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "Taille"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -787,16 +787,16 @@ msgstr ""
 "Ajoutez un lien à la section dans la page, une autre page ou une URL externe."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "Orientation"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "Horizontale"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "Verticale"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "Orientation"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -818,21 +818,21 @@ msgstr "Choisir une image"
 msgid "(Insert Fact)"
 msgstr "(Insérer un fait)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "Style"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "Utiliser l'image"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "Utiliser le texte"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "Plaine"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "Style"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
@@ -936,52 +936,52 @@ msgid "Navigation"
 msgstr "Navigation"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "Catégorie:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "Nombre de postes à afficher:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "Utiliser les catégories connexes lorsqu'elles sont prises en charge"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "Extrait d'affichage"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "Texte du bouton:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(Texte CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "Masquer l'aperçu"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "Afficher l'aperçu"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "Liste des liens"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "Grille"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "Publier"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "Grille fractionnée"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "Type"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -996,8 +996,8 @@ msgid "Custom"
 msgstr "Personnalisé"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "Catégorie:"
+msgid "Type"
+msgstr "Type"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
@@ -1067,13 +1067,13 @@ msgstr "post-List"
 msgid "Posts"
 msgstr "Messages"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "Rembourrage"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "Étroite"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "Rembourrage"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

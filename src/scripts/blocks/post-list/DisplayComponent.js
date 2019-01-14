@@ -3,6 +3,7 @@ import DisplayCategories from './components/DisplayCategories';
 import DisplayCustom from './components/DisplayCustom';
 import DisplaySelect from './components/DisplaySelect';
 
+const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const {
@@ -26,6 +27,8 @@ class DisplayComponent extends Component {
       // Generate a key prefix as post id may not be unique.
       keyPrefix: Math.random().toString(36).substring(7),
     };
+
+    this.props.styleOptions = [];
 
     this.range = createRange(1, 8);
   }
@@ -52,41 +55,49 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
+    const styleOptions = applyFilters('benenson.block.list.styleOptions', [{
+      label: __('Link List', 'benenson'),
+      value: 'list',
+    }, {
+      label: __('Grid', 'benenson'),
+      value: 'grid',
+    }, {
+      label: __('Post', 'benenson'),
+      value: 'post',
+    },
+    {
+      label: __('Split Grid', 'benenson'),
+      value: 'splitgrid',
+    }]);
+
+    const typeOptions = applyFilters('benenson.block.list.typeOptions', [{
+      label: __('Category', 'benenson'),
+      value: 'category',
+    }, {
+      label: __('Object Selection', 'benenson'),
+      value: 'select',
+    }, {
+      label: __('Custom', 'benenson'),
+      value: 'custom',
+    }]);
+
+    const quantityOptions = applyFilters('benenson.block.list.quantityOptions', {
+      min: 1,
+      max: 8,
+    });
 
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={ __('Style', 'benenson') }
-            options={ [{
-              label: __('Link List', 'benenson'),
-              value: 'list',
-            }, {
-              label: __('Grid', 'benenson'),
-              value: 'grid',
-            }, {
-              label: __('Post', 'benenson'),
-              value: 'post',
-            },
-            {
-              label: __('Split Grid', 'benenson'),
-              value: 'splitgrid',
-            }] }
+            options={ styleOptions }
             value={ attributes.style }
             onChange={ this.createUpdateAttribute('style') }
           />
           <SelectControl
             label={ __('Type', 'benenson') }
-            options={ [{
-              label: __('Category', 'benenson'),
-              value: 'category',
-            }, {
-              label: __('Object Selection', 'benenson'),
-              value: 'select',
-            }, {
-              label: __('Custom', 'benenson'),
-              value: 'custom',
-            }] }
+            options={ typeOptions }
             value={ attributes.type }
             onChange={ this.createUpdateAttribute('type') }
           />
@@ -99,8 +110,8 @@ class DisplayComponent extends Component {
           </label> }
           { attributes.type === 'category' && <RangeControl
             label={ __('Number of posts to show:', 'benenson') }
-            min={ 1 }
-            max={ 8 }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
             value={ attributes.amount || 3 }
             onChange={ this.createUpdateAttributeWithFilter('amount', this.range) }
           /> }
