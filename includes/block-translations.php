@@ -57,23 +57,19 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/appearance-options/PostSelect.js:133
 	__( 'Select a sidebar', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:107
+	// Reference: src/scripts/blocks/appearance-options/index.js:100
+	__( 'Disable Sidebar', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:101
+	__( 'Hides the sidebar for this post', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:112
 	__( 'Share Buttons', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:109
+	// Reference: src/scripts/blocks/appearance-options/index.js:114
 	__( 'Disable Share Buttons for this page', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:35
-	__( 'Appearance', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:37
-	// Reference: src/scripts/blocks/header/index.js:11
-	__( 'Header', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:39
-	__( 'Navigation Style:', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:41
+	// Reference: src/scripts/blocks/appearance-options/index.js:36
 	__( 'Global', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:44
@@ -88,7 +84,23 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:105
 	__( 'Black', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:56
+	// Reference: src/scripts/blocks/appearance-options/index.js:47
+	__( 'Half size', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:50
+	__( 'Full Background', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:55
+	__( 'Appearance', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:57
+	// Reference: src/scripts/blocks/header/index.js:11
+	__( 'Header', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:59
+	__( 'Navigation Style:', 'benenson' ),
+
+	// Reference: src/scripts/blocks/appearance-options/index.js:67
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
@@ -101,37 +113,31 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:214
 	__( 'Options', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:58
+	// Reference: src/scripts/blocks/appearance-options/index.js:69
 	__( 'Post Thumbnail Style', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:59
+	// Reference: src/scripts/blocks/appearance-options/index.js:70
 	__( 'Affects its display on the news index only.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:61
-	__( 'Half size', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:64
-	__( 'Full Background', 'benenson' ),
-
-	// Reference: src/scripts/blocks/appearance-options/index.js:72
+	// Reference: src/scripts/blocks/appearance-options/index.js:77
 	__( 'Hide featured image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:73
+	// Reference: src/scripts/blocks/appearance-options/index.js:78
 	__( 'Disables display of featured image on post single.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:79
+	// Reference: src/scripts/blocks/appearance-options/index.js:84
 	__( 'Force full-width featured image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:80
+	// Reference: src/scripts/blocks/appearance-options/index.js:85
 	__( 'Ensures a small featured image fills the width of the content area.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:85
+	// Reference: src/scripts/blocks/appearance-options/index.js:90
 	__( 'Reduce Content Width', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:86
+	// Reference: src/scripts/blocks/appearance-options/index.js:91
 	__( 'Adds a small amount of padding to the content.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/appearance-options/index.js:93
+	// Reference: src/scripts/blocks/appearance-options/index.js:98
 	__( 'Sidebar', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:95

@@ -74,28 +74,23 @@ msgstr ""
 msgid "Select a sidebar"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:107
+#: src/scripts/blocks/appearance-options/index.js:100
+msgid "Disable Sidebar"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:101
+msgid "Hides the sidebar for this post"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:112
 msgid "Share Buttons"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:109
+#: src/scripts/blocks/appearance-options/index.js:114
 msgid "Disable Share Buttons for this page"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:35
-msgid "Appearance"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:37
-#: src/scripts/blocks/header/index.js:11
-msgid "Header"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:39
-msgid "Navigation Style:"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:41
+#: src/scripts/blocks/appearance-options/index.js:36
 msgid "Global"
 msgstr ""
 
@@ -113,7 +108,28 @@ msgstr ""
 msgid "Black"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:56
+#: src/scripts/blocks/appearance-options/index.js:47
+msgid "Half size"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:50
+msgid "Full Background"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:55
+msgid "Appearance"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:57
+#: src/scripts/blocks/header/index.js:11
+msgid "Header"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:59
+msgid "Navigation Style:"
+msgstr ""
+
+#: src/scripts/blocks/appearance-options/index.js:67
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
@@ -127,56 +143,40 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:58
+#: src/scripts/blocks/appearance-options/index.js:69
 msgid "Post Thumbnail Style"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:59
+#: src/scripts/blocks/appearance-options/index.js:70
 msgid "Affects its display on the news index only."
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:61
-msgid "Half size"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:64
-msgid "Full Background"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:72
+#: src/scripts/blocks/appearance-options/index.js:77
 msgid "Hide featured image"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:73
+#: src/scripts/blocks/appearance-options/index.js:78
 msgid "Disables display of featured image on post single."
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:79
+#: src/scripts/blocks/appearance-options/index.js:84
 msgid "Force full-width featured image"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:80
+#: src/scripts/blocks/appearance-options/index.js:85
 msgid "Ensures a small featured image fills the width of the content area."
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:85
+#: src/scripts/blocks/appearance-options/index.js:90
 msgid "Reduce Content Width"
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:86
+#: src/scripts/blocks/appearance-options/index.js:91
 msgid "Adds a small amount of padding to the content."
 msgstr ""
 
-#: src/scripts/blocks/appearance-options/index.js:93
+#: src/scripts/blocks/appearance-options/index.js:98
 msgid "Sidebar"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:95
-msgid "Disable Sidebar"
-msgstr ""
-
-#: src/scripts/blocks/appearance-options/index.js:96
-msgid "Hides the sidebar for this post"
 msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
