@@ -3,10 +3,11 @@ import isString from 'lodash-es/isString';
 import LinkList from './display/LinkList';
 import GridItem from './display/GridItem';
 import PostItem from './display/PostItem';
+import SplitGridItem from './display/SplitGridItem';
 
 const { __ } = wp.i18n;
 const { Component } = wp.element;
-
+const { dateI18n, format, __experimentalGetSettings } = wp.date;
 
 class DisplayCategories extends Component {
   constructor(...args) {
@@ -135,6 +136,9 @@ class DisplayCategories extends Component {
     let excerpt = this.strip(resp.excerpt.rendered);
     excerpt = excerpt.length > 250 ? `${excerpt.slice(0, 250)}...` : '';
 
+    const dateFormat = __experimentalGetSettings().formats.date;
+    const publishedDate = dateI18n(dateFormat, resp.date);
+
     return {
       id: resp.id,
       title: resp.title.rendered,
@@ -142,6 +146,7 @@ class DisplayCategories extends Component {
       tag: tags.shift(),
       excerpt,
       featured_image: featuredImage,
+      date: publishedDate,
     };
   });
 
@@ -153,6 +158,7 @@ class DisplayCategories extends Component {
     const isList = style === 'list';
     const isGrid = style === 'grid';
     const isPost = style === 'post';
+    const isSplitGrid = style === 'splitgrid';
 
     const hasCategory = category.length > 0;
     const hasResults = results.length > 0;
@@ -194,6 +200,19 @@ class DisplayCategories extends Component {
         <div>
           <div className={ `grid grid-${this.props.amount}` }>
             {results.filter((item, i) => i < this.props.amount).map(result => <PostItem key={ `${prefix}-${result.id}` } { ...result } />)}
+          </div>
+        </div>
+      );
+    }
+
+    if (isSplitGrid) {
+      return (
+        <div className={ `splitGrid splitGrid-${this.props.amount}` }>
+          <div className="grid-col grid-col-1">
+            <SplitGridItem key={ `${prefix}-${results[0].id}` } { ...results[0] } />
+          </div>
+          <div className={ `grid-col grid-col-${this.props.amount - 1}` }>
+            {results.slice(1).filter((item, i) => i < this.props.amount - 1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
           </div>
         </div>
       );

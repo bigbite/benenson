@@ -51,16 +51,13 @@ $footer_section = [
 						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $facebook ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Facebook', 'benenson' ) ); ?>"><span class="social-facebook">Facebook</span></a></li>
 					<?php endif; ?>
 					<?php if ( $twitter ) : ?>
-						<li><a target="_blank" rel="noopener" href="https://twitter.com/<?php echo esc_attr( str_replace( '@', '', $twitter ) ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Twitter', 'benenson' ) ); ?>"><span class="social-twitter">Twitter</span></a></li>
+						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $twitter ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Twitter', 'benenson' ) ); ?>"><span class="social-twitter">Twitter</span></a></li>
 					<?php endif; ?>
 					<?php if ( $youtube ) : ?>
 						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $youtube ); ?>" aria-label="<?php echo esc_attr( __( 'Subscribe to our YouTube channel', 'benenson' ) ); ?>"><span class="social-youtube">YouTube</span></a></li>
 					<?php endif; ?>
-					<?php if ( $googleplus ) : ?>
-						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $googleplus ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Google Plus', 'benenson' ) ); ?>"><span class="social-google">Google+</span></a></li>
-					<?php endif; ?>
 					<?php if ( $instagram ) : ?>
-						<li><a target="_blank" rel="noopener" href="https://instagram.com/<?php echo esc_attr( str_replace( '@', '', $instagram ) ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Instagram', 'benenson' ) ); ?>"><span class="social-instagram">Instagram</span></a></li>
+						<li><a target="_blank" rel="noopener" href="<?php echo esc_url( $instagram ); ?>" aria-label="<?php echo esc_attr( __( 'Follow us on Instagram', 'benenson' ) ); ?>"><span class="social-instagram">Instagram</span></a></li>
 					<?php endif; ?>
 					</ul>
 				</section>

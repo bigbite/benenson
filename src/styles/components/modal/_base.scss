@@ -52,10 +52,14 @@
   margin-bottom: 16px;
   margin-left: auto;
   backface-visibility: hidden;
+
+  &::enter::after {
+    @include icon_svg(16px, 16px, "black", "close-outline");
+  }
 }
 
 .modal-close::after {
-  @include icon_scale(194px, 265px, 16px, 16px, 1);
+  @include icon_svg(16px, 16px, "white", "close-outline");
   content: "";
   display: inline-block;
   margin-left: 8px;

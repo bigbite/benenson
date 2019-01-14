@@ -44,7 +44,7 @@ add_filter( 'script_loader_tag', 'benenson_add_script_async', 10, 2 );
  */
 if ( ! function_exists( 'benenson_enqueue_ga' ) ) {
 	function benenson_enqueue_ga() {
-		$google_analytics = benenson_get_option( '_analytics_ga', 'test' );
+		$google_analytics = benenson_get_option( '_analytics_ga', '' );
 
 		if ( ! empty( $google_analytics ) ) {
 			wp_enqueue_script( 'analytics-ga-script', "https://www.googletagmanager.com/gtag/js?id={$google_analytics}", [], '1.0.0', false );

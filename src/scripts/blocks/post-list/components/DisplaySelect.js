@@ -3,6 +3,7 @@ import PostSelect from './post-selector/PostSelector';
 import * as api from './post-selector/api';
 
 const { Component } = wp.element;
+const { dateI18n, format, __experimentalGetSettings } = wp.date;
 
 /**
  * Returns a unique array of objects based on a desired key.
@@ -377,6 +378,9 @@ class DisplaySelect extends Component {
       let excerpt = this.strip(resp.excerpt.rendered);
       excerpt = excerpt.length > 250 ? `${excerpt.slice(0, 250)}...` : '';
 
+      const dateFormat = __experimentalGetSettings().formats.date;
+      const publishedDate = dateI18n(dateFormat, resp.date);
+
       return {
         id: resp.id,
         title: resp.title.rendered,
@@ -384,6 +388,7 @@ class DisplaySelect extends Component {
         tag: tags.shift(),
         excerpt,
         featured_image: featuredImage,
+        date: publishedDate,
       };
     });
 
@@ -400,6 +405,7 @@ class DisplaySelect extends Component {
         loading={ this.state.initialLoading }
         style={ this.props.style }
         prefix={ this.props.prefix }
+        ctaText={ this.props.ctaText }
       /> }
       { !this.props.preview && <PostSelect
         state={ this.state }
