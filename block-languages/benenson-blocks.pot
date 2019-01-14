@@ -117,7 +117,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
-#: src/scripts/blocks/header/DisplayComponent.js:75
+#: src/scripts/blocks/header/DisplayComponent.js:120
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:91
@@ -468,12 +468,31 @@ msgstr ""
 msgid "Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:138
+#: src/scripts/blocks/header/DisplayComponent.js:111
+#: src/scripts/blocks/section/DisplayComponent.js:68
+msgid "Normal"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:128
+#: src/scripts/blocks/key-facts/index.js:54
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:62
+#: src/scripts/blocks/logo-list/BlockEdit.js:53
+#: src/scripts/blocks/menu/DisplayComponent.js:102
+#: src/scripts/blocks/section/DisplayComponent.js:39
+msgid "Background Colour"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:140
+#: src/scripts/blocks/image/BlockEdit.js:372
+msgid "Background Type"
+msgstr ""
+
+#: src/scripts/blocks/header/DisplayComponent.js:146
 #: src/scripts/blocks/media-aside/DisplayComponent.js:52
 msgid "Embed url"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:142
+#: src/scripts/blocks/header/DisplayComponent.js:150
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
@@ -484,27 +503,27 @@ msgstr ""
 msgid "Background Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:144
+#: src/scripts/blocks/header/DisplayComponent.js:152
 msgid "Featured Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:147
+#: src/scripts/blocks/header/DisplayComponent.js:155
 msgid "Featured Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:169
+#: src/scripts/blocks/header/DisplayComponent.js:177
 msgid "(Header Title)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:178
+#: src/scripts/blocks/header/DisplayComponent.js:186
 msgid "(Header Content)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:189
+#: src/scripts/blocks/header/DisplayComponent.js:197
 msgid "(Call to action)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:83
+#: src/scripts/blocks/header/DisplayComponent.js:79
 #: src/scripts/blocks/image/BlockEdit.js:206
 #: src/scripts/blocks/slider/DisplayComponent.js:39
 msgid "Centre"

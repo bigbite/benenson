@@ -92,7 +92,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:26
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:75
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:120
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:19
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:91
@@ -367,33 +367,49 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/image/BlockEdit.js:392
 	__( 'Video', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:138
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:111
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
+	__( 'Normal', 'benenson' ),
+
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
+	// Reference: src/scripts/blocks/key-facts/index.js:54
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:62
+	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:53
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:102
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:39
+	__( 'Background Colour', 'benenson' ),
+
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:140
+	// Reference: src/scripts/blocks/image/BlockEdit.js:372
+	__( 'Background Type', 'benenson' ),
+
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:146
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:52
 	__( 'Embed url', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:142
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:150
 	__( 'Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:144
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:93
 	__( 'Background Image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:144
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
 	__( 'Featured Image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:147
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:155
 	__( 'Featured Video', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:169
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:177
 	__( '(Header Title)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:178
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:186
 	__( '(Header Content)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:189
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:197
 	__( '(Call to action)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:83
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:79
 	// Reference: src/scripts/blocks/image/BlockEdit.js:206
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:39
 	__( 'Centre', 'benenson' ),
@@ -409,7 +425,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:96
 	__( 'Translucent black', 'benenson' ),
 
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:99
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:92
 	// Reference: src/scripts/blocks/key-facts/index.js:58
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:66
