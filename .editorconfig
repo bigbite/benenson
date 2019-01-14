@@ -3,6 +3,10 @@ root = true
 [*]
 end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{md,txt}]
+trim_trailing_whitespace = false
 
 [*.{js,css,scss}]
 charset = utf-8

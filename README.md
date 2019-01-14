@@ -1,5 +1,5 @@
 # Benenson
-![Benenson Theme Screenshot](./screenshot.png)
+![Benenson Theme Screenshot](./screenshot.jpg)
 Benenson is a WordPress theme 
 
 # Features
@@ -9,7 +9,7 @@ Benenson is a WordPress theme
 - [WordPress](https://wordpress.org) >= 5.0
 - [PHP](https://php.net) >=  5.6
 - [Node](https://nodejs.org) >= 8.9.* (_for development_)
-- [Yarn](https://) (_for development_)
+- [Yarn](https://yarnpkg.com) (_for development_)
 
 ## Third-party Resources:
 Benenson bundles the following third-party resources:
@@ -25,5 +25,4 @@ In the interest of fostering an open and welcoming environment, we are using the
 Please refer to the [Github Wiki](https://github.com/bigbitecreative/benenson/wiki) for development details for Benenson.
 
 ## Changelog
-
 Please refer to the [Releases page](https://github.com/bigbitecreative/benenson/releases) for the changelog.

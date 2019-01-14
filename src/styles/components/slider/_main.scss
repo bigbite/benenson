@@ -406,7 +406,7 @@
   text-indent: -1000vw;
 
   &::before {
-    @include icon_scale(271px, 131px, 16px, 16px, 1.7);
+    @include icon_svg(16px, 16px, "white", "arrow-ios-downward-outline");
     position: absolute;
     top: 50%;
     left: 50%;

@@ -165,7 +165,7 @@ _:-ms-fullscreen,
 }
 
 [data-slider-prev]::after {
-  @include icon_scale(234px, 240px, 16px, 16px, 2);
+  @include icon_svg(16px, 16px, "white", "arrow-ios-back-outline");
   content: "";
   display: block;
 
@@ -175,7 +175,7 @@ _:-ms-fullscreen,
 }
 
 [data-slider-next]::after {
-  @include icon_scale(110px, 265px, 16px, 16px, 2);
+  @include icon_svg(16px, 16px, "white", "arrow-ios-forward-outline");
   content: "";
   display: block;
 
