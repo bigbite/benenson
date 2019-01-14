@@ -81,7 +81,7 @@ class DisplayComponent extends Component {
       value: 'custom',
     }]);
 
-    const amount = applyFilters('benenson.block.list.amount', {
+    const quantityOptions = applyFilters('benenson.block.list.quantityOptions', {
       min: 1,
       max: 8,
     });
@@ -110,8 +110,8 @@ class DisplayComponent extends Component {
           </label> }
           { attributes.type === 'category' && <RangeControl
             label={ __('Number of posts to show:', 'benenson') }
-            min={ amount.min }
-            max={ amount.max }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
             value={ attributes.amount || 3 }
             onChange={ this.createUpdateAttributeWithFilter('amount', this.range) }
           /> }
