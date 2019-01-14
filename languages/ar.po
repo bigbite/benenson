@@ -310,37 +310,37 @@ msgstr "افتراضي"
 msgid "Right"
 msgstr "يمين"
 
-#: includes/block-translations.php:165
-msgid "Blockquote"
-msgstr "اقتباس"
-
-#: includes/block-translations.php:170
-msgid "Alignment"
-msgstr "انحياز"
-
-#: includes/block-translations.php:173
-msgid "Add a blockquote block"
-msgstr "أضافه كتله عرض الأسعار الممتلئة"
-
-#: includes/block-translations.php:180
+#: includes/block-translations.php:169
 msgid "Small"
 msgstr "صغير"
 
-#: includes/block-translations.php:185
+#: includes/block-translations.php:174
 msgid "Medium"
 msgstr "متوسط"
 
-#: includes/block-translations.php:190
+#: includes/block-translations.php:177
+msgid "Blockquote"
+msgstr "اقتباس"
+
+#: includes/block-translations.php:182
 msgid "Large"
 msgstr "كبير"
 
-#: includes/block-translations.php:193
-msgid "Text Colour"
-msgstr "لون النص"
-
-#: includes/block-translations.php:203
+#: includes/block-translations.php:192
 msgid "Grey"
 msgstr "رمادي"
+
+#: includes/block-translations.php:195
+msgid "Add a blockquote block"
+msgstr "أضافه كتله عرض الأسعار الممتلئة"
+
+#: includes/block-translations.php:200
+msgid "Alignment"
+msgstr "انحياز"
+
+#: includes/block-translations.php:203
+msgid "Text Colour"
+msgstr "لون النص"
 
 #: includes/block-translations.php:206
 msgid "Capitalise"

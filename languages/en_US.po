@@ -305,37 +305,37 @@ msgstr "Default"
 msgid "Right"
 msgstr "Right"
 
-#: includes/block-translations.php:165
-msgid "Blockquote"
-msgstr "Blockquote"
-
-#: includes/block-translations.php:170
-msgid "Alignment"
-msgstr "Alignment"
-
-#: includes/block-translations.php:173
-msgid "Add a blockquote block"
-msgstr "Add a blockquote block"
-
-#: includes/block-translations.php:180
+#: includes/block-translations.php:169
 msgid "Small"
 msgstr "Small"
 
-#: includes/block-translations.php:185
+#: includes/block-translations.php:174
 msgid "Medium"
 msgstr "Medium"
 
-#: includes/block-translations.php:190
+#: includes/block-translations.php:177
+msgid "Blockquote"
+msgstr "Blockquote"
+
+#: includes/block-translations.php:182
 msgid "Large"
 msgstr "Large"
 
-#: includes/block-translations.php:193
-msgid "Text Colour"
-msgstr "Text Colour"
-
-#: includes/block-translations.php:203
+#: includes/block-translations.php:192
 msgid "Grey"
 msgstr "Grey"
+
+#: includes/block-translations.php:195
+msgid "Add a blockquote block"
+msgstr "Add a blockquote block"
+
+#: includes/block-translations.php:200
+msgid "Alignment"
+msgstr "Alignment"
+
+#: includes/block-translations.php:203
+msgid "Text Colour"
+msgstr "Text Colour"
 
 #: includes/block-translations.php:206
 msgid "Capitalise"

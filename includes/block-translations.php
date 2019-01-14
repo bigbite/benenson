@@ -77,14 +77,14 @@ $generated_i18n_strings = array(
 	__( 'Global', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:44
-	// Reference: src/scripts/blocks/blockquote/index.js:238
+	// Reference: src/scripts/blocks/blockquote/index.js:232
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:102
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:10
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
 	__( 'White', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:47
-	// Reference: src/scripts/blocks/blockquote/index.js:236
+	// Reference: src/scripts/blocks/blockquote/index.js:226
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:105
 	__( 'Black', 'benenson' ),
 
@@ -140,7 +140,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/appearance-options/index.js:96
 	__( 'Hides the sidebar for this post', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:163
+	// Reference: src/scripts/blocks/blockquote/index.js:164
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/image/BlockEdit.js:205
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:63
@@ -153,7 +153,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/tweet/index.js:89
 	__( 'Default', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:169
+	// Reference: src/scripts/blocks/blockquote/index.js:170
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:87
 	// Reference: src/scripts/blocks/image/BlockEdit.js:208
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:69
@@ -189,10 +189,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:147
 	__( 'Large', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:232
-	__( 'Text Colour', 'benenson' ),
-
-	// Reference: src/scripts/blocks/blockquote/index.js:237
+	// Reference: src/scripts/blocks/blockquote/index.js:229
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:33
 	// Reference: src/scripts/blocks/key-facts/index.js:59
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
@@ -202,22 +199,33 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/section/index.js:27
 	__( 'Grey', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:242
+	// Reference: src/scripts/blocks/blockquote/index.js:23
+	__( 'Add a blockquote block', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:240
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:77
+	// Reference: src/scripts/blocks/image/BlockEdit.js:198
+	__( 'Alignment', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:252
+	__( 'Text Colour', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:258
 	__( 'Capitalise', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:243
+	// Reference: src/scripts/blocks/blockquote/index.js:259
 	__( 'Capitalise the content.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:248
+	// Reference: src/scripts/blocks/blockquote/index.js:264
 	__( 'Line', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:249
+	// Reference: src/scripts/blocks/blockquote/index.js:265
 	__( 'Toggle display of line embellishment.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:259
+	// Reference: src/scripts/blocks/blockquote/index.js:275
 	__( '(Insert Quote Text)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:267
+	// Reference: src/scripts/blocks/blockquote/index.js:283
 	__( '(Insert Citation)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:28
