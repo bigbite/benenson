@@ -437,22 +437,34 @@ if ( ! function_exists( 'benenson_is_post_type' ) ) {
  * Adds the menu page for the theme settings.
  *
  * @since 1.0.0
- * @deprecated 1.0.3
+ *
  * @return void
  */
 if ( ! function_exists( 'benenson_add_admin_page' ) ) {
 	function benenson_add_admin_page() {
-		_deprecated_function( __FUNCTION__, '1.0.3', null );
-
 		add_theme_page(
 			esc_html__( 'Theme Settings', 'benenson' ),
 			esc_html__( 'Theme Settings', 'benenson' ),
 			'manage_options',
 			'theme-settings',
-			'benenson_theme_option_admin_page'
+			function () {
+				$return_to = rawurlencode( admin_url( 'themes.php', 'relative' ) );
+				$new_location = add_query_arg( 'return', $return_to, admin_url( 'customize.php' ) );
+
+				// just in case.
+				if ( ! headers_sent() ) {
+					header( 'Location: %s', esc_url( $new_location ) );
+				} else {
+					printf( '<script>window.location="%s";</script>', esc_url( $new_location ) );
+				}
+
+				exit;
+			}
 		);
 	}
 }
+
+add_action( 'admin_menu', 'benenson_add_admin_page' );
 
 /**
  * Getter for the theme options.
