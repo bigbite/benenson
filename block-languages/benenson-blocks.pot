@@ -291,23 +291,24 @@ msgstr ""
 msgid "Background Style"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:40
-msgid "Button Style"
-msgstr ""
-
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:42
-msgid "Primary (Yellow)"
-msgstr ""
-
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:45
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:37
 msgid "Dark"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:48
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:40
 msgid "Light"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:60
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:48
+#: src/scripts/blocks/slider/DisplayComponent.js:248
+msgid "Background Style"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:54
+msgid "Button Style"
+msgstr ""
+
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:65
 msgid "(Pre-heading)"
 msgstr ""
 
@@ -316,13 +317,13 @@ msgstr ""
 msgid "(Heading)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:78
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:83
 #: src/scripts/blocks/image/BlockEdit.js:271
 #: src/scripts/blocks/slider/DisplayComponent.js:334
 msgid "(Content)"
 msgstr ""
 
-#: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+#: src/scripts/blocks/call-to-action/DisplayComponent.js:92
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 #: src/scripts/blocks/slider/DisplayComponent.js:345
 msgid "(Button Text)"

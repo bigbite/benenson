@@ -244,25 +244,32 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:42
 	__( 'Primary (Yellow)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:45
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:37
 	__( 'Dark', 'benenson' ),
 
-	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:40
 	__( 'Light', 'benenson' ),
 
-	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:60
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/slider/DisplayComponent.js:248
+	__( 'Background Style', 'benenson' ),
+
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:54
+	__( 'Button Style', 'benenson' ),
+
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:65
 	__( '(Pre-heading)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:69
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:312
 	__( '(Heading)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:78
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/image/BlockEdit.js:271
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:334
 	__( '(Content)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:92
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:83
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:345
 	__( '(Button Text)', 'benenson' ),

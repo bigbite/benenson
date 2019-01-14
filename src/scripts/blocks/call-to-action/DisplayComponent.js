@@ -4,6 +4,7 @@ const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl } = wp.components;
 const { RichText, URLInputButton, InspectorControls } = wp.editor;
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 
 /**
  * This is the component that renders the edit screen in the panel.
@@ -21,33 +22,37 @@ class DisplayComponent extends Component {
   render() {
     const { attributes } = this.props;
 
+    const backgroundOptions = applyFilters('benenson.block.cta.backgroundOptions', [{
+      label: __('Light', 'benenson'),
+      value: '',
+    }, {
+      label: __('Grey', 'benenson'),
+      value: 'shade',
+    }]);
+
+    const buttonOptions = applyFilters('benenson.block.cta.buttonOptions', [{
+      label: __('Primary (Yellow)', 'benenson'),
+      value: '',
+    }, {
+      label: __('Dark', 'benenson'),
+      value: 'dark',
+    }, {
+      label: __('Light', 'benenson'),
+      value: 'white',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={__('Background Style', 'benenson')}
-            options={ [{
-              label: __('Light', 'benenson'),
-              value: '',
-            }, {
-              label: __('Grey', 'benenson'),
-              value: 'shade',
-            }] }
+            options={ backgroundOptions }
             value={ attributes.background }
             onChange={ this.createUpdateAttribute('background') }
           />
           <SelectControl
             label={ __('Button Style', 'benenson') }
-            options={ [{
-              label: __('Primary (Yellow)', 'benenson'),
-              value: '',
-            }, {
-              label: __('Dark', 'benenson'),
-              value: 'dark',
-            }, {
-              label: __('Light', 'benenson'),
-              value: 'white',
-            }] }
+            options={ buttonOptions }
             value={ attributes.style }
             onChange={ this.createUpdateAttribute('style') }
           />
