@@ -525,10 +525,10 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 	__( '(Insert Content)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/key-facts/index.js:16
+	// Reference: src/scripts/blocks/key-facts/index.js:17
 	__( 'Key Facts', 'benenson' ),
 
-	// Reference: src/scripts/blocks/key-facts/index.js:17
+	// Reference: src/scripts/blocks/key-facts/index.js:18
 	__( 'Add a key facts block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/index.js:47

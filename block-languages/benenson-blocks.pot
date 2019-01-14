@@ -514,7 +514,7 @@ msgid "Translucent black"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:99
-#: src/scripts/blocks/key-facts/index.js:58
+#: src/scripts/blocks/key-facts/index.js:50
 #: src/scripts/blocks/link/DisplayComponent.js:48
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:57
 #: src/scripts/blocks/logo-list/BlockEdit.js:57
@@ -672,11 +672,11 @@ msgstr ""
 msgid "(Insert Content)"
 msgstr ""
 
-#: src/scripts/blocks/key-facts/index.js:16
+#: src/scripts/blocks/key-facts/index.js:17
 msgid "Key Facts"
 msgstr ""
 
-#: src/scripts/blocks/key-facts/index.js:17
+#: src/scripts/blocks/key-facts/index.js:18
 msgid "Add a key facts block"
 msgstr ""
 
