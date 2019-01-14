@@ -5,13 +5,9 @@ First things first, though: we want to ensure a safe environment for all contrib
 
 ## Pull Requests
 We welcome PRs of any kind: hotfixes, features, translations, documentation, etc.  
-Please avoid committing directly to `master`. Create a new branch from `develop`, and submit a Pull Request to `develop` once complete. Ideally, your branch name would follow this convention:  
-- For new features: `feature/[feature-name]`  
-- For bug fixes: `hotfix/[type-of-fix]`  
-- For language changes: `lang/[language-name]`  
-- For documentation updates: `docs/[type-of-update]`  
-- For any other changes: `misc/[type-of-change]`  
+Please avoid committing directly to master. Create a new branch from `develop`, and submit a Pull Request to `develop` once complete.  
 Please use the imperative form in your commit messages e.g. `Fix PHP Warning thrown by a_funtion_name`, or `Implement my awesome new feature`, and try to keep commit messages terse (aim for a maximum of 50 characters). Further detail can be added using the commit description, if required.  
+If responding to an existing issue, please use the description to reference the issue in question.  
 If making PHP changes involving static strings, please ensure you use the appropriate gettext helper methods available in WP (`__()`, `_x()`, etc), and update the POT & PO files (located in `/languages/`) using [Poedit](https://poedit.net/).  
 Please also ensure that your changes pass all linting tasks (`yarn lint`), and that you adhere to the [WordPress VIP Coding Standards](https://github.com/Automattic/VIP-Coding-Standards).
 
