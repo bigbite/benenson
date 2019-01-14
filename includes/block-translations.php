@@ -316,28 +316,28 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/columns/index.js:19
 	__( 'Columns', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:11
+	// Reference: src/scripts/blocks/columns/layouts.js:12
 	__( '66.6% | 33.3%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:17
+	// Reference: src/scripts/blocks/columns/layouts.js:18
 	__( '33.3% | 66.6%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:23
+	// Reference: src/scripts/blocks/columns/layouts.js:24
 	__( '33.3% | 33.3% | 33.3%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:29
+	// Reference: src/scripts/blocks/columns/layouts.js:30
 	__( '50% | 25% | 25%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:35
+	// Reference: src/scripts/blocks/columns/layouts.js:36
 	__( '25% | 50% | 25%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:41
+	// Reference: src/scripts/blocks/columns/layouts.js:42
 	__( '25% | 25% | 50%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:47
+	// Reference: src/scripts/blocks/columns/layouts.js:48
 	__( '25% | 25% | 25% | 25%', 'benenson' ),
 
-	// Reference: src/scripts/blocks/columns/layouts.js:5
+	// Reference: src/scripts/blocks/columns/layouts.js:6
 	__( '50% | 50%', 'benenson' ),
 
 	// Reference: src/scripts/blocks/columns/row-column.js:9
