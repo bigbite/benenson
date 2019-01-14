@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 yarn \
-&& bin/bump.sh \
 && yarn build \
 && zip -r ../benenson.zip . \
     -x .\* \
