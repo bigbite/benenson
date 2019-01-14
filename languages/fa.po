@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-11 16:41+0000\n"
-"PO-Revision-Date: 2019-01-11 16:41+0000\n"
+"POT-Creation-Date: 2019-01-11 14:48+0000\n"
+"PO-Revision-Date: 2019-01-11 14:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -161,17 +161,17 @@ msgstr "محتوا"
 msgid "Act Now"
 msgstr "هم اکنون اقدام"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "اندازه"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "استاندارد"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "عریض"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "اندازه"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -780,16 +780,16 @@ msgid "Add a link to section within page, another page or an external URL."
 msgstr "اضافه کردن لینک به بخش صفحه، یک صفحه و یا آدرس خارجی."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "جهت"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "افقی"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "عمودی"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "جهت"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -811,21 +811,21 @@ msgstr "یک تصویر انتخاب کنید"
 msgid "(Insert Fact)"
 msgstr "(درج این واقعیت)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "استایل"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "استفاده از تصویر"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "استفاده از متن"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "ساده"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "استایل"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
@@ -929,52 +929,52 @@ msgid "Navigation"
 msgstr "ناوبری"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "دسته بندی:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "تعداد پست ها برای نمایش:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "استفاده از مقوله های مرتبط با پشتیبانی شود"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "نمایش خلاصه"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "متن دکمه:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(متن CTA)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "پنهان کردن پیش نمایش"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "نمایش"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "فهرست لینک"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "شبکه ای"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "پست"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "تقسیم شبکه"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "نوع"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -989,8 +989,8 @@ msgid "Custom"
 msgstr "سفارشی"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "دسته بندی:"
+msgid "Type"
+msgstr "نوع"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
