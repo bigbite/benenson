@@ -123,7 +123,7 @@ msgstr ""
 #: src/scripts/blocks/menu/DisplayComponent.js:91
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:37
-#: src/scripts/blocks/slider/DisplayComponent.js:203
+#: src/scripts/blocks/slider/DisplayComponent.js:214
 msgid "Options"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/link/DisplayComponent.js:63
-#: src/scripts/blocks/slider/DisplayComponent.js:35
+#: src/scripts/blocks/slider/DisplayComponent.js:36
 msgid "Left"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:87
 #: src/scripts/blocks/image/BlockEdit.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:69
-#: src/scripts/blocks/slider/DisplayComponent.js:38
+#: src/scripts/blocks/slider/DisplayComponent.js:43
 msgid "Right"
 msgstr ""
 
@@ -277,7 +277,7 @@ msgid "(Insert Citation)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:28
-#: src/scripts/blocks/slider/DisplayComponent.js:248
+#: src/scripts/blocks/slider/DisplayComponent.js:259
 msgid "Background Style"
 msgstr ""
 
@@ -302,19 +302,19 @@ msgid "(Pre-heading)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:69
-#: src/scripts/blocks/slider/DisplayComponent.js:301
+#: src/scripts/blocks/slider/DisplayComponent.js:312
 msgid "(Heading)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:78
 #: src/scripts/blocks/image/BlockEdit.js:271
-#: src/scripts/blocks/slider/DisplayComponent.js:323
+#: src/scripts/blocks/slider/DisplayComponent.js:334
 msgid "(Content)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:87
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:83
-#: src/scripts/blocks/slider/DisplayComponent.js:334
+#: src/scripts/blocks/slider/DisplayComponent.js:345
 msgid "(Button Text)"
 msgstr ""
 
@@ -496,7 +496,7 @@ msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:83
 #: src/scripts/blocks/image/BlockEdit.js:206
-#: src/scripts/blocks/slider/DisplayComponent.js:36
+#: src/scripts/blocks/slider/DisplayComponent.js:39
 msgid "Centre"
 msgstr ""
 
@@ -1051,101 +1051,101 @@ msgstr ""
 msgid "Section"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:178
+#: src/scripts/blocks/slider/DisplayComponent.js:189
 msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:205
+#: src/scripts/blocks/slider/DisplayComponent.js:216
 msgid "Show Arrows"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:211
+#: src/scripts/blocks/slider/DisplayComponent.js:222
 msgid "Has Content"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:214
+#: src/scripts/blocks/slider/DisplayComponent.js:225
 msgid ""
 "By disabling this you will hide the content in *ALL* slides. To disable "
 "this on only one slide, select the desired slide and toggle the \"Hide "
 "Content\" field in the \"Slide Options\" panel."
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:218
+#: src/scripts/blocks/slider/DisplayComponent.js:229
 msgid "Show Tabs"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:221
+#: src/scripts/blocks/slider/DisplayComponent.js:232
 msgid ""
 "Hide the tabs on the front end, these will still show in the panel to allow "
 "you to navigate through each slide."
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:226
+#: src/scripts/blocks/slider/DisplayComponent.js:237
 msgid "Slide Options"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:228
+#: src/scripts/blocks/slider/DisplayComponent.js:239
 msgid "Slide Title"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:242
+#: src/scripts/blocks/slider/DisplayComponent.js:253
 msgid "Content Alignment"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:254
+#: src/scripts/blocks/slider/DisplayComponent.js:265
 msgid "Hide Content"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:257
+#: src/scripts/blocks/slider/DisplayComponent.js:268
 msgid ""
 "By enabling this you will hide the content on *THIS* slide. To disable "
 "content on all slides go to the \"Options\" and toggle the \"Has Content\" "
 "field."
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:261
+#: src/scripts/blocks/slider/DisplayComponent.js:272
 msgid "Remove Slide"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:262
+#: src/scripts/blocks/slider/DisplayComponent.js:273
 msgid "This is irreversible."
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:275
+#: src/scripts/blocks/slider/DisplayComponent.js:286
 #: src/scripts/blocks/slider/index.js:59
 msgid "Next"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:276
+#: src/scripts/blocks/slider/DisplayComponent.js:287
 #: src/scripts/blocks/slider/index.js:60
 msgid "Previous"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:282
+#: src/scripts/blocks/slider/DisplayComponent.js:293
 msgid "Add a slide below."
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:312
+#: src/scripts/blocks/slider/DisplayComponent.js:323
 msgid "(Sub-Heading)"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:367
+#: src/scripts/blocks/slider/DisplayComponent.js:378
 msgid "(No Title)"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:372
+#: src/scripts/blocks/slider/DisplayComponent.js:383
 msgid "Add Slide"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:42
+#: src/scripts/blocks/slider/DisplayComponent.js:48
 msgid "Opaque"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:43
+#: src/scripts/blocks/slider/DisplayComponent.js:51
 msgid "Translucent"
 msgstr ""
 
-#: src/scripts/blocks/slider/DisplayComponent.js:44
+#: src/scripts/blocks/slider/DisplayComponent.js:54
 msgid "Transparent"
 msgstr ""
 
