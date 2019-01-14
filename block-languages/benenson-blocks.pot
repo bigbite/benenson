@@ -12,7 +12,7 @@ msgid "Replace Image"
 msgstr ""
 
 #: src/scripts/blocks/PostMediaSelector.js:8
-#: src/scripts/blocks/action/BlockEdit.js:78
+#: src/scripts/blocks/action/BlockEdit.js:80
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:103
@@ -20,40 +20,40 @@ msgstr ""
 msgid "Remove Image"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:102
+#: src/scripts/blocks/action/BlockEdit.js:104
 #: src/scripts/blocks/columns/index.js:17
 msgid "Content"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:111
+#: src/scripts/blocks/action/BlockEdit.js:113
 msgid "Act Now"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:57
+#: src/scripts/blocks/action/BlockEdit.js:36
+msgid "Standard"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:37
+#: src/scripts/blocks/section/DisplayComponent.js:74
+msgid "Wide"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:62
 #: src/scripts/blocks/blockquote/index.js:222
 #: src/scripts/blocks/header/DisplayComponent.js:112
 #: src/scripts/blocks/tweet/index.js:85
 msgid "Size"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:61
-msgid "Standard"
-msgstr ""
-
-#: src/scripts/blocks/action/BlockEdit.js:62
-#: src/scripts/blocks/section/DisplayComponent.js:74
-msgid "Wide"
-msgstr ""
-
-#: src/scripts/blocks/action/BlockEdit.js:66
+#: src/scripts/blocks/action/BlockEdit.js:68
 msgid "Centre Aligned"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:67
+#: src/scripts/blocks/action/BlockEdit.js:69
 msgid "Centre align the action block."
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:95
+#: src/scripts/blocks/action/BlockEdit.js:97
 msgid "(Label)"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:19
 #: src/scripts/blocks/menu/DisplayComponent.js:91
-#: src/scripts/blocks/post-list/DisplayComponent.js:58
+#: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:37
 #: src/scripts/blocks/slider/DisplayComponent.js:203
 msgid "Options"
@@ -771,7 +771,12 @@ msgstr ""
 msgid "(Insert Fact)"
 msgstr ""
 
-#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:212
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:214
+#: src/scripts/blocks/post-list/DisplayComponent.js:93
+msgid "Style"
+msgstr ""
+
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:218
 msgid "Use Image"
 msgstr ""
 
@@ -891,68 +896,68 @@ msgstr ""
 msgid "Navigation"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:101
+#: src/scripts/blocks/post-list/DisplayComponent.js:105
+msgid "Category:"
+msgstr ""
+
+#: src/scripts/blocks/post-list/DisplayComponent.js:112
 msgid "Number of posts to show:"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:108
+#: src/scripts/blocks/post-list/DisplayComponent.js:119
 msgid "Use related categories where supported"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:113
+#: src/scripts/blocks/post-list/DisplayComponent.js:124
 msgid "Display excerpt"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:118
+#: src/scripts/blocks/post-list/DisplayComponent.js:129
 msgid "Button Text:"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:122
+#: src/scripts/blocks/post-list/DisplayComponent.js:133
 msgid "(CTA Text)"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:128
+#: src/scripts/blocks/post-list/DisplayComponent.js:139
 msgid "Hide Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:128
+#: src/scripts/blocks/post-list/DisplayComponent.js:139
 msgid "Show Preview"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:62
+#: src/scripts/blocks/post-list/DisplayComponent.js:59
 msgid "Link List"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:65
+#: src/scripts/blocks/post-list/DisplayComponent.js:62
 msgid "Grid"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:68
+#: src/scripts/blocks/post-list/DisplayComponent.js:65
 msgid "Post"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:72
+#: src/scripts/blocks/post-list/DisplayComponent.js:69
 msgid "Split Grid"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:79
-msgid "Type"
-msgstr ""
-
-#: src/scripts/blocks/post-list/DisplayComponent.js:81
+#: src/scripts/blocks/post-list/DisplayComponent.js:74
 msgid "Category"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:84
+#: src/scripts/blocks/post-list/DisplayComponent.js:77
 msgid "Object Selection"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:87
+#: src/scripts/blocks/post-list/DisplayComponent.js:80
 msgid "Custom"
 msgstr ""
 
-#: src/scripts/blocks/post-list/DisplayComponent.js:94
-msgid "Category:"
+#: src/scripts/blocks/post-list/DisplayComponent.js:99
+msgid "Type"
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/CategorySelect.js:78

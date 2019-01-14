@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-11 16:06+0000\n"
-"PO-Revision-Date: 2019-01-11 16:06+0000\n"
+"POT-Creation-Date: 2019-01-11 14:47+0000\n"
+"PO-Revision-Date: 2019-01-11 14:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -161,17 +161,17 @@ msgstr "Inhalt"
 msgid "Act Now"
 msgstr "Handeln Sie jetzt"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "Größe"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "Standard"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "Breite"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "Größe"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"
@@ -933,52 +933,52 @@ msgid "Navigation"
 msgstr "Navigation"
 
 #: includes/block-translations.php:695
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: includes/block-translations.php:698
 msgid "Number of posts to show:"
 msgstr "Anzahl der Beiträge, die angezeigt werden:"
 
-#: includes/block-translations.php:698
+#: includes/block-translations.php:701
 msgid "Use related categories where supported"
 msgstr "Verwenden Sie verwandte Kategorien, wo unterstützt wurden"
 
-#: includes/block-translations.php:701
+#: includes/block-translations.php:704
 msgid "Display excerpt"
 msgstr "Ausschnitt anzeigen"
 
-#: includes/block-translations.php:704
+#: includes/block-translations.php:707
 msgid "Button Text:"
 msgstr "Button-Text:"
 
-#: includes/block-translations.php:707
+#: includes/block-translations.php:710
 msgid "(CTA Text)"
 msgstr "(CTA Text)"
 
-#: includes/block-translations.php:710
+#: includes/block-translations.php:713
 msgid "Hide Preview"
 msgstr "Vorschau ausblenden"
 
-#: includes/block-translations.php:713
+#: includes/block-translations.php:716
 msgid "Show Preview"
 msgstr "Vorschau zeigen"
 
-#: includes/block-translations.php:716
+#: includes/block-translations.php:719
 msgid "Link List"
 msgstr "Link Liste"
 
-#: includes/block-translations.php:719
+#: includes/block-translations.php:722
 msgid "Grid"
 msgstr "Raster"
 
-#: includes/block-translations.php:722
+#: includes/block-translations.php:725
 msgid "Post"
 msgstr "Beiträge"
 
-#: includes/block-translations.php:725
+#: includes/block-translations.php:728
 msgid "Split Grid"
 msgstr "Geteilter Netze teilen"
-
-#: includes/block-translations.php:728
-msgid "Type"
-msgstr "Typ"
 
 #: includes/block-translations.php:731
 msgid "Category"
@@ -993,8 +993,8 @@ msgid "Custom"
 msgstr "Benutzerdefiniert"
 
 #: includes/block-translations.php:740
-msgid "Category:"
-msgstr "Kategorie:"
+msgid "Type"
+msgstr "Typ"
 
 #: includes/block-translations.php:743
 msgid "Select a category"
