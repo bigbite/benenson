@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl, TextControl } = wp.components;
 const { InspectorControls, InnerBlocks } = wp.editor;
@@ -32,48 +33,54 @@ class DisplayComponent extends Component {
       backgroundPosition: 'center',
     };
 
+    const backgroundOptions = applyFilters('benenson.block.section.backgroundOptions', [{
+      label: __('White', 'benenson'),
+      value: '',
+    }, {
+      label: __('Grey', 'benenson'),
+      value: 'grey',
+    }]);
+
+    const paddingOptions = applyFilters('benenson.block.section.paddingOptions', [{
+      label: __('Normal', 'benenson'),
+      value: '',
+    }, {
+      label: __('Small', 'benenson'),
+      value: 'small',
+    }, {
+      label: __('None', 'benenson'),
+      value: 'no-padding',
+    }]);
+
+    const widthOptions = applyFilters('benenson.block.section.widthOptions', [{
+      label: __('Normal', 'benenson'),
+      value: '',
+    }, {
+      label: __('Narrow', 'benenson'),
+      value: 'narrow',
+    }, {
+      label: __('Wide', 'benenson'),
+      value: 'wide',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={ __('Background Colour', 'benenson') }
-            options={ [{
-              label: __('White', 'benenson'),
-              value: '',
-            }, {
-              label: __('Grey', 'benenson'),
-              value: 'grey',
-            }] }
+            options={ backgroundOptions }
             value={ attributes.background }
             onChange={ this.createUpdateAttribute('background') }
           />
           <SelectControl
             label={ __('Padding', 'benenson') }
-            options={ [{
-              label: __('Normal', 'benenson'),
-              value: '',
-            }, {
-              label: __('Small', 'benenson'),
-              value: 'small',
-            }, {
-              label: __('None', 'benenson'),
-              value: 'no-padding',
-            }] }
+            options={ paddingOptions }
             value={ attributes.padding }
             onChange={ this.createUpdateAttribute('padding') }
           />
           <SelectControl
             label={ __('Width', 'benenson') }
-            options={ [{
-              label: __('Normal', 'benenson'),
-              value: '',
-            }, {
-              label: __('Narrow', 'benenson'),
-              value: 'narrow',
-            }, {
-              label: __('Wide', 'benenson'),
-              value: 'wide',
-            }] }
+            options={ widthOptions }
             value={ attributes.width }
             onChange={ this.createUpdateAttribute('width') }
           />
