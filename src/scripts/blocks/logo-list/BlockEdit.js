@@ -10,6 +10,7 @@ import memoize from 'memize';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   PanelBody, RangeControl, SelectControl, ToggleControl,
 } = wp.components;
@@ -39,6 +40,19 @@ export default class BlockEdit extends Component {
       [`has-${backgroundColor}-background-color`]: !!backgroundColor,
     });
 
+    const quantityOptions = applyFilters('benenson.block.logoGroup.quantityOptions', {
+      min: 1,
+      max: 10,
+    });
+
+    const backgroundOptions = applyFilters('benenson.block.logoGroup.backgroundOptions', [{
+      label: __('None', 'benenson'),
+      value: '',
+    }, {
+      label: __('Grey', 'benenson'),
+      value: 'very-light-gray',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
@@ -46,17 +60,14 @@ export default class BlockEdit extends Component {
             label={ __('Quantity', 'benenson') }
             value={ quantity }
             onChange={ newQuantity => setAttributes({ quantity: newQuantity }) }
-            min={ 1 }
-            max={ 10 }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
           />
           <SelectControl
             label={ __('Background Colour', 'benenson') }
             value={ backgroundColor }
             onChange={ newBgColor => setAttributes({ backgroundColor: newBgColor }) }
-            options={ [
-              { value: '', label: __('None', 'benenson') },
-              { value: 'very-light-gray', label: __('Grey', 'benenson') },
-            ] }
+            options={ backgroundOptions }
           />
         </PanelBody>
       </InspectorControls>
