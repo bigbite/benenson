@@ -1,15 +1,20 @@
 import classnames from 'classnames';
 
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl } = wp.components;
 const { InspectorControls } = wp.editor;
 
 class DisplayComponent extends Component {
-  static colours = [
-    { label: __('White', 'benenson'), value: '' },
-    { label: __('Grey', 'benenson'), value: 'dark' },
-  ];
+  // Note: US English spelling.
+  static colours = applyFilters('benenson.block.menu.colorOptions', [{
+    label: __('White', 'benenson'),
+    value: '',
+  }, {
+    label: __('Grey', 'benenson'),
+    value: 'dark',
+  }]);
 
   constructor(...args) {
     super(...args);
