@@ -1221,3 +1221,11 @@ msgstr ""
 #: src/scripts/blocks/tweet/index.js:97
 msgid "Centre Align"
 msgstr ""
+
+#: src/scripts/packages/components/PostMediaSelector.js:6
+msgid "Set Image"
+msgstr ""
+
+#: src/scripts/packages/components/PostMediaSelector.js:7
+msgid "Replace Image"
+msgstr ""

@@ -53,14 +53,14 @@ msgid "Reply"
 msgstr ""
 
 #. translators: Previous post navigation label
-#: comments.php:39 includes/block-translations.php:857
+#: comments.php:39 includes/block-translations.php:851
 #: partials/archive-categories.php:50 partials/pagination.php:4
 #: partials/pagination.php:27
 msgid "Previous"
 msgstr ""
 
 #. translators: Next post navigation label
-#: comments.php:40 includes/block-translations.php:853
+#: comments.php:40 includes/block-translations.php:847
 #: partials/archive-categories.php:51 partials/pagination.php:6
 #: partials/pagination.php:42
 msgid "Next"
@@ -142,23 +142,11 @@ msgstr ""
 msgid "Play Icon"
 msgstr ""
 
-#: includes/block-translations.php:5
-msgid "Set Image"
-msgstr ""
-
-#: includes/block-translations.php:8
-msgid "Replace Image"
-msgstr ""
-
-#: includes/block-translations.php:16
-msgid "Remove Image"
-msgstr ""
-
-#: includes/block-translations.php:20
+#: includes/block-translations.php:6
 msgid "Content"
 msgstr ""
 
-#: includes/block-translations.php:23
+#: includes/block-translations.php:9
 msgid "Act Now"
 msgstr ""
 
@@ -174,31 +162,35 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: includes/block-translations.php:39
+#: includes/block-translations.php:25
 msgid "Centre Aligned"
 msgstr ""
 
-#: includes/block-translations.php:42
+#: includes/block-translations.php:28
 msgid "Centre align the action block."
 msgstr ""
 
-#: includes/block-translations.php:45
+#: includes/block-translations.php:36
+msgid "Remove Image"
+msgstr ""
+
+#: includes/block-translations.php:39
 msgid "(Label)"
 msgstr ""
 
-#: includes/block-translations.php:48
+#: includes/block-translations.php:42
 msgid "Action"
 msgstr ""
 
-#: includes/block-translations.php:51
+#: includes/block-translations.php:45
 msgid "Add an Action block"
 msgstr ""
 
-#: includes/block-translations.php:55
+#: includes/block-translations.php:49
 msgid "Loading"
 msgstr ""
 
-#: includes/block-translations.php:58
+#: includes/block-translations.php:52
 msgid "Select a sidebar"
 msgstr ""
 
@@ -293,16 +285,16 @@ msgid "Sidebar"
 msgstr ""
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
-#: includes/block-translations.php:149
+#: includes/block-translations.php:143
 msgid "Left"
 msgstr ""
 
-#: includes/block-translations.php:154
+#: includes/block-translations.php:148
 msgid "Default"
 msgstr ""
 
 #. translators: text alignment. for RTL languages, localise as 'Left'
-#: includes/block-translations.php:162
+#: includes/block-translations.php:156
 msgid "Right"
 msgstr ""
 
@@ -338,183 +330,183 @@ msgstr ""
 msgid "Text Colour"
 msgstr ""
 
-#: includes/block-translations.php:206
+#: includes/block-translations.php:200
 msgid "Capitalise"
 msgstr ""
 
-#: includes/block-translations.php:209
+#: includes/block-translations.php:203
 msgid "Capitalise the content."
 msgstr ""
 
-#: includes/block-translations.php:212
+#: includes/block-translations.php:206
 msgid "Line"
 msgstr ""
 
-#: includes/block-translations.php:215
+#: includes/block-translations.php:209
 msgid "Toggle display of line embellishment."
 msgstr ""
 
-#: includes/block-translations.php:218
+#: includes/block-translations.php:212
 msgid "(Insert Quote Text)"
 msgstr ""
 
-#: includes/block-translations.php:221
+#: includes/block-translations.php:215
 msgid "(Insert Citation)"
 msgstr ""
 
-#: includes/block-translations.php:225
+#: includes/block-translations.php:219
 msgid "Background Style"
 msgstr ""
 
-#: includes/block-translations.php:228
+#: includes/block-translations.php:222
 msgid "Button Style"
 msgstr ""
 
-#: includes/block-translations.php:231
+#: includes/block-translations.php:225
 msgid "Primary (Yellow)"
 msgstr ""
 
-#: includes/block-translations.php:234
+#: includes/block-translations.php:228
 msgid "Dark"
 msgstr ""
 
-#: includes/block-translations.php:237
+#: includes/block-translations.php:231
 msgid "Light"
 msgstr ""
 
-#: includes/block-translations.php:240
+#: includes/block-translations.php:234
 msgid "(Pre-heading)"
 msgstr ""
 
-#: includes/block-translations.php:244
+#: includes/block-translations.php:238
 msgid "(Heading)"
 msgstr ""
 
-#: includes/block-translations.php:249
+#: includes/block-translations.php:243
 msgid "(Content)"
 msgstr ""
 
-#: includes/block-translations.php:254
+#: includes/block-translations.php:248
 msgid "(Button Text)"
 msgstr ""
 
-#: includes/block-translations.php:257
+#: includes/block-translations.php:251
 msgid "Call To Action"
 msgstr ""
 
-#: includes/block-translations.php:260
+#: includes/block-translations.php:254
 msgid "No categories to show."
 msgstr ""
 
-#: includes/block-translations.php:263
+#: includes/block-translations.php:257
 msgid "Maximum number of categories to show"
 msgstr ""
 
-#: includes/block-translations.php:266
+#: includes/block-translations.php:260
 msgid "Set to 0 to show all."
 msgstr ""
 
-#: includes/block-translations.php:269
+#: includes/block-translations.php:263
 msgid "Title"
 msgstr ""
 
-#: includes/block-translations.php:272
+#: includes/block-translations.php:266
 msgid "Loading categories"
 msgstr ""
 
-#: includes/block-translations.php:275
+#: includes/block-translations.php:269
 msgid "Something went wrong whilst trying to fetch the categories."
 msgstr ""
 
-#: includes/block-translations.php:278
+#: includes/block-translations.php:272
 msgid "Categories"
 msgstr ""
 
-#: includes/block-translations.php:281
+#: includes/block-translations.php:275
 msgid "Term"
 msgstr ""
 
-#: includes/block-translations.php:284
+#: includes/block-translations.php:278
 msgid "Taxonomy"
 msgstr ""
 
-#: includes/block-translations.php:287 includes/blocks/menu/render.php:23
+#: includes/block-translations.php:281 includes/blocks/menu/render.php:23
 msgid "Category List"
 msgstr ""
 
-#: includes/block-translations.php:290
+#: includes/block-translations.php:284
 msgid "Layout Style"
 msgstr ""
 
-#: includes/block-translations.php:293
+#: includes/block-translations.php:287
 msgid "Row"
 msgstr ""
 
-#: includes/block-translations.php:296
+#: includes/block-translations.php:290
 msgid "Columns"
 msgstr ""
 
-#: includes/block-translations.php:299
+#: includes/block-translations.php:293
 msgid "66.6% | 33.3%"
 msgstr ""
 
-#: includes/block-translations.php:302
+#: includes/block-translations.php:296
 msgid "33.3% | 66.6%"
 msgstr ""
 
-#: includes/block-translations.php:305
+#: includes/block-translations.php:299
 msgid "33.3% | 33.3% | 33.3%"
 msgstr ""
 
-#: includes/block-translations.php:308
+#: includes/block-translations.php:302
 msgid "50% | 25% | 25%"
 msgstr ""
 
-#: includes/block-translations.php:311
+#: includes/block-translations.php:305
 msgid "25% | 50% | 25%"
 msgstr ""
 
-#: includes/block-translations.php:314
+#: includes/block-translations.php:308
 msgid "25% | 25% | 50%"
 msgstr ""
 
-#: includes/block-translations.php:317
+#: includes/block-translations.php:311
 msgid "25% | 25% | 25% | 25%"
 msgstr ""
 
-#: includes/block-translations.php:320
+#: includes/block-translations.php:314
 msgid "50% | 50%"
 msgstr ""
 
-#: includes/block-translations.php:323
+#: includes/block-translations.php:317
 msgid "Row Column"
 msgstr ""
 
-#: includes/block-translations.php:326
+#: includes/block-translations.php:320
 msgid "Resource Download"
 msgstr ""
 
-#: includes/block-translations.php:329
+#: includes/block-translations.php:323
 msgid "Add a button to download a resource"
 msgstr ""
 
-#: includes/block-translations.php:332
+#: includes/block-translations.php:326
 msgid "File"
 msgstr ""
 
-#: includes/block-translations.php:335
+#: includes/block-translations.php:329
 msgid "A File"
 msgstr ""
 
-#: includes/block-translations.php:338
+#: includes/block-translations.php:332
 msgid "[Download Resource]"
 msgstr ""
 
-#: includes/block-translations.php:341
+#: includes/block-translations.php:335
 msgid "Remove Resource"
 msgstr ""
 
-#: includes/block-translations.php:344
+#: includes/block-translations.php:338
 msgid "Edit File"
 msgstr ""
 
@@ -576,91 +568,91 @@ msgstr ""
 msgid "Centre"
 msgstr ""
 
-#: includes/block-translations.php:402
+#: includes/block-translations.php:396
 msgid "Translucent black"
 msgstr ""
 
-#: includes/block-translations.php:410
+#: includes/block-translations.php:404
 msgid "None"
 msgstr ""
 
-#: includes/block-translations.php:413
+#: includes/block-translations.php:407
 msgid "Set featured video"
 msgstr ""
 
-#: includes/block-translations.php:416
+#: includes/block-translations.php:410
 msgid "Remove featured video"
 msgstr ""
 
-#: includes/block-translations.php:420
+#: includes/block-translations.php:414
 msgid "Replace Video"
 msgstr ""
 
-#: includes/block-translations.php:423
+#: includes/block-translations.php:417
 msgid "Required when specifying a width"
 msgstr ""
 
-#: includes/block-translations.php:426
+#: includes/block-translations.php:420
 msgid "Minimum Height"
 msgstr ""
 
-#: includes/block-translations.php:429
+#: includes/block-translations.php:423
 msgid "Required if not using width/height, optional otherwise"
 msgstr ""
 
-#: includes/block-translations.php:432
+#: includes/block-translations.php:426
 msgid "Reset Embed Url"
 msgstr ""
 
-#: includes/block-translations.php:435
+#: includes/block-translations.php:429
 msgid "Iframe URL"
 msgstr ""
 
-#: includes/block-translations.php:438
+#: includes/block-translations.php:432
 msgid "Enter URL to embed here…"
 msgstr ""
 
-#: includes/block-translations.php:441
+#: includes/block-translations.php:435
 msgid "Embed"
 msgstr ""
 
-#: includes/block-translations.php:444
+#: includes/block-translations.php:438
 msgid "Write caption…"
 msgstr ""
 
-#: includes/block-translations.php:448
+#: includes/block-translations.php:442
 msgid "Width"
 msgstr ""
 
-#: includes/block-translations.php:451
+#: includes/block-translations.php:445
 msgid "Required when specifying a height"
 msgstr ""
 
-#: includes/block-translations.php:454
+#: includes/block-translations.php:448
 msgid "Height"
 msgstr ""
 
-#: includes/block-translations.php:457
+#: includes/block-translations.php:451
 msgid "Iframe"
 msgstr ""
 
-#: includes/block-translations.php:460
+#: includes/block-translations.php:454
 msgid "Responsive"
 msgstr ""
 
-#: includes/block-translations.php:463
+#: includes/block-translations.php:457
 msgid "Fluid"
 msgstr ""
 
-#: includes/block-translations.php:466
+#: includes/block-translations.php:460
 msgid "Responsive Iframe"
 msgstr ""
 
-#: includes/block-translations.php:470
+#: includes/block-translations.php:464
 msgid "(Link Text)"
 msgstr ""
 
-#: includes/block-translations.php:473
+#: includes/block-translations.php:467
 msgid "Remove Button"
 msgstr ""
 
@@ -676,59 +668,59 @@ msgstr ""
 msgid "Image Style"
 msgstr ""
 
-#: includes/block-translations.php:485
+#: includes/block-translations.php:479
 msgid "Only has an effect on images smaller than their container"
 msgstr ""
 
-#: includes/block-translations.php:488
+#: includes/block-translations.php:482
 msgid "(Title)"
 msgstr ""
 
-#: includes/block-translations.php:491
+#: includes/block-translations.php:485
 msgid "Add Button"
 msgstr ""
 
-#: includes/block-translations.php:494
+#: includes/block-translations.php:488
 msgid "Choose Video"
 msgstr ""
 
-#: includes/block-translations.php:497
+#: includes/block-translations.php:491
 msgid "Remove Video"
 msgstr ""
 
-#: includes/block-translations.php:500
+#: includes/block-translations.php:494
 msgid "Display Overlay"
 msgstr ""
 
-#: includes/block-translations.php:503
+#: includes/block-translations.php:497
 msgid "Enable Parallax"
 msgstr ""
 
-#: includes/block-translations.php:506
+#: includes/block-translations.php:500
 msgid "(Insert Caption, if required)"
 msgstr ""
 
-#: includes/block-translations.php:509
+#: includes/block-translations.php:503
 msgid "Add a flexible image block with optional overlay"
 msgstr ""
 
-#: includes/block-translations.php:519
+#: includes/block-translations.php:513
 msgid "(Insert Title)"
 msgstr ""
 
-#: includes/block-translations.php:526
+#: includes/block-translations.php:520
 msgid "(Insert Content)"
 msgstr ""
 
-#: includes/block-translations.php:529
+#: includes/block-translations.php:523
 msgid "Key Facts"
 msgstr ""
 
-#: includes/block-translations.php:532
+#: includes/block-translations.php:526
 msgid "Add a key facts block"
 msgstr ""
 
-#: includes/block-translations.php:537
+#: includes/block-translations.php:531
 msgid "Quantity"
 msgstr ""
 
@@ -772,11 +764,11 @@ msgstr ""
 msgid "Link alignment"
 msgstr ""
 
-#: includes/block-translations.php:573
+#: includes/block-translations.php:567
 msgid "Link"
 msgstr ""
 
-#: includes/block-translations.php:576
+#: includes/block-translations.php:570
 msgid "Add a link to section within page, another page or an external URL."
 msgstr ""
 
@@ -792,23 +784,23 @@ msgstr ""
 msgid "Orientation"
 msgstr ""
 
-#: includes/block-translations.php:588
+#: includes/block-translations.php:582
 msgid "Hide Lines"
 msgstr ""
 
-#: includes/block-translations.php:591
+#: includes/block-translations.php:585
 msgid "Links with Icons"
 msgstr ""
 
-#: includes/block-translations.php:594
+#: includes/block-translations.php:588
 msgid "Add a links-with-icons block"
 msgstr ""
 
-#: includes/block-translations.php:598
+#: includes/block-translations.php:592
 msgid "Pick an image"
 msgstr ""
 
-#: includes/block-translations.php:601
+#: includes/block-translations.php:595
 msgid "(Insert Fact)"
 msgstr ""
 
@@ -832,100 +824,100 @@ msgstr ""
 msgid "Icon Size"
 msgstr ""
 
-#: includes/block-translations.php:622
+#: includes/block-translations.php:616
 msgid "Hide Image Credit Display"
 msgstr ""
 
-#: includes/block-translations.php:625
+#: includes/block-translations.php:619
 msgid "Has Underline"
 msgstr ""
 
-#: includes/block-translations.php:628
+#: includes/block-translations.php:622
 msgid "Display Button"
 msgstr ""
 
-#: includes/block-translations.php:631
+#: includes/block-translations.php:625
 msgid "(Insert Body Text)"
 msgstr ""
 
-#: includes/block-translations.php:634
+#: includes/block-translations.php:628
 msgid "(Insert Link Text)"
 msgstr ""
 
-#: includes/block-translations.php:637
+#: includes/block-translations.php:631
 msgid "Links with Icons Group"
 msgstr ""
 
-#: includes/block-translations.php:640
+#: includes/block-translations.php:634
 msgid "Add a repeatable links-with-icons block"
 msgstr ""
 
-#: includes/block-translations.php:643 includes/theme-options.php:306
+#: includes/block-translations.php:637 includes/theme-options.php:306
 #: includes/theme-options.php:309
 msgid "Logo"
 msgstr ""
 
-#: includes/block-translations.php:646
+#: includes/block-translations.php:640
 msgid "Add a logos block"
 msgstr ""
 
-#: includes/block-translations.php:649
+#: includes/block-translations.php:643
 msgid "Logo Group"
 msgstr ""
 
-#: includes/block-translations.php:652
+#: includes/block-translations.php:646
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: includes/block-translations.php:655
+#: includes/block-translations.php:649
 msgid "(Insert Link text)"
 msgstr ""
 
-#: includes/block-translations.php:658
+#: includes/block-translations.php:652
 msgid "Display in modal"
 msgstr ""
 
-#: includes/block-translations.php:661
+#: includes/block-translations.php:655
 msgid "Clicking play will open up the video in a modal."
 msgstr ""
 
-#: includes/block-translations.php:664
+#: includes/block-translations.php:658
 msgid "Image/Video Poster"
 msgstr ""
 
-#: includes/block-translations.php:667
+#: includes/block-translations.php:661
 msgid "Video (will override embed)"
 msgstr ""
 
-#: includes/block-translations.php:670
+#: includes/block-translations.php:664
 msgid "Media aside"
 msgstr ""
 
-#: includes/block-translations.php:673
+#: includes/block-translations.php:667
 msgid "Media"
 msgstr ""
 
-#: includes/block-translations.php:676
+#: includes/block-translations.php:670
 msgid "Select a menu in the sidebar"
 msgstr ""
 
-#: includes/block-translations.php:679
+#: includes/block-translations.php:673
 msgid "Loading Menu..."
 msgstr ""
 
-#: includes/block-translations.php:682
+#: includes/block-translations.php:676
 msgid "Select a menu..."
 msgstr ""
 
-#: includes/block-translations.php:685
+#: includes/block-translations.php:679
 msgid "Loading Menus..."
 msgstr ""
 
-#: includes/block-translations.php:689
+#: includes/block-translations.php:683
 msgid "Menu"
 msgstr ""
 
-#: includes/block-translations.php:692
+#: includes/block-translations.php:686
 msgid "Navigation"
 msgstr ""
 
@@ -977,15 +969,15 @@ msgstr ""
 msgid "Split Grid"
 msgstr ""
 
-#: includes/block-translations.php:731
+#: includes/block-translations.php:725
 msgid "Category"
 msgstr ""
 
-#: includes/block-translations.php:734
+#: includes/block-translations.php:728
 msgid "Object Selection"
 msgstr ""
 
-#: includes/block-translations.php:737
+#: includes/block-translations.php:731
 msgid "Custom"
 msgstr ""
 
@@ -993,71 +985,71 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: includes/block-translations.php:743
+#: includes/block-translations.php:737
 msgid "Select a category"
 msgstr ""
 
-#: includes/block-translations.php:749
+#: includes/block-translations.php:743
 msgid "Loading..."
 msgstr ""
 
-#: includes/block-translations.php:752
+#: includes/block-translations.php:746
 msgid "Select a category."
 msgstr ""
 
-#: includes/block-translations.php:755
+#: includes/block-translations.php:749
 msgid "No Items found"
 msgstr ""
 
-#: includes/block-translations.php:758
+#: includes/block-translations.php:752
 msgid "Add another item"
 msgstr ""
 
-#: includes/block-translations.php:762
+#: includes/block-translations.php:756
 msgid "No Posts."
 msgstr ""
 
-#: includes/block-translations.php:767
+#: includes/block-translations.php:761
 msgid "(Insert Tag)"
 msgstr ""
 
-#: includes/block-translations.php:770
+#: includes/block-translations.php:764
 msgid "(Tag Name)"
 msgstr ""
 
-#: includes/block-translations.php:773
+#: includes/block-translations.php:767
 msgid "Loading Posts..."
 msgstr ""
 
-#: includes/block-translations.php:776
+#: includes/block-translations.php:770
 msgid "Your query yielded no results, please try again."
 msgstr ""
 
-#: includes/block-translations.php:779
+#: includes/block-translations.php:773
 msgid "Load More"
 msgstr ""
 
-#: includes/block-translations.php:782
+#: includes/block-translations.php:776
 msgid "Please enter your search query..."
 msgstr ""
 
-#: includes/block-translations.php:785
+#: includes/block-translations.php:779
 msgid "Post Type:"
 msgstr ""
 
-#: includes/block-translations.php:788
+#: includes/block-translations.php:782
 msgid "Post List"
 msgstr ""
 
-#: includes/block-translations.php:791
+#: includes/block-translations.php:785
 msgid "List"
 msgstr ""
 
-#: includes/block-translations.php:794
+#: includes/block-translations.php:788
 msgid "post-list"
 msgstr ""
 
-#: includes/block-translations.php:797
+#: includes/block-translations.php:791
 msgid "Posts"
 msgstr ""
 
@@ -1069,144 +1061,152 @@ msgstr ""
 msgid "Padding"
 msgstr ""
 
-#: includes/block-translations.php:807
+#: includes/block-translations.php:801
 msgid "Id (scroll location)"
 msgstr ""
 
-#: includes/block-translations.php:810
+#: includes/block-translations.php:804
 msgid "Section"
 msgstr ""
 
-#: includes/block-translations.php:813
+#: includes/block-translations.php:807
 msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr ""
 
-#: includes/block-translations.php:816
+#: includes/block-translations.php:810
 msgid "Show Arrows"
 msgstr ""
 
-#: includes/block-translations.php:819
+#: includes/block-translations.php:813
 msgid "Has Content"
 msgstr ""
 
-#: includes/block-translations.php:822
+#: includes/block-translations.php:816
 msgid ""
 "By disabling this you will hide the content in *ALL* slides. To disable this "
 "on only one slide, select the desired slide and toggle the \"Hide Content\" "
 "field in the \"Slide Options\" panel."
 msgstr ""
 
-#: includes/block-translations.php:825
+#: includes/block-translations.php:819
 msgid "Show Tabs"
 msgstr ""
 
-#: includes/block-translations.php:828
+#: includes/block-translations.php:822
 msgid ""
 "Hide the tabs on the front end, these will still show in the panel to allow "
 "you to navigate through each slide."
 msgstr ""
 
-#: includes/block-translations.php:831
+#: includes/block-translations.php:825
 msgid "Slide Options"
 msgstr ""
 
-#: includes/block-translations.php:834
+#: includes/block-translations.php:828
 msgid "Slide Title"
 msgstr ""
 
-#: includes/block-translations.php:837
+#: includes/block-translations.php:831
 msgid "Content Alignment"
 msgstr ""
 
-#: includes/block-translations.php:840
+#: includes/block-translations.php:834
 msgid "Hide Content"
 msgstr ""
 
-#: includes/block-translations.php:843
+#: includes/block-translations.php:837
 msgid ""
 "By enabling this you will hide the content on *THIS* slide. To disable "
 "content on all slides go to the \"Options\" and toggle the \"Has Content\" "
 "field."
 msgstr ""
 
-#: includes/block-translations.php:846
+#: includes/block-translations.php:840
 msgid "Remove Slide"
 msgstr ""
 
-#: includes/block-translations.php:849
+#: includes/block-translations.php:843
 msgid "This is irreversible."
 msgstr ""
 
-#: includes/block-translations.php:860
+#: includes/block-translations.php:854
 msgid "Add a slide below."
 msgstr ""
 
-#: includes/block-translations.php:863
+#: includes/block-translations.php:857
 msgid "(Sub-Heading)"
 msgstr ""
 
-#: includes/block-translations.php:866
+#: includes/block-translations.php:860
 msgid "(No Title)"
 msgstr ""
 
-#: includes/block-translations.php:869
+#: includes/block-translations.php:863
 msgid "Add Slide"
 msgstr ""
 
-#: includes/block-translations.php:872
+#: includes/block-translations.php:866
 msgid "Opaque"
 msgstr ""
 
-#: includes/block-translations.php:875
+#: includes/block-translations.php:869
 msgid "Translucent"
 msgstr ""
 
-#: includes/block-translations.php:878
+#: includes/block-translations.php:872
 msgid "Transparent"
 msgstr ""
 
-#: includes/block-translations.php:881
+#: includes/block-translations.php:875
 msgid "Tap here to return to gallery"
 msgstr ""
 
-#: includes/block-translations.php:884
+#: includes/block-translations.php:878
 msgid "Toggle Content"
 msgstr ""
 
-#: includes/block-translations.php:887
+#: includes/block-translations.php:881
 msgid "Slider"
 msgstr ""
 
-#: includes/block-translations.php:890
+#: includes/block-translations.php:884
 msgid "Carousel"
 msgstr ""
 
-#: includes/block-translations.php:893
+#: includes/block-translations.php:887
 msgid "Scroller"
 msgstr ""
 
-#: includes/block-translations.php:896
+#: includes/block-translations.php:890
 msgid "(Action Title)"
 msgstr ""
 
-#: includes/block-translations.php:899
+#: includes/block-translations.php:893
 msgid "(Place Tweet text proforma here)"
 msgstr ""
 
-#: includes/block-translations.php:902
+#: includes/block-translations.php:896
 msgid "Send this Tweet"
 msgstr ""
 
-#: includes/block-translations.php:905
+#: includes/block-translations.php:899
 msgid "Tweet Action"
 msgstr ""
 
-#: includes/block-translations.php:908
+#: includes/block-translations.php:902
 msgid "Add a Tweet Action block"
 msgstr ""
 
-#: includes/block-translations.php:911
+#: includes/block-translations.php:905
 msgid "Centre Align"
+msgstr ""
+
+#: includes/block-translations.php:908
+msgid "Set Image"
+msgstr ""
+
+#: includes/block-translations.php:911
+msgid "Replace Image"
 msgstr ""
 
 #. Theme Name of the plugin/theme
@@ -1443,22 +1443,22 @@ msgstr ""
 msgid "Sidebar post type"
 msgstr ""
 
-#: includes/scripts-and-styles.php:149
+#: includes/scripts-and-styles.php:154
 msgctxt "open double quote"
 msgid "“"
 msgstr ""
 
-#: includes/scripts-and-styles.php:150
+#: includes/scripts-and-styles.php:155
 msgctxt "close double quote"
 msgid "”"
 msgstr ""
 
-#: includes/scripts-and-styles.php:151
+#: includes/scripts-and-styles.php:156
 msgctxt "open single quote"
 msgid "‘"
 msgstr ""
 
-#: includes/scripts-and-styles.php:152
+#: includes/scripts-and-styles.php:157
 msgctxt "close single quote"
 msgid "’"
 msgstr ""

@@ -108,7 +108,7 @@ add_action( 'wp_enqueue_scripts', 'benenson_scripts' );
  */
 if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 	function benenson_gutenberg_assets() {
-		wp_enqueue_script( 'benenson-blocks-js', get_theme_file_uri( '/blocks.js' ), [
+		wp_enqueue_script( 'benenson-packages-js', get_template_directory_uri() . '/packages.js', [
 			'wp-blocks',
 			'wp-i18n',
 			'wp-element',
@@ -116,6 +116,10 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			'wp-data',
 			'wp-date',
 		], '1.0.3', false );
+
+		wp_enqueue_script( 'benenson-blocks-js', get_theme_file_uri( '/blocks.js' ), [
+			'benenson-packages-js',
+		], true, false );
 
 		if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {
 			// gutenberg plugin
