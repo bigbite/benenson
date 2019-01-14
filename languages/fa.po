@@ -161,17 +161,17 @@ msgstr "محتوا"
 msgid "Act Now"
 msgstr "هم اکنون اقدام"
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr "اندازه"
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr "استاندارد"
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
 msgstr "عریض"
+
+#: includes/block-translations.php:36
+msgid "Size"
+msgstr "اندازه"
 
 #: includes/block-translations.php:39
 msgid "Centre Aligned"

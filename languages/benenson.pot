@@ -162,16 +162,16 @@ msgstr ""
 msgid "Act Now"
 msgstr ""
 
-#: includes/block-translations.php:29
-msgid "Size"
-msgstr ""
-
-#: includes/block-translations.php:32
+#: includes/block-translations.php:26
 msgid "Standard"
 msgstr ""
 
-#: includes/block-translations.php:36
+#: includes/block-translations.php:30
 msgid "Wide"
+msgstr ""
+
+#: includes/block-translations.php:36
+msgid "Size"
 msgstr ""
 
 #: includes/block-translations.php:39

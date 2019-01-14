@@ -12,7 +12,7 @@ msgid "Replace Image"
 msgstr ""
 
 #: src/scripts/blocks/PostMediaSelector.js:8
-#: src/scripts/blocks/action/BlockEdit.js:78
+#: src/scripts/blocks/action/BlockEdit.js:80
 #: src/scripts/blocks/image/BlockEdit.js:224
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:103
@@ -20,40 +20,40 @@ msgstr ""
 msgid "Remove Image"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:102
+#: src/scripts/blocks/action/BlockEdit.js:104
 #: src/scripts/blocks/columns/index.js:17
 msgid "Content"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:111
+#: src/scripts/blocks/action/BlockEdit.js:113
 msgid "Act Now"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:57
+#: src/scripts/blocks/action/BlockEdit.js:36
+msgid "Standard"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:37
+#: src/scripts/blocks/section/DisplayComponent.js:74
+msgid "Wide"
+msgstr ""
+
+#: src/scripts/blocks/action/BlockEdit.js:62
 #: src/scripts/blocks/blockquote/index.js:222
 #: src/scripts/blocks/header/DisplayComponent.js:112
 #: src/scripts/blocks/tweet/index.js:85
 msgid "Size"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:61
-msgid "Standard"
-msgstr ""
-
-#: src/scripts/blocks/action/BlockEdit.js:62
-#: src/scripts/blocks/section/DisplayComponent.js:74
-msgid "Wide"
-msgstr ""
-
-#: src/scripts/blocks/action/BlockEdit.js:66
+#: src/scripts/blocks/action/BlockEdit.js:68
 msgid "Centre Aligned"
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:67
+#: src/scripts/blocks/action/BlockEdit.js:69
 msgid "Centre align the action block."
 msgstr ""
 
-#: src/scripts/blocks/action/BlockEdit.js:95
+#: src/scripts/blocks/action/BlockEdit.js:97
 msgid "(Label)"
 msgstr ""
 

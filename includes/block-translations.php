@@ -8,40 +8,40 @@ $generated_i18n_strings = array(
 	__( 'Replace Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/PostMediaSelector.js:8
-	// Reference: src/scripts/blocks/action/BlockEdit.js:78
+	// Reference: src/scripts/blocks/action/BlockEdit.js:80
 	// Reference: src/scripts/blocks/image/BlockEdit.js:224
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:60
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:103
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:68
 	__( 'Remove Image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:102
+	// Reference: src/scripts/blocks/action/BlockEdit.js:104
 	// Reference: src/scripts/blocks/columns/index.js:17
 	__( 'Content', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:111
+	// Reference: src/scripts/blocks/action/BlockEdit.js:113
 	__( 'Act Now', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:57
+	// Reference: src/scripts/blocks/action/BlockEdit.js:36
+	__( 'Standard', 'benenson' ),
+
+	// Reference: src/scripts/blocks/action/BlockEdit.js:37
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:74
+	__( 'Wide', 'benenson' ),
+
+	// Reference: src/scripts/blocks/action/BlockEdit.js:62
 	// Reference: src/scripts/blocks/blockquote/index.js:222
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:112
 	// Reference: src/scripts/blocks/tweet/index.js:85
 	__( 'Size', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:61
-	__( 'Standard', 'benenson' ),
-
-	// Reference: src/scripts/blocks/action/BlockEdit.js:62
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:74
-	__( 'Wide', 'benenson' ),
-
-	// Reference: src/scripts/blocks/action/BlockEdit.js:66
+	// Reference: src/scripts/blocks/action/BlockEdit.js:68
 	__( 'Centre Aligned', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:67
+	// Reference: src/scripts/blocks/action/BlockEdit.js:69
 	__( 'Centre align the action block.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/action/BlockEdit.js:95
+	// Reference: src/scripts/blocks/action/BlockEdit.js:97
 	__( '(Label)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/index.js:53
