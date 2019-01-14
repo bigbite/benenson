@@ -181,9 +181,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 			'order'     => 'ASC',
 		] );
 
-		$posts = $sidebar_posts->get_posts();
-
-		array_walk( $posts, function( &$item ) use ( &$sidebar_post_list ) {
+		array_walk( $sidebar_posts->posts, function( &$item ) use ( &$sidebar_post_list ) {
 			$sidebar_post_list[ $item->ID ] = $item->post_title;
 		} );
 
