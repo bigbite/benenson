@@ -1067,13 +1067,13 @@ msgstr "post-List"
 msgid "Posts"
 msgstr "Posts"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "Preenchimento"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "Estreito"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "Preenchimento"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

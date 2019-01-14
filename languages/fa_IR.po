@@ -1060,13 +1060,13 @@ msgstr "بعد از لیست"
 msgid "Posts"
 msgstr "پست ها"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "فاصله"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "باریک"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "فاصله"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

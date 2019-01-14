@@ -1061,12 +1061,12 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: includes/block-translations.php:800
-msgid "Padding"
+#: includes/block-translations.php:801
+msgid "Narrow"
 msgstr ""
 
 #: includes/block-translations.php:804
-msgid "Narrow"
+msgid "Padding"
 msgstr ""
 
 #: includes/block-translations.php:807

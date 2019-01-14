@@ -1067,13 +1067,13 @@ msgstr "post-List"
 msgid "Posts"
 msgstr "Articles"
 
-#: includes/block-translations.php:800
-msgid "Padding"
-msgstr "Marges intérieures"
-
-#: includes/block-translations.php:804
+#: includes/block-translations.php:801
 msgid "Narrow"
 msgstr "Étroit"
+
+#: includes/block-translations.php:804
+msgid "Padding"
+msgstr "Marges intérieures"
 
 #: includes/block-translations.php:807
 msgid "Id (scroll location)"

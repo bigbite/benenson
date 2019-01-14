@@ -80,7 +80,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:238
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:102
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:10
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:41
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
 	__( 'White', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:47
@@ -176,7 +176,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:117
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:56
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:48
 	__( 'Small', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:227
@@ -198,7 +198,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:58
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:11
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:44
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:40
 	// Reference: src/scripts/blocks/section/index.js:27
 	__( 'Grey', 'benenson' ),
 
@@ -344,7 +344,7 @@ $generated_i18n_strings = array(
 	__( 'Edit File', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:114
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:56
 	__( 'Normal', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:125
@@ -367,7 +367,7 @@ $generated_i18n_strings = array(
 	__( 'Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:144
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:86
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:93
 	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:144
@@ -395,7 +395,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:102
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:39
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:70
 	__( 'Background Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:96
@@ -406,7 +406,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:48
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:66
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:57
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:51
 	__( 'None', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/PostFeaturedVideo.js:6
@@ -444,7 +444,7 @@ $generated_i18n_strings = array(
 	__( 'Write caption…', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:66
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
 	__( 'Width', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:95
@@ -800,14 +800,14 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/index.js:49
 	__( 'Posts', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:51
-	__( 'Padding', 'benenson' ),
-
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:71
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
 	// Reference: src/scripts/blocks/tweet/index.js:90
 	__( 'Narrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:81
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:76
+	__( 'Padding', 'benenson' ),
+
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:88
 	__( 'Id (scroll location)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/section/index.js:26
