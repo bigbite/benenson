@@ -5,6 +5,7 @@ yarn \
 && zip -r ../benenson.zip . \
     -x .\* \
     -x CODE_OF_CONDUCT.md \
+    -x CONTRIBUTING.md \
     -x ISSUE_TEMPLATE.md \
     -x bin/\* \
     -x gulp/\* \
