@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl, TextControl } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
@@ -13,6 +14,39 @@ class DisplayComponent extends Component {
     const linkClasses = classnames('link', {
       [attributes.linkAlignment]: !!attributes.linkAlignment,
     });
+
+    const styleOptions = applyFilters('benenson.block.link.styleOptions', [{
+      label: __('Primary', 'benenson'),
+      value: '',
+    }, {
+      label: __('Primary Outline', 'benenson'),
+      value: 'btn--primaryOutline',
+    }, {
+      label: __('Primary Solid', 'benenson'),
+      value: 'btn--primarySolid',
+    }]);
+
+    const iconOptions = applyFilters('benenson.block.link.iconOptions', [{
+      label: __('None', 'benenson'),
+      value: '',
+    }, {
+      label: __('Up arrow', 'benenson'),
+      value: 'icon--upArrow',
+    }, {
+      label: __('Down arrow', 'benenson'),
+      value: 'icon--downArrow',
+    }]);
+
+    const alignmentOptions = applyFilters('benenson.block.link.alignmentOptions', [{
+      label: __('Left', 'benenson'),
+      value: 'u-textLeft',
+    }, {
+      label: __('Center', 'benenson'),
+      value: 'u-textCenter',
+    }, {
+      label: __('Right', 'benenson'),
+      value: 'u-textRight',
+    }]);
 
     return (<Fragment>
       <InspectorControls>
@@ -29,46 +63,19 @@ class DisplayComponent extends Component {
           />
           <SelectControl
             label={ __('Link style', 'benenson') }
-            options={ [{
-              label: __('Primary', 'benenson'),
-              value: '',
-            }, {
-              label: __('Primary Outline', 'benenson'),
-              value: 'btn--primaryOutline',
-            }, {
-              label: __('Primary Solid', 'benenson'),
-              value: 'btn--primarySolid',
-            }] }
+            options={ styleOptions }
             value={ attributes.linkStyle }
             onChange={ this.createUpdateAttribute('linkStyle') }
           />
           <SelectControl
             label={ __('Link icon', 'benenson') }
-            options={ [{
-              label: __('None', 'benenson'),
-              value: '',
-            }, {
-              label: __('Up arrow', 'benenson'),
-              value: 'icon--upArrow',
-            }, {
-              label: __('Down arrow', 'benenson'),
-              value: 'icon--downArrow',
-            }] }
+            options={ iconOptions }
             value={ attributes.linkIcon }
             onChange={ this.createUpdateAttribute('linkIcon') }
           />
           <SelectControl
             label={ __('Link alignment', 'benenson') }
-            options={ [{
-              label: __('Left', 'benenson'),
-              value: 'u-textLeft',
-            }, {
-              label: __('Center', 'benenson'),
-              value: 'u-textCenter',
-            }, {
-              label: __('Right', 'benenson'),
-              value: 'u-textRight',
-            }] }
+            options={ alignmentOptions }
             value={ attributes.linkAlignment }
             onChange={ this.createUpdateAttribute('linkAlignment') }
           />

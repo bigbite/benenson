@@ -11,6 +11,7 @@ import pick from 'lodash-es/pick';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   Button,
   CheckboxControl,
@@ -134,6 +135,17 @@ export default class BlockEdit extends Component {
       buttonLink,
     } = attributes;
 
+    const sizeOptions = applyFilters('benenson.block.logoGroup.sizeOptions', [{
+      label: __('Small', 'benenson'),
+      value: 'small',
+    }, {
+      label: __('Medium', 'benenson'),
+      value: 'medium',
+    }, {
+      label: __('Large', 'benenson'),
+      value: 'large',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
@@ -141,11 +153,7 @@ export default class BlockEdit extends Component {
             label={ __('Icon Size', 'benenson') }
             value={ iconSize }
             onChange={ newSize => setAttributes({ iconSize: newSize }) }
-            options={ [
-              { value: 'small', label: __('Small', 'benenson') },
-              { value: 'medium', label: __('Medium', 'benenson') },
-              { value: 'large', label: __('Large', 'benenson') },
-            ] }
+            options={ sizeOptions }
           /> }
           { style === 'icon' && <CheckboxControl
             label={ __('Hide Image Credit Display', 'benenson') }
