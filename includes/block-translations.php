@@ -964,6 +964,12 @@ $generated_i18n_strings = array(
 	__( 'Add a Tweet Action block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/tweet/index.js:94
-	__( 'Centre Align', 'benenson' )
+	__( 'Centre Align', 'benenson' ),
+
+	// Reference: src/scripts/packages/components/PostMediaSelector.js:6
+	__( 'Set Image', 'benenson' ),
+
+	// Reference: src/scripts/packages/components/PostMediaSelector.js:7
+	__( 'Replace Image', 'benenson' )
 );
 /* THIS IS THE END OF THE GENERATED FILE */

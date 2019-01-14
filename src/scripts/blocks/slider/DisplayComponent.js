@@ -1,5 +1,4 @@
 import classnames from 'classnames';
-import PostMediaSelector from '../PostMediaSelector';
 
 const randId = () => Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
 
@@ -13,6 +12,8 @@ const {
 const {
   InspectorControls, RichText, BlockIcon, URLInputButton,
 } = wp.editor;
+
+const { PostMediaSelector } = benenson.components;
 
 class DisplayComponent extends Component {
   static emptySlide = {

@@ -7,7 +7,7 @@ const DEFAULT_SET_MEDIA_LABEL = __('Set Image', 'benenson');
 const DEFAULT_REPLACE_MEDIA_LABEL = __('Replace Image', 'benenson');
 const DEFAULT_REMOVE_MEDIA_LABEL = __('Remove Image', 'benenson');
 
-class PostMediaSelector extends Component {
+export default class PostMediaSelector extends Component {
   constructor(...args) {
     super(...args);
 
@@ -154,5 +154,3 @@ class PostMediaSelector extends Component {
     );
   }
 }
-
-export default PostMediaSelector;
