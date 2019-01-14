@@ -2,21 +2,24 @@
 
 # escape a version number for sed
 _v() {
-    echo $(echo "$1" | tr -d '\n' | sed 's/\./\\\./g');
+    echo "$(echo "$1" | tr -d '\n' | sed 's/\./\\\./g')";
 }
 
 # cross-compatible sed in-place
 _sedi() {
-    sed --version > /dev/null 2>&1 && sed -i -- "$@" || sed -i "" "$@";
+    isGnu=$(sed --version > /dev/null 2>&1)
+    if [ "$isGnu" ]; then
+        sed -i -- "$@"
+    else
+        sed -i "" "$@";
+    fi
 }
 
 _bump() {
-    local bumptype="${1:-patch}"
-    local oldversion;
-    local newversion;
+    bumptype="${1:-patch}"
 
     # retrieve old version
-    oldversion=$(cat "$PWD/gulp/tasks/styles.js" | grep '^\tVersion: ' | awk '{print $2}');
+    oldversion=$(grep '^\tVersion: ' "$PWD/gulp/tasks/styles.js" | awk '{print $2}');
 
     # bump it
     case "$bumptype" in
