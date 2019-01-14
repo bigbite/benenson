@@ -664,16 +664,16 @@ msgid "Remove Button"
 msgstr "حذف دکمه"
 
 #: includes/block-translations.php:476
-msgid "Image Style"
-msgstr "استایل تصویر"
-
-#: includes/block-translations.php:479
 msgid "Fixed Height (600px)"
 msgstr "ارتفاع ثابت (600px)"
 
-#: includes/block-translations.php:482
+#: includes/block-translations.php:479
 msgid "Actual Height"
 msgstr "ارتفاع واقعی"
+
+#: includes/block-translations.php:482
+msgid "Image Style"
+msgstr "استایل تصویر"
 
 #: includes/block-translations.php:485
 msgid "Only has an effect on images smaller than their container"
