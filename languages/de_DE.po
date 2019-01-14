@@ -784,16 +784,16 @@ msgstr ""
 "Seite oder einer externen URL hinzu."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "Ausrichtung"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "Vertikal"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "Ausrichtung"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -815,21 +815,21 @@ msgstr "Wählen Sie ein Bild"
 msgid "(Insert Fact)"
 msgstr "(Insert Fact)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "Stil"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "Bild verwenden"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "Text verwenden"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "Schlicht"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "Stil"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"

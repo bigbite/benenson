@@ -174,18 +174,18 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/blockquote/index.js:226
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:117
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:228
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:56
 	__( 'Small', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:227
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:226
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:146
 	__( 'Medium', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:228
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:230
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:147
 	__( 'Large', 'benenson' ),
 
@@ -195,7 +195,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:237
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:33
 	// Reference: src/scripts/blocks/key-facts/index.js:59
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:67
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:58
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:11
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:44
@@ -392,7 +392,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:94
 	// Reference: src/scripts/blocks/key-facts/index.js:54
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:62
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:102
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:39
@@ -510,7 +510,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:68
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:253
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
@@ -532,7 +532,7 @@ $generated_i18n_strings = array(
 	__( 'Add a key facts block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/index.js:47
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:46
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:68
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:46
 	__( 'Quantity', 'benenson' ),
 
@@ -575,16 +575,16 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/index.js:16
 	__( 'Add a link to section within page, another page or an external URL.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:53
-	__( 'Orientation', 'benenson' ),
-
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:57
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:49
 	__( 'Horizontal', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:58
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:52
 	__( 'Vertical', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:71
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:75
+	__( 'Orientation', 'benenson' ),
+
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:87
 	__( 'Hide Lines', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlock.js:70
@@ -593,11 +593,11 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlock.js:71
 	__( 'Add a links-with-icons block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:103
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:104
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:84
 	__( 'Pick an image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:182
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:183
 	__( '(Insert Fact)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:214
@@ -607,30 +607,34 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:218
 	__( 'Use Image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:219
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:215
 	__( 'Use Text', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:220
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:218
 	__( 'Plain', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:224
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:237
+	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:60
+	__( 'Style', 'benenson' ),
+
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:243
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:141
 	__( 'Icon Size', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:234
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:249
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:151
 	__( 'Hide Image Credit Display', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:239
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:254
 	__( 'Has Underline', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:244
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:259
 	__( 'Display Button', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:263
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:278
 	__( '(Insert Body Text)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:274
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:289
 	__( '(Insert Link Text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/index.js:20

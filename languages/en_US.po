@@ -782,16 +782,16 @@ msgid "Add a link to section within page, another page or an external URL."
 msgstr "Add a link to section within page, another page or an external URL."
 
 #: includes/block-translations.php:579
-msgid "Orientation"
-msgstr "Orientation"
-
-#: includes/block-translations.php:582
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: includes/block-translations.php:585
+#: includes/block-translations.php:582
 msgid "Vertical"
 msgstr "Vertical"
+
+#: includes/block-translations.php:585
+msgid "Orientation"
+msgstr "Orientation"
 
 #: includes/block-translations.php:588
 msgid "Hide Lines"
@@ -813,21 +813,21 @@ msgstr "Pick an image"
 msgid "(Insert Fact)"
 msgstr "(Insert Fact)"
 
-#: includes/block-translations.php:605
-msgid "Style"
-msgstr "Style"
-
-#: includes/block-translations.php:608
+#: includes/block-translations.php:604
 msgid "Use Image"
 msgstr "Use Image"
 
-#: includes/block-translations.php:611
+#: includes/block-translations.php:607
 msgid "Use Text"
 msgstr "Use Text"
 
-#: includes/block-translations.php:614
+#: includes/block-translations.php:610
 msgid "Plain"
 msgstr "Plain"
+
+#: includes/block-translations.php:614
+msgid "Style"
+msgstr "Style"
 
 #: includes/block-translations.php:618
 msgid "Icon Size"
