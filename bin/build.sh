@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-yarn && yarn build && zip -r ../benenson.zip . \
+yarn \
+&& yarn build \
+&& zip -r ../benenson.zip . \
     -x .\* \
     -x CODE_OF_CONDUCT.md \
     -x ISSUE_TEMPLATE.md \

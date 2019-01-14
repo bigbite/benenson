@@ -3,6 +3,7 @@ import PostFeaturedVideo from './PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   InspectorControls,
   MediaUpload,
@@ -86,52 +87,74 @@ export default class DisplayComponent extends Component {
       [`page-heroAlignment--${alignment}`]: alignment,
     });
 
+    const alignmentOptions = applyFilters('benenson.block.header.alignmentOptions', [{
+      /* translators: text alignment. for RTL languages, localise as 'Right' */
+      label: __('Left', 'benenson'),
+      value: 'left',
+    }, {
+      label: __('Centre', 'benenson'),
+      value: 'center',
+    }, {
+      /* translators: text alignment. for RTL languages, localise as 'Left' */
+      label: __('Right', 'benenson'),
+      value: 'right',
+    }]);
+
+    // Note: US English spelling.
+    const bgColourOptions = applyFilters('benenson.block.header.bgColorOptions', [{
+      label: __('Translucent black', 'benenson'),
+      value: '',
+    }, {
+      label: __('None', 'benenson'),
+      value: 'none',
+    }, {
+      label: __('White', 'benenson'),
+      value: 'light',
+    }, {
+      label: __('Black', 'benenson'),
+      value: 'dark',
+    }]);
+
+    const bgTypeOptions = applyFilters('benenson.block.header.bgTypeOptions', [{
+      label: __('Image', 'benenson'),
+      value: '',
+    }, {
+      label: __('Video', 'benenson'),
+      value: 'video',
+    }]);
+
+    const sizeOptions = applyFilters('benenson.block.header.sizeOptions', [{
+      label: __('Normal', 'benenson'),
+      value: '',
+    }, {
+      label: __('Small', 'benenson'),
+      value: 'small',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={ __('Alignment', 'benenson') }
-            options={[{
-              /* translators: text alignment. for RTL languages, localise as 'Right' */
-              label: __('Left', 'benenson'),
-              value: 'left',
-            }, {
-              label: __('Centre', 'benenson'),
-              value: 'center',
-            }, {
-              /* translators: text alignment. for RTL languages, localise as 'Left' */
-              label: __('Right', 'benenson'),
-              value: 'right',
-            }]}
+            options={ alignmentOptions }
             value={ alignment }
             onChange={ newAlignment => setAttributes({ alignment: newAlignment }) }
           />
           <SelectControl
             label={ __('Background Colour', 'benenson') }
-            options={ [
-              { value: '', label: __('Translucent black', 'benenson') },
-              { value: 'none', label: __('None', 'benenson') },
-              { value: 'light', label: __('White', 'benenson') },
-              { value: 'dark', label: __('Black', 'benenson') },
-            ] }
+            options={ bgColourOptions }
             value={ background }
             onChange={ newBackground => setAttributes({ background: newBackground }) }
           />
           <SelectControl
             label={ __('Size', 'benenson') }
-            options={ [
-              { value: '', label: __('Normal', 'benenson') },
-              { value: 'small', label: __('Small', 'benenson') },
-            ] }
+            options={ sizeOptions }
             value={ size }
             onChange={ newSize => setAttributes({ size: newSize }) }
           />
           <SelectControl
             label={ __('Background Type', 'benenson') }
-            options={ [
-              { value: '', label: __('Image', 'benenson') },
-              { value: 'video', label: __('Video', 'benenson') },
-            ] }
+            options={ bgTypeOptions }
             value={ type }
             onChange={ newType => setAttributes({ type: newType }) }
           />
