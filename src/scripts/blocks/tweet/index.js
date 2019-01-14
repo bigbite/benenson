@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 
+const { applyFilters } = wp.hooks;
 const { __ } = wp.i18n;
 const { createBlock, registerBlockType } = wp.blocks;
 const { PanelBody, SelectControl, ToggleControl } = wp.components;
@@ -20,6 +21,11 @@ const blockAttributes = {
     type: 'boolean',
   },
 };
+
+const sizeOptions = applyFilters('benenson.block.tweet.sizeOptions', [
+  { value: '', label: __('Default', 'benenson') },
+  { value: 'narrow', label: __('Narrow', 'benenson') },
+]);
 
 registerBlockType('benenson/tweet-block', {
   title: __('Tweet Action', 'benenson'),
@@ -85,10 +91,7 @@ registerBlockType('benenson/tweet-block', {
               label={ __('Size', 'benenson') }
               value={ size }
               onChange={ newSize => setAttributes({ size: newSize }) }
-              options={ [
-                { value: '', label: __('Default', 'benenson') },
-                { value: 'narrow', label: __('Narrow', 'benenson') },
-              ] }
+              options={ sizeOptions }
             />
             <ToggleControl
               label={ __('Centre Align', 'benenson') }
