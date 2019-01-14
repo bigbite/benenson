@@ -4,6 +4,7 @@ import classnames from 'classnames';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   Button,
   IconButton,
@@ -184,29 +185,43 @@ export default class ImageBlockEdit extends Component {
       return '';
     }
 
+    const styleOptions = applyFilters('benenson.block.image.styleOptions', [{
+      label: __('Fixed Height (600px)', 'benenson'),
+      value: 'fixed',
+    }, {
+      label: __('Actual Height', 'benenson'),
+      value: 'loose',
+    }]);
+
+    const alignmentOptions = applyFilters('benenson.block.image.alignmentOptions', [{
+      label: __('Default', 'benenson'),
+      value: 'default',
+    }, {
+      /* translators: text alignment. for RTL languages, localise as 'Right' */
+      label: __('Left', 'benenson'),
+      value: 'left',
+    }, {
+      value: 'centre',
+      label: __('Centre', 'benenson'),
+    }, {
+      /* translators: text alignment. for RTL languages, localise as 'Left' */
+      label: __('Right', 'benenson'),
+      value: 'right',
+    }]);
+
     return (<PanelBody>
       <SelectControl
         label={ __('Image Style', 'benenson') }
         value={ style }
         onChange={ newStyle => this.updateStyle(newStyle) }
-        options={ [
-          { value: 'fixed', label: __('Fixed Height (600px)', 'benenson') },
-          { value: 'loose', label: __('Actual Height', 'benenson') },
-        ] }
+        options={ styleOptions }
       />
       <SelectControl
         label={ __('Alignment', 'benenson') }
         help={ __('Only has an effect on images smaller than their container', 'benenson') }
         value={ align }
         onChange={ newAlign => setAttributes({ align: newAlign }) }
-        options={ [
-          { value: 'default', label: __('Default', 'benenson') },
-          /* translators: text alignment. for RTL languages, localise as 'Right' */
-          { value: 'left', label: __('Left', 'benenson') },
-          { value: 'centre', label: __('Centre', 'benenson') },
-          /* translators: text alignment. for RTL languages, localise as 'Left' */
-          { value: 'right', label: __('Right', 'benenson') },
-        ] }
+        options={ alignmentOptions }
       />
     </PanelBody>);
   }

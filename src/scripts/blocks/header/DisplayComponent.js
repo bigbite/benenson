@@ -3,6 +3,7 @@ import PostFeaturedVideo from './PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
 const {
@@ -70,70 +71,77 @@ class DisplayComponent extends Component {
       'page-hero--video': attributes.type === 'video',
     });
 
+    const alignmentOptions = applyFilters('benenson.block.banner.alignmentOptions', [{
+      /* translators: text alignment. for RTL languages, localise as 'Right' */
+      label: __('Left', 'benenson'),
+      value: 'left',
+    }, {
+      label: __('Centre', 'benenson'),
+      value: 'center',
+    }, {
+      /* translators: text alignment. for RTL languages, localise as 'Left' */
+      label: __('Right', 'benenson'),
+      value: 'right',
+    }]);
+
+    // Note: US English spelling.
+    const bgColourOptions = applyFilters('benenson.block.banner.bgColorOptions', [{
+      label: __('Translucent black', 'benenson'),
+      value: '',
+    }, {
+      label: __('None', 'benenson'),
+      value: 'none',
+    }, {
+      label: __('White', 'benenson'),
+      value: 'light',
+    }, {
+      label: __('Black', 'benenson'),
+      value: 'dark',
+    }]);
+
+    const bgTypeOptions = applyFilters('benenson.block.banner.bgTypeOptions', [{
+      label: __('Image', 'benenson'),
+      value: '',
+    }, {
+      label: __('Video', 'benenson'),
+      value: 'video',
+    }]);
+
+    const sizeOptions = applyFilters('benenson.block.banner.sizeOptions', [{
+      label: __('Normal', 'benenson'),
+      value: '',
+    }, {
+      label: __('Small', 'benenson'),
+      value: 'small',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
             label={ __('Alignment', 'benenson') }
-            options={ [{
-              /* translators: text alignment. for RTL languages, localise as 'Right' */
-              label: __('Left', 'benenson'),
-              value: 'left',
-            }, {
-              label: __('Centre', 'benenson'),
-              value: 'center',
-            }, {
-              /* translators: text alignment. for RTL languages, localise as 'Left' */
-              label: __('Right', 'benenson'),
-              value: 'right',
-            }] }
+            options={ alignmentOptions }
             value={ attributes.alignment }
             onChange={ this.createUpdateAttribute('alignment') }
           />
           <SelectControl
             label={ __('Background Colour', 'benenson') }
-            options={ [{
-              label: __('Translucent black', 'benenson'),
-              value: '',
-            }, {
-              label: __('None', 'benenson'),
-              value: 'none',
-            }, {
-              label: __('White', 'benenson'),
-              value: 'light',
-            }, {
-              label: __('Black', 'benenson'),
-              value: 'dark',
-            }] }
+            options={ bgColourOptions }
             value={ attributes.background }
             onChange={ this.createUpdateAttribute('background') }
           />
           <SelectControl
             label={ __('Size', 'benenson') }
-            options={ [{
-              label: __('Normal', 'benenson'),
-              value: '',
-            }, {
-              label: __('Small', 'benenson'),
-              value: 'small',
-            }] }
+            options={ sizeOptions }
             value={ attributes.size }
             onChange={ this.createUpdateAttribute('size') }
           />
-
           <SelectControl
             label={ __('Background Type', 'benenson') }
-            options={ [{
-              label: __('Image', 'benenson'),
-              value: '',
-            }, {
-              label: __('Video', 'benenson'),
-              value: 'video',
-            }] }
+            options={ bgTypeOptions }
             value={ attributes.type }
             onChange={ this.createUpdateAttribute('type') }
           />
-
           <TextControl
             label={__('Embed url', 'benenson')}
             value={ attributes.embed }

@@ -1,6 +1,7 @@
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 
-export default {
+export default applyFilters('benenson.block.columns.layouts', {
   '1/2|1/2': {
     name: __('50% | 50%', 'benenson'),
     icon: '',
@@ -48,4 +49,4 @@ export default {
     icon: '',
     columns: 4,
   },
-};
+});
