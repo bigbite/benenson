@@ -42,7 +42,7 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 		register_setting( 'theme_options', '_social_youtube', $text_field_args );
 		register_setting( 'theme_options', '_social_instagram', $text_field_args );
 
-		register_setting( 'theme_options', '_logo', [ 'sanitize_callback', 'benenson_sanitize_attachment_id' ] );
+		register_setting( 'theme_options', '_logo', [ 'sanitize_callback' => 'benenson_sanitize_attachment_id' ] );
 		register_setting( 'theme_options', '_logo_url', $text_field_args );
 
 		register_setting( 'theme_options', '_default_sidebar_page', $sidebar_args );
@@ -181,14 +181,22 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 			'order'     => 'ASC',
 		] );
 
-		$posts = $sidebar_posts->get_posts();
-
-		array_walk( $posts, function( &$item ) use ( &$sidebar_post_list ) {
+		array_walk( $sidebar_posts->posts, function( &$item ) use ( &$sidebar_post_list ) {
 			$sidebar_post_list[ $item->ID ] = $item->post_title;
 		} );
+
+		$sidebar_post_list = apply_filters( 'benenson_settings_sidebar_post_list', $sidebar_post_list );
 		?>
 <div class="wrap">
 	<h1><?php esc_html_e( 'Theme Options', 'benenson' ); ?></h1>
+
+		<?php
+		/**
+		 * Fires before the settings form opening tag.
+		 */
+		do_action( 'benenson_settings_before_form' );
+		?>
+
 	<form method="post" action="options.php">
 		<?php settings_fields( 'theme_options' ); ?>
 
@@ -222,6 +230,12 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="url" name="_social_instagram" value="<?php echo esc_attr( $value ); ?>" placeholder="https://">
 				</td>
 			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for social settings.
+			 */
+			do_action( 'benenson_settings_social' );
+			?>
 		</table>
 
 		<h2><?php esc_html_e( 'Analytics', 'benenson' ); ?></h2>
@@ -240,6 +254,12 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="text" name="_analytics_ga" value="<?php echo esc_html( $value ); ?>" placeholder="UA-XXXXX-X">
 				</td>
 			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for analytics settings.
+			 */
+			do_action( 'benenson_settings_analytics' );
+			?>
 		</table>
 
 		<h2><?php esc_html_e( 'Sidebar', 'benenson' ); ?></h2>
@@ -283,6 +303,12 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					</select>
 				</td>
 			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for sidebar settings.
+			 */
+			do_action( 'benenson_settings_sidebar' );
+			?>
 		</table>
 
 		<h2><?php esc_html_e( 'Search', 'benenson' ); ?></h2>
@@ -301,6 +327,12 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="checkbox" name="_search_navigation_disabled" <?php echo esc_attr( $value ); ?> />
 				</td>
 			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for search settings
+			 */
+			do_action( 'benenson_settings_search' );
+			?>
 		</table>
 
 		<h2><?php esc_html_e( 'Logo', 'benenson' ); ?></h2>
@@ -333,6 +365,12 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 					<input type="url" name="_logo_url" value="<?php echo esc_attr( $value ); ?>" placeholder="https://">
 				</td>
 			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for logo settings.
+			 */
+			do_action( 'benenson_settings_logo' );
+			?>
 		</table>
 		<?php submit_button(); ?>
 	</form>

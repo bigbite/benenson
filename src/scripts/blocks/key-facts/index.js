@@ -8,6 +8,7 @@ const { registerBlockType } = wp.blocks;
 const { PanelBody, RangeControl, SelectControl } = wp.components;
 const { InnerBlocks, InspectorControls, RichText } = wp.editor;
 const { Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 
 const ALLOWED_BLOCKS = ['benenson/key-fact'];
 const getLayoutTemplate = memoize(blocks => times(blocks, () => ALLOWED_BLOCKS));
@@ -40,6 +41,19 @@ registerBlockType('benenson/key-facts', {
       [`has-${background}-background-color`]: !!background,
     });
 
+    const quantityOptions = applyFilters('benenson.block.keyFacts.quantityOptions', {
+      min: 1,
+      max: 4,
+    });
+
+    const backgroundOptions = applyFilters('benenson.block.keyFacts.backgroundOptions', [{
+      label: __('None', 'benenson'),
+      value: '',
+    }, {
+      label: __('Grey', 'benenson'),
+      value: 'very-light-gray',
+    }]);
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
@@ -47,17 +61,14 @@ registerBlockType('benenson/key-facts', {
             label={ __('Quantity', 'benenson') }
             value={ quantity }
             onChange={ newQuantity => setAttributes({ quantity: newQuantity }) }
-            min={ 1 }
-            max={ 4 }
+            min={ quantityOptions.min }
+            max={ quantityOptions.max }
           />
           <SelectControl
             label={ __('Background Colour', 'benenson') }
             value={ background }
             onChange={ newBgColor => setAttributes({ background: newBgColor }) }
-            options={ [
-              { value: '', label: __('None', 'benenson') },
-              { value: 'very-light-gray', label: __('Grey', 'benenson') },
-            ] }
+            options={ backgroundOptions }
           />
         </PanelBody>
       </InspectorControls>

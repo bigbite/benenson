@@ -1,10 +1,10 @@
 import classnames from 'classnames';
-import PostMediaSelector from '../PostMediaSelector';
 
 const randId = () => Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
+const { applyFilters } = wp.hooks;
 const {
   PanelBody, Button, TextControl, ToggleControl, SelectControl,
 } = wp.components;
@@ -12,6 +12,8 @@ const {
 const {
   InspectorControls, RichText, BlockIcon, URLInputButton,
 } = wp.editor;
+
+const { PostMediaSelector } = benenson.components;
 
 class DisplayComponent extends Component {
   static emptySlide = {
@@ -30,19 +32,29 @@ class DisplayComponent extends Component {
     sizes: {},
   };
 
-  static alignmentOptions = [
+  static alignmentOptions = applyFilters('benenson.block.slider.alignmentOptions', [{
     /* translators: text alignment. for RTL languages, localise as 'Right' */
-    { label: __('Left', 'benenson'), value: '' },
-    { label: __('Centre', 'benenson'), value: 'center' },
+    label: __('Left', 'benenson'),
+    value: '',
+  }, {
+    label: __('Centre', 'benenson'),
+    value: 'center',
+  }, {
     /* translators: text alignment. for RTL languages, localise as 'Left' */
-    { label: __('Right', 'benenson'), value: 'right' },
-  ];
+    label: __('Right', 'benenson'),
+    value: 'right',
+  }]);
 
-  static backgroundOptions = [
-    { label: __('Opaque', 'benenson'), value: '' },
-    { label: __('Translucent', 'benenson'), value: 'opaque' },
-    { label: __('Transparent', 'benenson'), value: 'transparent' },
-  ];
+  static backgroundOptions = applyFilters('benenson.block.slider.backgroundOptions', [{
+    label: __('Opaque', 'benenson'),
+    value: '',
+  }, {
+    label: __('Translucent', 'benenson'),
+    value: 'opaque',
+  }, {
+    label: __('Transparent', 'benenson'),
+    value: 'transparent',
+  }]);
 
   constructor(...props) {
     super(...props);

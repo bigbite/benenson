@@ -1,5 +1,6 @@
 import PostSelect from './PostSelect';
 
+const { applyFilters } = wp.hooks;
 const { registerPlugin } = wp.plugins;
 const {
   SelectControl, PanelBody, ToggleControl, TextControl,
@@ -30,23 +31,33 @@ const reviseData = (oldData, newData) => Object
     };
   }, {});
 
-const Sidebar = ({ createMetaUpdate, ...props }) => (
-  <Fragment>
+const Sidebar = ({ createMetaUpdate, ...props }) => {
+  const navigationOptions = applyFilters('benenson.block.appearance.navigationOptions', [{
+    label: __('Global', 'benenson'),
+    value: 'global',
+  }, {
+    label: __('White', 'benenson'),
+    value: 'transparent-light',
+  }, {
+    label: __('Black', 'benenson'),
+    value: 'transparent-dark',
+  }]);
+
+  const thumbnailOptions = applyFilters('benenson.block.appearance.thumbnailOptions', [{
+    label: __('Half size', 'benenson'),
+    value: 'small',
+  }, {
+    label: __('Full Background', 'benenson'),
+    value: 'full',
+  }]);
+
+  return (<Fragment>
     <PluginSidebar name="benenson-appearance" title={ __('Appearance', 'benenson') }>
       { props.type === 'page' && (
         <PanelBody title={ __('Header', 'benenson') }>
           <SelectControl
             label={ __('Navigation Style:', 'benenson') }
-            options={ [{
-              label: __('Global', 'benenson'),
-              value: 'global',
-            }, {
-              label: __('White', 'benenson'),
-              value: 'transparent-light',
-            }, {
-              label: __('Black', 'benenson'),
-              value: 'transparent-dark',
-            }] }
+            options={ navigationOptions }
             value={ props.meta._nav_style }
             onChange={ value => createMetaUpdate('_nav_style', value, props.meta, props.oldMeta) }
           />
@@ -57,13 +68,7 @@ const Sidebar = ({ createMetaUpdate, ...props }) => (
           <SelectControl
             label={ __('Post Thumbnail Style', 'benenson') }
             help={ __('Affects its display on the news index only.', 'benenson') }
-            options={ [{
-              label: __('Half size', 'benenson'),
-              value: 'small',
-            }, {
-              label: __('Full Background', 'benenson'),
-              value: 'full',
-            }] }
+            options={ thumbnailOptions }
             value={ props.meta._thumbnail_style }
             onChange={ value => createMetaUpdate('_thumbnail_style', value, props.meta, props.oldMeta) }
           />
@@ -115,8 +120,8 @@ const Sidebar = ({ createMetaUpdate, ...props }) => (
 
       { props.type === 'sidebar' && <PanelBody><p>No options available for this post type.</p></PanelBody> }
     </PluginSidebar>
-  </Fragment>
-);
+  </Fragment>);
+};
 
 const plugin = compose([
   withSelect((select) => {
