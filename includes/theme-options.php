@@ -448,7 +448,7 @@ if ( ! function_exists( 'benenson_add_admin_page' ) ) {
 			'manage_options',
 			'theme-settings',
 			function () {
-				$return_to = rawurlencode( admin_url( 'themes.php', 'relative' ) );
+				$return_to    = rawurlencode( admin_url( 'themes.php', 'relative' ) );
 				$new_location = add_query_arg( 'return', $return_to, admin_url( 'customize.php' ) );
 
 				// just in case.
