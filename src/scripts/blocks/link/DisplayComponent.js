@@ -84,7 +84,7 @@ class DisplayComponent extends Component {
       <div className={ linkClasses }>
         <a className={ classnames('btn', attributes.linkStyle, attributes.linkIcon) }>
           <RichText
-            tagName="span"
+            tagName="div"
             onChange={ this.createUpdateAttribute('linkText') }
             value={ attributes.linkText }
             placeholder={ __('(Link Text)', 'benenson') }
