@@ -16,7 +16,7 @@ const SplitGridItem = props => (
   } }>
     <span className="splitGrid-itemMeta">
       <RichText
-        tagName="span"
+        tagName="div"
         onChange={ props.createUpdate('tagText') }
         value={ props.tagText }
         placeholder={ __('(Insert Tag)', 'benenson') }
@@ -32,7 +32,7 @@ const SplitGridItem = props => (
     <h3 className="splitGrid-itemTitle">
       <a>
         <RichText
-          tagName="span"
+          tagName="div"
           onChange={ props.createUpdate('title') }
           value={ props.title }
           placeholder={ __('(Insert Title)', 'benenson') }
