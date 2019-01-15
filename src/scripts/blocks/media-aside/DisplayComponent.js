@@ -77,7 +77,7 @@ class DisplayComponent extends Component {
             <div className="mediaAside-content">
               <h2 className="mediaAside-title">
                 <RichText
-                  tagName="span"
+                  tagName="h2"
                   onChange={ newTitle => setAttributes({ title: newTitle }) }
                   value={ attributes.title }
                   placeholder={ __('(Insert Title)', 'benenson') }
@@ -98,7 +98,7 @@ class DisplayComponent extends Component {
               />
               <div className="btn">
                 <RichText
-                  tagName="span"
+                  tagName="p"
                   onChange={ newCtaText => setAttributes({ ctaText: newCtaText }) }
                   value={ attributes.ctaText }
                   placeholder={ __('(Insert Link text)', 'benenson') }

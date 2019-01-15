@@ -17,7 +17,9 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 			}
 		}
 
-		$video_url = ! empty( $attributes['videoId'] ) ? wp_get_attachment_url( $attributes['videoId'] ) : $attributes['embed'];
+		$modal = ! empty( $attributes['modal'] ) ? $attributes['modal'] : false;
+		$embed_url = ! empty( $attributes['embed'] ) ? $attributes['embed'] : '';
+		$video_url = ! empty( $attributes['videoId'] ) ? wp_get_attachment_url( $attributes['videoId'] ) : $embed_url;
 
 		spaceless();
 		?>
@@ -28,15 +30,15 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 
 				<?php
 
-				if ( $attributes['title'] ) {
+				if ( ! empty( $attributes['title'] ) ) {
 					printf( '<h2 class="mediaAside-title"><span>%s</span></h2>', wp_kses_post( $attributes['title'] ) );
 				}
 
-				if ( $attributes['content'] ) {
+				if ( ! empty( $attributes['content'] ) ) {
 					printf( '<p class="mediaAside-text">%s </p>', wp_kses_post( $attributes['content'] ) );
 				}
 
-				if ( $attributes['ctaLink'] && $attributes['ctaText'] ) {
+				if ( ! empty( $attributes['ctaLink'] ) && ! empty( $attributes['ctaText'] ) ) {
 					printf( '<div><a class="mediaAside-link btn" href="%s">%s</a></div>', esc_url( $attributes['ctaLink'] ), wp_kses_post( $attributes['ctaText'] ) );
 				}
 
@@ -48,13 +50,11 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		<div class="mediaAside-col">
 
 		<?php
-
-		if ( $attributes['mediaId'] && ! empty ( $attributes['embed'] ) ) {
-			if ( $attributes['modal'] ) {
+		if ( ! empty( $attributes['mediaId'] ) && ! empty( $video_url ) ) {
+			if ( $modal ) {
 				printf(
-					'<div class="mediaAside-image">%s <a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i></a></div>',
+					'<div class="mediaAside-image">%s <a class="btn" data-modal-embed="%s"><i class="play-icon">%s</i></a></div>',
 					wp_get_attachment_image( $attributes['mediaId'], 'full' ),
-					esc_url( $attributes['ctaLink'] ),
 					esc_url( $video_url ),
 					esc_html__( 'Play video', 'benenson' )
 				);
@@ -66,7 +66,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 					esc_url( $video_url )
 				);
 			}
-		} elseif ( $attributes['mediaId'] ) {
+		} elseif ( ! empty( $attributes['mediaId'] ) ) {
 			printf(
 				'<div class="mediaAside-image">%s</div>',
 				wp_get_attachment_image( $attributes['mediaId'], 'full' )
