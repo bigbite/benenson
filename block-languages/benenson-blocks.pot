@@ -651,7 +651,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 #: src/scripts/blocks/media-aside/DisplayComponent.js:83
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:27
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
@@ -661,7 +661,6 @@ msgstr ""
 #: src/scripts/blocks/media-aside/DisplayComponent.js:93
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:71
-#: src/scripts/blocks/media-aside/DisplayComponent.js:94
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
 msgstr ""
@@ -983,7 +982,7 @@ msgstr ""
 msgid "(Insert Tag)"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:13
 msgid "(Tag Name)"
 msgstr ""
 
