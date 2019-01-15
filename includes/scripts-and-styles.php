@@ -78,10 +78,6 @@ add_action( 'admin_enqueue_scripts', 'benenson_editor_styles' );
  */
 if ( ! function_exists( 'benenson_scripts' ) ) {
 	function benenson_scripts() {
-		if ( defined( 'ENABLE_LIVERELOAD' ) && ENABLE_LIVERELOAD ) {
-			wp_enqueue_script( 'livereload', 'https://livereload.bigbite.site:35729/livereload.js', [], '1.0.3', true );
-		}
-
 		wp_enqueue_script( 'global-scripts', get_theme_file_uri( '/bundle.js' ), [], '1.0.3', true );
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) && true === apply_filters( 'benenson_comments_enabled', false ) ) {
