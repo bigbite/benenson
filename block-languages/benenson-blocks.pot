@@ -181,7 +181,9 @@ msgid "Left"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:165
+#: src/scripts/blocks/download/index.js:36
 #: src/scripts/blocks/image/BlockEdit.js:197
+#: src/scripts/blocks/section/index.js:54
 #: src/scripts/blocks/tweet/index.js:26
 msgid "Default"
 msgstr ""
@@ -410,23 +412,23 @@ msgstr ""
 msgid "Add a button to download a resource"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:44
+#: src/scripts/blocks/download/index.js:50
 msgid "File"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:45
+#: src/scripts/blocks/download/index.js:51
 msgid "A File"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:67
+#: src/scripts/blocks/download/index.js:73
 msgid "[Download Resource]"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:75
+#: src/scripts/blocks/download/index.js:81
 msgid "Remove Resource"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:85
+#: src/scripts/blocks/download/index.js:91
 msgid "Edit File"
 msgstr ""
 
