@@ -8,7 +8,7 @@ const GridItem = props => (
   } }>
     <span className="grid-itemMeta">
       <RichText
-        tagName="span"
+        tagName="div"
         onChange={ props.createUpdate('tagText') }
         value={ props.tagText }
         placeholder={ __('(Insert Tag)', 'benenson') }
@@ -24,7 +24,7 @@ const GridItem = props => (
     <h3 className="grid-itemTitle">
       <a>
         <RichText
-          tagName="span"
+          tagName="div"
           onChange={ props.createUpdate('title') }
           value={ props.title }
           placeholder={ __('(Insert Title)', 'benenson') }

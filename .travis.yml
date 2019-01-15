@@ -31,3 +31,10 @@ jobs:
       overwrite: true
       on:
         repo: bigbitecreative/benenson
+notifications:
+  slack:
+    secure: Og5sfnRjq9A2Sgik8ucdPilMxJtZNp+JC0EAllHQ4fGzxGF2nuF7AoZtP2c/FIJrVNUsPQ3lllpiTZ0W+AxtR2GzN909o/y5TubN0kplrWDSgoN5CFx+zjtgy3NCzLOgmYNHQBo3Ux2HaEJGOud4YC96PGMDM3sQxAtUdbdLOrcAjbtqHu3AD3h194FK5tzNUKUmIyvcu8HiI0HMeOF46cAiTdLN7HTjtK9O1z2RMs+R0+BuxSrHdlTuQoABRCXVOlsuFOW9jBKkCQEBQcUTJAENGi8bYWyfuKOL8D8Bj+zu7WKOzC6TevlIO5FXGd2Cvfrot/AIU5gKd4Y7EhoKtE/tiPZdZx3pbcVTrJBlOUOx7ZNpB0Y8RlhVthPiB5tHJren25TjXdGrp0P82X3ofr5lAApogCf2029i91FElJE7/nMQgw7Ud0Ez9LPO7ljRro7y1u9Xp7P9bqh6buZq6cDMqi+elUneBiCTN6rfDH11p6icfTuwL5sZsjFaFMcql+ybZNajfY6wENSeMqRYJht/pKt4Yey557SVva98I9/gwx2HqrUYInNokJfuHpDDFhYChoR2SnoTSDwlQJ3gh/GK9KbZOnv2kgFKYdGDqdelAt5ffisysB7am9zKzsX7EWDB3TraW01R/PSy4ux/g6F4RMrgxL//m74Fi+pjiSE=
+    on_start: never
+    on_failure: always
+    on_success: change
+    on_pull_requests: false
