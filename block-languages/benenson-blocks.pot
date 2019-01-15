@@ -658,9 +658,10 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
-#: src/scripts/blocks/media-aside/DisplayComponent.js:94
+#: src/scripts/blocks/media-aside/DisplayComponent.js:93
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:71
+#: src/scripts/blocks/media-aside/DisplayComponent.js:94
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
 msgid "(Insert Content)"
 msgstr ""
@@ -831,7 +832,7 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:104
+#: src/scripts/blocks/media-aside/DisplayComponent.js:103
 msgid "(Insert Link text)"
 msgstr ""
 
