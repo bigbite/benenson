@@ -75,17 +75,16 @@ class DisplayComponent extends Component {
         <div className="mediaAside">
           <div className="mediaAside-col">
             <div className="mediaAside-content">
-              <h2 className="mediaAside-title">
-                <RichText
-                  tagName="h2"
-                  onChange={ newTitle => setAttributes({ title: newTitle }) }
-                  value={ attributes.title }
-                  placeholder={ __('(Insert Title)', 'benenson') }
-                  keepPlaceholderOnFocus={ true }
-                  formattingControls={ [] }
-                  format="string"
-                />
-              </h2>
+              <RichText
+                tagName="h2"
+                className="mediaAside-title"
+                onChange={ newTitle => setAttributes({ title: newTitle }) }
+                value={ attributes.title }
+                placeholder={ __('(Insert Title)', 'benenson') }
+                keepPlaceholderOnFocus={ true }
+                formattingControls={ [] }
+                format="string"
+              />
               <RichText
                 tagName="p"
                 className="mediaAside-text"
