@@ -99,6 +99,7 @@ class DisplayComponent extends Component {
       </InspectorControls>
       <section className={ classNames({
         section: true,
+        [`${attributes.className}`]: !!attributes.className,
         'section--tinted': attributes.background === 'grey',
         [`section--${attributes.padding}`]: !!attributes.padding,
       }) } style={ attributes.mediaUrl ? styles : null }>
