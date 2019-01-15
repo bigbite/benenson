@@ -46,9 +46,15 @@ registerBlockType('benenson/block-section', {
       type: 'string',
     },
   },
-
   edit: DisplayComponent,
-
+  styles: [
+    {
+      name: 'default',
+      label: __('Default', 'benenson'),
+      isDefault: true,
+    },
+  ],
+  stylePreviews: false,
   // Returns null due to the component being rendered server side
   save: ({ attributes }) => {
     const styles = {

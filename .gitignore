@@ -88,5 +88,6 @@ composer.lock
 /admin.js.map
 /blocks.js.map
 /bundle.js.map
+/packages.js.map
 /style-editor.css.map
 /style.css.map

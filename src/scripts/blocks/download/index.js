@@ -30,7 +30,6 @@ registerBlockType('benenson/block-download', {
       meta: 'download_text',
     },
   },
-
   edit: class extends Component {
     render() {
       const { attributes, setAttributes } = this.props;
