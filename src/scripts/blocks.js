@@ -33,8 +33,3 @@ wp.blocks.registerBlockStyle('core/table', {
   name: 'responsive',
   label: 'Responsive',
 });
-
-wp.blocks.registerBlockStyle('benenson/block-section', {
-  name: 'about-list',
-  label: 'About List',
-});
