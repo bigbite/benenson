@@ -103,7 +103,9 @@ class DisplayComponent extends Component {
         [`section--${attributes.padding}`]: !!attributes.padding,
       }) } style={ attributes.mediaUrl ? styles : null }>
         <div className="container">
-          <InnerBlocks />
+          { typeof this.props.insertBlocksAfter !== 'undefined' &&
+            <InnerBlocks />
+          }
         </div>
       </section>
     </Fragment>);
