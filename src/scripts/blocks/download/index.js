@@ -30,13 +30,6 @@ registerBlockType('benenson/block-download', {
       meta: 'download_text',
     },
   },
-  styles: [
-    {
-      name: 'default',
-      label: __('Default', 'benenson'),
-      isDefault: true,
-    },
-  ],
   edit: class extends Component {
     render() {
       const { attributes, setAttributes } = this.props;

@@ -46,7 +46,6 @@ registerBlockType('benenson/block-section', {
       type: 'string',
     },
   },
-
   edit: DisplayComponent,
   styles: [
     {
