@@ -10,6 +10,23 @@ const { PostMediaSelector } = benenson.components;
 class DisplayComponent extends Component {
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
+  getBlockList = () => {
+    let i = 0;
+    const blockList = [];
+    wp.data.select('core/blocks').getBlockTypes().forEach(block => blockList.push(block.name));
+
+    const searchTerm = 'benenson/block-section';
+
+    for (i = blockList.length - 1; i >= 0; i -= 1) {
+      if (blockList[i] === searchTerm) {
+        blockList.splice(i, 1);
+        // break;       //<-- Uncomment  if only the first term has to be removed
+      }
+    }
+
+    return blockList;
+  }
+
   onMediaChange = (media) => {
     if (media) {
       this.props.setAttributes({
@@ -105,7 +122,7 @@ class DisplayComponent extends Component {
       }) } style={ attributes.mediaUrl ? styles : null }>
         <div className="container">
           { typeof this.props.insertBlocksAfter !== 'undefined' &&
-            <InnerBlocks />
+            <InnerBlocks allowedBlocks= { this.getBlockList() } />
           }
         </div>
       </section>
