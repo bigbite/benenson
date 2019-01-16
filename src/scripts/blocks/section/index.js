@@ -22,7 +22,6 @@ registerBlockType('benenson/block-section', {
   title: __('Section', 'benenson'),
   icon: 'editor-table',
   category: 'benenson',
-  canInsertBlockType: false,
   keywords: [
     __('Section', 'benenson'),
     __('Grey', 'benenson'),
