@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-16 12:32+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/bigbitecreative/benenson/issues\n"
+"POT-Creation-Date: 2019-01-16 17:20+0000\n"
 "PO-Revision-Date: 2019-01-16 12:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,6 +35,11 @@ msgstr "هذه الصفحة غير متوفرة."
 msgid "Go to the Homepage"
 msgstr "انتقل إلى الصفحة الرئيسية"
 
+#: page-fullwidth.php:29 index.php:24 templates/without-sidebar.php:13
+#: single.php:88 page.php:25 front-page.php:17
+msgid "Pages:"
+msgstr "الصفحات:"
+
 #. translators: List of posts
 #: archive.php:8 author.php:16
 msgid "Results"
@@ -58,15 +64,15 @@ msgstr "الرد"
 
 #. translators: Previous post navigation label
 #: comments.php:39 includes/block-translations.php:852
-#: partials/archive-categories.php:50 partials/pagination.php:4
-#: partials/pagination.php:27
+#: partials/pagination.php:4 partials/pagination.php:27
+#: partials/archive-categories.php:50
 msgid "Previous"
 msgstr "السابق"
 
 #. translators: Next post navigation label
 #: comments.php:40 includes/block-translations.php:848
-#: partials/archive-categories.php:51 partials/pagination.php:6
-#: partials/pagination.php:42
+#: partials/pagination.php:6 partials/pagination.php:42
+#: partials/archive-categories.php:51
 msgid "Next"
 msgstr "التالي"
 
@@ -79,72 +85,176 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "تعليق"
 
-#: footer.php:16
-msgid "Footer"
-msgstr "الفوتر"
+#: includes/blocks/media-aside/render.php:59
+#: includes/blocks/media-aside/render.php:65
+#: includes/blocks/header/render.php:105
+msgid "Play video"
+msgstr "تشغيل الفيديو"
 
-#: footer.php:19
-msgid "Footer Menus"
-msgstr "قوائم التذييلات"
+#: includes/blocks/block-category.php:14
+msgid "Benenson"
+msgstr "بينيسون"
 
-#. translators: Social Media sharing options
-#: footer.php:48
-msgid "Follow us on:"
-msgstr "تابعنا علي:"
+#: includes/blocks/download/render.php:17
+msgid "Download Resource"
+msgstr "تنزيل المورد"
 
-#: footer.php:51
-msgid "Follow us on Facebook"
-msgstr "تابعنا على Facebook"
+#: includes/blocks/menu/render.php:23 includes/block-translations.php:282
+msgid "Category List"
+msgstr "قائمه الفئات"
 
-#: footer.php:54
-msgid "Follow us on Twitter"
-msgstr "تابعنا على Twitter"
+#: includes/localisation.php:4
+msgctxt "text direction"
+msgid "ltr"
+msgstr "لتر"
 
-#: footer.php:57
-msgid "Subscribe to our YouTube channel"
-msgstr "اشترك في قناتنا علي YouTube"
+#: includes/localisation.php:5
+msgctxt "month name"
+msgid "January"
+msgstr "يناير"
 
-#: footer.php:60
-msgid "Follow us on Instagram"
-msgstr "تابعنا علي انستجرام"
+#: includes/localisation.php:6
+msgctxt "month name"
+msgid "February"
+msgstr "فبراير"
 
-#: front-page.php:17 index.php:24 page-fullwidth.php:29 page.php:25
-#: single.php:88 templates/without-sidebar.php:13
-msgid "Pages:"
-msgstr "الصفحات:"
+#: includes/localisation.php:7
+msgctxt "month name"
+msgid "March"
+msgstr "مارس"
 
-#. translators: Label for screen reader/keyboard users
-#: header.php:76
-msgid "Skip to main content"
-msgstr "الاطلاع على آخر التطورات"
+#: includes/localisation.php:8
+msgctxt "month name"
+msgid "April"
+msgstr "ابريل"
 
-#: header.php:83
-msgid "Primary navigation"
-msgstr "الملاحة الاوليه"
+#: includes/localisation.php:9
+msgctxt "month name"
+msgid "May"
+msgstr "مايو"
 
-#: header.php:88
-msgid "Show search form"
-msgstr "إظهار نموذج البحث"
+#: includes/localisation.php:10
+msgctxt "month name"
+msgid "June"
+msgstr "يونيو"
 
-#: header.php:89 includes/theme-options.php:314 searchform.php:4
+#: includes/localisation.php:11
+msgctxt "month name"
+msgid "July"
+msgstr "يوليو"
+
+#: includes/localisation.php:12
+msgctxt "month name"
+msgid "August"
+msgstr "أغسطس"
+
+#: includes/localisation.php:13
+msgctxt "month name"
+msgid "September"
+msgstr "سبتمبر"
+
+#: includes/localisation.php:14
+msgctxt "month name"
+msgid "October"
+msgstr "أكتوبر"
+
+#: includes/localisation.php:15
+msgctxt "month name"
+msgid "November"
+msgstr "نوفمبر"
+
+#: includes/localisation.php:16
+msgctxt "month name"
+msgid "December"
+msgstr "ديسمبر"
+
+#: includes/theme-options.php:126 includes/theme-options.php:127
+msgid "Theme Settings"
+msgstr "اعدادات القالب"
+
+#: includes/theme-options.php:191
+msgid "Theme Options"
+msgstr "خيارات القالب"
+
+#: includes/theme-options.php:203
+msgid "Social"
+msgstr "الشبكة الاجتماعية"
+
+#: includes/theme-options.php:206
+msgid "Facebook"
+msgstr "فيسبوك"
+
+#: includes/theme-options.php:213
+msgid "Twitter"
+msgstr "تويتر"
+
+#: includes/theme-options.php:220
+msgid "YouTube"
+msgstr "يوتيوب"
+
+#: includes/theme-options.php:227
+msgid "Instagram"
+msgstr "انستجرام"
+
+#: includes/theme-options.php:241
+msgid "Analytics"
+msgstr "كود تتبع Google Analytics"
+
+#: includes/theme-options.php:244
+msgid "Google Tag Manager"
+msgstr "جوجل الوسم مدير"
+
+#: includes/theme-options.php:251
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: includes/theme-options.php:265 includes/block-translations.php:135
+#: includes/post-types/sidebar.php:12 includes/post-types/sidebar.php:39
+#: single.php:120
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+#: includes/theme-options.php:268
+msgid "Default Sidebar"
+msgstr "الشريط الجانبي الافتراضي"
+
+#: includes/theme-options.php:281
+msgid "Default Page Sidebar"
+msgstr "الشريط الجانبي للصفحة الافتراضية"
+
+#: includes/theme-options.php:294
+msgid "Default Archive Sidebar"
+msgstr "الافتراضي الأرشيف الشريط الجانبي"
+
+#: includes/theme-options.php:314 header.php:89 searchform.php:4
 msgid "Search"
 msgstr "بحث"
 
-#: header.php:102 includes/navigation.php:114
-msgid "Main Menu"
-msgstr "القائمة الرئيسية"
+#: includes/theme-options.php:317
+msgid "Disable All Search"
+msgstr "تعطيل كافة البحث"
 
-#: header.php:103
-msgid "Close navigation"
-msgstr "إغلاق التنقل"
+#: includes/theme-options.php:324
+msgid "Disable Search in Navigation"
+msgstr "تعطيل البحث في التنقل"
 
-#: header.php:106 includes/block-translations.php:535
-msgid "Primary"
-msgstr "ابتدائي"
+#: includes/theme-options.php:338 includes/theme-options.php:341
+#: includes/block-translations.php:638
+msgid "Logo"
+msgstr "الشعار"
 
-#: header.php:157 header.php:182
-msgid "Play Icon"
-msgstr "رمز التشغيل"
+#: includes/theme-options.php:362
+msgid "Logo URL"
+msgstr "رابط الشعار"
+
+#. translators: page number prefix, e.g. "[Page] 1"
+#: includes/pagination.php:27
+msgid "Page"
+msgstr "صفحة"
+
+#: includes/theme-supports.php:47
+msgid "Standard Post Template"
+msgstr "قالب النشر القياسي"
 
 #: includes/block-translations.php:6
 msgid "Content"
@@ -281,12 +391,6 @@ msgstr "تقليل عرض المحتوي"
 #: includes/block-translations.php:132
 msgid "Adds a small amount of padding to the content."
 msgstr "يضيف كميه صغيره من الحشو إلى المحتوي."
-
-#: includes/block-translations.php:135 includes/post-types/sidebar.php:12
-#: includes/post-types/sidebar.php:39 includes/theme-options.php:265
-#: single.php:120
-msgid "Sidebar"
-msgstr "الشريط الجانبي"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:143
@@ -433,10 +537,6 @@ msgstr "إسم الخاصية المختاره"
 #: includes/block-translations.php:279
 msgid "Taxonomy"
 msgstr "التصنيف"
-
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
-msgid "Category List"
-msgstr "قائمه الفئات"
 
 #: includes/block-translations.php:285
 msgid "Layout Style"
@@ -730,6 +830,10 @@ msgstr "أضافه كتله حقائق رئيسيه"
 msgid "Quantity"
 msgstr "الكمية"
 
+#: includes/block-translations.php:535 header.php:106
+msgid "Primary"
+msgstr "ابتدائي"
+
 #: includes/block-translations.php:538
 msgid "Primary Outline"
 msgstr "مخطط تفصيلي أساسي"
@@ -857,11 +961,6 @@ msgstr "روابط مع مجموعه أيقونات"
 #: includes/block-translations.php:635
 msgid "Add a repeatable links-with-icons block"
 msgstr "أضافه كتله ارتباطات قابله للتكرار مع الرموز"
-
-#: includes/block-translations.php:638 includes/theme-options.php:338
-#: includes/theme-options.php:341
-msgid "Logo"
-msgstr "الشعار"
 
 #: includes/block-translations.php:641
 msgid "Add a logos block"
@@ -1222,109 +1321,6 @@ msgstr "تعيين صورة"
 msgid "Replace Image"
 msgstr "استبدل مسار الصورة"
 
-#. Theme Name of the plugin/theme
-#: includes/blocks/block-category.php:14
-msgid "Benenson"
-msgstr "بينيسون"
-
-#: includes/blocks/download/render.php:17
-msgid "Download Resource"
-msgstr "تنزيل المورد"
-
-#: includes/blocks/header/render.php:105
-#: includes/blocks/media-aside/render.php:59
-#: includes/blocks/media-aside/render.php:65
-msgid "Play video"
-msgstr "تشغيل الفيديو"
-
-#: includes/localisation.php:4
-msgctxt "text direction"
-msgid "ltr"
-msgstr "لتر"
-
-#: includes/localisation.php:5
-msgctxt "month name"
-msgid "January"
-msgstr "يناير"
-
-#: includes/localisation.php:6
-msgctxt "month name"
-msgid "February"
-msgstr "فبراير"
-
-#: includes/localisation.php:7
-msgctxt "month name"
-msgid "March"
-msgstr "مارس"
-
-#: includes/localisation.php:8
-msgctxt "month name"
-msgid "April"
-msgstr "ابريل"
-
-#: includes/localisation.php:9
-msgctxt "month name"
-msgid "May"
-msgstr "مايو"
-
-#: includes/localisation.php:10
-msgctxt "month name"
-msgid "June"
-msgstr "يونيو"
-
-#: includes/localisation.php:11
-msgctxt "month name"
-msgid "July"
-msgstr "يوليو"
-
-#: includes/localisation.php:12
-msgctxt "month name"
-msgid "August"
-msgstr "أغسطس"
-
-#: includes/localisation.php:13
-msgctxt "month name"
-msgid "September"
-msgstr "سبتمبر"
-
-#: includes/localisation.php:14
-msgctxt "month name"
-msgid "October"
-msgstr "أكتوبر"
-
-#: includes/localisation.php:15
-msgctxt "month name"
-msgid "November"
-msgstr "نوفمبر"
-
-#: includes/localisation.php:16
-msgctxt "month name"
-msgid "December"
-msgstr "ديسمبر"
-
-#. translators: Accessibility label for mobile navigation dropdown button
-#: includes/mobile-nav-walker.php:149
-#, php-format
-msgid "Expand %s sub-list"
-msgstr "توسيع القائمة الفرعية %s"
-
-#: includes/navigation.php:35
-msgid "Visit the Benenson home page"
-msgstr "زيارة الصفحة الرئيسية بيننسون"
-
-#: includes/navigation.php:115
-msgid "Footer Main"
-msgstr "تذييل الصفحة الرئيسية"
-
-#: includes/navigation.php:116
-msgid "Footer Legal"
-msgstr "التذييل القانوني"
-
-#. translators: page number prefix, e.g. "[Page] 1"
-#: includes/pagination.php:27
-msgid "Page"
-msgstr "صفحة"
-
 #. translators: Post sort by option
 #: includes/post-filters.php:12
 msgid "Most Recent"
@@ -1476,93 +1472,121 @@ msgctxt "close single quote"
 msgid "’"
 msgstr "'"
 
-#: includes/theme-options.php:126 includes/theme-options.php:127
-msgid "Theme Settings"
-msgstr "اعدادات القالب"
+#. translators: Accessibility label for mobile navigation dropdown button
+#: includes/mobile-nav-walker.php:149
+#, php-format
+msgid "Expand %s sub-list"
+msgstr "توسيع القائمة الفرعية %s"
 
-#: includes/theme-options.php:191
-msgid "Theme Options"
-msgstr "خيارات القالب"
+#: includes/navigation.php:35
+msgid "Visit the Benenson home page"
+msgstr "زيارة الصفحة الرئيسية بيننسون"
 
-#: includes/theme-options.php:203
-msgid "Social"
-msgstr "الشبكة الاجتماعية"
+#: includes/navigation.php:114 header.php:102
+msgid "Main Menu"
+msgstr "القائمة الرئيسية"
 
-#: includes/theme-options.php:206
-msgid "Facebook"
-msgstr "فيسبوك"
+#: includes/navigation.php:115
+msgid "Footer Main"
+msgstr "تذييل الصفحة الرئيسية"
 
-#: includes/theme-options.php:213
-msgid "Twitter"
-msgstr "تويتر"
+#: includes/navigation.php:116
+msgid "Footer Legal"
+msgstr "التذييل القانوني"
 
-#: includes/theme-options.php:220
-msgid "YouTube"
-msgstr "يوتيوب"
+#: search.php:4
+msgid "Search form"
+msgstr "نموذج البحث"
 
-#: includes/theme-options.php:227
-msgid "Instagram"
-msgstr "انستجرام"
+#: search.php:7
+msgid "Search results"
+msgstr "نتائج البحث"
 
-#: includes/theme-options.php:241
-msgid "Analytics"
-msgstr "كود تتبع Google Analytics"
+#. translators: Label for screen reader/keyboard users
+#: header.php:76
+msgid "Skip to main content"
+msgstr "الاطلاع على آخر التطورات"
 
-#: includes/theme-options.php:244
-msgid "Google Tag Manager"
-msgstr "جوجل الوسم مدير"
+#: header.php:83
+msgid "Primary navigation"
+msgstr "الملاحة الاوليه"
 
-#: includes/theme-options.php:251
-msgid "Google Analytics"
-msgstr "Google Analytics"
+#: header.php:88
+msgid "Show search form"
+msgstr "إظهار نموذج البحث"
 
-#: includes/theme-options.php:268
-msgid "Default Sidebar"
-msgstr "الشريط الجانبي الافتراضي"
+#: header.php:103
+msgid "Close navigation"
+msgstr "إغلاق التنقل"
 
-#: includes/theme-options.php:281
-msgid "Default Page Sidebar"
-msgstr "الشريط الجانبي للصفحة الافتراضية"
+#: header.php:157 header.php:182
+msgid "Play Icon"
+msgstr "رمز التشغيل"
 
-#: includes/theme-options.php:294
-msgid "Default Archive Sidebar"
-msgstr "الافتراضي الأرشيف الشريط الجانبي"
+#: footer.php:16
+msgid "Footer"
+msgstr "الفوتر"
 
-#: includes/theme-options.php:317
-msgid "Disable All Search"
-msgstr "تعطيل كافة البحث"
+#: footer.php:19
+msgid "Footer Menus"
+msgstr "قوائم التذييلات"
 
-#: includes/theme-options.php:324
-msgid "Disable Search in Navigation"
-msgstr "تعطيل البحث في التنقل"
+#. translators: Social Media sharing options
+#: footer.php:48
+msgid "Follow us on:"
+msgstr "تابعنا علي:"
 
-#: includes/theme-options.php:362
-msgid "Logo URL"
-msgstr "رابط الشعار"
+#: footer.php:51
+msgid "Follow us on Facebook"
+msgstr "تابعنا على Facebook"
 
-#: includes/theme-supports.php:47
-msgid "Standard Post Template"
-msgstr "قالب النشر القياسي"
+#: footer.php:54
+msgid "Follow us on Twitter"
+msgstr "تابعنا على Twitter"
 
-#: partials/archive-categories.php:29
-msgid "Filter results by category"
-msgstr "تصفيه النتائج حسب الفئة"
+#: footer.php:57
+msgid "Subscribe to our YouTube channel"
+msgstr "اشترك في قناتنا علي YouTube"
 
-#: partials/archive-categories.php:61
-msgid "List of subcategories"
-msgstr "قائمه الفئات الفرعية"
+#: footer.php:60
+msgid "Follow us on Instagram"
+msgstr "تابعنا علي انستجرام"
 
-#: partials/archive-categories.php:63
-msgid "List of second-level categories"
-msgstr "قائمه فئات المستوي الثاني"
+#: templates/without-sidebar.php:20 single.php:116 partials/article-share.php:2
+msgid "Social sharing options"
+msgstr "خيارات المشاركة الاجتماعية"
 
-#: partials/archive-categories.php:66 partials/archive-categories.php:97
-msgid "Select a sub filter"
-msgstr "تحديد عامل تصفيه فرعي"
+#. translators: Link to return to all posts of category %s
+#: single.php:40
+#, php-format
+msgid "Back to %s"
+msgstr "عودة الى  %s"
 
-#: partials/archive-categories.php:94
-msgid "List of third-level categories"
-msgstr "قائمه فئات المستوي الثالث"
+#: single.php:46
+msgid "Post published timestamp"
+msgstr "نشر الطابع الزمني المنشور"
+
+#: single.php:48
+msgid "Authored by"
+msgstr "تاليف"
+
+#: single.php:78
+msgid "View Recipients"
+msgstr "عرض المستلمين"
+
+#: single.php:107
+msgid "Tags:"
+msgstr "العلامات:"
+
+#: partials/post/post-search.php:22 partials/post/post-content.php:19
+msgid "Post published date"
+msgstr "آخر تاريخ نشرها"
+
+#. translators: placeholder is category name
+#: partials/post/post-content.php:17
+#, php-format
+msgid "Article category %s"
+msgstr "فئة المقالة %s"
 
 #. translators: Singular/Plural number of posts.
 #: partials/archive-header.php:10
@@ -1598,9 +1622,13 @@ msgstr "معلومات النتائج"
 msgid "Sort by"
 msgstr "ترتيب حسب"
 
-#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
-msgid "Social sharing options"
-msgstr "خيارات المشاركة الاجتماعية"
+#: partials/pagination.php:20
+msgid "Pagination"
+msgstr "ترقيم الصفحات"
+
+#: partials/pagination.php:31
+msgid "Page numbers"
+msgstr "رقم الصفحة"
 
 #: partials/article-share.php:3
 msgid "Share"
@@ -1622,31 +1650,25 @@ msgstr "شارك على تويتر"
 msgid "Twitter Logo"
 msgstr "تويتر الشعار"
 
-#: partials/pagination.php:20
-msgid "Pagination"
-msgstr "ترقيم الصفحات"
+#: partials/archive-categories.php:29
+msgid "Filter results by category"
+msgstr "تصفيه النتائج حسب الفئة"
 
-#: partials/pagination.php:31
-msgid "Page numbers"
-msgstr "رقم الصفحة"
+#: partials/archive-categories.php:61
+msgid "List of subcategories"
+msgstr "قائمه الفئات الفرعية"
 
-#. translators: placeholder is category name
-#: partials/post/post-content.php:17
-#, php-format
-msgid "Article category %s"
-msgstr "فئة المقالة %s"
+#: partials/archive-categories.php:63
+msgid "List of second-level categories"
+msgstr "قائمه فئات المستوي الثاني"
 
-#: partials/post/post-content.php:19 partials/post/post-search.php:22
-msgid "Post published date"
-msgstr "آخر تاريخ نشرها"
+#: partials/archive-categories.php:66 partials/archive-categories.php:97
+msgid "Select a sub filter"
+msgstr "تحديد عامل تصفيه فرعي"
 
-#: search.php:4
-msgid "Search form"
-msgstr "نموذج البحث"
-
-#: search.php:7
-msgid "Search results"
-msgstr "نتائج البحث"
+#: partials/archive-categories.php:94
+msgid "List of third-level categories"
+msgstr "قائمه فئات المستوي الثالث"
 
 #. translators: screen reader text for search field
 #: searchform.php:2
@@ -1656,49 +1678,3 @@ msgstr "مدخلات البحث"
 #: searchform.php:3
 msgid "What are you looking for?"
 msgstr "ما الذي تبحث عنه؟"
-
-#. translators: Link to return to all posts of category %s
-#: single.php:40
-#, php-format
-msgid "Back to %s"
-msgstr "عودة الى  %s"
-
-#: single.php:46
-msgid "Post published timestamp"
-msgstr "نشر الطابع الزمني المنشور"
-
-#: single.php:48
-msgid "Authored by"
-msgstr "تاليف"
-
-#: single.php:78
-msgid "View Recipients"
-msgstr "عرض المستلمين"
-
-#: single.php:107
-msgid "Tags:"
-msgstr "العلامات:"
-
-#. Theme URI of the plugin/theme
-msgid "https://benenson.co"
-msgstr "https://benenson.co"
-
-#. Description of the plugin/theme
-msgid ""
-"Named after the founder of the human rights group, Amnesty International, "
-"Benenson is an open-source WordPress theme built using Gutenberg"
-msgstr ""
-"سميت منظمه العفو الدولية باسم مؤسس مجموعه حقوق الإنسان ، بيننسون هي موضوع "
-"وورد مفتوح المصدر بنيت باستخدام غوتنبرغ"
-
-#. Author of the plugin/theme
-msgid "Big Bite Creative"
-msgstr "بيج بايت الابداعيه"
-
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
-
-#. Template Name of the plugin/theme
-msgid "Full-width layout"
-msgstr "تخطيط كامل العرض"

@@ -1,7 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-01-16 12:32+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/bigbitecreative/benenson/issues\n"
+"POT-Creation-Date: 2019-01-16 17:20+0000\n"
 "PO-Revision-Date: 2019-01-16 12:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,6 +34,11 @@ msgstr "La página que busca no existe."
 msgid "Go to the Homepage"
 msgstr "Ir a la página de inicio"
 
+#: page-fullwidth.php:29 index.php:24 templates/without-sidebar.php:13
+#: single.php:88 page.php:25 front-page.php:17
+msgid "Pages:"
+msgstr "Páginas:"
+
 #. translators: List of posts
 #: archive.php:8 author.php:16
 msgid "Results"
@@ -53,15 +59,15 @@ msgstr "Responder"
 
 #. translators: Previous post navigation label
 #: comments.php:39 includes/block-translations.php:852
-#: partials/archive-categories.php:50 partials/pagination.php:4
-#: partials/pagination.php:27
+#: partials/pagination.php:4 partials/pagination.php:27
+#: partials/archive-categories.php:50
 msgid "Previous"
 msgstr "Anterior"
 
 #. translators: Next post navigation label
 #: comments.php:40 includes/block-translations.php:848
-#: partials/archive-categories.php:51 partials/pagination.php:6
-#: partials/pagination.php:42
+#: partials/pagination.php:6 partials/pagination.php:42
+#: partials/archive-categories.php:51
 msgid "Next"
 msgstr "Siguiente"
 
@@ -74,72 +80,176 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "Comentario"
 
-#: footer.php:16
-msgid "Footer"
-msgstr "Pie de página"
+#: includes/blocks/media-aside/render.php:59
+#: includes/blocks/media-aside/render.php:65
+#: includes/blocks/header/render.php:105
+msgid "Play video"
+msgstr "Mirar video"
 
-#: footer.php:19
-msgid "Footer Menus"
-msgstr "Menús de pie"
+#: includes/blocks/block-category.php:14
+msgid "Benenson"
+msgstr "Benenson"
 
-#. translators: Social Media sharing options
-#: footer.php:48
-msgid "Follow us on:"
-msgstr "Síguenos en:"
+#: includes/blocks/download/render.php:17
+msgid "Download Resource"
+msgstr "Descargar recurso"
 
-#: footer.php:51
-msgid "Follow us on Facebook"
-msgstr "Síguenos en Facebook"
+#: includes/blocks/menu/render.php:23 includes/block-translations.php:282
+msgid "Category List"
+msgstr "Lista de categorías"
 
-#: footer.php:54
-msgid "Follow us on Twitter"
-msgstr "Síguenos en Twitter"
+#: includes/localisation.php:4
+msgctxt "text direction"
+msgid "ltr"
+msgstr "ltr"
 
-#: footer.php:57
-msgid "Subscribe to our YouTube channel"
-msgstr "Suscríbete a nuestro canal de YouTube"
+#: includes/localisation.php:5
+msgctxt "month name"
+msgid "January"
+msgstr "Enero"
 
-#: footer.php:60
-msgid "Follow us on Instagram"
-msgstr "Síguenos en Instagram"
+#: includes/localisation.php:6
+msgctxt "month name"
+msgid "February"
+msgstr "Febrero"
 
-#: front-page.php:17 index.php:24 page-fullwidth.php:29 page.php:25
-#: single.php:88 templates/without-sidebar.php:13
-msgid "Pages:"
-msgstr "Páginas:"
+#: includes/localisation.php:7
+msgctxt "month name"
+msgid "March"
+msgstr "Marzo"
 
-#. translators: Label for screen reader/keyboard users
-#: header.php:76
-msgid "Skip to main content"
-msgstr "Saltar al contenido principal"
+#: includes/localisation.php:8
+msgctxt "month name"
+msgid "April"
+msgstr "Abril"
 
-#: header.php:83
-msgid "Primary navigation"
-msgstr "Navegación primaria"
+#: includes/localisation.php:9
+msgctxt "month name"
+msgid "May"
+msgstr "Mayo"
 
-#: header.php:88
-msgid "Show search form"
-msgstr "Mostrar el formulario de búsqueda"
+#: includes/localisation.php:10
+msgctxt "month name"
+msgid "June"
+msgstr "Junio"
 
-#: header.php:89 includes/theme-options.php:314 searchform.php:4
+#: includes/localisation.php:11
+msgctxt "month name"
+msgid "July"
+msgstr "Julio"
+
+#: includes/localisation.php:12
+msgctxt "month name"
+msgid "August"
+msgstr "Agosto"
+
+#: includes/localisation.php:13
+msgctxt "month name"
+msgid "September"
+msgstr "Septiembre"
+
+#: includes/localisation.php:14
+msgctxt "month name"
+msgid "October"
+msgstr "Octubre"
+
+#: includes/localisation.php:15
+msgctxt "month name"
+msgid "November"
+msgstr "Noviembre"
+
+#: includes/localisation.php:16
+msgctxt "month name"
+msgid "December"
+msgstr "Diciembre"
+
+#: includes/theme-options.php:126 includes/theme-options.php:127
+msgid "Theme Settings"
+msgstr "Ajustes de tema"
+
+#: includes/theme-options.php:191
+msgid "Theme Options"
+msgstr "Opciones del Tema"
+
+#: includes/theme-options.php:203
+msgid "Social"
+msgstr "Social"
+
+#: includes/theme-options.php:206
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/theme-options.php:213
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/theme-options.php:220
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/theme-options.php:227
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/theme-options.php:241
+msgid "Analytics"
+msgstr "Analytics"
+
+#: includes/theme-options.php:244
+msgid "Google Tag Manager"
+msgstr "Google Tag Manager"
+
+#: includes/theme-options.php:251
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: includes/theme-options.php:265 includes/block-translations.php:135
+#: includes/post-types/sidebar.php:12 includes/post-types/sidebar.php:39
+#: single.php:120
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: includes/theme-options.php:268
+msgid "Default Sidebar"
+msgstr "Barra lateral por defecto"
+
+#: includes/theme-options.php:281
+msgid "Default Page Sidebar"
+msgstr "Barra lateral de página predeterminada"
+
+#: includes/theme-options.php:294
+msgid "Default Archive Sidebar"
+msgstr "Sidebar de archivo predeterminado"
+
+#: includes/theme-options.php:314 header.php:89 searchform.php:4
 msgid "Search"
 msgstr "Buscar"
 
-#: header.php:102 includes/navigation.php:114
-msgid "Main Menu"
-msgstr "Menú principal"
+#: includes/theme-options.php:317
+msgid "Disable All Search"
+msgstr "Desactivar todas las búsquedas"
 
-#: header.php:103
-msgid "Close navigation"
-msgstr "Navegación cercana"
+#: includes/theme-options.php:324
+msgid "Disable Search in Navigation"
+msgstr "Desactivar la búsqueda en la navegación"
 
-#: header.php:106 includes/block-translations.php:535
-msgid "Primary"
-msgstr "Primario"
+#: includes/theme-options.php:338 includes/theme-options.php:341
+#: includes/block-translations.php:638
+msgid "Logo"
+msgstr "Logo"
 
-#: header.php:157 header.php:182
-msgid "Play Icon"
-msgstr "Ícono de reproducción"
+#: includes/theme-options.php:362
+msgid "Logo URL"
+msgstr "URL del Logo"
+
+#. translators: page number prefix, e.g. "[Page] 1"
+#: includes/pagination.php:27
+msgid "Page"
+msgstr "Página"
+
+#: includes/theme-supports.php:47
+msgid "Standard Post Template"
+msgstr "Plantilla de post estándar"
 
 #: includes/block-translations.php:6
 msgid "Content"
@@ -278,12 +388,6 @@ msgstr "Reducir el ancho del contenido"
 #: includes/block-translations.php:132
 msgid "Adds a small amount of padding to the content."
 msgstr "Agrega una pequeña cantidad de relleno al contenido."
-
-#: includes/block-translations.php:135 includes/post-types/sidebar.php:12
-#: includes/post-types/sidebar.php:39 includes/theme-options.php:265
-#: single.php:120
-msgid "Sidebar"
-msgstr "Barra lateral"
 
 #. translators: text alignment. for RTL languages, localise as 'Right'
 #: includes/block-translations.php:143
@@ -430,10 +534,6 @@ msgstr "Término"
 #: includes/block-translations.php:279
 msgid "Taxonomy"
 msgstr "Taxonomía"
-
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
-msgid "Category List"
-msgstr "Lista de categorías"
 
 #: includes/block-translations.php:285
 msgid "Layout Style"
@@ -727,6 +827,10 @@ msgstr "Agregar un bloque de datos clave"
 msgid "Quantity"
 msgstr "Cantidad"
 
+#: includes/block-translations.php:535 header.php:106
+msgid "Primary"
+msgstr "Primario"
+
 #: includes/block-translations.php:538
 msgid "Primary Outline"
 msgstr "Navegación primaria"
@@ -856,11 +960,6 @@ msgstr "Enlaces con Icons Group"
 #: includes/block-translations.php:635
 msgid "Add a repeatable links-with-icons block"
 msgstr "Agregar un bloque de enlaces-con-iconos repetibles"
-
-#: includes/block-translations.php:638 includes/theme-options.php:338
-#: includes/theme-options.php:341
-msgid "Logo"
-msgstr "Logo"
 
 #: includes/block-translations.php:641
 msgid "Add a logos block"
@@ -1223,109 +1322,6 @@ msgstr "Asignar imagen"
 msgid "Replace Image"
 msgstr "Reemplazar Imagen"
 
-#. Theme Name of the plugin/theme
-#: includes/blocks/block-category.php:14
-msgid "Benenson"
-msgstr "Benenson"
-
-#: includes/blocks/download/render.php:17
-msgid "Download Resource"
-msgstr "Descargar recurso"
-
-#: includes/blocks/header/render.php:105
-#: includes/blocks/media-aside/render.php:59
-#: includes/blocks/media-aside/render.php:65
-msgid "Play video"
-msgstr "Mirar video"
-
-#: includes/localisation.php:4
-msgctxt "text direction"
-msgid "ltr"
-msgstr "ltr"
-
-#: includes/localisation.php:5
-msgctxt "month name"
-msgid "January"
-msgstr "Enero"
-
-#: includes/localisation.php:6
-msgctxt "month name"
-msgid "February"
-msgstr "Febrero"
-
-#: includes/localisation.php:7
-msgctxt "month name"
-msgid "March"
-msgstr "Marzo"
-
-#: includes/localisation.php:8
-msgctxt "month name"
-msgid "April"
-msgstr "Abril"
-
-#: includes/localisation.php:9
-msgctxt "month name"
-msgid "May"
-msgstr "Mayo"
-
-#: includes/localisation.php:10
-msgctxt "month name"
-msgid "June"
-msgstr "Junio"
-
-#: includes/localisation.php:11
-msgctxt "month name"
-msgid "July"
-msgstr "Julio"
-
-#: includes/localisation.php:12
-msgctxt "month name"
-msgid "August"
-msgstr "Agosto"
-
-#: includes/localisation.php:13
-msgctxt "month name"
-msgid "September"
-msgstr "Septiembre"
-
-#: includes/localisation.php:14
-msgctxt "month name"
-msgid "October"
-msgstr "Octubre"
-
-#: includes/localisation.php:15
-msgctxt "month name"
-msgid "November"
-msgstr "Noviembre"
-
-#: includes/localisation.php:16
-msgctxt "month name"
-msgid "December"
-msgstr "Diciembre"
-
-#. translators: Accessibility label for mobile navigation dropdown button
-#: includes/mobile-nav-walker.php:149
-#, php-format
-msgid "Expand %s sub-list"
-msgstr "Expandir %s sub-lista"
-
-#: includes/navigation.php:35
-msgid "Visit the Benenson home page"
-msgstr "Visite la Página principal de Benenson"
-
-#: includes/navigation.php:115
-msgid "Footer Main"
-msgstr "Pie principal"
-
-#: includes/navigation.php:116
-msgid "Footer Legal"
-msgstr "Pie de igualdad legal"
-
-#. translators: page number prefix, e.g. "[Page] 1"
-#: includes/pagination.php:27
-msgid "Page"
-msgstr "Página"
-
 #. translators: Post sort by option
 #: includes/post-filters.php:12
 msgid "Most Recent"
@@ -1477,93 +1473,121 @@ msgctxt "close single quote"
 msgid "’"
 msgstr "’"
 
-#: includes/theme-options.php:126 includes/theme-options.php:127
-msgid "Theme Settings"
-msgstr "Ajustes de tema"
+#. translators: Accessibility label for mobile navigation dropdown button
+#: includes/mobile-nav-walker.php:149
+#, php-format
+msgid "Expand %s sub-list"
+msgstr "Expandir %s sub-lista"
 
-#: includes/theme-options.php:191
-msgid "Theme Options"
-msgstr "Opciones del Tema"
+#: includes/navigation.php:35
+msgid "Visit the Benenson home page"
+msgstr "Visite la Página principal de Benenson"
 
-#: includes/theme-options.php:203
-msgid "Social"
-msgstr "Social"
+#: includes/navigation.php:114 header.php:102
+msgid "Main Menu"
+msgstr "Menú principal"
 
-#: includes/theme-options.php:206
-msgid "Facebook"
-msgstr "Facebook"
+#: includes/navigation.php:115
+msgid "Footer Main"
+msgstr "Pie principal"
 
-#: includes/theme-options.php:213
-msgid "Twitter"
-msgstr "Twitter"
+#: includes/navigation.php:116
+msgid "Footer Legal"
+msgstr "Pie de igualdad legal"
 
-#: includes/theme-options.php:220
-msgid "YouTube"
-msgstr "YouTube"
+#: search.php:4
+msgid "Search form"
+msgstr "Formulario de búsqueda"
 
-#: includes/theme-options.php:227
-msgid "Instagram"
-msgstr "Instagram"
+#: search.php:7
+msgid "Search results"
+msgstr "Resultados de la búsqueda"
 
-#: includes/theme-options.php:241
-msgid "Analytics"
-msgstr "Analytics"
+#. translators: Label for screen reader/keyboard users
+#: header.php:76
+msgid "Skip to main content"
+msgstr "Saltar al contenido principal"
 
-#: includes/theme-options.php:244
-msgid "Google Tag Manager"
-msgstr "Google Tag Manager"
+#: header.php:83
+msgid "Primary navigation"
+msgstr "Navegación primaria"
 
-#: includes/theme-options.php:251
-msgid "Google Analytics"
-msgstr "Google Analytics"
+#: header.php:88
+msgid "Show search form"
+msgstr "Mostrar el formulario de búsqueda"
 
-#: includes/theme-options.php:268
-msgid "Default Sidebar"
-msgstr "Barra lateral por defecto"
+#: header.php:103
+msgid "Close navigation"
+msgstr "Navegación cercana"
 
-#: includes/theme-options.php:281
-msgid "Default Page Sidebar"
-msgstr "Barra lateral de página predeterminada"
+#: header.php:157 header.php:182
+msgid "Play Icon"
+msgstr "Ícono de reproducción"
 
-#: includes/theme-options.php:294
-msgid "Default Archive Sidebar"
-msgstr "Sidebar de archivo predeterminado"
+#: footer.php:16
+msgid "Footer"
+msgstr "Pie de página"
 
-#: includes/theme-options.php:317
-msgid "Disable All Search"
-msgstr "Desactivar todas las búsquedas"
+#: footer.php:19
+msgid "Footer Menus"
+msgstr "Menús de pie"
 
-#: includes/theme-options.php:324
-msgid "Disable Search in Navigation"
-msgstr "Desactivar la búsqueda en la navegación"
+#. translators: Social Media sharing options
+#: footer.php:48
+msgid "Follow us on:"
+msgstr "Síguenos en:"
 
-#: includes/theme-options.php:362
-msgid "Logo URL"
-msgstr "URL del Logo"
+#: footer.php:51
+msgid "Follow us on Facebook"
+msgstr "Síguenos en Facebook"
 
-#: includes/theme-supports.php:47
-msgid "Standard Post Template"
-msgstr "Plantilla de post estándar"
+#: footer.php:54
+msgid "Follow us on Twitter"
+msgstr "Síguenos en Twitter"
 
-#: partials/archive-categories.php:29
-msgid "Filter results by category"
-msgstr "Filtrar resultados por categoría"
+#: footer.php:57
+msgid "Subscribe to our YouTube channel"
+msgstr "Suscríbete a nuestro canal de YouTube"
 
-#: partials/archive-categories.php:61
-msgid "List of subcategories"
-msgstr "Lista de subcategorías"
+#: footer.php:60
+msgid "Follow us on Instagram"
+msgstr "Síguenos en Instagram"
 
-#: partials/archive-categories.php:63
-msgid "List of second-level categories"
-msgstr "Lista de categorías de segundo nivel"
+#: templates/without-sidebar.php:20 single.php:116 partials/article-share.php:2
+msgid "Social sharing options"
+msgstr "Botones para compartir"
 
-#: partials/archive-categories.php:66 partials/archive-categories.php:97
-msgid "Select a sub filter"
-msgstr "Seleccionar un subfiltro"
+#. translators: Link to return to all posts of category %s
+#: single.php:40
+#, php-format
+msgid "Back to %s"
+msgstr "Volver a %s"
 
-#: partials/archive-categories.php:94
-msgid "List of third-level categories"
-msgstr "Lista de categorías de tercer nivel"
+#: single.php:46
+msgid "Post published timestamp"
+msgstr "Fecha de publicación"
+
+#: single.php:48
+msgid "Authored by"
+msgstr "Autor por"
+
+#: single.php:78
+msgid "View Recipients"
+msgstr "Ver destinatarios"
+
+#: single.php:107
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#: partials/post/post-search.php:22 partials/post/post-content.php:19
+msgid "Post published date"
+msgstr "Fecha de publicación"
+
+#. translators: placeholder is category name
+#: partials/post/post-content.php:17
+#, php-format
+msgid "Article category %s"
+msgstr "Artículo categoría %s"
 
 #. translators: Singular/Plural number of posts.
 #: partials/archive-header.php:10
@@ -1591,9 +1615,13 @@ msgstr "Información de resultados"
 msgid "Sort by"
 msgstr "Ordenar por"
 
-#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
-msgid "Social sharing options"
-msgstr "Botones para compartir"
+#: partials/pagination.php:20
+msgid "Pagination"
+msgstr "Paginación"
+
+#: partials/pagination.php:31
+msgid "Page numbers"
+msgstr "Número de página"
 
 #: partials/article-share.php:3
 msgid "Share"
@@ -1615,31 +1643,25 @@ msgstr "Compartir en Twitter"
 msgid "Twitter Logo"
 msgstr "Logotipo de Twitter"
 
-#: partials/pagination.php:20
-msgid "Pagination"
-msgstr "Paginación"
+#: partials/archive-categories.php:29
+msgid "Filter results by category"
+msgstr "Filtrar resultados por categoría"
 
-#: partials/pagination.php:31
-msgid "Page numbers"
-msgstr "Número de página"
+#: partials/archive-categories.php:61
+msgid "List of subcategories"
+msgstr "Lista de subcategorías"
 
-#. translators: placeholder is category name
-#: partials/post/post-content.php:17
-#, php-format
-msgid "Article category %s"
-msgstr "Artículo categoría %s"
+#: partials/archive-categories.php:63
+msgid "List of second-level categories"
+msgstr "Lista de categorías de segundo nivel"
 
-#: partials/post/post-content.php:19 partials/post/post-search.php:22
-msgid "Post published date"
-msgstr "Fecha de publicación"
+#: partials/archive-categories.php:66 partials/archive-categories.php:97
+msgid "Select a sub filter"
+msgstr "Seleccionar un subfiltro"
 
-#: search.php:4
-msgid "Search form"
-msgstr "Formulario de búsqueda"
-
-#: search.php:7
-msgid "Search results"
-msgstr "Resultados de la búsqueda"
+#: partials/archive-categories.php:94
+msgid "List of third-level categories"
+msgstr "Lista de categorías de tercer nivel"
 
 #. translators: screen reader text for search field
 #: searchform.php:2
@@ -1649,50 +1671,3 @@ msgstr "Buscar entrada"
 #: searchform.php:3
 msgid "What are you looking for?"
 msgstr "¿Qué estás buscando?"
-
-#. translators: Link to return to all posts of category %s
-#: single.php:40
-#, php-format
-msgid "Back to %s"
-msgstr "Volver a %s"
-
-#: single.php:46
-msgid "Post published timestamp"
-msgstr "Fecha de publicación"
-
-#: single.php:48
-msgid "Authored by"
-msgstr "Autor por"
-
-#: single.php:78
-msgid "View Recipients"
-msgstr "Ver destinatarios"
-
-#: single.php:107
-msgid "Tags:"
-msgstr "Etiquetas:"
-
-#. Theme URI of the plugin/theme
-msgid "https://benenson.co"
-msgstr "https://Benenson.co"
-
-#. Description of the plugin/theme
-msgid ""
-"Named after the founder of the human rights group, Amnesty International, "
-"Benenson is an open-source WordPress theme built using Gutenberg"
-msgstr ""
-"Nombrada así por el fundador del grupo de derechos humanos, Amnistía "
-"Internacional, Benenson es un tema de WordPress de código abierto construido "
-"usando Gutenberg"
-
-#. Author of the plugin/theme
-msgid "Big Bite Creative"
-msgstr "Gran mordida creativa"
-
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
-
-#. Template Name of the plugin/theme
-msgid "Full-width layout"
-msgstr "Diseño de ancho completo"
