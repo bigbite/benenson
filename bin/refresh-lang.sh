@@ -18,14 +18,29 @@ cd ./languages || exit 1
 touch _benenson.pot
 
 # pass all found PHP files to gettext
-find . -name "*.php" | grep -vi '^\.\/\.git' | xargs xgettext \
+find .. -name "*.php" | grep -vi '^\.\/\.git' | xargs xgettext \
   --language=PHP \
   --output=_benenson.pot \
   --force-po \
   --add-location=full \
   --from-code=UTF-8 \
-  --keyword="__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n" \
-  --add-comments=Translators:
+  --add-comments=translators \
+  --keyword="_, gettext, dgettext:2, dcgettext:2, ngettext:1,2, dngettext:2,3, dcngettext:2,3," \
+  -k__ \
+  -k_e \
+  -k_n:1,2 \
+  -k_x:1,2c \
+  -k_ex:1,2c \
+  -k_nx:4c,1,2 \
+  -kesc_attr__ \
+  -kesc_attr_e \
+  -kesc_attr_x:1,2c \
+  -kesc_html__ \
+  -kesc_html_e \
+  -kesc_html_x:1,2c \
+  -k_n_noop:1,2 \
+  -k_nx_noop:3c,1,2 \
+  -k__ngettext_noop:1,2
 
 # overwrite POT file
 msgcat -o benenson.pot _benenson.pot
