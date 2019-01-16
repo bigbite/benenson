@@ -89,7 +89,7 @@
     "test": "./node_modules/.bin/jest",
     "build": "export \"${NODE_ENV:-production}\"; gulp --production",
     "watch": "export \"${NODE_ENV:-production}\"; gulp watch --production",
-    "lang": "npx pot-to-php block-languages/benenson-blocks.pot includes/block-translations.php benenson"
+    "lang": "npx pot-to-php block-languages/benenson-blocks.pot includes/block-translations.php benenson && ./bin/refresh-lang.sh"
   },
   "jest": {
     "transform": {
