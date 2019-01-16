@@ -15,12 +15,11 @@ class DisplayComponent extends Component {
     const blockList = [];
     wp.data.select('core/blocks').getBlockTypes().forEach(block => blockList.push(block.name));
 
-    const searchTerm = 'benenson/block-section';
+    const sectionBlock = 'benenson/block-section';
 
     for (i = blockList.length - 1; i >= 0; i -= 1) {
-      if (blockList[i] === searchTerm) {
+      if (blockList[i] === sectionBlock) {
         blockList.splice(i, 1);
-        // break;       //<-- Uncomment  if only the first term has to be removed
       }
     }
 
