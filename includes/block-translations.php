@@ -144,6 +144,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/blockquote/index.js:165
 	// Reference: src/scripts/blocks/image/BlockEdit.js:197
+	// Reference: src/scripts/blocks/section/index.js:53
 	// Reference: src/scripts/blocks/tweet/index.js:26
 	__( 'Default', 'benenson' ),
 
@@ -322,19 +323,19 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/download/index.js:13
 	__( 'Add a button to download a resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:44
+	// Reference: src/scripts/blocks/download/index.js:43
 	__( 'File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:45
+	// Reference: src/scripts/blocks/download/index.js:44
 	__( 'A File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:67
+	// Reference: src/scripts/blocks/download/index.js:66
 	__( '[Download Resource]', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:75
+	// Reference: src/scripts/blocks/download/index.js:74
 	__( 'Remove Resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:85
+	// Reference: src/scripts/blocks/download/index.js:84
 	__( 'Edit File', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:103
@@ -507,13 +508,13 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:94
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:93
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -645,7 +646,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:104
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
 	__( '(Insert Link text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:57
@@ -760,7 +761,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 	__( '(Insert Tag)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:13
 	__( '(Tag Name)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:21
