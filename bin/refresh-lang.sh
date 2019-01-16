@@ -44,17 +44,19 @@ insert_poedit_headers() {
   truncate -s 0 ./languages/header.txt
 
   # insert poedit headers
-  echo '"X-Generator: Poedit 2.2.1\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-Basepath: ..\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-Flags-xgettext: --add-comments=translators:\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-WPHeader: style.css\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-SourceCharset: UTF-8\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"' >> ./languages/header.txt
-  echo '"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"' >> ./languages/header.txt
-  echo '"_nx_noop:3c,1,2;__ngettext_noop:1,2\\n"' >> ./languages/header.txt
-  echo '"PO-Revision-Date: \\n"' >> ./languages/header.txt
-  echo '"X-Poedit-SearchPath-0: .\\n"' >> ./languages/header.txt
-  echo '"X-Poedit-SearchPathExcluded-0: *.js\\n"' >> ./languages/header.txt
+  {
+    printf "%s\n" '"X-Generator: Poedit 2.2.1\n"';
+    printf "%s\n" '"X-Poedit-Basepath: ..\n"';
+    printf "%s\n" '"X-Poedit-Flags-xgettext: --add-comments=translators:\n"';
+    printf "%s\n" '"X-Poedit-WPHeader: style.css\n"';
+    printf "%s\n" '"X-Poedit-SourceCharset: UTF-8\n"';
+    printf "%s\n" '"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"';
+    printf "%s\n" '"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"';
+    printf "%s\n" '"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"';
+    printf "%s\n" '"PO-Revision-Date: \n"';
+    printf "%s\n" '"X-Poedit-SearchPath-0: .\n"';
+    printf "%s\n" '"X-Poedit-SearchPathExcluded-0: *.js\n"';
+  } >> ./languages/header.txt
 
   # backup POT file
   mv "$1" "$1.bak"
