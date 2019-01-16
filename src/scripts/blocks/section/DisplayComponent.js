@@ -11,17 +11,13 @@ class DisplayComponent extends Component {
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
   getBlockList = () => {
-    let i = 0;
     const blockList = [];
-    wp.data.select('core/blocks').getBlockTypes().forEach(block => blockList.push(block.name));
 
-    const sectionBlock = 'benenson/block-section';
-
-    for (i = blockList.length - 1; i >= 0; i -= 1) {
-      if (blockList[i] === sectionBlock) {
-        blockList.splice(i, 1);
+    wp.data.select('core/blocks').getBlockTypes().forEach((block) => {
+      if (block.name !== 'benenson/block-section') {
+        blockList.push(block.name);
       }
-    }
+    });
 
     return blockList;
   }
@@ -121,7 +117,7 @@ class DisplayComponent extends Component {
       }) } style={ attributes.mediaUrl ? styles : null }>
         <div className="container">
           { typeof this.props.insertBlocksAfter !== 'undefined' &&
-            <InnerBlocks allowedBlocks= { this.getBlockList() } />
+            <InnerBlocks allowedBlocks={ this.getBlockList() } />
           }
         </div>
       </section>
