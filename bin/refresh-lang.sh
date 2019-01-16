@@ -28,17 +28,22 @@ remove_date_only_changes() {
 fixup_header_information() {
   thedate=$(date '+%Y-%m-%d %H:%M%z')
 
+  # replace placeholder information
   _sedi "s/FULL NAME <EMAIL@ADDRESS>//g" "$1"
   _sedi "s/LANGUAGE <LL@li.org>//g" "$1"
   _sedi "s/YEAR-MO-DA HO:MI+ZONE/$thedate/g" "$1"
+
+  # trim the fat
   _sedi -e '1,4d' "$1"
 }
 
 # add headers required for usage in poedit
 insert_poedit_headers() {
+  # create temporary empty file for poedit headers
   touch ./languages/header.txt
   truncate -s 0 ./languages/header.txt
 
+  # insert poedit headers
   echo '"X-Generator: Poedit 2.2.1\\n"' >> ./languages/header.txt
   echo '"X-Poedit-Basepath: ..\\n"' >> ./languages/header.txt
   echo '"X-Poedit-Flags-xgettext: --add-comments=translators:\\n"' >> ./languages/header.txt
@@ -51,10 +56,16 @@ insert_poedit_headers() {
   echo '"X-Poedit-SearchPath-0: .\\n"' >> ./languages/header.txt
   echo '"X-Poedit-SearchPathExcluded-0: *.js\\n"' >> ./languages/header.txt
 
+  # backup POT file
   mv "$1" "$1.bak"
+  # insert headers from backup POT file into new POT file
   sed -e '/^$/,$d' "$1.bak" > "$1"
+  # append poedit headers to new POT file
   cat ./languages/header.txt >> "$1"
+  # append everything after the headers in backup POT file into new POT file
   sed -e '1,14d' "$1.bak" >> "$1"
+
+  # cleanup
   rm ./languages/header.txt
   rm "$1.bak"
 }
@@ -96,14 +107,18 @@ find . -name "*.php" | grep -vi '^\.\/\.git' | xargs xgettext \
   -k_nx_noop:3c,1,2 \
   -k__ngettext_noop:1,2
 
-# overwrite POT file
+# cleanup temporary POT file
 fixup_header_information ./languages/_benenson.pot
 insert_poedit_headers ./languages/_benenson.pot
+
+# copy to actual POT file
 msgcat -o ./languages/benenson.pot ./languages/_benenson.pot
 rm ./languages/_benenson.pot
+
+# if only the timestamp has changed, don't bother with it
 remove_date_only_changes ./languages/benenson.pot
 
-# Merge with PO files:
+# Merge changes with PO files:
 for p in ./languages/*.po; do
   msgmerge --quiet -o "$p.tmp" --no-fuzzy-matching "$p" ./languages/benenson.pot
   msgattrib --no-obsolete -o "$p" "$p.tmp"
