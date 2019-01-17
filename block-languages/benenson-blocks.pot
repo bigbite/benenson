@@ -223,11 +223,10 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:229
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:29
 #: src/scripts/blocks/key-facts/index.js:53
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:60
-#: src/scripts/blocks/logo-list/BlockEdit.js:52
 #: src/scripts/blocks/menu/DisplayComponent.js:15
 #: src/scripts/blocks/section/DisplayComponent.js:52
 #: src/scripts/blocks/section/index.js:27
+#: src/scripts/packages/components/RepeatableBlockContainer.js:52
 msgid "Grey"
 msgstr ""
 
@@ -448,10 +447,9 @@ msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:128
 #: src/scripts/blocks/key-facts/index.js:68
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:81
-#: src/scripts/blocks/logo-list/BlockEdit.js:67
 #: src/scripts/blocks/menu/DisplayComponent.js:107
 #: src/scripts/blocks/section/DisplayComponent.js:82
+#: src/scripts/packages/components/RepeatableBlockContainer.js:67
 msgid "Background Colour"
 msgstr ""
 
@@ -509,9 +507,8 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:92
 #: src/scripts/blocks/key-facts/index.js:50
 #: src/scripts/blocks/link/DisplayComponent.js:30
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:57
-#: src/scripts/blocks/logo-list/BlockEdit.js:49
 #: src/scripts/blocks/section/DisplayComponent.js:63
+#: src/scripts/packages/components/RepeatableBlockContainer.js:49
 msgid "None"
 msgstr ""
 
@@ -674,8 +671,7 @@ msgid "Add a key facts block"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/index.js:61
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:68
-#: src/scripts/blocks/logo-list/BlockEdit.js:60
+#: src/scripts/packages/components/RepeatableBlockContainer.js:60
 msgid "Quantity"
 msgstr ""
 
@@ -731,19 +727,7 @@ msgstr ""
 msgid "Add a link to section within page, another page or an external URL."
 msgstr ""
 
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:49
-msgid "Horizontal"
-msgstr ""
-
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:52
-msgid "Vertical"
-msgstr ""
-
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:75
-msgid "Orientation"
-msgstr ""
-
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:87
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:26
 msgid "Hide Lines"
 msgstr ""
 
@@ -823,11 +807,11 @@ msgstr ""
 msgid "Add a logos block"
 msgstr ""
 
-#: src/scripts/blocks/logo-list/index.js:20
+#: src/scripts/blocks/logo-list/index.js:21
 msgid "Logo Group"
 msgstr ""
 
-#: src/scripts/blocks/logo-list/index.js:21
+#: src/scripts/blocks/logo-list/index.js:22
 msgid "Add a repeatable logo block"
 msgstr ""
 

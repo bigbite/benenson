@@ -23,6 +23,9 @@ registerBlockType('benenson/repeatable-block', {
   category: 'benenson',
   supports: {
     className: false,
+    benenson: {
+      repeatable: true,
+    },
   },
   attributes: {
     backgroundColor: {

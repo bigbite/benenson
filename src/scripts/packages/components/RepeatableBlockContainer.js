@@ -16,15 +16,13 @@ const {
 } = wp.components;
 const { InnerBlocks, InspectorControls } = wp.editor;
 
-/**
- * Module-specific
- */
-// blocks allowed to be contained within the repeatable block
-const ALLOWED_BLOCKS = ['benenson/logo'];
-// Returns the layouts configuration for a given number of repeats.
-const getLayoutTemplate = memoize(blocks => times(blocks, () => ALLOWED_BLOCKS));
+export default class RepeatableBlockContainer extends Component {
+  BLOCKNAME = '';
+  CLASSNAME = '';
+  ALLOWED_BLOCKS = [];
 
-export default class BlockEdit extends Component {
+  getLayoutTemplate = memoize(blocks => times(blocks, () => this.ALLOWED_BLOCKS))
+
   render = () => {
     const {
       attributes,
@@ -32,20 +30,22 @@ export default class BlockEdit extends Component {
     } = this.props;
 
     const {
-      quantity, orientation = 'horizontal', backgroundColor,
+      quantity,
+      backgroundColor,
+      orientation = 'horizontal',
     } = attributes;
 
-    const classes = classnames('logoList', `is-${orientation}`, `has-${quantity}-items`, {
+    const classes = classnames(this.CLASSNAME, `is-${orientation}`, `has-${quantity}-items`, {
       'has-background': !!backgroundColor,
       [`has-${backgroundColor}-background-color`]: !!backgroundColor,
     });
 
-    const quantityOptions = applyFilters('benenson.block.logoGroup.quantityOptions', {
+    const quantityOptions = applyFilters(`benenson.block.${this.BLOCKNAME}.quantityOptions`, {
       min: 1,
       max: 10,
     });
 
-    const backgroundOptions = applyFilters('benenson.block.logoGroup.backgroundOptions', [{
+    const backgroundOptions = applyFilters(`benenson.block.${this.BLOCKNAME}.backgroundOptions`, [{
       label: __('None', 'benenson'),
       value: '',
     }, {
@@ -73,9 +73,9 @@ export default class BlockEdit extends Component {
       </InspectorControls>
       <div className={ classes }>
         <InnerBlocks
-          template={ getLayoutTemplate(quantity) }
+          template={ this.getLayoutTemplate(quantity) }
           templateLock="all"
-          allowedBlocks={ ALLOWED_BLOCKS }
+          allowedBlocks={ this.ALLOWED_BLOCKS }
         />
       </div>
     </Fragment>);
