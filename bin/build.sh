@@ -2,6 +2,7 @@
 
 yarn \
 && yarn build \
+&& yarn lang \
 && zip -r ../benenson.zip . \
   -x .\* \
   -x CODE_OF_CONDUCT.md \
