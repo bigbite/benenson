@@ -1,8 +1,15 @@
+import PostFeaturedVideo from './editor/PostFeaturedVideo';
 import PostMediaSelector from './components/PostMediaSelector';
+
+const editor = {
+  PostFeaturedVideo,
+};
 
 const components = {
   PostMediaSelector,
 };
 
-// eslint-disable-next-line import/prefer-default-export
-export { components };
+export {
+  editor,
+  components,
+};

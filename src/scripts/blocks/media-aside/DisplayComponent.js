@@ -1,11 +1,12 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from '../header/PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { TextControl, PanelBody, ToggleControl } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
+
 const { PostMediaSelector } = benenson.components;
+const { PostFeaturedVideo } = benenson.editor;
 
 class DisplayComponent extends Component {
   handleMediaChange = (media) => {
