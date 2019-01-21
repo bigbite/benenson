@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# ./bin/bump.sh [<version>]
+# ./bin/version-bump.sh [<version>]
 #   <version> The version release version to increment.
 #     default: patch
 #     options: major|minor|patch
@@ -10,11 +10,11 @@
 # - /includes/scripts-and-styles.php
 #
 # EXAMPLE USAGE:
-#   ./bin/bump.sh minor
+#   ./bin/version-bump.sh minor
 
 # escape a version number for sed
 _v() {
-  echo "$(echo "$1" | tr -d '\n' | sed 's/\./\\\./g')";
+  echo "$1" | tr -d '\n' | sed 's/\./\\\./g';
 }
 
 # cross-compatible sed in-place

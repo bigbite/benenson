@@ -82,10 +82,11 @@
     "webpack": "^3.6.0"
   },
   "scripts": {
-    "lint": "yarn lint-scripts && yarn lint-styles && yarn lint-php",
+    "lint": "yarn lint-scripts && yarn lint-styles && yarn lint-php && yarn lint-shell",
     "lint-php": "$(composer config -g home)/vendor/bin/phpcs .",
     "lint-scripts": "./node_modules/.bin/eslint ./src/",
     "lint-styles": "./node_modules/.bin/stylelint \"src/**/*.scss\"",
+    "lint-shell": "type shellcheck > /dev/null 2>&1 && shellcheck ./bin/*.sh",
     "test": "./node_modules/.bin/jest",
     "build": "export \"${NODE_ENV:-production}\"; gulp --production",
     "watch": "export \"${NODE_ENV:-production}\"; gulp watch --production",
