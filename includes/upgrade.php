@@ -25,7 +25,7 @@ if ( ! function_exists( 'update_benenson' ) ) {
 		}
 
 		$last_update = get_site_transient( 'update_themes' );
-		$is_forced   = filter_input( INPUT_REQUEST, 'force-check', FILTER_SANITIZE_NUMBER_INT );
+		$is_forced   = filter_input( INPUT_GET, 'force-check', FILTER_SANITIZE_NUMBER_INT );
 
 		// clear potential existing report if update is forced.
 		if ( 1 === $is_forced ) {
