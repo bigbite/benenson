@@ -2,9 +2,15 @@
 
 add_action( 'load-themes.php', 'update_benenson' );
 add_action( 'load-update.php', 'update_benenson' );
+add_action( 'wp_update_themes', 'update_benenson' );
 add_action( 'load-update-core.php', 'update_benenson' );
 
 if ( ! function_exists( 'update_benenson' ) ) {
+	/**
+	 * Integrate Benenson version comparison into WP core's process.
+	 *
+	 * @return void
+	 */
 	function update_benenson() {
 		// don't check during install.
 		if ( wp_installing() ) {
