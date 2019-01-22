@@ -71,6 +71,11 @@ if ( ! function_exists( 'update_benenson' ) ) {
 			return;
 		}
 
+		// no package zip found.
+		if ( empty( $body->assets[0]->browser_download_url ) ) {
+			return;
+		}
+
 		// inform of theme update.
 		$last_update->response['benenson'] = [
 			'theme'       => 'benenson',
