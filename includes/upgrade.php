@@ -91,7 +91,7 @@ if ( ! function_exists( 'update_benenson' ) ) {
 		// inform of theme update.
 		$last_update->response['benenson'] = [
 			'theme'       => 'benenson',
-			'url'         => 'https://github.com/bigbitecreative/benenson/',
+			'url'         => $theme->get( 'ThemeURI' ),
 			'new_version' => $version,
 			'package'     => $body->assets[0]->browser_download_url,
 		];
