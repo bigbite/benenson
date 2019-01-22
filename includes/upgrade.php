@@ -27,8 +27,13 @@ if ( ! function_exists( 'update_benenson' ) ) {
 		$last_update = get_site_transient( 'update_themes' );
 		$is_forced   = filter_input( INPUT_REQUEST, 'force-check', FILTER_SANITIZE_NUMBER_INT );
 
-		// update already reported & update not forced.
-		if ( 1 !== $is_forced && isset( $last_update->response['benenson'] ) ) {
+		// clear potential existing report if update is forced.
+		if ( 1 === $is_forced ) {
+			unset( $last_update->response['benenson'] );
+		}
+
+		// update already reported.
+		if ( isset( $last_update->response['benenson'] ) ) {
 			return;
 		}
 
