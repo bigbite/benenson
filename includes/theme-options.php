@@ -110,7 +110,7 @@ if ( ! function_exists( 'benenson_customiser' ) ) {
 		] );
 
 		$sidebar_post_list = [];
-		$sidebar_posts     = new \WP_Query( [
+		$sidebar_posts     = new WP_Query( [
 			'post_type' => 'sidebar',
 			'orderby'   => 'post_title',
 			'order'     => 'ASC',
