@@ -65,6 +65,7 @@ registerBlockType('benenson/media-aside', {
       type: 'boolean',
     },
   },
+  styles: [],
 
   edit: DisplayComponent,
 
