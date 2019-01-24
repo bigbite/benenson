@@ -8,8 +8,10 @@ const el = tagName => document.createElement(tagName);
 const getEmbedUrl = (embed, autoplay = false) => {
   // https://player.vimeo.com/video/000000000/?api=1
   // https://www.youtube.com/embed/kjahsdlkaj/?enablejsapi=1&html5=1
+  const autoplayParameter = autoplay ? 'autoplay=1' : '';
+
   if (isEmbed(embed)) {
-    return `${embed}${autoplay ? '?autoplay=1' : ''}`;
+    return `${embed}?${autoplayParameter}`;
   }
 
   if (isUrl(embed) && isVimeo(embed)) {
@@ -32,22 +34,22 @@ const getEmbedUrl = (embed, autoplay = false) => {
       return last;
     }, '');
 
-    return `https://player.vimeo.com/video/${str}/?api=1${autoplay ? '&autoplay=1' : ''}`;
+    return `https://player.vimeo.com/video/${str}/?api=1&${autoplayParameter}`;
   }
 
   if (isID(embed) && isVimeo(embed)) {
-    return `https://player.vimeo.com/video/${embed}/?api=1${autoplay ? '&autoplay=1' : ''}`;
+    return `https://player.vimeo.com/video/${embed}/?api=1&${autoplayParameter}`;
   }
 
   if (isUrl(embed) && isYoutube(embed)) {
-    return `${embed.replace('watch?v=', 'embed/')}?enablejsapi=1&html5=1${autoplay ? '&autoplay=1' : ''}`;
+    return `${embed.replace('watch?v=', 'embed/')}?enablejsapi=1&html5=1&${autoplayParameter}`;
   }
 
   if (isID(embed) && isYoutube(embed)) {
-    return `https://www.youtube.com/embed/${embed}/?enablejsapi=1&html5=1${autoplay ? '&autoplay=1' : ''}`;
+    return `https://www.youtube.com/embed/${embed}/?enablejsapi=1&html5=1&${autoplayParameter}`;
   }
 
-  return `${embed}${autoplay ? '?autoplay=1' : ''}`;
+  return `${embed}?${autoplayParameter}`;
 };
 
 const createInlineEmbed = ({ container, key, embed }) => {
@@ -60,7 +62,7 @@ const createInlineEmbed = ({ container, key, embed }) => {
   container.classList.add('inlineVideo--played');
 };
 
-const clickHandlerInline = (event) => {
+const clickHandler = (event) => {
   event.preventDefault();
   const { target } = event;
   const embed = target.dataset.inlineEmbed;
@@ -72,7 +74,7 @@ const clickHandlerInline = (event) => {
 
 const init = () => {
   const inlineEmbeds = Array.from(document.querySelectorAll('[data-inline-embed]'));
-  inlineEmbeds.forEach(inlineEmbed => inlineEmbed.addEventListener('click', clickHandlerInline));
+  inlineEmbeds.forEach(inlineEmbed => inlineEmbed.addEventListener('click', clickHandler));
 };
 
 export default init;
