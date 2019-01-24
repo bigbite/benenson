@@ -52,6 +52,9 @@ registerBlockType('benenson/media-aside', {
     mediaId: {
       type: 'integer',
     },
+    mediaAlignment: {
+      type: 'string',
+    },
     embed: {
       type: 'string',
     },

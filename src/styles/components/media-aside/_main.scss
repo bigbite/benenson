@@ -63,10 +63,26 @@
   }
 }
 
+.mediaAside--alignmentRight {
+  flex-direction: column-reverse;
+
+  @include mq(x-small) {
+    flex-direction: row-reverse;
+  }
+}
+
+.mediaAside--alignmentRight .mediaAside-col + .mediaAside-col {
+  @include mq(x-small) {
+    margin-left: 0px;
+    margin-right: flexy-gutter();
+  }
+}
+
 .inlineVideo {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  width: 100%;
 }
 
 .inlineVideo iframe {
