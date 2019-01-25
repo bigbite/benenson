@@ -17,6 +17,7 @@ const {
   SelectControl,
   ToggleControl,
   ColorPicker,
+  Button,
 } = wp.components;
 const { PostMediaSelector } = benenson.components;
 
@@ -168,47 +169,6 @@ registerBlockType('benenson/quote', {
     }],
   },
 
-  deprecated: [
-    {
-      save({ props }) {
-        const {
-          align = '',
-          size = '',
-          colour = '',
-          capitalise = false,
-          lined = true,
-          content = '',
-          citation = '',
-        } = props.attributes;
-
-        const classes = classnames('blockquote', {
-          [`align-${align}`]: !!align,
-          [`is-${size}`]: !!size,
-          [`is-${colour}`]: !!colour,
-          'is-capitalised': capitalise,
-          'is-lined': lined,
-        });
-
-        const quoteStyle = {};
-        if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
-          const {
-            openDoubleQuote,
-            closeDoubleQuote,
-            openSingleQuote,
-            closeSingleQuote,
-          } = window.benensonCoreI18n;
-
-          quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
-        }
-
-        return (<blockquote className={ classes } style={ quoteStyle }>
-          <RichText.Content tagName="p" value={ content } />
-          <RichText.Content tagName="cite" value={ citation } />
-        </blockquote>);
-      },
-    },
-  ],
-
   edit: class extends Component {
     static isRightToLeft = document.documentElement.getAttribute('dir') === 'rtl';
     static hasI18n = Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n');
@@ -265,6 +225,7 @@ registerBlockType('benenson/quote', {
         [`align-${align}`]: !!align,
         [`is-${size}`]: !!size,
         [`is-${colour}`]: !!colour,
+        'is-background': backgroundUrl !== '' || backgroundColor !== '',
         'is-capitalised': capitalise,
         'is-lined': lined,
       });
@@ -349,6 +310,12 @@ registerBlockType('benenson/quote', {
                 onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
                 disableAlpha
               />
+              <Button
+                className="components-button is-button is-default is-large"
+                onClick={ () => setAttributes({ backgroundColor: '' }) }
+              >
+              {__('Remove background colour', 'benenson')}
+              </Button>
             </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
@@ -369,7 +336,7 @@ registerBlockType('benenson/quote', {
             onChange={ newCitation => setAttributes({ citation: newCitation }) }
           /></div>
           <div><RichText
-            tagName="p"
+            tagName="div"
             className="blockquote-subText"
             placeholder={ __('(Insert Subtext)', 'benenson') }
             value={ subText }
@@ -399,7 +366,7 @@ registerBlockType('benenson/quote', {
       [`align-${align}`]: !!align,
       [`is-${size}`]: !!size,
       [`is-${colour}`]: !!colour,
-      'is-background': !!backgroundUrl || !!backgroundColor,
+      'is-background': backgroundUrl !== '' || backgroundColor !== '',
       'is-capitalised': capitalise,
       'is-lined': lined,
     });
@@ -419,7 +386,7 @@ registerBlockType('benenson/quote', {
       quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
     }
 
-    const text = subText !== '' ? <RichText.Content tagName="p" className="blockquote-subText" value={ subText } /> : null;
+    const text = subText !== '' ? <RichText.Content tagName="span" className="blockquote-subText" value={ subText } /> : null;
 
     return (<blockquote className={ classes } style={ quoteStyle }>
       <RichText.Content tagName="p" value={ content } />

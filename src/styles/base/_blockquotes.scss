@@ -5,7 +5,13 @@
   background-position: center;
 }
 
+.blockquote.is-background {
+  padding-top: 40px;
+  margin-top: 45px !important;
+}
+
 .blockquote .blockquote-subText {
+  display: block;
   font-size: 18px!important;
   font-weight: 300;
   font-family: $font-family-primary;
