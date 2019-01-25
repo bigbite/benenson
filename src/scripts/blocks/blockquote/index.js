@@ -53,6 +53,9 @@ registerBlockType('benenson/quote', {
     citation: {
       type: 'string',
     },
+    subText: {
+      type: 'string',
+    },
     backgroundId: {
       type: 'integer',
     },
@@ -211,9 +214,10 @@ registerBlockType('benenson/quote', {
         lined = true,
         content = '',
         citation = '',
+        subText = '',
         backgroundId = null,
         backgroundUrl = '',
-        backgroundColor = '#ffffff',
+        backgroundColor = '',
       } = attributes;
 
       const classes = classnames('blockquote', {
@@ -225,8 +229,8 @@ registerBlockType('benenson/quote', {
       });
 
       const backgroundStyles = {
-        backgroundColor,
-        backgroundImage: `url('${backgroundUrl}')`,
+        backgroundColor: backgroundColor !== '' ? backgroundColor : null,
+        backgroundImage: backgroundUrl !== '' ? `url('${backgroundUrl}')` : null,
       };
 
       const sizeOptions = applyFilters('benenson.block.blockquote.sizeOptions', [{
@@ -288,11 +292,13 @@ registerBlockType('benenson/quote', {
           </PanelBody>
           <PanelBody title={__('Background', 'benenson') }>
             <PostMediaSelector
-              onUpdate={ media =>
-              setAttributes({
-                backgroundUrl: media.source_url,
-                backgroundId: media.id,
-              })}
+              onUpdate={ (media) => {
+                  setAttributes({
+                    backgroundUrl: media ? media.source_url : '',
+                    backgroundId: media ? media.id : null,
+                  });
+                }
+              }
               mediaId={ backgroundId }
             />
           </PanelBody>
@@ -321,6 +327,14 @@ registerBlockType('benenson/quote', {
             keepPlaceholderOnFocus={ true }
             onChange={ newCitation => setAttributes({ citation: newCitation }) }
           /></div>
+          <div><RichText
+            tagName="p"
+            className="blockquote-subText"
+            placeholder={ __('(Insert Subtext)', 'benenson') }
+            value={ subText }
+            keepPlaceholderOnFocus={ true }
+            onChange={ newSubText => setAttributes({ subText: newSubText }) }
+          /></div>
         </div>
       </Fragment>);
     }
@@ -335,21 +349,23 @@ registerBlockType('benenson/quote', {
       lined = true,
       content = '',
       citation = '',
+      subText = '',
       backgroundUrl = '',
-      backgroundColor = '#ffffff',
+      backgroundColor = '',
     } = attributes;
 
     const classes = classnames('blockquote', {
       [`align-${align}`]: !!align,
       [`is-${size}`]: !!size,
       [`is-${colour}`]: !!colour,
+      'is-background': !!backgroundUrl || !!backgroundColor,
       'is-capitalised': capitalise,
       'is-lined': lined,
     });
 
     const quoteStyle = {
-      backgroundColor,
-      backgroundImage: backgroundUrl,
+      backgroundColor: backgroundColor !== '' ? backgroundColor : null,
+      backgroundImage: backgroundUrl !== '' ? `url('${backgroundUrl}')` : null,
     };
     if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
       const {
@@ -362,9 +378,12 @@ registerBlockType('benenson/quote', {
       quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
     }
 
+    const text = subText !== '' ? <RichText.Content tagName="p" className="blockquote-subText" value={ subText } /> : null;
+
     return (<blockquote className={ classes } style={ quoteStyle }>
       <RichText.Content tagName="p" value={ content } />
       <RichText.Content tagName="cite" value={ citation } />
+      {text}
     </blockquote>);
   },
 });

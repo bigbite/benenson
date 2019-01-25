@@ -1,1 +1,13 @@
 // see components/core-blocks/_blockquote.scss
+.blockquote {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blockquote .blockquote-subText {
+  font-size: 18px!important;
+  font-weight: 300;
+  font-family: $font-family-primary;
+  padding: 10px 0 15px 0;
+}
