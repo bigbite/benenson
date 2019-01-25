@@ -16,7 +16,9 @@ const {
   PanelBody,
   SelectControl,
   ToggleControl,
+  ColorPicker,
 } = wp.components;
+const { PostMediaSelector } = benenson.components;
 
 registerBlockType('benenson/quote', {
   title: __('Blockquote', 'benenson'),
@@ -49,6 +51,15 @@ registerBlockType('benenson/quote', {
       type: 'string',
     },
     citation: {
+      type: 'string',
+    },
+    backgroundId: {
+      type: 'integer',
+    },
+    backgroundUrl: {
+      type: 'string',
+    },
+    backgroundColor: {
       type: 'string',
     },
   },
@@ -200,6 +211,9 @@ registerBlockType('benenson/quote', {
         lined = true,
         content = '',
         citation = '',
+        backgroundId = null,
+        backgroundUrl = '',
+        backgroundColor = '#ffffff',
       } = attributes;
 
       const classes = classnames('blockquote', {
@@ -209,6 +223,11 @@ registerBlockType('benenson/quote', {
         'is-capitalised': capitalise,
         'is-lined': lined,
       });
+
+      const backgroundStyles = {
+        backgroundColor,
+        backgroundImage: `url('${backgroundUrl}')`,
+      };
 
       const sizeOptions = applyFilters('benenson.block.blockquote.sizeOptions', [{
         label: __('Small', 'benenson'),
@@ -267,9 +286,26 @@ registerBlockType('benenson/quote', {
             onChange={ newLine => setAttributes({ lined: newLine }) }
           />
           </PanelBody>
+          <PanelBody title={__('Background', 'benenson') }>
+            <PostMediaSelector
+              onUpdate={ media =>
+              setAttributes({
+                backgroundUrl: media.source_url,
+                backgroundId: media.id,
+              })}
+              mediaId={ backgroundId }
+            />
+          </PanelBody>
+          <PanelBody title={__('Background colour', 'benenson') }>
+            <ColorPicker
+                color={ backgroundColor }
+                onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
+                disableAlpha
+              />
+            </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
-        <div className={ classes }>
+        <div className={ classes } style={ backgroundStyles }>
           <div><RichText
             tagName="p"
             placeholder={ __('(Insert Quote Text)', 'benenson') }
@@ -299,6 +335,8 @@ registerBlockType('benenson/quote', {
       lined = true,
       content = '',
       citation = '',
+      backgroundUrl = '',
+      backgroundColor = '#ffffff',
     } = attributes;
 
     const classes = classnames('blockquote', {
@@ -309,7 +347,10 @@ registerBlockType('benenson/quote', {
       'is-lined': lined,
     });
 
-    const quoteStyle = {};
+    const quoteStyle = {
+      backgroundColor,
+      backgroundImage: backgroundUrl,
+    };
     if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
       const {
         openDoubleQuote,
