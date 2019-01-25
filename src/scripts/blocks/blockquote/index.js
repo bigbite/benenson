@@ -168,6 +168,47 @@ registerBlockType('benenson/quote', {
     }],
   },
 
+  deprecated: [
+    {
+      save({ props }) {
+        const {
+          align = '',
+          size = '',
+          colour = '',
+          capitalise = false,
+          lined = true,
+          content = '',
+          citation = '',
+        } = props.attributes;
+
+        const classes = classnames('blockquote', {
+          [`align-${align}`]: !!align,
+          [`is-${size}`]: !!size,
+          [`is-${colour}`]: !!colour,
+          'is-capitalised': capitalise,
+          'is-lined': lined,
+        });
+
+        const quoteStyle = {};
+        if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
+          const {
+            openDoubleQuote,
+            closeDoubleQuote,
+            openSingleQuote,
+            closeSingleQuote,
+          } = window.benensonCoreI18n;
+
+          quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
+        }
+
+        return (<blockquote className={ classes } style={ quoteStyle }>
+          <RichText.Content tagName="p" value={ content } />
+          <RichText.Content tagName="cite" value={ citation } />
+        </blockquote>);
+      },
+    },
+  ],
+
   edit: class extends Component {
     static isRightToLeft = document.documentElement.getAttribute('dir') === 'rtl';
     static hasI18n = Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n');
