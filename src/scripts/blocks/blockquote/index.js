@@ -20,6 +20,29 @@ const {
   Button,
 } = wp.components;
 const { PostMediaSelector } = benenson.components;
+const oldAttributes = {
+  align: {
+    type: 'string',
+  },
+  size: {
+    type: 'string',
+  },
+  colour: {
+    type: 'string',
+  },
+  capitalise: {
+    type: 'boolean',
+  },
+  lined: {
+    type: 'boolean',
+  },
+  content: {
+    type: 'string',
+  },
+  citation: {
+    type: 'string',
+  },
+};
 
 registerBlockType('benenson/quote', {
   title: __('Blockquote', 'benenson'),
@@ -32,28 +55,7 @@ registerBlockType('benenson/quote', {
   supports: {
     className: false,
   },
-  attributes: {
-    align: {
-      type: 'string',
-    },
-    size: {
-      type: 'string',
-    },
-    colour: {
-      type: 'string',
-    },
-    capitalise: {
-      type: 'boolean',
-    },
-    lined: {
-      type: 'boolean',
-    },
-    content: {
-      type: 'string',
-    },
-    citation: {
-      type: 'string',
-    },
+  attributes: assign({}, oldAttributes, {
     subText: {
       type: 'string',
     },
@@ -66,7 +68,7 @@ registerBlockType('benenson/quote', {
     backgroundColor: {
       type: 'string',
     },
-  },
+  }),
 
   transforms: {
     from: [{
@@ -168,6 +170,46 @@ registerBlockType('benenson/quote', {
       }),
     }],
   },
+
+  deprecated: [{
+    attributes: oldAttributes,
+    save({ attributes }) {
+      const {
+        align = '',
+        size = '',
+        colour = '',
+        capitalise = false,
+        lined = true,
+        content = '',
+        citation = '',
+      } = attributes;
+
+      const classes = classnames('blockquote', {
+        [`align-${align}`]: !!align,
+        [`is-${size}`]: !!size,
+        [`is-${colour}`]: !!colour,
+        'is-capitalised': capitalise,
+        'is-lined': lined,
+      });
+
+      const quoteStyle = {};
+      if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
+        const {
+          openDoubleQuote,
+          closeDoubleQuote,
+          openSingleQuote,
+          closeSingleQuote,
+        } = window.benensonCoreI18n;
+
+        quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
+      }
+
+      return (<blockquote className={ classes } style={ quoteStyle }>
+        <RichText.Content tagName="p" value={ content } />
+        <RichText.Content tagName="cite" value={ citation } />
+      </blockquote>);
+    },
+  }],
 
   edit: class extends Component {
     static isRightToLeft = document.documentElement.getAttribute('dir') === 'rtl';
