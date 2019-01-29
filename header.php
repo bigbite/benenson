@@ -16,17 +16,20 @@ if ( is_archive() ) {
 
 $hero_identifier = substr( md5( uniqid( wp_rand(), true ) ), 0, 8 );
 
-$header_style    = benenson_get_meta_field( '_nav_style', $page_id );
-$hero_title      = benenson_get_meta_field( '_hero_title' );
-$hero_content    = benenson_get_meta_field( '_hero_content' );
-$hero_cta_text   = benenson_get_meta_field( '_hero_cta_text' );
-$hero_cta_link   = benenson_get_meta_field( '_hero_cta_link' );
-$hero_alignment  = benenson_get_meta_field( '_hero_alignment' ) ?: 'left';
-$hero_background = benenson_get_meta_field( '_hero_background', $page_id );
-$hero_size       = benenson_get_meta_field( '_hero_size', $page_id );
-$hero_type       = benenson_get_meta_field( '_hero_type', $page_id );
-$hero_video_id   = benenson_get_meta_field( '_hero_video_id', $page_id );
-$hero_embed      = benenson_get_meta_field( '_hero_embed', $page_id );
+$header_style      = benenson_get_meta_field( '_nav_style', $page_id );
+$hero_title        = benenson_get_meta_field( '_hero_title' );
+$hero_content      = benenson_get_meta_field( '_hero_content' );
+$hero_cta_text     = benenson_get_meta_field( '_hero_cta_text' );
+$hero_cta_link     = benenson_get_meta_field( '_hero_cta_link' );
+$hero_cta_two_text = benenson_get_meta_field( '_hero_cta_two_text' );
+$hero_cta_two_link = benenson_get_meta_field( '_hero_cta_two_link' );
+$hero_bleed        = benenson_get_meta_field( '_hero_bleed' ) ? 'page-heroStyle--behindNav' : '';
+$hero_alignment    = benenson_get_meta_field( '_hero_alignment' ) ?: 'left';
+$hero_background   = benenson_get_meta_field( '_hero_background', $page_id );
+$hero_size         = benenson_get_meta_field( '_hero_size', $page_id );
+$hero_type         = benenson_get_meta_field( '_hero_type', $page_id );
+$hero_video_id     = benenson_get_meta_field( '_hero_video_id', $page_id );
+$hero_embed        = benenson_get_meta_field( '_hero_embed', $page_id );
 
 $hero_show = false;
 $media_lg  = false;
@@ -130,7 +133,7 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 		}
 	</style>
 	<?php endif; ?>
-<section id="hero-<?php echo esc_html( $hero_identifier ); ?>" class="page-hero <?php 'video' === $hero_type && print 'page-hero--video'; ?> page-heroSize--<?php echo esc_attr( $hero_size ); ?> page-heroBackground--<?php echo esc_attr( $hero_background ); ?> page-heroAlignment--<?php echo esc_attr( $hero_alignment ); ?>" role="region" <?php ( $hero_title || is_archive() ) && print 'aria-labelledby="herotitle"'; ?>>
+<section id="hero-<?php echo esc_html( $hero_identifier ); ?>" class="page-hero <?php 'video' === $hero_type && print 'page-hero--video'; ?> page-heroSize--<?php echo esc_attr( $hero_size ); ?> page-heroBackground--<?php echo esc_attr( $hero_background ); ?> page-heroAlignment--<?php echo esc_attr( $hero_alignment ); ?> <?php echo esc_attr( $hero_bleed ); ?>" role="region" <?php ( $hero_title || is_archive() ) && print 'aria-labelledby="herotitle"'; ?>>
 	<?php
 	if ( 'video' === $hero_type && $hero_video_id ) :
 		$source = wp_get_attachment_url( $hero_video_id );
@@ -152,9 +155,14 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 		<?php if ( is_archive() && $object->description ) : ?>
 			<p class="page-heroContent"><?php echo wp_kses_post( $object->description ); ?></p>
 		<?php endif; ?>
-		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
+		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || $hero_cta_two_text && $hero_cta_two_link ) : ?>
 			<div class="page-heroCta">
-				<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>
+				<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
+					<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>
+				<?php endif; ?>
+				<?php if ( $hero_cta_two_text && $hero_cta_two_link ) : ?>
+					<a <?php printf( 'href="%s"', esc_url( $hero_cta_two_link ) ); ?> class="btn"><?php echo esc_html( wp_strip_all_tags( $hero_cta_two_text ) ); ?></a>
+				<?php endif; ?>
 			</div>
 		<?php endif; ?>
 		</div>
@@ -177,9 +185,14 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 		<?php if ( is_archive() && $object->description ) : ?>
 			<p class="page-heroContent"><?php echo wp_kses_post( $object->description ); ?></p>
 		<?php endif; ?>
-		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
+		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || $hero_cta_two_text && $hero_cta_two_link ) : ?>
 			<div class="page-heroCta">
-				<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>
+				<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
+					<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>
+				<?php endif; ?>
+				<?php if ( $hero_cta_two_text && $hero_cta_two_link ) : ?>
+					<a <?php printf( 'href="%s"', esc_url( $hero_cta_two_link ) ); ?> class="btn"><?php echo esc_html( wp_strip_all_tags( $hero_cta_two_text ) ); ?></a>
+				<?php endif; ?>
 			</div>
 		<?php endif; ?>
 		</div>

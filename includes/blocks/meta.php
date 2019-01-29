@@ -22,12 +22,15 @@ if ( ! function_exists( 'benenson_register_meta' ) ) {
 		register_meta( 'post', '_hero_content', $args );
 		register_meta( 'post', '_hero_cta_text', $args );
 		register_meta( 'post', '_hero_cta_link', $args );
+		register_meta( 'post', '_hero_cta_two_text', $args );
+		register_meta( 'post', '_hero_cta_two_link', $args );
 		register_meta( 'post', '_hero_alignment', $args );
 		register_meta( 'post', '_hero_background', $args );
 		register_meta( 'post', '_hero_size', $args );
 		register_meta( 'post', '_hero_show', $args );
 		register_meta( 'post', '_hero_type', $args );
 		register_meta( 'post', '_hero_embed', $args );
+		register_meta( 'post', '_hero_bleed', array_merge( $args, [ 'type' => 'boolean' ] ) );
 		register_meta( 'post', '_hero_video_id', array_merge( $args, [ 'type' => 'integer' ] ) );
 		register_meta( 'post', '_hide_featured_image', array_merge( $args, [ 'type' => 'boolean' ] ) );
 		register_meta( 'post', '_stretch_thumbnail', array_merge( $args, [ 'type' => 'boolean' ] ) );

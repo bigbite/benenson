@@ -47,6 +47,10 @@ p.page-heroContent {
   min-height: 450px;
 }
 
+.page-heroSize--fullHeight {
+  min-height: 100vh;
+}
+
 .page-heroBackground--dark .page-heroContent,
 .page-heroBackground--dark .page-heroCta,
 .page-heroBackground--dark .page-heroTitle {
@@ -182,4 +186,5 @@ p.page-heroContent {
 .page-heroCta .btn {
   display: flex;
   align-items: center;
+  height: 55px;
 }

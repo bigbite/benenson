@@ -64,6 +64,21 @@ registerBlockType('benenson/block-hero', {
       source: 'meta',
       meta: '_hero_video_id',
     },
+    bleed: {
+      type: 'boolean',
+      source: 'meta',
+      meta: '_hero_bleed',
+    },
+    ctaTwoLink: {
+      type: 'string',
+      source: 'meta',
+      meta: '_hero_cta_two_link',
+    },
+    ctaTwoText: {
+      type: 'string',
+      source: 'meta',
+      meta: '_hero_cta_two_text',
+    },
   },
   edit: DisplayComponent,
 

@@ -84,10 +84,18 @@ p.page-heroContent {
   }
 }
 
+.page-heroCta .btn + .btn {
+  margin-left: 15px;
+}
+
 .page-heroSize--small {
   @include mq(small) {
     min-height: 450px;
   }
+}
+
+.page-heroSize--fullHeight {
+  min-height: 100vh;
 }
 
 .page-heroBackground--dark .page-heroContent,
