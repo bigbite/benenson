@@ -54,6 +54,10 @@
   color: $color-black;
 }
 
+body.page--heroBehindNav .page-header {
+  background-color: transparent;
+}
+
 .page-headerSearch {
   position: relative;
   display: flex;

@@ -68,7 +68,7 @@ class DisplayComponent extends Component {
       [`page-heroSize--${attributes.size}`]: attributes.size || false,
       [`page-heroBackground--${attributes.background}`]: attributes.background || false,
       [`page-heroAlignment--${attributes.alignment}`]: attributes.alignment || false,
-      ['page-heroStyle--behindNav']: attributes.bleed,
+      'page-heroStyle--behindNav': attributes.bleed,
       'page-hero--video': attributes.type === 'video',
     });
 
