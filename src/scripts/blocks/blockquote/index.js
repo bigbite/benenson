@@ -68,6 +68,12 @@ registerBlockType('benenson/quote', {
     backgroundColor: {
       type: 'string',
     },
+    logoId: {
+      tyoe: 'string',
+    },
+    logoUrl: {
+      type: 'string',
+    },
   }),
 
   transforms: {
@@ -261,6 +267,8 @@ registerBlockType('benenson/quote', {
         backgroundId = null,
         backgroundUrl = '',
         backgroundColor = '',
+        logoId = null,
+        logoUrl = '',
       } = attributes;
 
       const classes = classnames('blockquote', {
@@ -300,6 +308,15 @@ registerBlockType('benenson/quote', {
         value: 'white',
       }]);
 
+      const heading = logoUrl ? <img className="blockquote-image" src={ logoUrl } /> :
+      <RichText
+        tagName="cite"
+        placeholder={ __('(Insert Citation)', 'benenson') }
+        value={ citation }
+        keepPlaceholderOnFocus={ true }
+        onChange={ newCitation => setAttributes({ citation: newCitation }) }
+      />;
+
       return (<Fragment>
         <InspectorControls>
           <PanelBody>
@@ -333,6 +350,19 @@ registerBlockType('benenson/quote', {
             checked={ lined }
             onChange={ newLine => setAttributes({ lined: newLine }) }
           />
+          </PanelBody>
+          <PanelBody title={__('Image citation', 'benenson') }>
+            <p>This will override any citation text.</p>
+            <PostMediaSelector
+              onUpdate={ (media) => {
+                  setAttributes({
+                    logoUrl: media ? media.source_url : '',
+                    logoId: media ? media.id : null,
+                  });
+                }
+              }
+              mediaId={ logoId }
+            />
           </PanelBody>
           <PanelBody title={__('Background', 'benenson') }>
             <PostMediaSelector
@@ -370,13 +400,9 @@ registerBlockType('benenson/quote', {
             keepPlaceholderOnFocus={ true }
             onChange={ newContent => setAttributes({ content: newContent }) }
           /></div>
-          <div><RichText
-            tagName="cite"
-            placeholder={ __('(Insert Citation)', 'benenson') }
-            value={ citation }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newCitation => setAttributes({ citation: newCitation }) }
-          /></div>
+          <div>
+              { heading }
+          </div>
           <div><RichText
             tagName="div"
             className="blockquote-subText"
@@ -402,6 +428,7 @@ registerBlockType('benenson/quote', {
       subText = '',
       backgroundUrl = '',
       backgroundColor = '',
+      logoUrl = '',
     } = attributes;
 
     const classes = classnames('blockquote', {
@@ -429,11 +456,12 @@ registerBlockType('benenson/quote', {
     }
 
     const text = subText !== '' ? <RichText.Content tagName="span" className="blockquote-subText" value={ subText } /> : null;
+    const citationElement = logoUrl !== '' ? <img className="blockquote-image" src={ logoUrl } /> : <RichText.Content tagName="cite" value={ citation } />;
 
     return (<blockquote className={ classes } style={ quoteStyle }>
       <RichText.Content tagName="p" value={ content } />
-      <RichText.Content tagName="cite" value={ citation } />
-      {text}
+      { citationElement }
+      { text }
     </blockquote>);
   },
 });

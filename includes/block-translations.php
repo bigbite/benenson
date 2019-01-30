@@ -16,7 +16,7 @@ $generated_i18n_strings = array(
 	__( 'Wide', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:62
-	// Reference: src/scripts/blocks/blockquote/index.js:271
+	// Reference: src/scripts/blocks/blockquote/index.js:330
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:134
 	// Reference: src/scripts/blocks/tweet/index.js:91
 	__( 'Size', 'benenson' ),
@@ -67,14 +67,14 @@ $generated_i18n_strings = array(
 	__( 'Global', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:39
-	// Reference: src/scripts/blocks/blockquote/index.js:257
+	// Reference: src/scripts/blocks/blockquote/index.js:307
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
 	__( 'White', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
-	// Reference: src/scripts/blocks/blockquote/index.js:251
+	// Reference: src/scripts/blocks/blockquote/index.js:301
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:98
 	__( 'Black', 'benenson' ),
 
@@ -134,7 +134,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/appearance-options/index.js:98
 	__( 'Sidebar', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:179
+	// Reference: src/scripts/blocks/blockquote/index.js:227
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:76
 	// Reference: src/scripts/blocks/image/BlockEdit.js:201
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:41
@@ -142,13 +142,13 @@ $generated_i18n_strings = array(
 	/* translators: text alignment. for RTL languages, localise as 'Right' */
 	__( 'Left', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:180
+	// Reference: src/scripts/blocks/blockquote/index.js:228
 	// Reference: src/scripts/blocks/image/BlockEdit.js:197
 	// Reference: src/scripts/blocks/section/index.js:53
 	// Reference: src/scripts/blocks/tweet/index.js:26
 	__( 'Default', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:185
+	// Reference: src/scripts/blocks/blockquote/index.js:233
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/image/BlockEdit.js:208
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:47
@@ -156,27 +156,24 @@ $generated_i18n_strings = array(
 	/* translators: text alignment. for RTL languages, localise as 'Left' */
 	__( 'Right', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:239
+	// Reference: src/scripts/blocks/blockquote/index.js:289
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:114
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:60
 	__( 'Small', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:242
+	// Reference: src/scripts/blocks/blockquote/index.js:292
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:226
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:142
 	__( 'Medium', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:245
+	// Reference: src/scripts/blocks/blockquote/index.js:295
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:229
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:145
 	__( 'Large', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:25
-	__( 'Blockquote', 'benenson' ),
-
-	// Reference: src/scripts/blocks/blockquote/index.js:254
+	// Reference: src/scripts/blocks/blockquote/index.js:304
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:29
 	// Reference: src/scripts/blocks/key-facts/index.js:53
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
@@ -186,46 +183,52 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/section/index.js:27
 	__( 'Grey', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:26
-	__( 'Add a blockquote block', 'benenson' ),
+	// Reference: src/scripts/blocks/blockquote/index.js:314
+	__( '(Insert Citation)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:265
+	// Reference: src/scripts/blocks/blockquote/index.js:324
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:122
 	// Reference: src/scripts/blocks/image/BlockEdit.js:220
 	__( 'Alignment', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:277
+	// Reference: src/scripts/blocks/blockquote/index.js:336
 	__( 'Text Colour', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:283
+	// Reference: src/scripts/blocks/blockquote/index.js:342
 	__( 'Capitalise', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:284
+	// Reference: src/scripts/blocks/blockquote/index.js:343
 	__( 'Capitalise the content.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:289
+	// Reference: src/scripts/blocks/blockquote/index.js:348
 	__( 'Line', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:290
+	// Reference: src/scripts/blocks/blockquote/index.js:349
 	__( 'Toggle display of line embellishment.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:295
+	// Reference: src/scripts/blocks/blockquote/index.js:354
+	__( 'Image citation', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:367
 	__( 'Background', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:307
+	// Reference: src/scripts/blocks/blockquote/index.js:379
 	__( 'Background colour', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:317
+	// Reference: src/scripts/blocks/blockquote/index.js:389
 	__( 'Remove background colour', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:325
+	// Reference: src/scripts/blocks/blockquote/index.js:397
 	__( '(Insert Quote Text)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:333
-	__( '(Insert Citation)', 'benenson' ),
-
-	// Reference: src/scripts/blocks/blockquote/index.js:341
+	// Reference: src/scripts/blocks/blockquote/index.js:409
 	__( '(Insert Subtext)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:48
+	__( 'Blockquote', 'benenson' ),
+
+	// Reference: src/scripts/blocks/blockquote/index.js:49
+	__( 'Add a blockquote block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:34
 	__( 'Primary (Yellow)', 'benenson' ),

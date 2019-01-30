@@ -6,8 +6,12 @@
 }
 
 .blockquote.is-background {
-  padding-top: 40px;
+  padding: 35px;
   margin-top: 45px !important;
+}
+
+.blockquote.blockquote.is-background:not(.align-end):not(.align-start) {
+  padding: 55px 35px 20px 35px;
 }
 
 .blockquote .blockquote-subText {
@@ -16,4 +20,9 @@
   font-weight: 300;
   font-family: $font-family-primary;
   padding: 10px 0 15px 0;
+}
+
+.blockquote .blockquote-image {
+  max-height: 40px;
+  margin-top: 10px;
 }
