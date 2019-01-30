@@ -123,6 +123,11 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 					}
 					?>
 					</div>
+					<?php
+					if ( $attributes['bullets'] ) {
+						printf( '<div class="page-heroBullets"><div><ul><%s</ul></div></div>', wp_kses_post( $attributes['bullets'] ) );
+					}
+					?>
 				</div>
 			</div>
 		</section>

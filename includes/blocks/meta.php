@@ -30,6 +30,7 @@ if ( ! function_exists( 'benenson_register_meta' ) ) {
 		register_meta( 'post', '_hero_show', $args );
 		register_meta( 'post', '_hero_type', $args );
 		register_meta( 'post', '_hero_embed', $args );
+		register_meta( 'post', '_hero_bullets', $args );
 		register_meta( 'post', '_hero_bleed', array_merge( $args, [ 'type' => 'boolean' ] ) );
 		register_meta( 'post', '_hero_video_id', array_merge( $args, [ 'type' => 'integer' ] ) );
 		register_meta( 'post', '_hide_featured_image', array_merge( $args, [ 'type' => 'boolean' ] ) );

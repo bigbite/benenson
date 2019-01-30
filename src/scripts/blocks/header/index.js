@@ -79,6 +79,11 @@ registerBlockType('benenson/block-hero', {
       source: 'meta',
       meta: '_hero_cta_two_text',
     },
+    bullets: {
+      type: 'string',
+      source: 'meta',
+      meta: '_hero_bullets',
+    },
   },
   edit: DisplayComponent,
 

@@ -88,6 +88,12 @@ p.page-heroContent {
   margin-left: 15px;
 }
 
+.page-heroBullets > div {
+  display: inline-block;
+  background-color: rgba($color-black, .45);
+  padding: 10px 20px 20px;
+}
+
 .page-heroSize--small {
   @include mq(small) {
     min-height: 450px;
@@ -100,7 +106,8 @@ p.page-heroContent {
 
 .page-heroBackground--dark .page-heroContent,
 .page-heroBackground--dark .page-heroCta,
-.page-heroBackground--dark .page-heroTitle span {
+.page-heroBackground--dark .page-heroTitle span,
+.page-heroBackground--dark .page-heroBullets > div {
   background-color: $color-black;
 }
 
@@ -114,7 +121,8 @@ p.page-heroContent {
 
 .page-heroBackground--light .page-heroContent,
 .page-heroBackground--light .page-heroCta,
-.page-heroBackground--light .page-heroTitle span {
+.page-heroBackground--light .page-heroTitle span,
+.page-heroBackground--light .page-heroBullets > div {
   background-color: $color-white;
   color: $color-black;
 }
@@ -141,7 +149,8 @@ p.page-heroContent {
 .page-heroBackground--none .page-heroContent,
 .page-heroBackground--none .page-heroCta,
 .page-heroBackground--none .page-heroTitle,
-.page-heroBackground--none .page-heroTitle span {
+.page-heroBackground--none .page-heroTitle span,
+.page-heroBackground--none .page-heroBullets > div {
   padding-left: 0;
   padding-right: 0;
   color: $color-white;

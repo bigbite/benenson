@@ -228,6 +228,18 @@ class DisplayComponent extends Component {
                 />
               </div>
             </div>
+            <div className="page-heroBullets">
+              <div>
+                <RichText
+                  tagName="ul"
+                  multiline="li"
+                  value={ attributes.bullets }
+                  placeholder={ __('(Bullets)', 'benenson') }
+                  keepPlaceholderOnFocus={ true }
+                  onChange={ this.createUpdateAttribute('bullets') }
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

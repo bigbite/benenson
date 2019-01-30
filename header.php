@@ -23,6 +23,7 @@ $hero_cta_text     = benenson_get_meta_field( '_hero_cta_text' );
 $hero_cta_link     = benenson_get_meta_field( '_hero_cta_link' );
 $hero_cta_two_text = benenson_get_meta_field( '_hero_cta_two_text' );
 $hero_cta_two_link = benenson_get_meta_field( '_hero_cta_two_link' );
+$hero_bullets      = benenson_get_meta_field( '_hero_bullets' );
 $hero_bleed        = benenson_get_meta_field( '_hero_bleed' ) ? 'page-heroStyle--behindNav' : '';
 $hero_alignment    = benenson_get_meta_field( '_hero_alignment' ) ?: 'left';
 $hero_background   = benenson_get_meta_field( '_hero_background', $page_id );
@@ -165,6 +166,9 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
+		<?php if ( $hero_bullets ) :
+			printf( '<div class="page-heroBullets"><div><ul>%s</ul></div></div>', wp_kses_post( $hero_bullets ) );
+		endif; ?>
 		</div>
 	</div>
 
@@ -195,6 +199,9 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
+		<?php if ( $hero_bullets ) :
+			printf( '<div class="page-heroBullets"><div><ul>%s</ul></div></div>', wp_kses_post( $hero_bullets ) );
+		endif; ?>
 		</div>
 	</div>
 </section>

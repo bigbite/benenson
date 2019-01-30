@@ -504,6 +504,10 @@ msgstr ""
 msgid "(Call to action)"
 msgstr ""
 
+#: src/scripts/blocks/header/DisplayComponent.js:237
+msgid "(Bullets)"
+msgstr ""
+
 #: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/slider/DisplayComponent.js:40
