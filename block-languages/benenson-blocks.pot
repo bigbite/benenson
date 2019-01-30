@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:62
 #: src/scripts/blocks/blockquote/index.js:246
-#: src/scripts/blocks/header/DisplayComponent.js:137
+#: src/scripts/blocks/header/DisplayComponent.js:138
 #: src/scripts/blocks/tweet/index.js:91
 msgid "Size"
 msgstr ""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
 #: src/scripts/blocks/blockquote/index.js:232
-#: src/scripts/blocks/header/DisplayComponent.js:95
+#: src/scripts/blocks/header/DisplayComponent.js:96
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:49
 msgid "White"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
 #: src/scripts/blocks/blockquote/index.js:226
-#: src/scripts/blocks/header/DisplayComponent.js:98
+#: src/scripts/blocks/header/DisplayComponent.js:99
 msgid "Black"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
-#: src/scripts/blocks/header/DisplayComponent.js:123
+#: src/scripts/blocks/header/DisplayComponent.js:124
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:96
@@ -173,7 +173,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
 #: src/scripts/blocks/blockquote/index.js:164
-#: src/scripts/blocks/header/DisplayComponent.js:76
+#: src/scripts/blocks/header/DisplayComponent.js:77
 #: src/scripts/blocks/image/BlockEdit.js:201
 #: src/scripts/blocks/link/DisplayComponent.js:41
 #: src/scripts/blocks/slider/DisplayComponent.js:37
@@ -189,7 +189,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Left'
 #: src/scripts/blocks/blockquote/index.js:170
-#: src/scripts/blocks/header/DisplayComponent.js:83
+#: src/scripts/blocks/header/DisplayComponent.js:84
 #: src/scripts/blocks/image/BlockEdit.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:47
 #: src/scripts/blocks/slider/DisplayComponent.js:44
@@ -197,7 +197,7 @@ msgid "Right"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:214
-#: src/scripts/blocks/header/DisplayComponent.js:117
+#: src/scripts/blocks/header/DisplayComponent.js:118
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
 #: src/scripts/blocks/section/DisplayComponent.js:60
@@ -236,7 +236,7 @@ msgid "Add a blockquote block"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:240
-#: src/scripts/blocks/header/DisplayComponent.js:125
+#: src/scripts/blocks/header/DisplayComponent.js:126
 #: src/scripts/blocks/image/BlockEdit.js:220
 msgid "Alignment"
 msgstr ""
@@ -431,26 +431,26 @@ msgstr ""
 msgid "Edit File"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:103
+#: src/scripts/blocks/header/DisplayComponent.js:104
 #: src/scripts/blocks/image/BlockEdit.js:389
 msgid "Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:106
+#: src/scripts/blocks/header/DisplayComponent.js:107
 #: src/scripts/blocks/image/BlockEdit.js:392
 msgid "Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:111
+#: src/scripts/blocks/header/DisplayComponent.js:112
 #: src/scripts/blocks/section/DisplayComponent.js:68
 msgid "Normal"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:114
+#: src/scripts/blocks/header/DisplayComponent.js:115
 msgid "Full height"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:131
+#: src/scripts/blocks/header/DisplayComponent.js:132
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 #: src/scripts/blocks/logo-list/BlockEdit.js:67
@@ -459,62 +459,62 @@ msgstr ""
 msgid "Background Colour"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:143
+#: src/scripts/blocks/header/DisplayComponent.js:144
 #: src/scripts/blocks/image/BlockEdit.js:387
 msgid "Background Type"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:149
+#: src/scripts/blocks/header/DisplayComponent.js:150
 #: src/scripts/blocks/media-aside/DisplayComponent.js:52
 msgid "Embed url"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:153
+#: src/scripts/blocks/header/DisplayComponent.js:154
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:155
+#: src/scripts/blocks/header/DisplayComponent.js:156
 msgid "Bleed into navigation/header"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:160
+#: src/scripts/blocks/header/DisplayComponent.js:161
 #: src/scripts/blocks/section/DisplayComponent.js:105
 msgid "Background Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:160
+#: src/scripts/blocks/header/DisplayComponent.js:161
 msgid "Featured Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:163
+#: src/scripts/blocks/header/DisplayComponent.js:164
 msgid "Featured Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:185
+#: src/scripts/blocks/header/DisplayComponent.js:186
 msgid "(Header Title)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:194
+#: src/scripts/blocks/header/DisplayComponent.js:195
 msgid "(Header Content)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:219
+#: src/scripts/blocks/header/DisplayComponent.js:220
 msgid "(Call to action)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:79
+#: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/BlockEdit.js:205
 #: src/scripts/blocks/slider/DisplayComponent.js:40
 msgid "Centre"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:89
+#: src/scripts/blocks/header/DisplayComponent.js:90
 msgid "Translucent black"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:92
+#: src/scripts/blocks/header/DisplayComponent.js:93
 #: src/scripts/blocks/key-facts/index.js:50
 #: src/scripts/blocks/link/DisplayComponent.js:30
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:57

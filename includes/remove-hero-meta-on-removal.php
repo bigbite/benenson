@@ -23,6 +23,9 @@ if ( ! function_exists( 'benenson_remove_hero_meta' ) ) {
 			'_hero_content',
 			'_hero_cta_text',
 			'_hero_title',
+			'_hero_cta_two_link',
+			'_hero_cta_two_text',
+			'_hero_bleed',
 		];
 
 		foreach ( $meta_to_remove as $meta_key ) {
