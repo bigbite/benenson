@@ -403,6 +403,42 @@ msgstr ""
 msgid "Row Column"
 msgstr ""
 
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:32
+msgid "Date/Time"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:39
+msgid "Background color"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
+msgid "Remove background colour"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:52
+msgid "Background image"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:71
+#: src/scripts/blocks/key-facts/fact.js:30
+#: src/scripts/blocks/key-facts/index.js:79
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
+#: src/scripts/blocks/media-aside/DisplayComponent.js:83
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:30
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
+msgid "(Insert Title)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/index.js:17
+msgid "Countdown timer"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/index.js:18
+msgid "Set a future date to countdown to."
+msgstr ""
+
 #: src/scripts/blocks/download/index.js:12
 msgid "Resource Download"
 msgstr ""
@@ -644,17 +680,6 @@ msgstr ""
 
 #: src/scripts/blocks/image/index.js:76
 msgid "Add a flexible image block with optional overlay"
-msgstr ""
-
-#: src/scripts/blocks/key-facts/fact.js:30
-#: src/scripts/blocks/key-facts/index.js:79
-#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
-#: src/scripts/blocks/media-aside/DisplayComponent.js:83
-#: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
-msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
