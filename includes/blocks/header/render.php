@@ -19,9 +19,9 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 			$attributes['alignment'] = 'left';
 		}
 
-		$size       = ! empty( $attributes['size'] ) ? $attributes['size'] : '';
-		$alignment  = ! empty( $attributes['alignment'] ) ? $attributes['alignment'] : '';
-		$bleed = ! empty( $attributes['bleed'] ) ? 'page-heroStyle--behindNav' : '';
+		$size      = ! empty( $attributes['size'] ) ? $attributes['size'] : '';
+		$alignment = ! empty( $attributes['alignment'] ) ? $attributes['alignment'] : '';
+		$bleed     = ! empty( $attributes['bleed'] ) ? 'page-heroStyle--behindNav' : '';
 
 		$classlist = [
 			'page-hero',

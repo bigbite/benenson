@@ -166,9 +166,11 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
-		<?php if ( $hero_bullets ) :
+		<?php
+		if ( $hero_bullets ) :
 			printf( '<div class="page-heroBullets"><div><ul>%s</ul></div></div>', wp_kses_post( $hero_bullets ) );
-		endif; ?>
+		endif;
+		?>
 		</div>
 	</div>
 
@@ -199,9 +201,11 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
-		<?php if ( $hero_bullets ) :
+		<?php
+		if ( $hero_bullets ) :
 			printf( '<div class="page-heroBullets"><div><ul>%s</ul></div></div>', wp_kses_post( $hero_bullets ) );
-		endif; ?>
+		endif;
+		?>
 		</div>
 	</div>
 </section>
