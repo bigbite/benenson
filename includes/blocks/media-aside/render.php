@@ -25,7 +25,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		spaceless();
 		?>
 
-		<div class="mediaAside mediaAside--alignment<?php echo $alignment; ?>">
+		<div class="mediaAside mediaAside--alignment<?php echo esc_attr( $alignment ); ?>">
 			<div class="mediaAside-col">
 			<?php
 			if ( ! empty( $attributes['mediaId'] ) && ! empty( $video_url ) ) {
