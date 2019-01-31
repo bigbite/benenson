@@ -28,6 +28,7 @@ import './blocks/category-list';
 import './blocks/logo-list';
 import './blocks/link';
 import './blocks/media-aside';
+import './blocks/google-map';
 
 wp.blocks.registerBlockStyle('core/table', {
   name: 'responsive',

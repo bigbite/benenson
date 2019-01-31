@@ -71,6 +71,7 @@
     "postcss-scss": "^1.0.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-google-maps": "^9.4.5",
     "react-select": "^2.0.0",
     "sass-module-importer": "^1.4.0",
     "sass-mq": "^3.3.2",

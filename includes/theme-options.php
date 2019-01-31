@@ -54,6 +54,8 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 
 		register_setting( 'theme_options', '_analytics_gtm', $text_field_args );
 		register_setting( 'theme_options', '_analytics_ga', $text_field_args );
+
+		register_setting( 'theme_options', '_google_maps_api_key', $text_field_args );
 	}
 }
 
@@ -259,6 +261,23 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 			 * Fires at the end of the table wrapper for analytics settings.
 			 */
 			do_action( 'benenson_settings_analytics' );
+			?>
+		</table>
+
+		<h2><?php esc_html_e( 'API Keys', 'benenson' ); ?></h2>
+		<table class="form-table benenson-theme-options-table">
+			<tr valign="top">
+				<th scope="row"><?php esc_html_e( 'Google Maps', 'benenson' ); ?></th>
+				<td>
+					<?php $value = benenson_get_option( '_google_maps_api_key', '' ); ?>
+					<input type="text" name="_google_maps_api_key" value="<?php echo esc_textarea( $value ); ?>" placeholder="fP32qvBgSLBkQZj10Kt5sIT0FG1ANZRu1auNBtu" />
+				</td>
+			</tr>
+			<?php
+			/**
+			 * Fires at the end of the table wrapper for API keys settings.
+			 */
+			do_action( 'benenson_settings_api_keys' );
 			?>
 		</table>
 

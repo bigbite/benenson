@@ -12,6 +12,7 @@ require_once __DIR__ . '/download/render.php';
 require_once __DIR__ . '/header/render.php';
 require_once __DIR__ . '/category-list/render.php';
 require_once __DIR__ . '/media-aside/render.php';
+require_once __DIR__ . '/google-map/render.php';
 
 
 /**
@@ -54,6 +55,11 @@ if ( ! function_exists( 'benenson_register_php_rendered_blocks' ) ) {
 
 		register_block_type( 'benenson/media-aside', [
 			'render_callback' => 'benenson_render_media_aside_block',
+			'editor_script'   => 'benenson-blocks-js',
+		] );
+
+		register_block_type( 'benenson/google-map', [
+			'render_callback' => 'benenson_render_google_map_block',
 			'editor_script'   => 'benenson-blocks-js',
 		] );
 	}
