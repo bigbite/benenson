@@ -1,12 +1,14 @@
+import classnames from 'classnames';
+
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const {
   InspectorControls, RichText,
 } = wp.editor;
 const {
-  PanelBody, Button, DateTimePicker, ColorPicker,
+  PanelBody, Button, DateTimePicker, ColorPicker, SelectControl,
 } = wp.components;
-
+const { applyFilters } = wp.hooks;
 const { PostMediaSelector } = benenson.components;
 
 class DisplayComponent extends Component {
@@ -18,20 +20,38 @@ class DisplayComponent extends Component {
       backgroundColor = '',
       backgroundId = null,
       backgroundUrl = '',
-
+      textColor = '',
     } = attributes;
+
+    const colourOptions = applyFilters('benenson.block.blockCountdown.colorOptions', [{
+      label: __('White', 'benenson'),
+      value: '',
+    }, {
+      label: __('Black', 'benenson'),
+      value: 'black',
+    }]);
 
     const styles = {
       backgroundImage: `url('${backgroundUrl}')`,
       backgroundColor,
     };
 
+    const classes = classnames('countdownTimer', {
+      [`is-${textColor}`]: !!textColor,
+    });
+
     return (
       <Fragment>
         <InspectorControls>
-          <PanelBody title={ __('Date/Time', 'benenson') }>
+          <PanelBody title={ __('Options', 'benenson') }>
+            <SelectControl
+              label={ __('Text color', 'benenson') }
+              value={ textColor }
+              onChange={ color => setAttributes({ textColor: color }) }
+              options={ colourOptions }
+            />
             <DateTimePicker
-              currentDate={ attributes.date }
+              currentDate={ date }
               onChange={ newDate => setAttributes({ date: newDate }) }
               // is12Hour={ is12HourTime }
             />
@@ -46,7 +66,7 @@ class DisplayComponent extends Component {
               className="components-button is-button is-default is-large"
               onClick={ () => setAttributes({ backgroundColor: '' }) }
             >
-            {__('Remove background colour', 'benenson')}
+            {__('Remove background color', 'benenson')}
             </Button>
           </PanelBody>
           <PanelBody title={ __('Background image', 'benenson') }>
@@ -62,7 +82,7 @@ class DisplayComponent extends Component {
             />
           </PanelBody>
         </InspectorControls>
-        <div className="countdownTimer" style={ styles }>
+        <div className={ classes } style={ styles }>
           <RichText
             tagName="h2"
             className="countdownTimer-title"

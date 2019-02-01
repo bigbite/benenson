@@ -48,3 +48,8 @@
 .countdownTimer-items .countdownTimer-item + .countdownTimer-item {
   margin-left: 10px;
 }
+
+.countdownTimer.is-black,
+.countdownTimer.is-black .countdownTimer-title {
+  color: $color-black;
+}

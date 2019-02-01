@@ -68,6 +68,8 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:39
 	// Reference: src/scripts/blocks/blockquote/index.js:232
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
@@ -75,6 +77,8 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
 	// Reference: src/scripts/blocks/blockquote/index.js:226
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:98
 	__( 'Black', 'benenson' ),
 
@@ -98,10 +102,12 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:120
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:96
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:44
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:215
@@ -317,48 +323,46 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/columns/row-column.js:9
 	__( 'Row Column', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:32
-	__( 'Date/Time', 'benenson' ),
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:101
+	// Reference: src/scripts/blocks/countdown-timer/index.js:72
+	__( 'Hours', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:39
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:104
+	// Reference: src/scripts/blocks/countdown-timer/index.js:75
+	__( 'Minutes', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:107
+	// Reference: src/scripts/blocks/countdown-timer/index.js:78
+	__( 'Seconds', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:48
+	__( 'Text color', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:59
 	__( 'Background color', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
-	__( 'Remove background colour', 'benenson' ),
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:69
+	__( 'Remove background color', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:52
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:72
 	__( 'Background image', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:71
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:79
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:89
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:85
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 	__( '(Insert Title)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:78
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:79
-	// Reference: src/scripts/blocks/countdown-timer/index.js:63
-	__( 'Days', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:81
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:83
-	// Reference: src/scripts/blocks/countdown-timer/index.js:66
-	__( 'Hours', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:84
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:98
 	// Reference: src/scripts/blocks/countdown-timer/index.js:69
-	__( 'Minutes', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:87
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/countdown-timer/index.js:72
-	__( 'Seconds', 'benenson' ),
+	__( 'Days', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/index.js:17
 	__( 'Countdown timer', 'benenson' ),

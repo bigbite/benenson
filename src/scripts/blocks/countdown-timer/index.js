@@ -37,6 +37,9 @@ registerBlockType('benenson/block-countdown', {
     backgroundUrl: {
       type: 'string',
     },
+    textColor: {
+      type: 'string',
+    },
   },
   edit: DisplayComponent,
 
@@ -45,9 +48,8 @@ registerBlockType('benenson/block-countdown', {
       date = new Date(),
       title = '',
       backgroundColor = '',
-      backgroundId = null,
       backgroundUrl = '',
-
+      textColor = '',
     } = attributes;
 
     const styles = {
@@ -55,8 +57,12 @@ registerBlockType('benenson/block-countdown', {
       backgroundColor,
     };
 
+    const classes = classnames('countdownTimer', {
+      [`is-${textColor}`]: !!textColor,
+    });
+
     return (
-      <div className="countdownTimer" style={ styles} data-date={ date }>
+      <div className={ classes } style={ styles} data-date={ date }>
         <h2 className="countdownTimer-title">{ title }</h2>
         <div className="countdownTimer-items">
           <div className="countdownTimer-item countdownTimer-days">
