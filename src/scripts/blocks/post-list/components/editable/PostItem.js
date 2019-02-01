@@ -33,7 +33,7 @@ const PostItem = props => (
 
     <span className="postGrid-item-meta">
       <RichText
-        tagName="span"
+        tagName="div"
         onChange={ props.createUpdate('tagText') }
         value={ props.tagText }
         placeholder={ __('(Insert Tag)', 'benenson') }
@@ -49,7 +49,7 @@ const PostItem = props => (
     <h3 className="postGrid-item-title">
       <a>
         <RichText
-          tagName="span"
+          tagName="div"
           onChange={ props.createUpdate('title') }
           value={ props.title }
           placeholder={ __('(Insert Title)', 'benenson') }
@@ -75,9 +75,9 @@ const PostItem = props => (
       />
     </div>
 
-    <span className="postGrid-item-button">
+    <a className="postGrid-item-button">
       <RichText
-        tagName="a"
+        tagName="div"
         onChange={ props.createUpdate('buttonText') }
         value={ props.buttonText }
         placeholder={ __('(Button Text)', 'benenson') }
@@ -89,7 +89,7 @@ const PostItem = props => (
         url={ props.buttonLink }
         onChange={ props.createUpdate('buttonLink') }
       />
-    </span>
+    </a>
 
     </div>
     <div className="linkList-options">

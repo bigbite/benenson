@@ -17,7 +17,7 @@ msgid "Standard"
 msgstr ""
 
 #: src/scripts/blocks/action/BlockEdit.js:37
-#: src/scripts/blocks/section/DisplayComponent.js:62
+#: src/scripts/blocks/section/DisplayComponent.js:74
 msgid "Wide"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:232
 #: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:12
-#: src/scripts/blocks/section/DisplayComponent.js:37
+#: src/scripts/blocks/section/DisplayComponent.js:49
 msgid "White"
 msgstr ""
 
@@ -130,7 +130,7 @@ msgstr ""
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:96
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
-#: src/scripts/blocks/section/DisplayComponent.js:68
+#: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
 msgid "Options"
 msgstr ""
@@ -183,6 +183,7 @@ msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:165
 #: src/scripts/blocks/image/BlockEdit.js:197
+#: src/scripts/blocks/section/index.js:53
 #: src/scripts/blocks/tweet/index.js:26
 msgid "Default"
 msgstr ""
@@ -201,7 +202,7 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:114
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 #: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
-#: src/scripts/blocks/section/DisplayComponent.js:48
+#: src/scripts/blocks/section/DisplayComponent.js:60
 msgid "Small"
 msgstr ""
 
@@ -227,7 +228,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:60
 #: src/scripts/blocks/logo-list/BlockEdit.js:52
 #: src/scripts/blocks/menu/DisplayComponent.js:15
-#: src/scripts/blocks/section/DisplayComponent.js:40
+#: src/scripts/blocks/section/DisplayComponent.js:52
 #: src/scripts/blocks/section/index.js:27
 msgid "Grey"
 msgstr ""
@@ -412,23 +413,23 @@ msgstr ""
 msgid "Add a button to download a resource"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:44
+#: src/scripts/blocks/download/index.js:43
 msgid "File"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:45
+#: src/scripts/blocks/download/index.js:44
 msgid "A File"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:67
+#: src/scripts/blocks/download/index.js:66
 msgid "[Download Resource]"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:75
+#: src/scripts/blocks/download/index.js:74
 msgid "Remove Resource"
 msgstr ""
 
-#: src/scripts/blocks/download/index.js:85
+#: src/scripts/blocks/download/index.js:84
 msgid "Edit File"
 msgstr ""
 
@@ -443,7 +444,7 @@ msgid "Video"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:111
-#: src/scripts/blocks/section/DisplayComponent.js:56
+#: src/scripts/blocks/section/DisplayComponent.js:68
 msgid "Normal"
 msgstr ""
 
@@ -452,7 +453,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 #: src/scripts/blocks/logo-list/BlockEdit.js:67
 #: src/scripts/blocks/menu/DisplayComponent.js:107
-#: src/scripts/blocks/section/DisplayComponent.js:70
+#: src/scripts/blocks/section/DisplayComponent.js:82
 msgid "Background Colour"
 msgstr ""
 
@@ -473,7 +474,7 @@ msgid ""
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:152
-#: src/scripts/blocks/section/DisplayComponent.js:93
+#: src/scripts/blocks/section/DisplayComponent.js:105
 msgid "Background Image"
 msgstr ""
 
@@ -512,7 +513,7 @@ msgstr ""
 #: src/scripts/blocks/link/DisplayComponent.js:30
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:57
 #: src/scripts/blocks/logo-list/BlockEdit.js:49
-#: src/scripts/blocks/section/DisplayComponent.js:51
+#: src/scripts/blocks/section/DisplayComponent.js:63
 msgid "None"
 msgstr ""
 
@@ -562,7 +563,7 @@ msgid "Write caption…"
 msgstr ""
 
 #: src/scripts/blocks/iframe/DisplayComponent.js:91
-#: src/scripts/blocks/section/DisplayComponent.js:82
+#: src/scripts/blocks/section/DisplayComponent.js:94
 msgid "Width"
 msgstr ""
 
@@ -652,7 +653,7 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 #: src/scripts/blocks/media-aside/DisplayComponent.js:113
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:27
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
@@ -987,7 +988,7 @@ msgstr ""
 msgid "(Insert Tag)"
 msgstr ""
 
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:13
 msgid "(Tag Name)"
 msgstr ""
 
@@ -1027,17 +1028,17 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: src/scripts/blocks/section/DisplayComponent.js:59
+#: src/scripts/blocks/section/DisplayComponent.js:100
+msgid "Id (scroll location)"
+msgstr ""
+
+#: src/scripts/blocks/section/DisplayComponent.js:71
 #: src/scripts/blocks/tweet/index.js:27
 msgid "Narrow"
 msgstr ""
 
-#: src/scripts/blocks/section/DisplayComponent.js:76
-msgid "Padding"
-msgstr ""
-
 #: src/scripts/blocks/section/DisplayComponent.js:88
-msgid "Id (scroll location)"
+msgid "Padding"
 msgstr ""
 
 #: src/scripts/blocks/section/index.js:26

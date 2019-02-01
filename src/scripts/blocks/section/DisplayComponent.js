@@ -10,6 +10,18 @@ const { PostMediaSelector } = benenson.components;
 class DisplayComponent extends Component {
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
+  getBlockList = () => {
+    const blockList = [];
+
+    wp.data.select('core/blocks').getBlockTypes().forEach((block) => {
+      if (block.name !== 'benenson/block-section') {
+        blockList.push(block.name);
+      }
+    });
+
+    return blockList;
+  }
+
   onMediaChange = (media) => {
     if (media) {
       this.props.setAttributes({
@@ -99,11 +111,14 @@ class DisplayComponent extends Component {
       </InspectorControls>
       <section className={ classNames({
         section: true,
+        [`${attributes.className}`]: !!attributes.className,
         'section--tinted': attributes.background === 'grey',
         [`section--${attributes.padding}`]: !!attributes.padding,
       }) } style={ attributes.mediaUrl ? styles : null }>
         <div className="container">
-          <InnerBlocks />
+          { typeof this.props.insertBlocksAfter !== 'undefined' &&
+            <InnerBlocks allowedBlocks={ this.getBlockList() } />
+          }
         </div>
       </section>
     </Fragment>);
