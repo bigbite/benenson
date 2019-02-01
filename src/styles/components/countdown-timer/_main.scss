@@ -9,8 +9,8 @@
 }
 
 .countdownTimer-title {
-  @include font-size(24px);
   color: $color-white;
+  margin-bottom: 5px;
 }
 
 .countdownTimer-items {
