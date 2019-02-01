@@ -40,5 +40,39 @@ registerBlockType('benenson/block-countdown', {
   },
   edit: DisplayComponent,
 
-  save: () => null,
+  save({ attributes }) {
+    const {
+      date = new Date(),
+      title = '',
+      backgroundColor = '',
+      backgroundId = null,
+      backgroundUrl = '',
+
+    } = attributes;
+
+    const styles = {
+      backgroundImage: `url('${backgroundUrl}')`,
+      backgroundColor,
+    };
+
+    return (
+      <div className="countdownTimer" style={ styles} data-date={ date }>
+        <h2 className="countdownTimer-title">{ title }</h2>
+        <div className="countdownTimer-items">
+          <div className="countdownTimer-item countdownTimer-days">
+            <p>00</p>
+          </div>
+          <div className="countdownTimer-item countdownTimer-hours">
+            <p>00</p>
+          </div>
+          <div className="countdownTimer-item countdownTimer-mins">
+            <p>00</p>
+          </div>
+          <div className="countdownTimer-item countdownTimer-secs">
+            <p>00</p>
+          </div>
+        </div>
+      </div>
+    );
+  },
 });
