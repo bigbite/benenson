@@ -7,10 +7,10 @@ const init = () => {
       let seconds = 0;
       let count = 0;
 
-      const daysElement = timer.querySelector('.countdownTimer-days p');
-      const hoursElement = timer.querySelector('.countdownTimer-hours p');
-      const minutesElement = timer.querySelector('.countdownTimer-mins p');
-      const secondsElement = timer.querySelector('.countdownTimer-secs p');
+      const daysElement = timer.querySelector('.countdownTimer-days span');
+      const hoursElement = timer.querySelector('.countdownTimer-hours span');
+      const minutesElement = timer.querySelector('.countdownTimer-mins span');
+      const secondsElement = timer.querySelector('.countdownTimer-secs span');
       const endDate = new Date(timer.dataset.date).getTime();
 
       if (typeof (endDate) !== 'number') {

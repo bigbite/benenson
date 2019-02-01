@@ -75,16 +75,16 @@ class DisplayComponent extends Component {
           />
           <div className="countdownTimer-items">
             <div className="countdownTimer-item countdownTimer-days">
-              <p>00</p>
+              <p><span>00</span>{ __('Days', 'benenson') }</p>
             </div>
             <div className="countdownTimer-item countdownTimer-hours">
-              <p>00</p>
+              <p><span>00</span>{ __('Hours', 'benenson') }</p>
             </div>
             <div className="countdownTimer-item countdownTimer-mins">
-              <p>00</p>
+              <p><span>00</span>{ __('Minutes', 'benenson') }</p>
             </div>
             <div className="countdownTimer-item countdownTimer-secs">
-              <p>00</p>
+              <p><span>00</span>{ __('Seconds', 'benenson') }</p>
             </div>
           </div>
         </div>

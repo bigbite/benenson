@@ -12,7 +12,7 @@ $generated_i18n_strings = array(
 	__( 'Standard', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:37
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:62
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:74
 	__( 'Wide', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:62
@@ -70,7 +70,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:232
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
 	__( 'White', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
@@ -103,7 +103,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:96
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:215
 	__( 'Options', 'benenson' ),
 
@@ -144,6 +144,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/blockquote/index.js:165
 	// Reference: src/scripts/blocks/image/BlockEdit.js:197
+	// Reference: src/scripts/blocks/section/index.js:53
 	// Reference: src/scripts/blocks/tweet/index.js:26
 	__( 'Default', 'benenson' ),
 
@@ -159,7 +160,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:114
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:60
 	__( 'Small', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:217
@@ -181,7 +182,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:52
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:15
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:40
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:52
 	// Reference: src/scripts/blocks/section/index.js:27
 	__( 'Grey', 'benenson' ),
 
@@ -316,25 +317,74 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/columns/row-column.js:9
 	__( 'Row Column', 'benenson' ),
 
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:32
+	__( 'Date/Time', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:39
+	__( 'Background color', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
+	__( 'Remove background colour', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:52
+	__( 'Background image', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:71
+	// Reference: src/scripts/blocks/key-facts/fact.js:30
+	// Reference: src/scripts/blocks/key-facts/index.js:79
+	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
+	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
+	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
+	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
+	__( '(Insert Title)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:78
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:79
+	// Reference: src/scripts/blocks/countdown-timer/index.js:63
+	__( 'Days', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:81
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:83
+	// Reference: src/scripts/blocks/countdown-timer/index.js:66
+	__( 'Hours', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:84
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/countdown-timer/index.js:69
+	__( 'Minutes', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
+	// Reference: src/scripts/blocks/countdown-timer/index.js:72
+	__( 'Seconds', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/index.js:17
+	__( 'Countdown timer', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/index.js:18
+	__( 'Set a future date to countdown to.', 'benenson' ),
+
 	// Reference: src/scripts/blocks/download/index.js:12
 	__( 'Resource Download', 'benenson' ),
 
 	// Reference: src/scripts/blocks/download/index.js:13
 	__( 'Add a button to download a resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:44
+	// Reference: src/scripts/blocks/download/index.js:43
 	__( 'File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:45
+	// Reference: src/scripts/blocks/download/index.js:44
 	__( 'A File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:67
+	// Reference: src/scripts/blocks/download/index.js:66
 	__( '[Download Resource]', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:75
+	// Reference: src/scripts/blocks/download/index.js:74
 	__( 'Remove Resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:85
+	// Reference: src/scripts/blocks/download/index.js:84
 	__( 'Edit File', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:103
@@ -346,7 +396,7 @@ $generated_i18n_strings = array(
 	__( 'Video', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:111
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:56
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
 	__( 'Normal', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
@@ -354,7 +404,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:67
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:107
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:70
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
 	__( 'Background Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:140
@@ -369,7 +419,7 @@ $generated_i18n_strings = array(
 	__( 'Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:93
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
 	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
@@ -400,7 +450,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:30
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:57
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:49
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:51
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:63
 	__( 'None', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/PostFeaturedVideo.js:6
@@ -438,7 +488,7 @@ $generated_i18n_strings = array(
 	__( 'Write caption…', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:94
 	__( 'Width', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:95
@@ -502,18 +552,8 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/image/index.js:76
 	__( 'Add a flexible image block with optional overlay', 'benenson' ),
 
-	// Reference: src/scripts/blocks/key-facts/fact.js:30
-	// Reference: src/scripts/blocks/key-facts/index.js:79
-	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
-	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
-	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
-	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
-	__( '(Insert Title)', 'benenson' ),
-
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:94
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:93
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -645,7 +685,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:104
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
 	__( '(Insert Link text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:57
@@ -760,7 +800,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 	__( '(Insert Tag)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:13
 	__( '(Tag Name)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:21
@@ -790,15 +830,15 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/index.js:49
 	__( 'Posts', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:100
+	__( 'Id (scroll location)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:71
 	// Reference: src/scripts/blocks/tweet/index.js:27
 	__( 'Narrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:76
-	__( 'Padding', 'benenson' ),
-
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:88
-	__( 'Id (scroll location)', 'benenson' ),
+	__( 'Padding', 'benenson' ),
 
 	// Reference: src/scripts/blocks/section/index.js:26
 	__( 'Section', 'benenson' ),

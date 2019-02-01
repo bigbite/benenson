@@ -22,19 +22,23 @@
 .countdownTimer-items .countdownTimer-item {
   flex-grow: 1;
   text-align: center;
+}
+
+.countdownTimer-items .countdownTimer-item p {
+  margin: 30px 0 0 0;
+}
+
+.countdownTimer-items .countdownTimer-item p span{
+  @include font-size(38px);
+  margin-right: 5px;
   filter: blur(20px);
   transition: .3s filter linear;
 }
 
-.countdownTimer-items .countdownTimer-item p {
-  @include font-size(38px);
-  margin: 30px 0 0 0;
+.countdownTimer.countdownTimer--set .countdownTimer-items .countdownTimer-item span {
+  filter: blur(0px);
 }
 
 .countdownTimer-items .countdownTimer-item + .countdownTimer-item {
   margin-left: 10px;
-}
-
-.countdownTimer.countdownTimer--set .countdownTimer-items .countdownTimer-item {
-  filter: blur(0px);
 }
