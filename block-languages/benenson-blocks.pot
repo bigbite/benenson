@@ -447,39 +447,39 @@ msgstr ""
 msgid "Enter Address"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:149
+#: src/scripts/blocks/google-map/DisplayComponent.js:147
 msgid "No Maps API Key found. Please add one in Theme Options."
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:155
+#: src/scripts/blocks/google-map/DisplayComponent.js:165
 msgid "User-facing settings"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:157
+#: src/scripts/blocks/google-map/DisplayComponent.js:167
 msgid "Disable Zoom"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:162
+#: src/scripts/blocks/google-map/DisplayComponent.js:172
 msgid "Map Settings"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:164
+#: src/scripts/blocks/google-map/DisplayComponent.js:174
 msgid "Display Map Marker"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:169
+#: src/scripts/blocks/google-map/DisplayComponent.js:179
 msgid "Use Coordinates"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:170
+#: src/scripts/blocks/google-map/DisplayComponent.js:180
 msgid "Set the map centre using lat/lng instead of address lookup"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:175
+#: src/scripts/blocks/google-map/DisplayComponent.js:185
 msgid "Zoom Level"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:182
+#: src/scripts/blocks/google-map/DisplayComponent.js:192
 msgid "Map Position"
 msgstr ""
 

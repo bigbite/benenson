@@ -136,8 +136,6 @@ export default class DisplayComponent extends Component {
   }
 
   render() {
-    const { attributes, setAttributes } = this.props;
-
     if (!this.apiKey) {
       return (<div style={ {
         display: 'flex',
@@ -149,6 +147,18 @@ export default class DisplayComponent extends Component {
         <span>{ __('No Maps API Key found. Please add one in Theme Options.', 'benenson') }</span>
       </div>);
     }
+
+    const { attributes, setAttributes } = this.props;
+
+    const mapOptions = {
+      streetViewControl: false,
+      fullscreenControl: false,
+      mapTypeControl: false,
+      rotateControl: false,
+      scaleControl: false,
+      zoomControl: false,
+      scrollwheel: false,
+    };
 
     return (<Fragment>
       <InspectorControls>
@@ -187,15 +197,7 @@ export default class DisplayComponent extends Component {
         mapContainerStyle={ { height: '400px' } }
         zoom={ attributes.zoomLevel }
         center={ { lat: attributes.latitude, lng: attributes.longitude } }
-        options={ {
-          streetViewControl: false,
-          fullscreenControl: false,
-          mapTypeControl: false,
-          rotateControl: false,
-          scaleControl: false,
-          zoomControl: false,
-          scrollwheel: false,
-        } }
+        options={ mapOptions }
       >{ attributes.showMarker && <Marker position={ {
         lat: attributes.latitude,
         lng: attributes.longitude,
