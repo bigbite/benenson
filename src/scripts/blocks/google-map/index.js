@@ -22,6 +22,10 @@ registerBlockType('benenson/google-map', {
       type: 'boolean',
       default: false,
     },
+    disableUserZoom: {
+      type: 'boolean',
+      default: false,
+    },
     zoomLevel: {
       type: 'number',
       default: 8,

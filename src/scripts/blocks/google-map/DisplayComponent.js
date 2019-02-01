@@ -1,7 +1,7 @@
 /* global benensonCoreData, jquery */
 
 import { debounce, isObject } from 'lodash-es';
-import { GoogleMap, Marker, withGoogleMap, withScriptjs } from 'react-google-maps';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Select from 'react-select';
 
 const { getBlockType } = wp.blocks;
@@ -16,24 +16,6 @@ const { InspectorControls } = wp.editor;
 const { Component, Fragment } = wp.element;
 const { __ } = wp.i18n;
 
-const googleMapFactory = (props) => {
-  const position = {
-    lat: parseFloat(props.latitude),
-    lng: parseFloat(props.longitude),
-  };
-
-  return (<GoogleMap
-    defaultZoom={ props.zoomLevel }
-    defaultCenter={ position }
-    center={ position }
-    zoom={ props.zoomLevel }
-  >{ props.showMarker && <Marker position={ position } /> }</GoogleMap>);
-};
-
-const MapComponent = compose(
-  withScriptjs,
-  withGoogleMap,
-)(googleMapFactory);
 
 export default class DisplayComponent extends Component {
   apiKey = benensonCoreData.mapsApiKey;
@@ -170,7 +152,14 @@ export default class DisplayComponent extends Component {
 
     return (<Fragment>
       <InspectorControls>
-        <PanelBody>
+        <PanelBody title={ __('User-facing settings', 'benenson') }>
+          <ToggleControl
+            label={ __('Disable Zoom', 'benenson') }
+            checked={ attributes.disableUserZoom }
+            onChange={ disableUserZoom => setAttributes({ disableUserZoom }) }
+          />
+        </PanelBody>
+        <PanelBody title={ __('Map Settings', 'benenson') }>
           <ToggleControl
             label={ __('Display Map Marker', 'benenson') }
             checked={ attributes.showMarker }
@@ -185,6 +174,8 @@ export default class DisplayComponent extends Component {
           <RangeControl
             label={ __('Zoom Level', 'benenson') }
             value={ attributes.zoomLevel }
+            min={ 0 }
+            max={ 22 }
             onChange={ zoomLevel => setAttributes({ zoomLevel }) }
           />
         </PanelBody>
@@ -192,13 +183,23 @@ export default class DisplayComponent extends Component {
           { this.renderInputs() }
         </PanelBody>
       </InspectorControls>
-      <MapComponent
-        { ...attributes }
-        googleMapURL={ `https://maps.googleapis.com/maps/api/js?key=${this.apiKey}` }
-        loadingElement={ <div style={ { height: '100%' } } /> }
-        containerElement={ <div style={ { height: '400px' } } /> }
-        mapElement={ <div style={ { height: '100%' } } /> }
-      />
+      <GoogleMap
+        mapContainerStyle={ { height: '400px' } }
+        zoom={ attributes.zoomLevel }
+        center={ { lat: attributes.latitude, lng: attributes.longitude } }
+        options={ {
+          streetViewControl: false,
+          fullscreenControl: false,
+          mapTypeControl: false,
+          rotateControl: false,
+          scaleControl: false,
+          zoomControl: false,
+          scrollwheel: false,
+        } }
+      >{ attributes.showMarker && <Marker position={ {
+        lat: attributes.latitude,
+        lng: attributes.longitude,
+      } } /> }</GoogleMap>
     </Fragment>);
   }
 }

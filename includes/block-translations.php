@@ -12,7 +12,7 @@ $generated_i18n_strings = array(
 	__( 'Standard', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:37
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:62
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:74
 	__( 'Wide', 'benenson' ),
 
 	// Reference: src/scripts/blocks/action/BlockEdit.js:62
@@ -70,7 +70,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:232
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:37
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
 	__( 'White', 'benenson' ),
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
@@ -103,7 +103,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:96
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:215
 	__( 'Options', 'benenson' ),
 
@@ -144,6 +144,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/blockquote/index.js:165
 	// Reference: src/scripts/blocks/image/BlockEdit.js:197
+	// Reference: src/scripts/blocks/section/index.js:53
 	// Reference: src/scripts/blocks/tweet/index.js:26
 	__( 'Default', 'benenson' ),
 
@@ -159,7 +160,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:114
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:223
 	// Reference: src/scripts/blocks/logo-list/InnerBlockEdit.js:139
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:48
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:60
 	__( 'Small', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:217
@@ -181,7 +182,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:60
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:52
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:15
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:40
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:52
 	// Reference: src/scripts/blocks/section/index.js:27
 	__( 'Grey', 'benenson' ),
 
@@ -322,20 +323,65 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/download/index.js:13
 	__( 'Add a button to download a resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:44
+	// Reference: src/scripts/blocks/download/index.js:43
 	__( 'File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:45
+	// Reference: src/scripts/blocks/download/index.js:44
 	__( 'A File', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:67
+	// Reference: src/scripts/blocks/download/index.js:66
 	__( '[Download Resource]', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:75
+	// Reference: src/scripts/blocks/download/index.js:74
 	__( 'Remove Resource', 'benenson' ),
 
-	// Reference: src/scripts/blocks/download/index.js:85
+	// Reference: src/scripts/blocks/download/index.js:84
 	__( 'Edit File', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:104
+	__( 'Latitude', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:109
+	__( 'Longitude', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:130
+	__( 'loading', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:130
+	__( 'Enter Address', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:149
+	__( 'No Maps API Key found. Please add one in Theme Options.', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:155
+	__( 'User-facing settings', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:157
+	__( 'Disable Zoom', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:162
+	__( 'Map Settings', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:164
+	__( 'Display Map Marker', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:169
+	__( 'Use Coordinates', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:170
+	__( 'Set the map centre using lat/lng instead of address lookup', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:175
+	__( 'Zoom Level', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:182
+	__( 'Map Position', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/index.js:8
+	__( 'Google Map', 'benenson' ),
+
+	// Reference: src/scripts/blocks/google-map/index.js:9
+	__( 'Add a Google Map', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:103
 	// Reference: src/scripts/blocks/image/BlockEdit.js:389
@@ -346,7 +392,7 @@ $generated_i18n_strings = array(
 	__( 'Video', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:111
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:56
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
 	__( 'Normal', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
@@ -354,7 +400,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:67
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:107
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:70
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
 	__( 'Background Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:140
@@ -369,7 +415,7 @@ $generated_i18n_strings = array(
 	__( 'Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:93
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
 	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
@@ -400,7 +446,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:30
 	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:57
 	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:49
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:51
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:63
 	__( 'None', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/PostFeaturedVideo.js:6
@@ -438,7 +484,7 @@ $generated_i18n_strings = array(
 	__( 'Write caption…', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:91
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:94
 	__( 'Width', 'benenson' ),
 
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:95
@@ -507,13 +553,13 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:27
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:94
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:93
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -645,7 +691,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:104
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
 	__( '(Insert Link text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:57
@@ -760,7 +806,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:22
 	__( '(Insert Tag)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:12
+	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:13
 	__( '(Tag Name)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:21
@@ -790,15 +836,15 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/post-list/index.js:49
 	__( 'Posts', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:59
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:100
+	__( 'Id (scroll location)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:71
 	// Reference: src/scripts/blocks/tweet/index.js:27
 	__( 'Narrow', 'benenson' ),
 
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:76
-	__( 'Padding', 'benenson' ),
-
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:88
-	__( 'Id (scroll location)', 'benenson' ),
+	__( 'Padding', 'benenson' ),
 
 	// Reference: src/scripts/blocks/section/index.js:26
 	__( 'Section', 'benenson' ),

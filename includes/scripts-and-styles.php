@@ -123,6 +123,11 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			'benenson-packages-js',
 		], '1.0.4', false );
 
+		$maps_api_key = benenson_get_option( '_google_maps_api_key', true );
+		if ( $maps_api_key ) {
+			wp_enqueue_script( 'google-maps-api', sprintf( 'https://maps.googleapis.com/maps/api/js?key=%s', esc_attr( $maps_api_key ) ), [], '1.0.4', true );
+		}
+
 		if ( function_exists( 'gutenberg_get_jed_locale_data' ) ) {
 			// gutenberg plugin
 			wp_add_inline_script(
@@ -132,7 +137,7 @@ if ( ! function_exists( 'benenson_gutenberg_assets' ) ) {
 			);
 		} elseif ( function_exists( 'wp_set_script_translations' ) ) {
 			// wp v5
-			wp_set_script_translations( 'benenson-blocks-js', 'benenson' );
+			wp_set_script_translations( 'benenson-blocks-js', 'benenson', get_template_directory() . '/languages' );
 		}
 	}
 }
@@ -149,6 +154,7 @@ if ( ! function_exists( 'benenson_localise_javascript' ) ) {
 	function benenson_localise_javascript() {
 		wp_localize_script( 'benenson-blocks-js', 'benensonCoreData', [
 			'mapsApiKey' => benenson_get_option( '_google_maps_api_key', true ),
+			'locale'     => get_locale(),
 		] );
 
 		if ( ! get_translations_for_domain( 'benenson' ) ) {

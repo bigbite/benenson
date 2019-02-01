@@ -431,43 +431,55 @@ msgstr ""
 msgid "Edit File"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:122
+#: src/scripts/blocks/google-map/DisplayComponent.js:104
 msgid "Latitude"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:127
+#: src/scripts/blocks/google-map/DisplayComponent.js:109
 msgid "Longitude"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:148
+#: src/scripts/blocks/google-map/DisplayComponent.js:130
 msgid "loading"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:148
+#: src/scripts/blocks/google-map/DisplayComponent.js:130
 msgid "Enter Address"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:167
+#: src/scripts/blocks/google-map/DisplayComponent.js:149
 msgid "No Maps API Key found. Please add one in Theme Options."
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:175
+#: src/scripts/blocks/google-map/DisplayComponent.js:155
+msgid "User-facing settings"
+msgstr ""
+
+#: src/scripts/blocks/google-map/DisplayComponent.js:157
+msgid "Disable Zoom"
+msgstr ""
+
+#: src/scripts/blocks/google-map/DisplayComponent.js:162
+msgid "Map Settings"
+msgstr ""
+
+#: src/scripts/blocks/google-map/DisplayComponent.js:164
 msgid "Display Map Marker"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:180
+#: src/scripts/blocks/google-map/DisplayComponent.js:169
 msgid "Use Coordinates"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:181
+#: src/scripts/blocks/google-map/DisplayComponent.js:170
 msgid "Set the map centre using lat/lng instead of address lookup"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:186
+#: src/scripts/blocks/google-map/DisplayComponent.js:175
 msgid "Zoom Level"
 msgstr ""
 
-#: src/scripts/blocks/google-map/DisplayComponent.js:191
+#: src/scripts/blocks/google-map/DisplayComponent.js:182
 msgid "Map Position"
 msgstr ""
 

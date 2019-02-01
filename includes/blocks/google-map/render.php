@@ -9,6 +9,10 @@ function benenson_render_google_map_block( array $attributes = [] ) {
 		$attributes['zoomLevel'] = 8;
 	}
 
+	if ( ! isset( $attributes['disableUserZoom'] ) ) {
+		$attributes['disableUserZoom'] = false;
+	}
+
 	$map_hash = sprintf( 'map%s', bin2hex( openssl_random_pseudo_bytes( 5 ) ) );
 
 	$open_iife  = '(function(){';
@@ -19,8 +23,9 @@ function benenson_render_google_map_block( array $attributes = [] ) {
 		esc_attr( $attributes['longitude'] ),
 	] );
 
-	$map_options = vsprintf( '{zoom:%s,center:%s}', [
+	$map_options = vsprintf( '{zoom:%s,scrollwheel:%s,center:%s}', [
 		esc_attr( $attributes['zoomLevel'] ),
+		esc_attr( $attributes['disableUserZoom'] ? 'false' : 'true' ),
 		$lat_lng,
 	] );
 
