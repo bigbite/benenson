@@ -28,11 +28,17 @@
   margin: 30px 0 0 0;
 }
 
-.countdownTimer-items .countdownTimer-item p span{
-  @include font-size(38px);
+.countdownTimer-items .countdownTimer-item p span {
+  @include font-size(28px);
+  display: block;
   margin-right: 5px;
   filter: blur(20px);
   transition: .3s filter linear;
+
+  @include mq(small) {
+    @include font-size(38px);
+    display: initial;
+  }
 }
 
 .countdownTimer.countdownTimer--set .countdownTimer-items .countdownTimer-item span {
