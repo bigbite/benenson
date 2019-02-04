@@ -23,6 +23,7 @@ class DisplayComponent extends Component {
       textColor = '',
     } = attributes;
 
+    // Note: US English spelling.
     const colourOptions = applyFilters('benenson.block.blockCountdown.colorOptions', [{
       label: __('White', 'benenson'),
       value: '',
@@ -45,7 +46,7 @@ class DisplayComponent extends Component {
         <InspectorControls>
           <PanelBody title={ __('Options', 'benenson') }>
             <SelectControl
-              label={ __('Text color', 'benenson') }
+              label={ __('Text Colour', 'benenson') }
               value={ textColor }
               onChange={ color => setAttributes({ textColor: color }) }
               options={ colourOptions }
@@ -53,23 +54,22 @@ class DisplayComponent extends Component {
             <DateTimePicker
               currentDate={ date }
               onChange={ newDate => setAttributes({ date: newDate }) }
-              // is12Hour={ is12HourTime }
             />
           </PanelBody>
-          <PanelBody title={ __('Background color', 'benenson') }>
+          <PanelBody title={ __('Background colour', 'benenson') }>
             <ColorPicker
               color={ backgroundColor }
               onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
-              disableAlpha
+              disableAlpha={ true }
             />
             <Button
               className="components-button is-button is-default is-large"
               onClick={ () => setAttributes({ backgroundColor: '' }) }
             >
-            {__('Remove background color', 'benenson')}
+            { __('Remove background colour', 'benenson') }
             </Button>
           </PanelBody>
-          <PanelBody title={ __('Background image', 'benenson') }>
+          <PanelBody title={ __('Background Image', 'benenson') }>
             <PostMediaSelector
               onUpdate={ (media) => {
                   setAttributes({

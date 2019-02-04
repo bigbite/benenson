@@ -14,7 +14,7 @@ const {
 const { PostMediaSelector } = benenson.components;
 
 registerBlockType('benenson/block-countdown', {
-  title: __('Countdown timer', 'benenson'),
+  title: __('Countdown Timer', 'benenson'),
   description: __('Set a future date to countdown to.', 'benenson'),
   icon: 'download',
   category: 'benenson',

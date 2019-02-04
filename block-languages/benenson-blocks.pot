@@ -88,8 +88,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
 #: src/scripts/blocks/blockquote/index.js:232
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:28
 #: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:49
@@ -98,8 +97,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
 #: src/scripts/blocks/blockquote/index.js:226
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:31
 #: src/scripts/blocks/header/DisplayComponent.js:98
 msgid "Black"
 msgstr ""
@@ -129,12 +127,11 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:47
 #: src/scripts/blocks/header/DisplayComponent.js:120
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:96
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:44
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
@@ -248,6 +245,7 @@ msgid "Alignment"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:252
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
 msgid "Text Colour"
 msgstr ""
 
@@ -424,20 +422,18 @@ msgstr ""
 msgid "Seconds"
 msgstr ""
 
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:48
-msgid "Text color"
-msgstr ""
-
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:59
-msgid "Background color"
+msgid "Background colour"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:69
-msgid "Remove background color"
+msgid "Remove background colour"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:72
-msgid "Background image"
+#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/section/DisplayComponent.js:105
+msgid "Background Image"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
@@ -446,8 +442,6 @@ msgstr ""
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 #: src/scripts/blocks/media-aside/DisplayComponent.js:83
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:89
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:85
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
@@ -460,7 +454,7 @@ msgid "Days"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/index.js:17
-msgid "Countdown timer"
+msgid "Countdown Timer"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/index.js:18
@@ -533,11 +527,6 @@ msgstr ""
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:152
-#: src/scripts/blocks/section/DisplayComponent.js:105
-msgid "Background Image"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:152

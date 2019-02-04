@@ -68,8 +68,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:39
 	// Reference: src/scripts/blocks/blockquote/index.js:232
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:28
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
@@ -77,8 +76,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
 	// Reference: src/scripts/blocks/blockquote/index.js:226
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:30
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:27
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:31
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:98
 	__( 'Black', 'benenson' ),
 
@@ -102,12 +100,11 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:47
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:120
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:96
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:44
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:215
@@ -201,6 +198,7 @@ $generated_i18n_strings = array(
 	__( 'Alignment', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:252
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
 	__( 'Text Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:258
@@ -335,17 +333,16 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/countdown-timer/index.js:78
 	__( 'Seconds', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:48
-	__( 'Text color', 'benenson' ),
-
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:59
-	__( 'Background color', 'benenson' ),
+	__( 'Background colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:69
-	__( 'Remove background color', 'benenson' ),
+	__( 'Remove background colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:72
-	__( 'Background image', 'benenson' ),
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
+	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
@@ -353,8 +350,6 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:89
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:85
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
@@ -365,7 +360,7 @@ $generated_i18n_strings = array(
 	__( 'Days', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/index.js:17
-	__( 'Countdown timer', 'benenson' ),
+	__( 'Countdown Timer', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/index.js:18
 	__( 'Set a future date to countdown to.', 'benenson' ),
@@ -421,10 +416,6 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:150
 	__( 'Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson' ),
-
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
-	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
 	__( 'Featured Image', 'benenson' ),
