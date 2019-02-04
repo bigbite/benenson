@@ -261,23 +261,30 @@ msgstr ""
 msgid "Image citation"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:367
+#: src/scripts/blocks/blockquote/index.js:366
 msgid "Background"
 msgstr ""
 
+#: src/scripts/blocks/blockquote/index.js:377
+#: src/scripts/blocks/header/DisplayComponent.js:128
 #: src/scripts/blocks/blockquote/index.js:379
-msgid "Background colour"
+#: src/scripts/blocks/key-facts/index.js:68
+#: src/scripts/blocks/links-with-icons/BlockEdit.js:81
+#: src/scripts/blocks/logo-list/BlockEdit.js:67
+#: src/scripts/blocks/menu/DisplayComponent.js:107
+#: src/scripts/blocks/section/DisplayComponent.js:82
+msgid "Background Colour"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:389
+#: src/scripts/blocks/blockquote/index.js:386
 msgid "Remove background colour"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:397
+#: src/scripts/blocks/blockquote/index.js:394
 msgid "(Insert Quote Text)"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:409
+#: src/scripts/blocks/blockquote/index.js:406
 msgid "(Insert Subtext)"
 msgstr ""
 
@@ -464,15 +471,6 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:111
 #: src/scripts/blocks/section/DisplayComponent.js:68
 msgid "Normal"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:128
-#: src/scripts/blocks/key-facts/index.js:68
-#: src/scripts/blocks/links-with-icons/BlockEdit.js:81
-#: src/scripts/blocks/logo-list/BlockEdit.js:67
-#: src/scripts/blocks/menu/DisplayComponent.js:107
-#: src/scripts/blocks/section/DisplayComponent.js:82
-msgid "Background Colour"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:140

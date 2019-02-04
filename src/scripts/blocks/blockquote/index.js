@@ -351,7 +351,7 @@ registerBlockType('benenson/quote', {
             onChange={ newLine => setAttributes({ lined: newLine }) }
           />
           </PanelBody>
-          <PanelBody title={__('Image citation', 'benenson') }>
+          <PanelBody title={ __('Image citation', 'benenson') }>
             <p>This will override any citation text.</p>
             <PostMediaSelector
               onUpdate={ (media) => {
@@ -359,8 +359,7 @@ registerBlockType('benenson/quote', {
                     logoUrl: media ? media.source_url : '',
                     logoId: media ? media.id : null,
                   });
-                }
-              }
+                }}
               mediaId={ logoId }
             />
           </PanelBody>
@@ -371,23 +370,21 @@ registerBlockType('benenson/quote', {
                     backgroundUrl: media ? media.source_url : '',
                     backgroundId: media ? media.id : null,
                   });
-                }
-              }
+                }}
               mediaId={ backgroundId }
             />
           </PanelBody>
-          <PanelBody title={__('Background colour', 'benenson') }>
+          <PanelBody title={ __('Background Colour', 'benenson') }>
             <ColorPicker
-                color={ backgroundColor }
-                onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
-                disableAlpha
-              />
-              <Button
-                className="components-button is-button is-default is-large"
-                onClick={ () => setAttributes({ backgroundColor: '' }) }
-              >
-              {__('Remove background colour', 'benenson')}
-              </Button>
+              color={ backgroundColor }
+              onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
+              disableAlpha
+            />
+            <Button
+              className="components-button is-button is-default is-large"
+              onClick={ () => setAttributes({ backgroundColor: '' }) }>
+              { __('Remove background colour', 'benenson') }
+            </Button>
             </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>

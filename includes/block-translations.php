@@ -209,19 +209,26 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:354
 	__( 'Image citation', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:367
+	// Reference: src/scripts/blocks/blockquote/index.js:366
 	__( 'Background', 'benenson' ),
 
+	// Reference: src/scripts/blocks/blockquote/index.js:377
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
 	// Reference: src/scripts/blocks/blockquote/index.js:379
-	__( 'Background colour', 'benenson' ),
+	// Reference: src/scripts/blocks/key-facts/index.js:68
+	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
+	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:67
+	// Reference: src/scripts/blocks/menu/DisplayComponent.js:107
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
+	__( 'Background Colour', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:389
+	// Reference: src/scripts/blocks/blockquote/index.js:386
 	__( 'Remove background colour', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:397
+	// Reference: src/scripts/blocks/blockquote/index.js:394
 	__( '(Insert Quote Text)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/blockquote/index.js:409
+	// Reference: src/scripts/blocks/blockquote/index.js:406
 	__( '(Insert Subtext)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:48
@@ -364,14 +371,6 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:111
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:68
 	__( 'Normal', 'benenson' ),
-
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
-	// Reference: src/scripts/blocks/key-facts/index.js:68
-	// Reference: src/scripts/blocks/links-with-icons/BlockEdit.js:81
-	// Reference: src/scripts/blocks/logo-list/BlockEdit.js:67
-	// Reference: src/scripts/blocks/menu/DisplayComponent.js:107
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:82
-	__( 'Background Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:140
 	// Reference: src/scripts/blocks/image/BlockEdit.js:387
