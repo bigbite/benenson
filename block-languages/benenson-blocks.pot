@@ -132,6 +132,7 @@ msgstr ""
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
+#: src/scripts/blocks/timeline/DisplayComponent.js:66
 msgid "Options"
 msgstr ""
 
@@ -1044,14 +1045,17 @@ msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:217
+#: src/scripts/blocks/timeline/DisplayComponent.js:68
 msgid "Show Arrows"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:223
+#: src/scripts/blocks/timeline/DisplayComponent.js:74
 msgid "Has Content"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:226
+#: src/scripts/blocks/timeline/DisplayComponent.js:77
 msgid ""
 "By disabling this you will hide the content in *ALL* slides. To disable "
 "this on only one slide, select the desired slide and toggle the \"Hide "
@@ -1059,10 +1063,12 @@ msgid ""
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:230
+#: src/scripts/blocks/timeline/DisplayComponent.js:81
 msgid "Show Tabs"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:233
+#: src/scripts/blocks/timeline/DisplayComponent.js:84
 msgid ""
 "Hide the tabs on the front end, these will still show in the panel to allow "
 "you to navigate through each slide."
@@ -1101,11 +1107,13 @@ msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:287
 #: src/scripts/blocks/slider/index.js:59
+#: src/scripts/blocks/timeline/DisplayComponent.js:97
 msgid "Next"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:288
 #: src/scripts/blocks/slider/index.js:60
+#: src/scripts/blocks/timeline/DisplayComponent.js:98
 msgid "Previous"
 msgstr ""
 
@@ -1155,6 +1163,18 @@ msgstr ""
 
 #: src/scripts/blocks/slider/index.js:40
 msgid "Scroller"
+msgstr ""
+
+#: src/scripts/blocks/timeline/DisplayComponent.js:104
+msgid "Add a block below."
+msgstr ""
+
+#: src/scripts/blocks/timeline/DisplayComponent.js:105
+msgid "Add block"
+msgstr ""
+
+#: src/scripts/blocks/timeline/index.js:12
+msgid "Timeline"
 msgstr ""
 
 #: src/scripts/blocks/tweet/index.js:109
