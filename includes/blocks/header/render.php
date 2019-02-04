@@ -1,11 +1,11 @@
 <?php
+
 /**
  * Renders the header block.
  *
  * @since 1.0.0
  * @return string
  */
-
 if ( ! function_exists( 'benenson_render_header_block' ) ) {
 	function benenson_render_header_block( array $attributes = [] ) {
 		$required = [ 'embed', 'background', 'type', 'imageURL', 'title', 'content', 'ctaText', 'ctaLink' ];
@@ -81,57 +81,57 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 				esc_url( wp_get_attachment_url( $attributes['featuredVideoId'] ) )
 			);
 		}
-		?>
-		<div class="container">
-			<div class="hero-content">
-			<?php
-			if ( $attributes['title'] ) {
-				printf( '<h1 class="page-heroTitle"><span>%s</span></h1>', wp_kses_post( $attributes['title'] ) );
+
+		print '<div class="container"><div class="hero-content">';
+
+		if ( $attributes['title'] ) {
+			printf( '<h1 class="page-heroTitle"><span>%s</span></h1>', wp_kses_post( $attributes['title'] ) );
+		}
+
+		if ( $attributes['content'] ) {
+			printf( '<p class="page-heroContent">%s</p>', wp_kses_post( $attributes['content'] ) );
+		}
+
+		if ( $attributes['ctaText'] && ( $attributes['ctaLink'] || $attributes['embed'] ) || $attributes['ctaTwoText'] && $attributes['ctaTwoLink'] ) {
+
+			print '<div class="page-heroCta">';
+
+			if ( $attributes['ctaText'] ) {
+				if ( $attributes['ctaLink'] && ! $attributes['embed'] ) {
+					printf(
+						'<a class="btn" href="%s">%s</a>',
+						esc_url( $attributes['ctaLink'] ),
+						esc_html( wp_strip_all_tags( $attributes['ctaText'] ) )
+					);
+				} elseif ( $attributes['embed'] ) {
+					printf(
+						'<div class="page-heroCta"><a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i>%s</a></div>',
+						esc_url( $attributes['ctaLink'] ),
+						esc_url( $attributes['embed'] ),
+						esc_html__( 'Play video', 'benenson' ),
+						esc_html( $attributes['ctaText'] )
+					);
+				}
 			}
 
-			if ( $attributes['content'] ) {
-				printf( '<p class="page-heroContent">%s</p>', wp_kses_post( $attributes['content'] ) );
+			if ( $attributes['ctaTwoText'] && $attributes['ctaTwoLink'] ) {
+				printf(
+					'<a class="btn" href="%s">%s</a>',
+					esc_url( $attributes['ctaTwoLink'] ),
+					esc_html( wp_strip_all_tags( $attributes['ctaTwoText'] ) )
+				);
 			}
-			?>
 
-				<div class="page-heroCta">
-					<?php
-					if ( $attributes['ctaText'] ) {
-						if ( $attributes['ctaLink'] && ! $attributes['embed'] ) {
-							printf(
-								'<a class="btn" href="%s">%s</a>',
-								esc_url( $attributes['ctaLink'] ),
-								esc_html( wp_strip_all_tags( $attributes['ctaText'] ) )
-							);
-						} elseif ( $attributes['embed'] ) {
-							printf(
-								'<div class="page-heroCta"><a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i>%s</a></div>',
-								esc_url( $attributes['ctaLink'] ),
-								esc_url( $attributes['embed'] ),
-								esc_html__( 'Play video', 'benenson' ),
-								esc_html( $attributes['ctaText'] )
-							);
-						}
-					}
+			print '</div>';
 
-					if ( $attributes['ctaTwoText'] && $attributes['ctaTwoLink'] ) {
-						printf(
-							'<a class="btn" href="%s">%s</a>',
-							esc_url( $attributes['ctaTwoLink'] ),
-							esc_html( wp_strip_all_tags( $attributes['ctaTwoText'] ) )
-						);
-					}
-					?>
-					</div>
-					<?php
-					if ( $attributes['bullets'] ) {
-						printf( '<div class="page-heroBullets"><div><ul><%s</ul></div></div>', wp_kses_post( $attributes['bullets'] ) );
-					}
-					?>
-				</div>
-			</div>
-		</section>
-		<?php
+		}
+
+		if ( $attributes['bullets'] ) {
+			printf( '<div class="page-heroBullets"><div><ul><%s</ul></div></div>', wp_kses_post( $attributes['bullets'] ) );
+		}
+
+		print '</div></div></section>';
+
 		return endspaceless( false );
 	}
 }

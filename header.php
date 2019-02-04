@@ -156,7 +156,7 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 		<?php if ( is_archive() && $object->description ) : ?>
 			<p class="page-heroContent"><?php echo wp_kses_post( $object->description ); ?></p>
 		<?php endif; ?>
-		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || $hero_cta_two_text && $hero_cta_two_link ) : ?>
+		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || ( $hero_cta_two_text && $hero_cta_two_link ) ) : ?>
 			<div class="page-heroCta">
 				<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
 					<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>
@@ -191,7 +191,7 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 		<?php if ( is_archive() && $object->description ) : ?>
 			<p class="page-heroContent"><?php echo wp_kses_post( $object->description ); ?></p>
 		<?php endif; ?>
-		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || $hero_cta_two_text && $hero_cta_two_link ) : ?>
+		<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) || ( $hero_cta_two_text && $hero_cta_two_link ) ) : ?>
 			<div class="page-heroCta">
 				<?php if ( $hero_cta_text && ( $hero_cta_link || $hero_embed ) ) : ?>
 					<a <?php ( $hero_cta_link && ! $hero_embed ) && printf( 'href="%s"', esc_url( $hero_cta_link ) ); ?> class="btn" <?php $hero_embed && printf( 'data-modal-embed="%s"', esc_attr( $hero_embed ) ); // Using esc_attr as the embed could be an ID. ?>><?php $hero_embed && printf( '<i class="play-icon">%s</i>', esc_html__( 'Play Icon', 'benenson' ) ); ?><?php echo esc_html( wp_strip_all_tags( $hero_cta_text ) ); ?></a>

@@ -4,7 +4,7 @@ import languageSelector from './modules/language-selector';
 import searchToggle from './modules/search-toggle';
 import mobileMenu from './modules/mobile-menu';
 import headerPosition from './modules/header-position';
-import pagerHeroPosition from './modules/pageHero-position';
+import pageHeroPosition from './modules/pageHero-position';
 // import fluidIframe from './modules/fluid-iframe';
 import tweetAction from './modules/tweet-action';
 import stickyNav from './modules/sticky-nav';
@@ -23,7 +23,7 @@ const App = () => {
   filterPosts();
   languageSelector();
   headerPosition();
-  pagerHeroPosition();
+  pageHeroPosition();
   searchToggle(document.querySelector('.page-header:not(.page-header--sticky)'));
   mobileMenu();
   // fluidIframe();

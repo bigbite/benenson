@@ -88,6 +88,10 @@ p.page-heroContent {
   margin-left: 15px;
 }
 
+.page-heroBullets ul {
+  margin-bottom: 0px;
+}
+
 .page-heroBullets > div {
   display: inline-block;
   background-color: rgba($color-black, .45);
