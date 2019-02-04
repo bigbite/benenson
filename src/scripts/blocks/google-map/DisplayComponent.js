@@ -127,7 +127,7 @@ export default class DisplayComponent extends Component {
       isMulti={ false }
       isLoading={ loading }
       isDisabled={ loading }
-      placeholder={ loading ? __('loading', 'benenson') : __('Enter Address', 'benenson') }
+      placeholder={ loading ? __('Loading...', 'benenson') : __('Enter Address', 'benenson') }
       onInputChange={ this.getAddress }
       onChange={ this.setAddress }
       isClearable={ true }

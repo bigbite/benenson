@@ -345,36 +345,40 @@ $generated_i18n_strings = array(
 	__( 'Longitude', 'benenson' ),
 
 	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:130
-	__( 'loading', 'benenson' ),
+	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:167
+	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:10
+	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
+	// Reference: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
+	__( 'Loading...', 'benenson' ),
 
 	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:130
 	__( 'Enter Address', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:149
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:147
 	__( 'No Maps API Key found. Please add one in Theme Options.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:155
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:165
 	__( 'User-facing settings', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:157
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:167
 	__( 'Disable Zoom', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:162
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:172
 	__( 'Map Settings', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:164
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:174
 	__( 'Display Map Marker', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:169
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:179
 	__( 'Use Coordinates', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:170
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:180
 	__( 'Set the map centre using lat/lng instead of address lookup', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:175
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:185
 	__( 'Zoom Level', 'benenson' ),
 
-	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:182
+	// Reference: src/scripts/blocks/google-map/DisplayComponent.js:192
 	__( 'Map Position', 'benenson' ),
 
 	// Reference: src/scripts/blocks/google-map/index.js:8
@@ -781,12 +785,6 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/post-list/components/CategorySelect.js:78
 	__( 'Select a category', 'benenson' ),
-
-	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:167
-	// Reference: src/scripts/blocks/post-list/components/SelectPreview.js:10
-	// Reference: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
-	// Reference: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
-	__( 'Loading...', 'benenson' ),
 
 	// Reference: src/scripts/blocks/post-list/components/DisplayCategories.js:171
 	__( 'Select a category.', 'benenson' ),

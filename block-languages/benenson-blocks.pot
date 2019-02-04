@@ -440,7 +440,11 @@ msgid "Longitude"
 msgstr ""
 
 #: src/scripts/blocks/google-map/DisplayComponent.js:130
-msgid "loading"
+#: src/scripts/blocks/post-list/components/DisplayCategories.js:167
+#: src/scripts/blocks/post-list/components/SelectPreview.js:10
+#: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
+#: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
+msgid "Loading..."
 msgstr ""
 
 #: src/scripts/blocks/google-map/DisplayComponent.js:130
@@ -1010,13 +1014,6 @@ msgstr ""
 
 #: src/scripts/blocks/post-list/components/CategorySelect.js:78
 msgid "Select a category"
-msgstr ""
-
-#: src/scripts/blocks/post-list/components/DisplayCategories.js:167
-#: src/scripts/blocks/post-list/components/SelectPreview.js:10
-#: src/scripts/blocks/post-list/components/post-selector/PostList.js:41
-#: src/scripts/blocks/post-list/components/post-selector/PostSelector.js:36
-msgid "Loading..."
 msgstr ""
 
 #: src/scripts/blocks/post-list/components/DisplayCategories.js:171
