@@ -22,6 +22,9 @@ registerBlockType('benenson/block-countdown', {
   },
 
   attributes: {
+    countdownId: {
+      type: 'string',
+    },
     title: {
       type: 'string',
     },

@@ -1,5 +1,7 @@
 import classnames from 'classnames';
 
+const randId = () => Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const {
@@ -12,9 +14,20 @@ const { applyFilters } = wp.hooks;
 const { PostMediaSelector } = benenson.components;
 
 class DisplayComponent extends Component {
+  componentDidMount() {
+    const { attributes, setAttributes } = this.props;
+
+    if (!attributes.countdownId) {
+      setAttributes({
+        countdownId: randId(),
+      });
+    }
+  }
+
   render() {
     const { attributes, setAttributes } = this.props;
     const {
+      countdownId = '',
       date = new Date(),
       title = '',
       revealTitle = '',
@@ -86,7 +99,7 @@ class DisplayComponent extends Component {
             />
           </PanelBody>
         </InspectorControls>
-        <div className={ classes } style={ styles }>
+        <div id={ countdownId } className={ classes } style={ styles }>
           <RichText
             tagName="h2"
             className="countdownTimer-title"

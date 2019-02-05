@@ -88,7 +88,8 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
 #: src/scripts/blocks/blockquote/index.js:232
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:32
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:45
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
 #: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:49
@@ -97,7 +98,8 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
 #: src/scripts/blocks/blockquote/index.js:226
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:35
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:48
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
 #: src/scripts/blocks/header/DisplayComponent.js:98
 msgid "Black"
 msgstr ""
@@ -127,11 +129,13 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:51
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:64
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:65
 #: src/scripts/blocks/header/DisplayComponent.js:120
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:96
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:66
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
@@ -245,7 +249,7 @@ msgid "Alignment"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:252
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:53
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:66
 msgid "Text Colour"
 msgstr ""
 
@@ -407,60 +411,63 @@ msgstr ""
 msgid "Row Column"
 msgstr ""
 
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:102
-msgid "Days"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:105
-msgid "Hours"
-msgstr ""
-
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:108
-msgid "Minutes"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:111
-msgid "Seconds"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:120
-msgid "(Insert Reveal Title)"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:130
-msgid "(Insert Reveal Content)"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:140
-#: src/scripts/blocks/media-aside/DisplayComponent.js:103
-msgid "(Insert Link text)"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:63
-msgid "Background colour"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:73
-msgid "Remove background colour"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:76
-#: src/scripts/blocks/header/DisplayComponent.js:152
-#: src/scripts/blocks/section/DisplayComponent.js:105
-msgid "Background Image"
-msgstr ""
-
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:95
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:109
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:79
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:110
 #: src/scripts/blocks/media-aside/DisplayComponent.js:83
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/countdown-timer/DisplayComponent.js:92
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 msgid "(Insert Title)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:115
+msgid "Days"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:118
+msgid "Hours"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:121
+msgid "Minutes"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:124
+msgid "Seconds"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:133
+msgid "(Insert Reveal Title)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:143
+msgid "(Insert Reveal Content)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:153
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:154
+#: src/scripts/blocks/media-aside/DisplayComponent.js:103
+msgid "(Insert Link text)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:76
+msgid "Background colour"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:86
+msgid "Remove background colour"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:89
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:90
+#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/section/DisplayComponent.js:105
+msgid "Background Image"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/index.js:17

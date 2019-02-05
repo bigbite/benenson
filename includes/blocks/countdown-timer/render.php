@@ -8,7 +8,7 @@
  */
 if ( ! function_exists( 'benenson_render_countdown_timer_block' ) ) {
 	function benenson_render_countdown_timer_block( array $attributes = [] ) {
-		$required = [ 'title', 'date' ];
+		$required = [ 'countdownId', 'title', 'date' ];
 		foreach ( $required as $req ) {
 			if ( ! isset( $attributes[ $req ] ) ) {
 				$attributes[ $req ] = '';

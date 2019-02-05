@@ -84,6 +84,10 @@ if ( ! function_exists( 'benenson_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
+		wp_localize_script( 'global-scripts', 'benenson_data', [
+			'post_id' => get_the_ID(),
+		] );
+
 		if ( ! is_home() && ! is_archive() && ! is_search() ) {
 			return;
 		}
