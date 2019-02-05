@@ -3,7 +3,7 @@ import classnames from 'classnames';
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const {
-  InspectorControls, RichText,
+  InspectorControls, RichText, URLInputButton,
 } = wp.editor;
 const {
   PanelBody, Button, DateTimePicker, ColorPicker, SelectControl,
@@ -17,6 +17,10 @@ class DisplayComponent extends Component {
     const {
       date = new Date(),
       title = '',
+      revealTitle = '',
+      revealContent = '',
+      revealBtnText = '',
+      revealBtnLink = '',
       backgroundColor = '',
       backgroundId = null,
       backgroundUrl = '',
@@ -105,6 +109,43 @@ class DisplayComponent extends Component {
             </div>
             <div className="countdownTimer-item countdownTimer-secs">
               <p><span>00</span>{ __('Seconds', 'benenson') }</p>
+            </div>
+          </div>
+          <div className="countdownTimer-reveal">
+            <RichText
+              tagName="h2"
+              className="countdownTimer-title"
+              onChange={ newTitle => setAttributes({ revealTitle: newTitle }) }
+              value={ revealTitle }
+              placeholder={ __('(Insert Reveal Title)', 'benenson') }
+              keepPlaceholderOnFocus={ true }
+              formattingControls={ [] }
+              format="string"
+            />
+            <RichText
+              tagName="h2"
+              className="countdownTimer-content"
+              onChange={ newContent => setAttributes({ revealContent: newContent }) }
+              value={ revealContent }
+              placeholder={ __('(Insert Reveal Content)', 'benenson') }
+              keepPlaceholderOnFocus={ true }
+              formattingControls={ [] }
+              format="string"
+            />
+            <div className="countdownTimer-btn btn">
+              <RichText
+                tagName="p"
+                onChange={ newCtaText => setAttributes({ revealBtnText: newCtaText }) }
+                value={ revealBtnText }
+                placeholder={ __('(Insert Link text)', 'benenson') }
+                keepPlaceholderOnFocus={ true }
+                formattingControls={ [] }
+                format="string"
+              />
+              <URLInputButton
+                url={ revealBtnLink }
+                onChange={ newCtaLink => setAttributes({ revealBtnLink: newCtaLink }) }
+              />
             </div>
           </div>
         </div>

@@ -5,7 +5,6 @@ const init = () => {
       let hours = 0;
       let minutes = 0;
       let seconds = 0;
-      let count = 0;
 
       const daysElement = timer.querySelector('.countdownTimer-days span');
       const hoursElement = timer.querySelector('.countdownTimer-hours span');
@@ -18,8 +17,6 @@ const init = () => {
       }
 
       const calculate = () => {
-        count += 1;
-
         let startDate = new Date();
         startDate = startDate.getTime();
 
@@ -27,7 +24,7 @@ const init = () => {
         let timeRemaining = parseInt((endDate - startDate) / 1000, 10);
 
         if (timeRemaining < 0) {
-          timer.classList.add('countdownTimer--set');
+          timer.classList.add('is-finished');
           return;
         }
 
@@ -50,10 +47,6 @@ const init = () => {
         hoursElement.innerHTML = (`0${hours}`).slice(-2);
         minutesElement.innerHTML = (`0${minutes}`).slice(-2);
         secondsElement.innerHTML = (`0${seconds}`).slice(-2);
-
-        if (count >= 1) {
-          timer.classList.add('countdownTimer--set');
-        }
       };
 
       setInterval(calculate, 1000);

@@ -28,6 +28,18 @@ registerBlockType('benenson/block-countdown', {
     date: {
       type: 'string',
     },
+    revealTitle: {
+      type: 'string',
+    },
+    revealContent: {
+      type: 'string',
+    },
+    revealBtnText: {
+      type: 'string',
+    },
+    revealBtnUrl: {
+      type: 'string',
+    },
     backgroundColor: {
       type: 'string',
     },

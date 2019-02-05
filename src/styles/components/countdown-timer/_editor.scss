@@ -1,3 +1,9 @@
 .countdownTimer-title {
   @include font-size(28px);
 }
+
+.countdownTimer-reveal {
+  background-color: rgba($color-white, .5);
+  margin-top: 40px;
+  padding: 20px;
+}
