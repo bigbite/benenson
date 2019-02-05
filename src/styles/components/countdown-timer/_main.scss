@@ -32,17 +32,11 @@
   @include font-size(28px);
   display: block;
   margin-right: 5px;
-  filter: blur(20px);
-  transition: .3s filter linear;
 
   @include mq(small) {
     @include font-size(38px);
     display: initial;
   }
-}
-
-.countdownTimer.countdownTimer--set .countdownTimer-items .countdownTimer-item span {
-  filter: blur(0px);
 }
 
 .countdownTimer-items .countdownTimer-item + .countdownTimer-item {

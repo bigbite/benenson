@@ -408,17 +408,14 @@ msgid "Row Column"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:101
-#: src/scripts/blocks/countdown-timer/index.js:72
 msgid "Hours"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:104
-#: src/scripts/blocks/countdown-timer/index.js:75
 msgid "Minutes"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:107
-#: src/scripts/blocks/countdown-timer/index.js:78
 msgid "Seconds"
 msgstr ""
 
@@ -449,7 +446,6 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/countdown-timer/DisplayComponent.js:98
-#: src/scripts/blocks/countdown-timer/index.js:69
 msgid "Days"
 msgstr ""
 

@@ -43,42 +43,6 @@ registerBlockType('benenson/block-countdown', {
   },
   edit: DisplayComponent,
 
-  save({ attributes }) {
-    const {
-      date = new Date(),
-      title = '',
-      backgroundColor = '',
-      backgroundUrl = '',
-      textColor = '',
-    } = attributes;
-
-    const styles = {
-      backgroundImage: `url('${backgroundUrl}')`,
-      backgroundColor,
-    };
-
-    const classes = classnames('countdownTimer', {
-      [`is-${textColor}`]: !!textColor,
-    });
-
-    return (
-      <div className={ classes } style={ styles} data-date={ date }>
-        <h2 className="countdownTimer-title">{ title }</h2>
-        <div className="countdownTimer-items">
-          <div className="countdownTimer-item countdownTimer-days">
-            <p><span>00</span>{ __('Days', 'benenson') }</p>
-          </div>
-          <div className="countdownTimer-item countdownTimer-hours">
-            <p><span>00</span>{ __('Hours', 'benenson') }</p>
-          </div>
-          <div className="countdownTimer-item countdownTimer-mins">
-            <p><span>00</span>{ __('Minutes', 'benenson') }</p>
-          </div>
-          <div className="countdownTimer-item countdownTimer-secs">
-            <p><span>00</span>{ __('Seconds', 'benenson') }</p>
-          </div>
-        </div>
-      </div>
-    );
-  },
+  // Returns null due to the component being rendered server side
+  save: () => null,
 });

@@ -13,8 +13,9 @@ const init = () => {
       const secondsElement = timer.querySelector('.countdownTimer-secs span');
       const endDate = new Date(timer.dataset.date).getTime();
 
-      if (typeof endDate !== 'number')
+      if (typeof endDate !== 'number') {
         return;
+      }
 
       const calculate = () => {
         count += 1;

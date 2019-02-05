@@ -322,15 +322,12 @@ $generated_i18n_strings = array(
 	__( 'Row Column', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:101
-	// Reference: src/scripts/blocks/countdown-timer/index.js:72
 	__( 'Hours', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:104
-	// Reference: src/scripts/blocks/countdown-timer/index.js:75
 	__( 'Minutes', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:107
-	// Reference: src/scripts/blocks/countdown-timer/index.js:78
 	__( 'Seconds', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:59
@@ -356,7 +353,6 @@ $generated_i18n_strings = array(
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:98
-	// Reference: src/scripts/blocks/countdown-timer/index.js:69
 	__( 'Days', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/index.js:17
