@@ -7,7 +7,7 @@ const { applyFilters } = wp.hooks;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
 const {
-  withFilters, PanelBody, SelectControl, TextControl,
+  withFilters, PanelBody, SelectControl, TextControl, ToggleControl,
 } = wp.components;
 const { RichText, URLInputButton, InspectorControls } = wp.editor;
 const { PostFeaturedImage } = wp.editor;
@@ -68,6 +68,7 @@ class DisplayComponent extends Component {
       [`page-heroSize--${attributes.size}`]: attributes.size || false,
       [`page-heroBackground--${attributes.background}`]: attributes.background || false,
       [`page-heroAlignment--${attributes.alignment}`]: attributes.alignment || false,
+      'page-heroStyle--behindNav': attributes.bleed,
       'page-hero--video': attributes.type === 'video',
     });
 
@@ -111,6 +112,9 @@ class DisplayComponent extends Component {
       label: __('Normal', 'benenson'),
       value: '',
     }, {
+      label: __('Full height', 'benenson'),
+      value: 'fullHeight',
+    }, {
       label: __('Small', 'benenson'),
       value: 'small',
     }]);
@@ -148,6 +152,11 @@ class DisplayComponent extends Component {
             onChange={ this.createUpdateAttribute('embed') }
           />
           <p><em>{ __('Setting this will override the cta link and will now open a modal with the embed in the hero.', 'benenson') }</em></p>
+          <ToggleControl
+            label={ __('Bleed into navigation/header', 'benenson') }
+            checked={ attributes.bleed }
+            onChange={ this.createUpdateAttribute('bleed') }
+          />
         </PanelBody>
         <PanelBody title={ attributes.type === 'video' ? __('Background Image', 'benenson') : __('Featured Image', 'benenson') }>
           <PostFeaturedImage />
@@ -203,6 +212,32 @@ class DisplayComponent extends Component {
                   url={ attributes.ctaLink }
                   onChange={ this.createUpdateAttribute('ctaLink') }
                 /> }
+              </div>
+              <div className="btn">
+                <RichText
+                  tagName="span"
+                  value={ attributes.ctaTwoText }
+                  placeholder={ __('(Call to action)', 'benenson') }
+                  keepPlaceholderOnFocus={ true }
+                  format="string"
+                  onChange={ this.createUpdateAttribute('ctaTwoText') }
+                />
+                <URLInputButton
+                  url={ attributes.ctaTwoLink }
+                  onChange={ this.createUpdateAttribute('ctaTwoLink') }
+                />
+              </div>
+            </div>
+            <div className="page-heroBullets">
+              <div>
+                <RichText
+                  tagName="ul"
+                  multiline="li"
+                  value={ attributes.bullets }
+                  placeholder={ __('(Bullets)', 'benenson') }
+                  keepPlaceholderOnFocus={ true }
+                  onChange={ this.createUpdateAttribute('bullets') }
+                />
               </div>
             </div>
           </div>

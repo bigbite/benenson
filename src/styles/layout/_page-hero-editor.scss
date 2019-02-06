@@ -43,8 +43,16 @@ p.page-heroContent {
   padding: 10px 20px 20px;
 }
 
+.page-heroBullets ul {
+  margin-left: 20px !important;
+}
+
 .page-heroSize--small {
   min-height: 450px;
+}
+
+.page-heroSize--fullHeight {
+  min-height: 100vh;
 }
 
 .page-heroBackground--dark .page-heroContent,
@@ -182,4 +190,9 @@ p.page-heroContent {
 .page-heroCta .btn {
   display: flex;
   align-items: center;
+  height: 55px;
+}
+
+.page-heroStyle--behindNav {
+  z-index: 1;
 }

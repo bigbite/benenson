@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   padding: 0;
+  z-index: 1;
+  position: relative;
 }
 
 .page-header .page-nav {
@@ -52,6 +54,10 @@
 
 .page-header--transparent-dark {
   color: $color-black;
+}
+
+body.page--heroBehindNav .page-header:not(.page-header--sticky) {
+  background-color: transparent;
 }
 
 .page-headerSearch {

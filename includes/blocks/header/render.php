@@ -21,12 +21,14 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 
 		$size      = ! empty( $attributes['size'] ) ? $attributes['size'] : '';
 		$alignment = ! empty( $attributes['alignment'] ) ? $attributes['alignment'] : '';
+		$bleed     = ! empty( $attributes['bleed'] ) ? 'page-heroStyle--behindNav' : '';
 
 		$classlist = [
 			'page-hero',
 			'headerBlock',
 			sprintf( 'page-heroSize--%s', $size ),
 			sprintf( 'page-heroAlignment--%s', $alignment ),
+			$bleed,
 		];
 
 		if ( 'video' === $attributes['type'] ) {
@@ -90,22 +92,42 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 			printf( '<p class="page-heroContent">%s</p>', wp_kses_post( $attributes['content'] ) );
 		}
 
-		if ( $attributes['ctaText'] ) {
-			if ( $attributes['ctaLink'] && ! $attributes['embed'] ) {
+		if ( $attributes['ctaText'] && ( $attributes['ctaLink'] || $attributes['embed'] ) || $attributes['ctaTwoText'] && $attributes['ctaTwoLink'] ) {
+
+			print '<div class="page-heroCta">';
+
+			if ( $attributes['ctaText'] ) {
+				if ( $attributes['ctaLink'] && ! $attributes['embed'] ) {
+					printf(
+						'<a class="btn" href="%s">%s</a>',
+						esc_url( $attributes['ctaLink'] ),
+						esc_html( wp_strip_all_tags( $attributes['ctaText'] ) )
+					);
+				} elseif ( $attributes['embed'] ) {
+					printf(
+						'<div class="page-heroCta"><a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i>%s</a></div>',
+						esc_url( $attributes['ctaLink'] ),
+						esc_url( $attributes['embed'] ),
+						esc_html__( 'Play video', 'benenson' ),
+						esc_html( $attributes['ctaText'] )
+					);
+				}
+			}
+
+			if ( $attributes['ctaTwoText'] && $attributes['ctaTwoLink'] ) {
 				printf(
-					'<div class="page-heroCta"><a class="btn" href="%s">%s</a></div>',
-					esc_url( $attributes['ctaLink'] ),
-					esc_html( wp_strip_all_tags( $attributes['ctaText'] ) )
-				);
-			} elseif ( $attributes['embed'] ) {
-				printf(
-					'<div class="page-heroCta"><a class="btn" href="%s" data-modal-embed="%s"><i class="play-icon">%s</i>%s</a></div>',
-					esc_url( $attributes['ctaLink'] ),
-					esc_url( $attributes['embed'] ),
-					esc_html__( 'Play video', 'benenson' ),
-					esc_html( $attributes['ctaText'] )
+					'<a class="btn" href="%s">%s</a>',
+					esc_url( $attributes['ctaTwoLink'] ),
+					esc_html( wp_strip_all_tags( $attributes['ctaTwoText'] ) )
 				);
 			}
+
+			print '</div>';
+
+		}
+
+		if ( $attributes['bullets'] ) {
+			printf( '<div class="page-heroBullets"><div><ul><%s</ul></div></div>', wp_kses_post( $attributes['bullets'] ) );
 		}
 
 		print '</div></div></section>';
