@@ -31,7 +31,7 @@ class Benenson_Core_Reveal_Content {
 	 * Register api routes
 	 */
 	public function register_routes() {
-		register_rest_route( $this->namespace, '/reveal-content/(?P<id>\d+)', [
+		register_rest_route( $this->namespace, '/reveal-content/(?P<id>\d+)/(?P<ref>\w+)', [
 			'callback' => [ $this, 'get_item' ],
 			'methods'  => 'GET',
 			'args'     => [
@@ -49,7 +49,7 @@ class Benenson_Core_Reveal_Content {
 	 * @return array|mixed|WP_REST_Response
 	 */
 	public function get_item( WP_REST_Request $request ) {
-		$object = get_post_field('post_content', $request->get_param( 'id' ));
+		$object = get_post_field( 'post_content', $request->get_param( 'id' ) );
 
 		if ( ! $object ) {
 			return rest_ensure_response(
@@ -57,8 +57,27 @@ class Benenson_Core_Reveal_Content {
 			);
 		}
 
+		$blocks      = parse_blocks( $object );
+		$block_attrs = $this->get_block( $blocks, $request->get_param( 'ref' ) );
+
 		return [
-			'test'  => 'test',
+			'attrs' => $block_attrs,
 		];
+	}
+
+	public function get_block( array $blocks, string $ref ) {
+		$value = false;
+
+		foreach ( $blocks as $block ) {
+			if ( isset( $block['attrs']['countdownId'] ) && $block['attrs']['countdownId'] === $ref ) {
+				$value = $block['attrs'];
+			}
+
+			if ( $block['innerBlocks'] ) {
+				$value = $this->get_block( $block['innerBlocks'], $ref );
+			}
+		}
+
+		return $value;
 	}
 }

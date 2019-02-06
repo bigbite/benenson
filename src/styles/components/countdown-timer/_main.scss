@@ -47,3 +47,17 @@
 .countdownTimer.is-black .countdownTimer-title {
   color: $color-black;
 }
+
+// .countdownTimer-container {
+//   transition: all .5s ease;
+// }
+
+.countdownTimer.is-finished .countdownTimer-container {
+  // height: 0px;
+  // opacity: 0;
+  display: none;
+}
+
+.countdownTimer.is-finished .coutdownTimer-revealContainer {
+//   transition: all .5s ease;
+}

@@ -33,7 +33,7 @@ class DisplayComponent extends Component {
       revealTitle = '',
       revealContent = '',
       revealBtnText = '',
-      revealBtnLink = '',
+      revealBtnUrl = '',
       backgroundColor = '',
       backgroundId = null,
       backgroundUrl = '',
@@ -99,7 +99,7 @@ class DisplayComponent extends Component {
             />
           </PanelBody>
         </InspectorControls>
-        <div id={ countdownId } className={ classes } style={ styles }>
+        <div className={ classes } style={ styles }>
           <RichText
             tagName="h2"
             className="countdownTimer-title"
@@ -156,8 +156,8 @@ class DisplayComponent extends Component {
                 format="string"
               />
               <URLInputButton
-                url={ revealBtnLink }
-                onChange={ newCtaLink => setAttributes({ revealBtnLink: newCtaLink }) }
+                url={ revealBtnUrl }
+                onChange={ newCtaLink => setAttributes({ revealBtnUrl: newCtaLink }) }
               />
             </div>
           </div>
