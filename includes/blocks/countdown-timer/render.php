@@ -40,7 +40,7 @@ if ( ! function_exists( 'benenson_render_countdown_timer_block' ) ) {
 		spaceless();
 		?>
 
-		<div class="countdownTimer" data-date="<?php echo esc_attr( $attributes['date'] ); ?>">
+		<div id="<?php echo esc_attr( $attributes['countdownId'] ); ?>" class="countdownTimer" data-date="<?php echo esc_attr( $attributes['date'] ); ?>">
 			<?php
 			if ( ! empty ( $attributes['title'] ) ) {
 				printf( '<h2 class="countdownTimer-title">%s</h2>', wp_kses_post( $attributes['title'] ) );

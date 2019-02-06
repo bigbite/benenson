@@ -1,6 +1,10 @@
+const { benenson_data: benensonData } = window;
+
 const init = () => {
   Array.from(document.querySelectorAll('.countdownTimer'))
     .forEach((timer) => {
+      console.log(benensonData.post_id);
+
       let days = 0;
       let hours = 0;
       let minutes = 0;
