@@ -8,7 +8,7 @@ const {
   InspectorControls, RichText, URLInputButton,
 } = wp.editor;
 const {
-  PanelBody, Button, DateTimePicker, ColorPicker, SelectControl,
+  PanelBody, Button, DateTimePicker, ColorPicker, SelectControl, ToggleControl,
 } = wp.components;
 const { applyFilters } = wp.hooks;
 const { PostMediaSelector } = benenson.components;
@@ -38,6 +38,7 @@ class DisplayComponent extends Component {
       backgroundId = null,
       backgroundUrl = '',
       textColor = '',
+      hideTimer = false,
     } = attributes;
 
     // Note: US English spelling.
@@ -62,6 +63,12 @@ class DisplayComponent extends Component {
       <Fragment>
         <InspectorControls>
           <PanelBody title={ __('Options', 'benenson') }>
+            <ToggleControl
+              label={ __('Hide timer', 'benenson') }
+              help={ __('When the timer has finished hide it from users.', 'benenson') }
+              checked={ hideTimer }
+              onChange={ hideShow => setAttributes({ hideTimer: hideShow }) }
+            />
             <SelectControl
               label={ __('Text Colour', 'benenson') }
               value={ textColor }

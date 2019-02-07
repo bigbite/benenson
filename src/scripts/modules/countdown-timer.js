@@ -69,25 +69,23 @@ const init = () => {
             wrapper.classList.add('coutdownTimer-revealContainer');
 
             const title = document.createElement('h2');
-            const titleText = document.createTextNode(jsonResponse.attrs.revealTitle);
-            title.appendChild(titleText);
+            title.innerText = jsonResponse.attrs.revealTitle;
             title.classList.add('countdownTimer-title');
             wrapper.append(title);
 
             const content = document.createElement('p');
-            const contentText = document.createTextNode(jsonResponse.attrs.revealContent);
-            content.appendChild(contentText);
+            content.innerText = jsonResponse.attrs.revealContent;
             content.classList.add('countdownTimer-content');
             wrapper.append(content);
 
             const button = document.createElement('a');
-            const buttonText = document.createTextNode('Hi there and greetings!');
-            button.appendChild(buttonText);
+            button.href = jsonResponse.attrs.revealBtnUrl;
+            button.innerText = jsonResponse.attrs.revealBtnText;
             button.classList.add('btn', 'countdownTimer-btn');
             wrapper.append(button);
 
-            document.querySelector(`.countdownTimer[data-ref="${timerRef}"]`).append(wrapper);
             timer.classList.add('is-finished');
+            document.querySelector(`.countdownTimer[data-ref="${timerRef}"]`).append(wrapper);
           }
         };
 

@@ -68,7 +68,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:39
 	// Reference: src/scripts/blocks/blockquote/index.js:232
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:28
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:95
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:12
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:49
@@ -76,7 +76,7 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/appearance-options/index.js:42
 	// Reference: src/scripts/blocks/blockquote/index.js:226
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:31
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:98
 	__( 'Black', 'benenson' ),
 
@@ -100,12 +100,13 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 	// Reference: src/scripts/blocks/category-list/DisplayComponent.js:62
 	// Reference: src/scripts/blocks/columns/DisplayComponent.js:28
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:47
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:65
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:120
 	// Reference: src/scripts/blocks/iframe/DisplayComponent.js:89
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:96
 	// Reference: src/scripts/blocks/post-list/DisplayComponent.js:91
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:64
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:80
 	// Reference: src/scripts/blocks/slider/DisplayComponent.js:215
 	__( 'Options', 'benenson' ),
@@ -198,7 +199,7 @@ $generated_i18n_strings = array(
 	__( 'Alignment', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:252
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:73
 	__( 'Text Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:258
@@ -321,39 +322,57 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/columns/row-column.js:9
 	__( 'Row Column', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:101
-	__( 'Hours', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:104
-	__( 'Minutes', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:107
-	__( 'Seconds', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:59
-	__( 'Background colour', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:69
-	__( 'Remove background colour', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:72
-	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
-	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
-	__( 'Background Image', 'benenson' ),
-
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:91
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:115
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:79
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:114
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:83
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:108
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
 	__( '(Insert Title)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:98
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:122
 	__( 'Days', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:125
+	__( 'Hours', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:128
+	__( 'Minutes', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:131
+	__( 'Seconds', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:140
+	__( '(Insert Reveal Title)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:150
+	__( '(Insert Reveal Content)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:160
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
+	__( '(Insert Link text)', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:67
+	__( 'Hide timer', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:68
+	__( 'When the timer has finished hide it from users.', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:83
+	__( 'Background colour', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:93
+	__( 'Remove background colour', 'benenson' ),
+
+	// Reference: src/scripts/blocks/countdown-timer/DisplayComponent.js:96
+	// Reference: src/scripts/blocks/header/DisplayComponent.js:152
+	// Reference: src/scripts/blocks/section/DisplayComponent.js:105
+	__( 'Background Image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/countdown-timer/index.js:17
 	__( 'Countdown Timer', 'benenson' ),
@@ -675,9 +694,6 @@ $generated_i18n_strings = array(
 
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
-
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
-	__( '(Insert Link text)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:57
 	__( 'Display in modal', 'benenson' ),

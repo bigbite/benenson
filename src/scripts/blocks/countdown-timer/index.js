@@ -55,6 +55,9 @@ registerBlockType('benenson/block-countdown', {
     textColor: {
       type: 'string',
     },
+    hideTimer: {
+      type: 'boolean',
+    },
   },
   edit: DisplayComponent,
 

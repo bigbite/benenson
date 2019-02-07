@@ -48,16 +48,10 @@
   color: $color-black;
 }
 
-// .countdownTimer-container {
-//   transition: all .5s ease;
-// }
-
 .countdownTimer.is-finished .countdownTimer-container {
-  // height: 0px;
-  // opacity: 0;
   display: none;
 }
 
-.countdownTimer.is-finished .coutdownTimer-revealContainer {
-//   transition: all .5s ease;
+.countdownTimer.is-finished[data-hide-show="1"]{
+  display: none;
 }
