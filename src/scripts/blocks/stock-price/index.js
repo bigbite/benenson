@@ -38,6 +38,15 @@ const blockAttributes = {
   stocksymbol: {
     type: 'string',
   },
+  stockHigh: {
+    type: 'integer',
+  },
+  stockLow: {
+    type: 'integer',
+  },
+  stockDifference: {
+    type: 'integer',
+  },
 };
 
 registerBlockType('benenson/block-stock-price', {

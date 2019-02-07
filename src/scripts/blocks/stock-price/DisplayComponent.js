@@ -25,13 +25,19 @@ class DisplayComponent extends Component {
     console.log('mounted');
   }
 
+  parseData(data){
+    console.log('data');
+    console.log(data);
+    console.log(data.data['Global Quote']['03. high']);
+  }
+
   async fetchStockPrices() {
     const stockSymbol = this.state.stocksymbol;
     //0QOA.ILN
     //TMNSF
     const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==A4HQO5VEF6YLX066`;
     axios.get(Url)
-      .then(data => console.log(data))
+      .then(data => this.parseData(data))
       .catch(err => console.log(err));
   }
 
