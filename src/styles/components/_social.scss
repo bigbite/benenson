@@ -8,6 +8,7 @@
   text-indent: -1000vw;
   width: 20px;
   height: 20px;
+  font-size: 1px;
   color: transparent;
 }
 
@@ -16,15 +17,10 @@
 .social-instagram::after,
 .social-twitter::after,
 .social-youtube::after {
-  position: absolute;
-  top: calc(50% - 14px);
-  left: calc(50% - 14px);
   content: "";
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 20px;
-  transform: translateY(4px);
 }
 
 .social-facebook::after {
