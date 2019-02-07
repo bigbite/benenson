@@ -40,13 +40,15 @@ if ( ! function_exists( 'benenson_render_countdown_timer_block' ) ) {
 			}
 		}
 
-		$finished   = $time_remaining > 0 ? '' : 'is-finished';
-		$hide_timer = ! empty ( $attributes['hideTimer'] ) && $attributes['hideTimer'] ? 'data-hide-show=' . $attributes['hideTimer'] . '' : '';
+		$finished         = $time_remaining > 0 ? '' : 'is-finished';
+		$hide_timer       = ! empty ( $attributes['hideTimer'] ) && $attributes['hideTimer'] ? 'data-hide-show=' . $attributes['hideTimer'] . '' : '';
+		$background_color = ! empty ( $attributes['backgroundColor'] ) ? 'background-color:' . $attributes['backgroundColor'] . ';' : '';
+		$background_image = ! empty ( $attributes['backgroundUrl'] ) ? 'background-image: url(' . $attributes['backgroundUrl'] . ');' : '';
 
 		spaceless();
 		?>
 
-		<div class="countdownTimer <?php echo esc_attr( $finished ); ?>" <?php echo esc_attr( $hide_timer ); ?> data-ref="<?php echo esc_attr( $attributes['countdownId'] ); ?>" data-date="<?php echo esc_attr( $attributes['date'] ); ?>">
+		<div class="countdownTimer <?php echo esc_attr( $finished ); ?>" style="<?php echo esc_attr( $background_color ) . esc_attr ( $background_image ); ?>" <?php echo esc_attr( $hide_timer ); ?> data-ref="<?php echo esc_attr( $attributes['countdownId'] ); ?>" data-date="<?php echo esc_attr( $attributes['date'] ); ?>">
 			<?php if ( $time_remaining > 0 ) { ?>
 				<div class="countdownTimer-container">
 					<?php
