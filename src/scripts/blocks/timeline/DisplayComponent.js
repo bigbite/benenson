@@ -15,23 +15,23 @@ const {
 
 const { PostMediaSelector } = benenson.components;
 
+const { dateI18n, format, __experimentalGetSettings } = wp.date;
+
 class DisplayComponent extends Component {
   static emptyBlock = {
     id: '',
     date: new Date(),
     title: '',
-    heading: '',
-    subheading: '',
     content: '',
-    imageId: '',
-    imageUrl: '',
-    callToActionText: '',
-    callToActionLink: '',
-    alignment: '',
-    background: '',
-    hideContent: false,
-    sizes: {},
   };
+
+  constructor(...props) {
+    super(...props);
+
+    this.state = {
+      selectedBlock: 0,
+    };
+  }
 
   /**
    * Higher order component that takes the attribute key,
@@ -41,6 +41,23 @@ class DisplayComponent extends Component {
    * @returns {function(*): *}
    */
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
+
+  createUpdateBlockAttribute =
+  index =>
+    key =>
+      value =>
+        this.props.setAttributes({
+          blocks: [
+            ...this.props.attributes.blocks
+              .slice(0, Math.max(0, index)),
+            {
+              ...this.props.attributes.blocks[index],
+              [key]: value,
+            },
+            ...this.props.attributes
+              .blocks.slice(index + 1, this.props.attributes.blocks.length),
+          ],
+        });
 
   addBlock = () => {
     this.setState({
@@ -58,23 +75,56 @@ class DisplayComponent extends Component {
     });
   };
 
+  deleteBlock = (index) => {
+    if (index === this.props.attributes.blocks.length - 1) {
+      this.setState({
+        selectedBlock: index - 1,
+      });
+    }
+
+    this.props.setAttributes({
+      blocks: [
+        ...this.props.attributes
+          .blocks.slice(0, Math.max(0, index)),
+        ...this.props.attributes
+          .blocks.slice(index + 1, this.props.attributes.blocks.length),
+      ],
+    });
+  };
+
+  initiateDelete = () => {
+    if (confirm(__('Are you sure you want to delete this block from the timeline?', 'benenson'))) { // eslint-disable-line no-restricted-globals, no-alert
+      this.deleteBlock(this.state.selectedBlock);
+    }
+  };
+
+  selectBlock = index => this.setState({
+    selectedBlock: index,
+  });
+
+  createSelectBlock = index => () => this.selectBlock(index);
+
   render() {
     const { attributes } = this.props;
+    const { selectedBlock } = this.state;
+
+    const currentBlock = attributes.blocks[selectedBlock];
+    const updateBlock = this.createUpdateBlockAttribute(selectedBlock);
+
+    const dateFormat = __experimentalGetSettings().formats.date;
 
     const controls = (
       <InspectorControls>
+        { attributes.blocks.length > 0 && (
+          <PanelBody title={ __('Timeline Block Options', 'benenson') }>
+
+          </PanelBody>
+        ) }
         <PanelBody title={ __('Options', 'benenson') }>
           <ToggleControl
             label={__('Show Arrows', 'benenson')}
             checked={attributes.hasArrows}
             onChange={this.createUpdateAttribute('hasArrows')}
-          />
-
-          <ToggleControl
-            label={__('Has Content', 'benenson')}
-            checked={attributes.hasContent}
-            onChange={this.createUpdateAttribute('hasContent')}
-            help={<span>{ __('By disabling this you will hide the content in *ALL* slides. To disable this on only one slide, select the desired slide and toggle the "Hide Content" field in the "Slide Options" panel.', 'benenson') }</span>} // eslint-disable-line max-len
           />
 
           <ToggleControl
@@ -86,6 +136,8 @@ class DisplayComponent extends Component {
         </PanelBody>
       </InspectorControls>
     );
+
+    console.log(attributes);
 
     return (
       <Fragment>
@@ -105,8 +157,60 @@ class DisplayComponent extends Component {
                   </div>
                 </div>
               ) }
+              { currentBlock && (
+                <div class="timelineBlock">
+                  <p className="timelineBlock-dateTime">{ dateI18n(dateFormat, currentBlock.date) }</p>
+                  <div className="timelineBlock-content">
+                    <RichText
+                      tagname="p"
+                      className="timelineBlock-title"
+                      placeholder={ __('(Title)', 'benenson') }
+                      value={currentBlock.title}
+                      onChange={updateBlock('title')}
+                      formattingControls={[]}
+                      keepPlaceholderOnFocus={ true }
+                      format="string"
+                    />
+                    <RichText
+                      tagname="p"
+                      className="timelineBlock-text"
+                      placeholder={ __('(Content)', 'benenson') }
+                      value={currentBlock.content}
+                      onChange={updateBlock('content')}
+                      formattingControls={[]}
+                      keepPlaceholderOnFocus={ true }
+                      format="string"
+                    />
+                  </div>
+                </div>
+              ) }
             </div>
           </div>
+          <nav className="timeline-nav">
+          { currentBlock && (
+            <div className="timeline-navActions">
+              <button className="timeline-navButton btn" onClick={ this.initiateDelete }>{ __('Remove Block', 'benenson') }</button>
+              <button className="timeline-navButton btn" onClick={ this.addBlock }>{ __('Add Block', 'benenson') }</button>
+            </div>
+          ) }
+          { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
+                const blockTitle = block.block && block.title !== '';
+
+                if (selectedBlock === index) {
+                  return (
+                    <div className="timeline-navButton is-active btn">
+                        <span>{blockTitle ? block.title : __('(No Title)', 'benenson')}</span>
+                    </div>
+                  );
+                }
+
+                return (
+                  <button className="timeline-navButton btn" onClick={ this.createSelectBlock(index) }>
+                    {blockTitle ? block.title : __('(No Title)', 'benenson')}
+                  </button>
+                );
+          }) }
+          </nav>
         </div>
       </Fragment>
     );

@@ -30,10 +30,6 @@ registerBlockType('benenson/timeline', {
       type: 'boolean',
       default: true,
     },
-    hasContent: {
-      type: 'boolean',
-      default: true,
-    },
   },
 
   edit: DisplayComponent,
