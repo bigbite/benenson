@@ -44,6 +44,9 @@ const blockAttributes = {
   stockLow: {
     type: 'integer',
   },
+  stockPrice: {
+    type: 'integer',
+  },
   stockDifference: {
     type: 'integer',
   },

@@ -18,6 +18,7 @@ class DisplayComponent extends Component {
       stocksymbol: this.props.attributes.stocksymbol,
       stockHigh: this.props.attributes.stockHigh,
       stockLow: this.props.attributes.stockLow,
+      stockPrice: this.props.attributes.stockPrice,
     };
   }
 
@@ -25,6 +26,7 @@ class DisplayComponent extends Component {
 
   componentDidMount() {
     console.log('mounted');
+    this.fetchStockPrices();
   }
 
   parseData(data){
@@ -35,7 +37,9 @@ class DisplayComponent extends Component {
     setAttributes({
       stockHigh: data.data['Global Quote']['03. high'],
       stockLow: data.data['Global Quote']['04. low'],
+      stockPrice: data.data['Global Quote']['05. price'],
     });
+    console.log(this.props);
   }
 
   async fetchStockPrices() {
@@ -49,7 +53,7 @@ class DisplayComponent extends Component {
   }
 
   render() {
-    this.fetchStockPrices();
+
     const { attributes } = this.props;
 
     return (<Fragment>
