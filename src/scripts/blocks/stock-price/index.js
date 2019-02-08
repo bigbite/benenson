@@ -64,23 +64,6 @@ registerBlockType('benenson/block-stock-price', {
 
   edit: DisplayComponent,
 
-  save: ({ attributes }) => {
-    const {
-      background = false,
-      style = false,
-      stocksymbol,
-      preheading,
-      title,
-      content,
-      ctaLink,
-      ctaText,
-    } = attributes;
-
-
-    return (<div className="stock-price">
-      <h3>{ attributes.stocktitle }</h3>
-      <h3>{ attributes.stocksymbol }</h3>
-    </div>
-    );
-  },
+  // Returns null due to the component being rendered server side
+  save: () => null,
 });

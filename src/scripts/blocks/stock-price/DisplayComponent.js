@@ -16,6 +16,8 @@ class DisplayComponent extends Component {
       loading: false,
       error: false,
       stocksymbol: this.props.attributes.stocksymbol,
+      stockHigh: this.props.attributes.stockHigh,
+      stockLow: this.props.attributes.stockLow,
     };
   }
 
@@ -26,9 +28,14 @@ class DisplayComponent extends Component {
   }
 
   parseData(data){
+    const { attributes, setAttributes } = this.props;
     console.log('data');
     console.log(data);
-    console.log(data.data['Global Quote']['03. high']);
+    console.log(data.data['Global Quote']['05. price']);
+    setAttributes({
+      stockHigh: data.data['Global Quote']['03. high'],
+      stockLow: data.data['Global Quote']['04. low'],
+    });
   }
 
   async fetchStockPrices() {
