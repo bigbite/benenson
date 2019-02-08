@@ -54,6 +54,8 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 
 		register_setting( 'theme_options', '_analytics_gtm', $text_field_args );
 		register_setting( 'theme_options', '_analytics_ga', $text_field_args );
+
+		register_setting( 'theme_options', '_stock_api_key', $text_field_args );
 	}
 }
 
@@ -228,6 +230,13 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 				<td>
 					<?php $value = benenson_get_option( '_social_instagram', '' ); ?>
 					<input type="url" name="_social_instagram" value="<?php echo esc_attr( $value ); ?>" placeholder="https://">
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php esc_html_e( 'Stock API key', 'benenson' ); ?></th>
+				<td>
+					<?php $value = benenson_get_option( '_stock_api_key', '' ); ?>
+					<input type="text" name="_stock_api_key" value="<?php echo esc_attr( $value ); ?>" placeholder="">
 				</td>
 			</tr>
 			<?php
