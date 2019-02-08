@@ -6,7 +6,7 @@ const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { applyFilters } = wp.hooks;
 const {
-  PanelBody, Button, TextControl, ToggleControl, SelectControl,
+  PanelBody, Button, TextControl, ToggleControl, SelectControl, DateTimePicker,
 } = wp.components;
 
 const {
@@ -117,7 +117,10 @@ class DisplayComponent extends Component {
       <InspectorControls>
         { attributes.blocks.length > 0 && (
           <PanelBody title={ __('Timeline Block Options', 'benenson') }>
-
+            <DateTimePicker
+              currentDate={ attributes.date }
+              onChange={updateBlock('date')}
+            />
           </PanelBody>
         ) }
         <PanelBody title={ __('Options', 'benenson') }>
@@ -137,17 +140,11 @@ class DisplayComponent extends Component {
       </InspectorControls>
     );
 
-    console.log(attributes);
-
     return (
       <Fragment>
         { controls }
         <div className="timmeline">
           <div class="timeline-container">
-            { attributes.hasArrows && [
-              <button onClick={this.nextSlide} className="slides-arrow slides-arrow--next">{__('Next', 'benenson')}</button>,
-              <button onClick={this.prevSlide} className="slides-arrow slides-arrow--previous">{__('Previous', 'benenson')}</button>,
-            ] }
             <div className="timelineBlocks">
               { attributes.blocks.length === 0 && (
                 <div className="timmelineBlock">
@@ -194,7 +191,7 @@ class DisplayComponent extends Component {
             </div>
           ) }
           { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
-                const blockTitle = block.block && block.title !== '';
+                const blockTitle = block.title && block.title !== '';
 
                 if (selectedBlock === index) {
                   return (
