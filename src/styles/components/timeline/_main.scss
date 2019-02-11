@@ -1,6 +1,34 @@
+.timeline .timeline-container {
+  position: relative;
+  width: 100%;
+  overflow: scroll;
+}
+
+.timeline .timeline-container .timelineBlocks {
+  position: relative;
+  will-change: transform;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: max-content;
+  padding: 18px 0;
+}
+
+.timeline-line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: - 1.5px;
+  background-color: $color-black;
+}
+
 .timelineBlock {
-  min-width: 200px;
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 20px;
 }
 
 .timelineBlock .timelineBlock-dateTime {
@@ -11,12 +39,13 @@
   padding-bottom: 50px;
   margin-left: 50px;
   font-weight: bold;
+  text-align: center;
 
   &::before {
     content: "";
     position: absolute;
     width: 4px;
-    height: 30px;
+    height: 36px;
     background-color: $color-black;
     bottom: 0;
     left: 50%;
@@ -25,14 +54,15 @@
 
   &::after {
     content: "";
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     border: 4px solid $color-black;
     border-radius: 50%;
+    background-color: $color-white;
     position: absolute;
     left: 50%;
-    margin-left: -6px;
-    bottom: 30px;
+    margin-left: -7.5px;
+    bottom: 36px;
   }
 }
 
@@ -41,22 +71,29 @@
   background-color: $color-black;
   color: $color-white;
   padding: 20px;
-
-  /*
-  &::before {
-    content: ' ';
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    margin-top: - 1.5px;
-    background-color: $color-black;
-  }
-  */
 }
 
 .timelineBlock .timelineBlock-title {
   @include font-size(24px);
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.timelineBlock:nth-child(2n) {
+  flex-direction: column-reverse;
+}
+
+.timelineBlock:nth-child(2n) .timelineBlock-dateTime {
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  &::before {
+    bottom: initial;
+    top: 0;
+  }
+
+  &::after {
+    top: 34px;
+    bottom: initial;
+  }
 }

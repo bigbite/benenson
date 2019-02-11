@@ -41,23 +41,24 @@ registerBlockType('benenson/timeline', {
 
     return (
       <div className="timeline">
-        <div class="timeline-container">
+        <div className="timeline-container">
+          <div class="timeline-line"></div>
           <div className="timelineBlocks">
-          { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
-            const blockDate = block.date !== '' ? <p className="timelineBlock-dateTime">{ dateI18n(dateFormat, block.date) }</p> : null;
-            const blockTitle = block.title !== '' ? <p className="timelineBlock-title">{ block.title }</p> : null;
-            const blockContent = block.content !== '' ? <p className="timelineBlock-text">{ block.content }</p> : null;
+            { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
+              const blockDate = block.date !== '' ? <p className="timelineBlock-dateTime">{ dateI18n(dateFormat, block.date) }</p> : null;
+              const blockTitle = block.title !== '' ? <p className="timelineBlock-title">{ block.title }</p> : null;
+              const blockContent = block.content !== '' ? <p className="timelineBlock-text">{ block.content }</p> : null;
 
-            return (
-              <div className="timelineBlock">
-                { blockDate }
-                <div className="timelineBlock-content">
-                  { blockTitle }
-                  { blockContent }
+              return (
+                <div className="timelineBlock">
+                  { blockDate }
+                  <div className="timelineBlock-content">
+                    { blockTitle }
+                    { blockContent }
+                  </div>
                 </div>
-              </div>
-            );
-          }) }
+              );
+            }) }
           </div>
         </div>
       </div>

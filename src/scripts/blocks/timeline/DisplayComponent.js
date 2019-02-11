@@ -115,10 +115,10 @@ class DisplayComponent extends Component {
 
     const controls = (
       <InspectorControls>
-        { attributes.blocks.length > 0 && (
+        { currentBlock && (
           <PanelBody title={ __('Timeline Block Options', 'benenson') }>
             <DateTimePicker
-              currentDate={ attributes.date }
+              currentDate={ currentBlock.date }
               onChange={updateBlock('date')}
             />
           </PanelBody>

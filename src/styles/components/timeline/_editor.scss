@@ -1,5 +1,5 @@
 .timelineBlock {
-  max-width: initial;
+  width: 100%;
 }
 
 .timeline-nav {
@@ -17,13 +17,20 @@
   }
 }
 
+.timeline-nav button {
+  margin-bottom: 1px;
+}
+
 .timeline-nav .timeline-navActions {
   flex-grow: 1;
   width: 100%;
   flex-basis: 100%;
-  margin-bottom: 1px;
 }
 
 .timeline-nav .timeline-navActions .timeline-navButton {
   width: calc(50% - .5px);
+}
+
+.timeline-nav .is-active {
+  @extend .btn--white;
 }
