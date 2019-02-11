@@ -46,7 +46,22 @@ class DisplayComponent extends Component {
     const stockSymbol = this.state.stocksymbol;
     //0QOA.ILN
     //TMNSF
-    const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==A4HQO5VEF6YLX066`;
+
+    // Get global API key if available
+    let apiKey = settings['_stock_api_key']
+
+    if (apiKey == '') {
+       render();
+    }
+
+    const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==${apiKey}`;
+
+    const settings = await wp.apiRequest({
+      path: '/wp/v2/settings',
+    });
+
+    console.log('settings', settings['_stock_api_key']);
+
     axios.get(Url)
       .then(data => this.parseData(data))
       .catch(err => console.log(err));

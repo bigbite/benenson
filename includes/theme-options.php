@@ -54,12 +54,33 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 
 		register_setting( 'theme_options', '_analytics_gtm', $text_field_args );
 		register_setting( 'theme_options', '_analytics_ga', $text_field_args );
-
-		register_setting( 'theme_options', '_stock_api_key', $text_field_args );
 	}
 }
 
 add_action( 'admin_init', 'benenson_register_theme_options' );
+
+
+/**
+ * Register settings that need to be aavailble in the REST API.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+if ( ! function_exists( 'benenson_register_rest_theme_options' ) ) {
+	function benenson_register_rest_theme_options() {
+
+		$field_args = [
+			'show_in_rest'      => true,
+			'type' => 'string',
+			'default' => '',
+		];
+
+		register_setting( 'theme_options', '_stock_api_key', $field_args );
+		register_setting( 'theme_options', '_stock_symbol', $field_args );
+	}
+}
+add_action( 'admin_init', 'benenson_register_rest_theme_options' );
+add_action( 'rest_api_init', 'benenson_register_rest_theme_options' );
 
 /**
  * Sanitizer for sidebar ID's.
@@ -237,6 +258,13 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 				<td>
 					<?php $value = benenson_get_option( '_stock_api_key', '' ); ?>
 					<input type="text" name="_stock_api_key" value="<?php echo esc_attr( $value ); ?>" placeholder="">
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><?php esc_html_e( 'Stock Symbol', 'benenson' ); ?></th>
+				<td>
+					<?php $value = benenson_get_option( '_stock_symbol', '' ); ?>
+					<input type="text" name="_stock_symbol" value="<?php echo esc_attr( $value ); ?>" placeholder="">
 				</td>
 			</tr>
 			<?php
