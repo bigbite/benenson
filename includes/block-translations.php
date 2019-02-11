@@ -365,7 +365,7 @@ $generated_i18n_strings = array(
 	__( 'Background Type', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:146
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:70
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:69
 	__( 'Embed url', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:150
@@ -508,7 +508,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/key-facts/fact.js:30
 	// Reference: src/scripts/blocks/key-facts/index.js:79
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:113
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:112
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 	// Reference: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:55
@@ -516,7 +516,7 @@ $generated_i18n_strings = array(
 	__( '(Insert Title)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/fact.js:39
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:123
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:122
 	// Reference: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 	// Reference: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 	// Reference: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -648,22 +648,22 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Add a repeatable logo block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:133
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:132
 	__( '(Insert Link text)', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:75
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:74
 	__( 'Display in modal', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:76
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:75
 	__( 'Clicking play will open up the video in a modal.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:81
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:80
 	__( 'Image Alignment', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:86
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:85
 	__( 'Image/Video Poster', 'benenson' ),
 
-	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:92
+	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:91
 	__( 'Video (will override embed)', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/index.js:27

@@ -59,7 +59,6 @@ class DisplayComponent extends Component {
     }]);
 
     const classes = classnames('mediaAside', {
-      'mediaAside--alignmentLeft': !attributes.mediaAlignment,
       [`mediaAside--alignment${attributes.mediaAlignment}`]: attributes.mediaAlignment,
     });
 
@@ -99,7 +98,7 @@ class DisplayComponent extends Component {
         <div className={ classes }>
           <div class="mediaAside-col">
             <div class="mediaAside-image">
-              <img src={imageUrl} alt=""/>
+              <img src={ imageUrl } alt=""/>
               { attributes.embed ? <a className="btn" href="" data-modal-embed=""><i class="play-icon">Play video</i></a> : '' }
             </div>
           </div>

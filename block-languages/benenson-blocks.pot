@@ -463,7 +463,7 @@ msgid "Background Type"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:146
-#: src/scripts/blocks/media-aside/DisplayComponent.js:70
+#: src/scripts/blocks/media-aside/DisplayComponent.js:69
 msgid "Embed url"
 msgstr ""
 
@@ -651,7 +651,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:79
 #: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
-#: src/scripts/blocks/media-aside/DisplayComponent.js:113
+#: src/scripts/blocks/media-aside/DisplayComponent.js:112
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:30
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:55
@@ -660,7 +660,7 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
-#: src/scripts/blocks/media-aside/DisplayComponent.js:123
+#: src/scripts/blocks/media-aside/DisplayComponent.js:122
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:46
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:71
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:54
@@ -833,27 +833,27 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:133
+#: src/scripts/blocks/media-aside/DisplayComponent.js:132
 msgid "(Insert Link text)"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:75
+#: src/scripts/blocks/media-aside/DisplayComponent.js:74
 msgid "Display in modal"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:76
+#: src/scripts/blocks/media-aside/DisplayComponent.js:75
 msgid "Clicking play will open up the video in a modal."
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:81
+#: src/scripts/blocks/media-aside/DisplayComponent.js:80
 msgid "Image Alignment"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:86
+#: src/scripts/blocks/media-aside/DisplayComponent.js:85
 msgid "Image/Video Poster"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:92
+#: src/scripts/blocks/media-aside/DisplayComponent.js:91
 msgid "Video (will override embed)"
 msgstr ""
 

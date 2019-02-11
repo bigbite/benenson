@@ -54,6 +54,7 @@ registerBlockType('benenson/media-aside', {
     },
     mediaAlignment: {
       type: 'string',
+      default: 'Right',
     },
     embed: {
       type: 'string',
@@ -65,7 +66,6 @@ registerBlockType('benenson/media-aside', {
       type: 'boolean',
     },
   },
-  styles: [],
 
   edit: DisplayComponent,
 

@@ -20,7 +20,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		$modal     = ! empty( $attributes['modal'] ) ? $attributes['modal'] : false;
 		$embed_url = ! empty( $attributes['embed'] ) ? $attributes['embed'] : '';
 		$video_url = ! empty( $attributes['videoId'] ) ? wp_get_attachment_url( $attributes['videoId'] ) : $embed_url;
-		$alignment = ! empty( $attributes['mediaAlignment'] ) ? $attributes['mediaAlignment'] : 'Left';
+		$alignment = ! empty( $attributes['mediaAlignment'] ) ? $attributes['mediaAlignment'] : 'Right';
 
 		spaceless();
 		?>
