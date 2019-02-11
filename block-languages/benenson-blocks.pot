@@ -267,7 +267,6 @@ msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:377
 #: src/scripts/blocks/header/DisplayComponent.js:128
-#: src/scripts/blocks/blockquote/index.js:379
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/links-with-icons/BlockEdit.js:81
 #: src/scripts/blocks/logo-list/BlockEdit.js:67

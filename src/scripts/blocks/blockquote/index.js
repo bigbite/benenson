@@ -355,22 +355,22 @@ registerBlockType('benenson/quote', {
             <p>This will override any citation text.</p>
             <PostMediaSelector
               onUpdate={ (media) => {
-                  setAttributes({
-                    logoUrl: media ? media.source_url : '',
-                    logoId: media ? media.id : null,
-                  });
-                }}
+                setAttributes({
+                  logoUrl: media ? media.source_url : '',
+                  logoId: media ? media.id : null,
+                });
+              }}
               mediaId={ logoId }
             />
           </PanelBody>
-          <PanelBody title={__('Background', 'benenson') }>
+          <PanelBody title={ __('Background', 'benenson') }>
             <PostMediaSelector
               onUpdate={ (media) => {
-                  setAttributes({
-                    backgroundUrl: media ? media.source_url : '',
-                    backgroundId: media ? media.id : null,
-                  });
-                }}
+                setAttributes({
+                  backgroundUrl: media ? media.source_url : '',
+                  backgroundId: media ? media.id : null,
+                });
+              } }
               mediaId={ backgroundId }
             />
           </PanelBody>
@@ -385,7 +385,7 @@ registerBlockType('benenson/quote', {
               onClick={ () => setAttributes({ backgroundColor: '' }) }>
               { __('Remove background colour', 'benenson') }
             </Button>
-            </PanelBody>
+          </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
         <div className={ classes } style={ backgroundStyles }>
