@@ -8,7 +8,8 @@
  */
 if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 	function benenson_render_stock_price_block( array $attributes = [] ) {
-
+		//api key new PIABT5HUQPDUAP2X
+		//old A4HQO5VEF6YLX066
 		$high_price     = ! empty( $attributes['stockHigh'] ) ? $attributes['stockHigh'] : 0;
 		$low_price      = ! empty( $attributes['stockLow'] ) ? $attributes['stockLow'] : 0;
 		$previous_close = ! empty( $attributes['previousLow'] ) ? $attributes['previousLow'] : 0;
@@ -23,10 +24,6 @@ if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 
 		$url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' . $symbol . '&apikey=' . $api_key;
 
-		var_dump($url);
-
-		//die();
-
 		$request = wp_remote_get( $url );
 
 		if ( is_wp_error( $request ) ) {
@@ -34,16 +31,11 @@ if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 		}
 
 		$body = wp_remote_retrieve_body( $request );
-
 		$obj = json_decode( $body, true );
 
-		var_dump( 'stock exchange', $stock_exchange );
-
-		var_dump( $obj );
-
-		$previous_close = $obj['Global Quote']['08. previous close'];
-		$low           = $obj['Global Quote']['04. low'];
-		$high          = $obj['Global Quote']['03. high'];
+		$low_price         = $obj['Global Quote']['04. low'];
+		$high_price          = $obj['Global Quote']['03. high'];
+		$price          = $obj['Global Quote']['05. price'];
 		$change        = $obj['Global Quote']['10. change percent'];
 		$is_negative   = false;
 

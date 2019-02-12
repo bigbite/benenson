@@ -19,14 +19,17 @@ class DisplayComponent extends Component {
       stockHigh: this.props.attributes.stockHigh,
       stockLow: this.props.attributes.stockLow,
       stockPrice: this.props.attributes.stockPrice,
-      change: '',
+      stockChange: this.props.attributes.stockChange,
     };
   }
 
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
   componentDidMount() {
-    console.log('mounted');
+    const { attributes } = this.props;
+
+    console.log('attributes', attributes);
+
     this.fetchStockPrices();
   }
 
@@ -35,13 +38,25 @@ class DisplayComponent extends Component {
 
     console.log(data);
 
-    this.setState({
-      stockHigh: data.data['Global Quote']['03. high'],
-      change: data.data['Global Quote']['10. change percent'],
-    });
-
-    console.log( 'change state', this.state.change );
-
+    if (typeof data.data['Global Quote'] !== 'undefined') {
+      console.log('API worked');
+      setAttributes({
+        stockLow: data.data['Global Quote']['04. low'],
+        stockHigh: data.data['Global Quote']['03. high'],
+        stockPrice: data.data['Global Quote']['05. price'],
+        stockChange: data.data['Global Quote']['10. change percent'],
+      });
+    } else {
+      console.log('API failed use saved values');
+      console.log(this.props.attributes.stocksymbol);
+      console.log(this.props.attributes.stockHigh);
+      // setAttributes({
+      //   stockLow: data.data['Global Quote']['04. low'],
+      //   stockHigh: data.data['Global Quote']['03. high'],
+      //   stockPrice: data.data['Global Quote']['05. price'],
+      //   stockChange: data.data['Global Quote']['10. change percent'],
+      // });
+    }
   }
 
   async fetchStockPrices() {
@@ -56,8 +71,8 @@ class DisplayComponent extends Component {
       path: '/wp/v2/settings',
     });
 
-    if (this.state.stocksymbol !== '') {
-      stockSymbol = this.state.stocksymbol;
+    if (this.props.attributes.stocksymbol !== '') {
+      stockSymbol = this.props.attributes.stocksymbol;
     } else if (settings['_stock_symbol'] !== '') {
       stockSymbol = settings['_stock_symbol'];
     }
@@ -68,6 +83,8 @@ class DisplayComponent extends Component {
 
     const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==${apiKey}`;
 
+    console.log(Url);
+
     axios.get(Url)
       .then(data => this.parseData(data))
       .catch(err => console.log(err));
@@ -75,9 +92,7 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
-    const { change } = this.state;
-
-    console.log('change', change);
+    const { change, stockHigh, stockPrice, stockLow } = this.state;
 
     return (<Fragment>
       <InspectorControls>
@@ -95,12 +110,20 @@ class DisplayComponent extends Component {
           <TextControl
             label={ __('Stock Exchange', 'benenson') }
             onChange={ this.createUpdateAttribute('stockExchange') }
-            value={ attributes.stockExchange}
+            value={ attributes.stockExchange }
           />
         </PanelBody>
       </InspectorControls>
       <div className="editor">
-       <div>{ change }</div>
+       <div class="sharePriceTicker">
+        <div class="sharePriceTicker-meta">
+          <div>{ attributes.stockExchange }</div>
+        </div>
+        <div class="sharePriceTicker-data">
+          <div class="sharePriceTicker-data-high">{ attributes.stockPrice }</div>
+          <div class="sharePriceTicker-data-change">{ attributes.stockChange }</div>
+        </div>
+      </div>
       </div>
     </Fragment>);
   }
