@@ -18,7 +18,7 @@ const { PostMediaSelector } = benenson.components;
 const { dateI18n, format, __experimentalGetSettings } = wp.date;
 
 class DisplayComponent extends Component {
-  static emptyBlock = {
+  static emptyMilestone = {
     id: '',
     date: new Date(),
     title: '',
@@ -29,7 +29,7 @@ class DisplayComponent extends Component {
     super(...props);
 
     this.state = {
-      selectedBlock: 0,
+      selectedMilestone: 0,
     };
   }
 
@@ -42,101 +42,87 @@ class DisplayComponent extends Component {
    */
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
-  createUpdateBlockAttribute =
+  createUpdateMilestoneAttribute =
   index =>
     key =>
       value =>
         this.props.setAttributes({
-          blocks: [
-            ...this.props.attributes.blocks
+          milestones: [
+            ...this.props.attributes.milestones
               .slice(0, Math.max(0, index)),
             {
-              ...this.props.attributes.blocks[index],
+              ...this.props.attributes.milestones[index],
               [key]: value,
             },
             ...this.props.attributes
-              .blocks.slice(index + 1, this.props.attributes.blocks.length),
+              .milestones.slice(index + 1, this.props.attributes.milestones.length),
           ],
         });
 
-  addBlock = () => {
+  addMilestone = () => {
     this.setState({
-      selectedBlock: this.props.attributes.blocks.length,
+      selectedMilestone: this.props.attributes.milestones.length,
     });
 
     this.props.setAttributes({
-      blocks: [
-        ...this.props.attributes.blocks,
+      milestones: [
+        ...this.props.attributes.milestones,
         {
-          ...DisplayComponent.emptyBlock,
+          ...DisplayComponent.emptyMilestone,
           id: randId(),
         },
       ],
     });
   };
 
-  deleteBlock = (index) => {
-    if (index === this.props.attributes.blocks.length - 1) {
+  deleteMilestone = (index) => {
+    if (index === this.props.attributes.Milestones.length - 1) {
       this.setState({
-        selectedBlock: index - 1,
+        selectedMilestone: index - 1,
       });
     }
 
     this.props.setAttributes({
-      blocks: [
+      milestones: [
         ...this.props.attributes
-          .blocks.slice(0, Math.max(0, index)),
+          .milestones.slice(0, Math.max(0, index)),
         ...this.props.attributes
-          .blocks.slice(index + 1, this.props.attributes.blocks.length),
+          .milestones.slice(index + 1, this.props.attributes.milestones.length),
       ],
     });
   };
 
   initiateDelete = () => {
-    if (confirm(__('Are you sure you want to delete this block from the timeline?', 'benenson'))) { // eslint-disable-line no-restricted-globals, no-alert
-      this.deleteBlock(this.state.selectedBlock);
+    if (confirm(__('Are you sure you want to delete this milestone from the timeline?', 'benenson'))) { // eslint-disable-line no-restricted-globals, no-alert
+      this.deleteMilestone(this.state.selectedMilestone);
     }
   };
 
-  selectBlock = index => this.setState({
-    selectedBlock: index,
+  selectMilestone = index => this.setState({
+    selectedMilestone: index,
   });
 
-  createSelectBlock = index => () => this.selectBlock(index);
+  createSelectMilestone = index => () => this.selectMilestone(index);
 
   render() {
     const { attributes } = this.props;
-    const { selectedBlock } = this.state;
+    const { selectedMilestone } = this.state;
 
-    const currentBlock = attributes.blocks[selectedBlock];
-    const updateBlock = this.createUpdateBlockAttribute(selectedBlock);
+    const currentMilestone = attributes.milestones[selectedMilestone];
+    const updateMilestone = this.createUpdateMilestoneAttribute(selectedMilestone);
 
     const dateFormat = __experimentalGetSettings().formats.date;
 
     const controls = (
       <InspectorControls>
-        { currentBlock && (
-          <PanelBody title={ __('Timeline Block Options', 'benenson') }>
+        { currentMilestone && (
+          <PanelBody title={ __('Timeline Milestone Options', 'benenson') }>
             <DateTimePicker
-              currentDate={ currentBlock.date }
-              onChange={updateBlock('date')}
+              currentDate={ currentMilestone.date }
+              onChange={updateMilestone('date')}
             />
           </PanelBody>
         ) }
-        <PanelBody title={ __('Options', 'benenson') }>
-          <ToggleControl
-            label={__('Show Arrows', 'benenson')}
-            checked={attributes.hasArrows}
-            onChange={this.createUpdateAttribute('hasArrows')}
-          />
-
-          <ToggleControl
-            label={__('Show Tabs', 'benenson')}
-            checked={attributes.showTabs}
-            onChange={this.createUpdateAttribute('showTabs')}
-            help={<span>{ __('Hide the tabs on the front end, these will still show in the panel to allow you to navigate through each slide.', 'benenson') }</span>} // eslint-disable-line max-len
-          />
-        </PanelBody>
       </InspectorControls>
     );
 
@@ -145,35 +131,35 @@ class DisplayComponent extends Component {
         { controls }
         <div className="timmeline">
           <div class="timeline-container">
-            <div className="timelineBlocks">
-              { attributes.blocks.length === 0 && (
-                <div className="timmelineBlock">
-                  <div className="timmelineBlock-contentContainer">
-                    <h1 className="timmelineBlock-title">{ __('Add a block below.', 'benenson') }</h1>
-                    <button className="btn btn--white" onClick={this.addBlock}>{ __('Add block', 'benenson') }</button>
+            <div className="timelineMilestones">
+              { attributes.milestones.length === 0 && (
+                <div className="timmelineMilestone">
+                  <div className="timmelineMilestone-contentContainer">
+                    <h1 className="timmelineMilestone-title">{ __('Add a milestone below.', 'benenson') }</h1>
+                    <button className="btn btn--white" onClick={this.addMilestone}>{ __('Add milestone', 'benenson') }</button>
                   </div>
                 </div>
               ) }
-              { currentBlock && (
-                <div class="timelineBlock">
-                  <p className="timelineBlock-dateTime">{ dateI18n(dateFormat, currentBlock.date) }</p>
-                  <div className="timelineBlock-content">
+              { currentMilestone && (
+                <div class="timelineMilestone">
+                  <p className="timelineMilestone-dateTime">{ dateI18n(dateFormat, currentMilestone.date) }</p>
+                  <div className="timelineMilestone-content">
                     <RichText
                       tagname="p"
-                      className="timelineBlock-title"
+                      className="timelineMilestone-title"
                       placeholder={ __('(Title)', 'benenson') }
-                      value={currentBlock.title}
-                      onChange={updateBlock('title')}
+                      value={currentMilestone.title}
+                      onChange={updateMilestone('title')}
                       formattingControls={[]}
                       keepPlaceholderOnFocus={ true }
                       format="string"
                     />
                     <RichText
                       tagname="p"
-                      className="timelineBlock-text"
+                      className="timelineMilestone-text"
                       placeholder={ __('(Content)', 'benenson') }
-                      value={currentBlock.content}
-                      onChange={updateBlock('content')}
+                      value={currentMilestone.content}
+                      onChange={updateMilestone('content')}
                       formattingControls={[]}
                       keepPlaceholderOnFocus={ true }
                       format="string"
@@ -184,26 +170,26 @@ class DisplayComponent extends Component {
             </div>
           </div>
           <nav className="timeline-nav">
-          { currentBlock && (
+          { currentMilestone && (
             <div className="timeline-navActions">
-              <button className="timeline-navButton btn" onClick={ this.initiateDelete }>{ __('Remove Block', 'benenson') }</button>
-              <button className="timeline-navButton btn" onClick={ this.addBlock }>{ __('Add Block', 'benenson') }</button>
+              <button className="timeline-navButton btn" onClick={ this.initiateDelete }>{ __('Remove Milestone', 'benenson') }</button>
+              <button className="timeline-navButton btn" onClick={ this.addMilestone }>{ __('Add Milestone', 'benenson') }</button>
             </div>
           ) }
-          { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
-                const blockTitle = block.title && block.title !== '';
+          { attributes.milestones.length > 0 && attributes.milestones.map((milestone, index) => {
+                const milestoneTitle = milestone.title && milestone.title !== '';
 
-                if (selectedBlock === index) {
+                if (selectedMilestone === index) {
                   return (
                     <div className="timeline-navButton is-active btn">
-                        <span>{blockTitle ? block.title : __('(No Title)', 'benenson')}</span>
+                        <span>{milestoneTitle ? milestone.title : __('(No Title)', 'benenson')}</span>
                     </div>
                   );
                 }
 
                 return (
-                  <button className="timeline-navButton btn" onClick={ this.createSelectBlock(index) }>
-                    {blockTitle ? block.title : __('(No Title)', 'benenson')}
+                  <button className="timeline-navButton btn" onClick={ this.createSelectMilestone(index) }>
+                    {milestoneTitle ? milestone.title : __('(No Title)', 'benenson')}
                   </button>
                 );
           }) }

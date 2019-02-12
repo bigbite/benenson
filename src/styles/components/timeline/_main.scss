@@ -1,10 +1,12 @@
 .timeline .timeline-container {
   position: relative;
   width: 100%;
-  overflow: scroll;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
 }
 
-.timeline .timeline-container .timelineBlocks {
+.timeline .timeline-container .timelineMilestones {
   position: relative;
   will-change: transform;
   overflow: scroll;
@@ -13,6 +15,10 @@
   align-items: flex-start;
   width: max-content;
   padding: 18px 0;
+}
+
+.timeline .timeline-container .timelineMilestones.is-animate {
+  transition: .3s ease-in-out;
 }
 
 .timeline-line {
@@ -24,14 +30,14 @@
   background-color: $color-black;
 }
 
-.timelineBlock {
+.timelineMilestone {
   display: flex;
   flex-direction: column;
   width: 400px;
   margin-right: 20px;
 }
 
-.timelineBlock .timelineBlock-dateTime {
+.timelineMilestone .timelineMilestone-dateTime {
   @include font-size(18px);
   position: relative;
   display: inline-block;
@@ -66,24 +72,24 @@
   }
 }
 
-.timelineBlock .timelineBlock-content {
+.timelineMilestone .timelineMilestone-content {
   position: relative;
   background-color: $color-black;
   color: $color-white;
   padding: 20px;
 }
 
-.timelineBlock .timelineBlock-title {
+.timelineMilestone .timelineMilestone-title {
   @include font-size(24px);
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.timelineBlock:nth-child(2n) {
+.timelineMilestone:nth-child(2n) {
   flex-direction: column-reverse;
 }
 
-.timelineBlock:nth-child(2n) .timelineBlock-dateTime {
+.timelineMilestone:nth-child(2n) .timelineMilestone-dateTime {
   padding-top: 50px;
   padding-bottom: 0;
 

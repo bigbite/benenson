@@ -14,8 +14,19 @@ const getPos = (element) => {
 class Timeline {
   constructor(timeline) {
     this.timeline = timeline;
-    this.items = Array.from(timeline.querySelectorAll('.timelineBlock-dateTime'));
+    this.items = Array.from(timeline.querySelectorAll('.timelineMilestone-dateTime'));
     this.line = timeline.querySelector('.timeline-line');
+    this.milestones = timeline.querySelector('.timelineMilestones');
+    this.timeline.addEventListener('mousedown', (e) => { this.enableMove(e); });
+    this.timeline.addEventListener('touchstart', (e) => { this.enableMove(e); });
+    document.documentElement.addEventListener('mousemove', (e) => { this.move(e); });
+    document.documentElement.addEventListener('touchmove', (e) => { this.move(e); });
+    document.documentElement.addEventListener('mouseup', () => { this.disableMove(); });
+    document.documentElement.addEventListener('touchend', () => { this.disableMove(); });
+    this.moveAllowed = false;
+    this.startPosition = false;
+    this.translate = 0;
+
     this.workout(timeline);
   }
 
@@ -45,8 +56,34 @@ class Timeline {
         item.parentElement.style.marginTop = `${(heighest - pos.top) + 11}px`; // eslint-disable-line no-param-reassign
       });
 
-    this.line.style.minWidth = `${this.timeline.querySelector('.timelineBlocks').offsetWidth}px`;
+    this.line.style.minWidth = `${this.timeline.querySelector('.timelineMilestones').offsetWidth}px`;
     this.line.style.top = `${(heighest + 52)}px`;
+  }
+
+  enableMove(e) {
+    this.moveAllowed = true;
+    this.startPosition = e.x || e.targetTouches[0].clientX;
+    this.milestones.classList.remove('is-animate');
+  }
+
+  move(e) {
+    if (!this.moveAllowed) {
+      return;
+    }
+
+    const x = e.clientX || e.targetTouches[0].clientX;
+    this.translate += x - this.startPosition;
+    this.startPosition = x;
+    this.milestones.style.transform = `translateX(${this.translate}px)`;
+  }
+
+  disableMove() {
+    this.moveAllowed = false;
+    this.startPosition = false;
+    this.milestones.classList.add('is-animate');
+
+    this.translate = Math.max(Math.min(this.translate, 0), -(this.milestones.clientWidth - this.timeline.clientWidth)); // eslint-disable-line max-len
+    this.milestones.style.transform = `translateX(${this.translate}px)`;
   }
 
   refresh() {

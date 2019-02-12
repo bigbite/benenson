@@ -20,17 +20,9 @@ registerBlockType('benenson/timeline', {
     timelineId: {
       type: 'string',
     },
-    blocks: {
+    milestones: {
       type: 'array',
       default: [],
-    },
-    hasArrows: {
-      type: 'boolean',
-      default: true,
-    },
-    showTabs: {
-      type: 'boolean',
-      default: true,
     },
   },
 
@@ -43,18 +35,18 @@ registerBlockType('benenson/timeline', {
       <div className="timeline">
         <div className="timeline-container">
           <div class="timeline-line"></div>
-          <div className="timelineBlocks">
-            { attributes.blocks.length > 0 && attributes.blocks.map((block, index) => {
-              const blockDate = block.date !== '' ? <p className="timelineBlock-dateTime">{ dateI18n(dateFormat, block.date) }</p> : null;
-              const blockTitle = block.title !== '' ? <p className="timelineBlock-title">{ block.title }</p> : null;
-              const blockContent = block.content !== '' ? <p className="timelineBlock-text">{ block.content }</p> : null;
+          <div className="timelineMilestones">
+            { attributes.milestones.length > 0 && attributes.milestones.map((milestone, index) => {
+              const milestoneDate = milestone.date !== '' ? <p className="timelineMilestone-dateTime">{ dateI18n(dateFormat, milestone.date) }</p> : null;
+              const milestoneTitle = milestone.title !== '' ? <p className="timelineMilestone-title">{ milestone.title }</p> : null;
+              const milestoneContent = milestone.content !== '' ? <p className="timelineMilestone-text">{ milestone.content }</p> : null;
 
               return (
-                <div className="timelineBlock">
-                  { blockDate }
-                  <div className="timelineBlock-content">
-                    { blockTitle }
-                    { blockContent }
+                <div className="timelineMilestone">
+                  { milestoneDate }
+                  <div className="timelineMilestone-content">
+                    { milestoneTitle }
+                    { milestoneContent }
                   </div>
                 </div>
               );
