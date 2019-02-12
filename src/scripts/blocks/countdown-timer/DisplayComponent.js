@@ -65,7 +65,7 @@ class DisplayComponent extends Component {
           <PanelBody title={ __('Options', 'benenson') }>
             <ToggleControl
               label={ __('Hide timer', 'benenson') }
-              help={ __('When the timer has finished hide it from users.', 'benenson') }
+              help={ __('Hide the timer from users when the countdown has completed.', 'benenson') }
               checked={ hideTimer }
               onChange={ hideShow => setAttributes({ hideTimer: hideShow }) }
             />
@@ -90,18 +90,17 @@ class DisplayComponent extends Component {
               className="components-button is-button is-default is-large"
               onClick={ () => setAttributes({ backgroundColor: '' }) }
             >
-            { __('Remove background colour', 'benenson') }
+              { __('Remove background colour', 'benenson') }
             </Button>
           </PanelBody>
           <PanelBody title={ __('Background Image', 'benenson') }>
             <PostMediaSelector
               onUpdate={ (media) => {
-                  setAttributes({
-                    backgroundUrl: media ? media.source_url : '',
-                    backgroundId: media ? media.id : null,
-                  });
-                }
-              }
+                setAttributes({
+                  backgroundUrl: media ? media.source_url : '',
+                  backgroundId: media ? media.id : null,
+                });
+              } }
               mediaId={ backgroundId }
             />
           </PanelBody>

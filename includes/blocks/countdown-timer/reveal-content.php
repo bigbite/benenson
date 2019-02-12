@@ -18,16 +18,6 @@ class Benenson_Core_Reveal_Content {
 	}
 
 	/**
-	 * Validate that a parameter is numeric.
-	 *
-	 * @param mixed $param - Paramater to check,
-	 * @return bool
-	 */
-	public function validate_numeric( $param ) {
-		return is_numeric( $param );
-	}
-
-	/**
 	 * Register api routes
 	 */
 	public function register_routes() {
@@ -36,7 +26,7 @@ class Benenson_Core_Reveal_Content {
 			'methods'  => 'GET',
 			'args'     => [
 				'id' => [
-					'validate_callback' => [ $this, 'validate_numeric' ],
+					'validate_callback' => is_numeric( $this ),
 				],
 			],
 		] );

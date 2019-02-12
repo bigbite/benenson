@@ -45,8 +45,7 @@ const init = () => {
         hours = parseInt(timeRemaining / 3600, 10);
         timeRemaining %= 3600;
 
-        /* divide time remaining by number of seconds in a minute &
-        remove minutes from timeRemaining */
+        // divide time remaining by number of seconds in a min & remove mins from timeRemaining.
         minutes = parseInt(timeRemaining / 60, 10);
         timeRemaining %= 60;
 
@@ -68,21 +67,27 @@ const init = () => {
             const wrapper = document.createElement('div');
             wrapper.classList.add('coutdownTimer-revealContainer');
 
-            const title = document.createElement('h2');
-            title.innerText = jsonResponse.attrs.revealTitle;
-            title.classList.add('countdownTimer-title');
-            wrapper.append(title);
+            if (jsonResponse.attrs.revealTitle !== '') {
+              const title = document.createElement('h2');
+              title.innerText = jsonResponse.attrs.revealTitle;
+              title.classList.add('countdownTimer-title');
+              wrapper.append(title);
+            }
 
-            const content = document.createElement('p');
-            content.innerText = jsonResponse.attrs.revealContent;
-            content.classList.add('countdownTimer-content');
-            wrapper.append(content);
+            if (jsonResponse.attrs.revealContent !== '') {
+              const content = document.createElement('p');
+              content.innerText = jsonResponse.attrs.revealContent;
+              content.classList.add('countdownTimer-content');
+              wrapper.append(content);
+            }
 
-            const button = document.createElement('a');
-            button.href = jsonResponse.attrs.revealBtnUrl;
-            button.innerText = jsonResponse.attrs.revealBtnText;
-            button.classList.add('btn', 'countdownTimer-btn');
-            wrapper.append(button);
+            if (jsonResponse.attrs.revealBtnUrl !== '' && jsonResponse.attrs.revealBtnText !== '') {
+              const button = document.createElement('a');
+              button.href = jsonResponse.attrs.revealBtnUrl;
+              button.innerText = jsonResponse.attrs.revealBtnText;
+              button.classList.add('btn', 'countdownTimer-btn');
+              wrapper.append(button);
+            }
 
             timer.classList.add('is-finished');
             document.querySelector(`.countdownTimer[data-ref="${timerRef}"]`).append(wrapper);
