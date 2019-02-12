@@ -1,0 +1,38 @@
+.sharePriceTicker {
+  display: inline-block;
+  background: $color-white;
+  border: 1px solid $color-grey-brand;
+  padding: 10px 20px;
+}
+
+.sharePriceTicker-meta {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sharePriceTicker-data {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.sharePriceTicker-data .sharePriceTicker-data-high {
+  font-weight: 600;
+  font-size: 18px;
+  color: green;
+}
+
+.sharePriceTicker-data .sharePriceTicker-data-change {
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.sharePriceTicker-data .sharePriceTicker-data-change.is-positive {
+  color: green;
+}
+
+.sharePriceTicker-data .sharePriceTicker-data-change.is-negative {
+  color: red;
+}

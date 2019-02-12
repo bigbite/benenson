@@ -19,6 +19,7 @@ class DisplayComponent extends Component {
       stockHigh: this.props.attributes.stockHigh,
       stockLow: this.props.attributes.stockLow,
       stockPrice: this.props.attributes.stockPrice,
+      change: '',
     };
   }
 
@@ -29,38 +30,43 @@ class DisplayComponent extends Component {
     this.fetchStockPrices();
   }
 
-  parseData(data){
-    const { attributes, setAttributes } = this.props;
-    console.log('data');
+  parseData(data) {
+    const { setAttributes } = this.props;
+
     console.log(data);
-    console.log(data.data['Global Quote']['05. price']);
-    setAttributes({
+
+    this.setState({
       stockHigh: data.data['Global Quote']['03. high'],
-      stockLow: data.data['Global Quote']['04. low'],
-      stockPrice: data.data['Global Quote']['05. price'],
+      change: data.data['Global Quote']['10. change percent'],
     });
-    console.log(this.props);
+
+    console.log( 'change state', this.state.change );
+
   }
 
   async fetchStockPrices() {
-    const stockSymbol = this.state.stocksymbol;
+    let stockSymbol = false;
+    let apiKey = false;
     //0QOA.ILN
     //TMNSF
 
-    // Get global API key if available
-    let apiKey = settings['_stock_api_key']
-
-    if (apiKey == '') {
-       render();
-    }
-
-    const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==${apiKey}`;
+    //other use TITAN
 
     const settings = await wp.apiRequest({
       path: '/wp/v2/settings',
     });
 
-    console.log('settings', settings['_stock_api_key']);
+    if (this.state.stocksymbol !== '') {
+      stockSymbol = this.state.stocksymbol;
+    } else if (settings['_stock_symbol'] !== '') {
+      stockSymbol = settings['_stock_symbol'];
+    }
+
+    if (settings['_stock_api_key'] !== '') {
+      apiKey = settings['_stock_api_key'];
+    }
+
+    const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==${apiKey}`;
 
     axios.get(Url)
       .then(data => this.parseData(data))
@@ -68,8 +74,10 @@ class DisplayComponent extends Component {
   }
 
   render() {
-
     const { attributes } = this.props;
+    const { change } = this.state;
+
+    console.log('change', change);
 
     return (<Fragment>
       <InspectorControls>
@@ -84,14 +92,15 @@ class DisplayComponent extends Component {
             onChange={ this.createUpdateAttribute('stocksymbol') }
             value={ attributes.stocksymbol }
           />
+          <TextControl
+            label={ __('Stock Exchange', 'benenson') }
+            onChange={ this.createUpdateAttribute('stockExchange') }
+            value={ attributes.stockExchange}
+          />
         </PanelBody>
       </InspectorControls>
       <div className="editor">
-        <TextControl
-            label={ __('Stock Symbol', 'benenson') }
-            onChange={ this.createUpdateAttribute('stocksymbol') }
-            value={ attributes.stocksymbol }
-          />
+       <div>{ change }</div>
       </div>
     </Fragment>);
   }

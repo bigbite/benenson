@@ -38,6 +38,9 @@ const blockAttributes = {
   stocksymbol: {
     type: 'string',
   },
+  stockExchange: {
+    type: 'string',
+  },
   stockHigh: {
     type: 'integer',
   },
