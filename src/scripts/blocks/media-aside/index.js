@@ -52,6 +52,10 @@ registerBlockType('benenson/media-aside', {
     mediaId: {
       type: 'integer',
     },
+    mediaAlignment: {
+      type: 'string',
+      default: 'Right',
+    },
     embed: {
       type: 'string',
     },

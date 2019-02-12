@@ -2,8 +2,11 @@ import classnames from 'classnames';
 import PostFeaturedVideo from '../header/PostFeaturedVideo';
 
 const { __ } = wp.i18n;
+const { applyFilters } = wp.hooks;
 const { Component, Fragment } = wp.element;
-const { TextControl, PanelBody, ToggleControl } = wp.components;
+const {
+  TextControl, PanelBody, ToggleControl, SelectControl,
+} = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
 const { PostMediaSelector } = benenson.components;
 
@@ -43,7 +46,21 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes, setAttributes } = this.props;
-    const imageUrl = attributes.mediaUrl ? attributes.mediaUrl : 'turnip';
+    const imageUrl = attributes.mediaUrl ? attributes.mediaUrl : '';
+
+    const alignmentOptions = applyFilters('benenson.block.mediaAside.alignmentOptions', [{
+      /* translators: text alignment. for RTL languages, localise as 'Right' */
+      label: __('Left', 'benenson'),
+      value: 'Left',
+    }, {
+      /* translators: text alignment. for RTL languages, localise as 'Left' */
+      label: __('Right', 'benenson'),
+      value: 'Right',
+    }]);
+
+    const classes = classnames('mediaAside', {
+      [`mediaAside--alignment${attributes.mediaAlignment}`]: attributes.mediaAlignment,
+    });
 
     return (
       <Fragment>
@@ -59,6 +76,12 @@ class DisplayComponent extends Component {
             checked={ attributes.modal }
             onChange={ displayModal => setAttributes({ modal: displayModal }) }
           />
+          <SelectControl
+            label={ __('Image Alignment', 'benenson') }
+            options={ alignmentOptions }
+            value={ attributes.mediaAlignment }
+            onChange={ alignment => setAttributes({ mediaAlignment: alignment }) }
+          />
           <PanelBody title={__('Image/Video Poster', 'benenson') }>
             <PostMediaSelector
               onUpdate={ this.handleMediaChange }
@@ -72,7 +95,13 @@ class DisplayComponent extends Component {
             />
           </PanelBody>
         </InspectorControls>
-        <div className="mediaAside">
+        <div className={ classes }>
+          <div class="mediaAside-col">
+            <div class="mediaAside-image">
+              <img src={ imageUrl } alt=""/>
+              { attributes.embed ? <a className="btn" href="" data-modal-embed=""><i class="play-icon">Play video</i></a> : '' }
+            </div>
+          </div>
           <div className="mediaAside-col">
             <div className="mediaAside-content">
               <RichText
@@ -110,12 +139,6 @@ class DisplayComponent extends Component {
                   onChange={ newCtaLink => setAttributes({ ctaLink: newCtaLink }) }
                 />
               </div>
-            </div>
-          </div>
-          <div class="mediaAside-col">
-            <div class="mediaAside-image">
-              <img src={imageUrl} alt=""/>
-              { attributes.embed ? <a className="btn" href="" data-modal-embed=""><i class="play-icon">Play video</i></a> : '' }
             </div>
           </div>
         </div>

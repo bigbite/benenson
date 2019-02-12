@@ -20,11 +20,39 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 		$modal     = ! empty( $attributes['modal'] ) ? $attributes['modal'] : false;
 		$embed_url = ! empty( $attributes['embed'] ) ? $attributes['embed'] : '';
 		$video_url = ! empty( $attributes['videoId'] ) ? wp_get_attachment_url( $attributes['videoId'] ) : $embed_url;
+		$alignment = ! empty( $attributes['mediaAlignment'] ) ? $attributes['mediaAlignment'] : 'Right';
 
 		spaceless();
 		?>
 
-		<div class="mediaAside">
+		<div class="mediaAside mediaAside--alignment<?php echo esc_attr( $alignment ); ?>">
+			<div class="mediaAside-col">
+			<?php
+			if ( ! empty( $attributes['mediaId'] ) && ! empty( $video_url ) ) {
+				if ( $modal ) {
+					printf(
+						'<div class="mediaAside-image">%s <a class="btn" data-modal-embed="%s"><i class="play-icon">%s</i></a></div>',
+						wp_get_attachment_image( $attributes['mediaId'], 'full' ),
+						esc_url( $video_url ),
+						esc_html__( 'Play video', 'benenson' )
+					);
+				} else {
+					printf(
+						'<div class="inlineVideo mediaAside-videoContainer"><div class="inlineVideo-poster" style="background-image:url(\'%s\');"></div><a class="btn" data-inline-embed="%s"><i class="play-icon">%s</i></a></div>',
+						esc_url( wp_get_attachment_url( $attributes['mediaId'] ) ),
+						esc_url( $video_url ),
+						esc_html__( 'Play video', 'benenson' )
+					);
+				}
+			} elseif ( ! empty( $attributes['mediaId'] ) ) {
+				printf(
+					'<div class="mediaAside-image">%s</div>',
+					wp_get_attachment_image( $attributes['mediaId'], 'full' )
+				);
+			}
+
+			?>
+			</div>
 			<div class="mediaAside-col">
 				<div class="mediaAside-content">
 
@@ -44,37 +72,7 @@ if ( ! function_exists( 'benenson_render_media_aside_block' ) ) {
 
 				?>
 
-			</div>
-		</div>
-
-		<div class="mediaAside-col">
-
-		<?php
-		if ( ! empty( $attributes['mediaId'] ) && ! empty( $video_url ) ) {
-			if ( $modal ) {
-				printf(
-					'<div class="mediaAside-image">%s <a class="btn" data-modal-embed="%s"><i class="play-icon">%s</i></a></div>',
-					wp_get_attachment_image( $attributes['mediaId'], 'full' ),
-					esc_url( $video_url ),
-					esc_html__( 'Play video', 'benenson' )
-				);
-			} else {
-				printf(
-					'<div><div class="inlineVideo mediaAside-videoContainer"><div class="inlineVideo-poster" style="background-image:url(\'%s\');"></div><a class="btn" data-inline-embed="%s"><i class="play-icon">%s</i></a></div></div>',
-					esc_url( wp_get_attachment_url( $attributes['mediaId'] ) ),
-					esc_url( $video_url ),
-					esc_html__( 'Play video', 'benenson' )
-				);
-			}
-		} elseif ( ! empty( $attributes['mediaId'] ) ) {
-			printf(
-				'<div class="mediaAside-image">%s</div>',
-				wp_get_attachment_image( $attributes['mediaId'], 'full' )
-			);
-		}
-
-		?>
-
+				</div>
 			</div>
 		</div>
 
