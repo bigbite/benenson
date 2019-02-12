@@ -63,7 +63,7 @@ class Benenson_Core_Reveal_Content {
 				$value = $block['attrs'];
 			}
 
-			if ( $block['innerBlocks'] ) {
+			if ( ! empty ( $block['innerBlocks'] ) ) {
 				$value = $this->get_block( $block['innerBlocks'], $ref );
 			}
 		}
