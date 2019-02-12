@@ -18,7 +18,6 @@
 }
 
 .mediaAside .mediaAside-col + .mediaAside-col {
-  display: block;
   margin-top: 25px;
 
   @include mq(x-small) {
@@ -72,8 +71,11 @@
 }
 
 .mediaAside--alignmentRight .mediaAside-col + .mediaAside-col {
+  margin-bottom: 25px;
+
   @include mq(x-small) {
     margin-left: 0px;
+    margin-bottom: 0;
     margin-right: flexy-gutter();
   }
 }
