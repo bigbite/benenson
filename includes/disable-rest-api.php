@@ -26,8 +26,8 @@ if ( ! function_exists( 'benenson_disable_rest_api' ) ) {
 		 */
 		$display_json_error = apply_filters( 'benenson_disable_rest_api_json_error', true );
 
-		// Dont display errors before we get chance to check if logged in.
-		if ( ( ! empty( $result ) && ! is_a( $result, \WP_Error ) ) || ! $is_disabled || ( $is_disabled && is_user_logged_in() ) ) {
+		// Don't display errors before we get chance to check if logged in.
+		if ( ( ! empty( $result ) && ! is_a( $result, 'WP_Error' ) ) || ! $is_disabled || ( $is_disabled && is_user_logged_in() ) ) {
 			return $result;
 		}
 
