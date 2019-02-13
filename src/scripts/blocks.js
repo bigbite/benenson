@@ -28,6 +28,7 @@ import './blocks/category-list';
 import './blocks/logo-list';
 import './blocks/link';
 import './blocks/media-aside';
+import './blocks/countdown-timer';
 
 wp.blocks.registerBlockStyle('core/table', {
   name: 'responsive',

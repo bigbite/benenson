@@ -32,6 +32,7 @@ require_once realpath( get_template_directory() . '/includes/blocks/block-catego
 require_once realpath( get_template_directory() . '/includes/blocks/meta.php' );
 require_once realpath( get_template_directory() . '/includes/blocks/register.php' );
 require_once realpath( get_template_directory() . '/includes/blocks/templates.php' );
+require_once realpath( get_template_directory() . '/includes/blocks/countdown-timer/reveal-content.php' );
 require_once realpath( get_template_directory() . '/includes/rest-api/category-list.php' );
 require_once realpath( get_template_directory() . '/includes/rest-api/fetch-menu.php' );
 

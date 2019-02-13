@@ -15,6 +15,7 @@ import subcatDrops from './modules/subcategory-dropdown';
 import categoryExpander from './modules/category-expander';
 import fluidText from './modules/fluid-text';
 import scrollTo from './modules/scrollTo';
+import countdownTimer from './modules/countdown-timer';
 
 import './polyfills';
 
@@ -34,6 +35,7 @@ const App = () => {
   subcatDrops();
   categoryExpander();
   scrollTo();
+  countdownTimer();
 
   fluidText(document.getElementsByClassName('article-shareTitle'), 0.9);
 

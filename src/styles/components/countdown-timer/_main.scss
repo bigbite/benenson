@@ -1,0 +1,57 @@
+.countdownTimer {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: $color-black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+}
+
+.countdownTimer-title {
+  color: $color-white;
+  margin-bottom: 5px;
+}
+
+.countdownTimer-items {
+  display: flex;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.countdownTimer-items .countdownTimer-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.countdownTimer-items .countdownTimer-item p {
+  margin: 30px 0 0 0;
+}
+
+.countdownTimer-items .countdownTimer-item p span {
+  @include font-size(28px);
+  display: block;
+  margin-right: 5px;
+
+  @include mq(small) {
+    @include font-size(38px);
+    display: initial;
+  }
+}
+
+.countdownTimer-items .countdownTimer-item + .countdownTimer-item {
+  margin-left: 10px;
+}
+
+.countdownTimer.is-black,
+.countdownTimer.is-black .countdownTimer-title {
+  color: $color-black;
+}
+
+.countdownTimer.is-finished .countdownTimer-container {
+  display: none;
+}
+
+.countdownTimer.is-finished[data-hide-show="1"] {
+  display: none;
+}

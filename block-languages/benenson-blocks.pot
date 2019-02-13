@@ -88,6 +88,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
 #: src/scripts/blocks/blockquote/index.js:232
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:46
 #: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:49
@@ -96,6 +97,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
 #: src/scripts/blocks/blockquote/index.js:226
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:49
 #: src/scripts/blocks/header/DisplayComponent.js:98
 msgid "Black"
 msgstr ""
@@ -125,6 +127,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:62
 #: src/scripts/blocks/columns/DisplayComponent.js:28
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:65
 #: src/scripts/blocks/header/DisplayComponent.js:120
 #: src/scripts/blocks/iframe/DisplayComponent.js:89
 #: src/scripts/blocks/link/DisplayComponent.js:53
@@ -242,6 +245,7 @@ msgid "Alignment"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:252
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:73
 msgid "Text Colour"
 msgstr ""
 
@@ -403,6 +407,77 @@ msgstr ""
 msgid "Row Column"
 msgstr ""
 
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:114
+#: src/scripts/blocks/key-facts/fact.js:30
+#: src/scripts/blocks/key-facts/index.js:79
+#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
+#: src/scripts/blocks/media-aside/DisplayComponent.js:83
+#: src/scripts/blocks/post-list/components/editable/GridItem.js:30
+#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
+#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
+#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
+msgid "(Insert Title)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:121
+msgid "Days"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:124
+msgid "Hours"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:127
+msgid "Minutes"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:130
+msgid "Seconds"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:139
+msgid "(Insert Reveal Title)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:149
+msgid "(Insert Reveal Content)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:159
+#: src/scripts/blocks/media-aside/DisplayComponent.js:103
+msgid "(Insert Link text)"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:67
+msgid "Hide timer"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:68
+msgid "Hide the timer from users when the countdown has completed."
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:83
+msgid "Background colour"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:93
+msgid "Remove background colour"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/DisplayComponent.js:96
+#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/section/DisplayComponent.js:105
+msgid "Background Image"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/index.js:17
+msgid "Countdown Timer"
+msgstr ""
+
+#: src/scripts/blocks/countdown-timer/index.js:18
+msgid "Set a future date to countdown to."
+msgstr ""
+
 #: src/scripts/blocks/download/index.js:12
 msgid "Resource Download"
 msgstr ""
@@ -469,11 +544,6 @@ msgstr ""
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:152
-#: src/scripts/blocks/section/DisplayComponent.js:105
-msgid "Background Image"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:152
@@ -644,17 +714,6 @@ msgstr ""
 
 #: src/scripts/blocks/image/index.js:76
 msgid "Add a flexible image block with optional overlay"
-msgstr ""
-
-#: src/scripts/blocks/key-facts/fact.js:30
-#: src/scripts/blocks/key-facts/index.js:79
-#: src/scripts/blocks/links-with-icons/InnerBlockEdit.js:268
-#: src/scripts/blocks/media-aside/DisplayComponent.js:83
-#: src/scripts/blocks/post-list/components/editable/GridItem.js:30
-#: src/scripts/blocks/post-list/components/editable/LinkList.js:29
-#: src/scripts/blocks/post-list/components/editable/PostItem.js:55
-#: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:38
-msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
@@ -829,10 +888,6 @@ msgstr ""
 
 #: src/scripts/blocks/logo-list/index.js:21
 msgid "Add a repeatable logo block"
-msgstr ""
-
-#: src/scripts/blocks/media-aside/DisplayComponent.js:103
-msgid "(Insert Link text)"
 msgstr ""
 
 #: src/scripts/blocks/media-aside/DisplayComponent.js:57
