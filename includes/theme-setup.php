@@ -13,7 +13,7 @@ if ( ! function_exists( 'benenson_setup_default_sidebars' ) ) {
 			return;
 		}
 
-		$sidebar_posts = new \WP_Query( [
+		$sidebar_posts = new WP_Query( [
 			'post_type' => 'sidebar',
 			'orderby'   => 'post_title',
 			'order'     => 'ASC',
