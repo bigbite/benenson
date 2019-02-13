@@ -1,0 +1,122 @@
+.timeline .timeline-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.timeline .timeline-container .timelineMilestones {
+  position: relative;
+  will-change: transform;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: max-content;
+  padding: 18px 0;
+}
+
+.timeline .timeline-container .timelineMilestones.is-animate {
+  transition: .3s ease-in-out;
+}
+
+.timeline-line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: - 1.5px;
+  background-color: $color-black;
+}
+
+.timelineMilestone {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 20px;
+}
+
+.timelineMilestone .timelineMilestone-heading {
+  @include font-size(18px);
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  font-weight: bold;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 36px;
+    background-color: $color-black;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  &::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    border: 4px solid $color-black;
+    border-radius: 50%;
+    background-color: $color-white;
+    position: absolute;
+    left: 50%;
+    margin-left: -7.5px;
+    bottom: 36px;
+  }
+}
+
+.timelineMilestone .timelineMilestone-content {
+  position: relative;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 20px;
+}
+
+.timelineMilestone .timelineMilestone-title {
+  @include font-size(24px);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+html:not(.no-js) .timelineMilestone:nth-child(2n) {
+  flex-direction: column-reverse;
+}
+
+html:not(.no-js) .timelineMilestone:nth-child(2n) .timelineMilestone-heading {
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  &::before {
+    bottom: initial;
+    top: 0;
+  }
+
+  &::after {
+    top: 34px;
+    bottom: initial;
+  }
+}
+
+html.no-js .timeline .timeline-container .timelineMilestones {
+  flex-direction: column;
+  width: 100%;
+}
+
+html.no-js .timelineMilestone {
+  width: 100%;
+}
+
+html.no-js .timelineMilestone + .timelineMilestone {
+  margin-top: 30px;
+}
+
+html.no-js .timelineMilestone .timelineMilestone-heading {
+  margin-left: 0;
+}
