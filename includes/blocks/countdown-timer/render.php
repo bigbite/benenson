@@ -58,24 +58,16 @@ if ( ! function_exists( 'benenson_render_countdown_timer_block' ) ) {
 				?>
 				<div class="countdownTimer-items">
 					<div class="countdownTimer-item countdownTimer-days">
-					<?php
-					printf( '<p><span>%s</span>%s</p>', esc_attr( $days ), esc_html__( 'Days', 'benenson' ) );
-					?>
+						<?php printf( '<p><span>%s</span>%s</p>', esc_attr( $days ), esc_html__( 'Days', 'benenson' ) ); ?>
 					</div>
 					<div class="countdownTimer-item countdownTimer-hours">
-					<?php
-						printf( '<p><span>%s</span>%s</p>', esc_attr( $hours ), esc_html__( 'Hours', 'benenson' ) );
-					?>
+						<?php printf( '<p><span>%s</span>%s</p>', esc_attr( $hours ), esc_html__( 'Hours', 'benenson' ) ); ?>
 					</div>
 					<div class="countdownTimer-item countdownTimer-mins">
-					<?php
-						printf( '<p><span>%s</span>%s</p>', esc_attr( $minutes ), esc_html__( 'Minutes', 'benenson' ) );
-					?>
+						<?php printf( '<p><span>%s</span>%s</p>', esc_attr( $minutes ), esc_html__( 'Minutes', 'benenson' ) ); ?>
 					</div>
 					<div class="countdownTimer-item countdownTimer-secs">
-					<?php
-						printf( '<p><span>%s</span>%s</p>', esc_attr( $seconds ), esc_html__( 'Seconds', 'benenson' ) );
-					?>
+						<?php printf( '<p><span>%s</span>%s</p>', esc_attr( $seconds ), esc_html__( 'Seconds', 'benenson' ) ); ?>
 					</div>
 				</div>
 			</div>
@@ -90,12 +82,12 @@ if ( ! function_exists( 'benenson_render_countdown_timer_block' ) ) {
 					printf( '<p class="countdownTimer-content">%s</p>', esc_attr( $attributes['revealContent'] ) );
 				}
 
-				if ( ! empty( $attributes['revealBtnUrl'] ) && ! empty ( $attributes['revealBtnText'] ) ) {
+				if ( ! empty( $attributes['revealBtnUrl'] ) && ! empty( $attributes['revealBtnText'] ) ) {
 					printf( '<a href="%s" class="btn countdownTimer-btn">%s</a>', esc_url( $attributes['revealBtnUrl'] ), esc_attr( $attributes['revealBtnText'] ) );
 				}
 				?>
 			</div>
-			<?php endif; ?>
+		<?php endif; ?>
 		</div>
 
 		<?php
