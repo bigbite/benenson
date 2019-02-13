@@ -85,11 +85,11 @@
   margin-bottom: 5px;
 }
 
-.timelineMilestone:nth-child(2n) {
+html:not(.no-js) .timelineMilestone:nth-child(2n) {
   flex-direction: column-reverse;
 }
 
-.timelineMilestone:nth-child(2n) .timelineMilestone-heading {
+html:not(.no-js) .timelineMilestone:nth-child(2n) .timelineMilestone-heading {
   padding-top: 50px;
   padding-bottom: 0;
 
@@ -102,4 +102,21 @@
     top: 34px;
     bottom: initial;
   }
+}
+
+html.no-js .timeline .timeline-container .timelineMilestones {
+  flex-direction: column;
+  width: 100%;
+}
+
+html.no-js .timelineMilestone {
+  width: 100%;
+}
+
+html.no-js .timelineMilestone + .timelineMilestone {
+  margin-top: 30px;
+}
+
+html.no-js .timelineMilestone .timelineMilestone-heading {
+  margin-left: 0;
 }
