@@ -37,7 +37,7 @@
   margin-right: 20px;
 }
 
-.timelineMilestone .timelineMilestone-dateTime {
+.timelineMilestone .timelineMilestone-heading {
   @include font-size(18px);
   position: relative;
   display: inline-block;
@@ -89,7 +89,7 @@
   flex-direction: column-reverse;
 }
 
-.timelineMilestone:nth-child(2n) .timelineMilestone-dateTime {
+.timelineMilestone:nth-child(2n) .timelineMilestone-heading {
   padding-top: 50px;
   padding-bottom: 0;
 

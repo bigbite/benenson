@@ -296,13 +296,14 @@ msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:74
 #: src/scripts/blocks/slider/DisplayComponent.js:313
+#: src/scripts/blocks/timeline/DisplayComponent.js:180
 msgid "(Heading)"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:83
 #: src/scripts/blocks/image/BlockEdit.js:286
 #: src/scripts/blocks/slider/DisplayComponent.js:335
-#: src/scripts/blocks/timeline/DisplayComponent.js:160
+#: src/scripts/blocks/timeline/DisplayComponent.js:202
 msgid "(Content)"
 msgstr ""
 
@@ -616,7 +617,7 @@ msgid "Only has an effect on images smaller than their container"
 msgstr ""
 
 #: src/scripts/blocks/image/BlockEdit.js:280
-#: src/scripts/blocks/timeline/DisplayComponent.js:150
+#: src/scripts/blocks/timeline/DisplayComponent.js:192
 msgid "(Title)"
 msgstr ""
 
@@ -1120,7 +1121,7 @@ msgid "(Sub-Heading)"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:379
-#: src/scripts/blocks/timeline/DisplayComponent.js:192
+#: src/scripts/blocks/timeline/DisplayComponent.js:234
 msgid "(No Title)"
 msgstr ""
 
@@ -1160,27 +1161,27 @@ msgstr ""
 msgid "Scroller"
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:119
+#: src/scripts/blocks/timeline/DisplayComponent.js:146
 msgid "Timeline Milestone Options"
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:138
+#: src/scripts/blocks/timeline/DisplayComponent.js:170
 msgid "Add a milestone below."
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:139
+#: src/scripts/blocks/timeline/DisplayComponent.js:171
 msgid "Add milestone"
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:175
+#: src/scripts/blocks/timeline/DisplayComponent.js:217
 msgid "Remove Milestone"
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:176
+#: src/scripts/blocks/timeline/DisplayComponent.js:218
 msgid "Add Milestone"
 msgstr ""
 
-#: src/scripts/blocks/timeline/DisplayComponent.js:96
+#: src/scripts/blocks/timeline/DisplayComponent.js:91
 msgid "Are you sure you want to delete this milestone from the timeline?"
 msgstr ""
 

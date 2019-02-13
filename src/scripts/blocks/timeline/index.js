@@ -37,7 +37,7 @@ registerBlockType('benenson/timeline', {
           <div class="timeline-line"></div>
           <div className="timelineMilestones">
             { attributes.milestones.length > 0 && attributes.milestones.map((milestone, index) => {
-              const milestoneDate = milestone.date !== '' ? <p className="timelineMilestone-dateTime">{ dateI18n(dateFormat, milestone.date) }</p> : null;
+              const milestoneDate = milestone.date !== '' ? <p className="timelineMilestone-heading">{ dateI18n(dateFormat, milestone.date) }</p> : null;
               const milestoneTitle = milestone.title !== '' ? <p className="timelineMilestone-title">{ milestone.title }</p> : null;
               const milestoneContent = milestone.content !== '' ? <p className="timelineMilestone-text">{ milestone.content }</p> : null;
 

@@ -1,26 +1,21 @@
-import classnames from 'classnames';
-
 const randId = () => Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { applyFilters } = wp.hooks;
 const {
-  PanelBody, Button, TextControl, ToggleControl, SelectControl, DateTimePicker,
+  PanelBody, Button, DateTimePicker,
 } = wp.components;
 
 const {
-  InspectorControls, RichText, BlockIcon, URLInputButton,
+  InspectorControls, RichText,
 } = wp.editor;
 
 const { PostMediaSelector } = benenson.components;
 
-const { dateI18n, format, __experimentalGetSettings } = wp.date;
-
 class DisplayComponent extends Component {
   static emptyMilestone = {
     id: '',
-    date: new Date(),
+    heading: '',
     title: '',
     content: '',
   };
@@ -104,6 +99,40 @@ class DisplayComponent extends Component {
 
   createSelectMilestone = index => () => this.selectMilestone(index);
 
+  movePrev = () => {
+    const { selectedMilestone } = this.state;
+
+    const blockOrder = [...this.props.attributes.milestones];
+    const temp = blockOrder[selectedMilestone];
+    blockOrder[selectedMilestone] = blockOrder[selectedMilestone - 1];
+    blockOrder[selectedMilestone - 1] = temp;
+
+    this.props.setAttributes({
+      milestones: blockOrder,
+    });
+
+    this.setState({
+      selectedMilestone: selectedMilestone - 1,
+    });
+  };
+
+  moveNext = () => {
+    const { selectedMilestone } = this.state;
+
+    const blockOrder = [...this.props.attributes.milestones];
+    const temp = blockOrder[selectedMilestone];
+    blockOrder[selectedMilestone] = blockOrder[selectedMilestone + 1];
+    blockOrder[selectedMilestone + 1] = temp;
+
+    this.props.setAttributes({
+      milestones: blockOrder,
+    });
+
+    this.setState({
+      selectedMilestone: selectedMilestone + 1,
+    });
+  };
+
   render() {
     const { attributes } = this.props;
     const { selectedMilestone } = this.state;
@@ -111,16 +140,19 @@ class DisplayComponent extends Component {
     const currentMilestone = attributes.milestones[selectedMilestone];
     const updateMilestone = this.createUpdateMilestoneAttribute(selectedMilestone);
 
-    const dateFormat = __experimentalGetSettings().formats.date;
-
     const controls = (
       <InspectorControls>
         { currentMilestone && (
           <PanelBody title={ __('Timeline Milestone Options', 'benenson') }>
-            <DateTimePicker
-              currentDate={ currentMilestone.date }
-              onChange={updateMilestone('date')}
-            />
+            { attributes.milestones.length >= 2 && (
+              <p>Change milestone position:</p>
+            )}
+            { selectedMilestone !== 0 && (
+              <Button onClick={ this.movePrev } className="is-button is-default is-large" style={ { marginRight: '10px' } }>Move back</Button>
+            )}
+            { selectedMilestone < attributes.milestones.length - 1 && (
+              <Button onClick={ this.moveNext } className="is-button is-default is-large">Move forward</Button>
+            )}
           </PanelBody>
         ) }
       </InspectorControls>
@@ -136,21 +168,31 @@ class DisplayComponent extends Component {
                 <div className="timmelineMilestone">
                   <div className="timmelineMilestone-contentContainer">
                     <h1 className="timmelineMilestone-title">{ __('Add a milestone below.', 'benenson') }</h1>
-                    <button className="btn btn--white" onClick={this.addMilestone}>{ __('Add milestone', 'benenson') }</button>
+                    <button className="btn btn--white" onClick={ this.addMilestone }>{ __('Add milestone', 'benenson') }</button>
                   </div>
                 </div>
               ) }
               { currentMilestone && (
-                <div class="timelineMilestone">
-                  <p className="timelineMilestone-dateTime">{ dateI18n(dateFormat, currentMilestone.date) }</p>
+                <div className="timelineMilestone">
+                  <p className="timelineMilestone-heading">
+                    <RichText
+                      tagname="span"
+                      placeholder={ __('(Heading)', 'benenson') }
+                      value={ currentMilestone.heading }
+                      onChange={ updateMilestone('heading') }
+                      formattingControls={ [] }
+                      keepPlaceholderOnFocus={ true }
+                      format="string"
+                    />
+                  </p>
                   <div className="timelineMilestone-content">
                     <RichText
                       tagname="p"
                       className="timelineMilestone-title"
                       placeholder={ __('(Title)', 'benenson') }
-                      value={currentMilestone.title}
-                      onChange={updateMilestone('title')}
-                      formattingControls={[]}
+                      value={ currentMilestone.title }
+                      onChange={ updateMilestone('title') }
+                      formattingControls={ [] }
                       keepPlaceholderOnFocus={ true }
                       format="string"
                     />
@@ -158,9 +200,9 @@ class DisplayComponent extends Component {
                       tagname="p"
                       className="timelineMilestone-text"
                       placeholder={ __('(Content)', 'benenson') }
-                      value={currentMilestone.content}
-                      onChange={updateMilestone('content')}
-                      formattingControls={[]}
+                      value={ currentMilestone.content }
+                      onChange={ updateMilestone('content') }
+                      formattingControls={ [] }
                       keepPlaceholderOnFocus={ true }
                       format="string"
                     />
@@ -189,7 +231,7 @@ class DisplayComponent extends Component {
 
                 return (
                   <button className="timeline-navButton btn" onClick={ this.createSelectMilestone(index) }>
-                    {milestoneTitle ? milestone.title : __('(No Title)', 'benenson')}
+                    { milestoneTitle ? milestone.title : __('(No Title)', 'benenson') }
                   </button>
                 );
           }) }

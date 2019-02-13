@@ -14,7 +14,7 @@ const getPos = (element) => {
 class Timeline {
   constructor(timeline) {
     this.timeline = timeline;
-    this.items = Array.from(timeline.querySelectorAll('.timelineMilestone-dateTime'));
+    this.items = Array.from(timeline.querySelectorAll('.timelineMilestone-heading'));
     this.line = timeline.querySelector('.timeline-line');
     this.milestones = timeline.querySelector('.timelineMilestones');
     this.timeline.addEventListener('mousedown', (e) => { this.enableMove(e); });
