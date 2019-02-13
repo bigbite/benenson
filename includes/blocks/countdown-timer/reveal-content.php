@@ -26,7 +26,9 @@ class Benenson_Core_Reveal_Content {
 			'methods'  => 'GET',
 			'args'     => [
 				'id' => [
-					'validate_callback' => is_numeric( $this ),
+					'validate_callback' => function ( $value ) {
+						return is_numeric( $value );
+					},
 				],
 			],
 		] );
