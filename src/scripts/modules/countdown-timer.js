@@ -94,7 +94,7 @@ const init = () => {
           }
         };
 
-        xhr.open('GET', `/wp-json/benenson/v1/reveal-content/${benensonData.post_id}/${timerRef}`);
+        xhr.open('GET', `${benensonData.rest_base}benenson/v1/reveal-content/${benensonData.post_id}/${timerRef}`);
         xhr.send();
       };
 
