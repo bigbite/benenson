@@ -16,6 +16,7 @@ if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 		$price          = ! empty( $attributes['stockPrice'] ) ? $attributes['stockPrice'] : 0;
 		$symbol         = ! empty( $attributes['stocksymbol'] ) ? $attributes['stocksymbol'] : '';
 		$stock_exchange = ! empty( $attributes['stockExchange'] ) ? $attributes['stockExchange'] : '';
+		$last_updated   = ! empty( $attributes['lastUpdateTime'] ) ? $attributes['lastUpdateTime'] : '';
 		$api_key        = get_option( '_stock_api_key' );
 
 		if ( ! empty( $stock_exchange ) ) {
@@ -33,9 +34,9 @@ if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 		$body = wp_remote_retrieve_body( $request );
 		$obj = json_decode( $body, true );
 
-		$low_price         = $obj['Global Quote']['04. low'];
-		$high_price          = $obj['Global Quote']['03. high'];
-		$price          = $obj['Global Quote']['05. price'];
+		$low_price     = $obj['Global Quote']['04. low'];
+		$high_price    = $obj['Global Quote']['03. high'];
+		$price         = $obj['Global Quote']['05. price'];
 		$change        = $obj['Global Quote']['10. change percent'];
 		$is_negative   = false;
 
@@ -52,7 +53,7 @@ if ( ! function_exists( 'benenson_render_stock_price_block' ) ) {
 				<span><?php echo esc_html( $stock_exchange ); ?></span>
 			</div>
 			<div class="sharePriceTicker-data">
-				<div class="sharePriceTicker-data-high"><?php echo esc_html( $high ); ?></div>
+				<div class="sharePriceTicker-data-high"><?php echo esc_html( $price ); ?></div>
 				<div class="sharePriceTicker-data-change <?php echo esc_html( $status_label ); ?>"><?php echo esc_html( $change ); ?></div>
 			</div>
 		</div>

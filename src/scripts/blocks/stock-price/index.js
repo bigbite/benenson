@@ -50,8 +50,11 @@ const blockAttributes = {
   stockPrice: {
     type: 'integer',
   },
-  stockDifference: {
-    type: 'integer',
+  stockChange: {
+    type: 'string',
+  },
+  lastUpdateTime: {
+    type: 'string',
   },
 };
 

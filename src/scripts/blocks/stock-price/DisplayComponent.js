@@ -7,65 +7,61 @@ const { Component, Fragment } = wp.element;
 const { PanelBody, SelectControl, TextControl } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
 
+//0QOA.ILN
+//TMNSF
+//other use TITAN
+
 class DisplayComponent extends Component {
   constructor(...args) {
     super(...args);
 
     this.state = {
-      stockPrices: [],
       loading: false,
       error: false,
-      stocksymbol: this.props.attributes.stocksymbol,
-      stockHigh: this.props.attributes.stockHigh,
-      stockLow: this.props.attributes.stockLow,
-      stockPrice: this.props.attributes.stockPrice,
-      stockChange: this.props.attributes.stockChange,
     };
+  }
+
+  calculateTimeFromLastCall = (date1, date2) => {
+    let difference = date1 - date2;
+
+    const minutesDifference = Math.floor(difference / 1000 / 60);
+    difference -= minutesDifference * 1000 * 60;
+
+    return minutesDifference;
   }
 
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
 
   componentDidMount() {
     const { attributes } = this.props;
-
-    console.log('attributes', attributes);
-
     this.fetchStockPrices();
   }
 
   parseData(data) {
     const { setAttributes } = this.props;
 
-    console.log(data);
+    console.log(data.data);
 
     if (typeof data.data['Global Quote'] !== 'undefined') {
-      console.log('API worked');
       setAttributes({
-        stockLow: data.data['Global Quote']['04. low'],
-        stockHigh: data.data['Global Quote']['03. high'],
-        stockPrice: data.data['Global Quote']['05. price'],
+        stockLow: parseFloat(data.data['Global Quote']['04. low']),
+        stockHigh: parseFloat(data.data['Global Quote']['03. high']),
+        stockPrice: parseFloat(data.data['Global Quote']['05. price']),
         stockChange: data.data['Global Quote']['10. change percent'],
+        lastUpdateTime: new Date().getTime(),
       });
+    } else if (typeof this.props.attributes.stockChange !== 'undefined') {
+      this.setState({ error: `Last updated ${this.props.atribute.lastUpdateTime}` });
     } else {
-      console.log('API failed use saved values');
-      console.log(this.props.attributes.stocksymbol);
-      console.log(this.props.attributes.stockHigh);
-      // setAttributes({
-      //   stockLow: data.data['Global Quote']['04. low'],
-      //   stockHigh: data.data['Global Quote']['03. high'],
-      //   stockPrice: data.data['Global Quote']['05. price'],
-      //   stockChange: data.data['Global Quote']['10. change percent'],
-      // });
+      this.setState({ error: 'No data from API, API limit may have been reached.' });
     }
   }
 
   async fetchStockPrices() {
     let stockSymbol = false;
     let apiKey = false;
-    //0QOA.ILN
-    //TMNSF
-
-    //other use TITAN
+    console.log('time difference', new Date().getTime(), 'second',this.props.attributes.lastUpdateTime);
+    console.log(this.calculateTimeFromLastCall(new Date().getTime(), this.props.attributes.lastUpdateTime));
 
     const settings = await wp.apiRequest({
       path: '/wp/v2/settings',
@@ -83,8 +79,6 @@ class DisplayComponent extends Component {
 
     const Url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey==${apiKey}`;
 
-    console.log(Url);
-
     axios.get(Url)
       .then(data => this.parseData(data))
       .catch(err => console.log(err));
@@ -92,7 +86,6 @@ class DisplayComponent extends Component {
 
   render() {
     const { attributes } = this.props;
-    const { change, stockHigh, stockPrice, stockLow } = this.state;
 
     return (<Fragment>
       <InspectorControls>
@@ -122,6 +115,9 @@ class DisplayComponent extends Component {
         <div class="sharePriceTicker-data">
           <div class="sharePriceTicker-data-high">{ attributes.stockPrice }</div>
           <div class="sharePriceTicker-data-change">{ attributes.stockChange }</div>
+        </div>
+        <div className="gutenberg-error-message">
+          <div class="gutenberg-error-message">{ this.state.error }</div>
         </div>
       </div>
       </div>

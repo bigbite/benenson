@@ -132,7 +132,7 @@ msgstr ""
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
-#: src/scripts/blocks/stock-price/DisplayComponent.js:99
+#: src/scripts/blocks/stock-price/DisplayComponent.js:92
 msgid "Options"
 msgstr ""
 
@@ -329,7 +329,7 @@ msgid "Set to 0 to show all."
 msgstr ""
 
 #: src/scripts/blocks/category-list/DisplayComponent.js:81
-#: src/scripts/blocks/stock-price/DisplayComponent.js:101
+#: src/scripts/blocks/stock-price/DisplayComponent.js:94
 msgid "Title"
 msgstr ""
 
@@ -1159,19 +1159,19 @@ msgstr ""
 msgid "Scroller"
 msgstr ""
 
-#: src/scripts/blocks/stock-price/DisplayComponent.js:106
-msgid "Stock Symbol"
-msgstr ""
-
-#: src/scripts/blocks/stock-price/DisplayComponent.js:111
+#: src/scripts/blocks/stock-price/DisplayComponent.js:104
 msgid "Stock Exchange"
 msgstr ""
 
-#: src/scripts/blocks/stock-price/index.js:59
+#: src/scripts/blocks/stock-price/DisplayComponent.js:99
+msgid "Stock Symbol"
+msgstr ""
+
+#: src/scripts/blocks/stock-price/index.js:62
 msgid "Stock Price"
 msgstr ""
 
-#: src/scripts/blocks/stock-price/index.js:63
+#: src/scripts/blocks/stock-price/index.js:66
 msgid "Stock"
 msgstr ""
 
