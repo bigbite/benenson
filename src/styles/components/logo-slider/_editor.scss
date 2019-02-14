@@ -1,0 +1,36 @@
+.logoSlider {
+  width: 100%;
+}
+
+.logoSlider-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.logoSlider-nav div,
+.logoSlider-nav button {
+  flex-grow: 1;
+
+  & + * {
+    margin-left: 1px;
+  }
+}
+
+.logoSlider-nav button {
+  margin-bottom: 1px;
+}
+
+.logoSlider-nav .logoSlider-navActions {
+  flex-grow: 1;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.logoSlider-nav .logoSlider-navActions .logoSlider-navButton {
+  width: calc(50% - .5px);
+}
+
+.logoSlider-nav .is-active {
+  @extend .btn--white;
+}
