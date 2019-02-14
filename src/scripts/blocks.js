@@ -28,8 +28,144 @@ import './blocks/category-list';
 import './blocks/logo-list';
 import './blocks/link';
 import './blocks/media-aside';
+import assign from 'lodash-es/assign';
+
+const {
+  CheckboxControl,
+  PanelBody,
+  TextControl,
+  TextareaControl,
+} = wp.components;
+
+const {
+  createHigherOrderComponent,
+} = wp.compose;
+
+const {
+  InspectorControls,
+} = wp.editor;
+
+const {
+  isEmpty,
+} = lodash;
+
+const {
+  Fragment,
+  RawHTML,
+  renderToString,
+} = wp.element;
+
+const { hooks } = wp;
 
 wp.blocks.registerBlockStyle('core/table', {
   name: 'responsive',
   label: 'Responsive',
 });
+
+
+// function addListBlockClassName(settings, name) {
+//   if (name !== 'core/list') {
+//     return settings;
+//   }
+
+//   return assign({}, settings, {
+//     supports: assign({}, settings.supports, {
+//       className: true,
+//     }),
+//   });
+// }
+
+
+const titleAttributes = {
+  titleText: {
+    type: 'string',
+    default: '',
+  },
+};
+
+const registerAttributes = (settings, name) => {
+
+  if ('core/list' !== name) {
+    return settings;
+  }
+
+  settings.attributes = Object.assign(settings.attributes, titleAttributes);
+  return settings;
+};
+
+hooks.addFilter('blocks.registerBlockType', 'times', registerAttributes);
+
+
+const addFields = createHigherOrderComponent((BlockEdit) => {
+  return (props) => {
+
+    if ('core/list' !== props.name) {
+      console.log('return');
+      console.log('returning', props.name);
+      return (
+        <BlockEdit {...props} />
+      );
+    }
+
+    const {
+      attributes,
+      setAttributes,
+    } = props;
+
+    const {
+      titleText,
+    } = attributes;
+
+    return (
+      <Fragment>
+        <InspectorControls>
+          <PanelBody title={ 'Title Text' }>
+            <TextareaControl
+              defaultValue={ titleText }
+              onChange={( value ) => setAttributes({ titleText: value })}
+              label={ 'Title Text' }
+              placeholder={ '' }
+              />
+          </PanelBody>
+        </InspectorControls>
+        <BlockEdit { ...props } />
+      </Fragment>
+    );
+  };
+});
+
+
+wp.hooks.addFilter(
+  'editor.BlockEdit',
+  'times',
+  addFields,
+);
+
+
+const saveAttributes = (element, blockType, attributes) => {
+  console.log('block type name', blockType.name);
+  if ('core/list' !== blockType.name) {
+    return element;
+  }
+
+  console.log('list detected');
+
+  const {
+    titleText,
+  } = attributes;
+
+  const titleProps = [];
+  if (!isEmpty(titleText)) {
+    titleProps.push({
+      value: titleText,
+    });
+  }
+
+  let elementAsString = renderToString(element);
+
+  return (
+    <RawHTML>{elementAsString}</RawHTML>
+  );
+};
+
+hooks.addFilter('blocks.getSaveElement', 'times', saveAttributes);
