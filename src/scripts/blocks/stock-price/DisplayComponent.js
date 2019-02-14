@@ -38,6 +38,11 @@ class DisplayComponent extends Component {
   }
 
   parseData(data) {
+
+    if (data.data.Note !== 'undefined') {
+      this.setState({ error: 'No data from API, API limit may have been reached.' });
+    }
+
     const { setAttributes } = this.props;
 
     console.log(data.data);
