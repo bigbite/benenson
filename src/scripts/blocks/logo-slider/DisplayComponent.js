@@ -6,7 +6,7 @@ const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { applyFilters } = wp.hooks;
 const {
-  PanelBody, Button, TextControl, ToggleControl, SelectControl,
+  PanelBody, Button, TextControl, ToggleControl, RangeControl,
 } = wp.components;
 const {
   InspectorControls, RichText, BlockIcon, URLInputButton,
@@ -28,6 +28,7 @@ class DisplayComponent extends Component {
 
     this.state = {
       selectedSlide: 0,
+      group: this.props.attributes.perSlide,
     };
   }
 
@@ -104,6 +105,7 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: attributes.slides.length,
+      group: attributes.slides.length + 1,
     });
   };
 
@@ -113,6 +115,7 @@ class DisplayComponent extends Component {
     if (index === attributes.slides.length - 1) {
       this.setState({
         selectedSlide: index - 1,
+        group: (index - 1) > attributes.perSlide ? attributes.slides.length : attributes.perSlide,
       });
     }
 
@@ -132,12 +135,13 @@ class DisplayComponent extends Component {
 
   selectSlide = index => this.setState({
     selectedSlide: index,
+    group: index > this.props.attributes.perSlide ? this.props.attributes.slides.length : this.props.attributes.perSlide,
   });
 
   createSelectSlide = index => () => this.selectSlide(index);
 
   movePrev = () => {
-    const { selectedSlide } = this.state;
+    const { selectedSlide, group } = this.state;
 
     const slideOrder = [...this.props.attributes.slides];
     const temp = slideOrder[selectedSlide];
@@ -150,11 +154,12 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: selectedSlide - 1,
+      group: group - 1,
     });
   };
 
   moveNext = () => {
-    const { selectedSlide } = this.state;
+    const { selectedSlide, group } = this.state;
 
     const slideOrder = [...this.props.attributes.slides];
     const temp = slideOrder[selectedSlide];
@@ -167,15 +172,21 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: selectedSlide + 1,
+      group: group + 1,
     });
   };
 
   render() {
     const { attributes, setAttributes } = this.props;
-    const { selectedSlide } = this.state;
+    const { selectedSlide, group } = this.state;
 
     const currentSlide = attributes.slides[selectedSlide];
     const updateSlide = this.createUpdateSlideAttribute(selectedSlide);
+
+    const quantityOptions = applyFilters('benenson.block.logoSlider.quantityOptions', {
+      min: 1,
+      max: 10,
+    });
 
     const controls = (
       <InspectorControls>
@@ -183,6 +194,13 @@ class DisplayComponent extends Component {
           label={ __('Show Arrows', 'benenson') }
           checked={ attributes.hasArrows }
           onChange={ this.createUpdateAttribute('hasArrows') }
+        />
+        <RangeControl
+        label={ __('Number of logos to show per slide', 'benenson') }
+        value={ attributes.perSlide }
+        onChange={ this.createUpdateAttribute('perSlide') }
+        min={ quantityOptions.min }
+        max={ quantityOptions.max }
         />
         { currentSlide && (
           <PanelBody title={ __('Slide Options', 'benenson') }>
@@ -210,10 +228,15 @@ class DisplayComponent extends Component {
       </InspectorControls>
     );
 
+    const sliderClasses = classnames(
+      'logoSlider',
+      `logoSlider-${attributes.perSlide}perSlide`,
+    );
+
     return (
       <Fragment>
         { controls }
-        <div className="logoSlider">
+        <div className={ sliderClasses }>
           <div class="logoSlides-container">
             <div class="logoSlides">
               { attributes.slides.length === 0 && (
@@ -224,44 +247,40 @@ class DisplayComponent extends Component {
                   </div>
                 </div>
               ) }
-              { currentSlide && (
-                <div className="logoSlide">
-                  <PostMediaSelector
-                    mediaId={ currentSlide.imageId }
-                    onUpdate={ this.createUpdateImage(selectedSlide) }
-                  />
-                  <URLInputButton
-                    url={ currentSlide.imageLink }
-                    onChange={ updateSlide('imageLink') }
-                  />
-                </div>
-              ) }
+              { attributes.slides.length > 0 && attributes.slides.map((slide, index) => {
+                if (index >= group - attributes.perSlide && index <= group - 1) {
+                  const classes = classnames('logoSlide', {
+                    'is-active': index === selectedSlide,
+                  });
+
+                  return (
+                    <div className={ classes }>
+                      <div class="logoSlide-settings">
+                        <button onClick={ this.initiateDelete } className="components-button components-icon-button logoSlide-deleteBtn" aria-label={ __('Delete Logo', 'benenson') }><span className="dashicons dashicons-trash"></span></button>
+                        <button onClick={ this.createSelectSlide(index) } className="components-button components-icon-button is-primary logoSlide-settingsBtn" aria-label={ __('Logo settings', 'benenson') }><span className="dashicons dashicons-admin-generic"></span></button>
+                      </div>
+                      <PostMediaSelector
+                        mediaId={ slide.imageId }
+                        onUpdate={ this.createUpdateImage(index) }
+                      />
+                      <URLInputButton
+                        url={ slide.imageLink }
+                        onChange={ updateSlide('imageLink') }
+                      />
+                    </div>
+                  );
+                }
+
+                return null;
+              }) }
             </div>
           </div>
-          <nav className="logoSlider-nav">
-          { currentSlide && (
-            <div className="logoSlider-navActions">
-              <button className="logoSlider-navButton btn" onClick={ this.initiateDelete }>{ __('Remove Slide', 'benenson') }</button>
-              <button className="logoSlider-navButton btn" onClick={ this.addSlide }>{ __('Add Slide', 'benenson') }</button>
-            </div>
-          ) }
-          { attributes.slides.length > 0 && attributes.slides.map((slide, index) => {
-            const slideTitle = slide.title && slide.title !== '';
-
-            if (selectedSlide === index) {
-              return (
-                <div className="logoSlider-navButton is-active btn">
-                    <span>{ slideTitle ? slide.title : __('(No Title)', 'benenson') }</span>
-                </div>
-              );
-            }
-
-            return (
-              <button className="logoSlider-navButton btn" onClick={ this.createSelectSlide(index) }>
-                { slideTitle ? slide.title : __('(No Title)', 'benenson') }
-              </button>
-            );
-          }) }
+          <nav className="logoSlider-nav logoSlider-navActions">
+            <button className="logoSlider-navButton logoSlider-navButtonPrev btn" onClick={ () => this.setState({ selectedSlide: selectedSlide - 1, group: group - 1 }) } disabled={group === attributes.perSlide}>{ __('Pevious Logo', 'benenson') }</button>
+            { currentSlide && (
+              <button className="logoSlider-navButton btn" onClick={ this.addSlide }>{ __('Add Logo', 'benenson') }</button>
+            ) }
+            <button className="logoSlider-navButton logoSlider-navButtonNext btn" onClick={ () => this.setState({ selectedSlide: selectedSlide + 1, group: group + 1 }) } disabled={group === attributes.slides.length || attributes.slides.length <= attributes.perSlide }>{ __('Next Logo', 'benenson') }</button>
           </nav>
         </div>
       </Fragment>

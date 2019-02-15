@@ -17,6 +17,10 @@ const blockAttributes = {
     type: 'boolean',
     default: true,
   },
+  perSlide: {
+    type: 'interger',
+    default: 4,
+  },
 };
 
 registerBlockType('benenson/block-logo-slider', {
@@ -34,13 +38,17 @@ registerBlockType('benenson/block-logo-slider', {
 
   save: ({ attributes, className }) => {
     const { slides, logoSliderId } = attributes;
+    const sliderClasses = classnames(
+      'logoSlider',
+      `logoSlider-${attributes.perSlide}perSlide`,
+    );
 
     if (slides.length < 1) {
       return null;
     }
 
     return (
-      <div className="logoSlider">
+      <div className={ sliderClasses }>
         <div class="logoSlides-container">
           <div class="logoSlides">
             { slides.map((slide, index) => (

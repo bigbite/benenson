@@ -4,33 +4,68 @@
 
 .logoSlider-nav {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.logoSlider-nav div,
-.logoSlider-nav button {
+.logoSlider-navActions .logoSlider-navButton {
+  width: 100%;
   flex-grow: 1;
+}
 
-  & + * {
-    margin-left: 1px;
+.logoSlider-navActions .logoSlider-navButton + .logoSlider-navButton {
+  margin-left: 1px;
+}
+
+.logoSlider-navActions .logoSlider-navButton[disabled] {
+  cursor: default;
+  background-color: $color-grey-brand;
+  border-color: $color-grey-brand;
+
+  &:enter {
+    color: $color-white;
   }
 }
 
-.logoSlider-nav button {
-  margin-bottom: 1px;
+.logoSlides {
+  display: flex;
 }
 
-.logoSlider-nav .logoSlider-navActions {
+.logoSlide {
+  padding-top: 20px;
+  position: relative;
   flex-grow: 1;
-  width: 100%;
-  flex-basis: 100%;
+  border-top: 3px solid transparent;
 }
 
-.logoSlider-nav .logoSlider-navActions .logoSlider-navButton {
-  width: calc(50% - .5px);
+.logoSlide.is-active {
+  border-top: 3px solid #4daacf;
 }
 
-.logoSlider-nav .is-active {
-  @extend .btn--white;
+.logoSlide .logoSlide-settings {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.logoSlide:enter .logoSlide-settings {
+  display: block;
+}
+
+.logoSlide-deleteBtn {
+  margin-bottom: 5px;
+  background-color: #c92c2c;
+  color: $color-white;
+
+  &:enter {
+    background-color: #c92c2c !important;
+    box-shadow: none !important;
+    color: $color-white !important;
+  }
+}
+
+.logoSlide-settings .components-icon-button:not(:disabled):not([aria-disabled=true]):not(.is-default):hover {
+  background-color: #4daacf;
+  color: $color-white;
+  box-shadow: none;
 }
