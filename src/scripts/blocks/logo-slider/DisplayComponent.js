@@ -178,7 +178,7 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: selectedSlide + 1,
-      group: (selectedSlide + 1) < this.props.attributes.perSlide ? this.props.attributes.perSlide : group + 1, // eslint-disable-line max-len
+      group: (selectedSlide + 1) === (this.props.attributes.slides.length - this.props.attributes.perSlide) ? this.props.attributes.perSlide : group + 1, // eslint-disable-line max-len
     });
   };
 
