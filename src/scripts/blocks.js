@@ -26,6 +26,7 @@ import './blocks/download';
 import './blocks/key-facts';
 import './blocks/category-list';
 import './blocks/logo-list';
+import './blocks/logo-slider';
 import './blocks/link';
 import './blocks/media-aside';
 

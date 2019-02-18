@@ -11,6 +11,7 @@ import categorySlider from './modules/category-slider';
 import modalEmbed from './modules/modal-embed';
 import inlineEmbed from './modules/inline-embed';
 import sliderBlock from './modules/slider-block';
+import logoSlider from './modules/logo-slider';
 import subcatDrops from './modules/subcategory-dropdown';
 import categoryExpander from './modules/category-expander';
 import fluidText from './modules/fluid-text';
@@ -31,6 +32,7 @@ const App = () => {
   modalEmbed();
   inlineEmbed();
   sliderBlock();
+  logoSlider();
   subcatDrops();
   categoryExpander();
   scrollTo();

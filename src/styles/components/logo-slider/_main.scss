@@ -1,0 +1,80 @@
+.logoSlides-container {
+  position: relative;
+}
+
+.logo-Slides {
+  padding: 0 50px;
+}
+
+@for $i from 1 through 10 {
+  .logoSlider-#{$i}perSlide .logoSlide {
+    width: 100%;
+    flex-basis: 100%;
+
+    @include mq(small) {
+      width: #{100 / $i + "%"};
+      flex-basis: #{100 / $i + "%"};
+    }
+  }
+}
+
+.logoSlide .logoSlide-contentContainer {
+  text-align: center;
+}
+
+.logoSlider-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: $color-white;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-indent: -1000vw;
+  border: none;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.logoSlider-arrow::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoSlider-arrow--next {
+  right: 0;
+  left: initial;
+
+  .rtl & {
+    right: initial;
+    left: 0;
+  }
+}
+
+.rtl .logoSlider-arrow--previous {
+  right: 0;
+  left: initial;
+}
+
+.logoSlider-arrow--next::after {
+  @include icon_svg(30px, 30px, "black", "arrow-ios-forward-outline" );
+  content: "";
+  display: block;
+
+  .rtl & {
+    @include icon_svg(30px, 30px, "black", "arrow-ios-back-outline" );
+  }
+}
+
+.logoSlider-arrow--previous::after {
+  @include icon_svg(30px, 30px, "black", "arrow-ios-back-outline" );
+  content: "";
+  display: block;
+
+  .rtl & {
+    @include icon_svg(30px, 30px, "black", "arrow-ios-forward-outline" );
+  }
+}

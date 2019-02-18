@@ -1,0 +1,86 @@
+.logoSlider {
+  width: 100%;
+}
+
+.logoSlider-nav {
+  display: flex;
+  margin-top: 20px;
+}
+
+.logoSlider-navActions .logoSlider-navButton {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.logoSlider-navActions .logoSlider-navButton + .logoSlider-navButton {
+  margin-left: 1px;
+}
+
+.logoSlider-navActions .logoSlider-navButton[disabled] {
+  cursor: default;
+  background-color: $color-grey-brand;
+  border-color: $color-grey-brand;
+
+  &:enter {
+    color: $color-white;
+  }
+}
+
+.logoSlides {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logoSlide {
+  padding-top: 20px;
+  position: relative;
+  border-top: 3px solid transparent;
+  width: calc(25% - 23px) !important;
+  flex-basis: calc(25% - 23px) !important;
+}
+
+.logoSlide + .logoSlide {
+  margin-left: 30px;
+}
+
+.logoSlide:nth-child(4n+1) {
+  margin-left: 0px;
+}
+
+.logoSlide.is-active {
+  border-top: 3px solid #4daacf;
+}
+
+.logoSlide .logoSlide-settings {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.logoSlide:enter .logoSlide-settings {
+  display: block;
+}
+
+.logoSlide-deleteBtn {
+  margin-bottom: 5px;
+  background-color: #c92c2c;
+  color: $color-white;
+
+  &:enter {
+    background-color: #c92c2c !important;
+    box-shadow: none !important;
+    color: $color-white !important;
+  }
+}
+
+.logoSlide-settings .components-icon-button:not(:disabled):not([aria-disabled=true]):not(.is-default):hover {
+  background-color: #4daacf;
+  color: $color-white;
+  box-shadow: none;
+}
+
+.logoSlide .editor-url-input__button {
+  position: relative;
+  z-index: 1;
+}
