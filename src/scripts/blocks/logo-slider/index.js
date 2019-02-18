@@ -25,7 +25,7 @@ const blockAttributes = {
 
 registerBlockType('benenson/block-logo-slider', {
   title: __('Logo slider', 'benenson'),
-  icon: 'welcome-widgets-menus',
+  icon: 'images-alt2',
   category: 'benenson',
   keywords: [
     __('Slider', 'benenson'),
