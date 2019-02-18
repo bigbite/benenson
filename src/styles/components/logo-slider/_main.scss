@@ -2,19 +2,24 @@
   position: relative;
 }
 
+.logo-Slides {
+  padding: 0 50px;
+}
+
 @for $i from 1 through 10 {
   .logoSlider-#{$i}perSlide .logoSlide {
-    width: #{100 / $i + "%"};
-    flex-basis: #{100 / $i + "%"};
+    width: 100%;
+    flex-basis: 100%;
+
+    @include mq(small) {
+      width: #{100 / $i + "%"};
+      flex-basis: #{100 / $i + "%"};
+    }
   }
 }
 
 .logoSlide .logoSlide-contentContainer {
   text-align: center;
-}
-
-.logoSlide + .logoSlide {
-  margin-left: 30px;
 }
 
 .logoSlider-arrow {

@@ -28,13 +28,23 @@
 
 .logoSlides {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logoSlide {
   padding-top: 20px;
   position: relative;
-  flex-grow: 1;
   border-top: 3px solid transparent;
+  width: calc(25% - 23px) !important;
+  flex-basis: calc(25% - 23px) !important;
+}
+
+.logoSlide + .logoSlide {
+  margin-left: 30px;
+}
+
+.logoSlide:nth-child(4n+1) {
+  margin-left: 0px;
 }
 
 .logoSlide.is-active {
@@ -68,4 +78,9 @@
   background-color: #4daacf;
   color: $color-white;
   box-shadow: none;
+}
+
+.logoSlide .editor-url-input__button {
+  position: relative;
+  z-index: 1;
 }

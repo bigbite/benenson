@@ -42,6 +42,14 @@ class DisplayComponent extends Component {
     }
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.attributes.perSlide !== this.props.attributes.perSlide) {
+      this.setState({
+        group: this.props.attributes.perSlide,
+      });
+    }
+  }
+
   /**
    * Higher order component that takes the attribute key,
    * this then returns a function which takes a value,
@@ -135,7 +143,6 @@ class DisplayComponent extends Component {
 
   selectSlide = index => this.setState({
     selectedSlide: index,
-    group: index > this.props.attributes.perSlide ? this.props.attributes.slides.length : this.props.attributes.perSlide,
   });
 
   createSelectSlide = index => () => this.selectSlide(index);
@@ -154,13 +161,12 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: selectedSlide - 1,
-      group: group - 1,
+      group: (selectedSlide - 1) < this.props.attributes.perSlide ? this.props.attributes.perSlide : group - 1, // eslint-disable-line max-len
     });
   };
 
   moveNext = () => {
     const { selectedSlide, group } = this.state;
-
     const slideOrder = [...this.props.attributes.slides];
     const temp = slideOrder[selectedSlide];
     slideOrder[selectedSlide] = slideOrder[selectedSlide + 1];
@@ -172,7 +178,7 @@ class DisplayComponent extends Component {
 
     this.setState({
       selectedSlide: selectedSlide + 1,
-      group: group + 1,
+      group: (selectedSlide + 1) < this.props.attributes.perSlide ? this.props.attributes.perSlide : group + 1, // eslint-disable-line max-len
     });
   };
 
@@ -205,9 +211,9 @@ class DisplayComponent extends Component {
         { currentSlide && (
           <PanelBody title={ __('Slide Options', 'benenson') }>
             <TextControl
-              label="Slide title"
-              value={ currentSlide.title }
-              onChange={ updateSlide('title') }
+              label={ __('Slide URL', 'benenson') }
+              value={ currentSlide.imageLink }
+              onChange={ updateSlide('imageLink') }
             />
             <ToggleControl
               label={ __('Open link in new tab', 'benenson') }
@@ -217,12 +223,8 @@ class DisplayComponent extends Component {
             { attributes.slides.length >= 2 && (
                 <p>Change milestone position:</p>
             )}
-            { selectedSlide !== 0 && (
-              <Button onClick={ this.movePrev } className="is-button is-default is-large" style={ { marginRight: '10px' } }>Move back</Button>
-            )}
-            { selectedSlide < attributes.slides.length - 1 && (
-              <Button onClick={ this.moveNext } className="is-button is-default is-large">Move forward</Button>
-            )}
+            <Button onClick={ this.movePrev } className="is-button is-default is-large" style={ { marginRight: '10px' } } disabled={ selectedSlide === 0 }>Move back</Button>
+            <Button onClick={ this.moveNext } className="is-button is-default is-large" disabled={ selectedSlide === attributes.slides.length - 1 }>Move forward</Button>
           </PanelBody>
         ) }
       </InspectorControls>
@@ -262,10 +264,6 @@ class DisplayComponent extends Component {
                       <PostMediaSelector
                         mediaId={ slide.imageId }
                         onUpdate={ this.createUpdateImage(index) }
-                      />
-                      <URLInputButton
-                        url={ slide.imageLink }
-                        onChange={ updateSlide('imageLink') }
                       />
                     </div>
                   );

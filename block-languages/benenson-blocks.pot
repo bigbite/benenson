@@ -848,49 +848,53 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:131
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:139
 msgid "Are you sure you want to delete this logo from the slider?"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:194
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:200
 #: src/scripts/blocks/slider/DisplayComponent.js:217
 msgid "Show Arrows"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:199
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:205
 msgid "Number of logos to show per slide"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:206
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:212
 #: src/scripts/blocks/slider/DisplayComponent.js:238
 msgid "Slide Options"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:213
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:214
+msgid "Slide URL"
+msgstr ""
+
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:219
 msgid "Open link in new tab"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:245
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:247
 msgid "Add a logo below."
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:259
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:261
 msgid "Delete Logo"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:260
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:262
 msgid "Logo settings"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:279
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:277
 msgid "Pevious Logo"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:281
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:279
 msgid "Add Logo"
 msgstr ""
 
-#: src/scripts/blocks/logo-slider/DisplayComponent.js:283
+#: src/scripts/blocks/logo-slider/DisplayComponent.js:281
 msgid "Next Logo"
 msgstr ""
 
