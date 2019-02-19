@@ -132,6 +132,8 @@ msgstr ""
 #: src/scripts/blocks/post-list/DisplayComponent.js:91
 #: src/scripts/blocks/section/DisplayComponent.js:80
 #: src/scripts/blocks/slider/DisplayComponent.js:215
+#: src/scripts/blocks/tabs/DisplayComponent.js:137
+#: src/scripts/blocks/tabs/tabEdit.js:24
 msgid "Options"
 msgstr ""
 
@@ -1135,6 +1137,7 @@ msgid "(Sub-Heading)"
 msgstr ""
 
 #: src/scripts/blocks/slider/DisplayComponent.js:379
+#: src/scripts/blocks/tabs/DisplayComponent.js:173
 msgid "(No Title)"
 msgstr ""
 
@@ -1172,6 +1175,48 @@ msgstr ""
 
 #: src/scripts/blocks/slider/index.js:40
 msgid "Scroller"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:109
+msgid "Do you wish to delete this tab? This action is irreversible"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:128
+msgid "Horizontal Tabs"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:131
+msgid "Vertical Tabs"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:139
+msgid "Tabs title"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:144
+msgid "Tab style"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:150
+msgid "Mobile accordion"
+msgstr ""
+
+#: src/scripts/blocks/tabs/DisplayComponent.js:151
+msgid ""
+"On mobile the tabs will be stacked, the behaviour will be that of an "
+"accordion."
+msgstr ""
+
+#: src/scripts/blocks/tabs/index.js:33
+msgid "Tabs"
+msgstr ""
+
+#: src/scripts/blocks/tabs/tab.js:8
+msgid "Tab"
+msgstr ""
+
+#: src/scripts/blocks/tabs/tabEdit.js:26
+msgid "Tab title"
 msgstr ""
 
 #: src/scripts/blocks/tweet/index.js:109

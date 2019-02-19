@@ -1,0 +1,18 @@
+.tabs .tabs-naviation .tabNavigation-addNew {
+  flex-grow: 0;
+}
+
+.tabs .block-list-appender {
+  padding: 0 16px 5px 16px;
+}
+
+.tabs .tabs-content div[data-type="benenson/block-tabs-tab"] {
+  display: none;
+}
+
+@for $i from 0 through 15 {
+  .tabs[data-activetab="#{$i}"] .tabs-content div[data-type="benenson/block-tabs-tab"]:nth-child(#{$i + 1}) {
+    display: block;
+  }
+}
+

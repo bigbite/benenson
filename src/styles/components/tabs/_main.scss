@@ -1,0 +1,26 @@
+.tabs .tab {
+  padding: 20px;
+  background-color: $color-grey-x-light;
+}
+
+.tabs .tabs-naviation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs .tabs-naviation .tabNavigation-item {
+  flex-grow: 1;
+  margin-bottom: 1px;
+}
+
+.tabs .tabs-naviation .tabNavigation-item + .tabNavigation-item {
+  margin-left: 1px;
+}
+
+.tabs .tabs-naviation .tabNavigation-item .btn {
+  height: 100%;
+  width: 100%;
+}
