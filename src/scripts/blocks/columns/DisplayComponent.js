@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
 import times from 'lodash-es/times';
 import layouts from './layouts';
 
@@ -23,6 +23,10 @@ class DisplayComponent extends Component {
 
     const currentTemplate = times(layouts[layoutKey].columns, n => ['benenson/block-row-column']);
 
+    const classes = classnames('row', {
+      [`layout-${layoutKey}`]: true,
+    });
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
@@ -34,10 +38,7 @@ class DisplayComponent extends Component {
           />
         </PanelBody>
       </InspectorControls>
-      <div className={ classNames({
-        row: true,
-        [`layout-${layoutKey}`]: true,
-      }) }>
+      <div className={ classes }>
         <InnerBlocks
           template={ currentTemplate }
           templateLock="all"

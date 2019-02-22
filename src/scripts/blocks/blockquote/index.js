@@ -254,37 +254,41 @@ registerBlockType('benenson/quote', {
               onChange={ newColour => setAttributes({ colour: newColour }) }
               options={ colourOptions }
             />
-          { !this.isRightToLeft && <ToggleControl
-            label={ __('Capitalise', 'benenson') }
-            help={ __('Capitalise the content.', 'benenson') }
-            checked={ capitalise }
-            onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
-          /> }
-          <ToggleControl
-            label={ __('Line', 'benenson') }
-            help={ __('Toggle display of line embellishment.', 'benenson') }
-            checked={ lined }
-            onChange={ newLine => setAttributes({ lined: newLine }) }
-          />
+            { !this.isRightToLeft && (<ToggleControl
+              label={ __('Capitalise', 'benenson') }
+              help={ __('Capitalise the content.', 'benenson') }
+              checked={ capitalise }
+              onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
+            />) }
+            <ToggleControl
+              label={ __('Line', 'benenson') }
+              help={ __('Toggle display of line embellishment.', 'benenson') }
+              checked={ lined }
+              onChange={ newLine => setAttributes({ lined: newLine }) }
+            />
           </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
         <div className={ classes }>
-          <div><RichText
-            tagName="p"
-            placeholder={ __('(Insert Quote Text)', 'benenson') }
-            value={ content }
-            formattingControls={ [] }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newContent => setAttributes({ content: newContent }) }
-          /></div>
-          <div><RichText
-            tagName="cite"
-            placeholder={ __('(Insert Citation)', 'benenson') }
-            value={ citation }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newCitation => setAttributes({ citation: newCitation }) }
-          /></div>
+          <div>
+            <RichText
+              tagName="p"
+              placeholder={ __('(Insert Quote Text)', 'benenson') }
+              value={ content }
+              formattingControls={ [] }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newContent => setAttributes({ content: newContent }) }
+            />
+          </div>
+          <div>
+            <RichText
+              tagName="cite"
+              placeholder={ __('(Insert Citation)', 'benenson') }
+              value={ citation }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newCitation => setAttributes({ citation: newCitation }) }
+            />
+          </div>
         </div>
       </Fragment>);
     }

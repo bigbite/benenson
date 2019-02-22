@@ -4,6 +4,7 @@ import { SlideBuilder } from './build-slide';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { Fragment } = wp.components;
 const { RichText } = wp.editor;
 
 const blockAttributes = {
@@ -55,18 +56,22 @@ registerBlockType('benenson/block-slider', {
         <div className="slides">
           { slides.map(slide => Builder.build(slide, hasContent, sliderId)) }
         </div>
-        { attributes.hasArrows && [
-          <button className="slides-arrow slides-arrow--next" aria-hidden="true">{ __('Next', 'benenson') }</button>,
-          <button className="slides-arrow slides-arrow--previous" aria-hidden="true">{ __('Previous', 'benenson') }</button>,
-        ] }
+        { attributes.hasArrows && (<Fragment>
+          <button className="slides-arrow slides-arrow--next" aria-hidden="true">{ __('Next', 'benenson') }</button>
+          <button className="slides-arrow slides-arrow--previous" aria-hidden="true">{ __('Previous', 'benenson') }</button>
+        </Fragment>) }
       </div>
-      { attributes.showTabs && <div className="slider-navContainer" aria-hidden="true">
+      { attributes.showTabs && (<div className="slider-navContainer" aria-hidden="true">
         <nav className="slider-nav">
-          { slides.map((slide, index) => (
-            <button className="slider-navButton" data-slide-index={ index }>{ slide.title }</button>
-          )) }
+          { slides.map((slide, index) => (<button
+            className="slider-navButton"
+            data-slide-index={ index }
+            key={ index }
+          >
+            { slide.title }
+          </button>)) }
         </nav>
-      </div> }
+      </div>) }
     </div>);
   },
 });
