@@ -22,7 +22,7 @@ msgid "Wide"
 msgstr ""
 
 #: src/scripts/blocks/action/DisplayComponent.js:62
-#: src/scripts/blocks/blockquote/index.js:246
+#: src/scripts/blocks/blockquote/index.js:329
 #: src/scripts/blocks/header/DisplayComponent.js:134
 #: src/scripts/blocks/tweet/index.js:91
 msgid "Size"
@@ -91,7 +91,7 @@ msgid "Global"
 msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
-#: src/scripts/blocks/blockquote/index.js:232
+#: src/scripts/blocks/blockquote/index.js:307
 #: src/scripts/blocks/header/DisplayComponent.js:95
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:50
@@ -99,7 +99,7 @@ msgid "White"
 msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
-#: src/scripts/blocks/blockquote/index.js:226
+#: src/scripts/blocks/blockquote/index.js:301
 #: src/scripts/blocks/header/DisplayComponent.js:98
 msgid "Black"
 msgstr ""
@@ -172,7 +172,7 @@ msgid "Adds a small amount of padding to the content."
 msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
-#: src/scripts/blocks/blockquote/index.js:164
+#: src/scripts/blocks/blockquote/index.js:227
 #: src/scripts/blocks/header/DisplayComponent.js:76
 #: src/scripts/blocks/image/DisplayComponent.js:201
 #: src/scripts/blocks/link/DisplayComponent.js:41
@@ -180,7 +180,7 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:165
+#: src/scripts/blocks/blockquote/index.js:228
 #: src/scripts/blocks/image/DisplayComponent.js:197
 #: src/scripts/blocks/section/index.js:53
 #: src/scripts/blocks/tweet/index.js:26
@@ -188,7 +188,7 @@ msgid "Default"
 msgstr ""
 
 # text alignment. for RTL languages, localise as 'Left'
-#: src/scripts/blocks/blockquote/index.js:170
+#: src/scripts/blocks/blockquote/index.js:233
 #: src/scripts/blocks/header/DisplayComponent.js:83
 #: src/scripts/blocks/image/DisplayComponent.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:47
@@ -196,7 +196,7 @@ msgstr ""
 msgid "Right"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:214
+#: src/scripts/blocks/blockquote/index.js:289
 #: src/scripts/blocks/header/DisplayComponent.js:114
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:223
 #: src/scripts/blocks/logo-list/InnerDisplayComponent.js:139
@@ -204,23 +204,19 @@ msgstr ""
 msgid "Small"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:217
+#: src/scripts/blocks/blockquote/index.js:292
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:226
 #: src/scripts/blocks/logo-list/InnerDisplayComponent.js:142
 msgid "Medium"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:22
-msgid "Blockquote"
-msgstr ""
-
-#: src/scripts/blocks/blockquote/index.js:220
+#: src/scripts/blocks/blockquote/index.js:295
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:229
 #: src/scripts/blocks/logo-list/InnerDisplayComponent.js:145
 msgid "Large"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:229
+#: src/scripts/blocks/blockquote/index.js:304
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:29
 #: src/scripts/blocks/key-facts/index.js:53
 #: src/scripts/blocks/links-with-icons/DisplayComponent.js:60
@@ -231,42 +227,76 @@ msgstr ""
 msgid "Grey"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:23
-msgid "Add a blockquote block"
+#: src/scripts/blocks/blockquote/index.js:313
+msgid "(Insert Citation)"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:240
+#: src/scripts/blocks/blockquote/index.js:323
 #: src/scripts/blocks/header/DisplayComponent.js:122
 #: src/scripts/blocks/image/DisplayComponent.js:220
 msgid "Alignment"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:252
+#: src/scripts/blocks/blockquote/index.js:335
 msgid "Text Colour"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:258
+#: src/scripts/blocks/blockquote/index.js:341
 msgid "Capitalise"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:259
+#: src/scripts/blocks/blockquote/index.js:342
 msgid "Capitalise the content."
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:264
+#: src/scripts/blocks/blockquote/index.js:347
 msgid "Line"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:265
+#: src/scripts/blocks/blockquote/index.js:348
 msgid "Toggle display of line embellishment."
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:276
+#: src/scripts/blocks/blockquote/index.js:353
+msgid "Image citation"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:354
+msgid "This will override any citation text."
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:365
+msgid "Background"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:376
+#: src/scripts/blocks/header/DisplayComponent.js:128
+#: src/scripts/blocks/key-facts/index.js:68
+#: src/scripts/blocks/links-with-icons/DisplayComponent.js:81
+#: src/scripts/blocks/logo-list/DisplayComponent.js:67
+#: src/scripts/blocks/menu/DisplayComponent.js:115
+#: src/scripts/blocks/section/DisplayComponent.js:89
+msgid "Background Colour"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:386
+msgid "Remove background colour"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:395
 msgid "(Insert Quote Text)"
 msgstr ""
 
-#: src/scripts/blocks/blockquote/index.js:286
-msgid "(Insert Citation)"
+#: src/scripts/blocks/blockquote/index.js:407
+msgid "(Insert Subtext)"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:48
+msgid "Blockquote"
+msgstr ""
+
+#: src/scripts/blocks/blockquote/index.js:49
+msgid "Add a blockquote block"
 msgstr ""
 
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:34
@@ -444,15 +474,6 @@ msgstr ""
 #: src/scripts/blocks/header/DisplayComponent.js:111
 #: src/scripts/blocks/section/DisplayComponent.js:69
 msgid "Normal"
-msgstr ""
-
-#: src/scripts/blocks/header/DisplayComponent.js:128
-#: src/scripts/blocks/key-facts/index.js:68
-#: src/scripts/blocks/links-with-icons/DisplayComponent.js:81
-#: src/scripts/blocks/logo-list/DisplayComponent.js:67
-#: src/scripts/blocks/menu/DisplayComponent.js:115
-#: src/scripts/blocks/section/DisplayComponent.js:89
-msgid "Background Colour"
 msgstr ""
 
 #: src/scripts/blocks/header/DisplayComponent.js:140
