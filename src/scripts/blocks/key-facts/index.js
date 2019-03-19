@@ -85,7 +85,7 @@ registerBlockType('benenson/key-facts', {
         />
         <InnerBlocks
           template={ getLayoutTemplate(quantity) }
-          templateLock="insert"
+          templateLock="all"
           allowedBlocks={ ALLOWED_BLOCKS }
         />
       </div>
