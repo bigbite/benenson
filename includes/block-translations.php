@@ -159,18 +159,18 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:289
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:115
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:223
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:139
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:95
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:61
 	__( 'Small', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:292
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:226
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:142
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:98
 	__( 'Medium', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:295
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:229
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:145
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:101
 	__( 'Large', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:304
@@ -586,7 +586,7 @@ $generated_i18n_strings = array(
 	__( 'Add a links-with-icons block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:104
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:85
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:56
 	__( 'Pick an image', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:183
@@ -606,11 +606,11 @@ $generated_i18n_strings = array(
 	__( 'Style', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:243
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:157
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:113
 	__( 'Icon Size', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:249
-	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:163
+	// Reference: src/scripts/blocks/logo-list/InnerDisplayComponent.js:119
 	__( 'Hide Image Credit Display', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:254

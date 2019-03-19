@@ -199,20 +199,20 @@ msgstr ""
 #: src/scripts/blocks/blockquote/index.js:289
 #: src/scripts/blocks/header/DisplayComponent.js:115
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:223
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:139
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:95
 #: src/scripts/blocks/section/DisplayComponent.js:61
 msgid "Small"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:292
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:226
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:142
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:98
 msgid "Medium"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:295
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:229
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:145
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:101
 msgid "Large"
 msgstr ""
 
@@ -753,7 +753,7 @@ msgid "Add a links-with-icons block"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:104
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:85
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:56
 msgid "Pick an image"
 msgstr ""
 
@@ -779,12 +779,12 @@ msgid "Style"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:243
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:157
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:113
 msgid "Icon Size"
 msgstr ""
 
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:249
-#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:163
+#: src/scripts/blocks/logo-list/InnerDisplayComponent.js:119
 msgid "Hide Image Credit Display"
 msgstr ""
 

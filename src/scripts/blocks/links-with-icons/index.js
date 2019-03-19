@@ -13,7 +13,7 @@ import './InnerBlock';
  * WordPress
  */
 const { __ } = wp.i18n;
-const { createBlock, registerBlockType } = wp.blocks;
+const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
 
 registerBlockType('benenson/repeatable-block', {
