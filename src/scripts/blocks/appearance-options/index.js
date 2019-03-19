@@ -80,12 +80,15 @@ const Sidebar = ({ createMetaUpdate, ...props }) => {
             onChange={ () => createMetaUpdate('_hide_featured_image', !props.meta._hide_featured_image, props.meta, props.oldMeta) }
           />
           <hr />
-          { !props.meta._hide_featured_image && <Fragment><ToggleControl
-            label={ __('Force full-width featured image', 'benenson') }
-            help={ __('Ensures a small featured image fills the width of the content area.', 'benenson') }
-            checked={ props.meta._stretch_thumbnail }
-            onChange={ () => createMetaUpdate('_stretch_thumbnail', !props.meta._stretch_thumbnail, props.meta, props.oldMeta) }
-          /><hr /></Fragment> }
+          { !props.meta._hide_featured_image && (<Fragment>
+            <ToggleControl
+              label={ __('Force full-width featured image', 'benenson') }
+              help={ __('Ensures a small featured image fills the width of the content area.', 'benenson') }
+              checked={ props.meta._stretch_thumbnail }
+              onChange={ () => createMetaUpdate('_stretch_thumbnail', !props.meta._stretch_thumbnail, props.meta, props.oldMeta) }
+            />
+            <hr />
+          </Fragment>) }
           <ToggleControl
             label={ __('Reduce Content Width', 'benenson') }
             help={ __('Adds a small amount of padding to the content.', 'benenson') }

@@ -16,7 +16,7 @@ const {
   URLInputButton,
 } = wp.editor;
 
-export default class BlockEdit extends Component {
+export default class DisplayComponent extends Component {
   render() {
     const { attributes, setAttributes } = this.props;
     const {

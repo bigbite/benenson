@@ -1,6 +1,7 @@
 <?php
 
 require_once realpath( get_template_directory() . '/includes/bugsnag.php' );
+require_once realpath( get_template_directory() . '/includes/upgrade.php' );
 require_once realpath( get_template_directory() . '/includes/theme-setup.php' );
 require_once realpath( get_template_directory() . '/includes/theme-supports.php' );
 require_once realpath( get_template_directory() . '/includes/compatibility.php' );
