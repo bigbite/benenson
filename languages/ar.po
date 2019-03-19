@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Benenson\n"
-"POT-Creation-Date: 2019-02-22 15:44+0000\n"
-"PO-Revision-Date: 2019-02-22 15:44+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/bigbitecreative/benenson/issues\n"
+"POT-Creation-Date: 2019-03-19 16:12+0000\n"
+"PO-Revision-Date: 2019-01-16 12:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -34,6 +35,11 @@ msgstr "هذه الصفحة غير متوفرة."
 msgid "Go to the Homepage"
 msgstr "انتقل إلى الصفحة الرئيسية"
 
+#: page-fullwidth.php:29 index.php:24 templates/without-sidebar.php:13
+#: single.php:88 page.php:25 front-page.php:17
+msgid "Pages:"
+msgstr "الصفحات:"
+
 #. translators: List of posts
 #: archive.php:8 author.php:16
 msgid "Results"
@@ -57,16 +63,16 @@ msgid "Reply"
 msgstr "الرد"
 
 #. translators: Previous post navigation label
-#: comments.php:39 includes/block-translations.php:855
-#: partials/archive-categories.php:50 partials/pagination.php:4
-#: partials/pagination.php:27
+#: comments.php:39 includes/block-translations.php:852
+#: partials/pagination.php:4 partials/pagination.php:27
+#: partials/archive-categories.php:50
 msgid "Previous"
 msgstr "السابق"
 
 #. translators: Next post navigation label
-#: comments.php:40 includes/block-translations.php:851
-#: partials/archive-categories.php:51 partials/pagination.php:6
-#: partials/pagination.php:42
+#: comments.php:40 includes/block-translations.php:848
+#: partials/pagination.php:6 partials/pagination.php:42
+#: partials/archive-categories.php:51
 msgid "Next"
 msgstr "التالي"
 
@@ -79,72 +85,213 @@ msgctxt "noun"
 msgid "Comment"
 msgstr "تعليق"
 
-#: footer.php:16
-msgid "Footer"
-msgstr "الفوتر"
+#: includes/blocks/media-aside/render.php:59
+#: includes/blocks/media-aside/render.php:66
+#: includes/blocks/header/render.php:105
+msgid "Play video"
+msgstr "تشغيل الفيديو"
 
-#: footer.php:19
-msgid "Footer Menus"
-msgstr "قوائم التذييلات"
+#: includes/blocks/block-category.php:14
+msgid "Benenson"
+msgstr "بينيسون"
 
-#. translators: Social Media sharing options
-#: footer.php:48
-msgid "Follow us on:"
-msgstr "تابعنا علي:"
+#: includes/blocks/download/render.php:17
+msgid "Download Resource"
+msgstr "تنزيل المورد"
 
-#: footer.php:51
-msgid "Follow us on Facebook"
-msgstr "تابعنا على Facebook"
+#: includes/blocks/menu/render.php:23 includes/block-translations.php:304
+msgid "Category List"
+msgstr "قائمه الفئات"
 
-#: footer.php:54
-msgid "Follow us on Twitter"
-msgstr "تابعنا على Twitter"
+#: includes/localisation.php:4
+msgctxt "text direction"
+msgid "ltr"
+msgstr "لتر"
 
-#: footer.php:57
-msgid "Subscribe to our YouTube channel"
-msgstr "اشترك في قناتنا علي YouTube"
+#: includes/localisation.php:5
+msgctxt "month name"
+msgid "January"
+msgstr "يناير"
 
-#: footer.php:60
-msgid "Follow us on Instagram"
-msgstr "تابعنا علي انستجرام"
+#: includes/localisation.php:6
+msgctxt "month name"
+msgid "February"
+msgstr "فبراير"
 
-#: front-page.php:17 index.php:24 page-fullwidth.php:29 page.php:25
-#: single.php:88 templates/without-sidebar.php:13
-msgid "Pages:"
-msgstr "الصفحات:"
+#: includes/localisation.php:7
+msgctxt "month name"
+msgid "March"
+msgstr "مارس"
 
-#. translators: Label for screen reader/keyboard users
-#: header.php:76
-msgid "Skip to main content"
-msgstr "الاطلاع على آخر التطورات"
+#: includes/localisation.php:8
+msgctxt "month name"
+msgid "April"
+msgstr "ابريل"
 
-#: header.php:83
-msgid "Primary navigation"
-msgstr "الملاحة الاوليه"
+#: includes/localisation.php:9
+msgctxt "month name"
+msgid "May"
+msgstr "مايو"
 
-#: header.php:88
-msgid "Show search form"
-msgstr "إظهار نموذج البحث"
+#: includes/localisation.php:10
+msgctxt "month name"
+msgid "June"
+msgstr "يونيو"
 
-#: header.php:89 includes/theme-options.php:314 searchform.php:4
+#: includes/localisation.php:11
+msgctxt "month name"
+msgid "July"
+msgstr "يوليو"
+
+#: includes/localisation.php:12
+msgctxt "month name"
+msgid "August"
+msgstr "أغسطس"
+
+#: includes/localisation.php:13
+msgctxt "month name"
+msgid "September"
+msgstr "سبتمبر"
+
+#: includes/localisation.php:14
+msgctxt "month name"
+msgid "October"
+msgstr "أكتوبر"
+
+#: includes/localisation.php:15
+msgctxt "month name"
+msgid "November"
+msgstr "نوفمبر"
+
+#: includes/localisation.php:16
+msgctxt "month name"
+msgid "December"
+msgstr "ديسمبر"
+
+#: includes/theme-options.php:9
+msgid "Social Networks"
+msgstr ""
+
+#: includes/theme-options.php:10
+msgid "Manage your social network accounts"
+msgstr ""
+
+#: includes/theme-options.php:23 includes/theme-options.php:546
+msgid "Facebook"
+msgstr "فيسبوك"
+
+#: includes/theme-options.php:37 includes/theme-options.php:553
+msgid "Twitter"
+msgstr "تويتر"
+
+#: includes/theme-options.php:51 includes/theme-options.php:560
+msgid "YouTube"
+msgstr "يوتيوب"
+
+#: includes/theme-options.php:65 includes/theme-options.php:567
+msgid "Instagram"
+msgstr "انستجرام"
+
+#: includes/theme-options.php:82
+msgid "Site Logo"
+msgstr ""
+
+#: includes/theme-options.php:95
+msgid "Site Logo URL"
+msgstr ""
+
+#: includes/theme-options.php:106 includes/post-types/sidebar.php:11
+msgid "Sidebars"
+msgstr "الجانبية"
+
+#: includes/theme-options.php:107
+msgid "Manage your sidebar settings"
+msgstr ""
+
+#: includes/theme-options.php:133 includes/theme-options.php:621
+msgid "Default Page Sidebar"
+msgstr "الشريط الجانبي للصفحة الافتراضية"
+
+#: includes/theme-options.php:148 includes/theme-options.php:634
+msgid "Default Archive Sidebar"
+msgstr "الافتراضي الأرشيف الشريط الجانبي"
+
+#: includes/theme-options.php:163 includes/theme-options.php:608
+msgid "Default Sidebar"
+msgstr "الشريط الجانبي الافتراضي"
+
+#: includes/theme-options.php:174 includes/theme-options.php:654 header.php:89
+#: searchform.php:4
 msgid "Search"
 msgstr "بحث"
 
-#: header.php:102 includes/navigation.php:114
-msgid "Main Menu"
-msgstr "القائمة الرئيسية"
+#: includes/theme-options.php:175
+msgid "Manage your search settings"
+msgstr ""
 
-#: header.php:103
-msgid "Close navigation"
-msgstr "إغلاق التنقل"
+#: includes/theme-options.php:188
+msgid "Disable all search"
+msgstr ""
 
-#: header.php:106 includes/block-translations.php:535
-msgid "Primary"
-msgstr "ابتدائي"
+#: includes/theme-options.php:201 includes/theme-options.php:664
+msgid "Disable Search in Navigation"
+msgstr "تعطيل البحث في التنقل"
 
-#: header.php:157 header.php:182
-msgid "Play Icon"
-msgstr "رمز التشغيل"
+#: includes/theme-options.php:210 includes/theme-options.php:581
+msgid "Analytics"
+msgstr "كود تتبع Google Analytics"
+
+#: includes/theme-options.php:211
+msgid "Manage your Analytics settings"
+msgstr ""
+
+#: includes/theme-options.php:224 includes/theme-options.php:584
+msgid "Google Tag Manager"
+msgstr "جوجل الوسم مدير"
+
+#: includes/theme-options.php:238 includes/theme-options.php:591
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: includes/theme-options.php:446 includes/theme-options.php:447
+msgid "Theme Settings"
+msgstr "اعدادات القالب"
+
+#: includes/theme-options.php:531
+msgid "Theme Options"
+msgstr "خيارات القالب"
+
+#: includes/theme-options.php:543
+msgid "Social"
+msgstr "الشبكة الاجتماعية"
+
+#: includes/theme-options.php:605 includes/block-translations.php:55
+#: includes/post-types/sidebar.php:12 includes/post-types/sidebar.php:39
+#: single.php:120
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+#: includes/theme-options.php:657
+msgid "Disable All Search"
+msgstr "تعطيل كافة البحث"
+
+#: includes/theme-options.php:678 includes/theme-options.php:681
+#: includes/block-translations.php:635
+msgid "Logo"
+msgstr "الشعار"
+
+#: includes/theme-options.php:702
+msgid "Logo URL"
+msgstr "رابط الشعار"
+
+#. translators: page number prefix, e.g. "[Page] 1"
+#: includes/pagination.php:27
+msgid "Page"
+msgstr "صفحة"
+
+#: includes/theme-supports.php:47
+msgid "Standard Post Template"
+msgstr "قالب النشر القياسي"
 
 #: includes/block-translations.php:6
 msgid "Content"
@@ -197,12 +344,6 @@ msgstr "تحميل"
 #: includes/block-translations.php:52
 msgid "Select a sidebar"
 msgstr "حدد شريطا جانبيا"
-
-#: includes/block-translations.php:55 includes/post-types/sidebar.php:12
-#: includes/post-types/sidebar.php:39 includes/theme-options.php:265
-#: single.php:120
-msgid "Sidebar"
-msgstr "الشريط الجانبي"
 
 #: includes/block-translations.php:58
 msgid "Disable Sidebar"
@@ -310,235 +451,251 @@ msgstr "صغير"
 msgid "Medium"
 msgstr "متوسط"
 
-#: includes/block-translations.php:172
-msgid "Blockquote"
-msgstr "اقتباس"
-
-#: includes/block-translations.php:177
+#: includes/block-translations.php:174
 msgid "Large"
 msgstr "كبير"
 
-#: includes/block-translations.php:187
+#: includes/block-translations.php:183
 msgid "Grey"
 msgstr "رمادي"
 
-#: includes/block-translations.php:190
-msgid "Add a blockquote block"
-msgstr "أضافه كتله عرض الأسعار الممتلئة"
-
-#: includes/block-translations.php:195
-msgid "Alignment"
-msgstr "انحياز"
-
-#: includes/block-translations.php:198
-msgid "Text Colour"
-msgstr "لون النص"
-
-#: includes/block-translations.php:201
-msgid "Capitalise"
-msgstr "الاستفاده"
-
-#: includes/block-translations.php:204
-msgid "Capitalise the content."
-msgstr "استفد من المحتوي."
-
-#: includes/block-translations.php:207
-msgid "Line"
-msgstr "خط"
-
-#: includes/block-translations.php:210
-msgid "Toggle display of line embellishment."
-msgstr "تبديل عرض زخرفه الخط."
-
-#: includes/block-translations.php:213
-msgid "(Insert Quote Text)"
-msgstr "(ادراج نص الاقتباس)"
-
-#: includes/block-translations.php:216
+#: includes/block-translations.php:186
 msgid "(Insert Citation)"
 msgstr "(ادراج استشهاد)"
 
-#: includes/block-translations.php:219
-msgid "Primary (Yellow)"
-msgstr "الابتدائي (الأصفر)"
+#: includes/block-translations.php:191
+msgid "Alignment"
+msgstr "انحياز"
 
-#: includes/block-translations.php:222
-msgid "Dark"
-msgstr "داكن"
+#: includes/block-translations.php:194
+msgid "Text Colour"
+msgstr "لون النص"
 
-#: includes/block-translations.php:225
-msgid "Light"
-msgstr "فاتح"
+#: includes/block-translations.php:197
+msgid "Capitalise"
+msgstr "الاستفاده"
 
-#: includes/block-translations.php:229
-msgid "Background Style"
-msgstr "نمط الصورة والخلفية"
+#: includes/block-translations.php:200
+msgid "Capitalise the content."
+msgstr "استفد من المحتوي."
 
-#: includes/block-translations.php:232
-msgid "Button Style"
-msgstr "شكل الزر"
+#: includes/block-translations.php:203
+msgid "Line"
+msgstr "خط"
 
-#: includes/block-translations.php:235
-msgid "(Pre-heading)"
-msgstr "(قبل العنوان)"
+#: includes/block-translations.php:206
+msgid "Toggle display of line embellishment."
+msgstr "تبديل عرض زخرفه الخط."
 
-#: includes/block-translations.php:239
-msgid "(Heading)"
-msgstr "(عنوان)"
+#: includes/block-translations.php:209
+msgid "Image citation"
+msgstr ""
 
-#: includes/block-translations.php:244
-msgid "(Content)"
-msgstr "(محتوي)"
+#: includes/block-translations.php:212
+msgid "This will override any citation text."
+msgstr ""
 
-#: includes/block-translations.php:249
-msgid "(Button Text)"
-msgstr "(نص الزر)"
+#: includes/block-translations.php:215
+msgid "Background"
+msgstr ""
 
-#: includes/block-translations.php:252
-msgid "Call To Action"
-msgstr "دعوة الى العمل"
-
-#: includes/block-translations.php:255
-msgid "Maximum number of categories to show"
-msgstr "الحد الأقصى لعدد الفئات التي ستظهر"
-
-#: includes/block-translations.php:258
-msgid "Set to 0 to show all."
-msgstr "تعيين إلى 0 لإظهار الكل."
-
-#: includes/block-translations.php:261
-msgid "Title"
-msgstr "العنوان"
-
-#: includes/block-translations.php:264
-msgid "Loading categories"
-msgstr "فئات التحميل"
-
-#: includes/block-translations.php:267
-msgid "Something went wrong whilst trying to fetch the categories."
-msgstr "حدث خطا ما بينما كان يحاول جلب الفئات."
-
-#: includes/block-translations.php:270
-msgid "No categories to show."
-msgstr "لا توجد فئات لإظهارها."
-
-#: includes/block-translations.php:273
-msgid "Categories"
-msgstr "التصنيفات"
-
-#: includes/block-translations.php:276
-msgid "Term"
-msgstr "إسم الخاصية المختاره"
-
-#: includes/block-translations.php:279
-msgid "Taxonomy"
-msgstr "التصنيف"
-
-#: includes/block-translations.php:282 includes/blocks/menu/render.php:23
-msgid "Category List"
-msgstr "قائمه الفئات"
-
-#: includes/block-translations.php:285
-msgid "Layout Style"
-msgstr "اسلوب الصفحة"
-
-#: includes/block-translations.php:288
-msgid "Row"
-msgstr "صف"
-
-#: includes/block-translations.php:291
-msgid "Columns"
-msgstr "اعمدة"
-
-#: includes/block-translations.php:294
-msgid "66.6% | 33.3%"
-msgstr "66.6% | 33.3%"
-
-#: includes/block-translations.php:297
-msgid "33.3% | 66.6%"
-msgstr "33.3% | 66.6%"
-
-#: includes/block-translations.php:300
-msgid "33.3% | 33.3% | 33.3%"
-msgstr "33.3% | 33.3% | 33.3%"
-
-#: includes/block-translations.php:303
-msgid "50% | 25% | 25%"
-msgstr "50% | 25% | 25%"
-
-#: includes/block-translations.php:306
-msgid "25% | 50% | 25%"
-msgstr "25% | 50% | 25%"
-
-#: includes/block-translations.php:309
-msgid "25% | 25% | 50%"
-msgstr "25% | 25% | 50%"
-
-#: includes/block-translations.php:312
-msgid "25% | 25% | 25% | 25%"
-msgstr "25% | 25% | 25% | 25%"
-
-#: includes/block-translations.php:315
-msgid "50% | 50%"
-msgstr "50% | 50%"
-
-#: includes/block-translations.php:318
-msgid "Row Column"
-msgstr "عمود الصف"
-
-#: includes/block-translations.php:321
-msgid "Resource Download"
-msgstr "تحميل الموارد"
-
-#: includes/block-translations.php:324
-msgid "Add a button to download a resource"
-msgstr "أضافه زر لتنزيل مورد"
-
-#: includes/block-translations.php:327
-msgid "File"
-msgstr "ملف"
-
-#: includes/block-translations.php:330
-msgid "A File"
-msgstr "ملف"
-
-#: includes/block-translations.php:333
-msgid "[Download Resource]"
-msgstr "[تنزيل المورد]"
-
-#: includes/block-translations.php:336
-msgid "Remove Resource"
-msgstr "أزاله الموارد"
-
-#: includes/block-translations.php:339
-msgid "Edit File"
-msgstr "تعديل الملف"
-
-#: includes/block-translations.php:343
-msgid "Image"
-msgstr "صورة"
-
-#: includes/block-translations.php:347
-msgid "Video"
-msgstr "فيديو"
-
-#: includes/block-translations.php:351
-msgid "Normal"
-msgstr "عادي"
-
-#: includes/block-translations.php:359
+#: includes/block-translations.php:223
 msgid "Background Colour"
 msgstr "لون الخلفية"
 
-#: includes/block-translations.php:363
+#: includes/block-translations.php:226
+msgid "Remove background colour"
+msgstr ""
+
+#: includes/block-translations.php:229
+msgid "(Insert Quote Text)"
+msgstr "(ادراج نص الاقتباس)"
+
+#: includes/block-translations.php:232
+msgid "(Insert Subtext)"
+msgstr ""
+
+#: includes/block-translations.php:235
+msgid "Blockquote"
+msgstr "اقتباس"
+
+#: includes/block-translations.php:238
+msgid "Add a blockquote block"
+msgstr "أضافه كتله عرض الأسعار الممتلئة"
+
+#: includes/block-translations.php:241
+msgid "Primary (Yellow)"
+msgstr "الابتدائي (الأصفر)"
+
+#: includes/block-translations.php:244
+msgid "Dark"
+msgstr "داكن"
+
+#: includes/block-translations.php:247
+msgid "Light"
+msgstr "فاتح"
+
+#: includes/block-translations.php:251
+msgid "Background Style"
+msgstr "نمط الصورة والخلفية"
+
+#: includes/block-translations.php:254
+msgid "Button Style"
+msgstr "شكل الزر"
+
+#: includes/block-translations.php:257
+msgid "(Pre-heading)"
+msgstr "(قبل العنوان)"
+
+#: includes/block-translations.php:261
+msgid "(Heading)"
+msgstr "(عنوان)"
+
+#: includes/block-translations.php:266
+msgid "(Content)"
+msgstr "(محتوي)"
+
+#: includes/block-translations.php:271
+msgid "(Button Text)"
+msgstr "(نص الزر)"
+
+#: includes/block-translations.php:274
+msgid "Call To Action"
+msgstr "دعوة الى العمل"
+
+#: includes/block-translations.php:277
+msgid "Maximum number of categories to show"
+msgstr "الحد الأقصى لعدد الفئات التي ستظهر"
+
+#: includes/block-translations.php:280
+msgid "Set to 0 to show all."
+msgstr "تعيين إلى 0 لإظهار الكل."
+
+#: includes/block-translations.php:283
+msgid "Title"
+msgstr "العنوان"
+
+#: includes/block-translations.php:286
+msgid "Loading categories"
+msgstr "فئات التحميل"
+
+#: includes/block-translations.php:289
+msgid "Something went wrong whilst trying to fetch the categories."
+msgstr "حدث خطا ما بينما كان يحاول جلب الفئات."
+
+#: includes/block-translations.php:292
+msgid "No categories to show."
+msgstr "لا توجد فئات لإظهارها."
+
+#: includes/block-translations.php:295
+msgid "Categories"
+msgstr "التصنيفات"
+
+#: includes/block-translations.php:298
+msgid "Term"
+msgstr "إسم الخاصية المختاره"
+
+#: includes/block-translations.php:301
+msgid "Taxonomy"
+msgstr "التصنيف"
+
+#: includes/block-translations.php:307
+msgid "Layout Style"
+msgstr "اسلوب الصفحة"
+
+#: includes/block-translations.php:310
+msgid "Row"
+msgstr "صف"
+
+#: includes/block-translations.php:313
+msgid "Columns"
+msgstr "اعمدة"
+
+#: includes/block-translations.php:316
+msgid "66.6% | 33.3%"
+msgstr "66.6% | 33.3%"
+
+#: includes/block-translations.php:319
+msgid "33.3% | 66.6%"
+msgstr "33.3% | 66.6%"
+
+#: includes/block-translations.php:322
+msgid "33.3% | 33.3% | 33.3%"
+msgstr "33.3% | 33.3% | 33.3%"
+
+#: includes/block-translations.php:325
+msgid "50% | 25% | 25%"
+msgstr "50% | 25% | 25%"
+
+#: includes/block-translations.php:328
+msgid "25% | 50% | 25%"
+msgstr "25% | 50% | 25%"
+
+#: includes/block-translations.php:331
+msgid "25% | 25% | 50%"
+msgstr "25% | 25% | 50%"
+
+#: includes/block-translations.php:334
+msgid "25% | 25% | 25% | 25%"
+msgstr "25% | 25% | 25% | 25%"
+
+#: includes/block-translations.php:337
+msgid "50% | 50%"
+msgstr "50% | 50%"
+
+#: includes/block-translations.php:340
+msgid "Row Column"
+msgstr "عمود الصف"
+
+#: includes/block-translations.php:343
+msgid "Resource Download"
+msgstr "تحميل الموارد"
+
+#: includes/block-translations.php:346
+msgid "Add a button to download a resource"
+msgstr "أضافه زر لتنزيل مورد"
+
+#: includes/block-translations.php:349
+msgid "File"
+msgstr "ملف"
+
+#: includes/block-translations.php:352
+msgid "A File"
+msgstr "ملف"
+
+#: includes/block-translations.php:355
+msgid "[Download Resource]"
+msgstr "[تنزيل المورد]"
+
+#: includes/block-translations.php:358
+msgid "Remove Resource"
+msgstr "أزاله الموارد"
+
+#: includes/block-translations.php:361
+msgid "Edit File"
+msgstr "تعديل الملف"
+
+#: includes/block-translations.php:365
+msgid "Image"
+msgstr "صورة"
+
+#: includes/block-translations.php:369
+msgid "Video"
+msgstr "فيديو"
+
+#: includes/block-translations.php:373
+msgid "Normal"
+msgstr "عادي"
+
+#: includes/block-translations.php:377
 msgid "Background Type"
 msgstr "نوع الخلفية"
 
-#: includes/block-translations.php:367
+#: includes/block-translations.php:381
 msgid "Embed url"
 msgstr "تضمين رابط"
 
-#: includes/block-translations.php:370
+#: includes/block-translations.php:384
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
@@ -546,548 +703,527 @@ msgstr ""
 "وضع هذا سوف تتجاوز الارتباط العلاقات العامة وسوف تفتح الآن مشروط مع تضمين في "
 "البطل."
 
-#: includes/block-translations.php:374
+#: includes/block-translations.php:388
 msgid "Background Image"
 msgstr "صورة الخلفية"
 
-#: includes/block-translations.php:377 includes/post-types/sidebar.php:27
+#: includes/block-translations.php:391 includes/post-types/sidebar.php:27
 msgid "Featured Image"
 msgstr "صورة مميزة"
 
-#: includes/block-translations.php:380
+#: includes/block-translations.php:394
 msgid "Featured Video"
 msgstr "فيديو مميز"
 
-#: includes/block-translations.php:383
+#: includes/block-translations.php:397
 msgid "(Header Title)"
 msgstr "(عنوان الراس)"
 
-#: includes/block-translations.php:386
+#: includes/block-translations.php:400
 msgid "(Header Content)"
 msgstr "(محتوي الراس)"
 
-#: includes/block-translations.php:389
+#: includes/block-translations.php:403
 msgid "(Call to action)"
 msgstr "(دعوه إلى العمل)"
 
-#: includes/block-translations.php:394
+#: includes/block-translations.php:408
 msgid "Centre"
 msgstr "مركز"
 
-#: includes/block-translations.php:397
+#: includes/block-translations.php:411
 msgid "Translucent black"
 msgstr "اسود شفاف"
 
-#: includes/block-translations.php:405
+#: includes/block-translations.php:418
 msgid "None"
 msgstr "لا شيء"
 
-#: includes/block-translations.php:408
-msgid "Set featured video"
-msgstr "تعيين الفيديو المميز"
-
-#: includes/block-translations.php:411
-msgid "Remove featured video"
-msgstr "أزاله الفيديو المميز"
-
-#: includes/block-translations.php:415
-msgid "Replace Video"
-msgstr "استبدال الفيديو"
-
-#: includes/block-translations.php:418
+#: includes/block-translations.php:421
 msgid "Minimum Height"
 msgstr "الحد الأدنى للارتفاع"
 
-#: includes/block-translations.php:421
+#: includes/block-translations.php:424
 msgid "Required if not using width/height, optional otherwise"
 msgstr "مطلوب إذا لم يكن باستخدام العرض/الارتفاع ، والا اختياري"
 
-#: includes/block-translations.php:424
+#: includes/block-translations.php:427
 msgid "Reset Embed Url"
 msgstr "أعاده تعيين رابط التضمين"
 
-#: includes/block-translations.php:427
+#: includes/block-translations.php:430
 msgid "Iframe URL"
 msgstr "Iframe العنوان"
 
-#: includes/block-translations.php:430
+#: includes/block-translations.php:433
 msgid "Enter URL to embed here…"
 msgstr "ادخل عنوان URL لتضمين هنا…"
 
-#: includes/block-translations.php:433
+#: includes/block-translations.php:436
 msgid "Embed"
 msgstr "تضمين"
 
-#: includes/block-translations.php:436
+#: includes/block-translations.php:439
 msgid "Write caption…"
 msgstr "كتابه التسمية التوضيحية…"
 
-#: includes/block-translations.php:440
+#: includes/block-translations.php:443
 msgid "Width"
 msgstr "العرض"
 
-#: includes/block-translations.php:443
+#: includes/block-translations.php:446
 msgid "Required when specifying a height"
 msgstr "مطلوب عند تحديد ارتفاع"
 
-#: includes/block-translations.php:446
+#: includes/block-translations.php:449
 msgid "Height"
 msgstr "الارتفاع"
 
-#: includes/block-translations.php:449
+#: includes/block-translations.php:452
 msgid "Required when specifying a width"
 msgstr "مطلوب عند تحديد عرض"
 
-#: includes/block-translations.php:452
+#: includes/block-translations.php:455
 msgid "Iframe"
 msgstr "‫iframe"
 
-#: includes/block-translations.php:455
+#: includes/block-translations.php:458
 msgid "Responsive"
 msgstr "متجاوب"
 
-#: includes/block-translations.php:458
+#: includes/block-translations.php:461
 msgid "Fluid"
 msgstr "الموائع"
 
-#: includes/block-translations.php:461
+#: includes/block-translations.php:464
 msgid "Responsive Iframe"
 msgstr "استجابه Iframe"
 
-#: includes/block-translations.php:465
+#: includes/block-translations.php:468
 msgid "(Link Text)"
 msgstr "(نص الارتباط)"
 
-#: includes/block-translations.php:468
+#: includes/block-translations.php:471
 msgid "Remove Button"
 msgstr "أزاله الزر"
 
-#: includes/block-translations.php:471
+#: includes/block-translations.php:474
 msgid "Fixed Height (600px)"
 msgstr "ثابت الارتفاع (600px)"
 
-#: includes/block-translations.php:474
+#: includes/block-translations.php:477
 msgid "Actual Height"
 msgstr "الارتفاع الفعلي"
 
-#: includes/block-translations.php:477
+#: includes/block-translations.php:480
 msgid "Image Style"
 msgstr "نمط الصورة"
 
-#: includes/block-translations.php:480
+#: includes/block-translations.php:483
 msgid "Only has an effect on images smaller than their container"
 msgstr "فقط له تاثير علي الصور أصغر من الحاوية الخاصة بهم"
 
-#: includes/block-translations.php:483
+#: includes/block-translations.php:486
 msgid "(Title)"
 msgstr "(عنوان)"
 
-#: includes/block-translations.php:486
+#: includes/block-translations.php:489
 msgid "Add Button"
 msgstr "إضافة زر"
 
-#: includes/block-translations.php:489
+#: includes/block-translations.php:492
 msgid "Choose Video"
 msgstr "اختر نوع الفيديو"
 
-#: includes/block-translations.php:492
+#: includes/block-translations.php:496
+msgid "Replace Video"
+msgstr "استبدال الفيديو"
+
+#: includes/block-translations.php:499
 msgid "Remove Video"
 msgstr "أزاله الفيديو"
 
-#: includes/block-translations.php:495
+#: includes/block-translations.php:502
 msgid "Display Overlay"
 msgstr "تراكب العرض"
 
-#: includes/block-translations.php:498
+#: includes/block-translations.php:505
 msgid "Enable Parallax"
 msgstr "تمكين المنظر"
 
-#: includes/block-translations.php:501
+#: includes/block-translations.php:508
 msgid "(Insert Caption, if required)"
 msgstr "(ادراج تسميه توضيحيه ، إذا لزم الأمر)"
 
-#: includes/block-translations.php:504
+#: includes/block-translations.php:511
 msgid "Add a flexible image block with optional overlay"
 msgstr "أضافه كتله صوره مرنه مع تراكب اختياري"
 
-#: includes/block-translations.php:514
+#: includes/block-translations.php:521
 msgid "(Insert Title)"
 msgstr "(ادراج العنوان)"
 
-#: includes/block-translations.php:521
+#: includes/block-translations.php:528
 msgid "(Insert Content)"
 msgstr "(ادراج محتوي)"
 
-#: includes/block-translations.php:524
+#: includes/block-translations.php:531
 msgid "Key Facts"
 msgstr "حقائق أساسيه"
 
-#: includes/block-translations.php:527
+#: includes/block-translations.php:534
 msgid "Add a key facts block"
 msgstr "أضافه كتله حقائق رئيسيه"
 
-#: includes/block-translations.php:532
+#: includes/block-translations.php:538
 msgid "Quantity"
 msgstr "الكمية"
 
-#: includes/block-translations.php:538
+#: includes/block-translations.php:541 header.php:106
+msgid "Primary"
+msgstr "ابتدائي"
+
+#: includes/block-translations.php:544
 msgid "Primary Outline"
 msgstr "مخطط تفصيلي أساسي"
 
-#: includes/block-translations.php:541
+#: includes/block-translations.php:547
 msgid "Primary Solid"
 msgstr "الاساسيه الصلبة"
 
-#: includes/block-translations.php:544
+#: includes/block-translations.php:550
 msgid "Up arrow"
 msgstr "سهم لاعلي"
 
-#: includes/block-translations.php:547
+#: includes/block-translations.php:553
 msgid "Down arrow"
 msgstr "السهم"
 
-#: includes/block-translations.php:550
+#: includes/block-translations.php:556
 msgid "Center"
 msgstr "وسط"
 
-#: includes/block-translations.php:553
+#: includes/block-translations.php:559
 msgid "Link text"
 msgstr "نص الرابط"
 
-#: includes/block-translations.php:556
+#: includes/block-translations.php:562
 msgid "Link url"
 msgstr "رابط المشروع"
 
-#: includes/block-translations.php:559
+#: includes/block-translations.php:565
 msgid "Link style"
 msgstr "نمط الارتباط"
 
-#: includes/block-translations.php:562
+#: includes/block-translations.php:568
 msgid "Link icon"
 msgstr "أيقونه الرابط"
 
-#: includes/block-translations.php:565
+#: includes/block-translations.php:571
 msgid "Link alignment"
 msgstr "محاذاة الارتباط"
 
-#: includes/block-translations.php:568
+#: includes/block-translations.php:574
 msgid "Link"
 msgstr "رابط"
 
-#: includes/block-translations.php:571
+#: includes/block-translations.php:577
 msgid "Add a link to section within page, another page or an external URL."
 msgstr "أضافه ارتباط إلى مقطع داخل الصفحة أو صفحه أخرى أو عنوان URL خارجي."
 
-#: includes/block-translations.php:574
-msgid "Horizontal"
-msgstr "أفقي"
-
-#: includes/block-translations.php:577
-msgid "Vertical"
-msgstr "عمودي"
-
 #: includes/block-translations.php:580
-msgid "Orientation"
-msgstr "الاتجاه"
-
-#: includes/block-translations.php:583
 msgid "Hide Lines"
 msgstr "إخفاء الخطوط"
 
-#: includes/block-translations.php:586
+#: includes/block-translations.php:583
 msgid "Links with Icons"
 msgstr "روابط مع أيقونات"
 
-#: includes/block-translations.php:589
+#: includes/block-translations.php:586
 msgid "Add a links-with-icons block"
 msgstr "أضافه كتله ارتباطات مع الرموز"
 
-#: includes/block-translations.php:593
+#: includes/block-translations.php:590
 msgid "Pick an image"
 msgstr "اختيار صوره"
 
-#: includes/block-translations.php:596
+#: includes/block-translations.php:593
 msgid "(Insert Fact)"
 msgstr "(ادراج الحقيقة)"
 
-#: includes/block-translations.php:599
+#: includes/block-translations.php:596
 msgid "Use Image"
 msgstr "استخدم صورة"
 
-#: includes/block-translations.php:602
+#: includes/block-translations.php:599
 msgid "Use Text"
 msgstr "استخدام النص"
 
-#: includes/block-translations.php:605
+#: includes/block-translations.php:602
 msgid "Plain"
 msgstr "واضح"
 
-#: includes/block-translations.php:609
+#: includes/block-translations.php:606
 msgid "Style"
 msgstr "النمط"
 
-#: includes/block-translations.php:613
+#: includes/block-translations.php:610
 msgid "Icon Size"
 msgstr "حجم الأيقونة"
 
-#: includes/block-translations.php:617
+#: includes/block-translations.php:614
 msgid "Hide Image Credit Display"
 msgstr "إخفاء عرض الائتمان الصورة"
 
-#: includes/block-translations.php:620
+#: includes/block-translations.php:617
 msgid "Has Underline"
 msgstr "لديه تسطير"
 
-#: includes/block-translations.php:623
+#: includes/block-translations.php:620
 msgid "Display Button"
 msgstr "Display Button"
 
-#: includes/block-translations.php:626
+#: includes/block-translations.php:623
 msgid "(Insert Body Text)"
 msgstr "(ادراج نص أساسي)"
 
-#: includes/block-translations.php:629
+#: includes/block-translations.php:626
 msgid "(Insert Link Text)"
 msgstr "(ادراج نص الارتباط)"
 
-#: includes/block-translations.php:632
+#: includes/block-translations.php:629
 msgid "Links with Icons Group"
 msgstr "روابط مع مجموعه أيقونات"
 
-#: includes/block-translations.php:635
+#: includes/block-translations.php:632
 msgid "Add a repeatable links-with-icons block"
 msgstr "أضافه كتله ارتباطات قابله للتكرار مع الرموز"
 
-#: includes/block-translations.php:638 includes/theme-options.php:338
-#: includes/theme-options.php:341
-msgid "Logo"
-msgstr "الشعار"
-
-#: includes/block-translations.php:641
+#: includes/block-translations.php:638
 msgid "Add a logos block"
 msgstr "أضافه كتله شعارات"
 
-#: includes/block-translations.php:644
+#: includes/block-translations.php:641
 msgid "Logo Group"
 msgstr "مجموعه الشعارات"
 
-#: includes/block-translations.php:647
+#: includes/block-translations.php:644
 msgid "Add a repeatable logo block"
 msgstr "أضافه كتله شعار قابله للتكرار"
 
-#: includes/block-translations.php:650
+#: includes/block-translations.php:647
 msgid "(Insert Link text)"
 msgstr "(ادراج نص ارتباط)"
 
-#: includes/block-translations.php:653
+#: includes/block-translations.php:650
 msgid "Display in modal"
 msgstr "عرض في مشروط"
 
-#: includes/block-translations.php:656
+#: includes/block-translations.php:653
 msgid "Clicking play will open up the video in a modal."
 msgstr "سيؤدي النقر فوق التشغيل إلى فتح الفيديو في مشروط."
 
-#: includes/block-translations.php:659
+#: includes/block-translations.php:656
 msgid "Image/Video Poster"
 msgstr "ملصق الصورة/الفيديو"
 
-#: includes/block-translations.php:662
+#: includes/block-translations.php:659
 msgid "Video (will override embed)"
 msgstr "الفيديو (سيتم تجاوز التضمين)"
 
-#: includes/block-translations.php:665
+#: includes/block-translations.php:662
 msgid "Media aside"
 msgstr "وسائل الاعلام جانبا"
 
-#: includes/block-translations.php:668
+#: includes/block-translations.php:665
 msgid "Media"
 msgstr "الوسائط"
 
-#: includes/block-translations.php:671
+#: includes/block-translations.php:668
 msgid "Loading Menus..."
 msgstr "يتم الآن تحميل القوائم..."
 
-#: includes/block-translations.php:675
+#: includes/block-translations.php:672
 msgid "Menu"
 msgstr "القائمة"
 
-#: includes/block-translations.php:678
+#: includes/block-translations.php:675
 msgid "Select a menu in the sidebar"
 msgstr "حدد قائمه في الشريط الجانبي"
 
-#: includes/block-translations.php:681
+#: includes/block-translations.php:678
 msgid "Loading Menu..."
 msgstr "جاري تحميل القائمة..."
 
-#: includes/block-translations.php:684
+#: includes/block-translations.php:681
 msgid "Select a menu..."
 msgstr "حدد قائمه..."
 
-#: includes/block-translations.php:687
+#: includes/block-translations.php:684
 msgid "Navigation"
 msgstr "الصفحات"
 
-#: includes/block-translations.php:690
+#: includes/block-translations.php:687
 msgid "Category:"
 msgstr "التصنيف:"
 
-#: includes/block-translations.php:693
+#: includes/block-translations.php:690
 msgid "Number of posts to show:"
 msgstr "عدد المشاركات:"
 
-#: includes/block-translations.php:696
+#: includes/block-translations.php:693
 msgid "Use related categories where supported"
 msgstr "استخدام الفئات ذات الصلة حيث يتم دعمها"
 
-#: includes/block-translations.php:699
+#: includes/block-translations.php:696
 msgid "Display excerpt"
 msgstr "عرض مقتطفات"
 
-#: includes/block-translations.php:702
+#: includes/block-translations.php:699
 msgid "Button Text:"
 msgstr "نص الزر:"
 
-#: includes/block-translations.php:705
+#: includes/block-translations.php:702
 msgid "(CTA Text)"
 msgstr "(نص CTA)"
 
-#: includes/block-translations.php:708
+#: includes/block-translations.php:705
 msgid "Hide Preview"
 msgstr "إخفاء المعاينة"
 
-#: includes/block-translations.php:711
+#: includes/block-translations.php:708
 msgid "Show Preview"
 msgstr "إظهار المعاينة"
 
-#: includes/block-translations.php:714
+#: includes/block-translations.php:711
 msgid "Link List"
 msgstr "قائمه الارتباطات"
 
-#: includes/block-translations.php:717
+#: includes/block-translations.php:714
 msgid "Grid"
 msgstr "شبكة"
 
-#: includes/block-translations.php:720
+#: includes/block-translations.php:717
 msgid "Post"
 msgstr "منشور"
 
-#: includes/block-translations.php:723
+#: includes/block-translations.php:720
 msgid "Split Grid"
 msgstr "تقسيم الشبكة"
 
-#: includes/block-translations.php:726
+#: includes/block-translations.php:723
 msgid "Category"
 msgstr "التصنيف"
 
-#: includes/block-translations.php:729
+#: includes/block-translations.php:726
 msgid "Object Selection"
 msgstr "تحديد الكائن"
 
-#: includes/block-translations.php:732
+#: includes/block-translations.php:729
 msgid "Custom"
 msgstr "مخصص"
 
-#: includes/block-translations.php:735
+#: includes/block-translations.php:732
 msgid "Type"
 msgstr "النوع"
 
-#: includes/block-translations.php:738
+#: includes/block-translations.php:735
 msgid "Select a category"
 msgstr "اختر تصنيف"
 
-#: includes/block-translations.php:744
+#: includes/block-translations.php:741
 msgid "Loading..."
 msgstr "جار التحميل..."
 
-#: includes/block-translations.php:747
+#: includes/block-translations.php:744
 msgid "Select a category."
 msgstr "حدد فئة."
 
-#: includes/block-translations.php:750
+#: includes/block-translations.php:747
 msgid "No Items found"
 msgstr "لم يتم العثور علي عناصر"
 
-#: includes/block-translations.php:753
+#: includes/block-translations.php:750
 msgid "Add another item"
 msgstr "أضافه عنصر آخر"
 
-#: includes/block-translations.php:757
+#: includes/block-translations.php:754
 msgid "No Posts."
 msgstr "لا توجد وظائف."
 
-#: includes/block-translations.php:762
+#: includes/block-translations.php:759
 msgid "(Insert Tag)"
 msgstr "(ادراج علامة)"
 
-#: includes/block-translations.php:765
+#: includes/block-translations.php:762
 msgid "(Tag Name)"
 msgstr "(اسم العلامة)"
 
-#: includes/block-translations.php:768
+#: includes/block-translations.php:765
 msgid "Loading Posts..."
 msgstr "تحميل المشاركات..."
 
-#: includes/block-translations.php:771
+#: includes/block-translations.php:768
 msgid "Your query yielded no results, please try again."
 msgstr "لم يسفر الاستعلام عن إيه نتائج ، يرجى المحاولة مره أخرى."
 
-#: includes/block-translations.php:774
+#: includes/block-translations.php:771
 msgid "Load More"
 msgstr "تحميل المزيد"
 
-#: includes/block-translations.php:777
+#: includes/block-translations.php:774
 msgid "Please enter your search query..."
 msgstr "الرجاء إدخال استعلام البحث..."
 
-#: includes/block-translations.php:780
+#: includes/block-translations.php:777
 msgid "Post Type:"
 msgstr "نوع الوظيفة:"
 
-#: includes/block-translations.php:783
+#: includes/block-translations.php:780
 msgid "Post List"
 msgstr "قائمه البريد"
 
-#: includes/block-translations.php:786
+#: includes/block-translations.php:783
 msgid "List"
 msgstr "قائمة"
 
-#: includes/block-translations.php:789
+#: includes/block-translations.php:786
 msgid "post-list"
 msgstr "القائمة التالية"
 
-#: includes/block-translations.php:792
+#: includes/block-translations.php:789
 msgid "Posts"
 msgstr "المشاركات"
 
-#: includes/block-translations.php:795
+#: includes/block-translations.php:792
 msgid "Id (scroll location)"
 msgstr "المعرف (الموقع التمرير)"
 
-#: includes/block-translations.php:799
+#: includes/block-translations.php:796
 msgid "Narrow"
 msgstr "ضيق"
 
-#: includes/block-translations.php:802
+#: includes/block-translations.php:799
 msgid "Padding"
 msgstr "صورة الحشو: (اختياري)"
 
-#: includes/block-translations.php:805
+#: includes/block-translations.php:802
 msgid "Section"
 msgstr "قسم"
 
-#: includes/block-translations.php:808
+#: includes/block-translations.php:805
 msgid "Do you wish to delete this slide? This action is irreversible"
 msgstr "هل ترغب في حذف هذه الشريحة ؟ وهذا الاجراء لا رجعه فيه"
 
-#: includes/block-translations.php:811
+#: includes/block-translations.php:808
 msgid "Show Arrows"
 msgstr "إظهار الأسهم"
 
-#: includes/block-translations.php:814
+#: includes/block-translations.php:811
 msgid "Has Content"
 msgstr "يحتوي علي محتوي"
 
-#: includes/block-translations.php:817
+#: includes/block-translations.php:814
 msgid ""
 "By disabling this you will hide the content in *ALL* slides. To disable this "
 "on only one slide, select the desired slide and toggle the \"Hide Content\" "
@@ -1097,11 +1233,11 @@ msgstr ""
 "واحده فقط ، حدد الشريحة المطلوبة وقم بتبديل الحقل \"إخفاء المحتوي\" في لوحه "
 "\"خيارات الشرائح\"."
 
-#: includes/block-translations.php:820
+#: includes/block-translations.php:817
 msgid "Show Tabs"
 msgstr "إظهار علامات التبويب"
 
-#: includes/block-translations.php:823
+#: includes/block-translations.php:820
 msgid ""
 "Hide the tabs on the front end, these will still show in the panel to allow "
 "you to navigate through each slide."
@@ -1109,27 +1245,27 @@ msgstr ""
 "إخفاء علامات التبويب علي الطرف الامامي ، وهذه سوف لا تزال تظهر في لوحه "
 "للسماح لك للتنقل من خلال كل شريحة."
 
-#: includes/block-translations.php:826
+#: includes/block-translations.php:823
 msgid "Slide Options"
 msgstr "خيارات الشرائح"
 
-#: includes/block-translations.php:829
+#: includes/block-translations.php:826
 msgid "Slide Title"
 msgstr "عنوان السلايد"
 
-#: includes/block-translations.php:832
+#: includes/block-translations.php:829
 msgid "Slide Background"
-msgstr "خلفية العمود الجانبي"
+msgstr ""
 
-#: includes/block-translations.php:835
+#: includes/block-translations.php:832
 msgid "Content Alignment"
 msgstr "محاذاة النص"
 
-#: includes/block-translations.php:838
+#: includes/block-translations.php:835
 msgid "Hide Content"
 msgstr "إخفاء المحتوي"
 
-#: includes/block-translations.php:841
+#: includes/block-translations.php:838
 msgid ""
 "By enabling this you will hide the content on *THIS* slide. To disable "
 "content on all slides go to the \"Options\" and toggle the \"Has Content\" "
@@ -1138,196 +1274,101 @@ msgstr ""
 "من خلال تمكين هذا سوف تخفي المحتوي علي * * هذا الشريحة. لتعطيل المحتوي علي "
 "كافة الشرائح انتقل إلى \"خيارات\" وتبديل الحقل \"يحتوي علي المحتوي\"."
 
-#: includes/block-translations.php:844
+#: includes/block-translations.php:841
 msgid "Remove Slide"
 msgstr "أزاله الشريحة"
 
-#: includes/block-translations.php:847
+#: includes/block-translations.php:844
 msgid "This is irreversible."
 msgstr "وهذا أمر لا رجعه فيه."
 
-#: includes/block-translations.php:858
+#: includes/block-translations.php:855
 msgid "Add a slide below."
 msgstr "أضافه شريحة أدناه."
 
-#: includes/block-translations.php:861
+#: includes/block-translations.php:858
 msgid "(Sub-Heading)"
 msgstr "(العنوان الفرعي)"
 
-#: includes/block-translations.php:864
+#: includes/block-translations.php:861
 msgid "(No Title)"
 msgstr "(بدون عنوان)"
 
-#: includes/block-translations.php:867
+#: includes/block-translations.php:864
 msgid "Add Slide"
 msgstr "إضافة شريحة"
 
-#: includes/block-translations.php:870
+#: includes/block-translations.php:867
 msgid "Opaque"
 msgstr "مبهمه"
 
-#: includes/block-translations.php:873
+#: includes/block-translations.php:870
 msgid "Translucent"
 msgstr "شفافه"
 
-#: includes/block-translations.php:876
+#: includes/block-translations.php:873
 msgid "Transparent"
 msgstr "شفاف"
 
-#: includes/block-translations.php:879
+#: includes/block-translations.php:876
 msgid "Tap here to return to gallery"
 msgstr "اضغط هنا للرجوع إلى المعرض"
 
-#: includes/block-translations.php:882
+#: includes/block-translations.php:879
 msgid "Toggle Content"
 msgstr "تبديل المحتوى"
 
-#: includes/block-translations.php:885
+#: includes/block-translations.php:882
 msgid "Slider"
 msgstr "عارض الشرائح"
 
-#: includes/block-translations.php:888
+#: includes/block-translations.php:885
 msgid "Carousel"
 msgstr "دائري"
 
-#: includes/block-translations.php:891
+#: includes/block-translations.php:888
 msgid "Scroller"
 msgstr "Scroller"
 
-#: includes/block-translations.php:894
+#: includes/block-translations.php:891
 msgid "(Action Title)"
 msgstr "(عنوان العمل)"
 
-#: includes/block-translations.php:897
+#: includes/block-translations.php:894
 msgid "(Place Tweet text proforma here)"
 msgstr "(مكان النص سقسقه الشكلية هنا)"
 
-#: includes/block-translations.php:900
+#: includes/block-translations.php:897
 msgid "Send this Tweet"
 msgstr "أرسل هذه التغريدة"
 
-#: includes/block-translations.php:903
+#: includes/block-translations.php:900
 msgid "Tweet Action"
 msgstr "سقسق العمل"
 
-#: includes/block-translations.php:906
+#: includes/block-translations.php:903
 msgid "Add a Tweet Action block"
 msgstr "أضافه كتله اجراء تغريده"
 
-#: includes/block-translations.php:909
+#: includes/block-translations.php:906
 msgid "Centre Align"
 msgstr "محاذاة المركز"
 
-#: includes/block-translations.php:912
+#: includes/block-translations.php:909
 msgid "Set Image"
 msgstr "تعيين صورة"
 
-#: includes/block-translations.php:915
+#: includes/block-translations.php:912
 msgid "Replace Image"
 msgstr "استبدل مسار الصورة"
 
-#. Theme Name of the plugin/theme
-#: includes/blocks/block-category.php:14
-msgid "Benenson"
-msgstr "بينيسون"
+#: includes/block-translations.php:915
+msgid "Set featured video"
+msgstr "تعيين الفيديو المميز"
 
-#: includes/blocks/download/render.php:17
-msgid "Download Resource"
-msgstr "تنزيل المورد"
-
-#: includes/blocks/header/render.php:105
-#: includes/blocks/media-aside/render.php:59
-#: includes/blocks/media-aside/render.php:66
-msgid "Play video"
-msgstr "تشغيل الفيديو"
-
-#: includes/localisation.php:4
-msgctxt "text direction"
-msgid "ltr"
-msgstr "لتر"
-
-#: includes/localisation.php:5
-msgctxt "month name"
-msgid "January"
-msgstr "يناير"
-
-#: includes/localisation.php:6
-msgctxt "month name"
-msgid "February"
-msgstr "فبراير"
-
-#: includes/localisation.php:7
-msgctxt "month name"
-msgid "March"
-msgstr "مارس"
-
-#: includes/localisation.php:8
-msgctxt "month name"
-msgid "April"
-msgstr "ابريل"
-
-#: includes/localisation.php:9
-msgctxt "month name"
-msgid "May"
-msgstr "مايو"
-
-#: includes/localisation.php:10
-msgctxt "month name"
-msgid "June"
-msgstr "يونيو"
-
-#: includes/localisation.php:11
-msgctxt "month name"
-msgid "July"
-msgstr "يوليو"
-
-#: includes/localisation.php:12
-msgctxt "month name"
-msgid "August"
-msgstr "أغسطس"
-
-#: includes/localisation.php:13
-msgctxt "month name"
-msgid "September"
-msgstr "سبتمبر"
-
-#: includes/localisation.php:14
-msgctxt "month name"
-msgid "October"
-msgstr "أكتوبر"
-
-#: includes/localisation.php:15
-msgctxt "month name"
-msgid "November"
-msgstr "نوفمبر"
-
-#: includes/localisation.php:16
-msgctxt "month name"
-msgid "December"
-msgstr "ديسمبر"
-
-#. translators: Accessibility label for mobile navigation dropdown button
-#: includes/mobile-nav-walker.php:149
-#, php-format
-msgid "Expand %s sub-list"
-msgstr "توسيع القائمة الفرعية %s"
-
-#: includes/navigation.php:35
-msgid "Visit the Benenson home page"
-msgstr "زيارة الصفحة الرئيسية بيننسون"
-
-#: includes/navigation.php:115
-msgid "Footer Main"
-msgstr "تذييل الصفحة الرئيسية"
-
-#: includes/navigation.php:116
-msgid "Footer Legal"
-msgstr "التذييل القانوني"
-
-#. translators: page number prefix, e.g. "[Page] 1"
-#: includes/pagination.php:27
-msgid "Page"
-msgstr "صفحة"
+#: includes/block-translations.php:918
+msgid "Remove featured video"
+msgstr "أزاله الفيديو المميز"
 
 #. translators: Post sort by option
 #: includes/post-filters.php:12
@@ -1363,10 +1404,6 @@ msgstr "الجانبية"
 msgctxt "Post Type Singular Name"
 msgid "Sidebar"
 msgstr "الشريط الجانبي"
-
-#: includes/post-types/sidebar.php:11
-msgid "Sidebars"
-msgstr "الجانبية"
 
 #: includes/post-types/sidebar.php:13
 msgid "Sidebar Archives"
@@ -1480,93 +1517,121 @@ msgctxt "close single quote"
 msgid "’"
 msgstr "'"
 
-#: includes/theme-options.php:126 includes/theme-options.php:127
-msgid "Theme Settings"
-msgstr "اعدادات القالب"
+#. translators: Accessibility label for mobile navigation dropdown button
+#: includes/mobile-nav-walker.php:149
+#, php-format
+msgid "Expand %s sub-list"
+msgstr "توسيع القائمة الفرعية %s"
 
-#: includes/theme-options.php:191
-msgid "Theme Options"
-msgstr "خيارات القالب"
+#: includes/navigation.php:41
+msgid "Visit the Benenson home page"
+msgstr "زيارة الصفحة الرئيسية بيننسون"
 
-#: includes/theme-options.php:203
-msgid "Social"
-msgstr "الشبكة الاجتماعية"
+#: includes/navigation.php:120 header.php:102
+msgid "Main Menu"
+msgstr "القائمة الرئيسية"
 
-#: includes/theme-options.php:206
-msgid "Facebook"
-msgstr "فيسبوك"
+#: includes/navigation.php:121
+msgid "Footer Main"
+msgstr "تذييل الصفحة الرئيسية"
 
-#: includes/theme-options.php:213
-msgid "Twitter"
-msgstr "تويتر"
+#: includes/navigation.php:122
+msgid "Footer Legal"
+msgstr "التذييل القانوني"
 
-#: includes/theme-options.php:220
-msgid "YouTube"
-msgstr "يوتيوب"
+#: search.php:4
+msgid "Search form"
+msgstr "نموذج البحث"
 
-#: includes/theme-options.php:227
-msgid "Instagram"
-msgstr "انستجرام"
+#: search.php:7
+msgid "Search results"
+msgstr "نتائج البحث"
 
-#: includes/theme-options.php:241
-msgid "Analytics"
-msgstr "كود تتبع Google Analytics"
+#. translators: Label for screen reader/keyboard users
+#: header.php:76
+msgid "Skip to main content"
+msgstr "الاطلاع على آخر التطورات"
 
-#: includes/theme-options.php:244
-msgid "Google Tag Manager"
-msgstr "جوجل الوسم مدير"
+#: header.php:83
+msgid "Primary navigation"
+msgstr "الملاحة الاوليه"
 
-#: includes/theme-options.php:251
-msgid "Google Analytics"
-msgstr "Google Analytics"
+#: header.php:88
+msgid "Show search form"
+msgstr "إظهار نموذج البحث"
 
-#: includes/theme-options.php:268
-msgid "Default Sidebar"
-msgstr "الشريط الجانبي الافتراضي"
+#: header.php:103
+msgid "Close navigation"
+msgstr "إغلاق التنقل"
 
-#: includes/theme-options.php:281
-msgid "Default Page Sidebar"
-msgstr "الشريط الجانبي للصفحة الافتراضية"
+#: header.php:157 header.php:182
+msgid "Play Icon"
+msgstr "رمز التشغيل"
 
-#: includes/theme-options.php:294
-msgid "Default Archive Sidebar"
-msgstr "الافتراضي الأرشيف الشريط الجانبي"
+#: footer.php:16
+msgid "Footer"
+msgstr "الفوتر"
 
-#: includes/theme-options.php:317
-msgid "Disable All Search"
-msgstr "تعطيل كافة البحث"
+#: footer.php:19
+msgid "Footer Menus"
+msgstr "قوائم التذييلات"
 
-#: includes/theme-options.php:324
-msgid "Disable Search in Navigation"
-msgstr "تعطيل البحث في التنقل"
+#. translators: Social Media sharing options
+#: footer.php:48
+msgid "Follow us on:"
+msgstr "تابعنا علي:"
 
-#: includes/theme-options.php:362
-msgid "Logo URL"
-msgstr "رابط الشعار"
+#: footer.php:51
+msgid "Follow us on Facebook"
+msgstr "تابعنا على Facebook"
 
-#: includes/theme-supports.php:47
-msgid "Standard Post Template"
-msgstr "قالب النشر القياسي"
+#: footer.php:54
+msgid "Follow us on Twitter"
+msgstr "تابعنا على Twitter"
 
-#: partials/archive-categories.php:29
-msgid "Filter results by category"
-msgstr "تصفيه النتائج حسب الفئة"
+#: footer.php:57
+msgid "Subscribe to our YouTube channel"
+msgstr "اشترك في قناتنا علي YouTube"
 
-#: partials/archive-categories.php:61
-msgid "List of subcategories"
-msgstr "قائمه الفئات الفرعية"
+#: footer.php:60
+msgid "Follow us on Instagram"
+msgstr "تابعنا علي انستجرام"
 
-#: partials/archive-categories.php:63
-msgid "List of second-level categories"
-msgstr "قائمه فئات المستوي الثاني"
+#: templates/without-sidebar.php:20 single.php:116 partials/article-share.php:2
+msgid "Social sharing options"
+msgstr "خيارات المشاركة الاجتماعية"
 
-#: partials/archive-categories.php:66 partials/archive-categories.php:97
-msgid "Select a sub filter"
-msgstr "تحديد عامل تصفيه فرعي"
+#. translators: Link to return to all posts of category %s
+#: single.php:40
+#, php-format
+msgid "Back to %s"
+msgstr "عودة الى  %s"
 
-#: partials/archive-categories.php:94
-msgid "List of third-level categories"
-msgstr "قائمه فئات المستوي الثالث"
+#: single.php:46
+msgid "Post published timestamp"
+msgstr "نشر الطابع الزمني المنشور"
+
+#: single.php:48
+msgid "Authored by"
+msgstr "تاليف"
+
+#: single.php:78
+msgid "View Recipients"
+msgstr "عرض المستلمين"
+
+#: single.php:107
+msgid "Tags:"
+msgstr "العلامات:"
+
+#: partials/post/post-search.php:22 partials/post/post-content.php:19
+msgid "Post published date"
+msgstr "آخر تاريخ نشرها"
+
+#. translators: placeholder is category name
+#: partials/post/post-content.php:17
+#, php-format
+msgid "Article category %s"
+msgstr "فئة المقالة %s"
 
 #. translators: Singular/Plural number of posts.
 #: partials/archive-header.php:10
@@ -1602,9 +1667,13 @@ msgstr "معلومات النتائج"
 msgid "Sort by"
 msgstr "ترتيب حسب"
 
-#: partials/article-share.php:2 single.php:116 templates/without-sidebar.php:20
-msgid "Social sharing options"
-msgstr "خيارات المشاركة الاجتماعية"
+#: partials/pagination.php:20
+msgid "Pagination"
+msgstr "ترقيم الصفحات"
+
+#: partials/pagination.php:31
+msgid "Page numbers"
+msgstr "رقم الصفحة"
 
 #: partials/article-share.php:3
 msgid "Share"
@@ -1626,31 +1695,25 @@ msgstr "شارك على تويتر"
 msgid "Twitter Logo"
 msgstr "تويتر الشعار"
 
-#: partials/pagination.php:20
-msgid "Pagination"
-msgstr "ترقيم الصفحات"
+#: partials/archive-categories.php:29
+msgid "Filter results by category"
+msgstr "تصفيه النتائج حسب الفئة"
 
-#: partials/pagination.php:31
-msgid "Page numbers"
-msgstr "رقم الصفحة"
+#: partials/archive-categories.php:61
+msgid "List of subcategories"
+msgstr "قائمه الفئات الفرعية"
 
-#. translators: placeholder is category name
-#: partials/post/post-content.php:17
-#, php-format
-msgid "Article category %s"
-msgstr "فئة المقالة %s"
+#: partials/archive-categories.php:63
+msgid "List of second-level categories"
+msgstr "قائمه فئات المستوي الثاني"
 
-#: partials/post/post-content.php:19 partials/post/post-search.php:22
-msgid "Post published date"
-msgstr "آخر تاريخ نشرها"
+#: partials/archive-categories.php:66 partials/archive-categories.php:97
+msgid "Select a sub filter"
+msgstr "تحديد عامل تصفيه فرعي"
 
-#: search.php:4
-msgid "Search form"
-msgstr "نموذج البحث"
-
-#: search.php:7
-msgid "Search results"
-msgstr "نتائج البحث"
+#: partials/archive-categories.php:94
+msgid "List of third-level categories"
+msgstr "قائمه فئات المستوي الثالث"
 
 #. translators: screen reader text for search field
 #: searchform.php:2
@@ -1660,55 +1723,3 @@ msgstr "مدخلات البحث"
 #: searchform.php:3
 msgid "What are you looking for?"
 msgstr "ما الذي تبحث عنه؟"
-
-#. translators: Link to return to all posts of category %s
-#: single.php:40
-#, php-format
-msgid "Back to %s"
-msgstr "عودة الى  %s"
-
-#: single.php:46
-msgid "Post published timestamp"
-msgstr "نشر الطابع الزمني المنشور"
-
-#: single.php:48
-msgid "Authored by"
-msgstr "تاليف"
-
-#: single.php:78
-msgid "View Recipients"
-msgstr "عرض المستلمين"
-
-#: single.php:107
-msgid "Tags:"
-msgstr "العلامات:"
-
-#. Theme URI of the plugin/theme
-msgid "https://benenson.co"
-msgstr "https://benenson.co"
-
-#. Description of the plugin/theme
-msgid ""
-"Named after the founder of the human rights group, Amnesty International, "
-"Benenson is an open-source WordPress theme built using Gutenberg"
-msgstr ""
-"سميت منظمه العفو الدولية باسم مؤسس مجموعه حقوق الإنسان ، بيننسون هي موضوع "
-"وورد مفتوح المصدر بنيت باستخدام غوتنبرغ"
-
-#. Author of the plugin/theme
-msgid "Big Bite Creative"
-msgstr "بيج بايت الابداعيه"
-
-#. Author URI of the plugin/theme
-msgid "https://bigbitecreative.com"
-msgstr "https://bigbitecreative.com"
-
-#. Template Name of the plugin/theme
-msgid "Full-width layout"
-msgstr "تخطيط كامل العرض"
-
-#~ msgid "Follow us on Google Plus"
-#~ msgstr "تابعنا علي جوجل بلس"
-
-#~ msgid "Benenson Theme"
-#~ msgstr "بيننسون الموضوع"
