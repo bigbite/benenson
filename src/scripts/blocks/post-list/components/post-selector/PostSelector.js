@@ -26,13 +26,14 @@ const PostSelector = (props) => {
               type="search"
               placeholder={ __('Please enter your search query...', 'benenson') }
               value={ props.state.filter }
-              onChange={ props.handleInputFilterChange }
+              onChange={ props.onInputFilterChange }
             />
           </label>
         </div>
         <div className="filter">
-          <label htmlFor="options">{ __('Post Type:', 'benenson') } </label>
-          <select name="options" id="options" onChange={ props.handlePostTypeChange }>
+          { /* eslint-disable-line react/jsx-one-expression-per-line */ }
+          <label htmlFor="options">{ __('Post Type:', 'benenson') }</label>
+          <select name="options" id="options" onChange={ props.onPostTypeChange }>
             { props.state.types.length < 1 ? (<option value="">{ __('Loading...', 'benenson') }</option>) : Object.keys(props.state.types).map(key => <option key={ key } value={ key }>{ props.state.types[key].name }</option>) }
           </select>
         </div>

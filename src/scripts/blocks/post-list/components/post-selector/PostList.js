@@ -32,16 +32,16 @@ export const PostList = (props) => {
   }
 
   return (<div className="post-list">
-    { posts.map(post => (
-      <Post key={ post.id } { ...post } clickHandler={ action } icon={ icon } />
-    )) }
-    { props.canPaginate
-      ? (
-        <button onClick={ props.doPagination } disabled={ props.paging }>
-          { props.paging ? __('Loading...', 'benenson') : __('Load More', 'benenson') }
-        </button>
-      ) : null
-    }
+    { posts.map(post => (<Post
+      key={ post.id }
+      { ...post }
+      clickHandler={ action }
+      icon={ icon }
+    />)) }
+    { /* eslint-disable-next-line react/jsx-handler-names */ }
+    { props.canPaginate ? (<button onClick={ props.doPagination } disabled={ props.paging }>
+      { props.paging ? __('Loading...', 'benenson') : __('Load More', 'benenson') }
+    </button>) : null }
   </div>);
 };
 

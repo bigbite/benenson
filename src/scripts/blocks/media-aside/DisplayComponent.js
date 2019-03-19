@@ -1,11 +1,12 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from '../header/PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { TextControl, PanelBody, ToggleControl } = wp.components;
 const { InspectorControls, RichText, URLInputButton } = wp.editor;
+
 const { PostMediaSelector } = benenson.components;
+const { PostFeaturedVideo } = benenson.editor;
 
 class DisplayComponent extends Component {
   handleMediaChange = (media) => {
@@ -49,7 +50,7 @@ class DisplayComponent extends Component {
       <Fragment>
         <InspectorControls>
           <TextControl
-            label={__('Embed url', 'benenson')}
+            label={ __('Embed url', 'benenson') }
             value={ attributes.embed }
             onChange={ this.handleEmbedChange }
           />
@@ -59,13 +60,13 @@ class DisplayComponent extends Component {
             checked={ attributes.modal }
             onChange={ displayModal => setAttributes({ modal: displayModal }) }
           />
-          <PanelBody title={__('Image/Video Poster', 'benenson') }>
+          <PanelBody title={ __('Image/Video Poster', 'benenson') }>
             <PostMediaSelector
               onUpdate={ this.handleMediaChange }
               mediaId={ attributes.mediaId }
             />
           </PanelBody>
-          <PanelBody title={__('Video (will override embed)', 'benenson') }>
+          <PanelBody title={ __('Video (will override embed)', 'benenson') }>
             <PostFeaturedVideo
               onUpdate={ this.handleVideoChange }
               featuredVideoId={ attributes.videoId }
@@ -114,7 +115,7 @@ class DisplayComponent extends Component {
           </div>
           <div class="mediaAside-col">
             <div class="mediaAside-image">
-              <img src={imageUrl} alt=""/>
+              <img src={ imageUrl } alt="" />
               { attributes.embed ? <a className="btn" href="" data-modal-embed=""><i class="play-icon">Play video</i></a> : '' }
             </div>
           </div>

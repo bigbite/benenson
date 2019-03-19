@@ -24,7 +24,7 @@ const ALLOWED_BLOCKS = ['benenson/logo'];
 // Returns the layouts configuration for a given number of repeats.
 const getLayoutTemplate = memoize(blocks => times(blocks, () => ALLOWED_BLOCKS));
 
-export default class BlockEdit extends Component {
+export default class DisplayComponent extends Component {
   render = () => {
     const {
       attributes,

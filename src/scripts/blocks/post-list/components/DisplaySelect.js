@@ -400,22 +400,22 @@ class DisplaySelect extends Component {
    */
   render() {
     return (<div>
-      { this.props.preview && <SelectPreview
+      { this.props.preview && (<SelectPreview
         posts={ this.getPreviewPosts() }
         loading={ this.state.initialLoading }
         style={ this.props.style }
         prefix={ this.props.prefix }
         ctaText={ this.props.ctaText }
-      /> }
-      { !this.props.preview && <PostSelect
+      />) }
+      { !this.props.preview && (<PostSelect
         state={ this.state }
-        handleInputFilterChange={ this.handleInputFilterChange }
-        handlePostTypeChange={ this.handlePostTypeChange }
+        onInputFilterChange={ this.handleInputFilterChange }
+        onPostTypeChange={ this.handlePostTypeChange }
         getSelectedPosts={ this.getSelectedPosts }
         removePost={ this.removePost }
         addPost={ this.addPost }
         doPagination={ this.doPagination }
-      /> }
+      />) }
     </div>);
   }
 }
