@@ -56,7 +56,7 @@ registerBlockType('benenson/logos-block', {
     });
 
     return (<div className={ classes }>
-      <InnerBlocks.Content/>
+      <InnerBlocks.Content />
     </div>);
   },
 });

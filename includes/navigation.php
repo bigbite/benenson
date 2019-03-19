@@ -9,15 +9,20 @@
  */
 if ( ! function_exists( 'benenson_theme_logo' ) ) {
 	function benenson_theme_logo() {
-		$logo_link = benenson_get_option( '_logo_url' ) ?: home_url();
-		$logo_id   = benenson_get_option( '_logo' );
-		$blog_name = get_bloginfo( 'name' );
+		$logo_link     = benenson_get_option( '_logo_url' ) ?: home_url();
+		$logo_id       = benenson_get_option( '_logo' );
+		$logo_alt_text = get_bloginfo( 'name' );
 
 		$logo_srcset = '';
 
-		$logo_alt_text = get_bloginfo( 'name' );
-
 		if ( $logo_id ) {
+			if ( function_exists( 'wpcom_vip_attachment_url_to_postid' ) ) {
+				$logo_id = wpcom_vip_attachment_url_to_postid( $logo_id );
+			} else {
+				// phpcs:ignore
+				$logo_id = attachment_url_to_postid( $logo_id );
+			}
+
 			list( $logo_standard ) = wp_get_attachment_image_src( $logo_id, 'logotype' );
 			list( $logo_retina )   = wp_get_attachment_image_src( $logo_id, 'logotype@2x' );
 
@@ -31,6 +36,7 @@ if ( ! function_exists( 'benenson_theme_logo' ) ) {
 		} else {
 			$logo_standard = get_template_directory_uri() . '/assets/images/os-logo.svg';
 		}
+
 		?>
 		<a class="logo" href="<?php echo esc_url( $logo_link ); ?>" aria-label="<?php echo esc_attr( __( 'Visit the Benenson home page', 'benenson' ) ); ?>">
 			<?php

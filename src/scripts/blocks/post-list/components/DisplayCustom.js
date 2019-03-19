@@ -20,7 +20,8 @@ class DisplayCustom extends Component {
     buttonText: '',
     buttonLink: '',
   };
-  // eslint-disable-next-line
+
+  // eslint-disable-next-line camelcase
   createUpdateMediaAttribute = index => ({ featured_image_id, featured_image }) => {
     if (this.props.custom[index]) {
       return this.props.setAttributes({
@@ -81,7 +82,7 @@ class DisplayCustom extends Component {
     });
   };
 
-  addItem = () => this.props.setAttributes({
+  handleAddItem = () => this.props.setAttributes({
     custom: [
       ...this.props.custom,
       { ...DisplayCustom.defaultObject },
@@ -105,57 +106,49 @@ class DisplayCustom extends Component {
     }
 
     return (<div>
-      { style === 'list' && <ul className="linkList">
-        { custom.map((item, index) => (
-          <LinkList
-            key={ `${prefix}-${index}` }
-            { ...item }
-            createUpdate={ this.createUpdateAttribute(index) }
-            createRemove={ this.createRemoveItem(index) }
-          />
-        )) }
-      </ul> }
+      { style === 'list' && (<ul className="linkList">
+        { custom.map((item, index) => (<LinkList
+          key={ `${prefix}-${index}` }
+          { ...item }
+          createUpdate={ this.createUpdateAttribute(index) }
+          createRemove={ this.createRemoveItem(index) }
+        />)) }
+      </ul>) }
 
-      { style === 'grid' && <div className={ `grid grid-${custom.length}` }>
-        { custom.map((item, index) => (
-          <GridItem
-            key={ `${prefix}-${index}` }
-            { ...item }
-            createUpdate={ this.createUpdateAttribute(index) }
-            createRemove={ this.createRemoveItem(index) }
-            updateMedia={ this.createUpdateMediaAttribute(index) }
-          />
-        )) }
-      </div> }
+      { style === 'grid' && (<div className={ `grid grid-${custom.length}` }>
+        { custom.map((item, index) => (<GridItem
+          key={ `${prefix}-${index}` }
+          { ...item }
+          createUpdate={ this.createUpdateAttribute(index) }
+          createRemove={ this.createRemoveItem(index) }
+          updateMedia={ this.createUpdateMediaAttribute(index) }
+        />)) }
+      </div>) }
 
-      { style === 'post' && <div className={ `grid grid-${custom.length}` }>
-        { custom.map((item, index) => (
-          <PostItem
-            key={ `${prefix}-${index}` }
-            { ...item }
-            createUpdate={ this.createUpdateAttribute(index) }
-            createRemove={ this.createRemoveItem(index) }
-            updateMedia={ this.createUpdateMediaAttribute(index) }
-          />
-        )) }
-      </div> }
+      { style === 'post' && (<div className={ `grid grid-${custom.length}` }>
+        { custom.map((item, index) => (<PostItem
+          key={ `${prefix}-${index}` }
+          { ...item }
+          createUpdate={ this.createUpdateAttribute(index) }
+          createRemove={ this.createRemoveItem(index) }
+          updateMedia={ this.createUpdateMediaAttribute(index) }
+        />)) }
+      </div>) }
 
-      { style === 'splitgrid' && <div className={ `splitGrid splitGrid-${custom.length}` }>
-        { custom.map((item, index) => (
-          <SplitGridItem
-            key={ `${prefix}-${index}` }
-            { ...item }
-            createUpdate={ this.createUpdateAttribute(index) }
-            createRemove={ this.createRemoveItem(index) }
-            updateMedia={ this.createUpdateMediaAttribute(index) }
-          />
-        )) }
-      </div> }
+      { style === 'splitgrid' && (<div className={ `splitGrid splitGrid-${custom.length}` }>
+        { custom.map((item, index) => (<SplitGridItem
+          key={ `${prefix}-${index}` }
+          { ...item }
+          createUpdate={ this.createUpdateAttribute(index) }
+          createRemove={ this.createRemoveItem(index) }
+          updateMedia={ this.createUpdateMediaAttribute(index) }
+        />)) }
+      </div>) }
 
-      { custom.length < 8 && <button onClick={this.addItem} className="add-more-button">
+      { custom.length < 8 && (<button onClick={ this.handleAddItem } className="add-more-button">
         <BlockIcon icon="plus-alt" />
         <span>{ __('Add another item', 'benenson') }</span>
-      </button> }
+      </button>) }
     </div>);
   }
 }

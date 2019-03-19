@@ -50,7 +50,7 @@ const sizeMap = {
   // >19: 60
 };
 
-export default class BlockEdit extends Component {
+export default class DisplayComponent extends Component {
   constructor(...params) {
     super(...params);
 
@@ -239,22 +239,22 @@ export default class BlockEdit extends Component {
             onChange={ newStyle => setAttributes({ style: newStyle }) }
             options={ styleOptions }
           />
-          { style === 'icon' && <SelectControl
+          { style === 'icon' && (<SelectControl
             label={ __('Icon Size', 'benenson') }
             value={ iconSize }
             onChange={ newSize => setAttributes({ iconSize: newSize }) }
             options={ sizeOptions }
-          /> }
-          { style === 'icon' && <CheckboxControl
+          />) }
+          { style === 'icon' && (<CheckboxControl
             label={ __('Hide Image Credit Display', 'benenson') }
             checked={ uncredited }
             onChange={ newCredit => setAttributes({ uncredited: newCredit }) }
-          /> }
-          { style === 'text' && <CheckboxControl
+          />) }
+          { style === 'text' && (<CheckboxControl
             label={ __('Has Underline', 'benenson') }
             checked={ underlined }
             onChange={ newUnderline => setAttributes({ underlined: newUnderline }) }
-          /> }
+          />) }
           <CheckboxControl
             label={ __('Display Button', 'benenson') }
             checked={ hasButton }
@@ -282,7 +282,7 @@ export default class BlockEdit extends Component {
           keepPlaceholderOnFocus={ true }
           onChange={ newBody => setAttributes({ body: newBody }) }
         />
-        { hasButton && <div className="linksWithIcons-buttonWrapper">
+        { hasButton && (<div className="linksWithIcons-buttonWrapper">
           <RichText
             className="btn btn--white"
             tagName="span"
@@ -297,7 +297,7 @@ export default class BlockEdit extends Component {
             url={ buttonLink }
             onChange={ newLink => setAttributes({ buttonLink: newLink }) }
           />
-        </div> }
+        </div>) }
       </div>
     </Fragment>);
   }

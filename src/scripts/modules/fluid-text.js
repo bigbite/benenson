@@ -17,7 +17,7 @@ const adjust = (element, multiplier = 1) => {
   }
 
   const existingStyle = element.getAttribute('style');
-  // eslint-disable-next-line
+  // eslint-disable-next-line no-param-reassign
   element.style.fontSize = `${adjustedSize}px`;
 };
 
@@ -31,7 +31,7 @@ export default function fluidText(elements, multiplier) {
       resizing = setTimeout(() => {
         // restore initial font size to recompute for new client width
         if (getFontSize(element) < initialSize) {
-          // eslint-disable-next-line
+          // eslint-disable-next-line no-param-reassign
           element.style.fontSize = `${initialSize}px`;
         }
 

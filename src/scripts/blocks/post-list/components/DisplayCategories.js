@@ -176,49 +176,41 @@ class DisplayCategories extends Component {
     }
 
     if (isList) {
-      return (
-        <div>
-          <ul className="linkList linklist-container">
-            {results.filter((item, i) => i < this.props.amount).map(result => <LinkList key={ `${prefix}-${result.id}` } { ...result } />)}
-          </ul>
-        </div>
-      );
+      return (<div>
+        <ul className="linkList linklist-container">
+          { results.filter((item, i) => i < this.props.amount).map(result => <LinkList key={ `${prefix}-${result.id}` } { ...result } />) }
+        </ul>
+      </div>);
     }
 
     if (isGrid) {
-      return (
-        <div>
-          <div className={ `grid grid-${this.props.amount}` }>
-            {results.filter((item, i) => i < this.props.amount).map(result => <GridItem key={ `${prefix}-${result.id}` } { ...result } />)}
-          </div>
+      return (<div>
+        <div className={ `grid grid-${this.props.amount}` }>
+          { results.filter((item, i) => i < this.props.amount).map(result => <GridItem key={ `${prefix}-${result.id}` } { ...result } />) }
         </div>
-      );
+      </div>);
     }
 
     if (isPost) {
-      return (
-        <div>
-          <div className={ `grid grid-${this.props.amount}` }>
-            {results.filter((item, i) => i < this.props.amount).map(result => <PostItem key={ `${prefix}-${result.id}` } { ...result } />)}
-          </div>
+      return (<div>
+        <div className={ `grid grid-${this.props.amount}` }>
+          { results.filter((item, i) => i < this.props.amount).map(result => <PostItem key={ `${prefix}-${result.id}` } { ...result } />) }
         </div>
-      );
+      </div>);
     }
 
     if (isSplitGrid) {
-      return (
-        <div className={ `splitGrid splitGrid-${this.props.amount}` }>
-          <div className="grid-col grid-col-1">
-            <SplitGridItem key={ `${prefix}-${results[0].id}` } { ...results[0] } />
-          </div>
-          <div className={ `grid-col grid-col-${this.props.amount - 1}` }>
-            {results.slice(1).filter((item, i) => i < this.props.amount - 1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />)}
-          </div>
+      return (<div className={ `splitGrid splitGrid-${this.props.amount}` }>
+        <div className="grid-col grid-col-1">
+          <SplitGridItem key={ `${prefix}-${results[0].id}` } { ...results[0] } />
         </div>
-      );
+        <div className={ `grid-col grid-col-${this.props.amount - 1}` }>
+          { results.slice(1).filter((item, i) => i < this.props.amount - 1).map(result => <SplitGridItem key={ `${prefix}-${result.id}` } { ...result } />) }
+        </div>
+      </div>);
     }
 
-    return (<div></div>);
+    return (<div />);
   }
 }
 

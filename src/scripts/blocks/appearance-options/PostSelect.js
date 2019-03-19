@@ -90,7 +90,7 @@ class PostSelect extends Component {
   /**
    * Paginate the sidebar selector when the select box hits the bottom.
    */
-  fetchSidebarPage = () => {
+  handleFetchSidebarPage = () => {
     if (this.state.loading || this.state.paging || this.state.currentPage >= this.state.maxPages) {
       return;
     }
@@ -131,7 +131,7 @@ class PostSelect extends Component {
       isLoading={ this.state.loading || this.state.paging }
       isDisabled={ this.state.loading }
       placeholder={ this.state.loading ? __('Loading', 'benenson') : __('Select a sidebar', 'benenson') }
-      onMenuScrollToBottom={ this.fetchSidebarPage }
+      onMenuScrollToBottom={ this.handleFetchSidebarPage }
       onChange={ this.handleInputChange }
       isClearable={ false }
       value={ this.state.selected || null }

@@ -1,32 +1,78 @@
 {
-    "extends": "airbnb-base",
-    "plugins": [
-      "jest",
-      "react"
-    ],
-    "globals": {
-      "__DEV__": true,
-      "__TEST__": true,
-      "wp": true,
-      "benenson": true
-    },
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest/globals": true,
-      "jquery": true
-    },
-    "parser": "babel-eslint",
-    "rules": {
-      "strict": 0,
-      "no-underscore-dangle": "off",
-      "no-unused-vars": "off"
-    },
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "ecmaFeatures": {
-        "jsx": true,
-        "experimentalObjectRestSpread": true
+  "extends": "airbnb-base",
+  "plugins": [
+    "jest",
+    "react"
+  ],
+  "globals": {
+    "__DEV__": true,
+    "__TEST__": true,
+    "wp": true,
+    "benenson": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true,
+    "jquery": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-key": [2],
+    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-closing-bracket-location": [2, "line-aligned"],
+    "react/jsx-closing-tag-location": [0],
+    "react/jsx-no-literals": [0],
+    "react/jsx-no-target-blank": [0],
+    "react/jsx-fragments": [0],
+    "react/jsx-pascal-case": [2],
+    "react/jsx-props-no-multi-spaces": [2],
+    "react/jsx-sort-default-props": [0],
+    "react/jsx-sort-props": [0],
+    "react/jsx-one-expression-per-line": [2, { "allow": "single-child" }],
+    "react/jsx-curly-brace-presence": [2, "never"],
+    "react/jsx-no-duplicate-props": [2, { "ignoreCase": false }],
+    "react/jsx-max-props-per-line": [2, { "when": "multiline" }],
+    "react/jsx-first-prop-new-line": [2, "multiline-multiprop"],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-curly-spacing": [2, {
+      "when": "always",
+      "children": true,
+      "allowMultiline": false,
+      "spacing": {
+        "objectLiterals": "always"
       }
+    }],
+    "react/jsx-tag-spacing": [2, {
+      "closingSlash": "never",
+      "beforeSelfClosing": "always",
+      "afterOpening": "never",
+      "beforeClosing": "allow"
+    }],
+    "react/jsx-wrap-multilines": [2, {
+      "declaration": "parens",
+      "assignment": "parens",
+      "return": "parens",
+      "arrow": "parens",
+      "condition": "ignore",
+      "logical": "parens",
+      "prop": "ignore"
+    }],
+    "react/jsx-handler-names": [2, {
+      "eventHandlerPrefix": "handle",
+      "eventHandlerPropPrefix": "on"
+    }]
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     }
   }
+}

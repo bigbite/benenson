@@ -8,7 +8,7 @@ import assign from 'lodash-es/assign';
 /**
  * Module-specific
  */
-import BlockEdit from './InnerBlockEdit';
+import DisplayComponent from './InnerDisplayComponent';
 
 /**
  * WordPress
@@ -62,7 +62,7 @@ registerBlockType('benenson/logo', {
     },
   }),
 
-  edit: BlockEdit,
+  edit: DisplayComponent,
 
   save({ attributes }) {
     const {
