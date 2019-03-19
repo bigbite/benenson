@@ -165,20 +165,20 @@ export default class DisplayComponent extends Component {
             onChange={ newEmbed => setAttributes({ embed: newEmbed }) }
           />
         </PanelBody>
-        { type === 'video' && <PanelBody title={ __('Featured Video', 'benenson') }>
+        { type === 'video' && (<PanelBody title={ __('Featured Video', 'benenson') }>
           <PostFeaturedVideo
             featuredVideoId={ featuredVideoId }
             onUpdate={ newVideoID => setAttributes({ featuredVideoId: newVideoID }) }
           />
-        </PanelBody> }
+        </PanelBody>) }
       </InspectorControls>
       <section className={ classes } style={ { backgroundImage: `url(${imageURL})` } }>
-        { type !== 'video' && <div className="linkList-options">
-          { imageID ? <IconButton
+        { type !== 'video' && (<div className="linkList-options">
+          { imageID ? (<IconButton
             icon="no-alt"
             label={ __('Remove Image', 'benenson') }
             onClick={ () => setAttributes({ imageID: 0, imageURL: '' }) }
-          /> : <MediaUpload
+          />) : (<MediaUpload
             allowedTypes={ ['image'] }
             value={ imageID }
             onSelect={ media => setAttributes({
@@ -186,14 +186,13 @@ export default class DisplayComponent extends Component {
               imageURL: this.setImageUrl(media),
             }) }
             render={ ({ open }) => (<IconButton icon="format-image" onClick={ open } />) }
-          /> }
-        </div> }
-
-        { videoUrl && <div className="page-heroVideoContainer">
+          />) }
+        </div>) }
+        { videoUrl && (<div className="page-heroVideoContainer">
           <video className="page-heroVideo">
             <source src={ videoUrl } />
           </video>
-        </div> }
+        </div>) }
         <div className="container">
           <div className="hero-content">
             <RichText
@@ -225,10 +224,10 @@ export default class DisplayComponent extends Component {
                   format="string"
                   onChange={ newCtaText => setAttributes({ ctaText: newCtaText }) }
                 />
-                { (!embed || embed.length < 1) && <URLInputButton
+                { (!embed || embed.length < 1) && (<URLInputButton
                   url={ ctaLink }
                   onChange={ newCtaLink => setAttributes({ ctaLink: newCtaLink }) }
-                /> }
+                />) }
               </div>
             </div>
           </div>

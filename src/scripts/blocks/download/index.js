@@ -1,6 +1,6 @@
 const { __ } = wp.i18n;
 const { createBlock, registerBlockType } = wp.blocks;
-const { Component } = wp.element;
+const { Component, Fragment } = wp.element;
 const {
   MediaPlaceholder, MediaUpload, BlockControls, RichText,
 } = wp.editor;
@@ -35,62 +35,56 @@ registerBlockType('benenson/block-download', {
       const { attributes, setAttributes } = this.props;
 
       if (!attributes.fileId) {
-        return (
-          <div>
-            <MediaPlaceholder
-              icon="media-default"
-              labels={{
-                title: __('File', 'benenson'),
-                name: __('A File', 'benenson'),
-              }}
-              onSelect={({ id: fileId = 0 }) => setAttributes({ fileId })}
-              accept="*"
-              type="*"
-            />
-          </div>
-        );
+        return (<div>
+          <MediaPlaceholder
+            icon="media-default"
+            labels={ {
+              title: __('File', 'benenson'),
+              name: __('A File', 'benenson'),
+            } }
+            onSelect={ ({ id: fileId = 0 }) => setAttributes({ fileId }) }
+            accept="*"
+            type="*"
+          />
+        </div>);
       }
 
-      return (
-        [
-          <div className="btn btn--dark btn--download" style={{
-            marginRight: '20px',
-          }}>
-            <RichText
-              format="string"
-              formattingControls={[]}
-              keepPlaceholderOnFocus={ true }
-              value={attributes.downloadButtonText}
-              onChange={downloadButtonText => setAttributes({ downloadButtonText })}
-              tagName="span"
-              placeholder={__('[Download Resource]', 'benenson')}
+      return (<Fragment>
+        <div className="btn btn--dark btn--download" style={ { marginRight: '20px' } }>
+          <RichText
+            format="string"
+            formattingControls={ [] }
+            keepPlaceholderOnFocus={ true }
+            value={ attributes.downloadButtonText }
+            onChange={ downloadButtonText => setAttributes({ downloadButtonText }) }
+            tagName="span"
+            placeholder={ __('[Download Resource]', 'benenson') }
+          />
+        </div>
+        <Button
+          isDestructive={ true }
+          isLink={ true }
+          onClick={ () => setAttributes({ fileId: 0 }) }
+        >
+          { __('Remove Resource', 'benenson') }
+        </Button>
+        <BlockControls>
+          <Toolbar>
+            <MediaUpload
+              onSelect={ ({ id: fileId = 0 }) => setAttributes({ fileId }) }
+              value={ attributes.fileId }
+              render={ ({ open }) => (
+                <IconButton
+                  className="components-toolbar__control"
+                  label={ __('Edit File', 'benenson') }
+                  onClick={ open }
+                  icon="edit"
+                />
+              ) }
             />
-          </div>,
-          <Button
-            isDestructive
-            isLink
-            onClick={() => setAttributes({ fileId: 0 })}
-          >
-            {__('Remove Resource', 'benenson')}
-          </Button>,
-          <BlockControls>
-            <Toolbar>
-              <MediaUpload
-                onSelect={({ id: fileId = 0 }) => setAttributes({ fileId })}
-                value={attributes.fileId}
-                render={({ open }) => (
-                  <IconButton
-                    className="components-toolbar__control"
-                    label={ __('Edit File', 'benenson') }
-                    onClick={ open }
-                    icon="edit"
-                  />
-                )}
-              />
-            </Toolbar>
-          </BlockControls>,
-        ]
-      );
+          </Toolbar>
+        </BlockControls>
+      </Fragment>);
     }
   },
 

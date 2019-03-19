@@ -107,11 +107,11 @@ export class SlideBuilder {
         <div className="slide-contentContainer">
           { heading && <h1 className="slide-title">{ trimBr(heading) }</h1> }
           { subheading && <h2 className="slide-subtitle">{ trimBr(subheading) }</h2> }
-          { this.hasInnerContent() && <div className="slide-content">
+          { this.hasInnerContent() && (<div className="slide-content">
             { content.__html && <div dangerouslySetInnerHTML={ content }></div> }
             { this.shouldShowButton() && <a className="btn btn--white" href={ callToActionLink }>{ trimBr(callToActionText) }</a> }
             { this.shouldShowToggle() && <button className="slider-toggleContent">{ __('Toggle Content', 'benenson') }</button> }
-          </div> }
+          </div>) }
         </div>
       </div>) }
     </div>);

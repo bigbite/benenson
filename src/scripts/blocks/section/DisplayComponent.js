@@ -1,4 +1,5 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
+import isUndefined from 'lodash-es/isUndefined';
 
 const { __ } = wp.i18n;
 const { applyFilters } = wp.hooks;
@@ -22,7 +23,7 @@ class DisplayComponent extends Component {
     return blockList;
   }
 
-  onMediaChange = (media) => {
+  handleMediaChange = (media) => {
     if (media) {
       this.props.setAttributes({
         mediaId: media.id,
@@ -75,6 +76,12 @@ class DisplayComponent extends Component {
       value: 'wide',
     }]);
 
+    const classes = classnames('section', {
+      [`${attributes.className}`]: !!attributes.className,
+      'section--tinted': attributes.background === 'grey',
+      [`section--${attributes.padding}`]: !!attributes.padding,
+    });
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
@@ -104,21 +111,16 @@ class DisplayComponent extends Component {
         </PanelBody>
         <PanelBody title={ __('Background Image', 'benenson') }>
           <PostMediaSelector
-            onUpdate={ this.onMediaChange }
+            onUpdate={ this.handleMediaChange }
             mediaId={ attributes.mediaId }
           />
         </PanelBody>
       </InspectorControls>
-      <section className={ classNames({
-        section: true,
-        [`${attributes.className}`]: !!attributes.className,
-        'section--tinted': attributes.background === 'grey',
-        [`section--${attributes.padding}`]: !!attributes.padding,
-      }) } style={ attributes.mediaUrl ? styles : null }>
+      <section className={ classes } style={ attributes.mediaUrl ? styles : null }>
         <div className="container">
-          { typeof this.props.insertBlocksAfter !== 'undefined' &&
-            <InnerBlocks allowedBlocks={ this.getBlockList() } />
-          }
+          { !isUndefined(this.props.insertBlocksAfter) && (<InnerBlocks
+            allowedBlocks={ this.getBlockList() }
+          />) }
         </div>
       </section>
     </Fragment>);

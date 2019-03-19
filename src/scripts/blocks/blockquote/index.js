@@ -308,14 +308,13 @@ registerBlockType('benenson/quote', {
         value: 'white',
       }]);
 
-      const heading = logoUrl ? <img className="blockquote-image" src={ logoUrl } /> :
-      <RichText
+      const heading = logoUrl ? (<img className="blockquote-image" src={ logoUrl } />) : (<RichText
         tagName="cite"
         placeholder={ __('(Insert Citation)', 'benenson') }
         value={ citation }
         keepPlaceholderOnFocus={ true }
         onChange={ newCitation => setAttributes({ citation: newCitation }) }
-      />;
+      />);
 
       return (<Fragment>
         <InspectorControls>
@@ -338,28 +337,28 @@ registerBlockType('benenson/quote', {
               onChange={ newColour => setAttributes({ colour: newColour }) }
               options={ colourOptions }
             />
-          { !this.isRightToLeft && <ToggleControl
-            label={ __('Capitalise', 'benenson') }
-            help={ __('Capitalise the content.', 'benenson') }
-            checked={ capitalise }
-            onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
-          /> }
-          <ToggleControl
-            label={ __('Line', 'benenson') }
-            help={ __('Toggle display of line embellishment.', 'benenson') }
-            checked={ lined }
-            onChange={ newLine => setAttributes({ lined: newLine }) }
-          />
+            { !this.isRightToLeft && (<ToggleControl
+              label={ __('Capitalise', 'benenson') }
+              help={ __('Capitalise the content.', 'benenson') }
+              checked={ capitalise }
+              onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
+            />) }
+            <ToggleControl
+              label={ __('Line', 'benenson') }
+              help={ __('Toggle display of line embellishment.', 'benenson') }
+              checked={ lined }
+              onChange={ newLine => setAttributes({ lined: newLine }) }
+            />
           </PanelBody>
           <PanelBody title={ __('Image citation', 'benenson') }>
-            <p>This will override any citation text.</p>
+            <p>{ __('This will override any citation text.', 'benenson') }</p>
             <PostMediaSelector
               onUpdate={ (media) => {
                 setAttributes({
                   logoUrl: media ? media.source_url : '',
                   logoId: media ? media.id : null,
                 });
-              }}
+              } }
               mediaId={ logoId }
             />
           </PanelBody>
@@ -378,36 +377,39 @@ registerBlockType('benenson/quote', {
             <ColorPicker
               color={ backgroundColor }
               onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
-              disableAlpha
+              disableAlpha={ true }
             />
             <Button
               className="components-button is-button is-default is-large"
-              onClick={ () => setAttributes({ backgroundColor: '' }) }>
+              onClick={ () => setAttributes({ backgroundColor: '' }) }
+            >
               { __('Remove background colour', 'benenson') }
             </Button>
           </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
         <div className={ classes } style={ backgroundStyles }>
-          <div><RichText
-            tagName="p"
-            placeholder={ __('(Insert Quote Text)', 'benenson') }
-            value={ content }
-            formattingControls={ [] }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newContent => setAttributes({ content: newContent }) }
-          /></div>
           <div>
-              { heading }
+            <RichText
+              tagName="p"
+              placeholder={ __('(Insert Quote Text)', 'benenson') }
+              value={ content }
+              formattingControls={ [] }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newContent => setAttributes({ content: newContent }) }
+            />
           </div>
-          <div><RichText
-            tagName="div"
-            className="blockquote-subText"
-            placeholder={ __('(Insert Subtext)', 'benenson') }
-            value={ subText }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newSubText => setAttributes({ subText: newSubText }) }
-          /></div>
+          <div>{ heading }</div>
+          <div>
+            <RichText
+              tagName="div"
+              className="blockquote-subText"
+              placeholder={ __('(Insert Subtext)', 'benenson') }
+              value={ subText }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newSubText => setAttributes({ subText: newSubText }) }
+            />
+          </div>
         </div>
       </Fragment>);
     }
