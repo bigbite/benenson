@@ -1,14 +1,297 @@
 <?php
 
+if ( ! function_exists( 'benenson_customiser' ) ) {
+	function benenson_customiser( $customiser = null ) {
+		/**
+		 * Social network settings.
+		 */
+		$customiser->add_section( 'benenson_social_networks', [
+			'title'       => __( 'Social Networks', 'benenson' ),
+			'description' => __( 'Manage your social network accounts', 'benenson' ),
+			'priority'    => 30,
+			'capability'  => 'edit_theme_options',
+		] );
+
+		$customiser->add_setting( '_social_facebook', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_social_facebook', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_social_facebook', [
+			'label'    => __( 'Facebook', 'benenson' ),
+			'section'  => 'benenson_social_networks',
+			'type'     => 'url',
+			'priority' => 10,
+		] );
+
+		$customiser->add_setting( '_social_twitter', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_social_twitter', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_social_twitter', [
+			'label'    => __( 'Twitter', 'benenson' ),
+			'section'  => 'benenson_social_networks',
+			'type'     => 'url',
+			'priority' => 10,
+		] );
+
+		$customiser->add_setting( '_social_youtube', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_social_youtube', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_social_youtube', [
+			'label'    => __( 'YouTube', 'benenson' ),
+			'section'  => 'benenson_social_networks',
+			'type'     => 'url',
+			'priority' => 10,
+		] );
+
+		$customiser->add_setting( '_social_instagram', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_social_instagram', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_social_instagram', [
+			'label'    => __( 'Instagram', 'benenson' ),
+			'section'  => 'benenson_social_networks',
+			'type'     => 'url',
+			'priority' => 10,
+		] );
+
+		/**
+		 * Site logo settings.
+		 */
+		$customiser->add_setting( '_logo', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_logo', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( new WP_Customize_Image_Control( $customiser, '_logo', [
+			'label'    => __( 'Site Logo', 'benenson' ),
+			'section'  => 'title_tagline',
+			'priority' => 100,
+		] ) );
+
+		$customiser->add_setting( '_logo_url', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_logo_url', '', true ),
+			'sanitize_callback' => 'sanitize_url',
+		] );
+
+		$customiser->add_control( '_logo_url', [
+			'label'    => __( 'Site Logo URL', 'benenson' ),
+			'section'  => 'title_tagline',
+			'type'     => 'url',
+			'default'  => home_url(),
+			'priority' => 100,
+		] );
+
+		/**
+		 * Sidebar settings.
+		 */
+		$customiser->add_section( 'benenson_sidebars', [
+			'title'       => __( 'Sidebars', 'benenson' ),
+			'description' => __( 'Manage your sidebar settings', 'benenson' ),
+			'priority'    => 35,
+			'capability'  => 'edit_theme_options',
+		] );
+
+		$sidebar_post_list = [];
+		$sidebar_posts     = new WP_Query( [
+			'post_type' => 'sidebar',
+			'orderby'   => 'post_title',
+			'order'     => 'ASC',
+		] );
+
+		$posts = $sidebar_posts->get_posts();
+
+		array_walk( $posts, function( &$item ) use ( &$sidebar_post_list ) {
+			$sidebar_post_list[ $item->ID ] = $item->post_title;
+		} );
+
+		$customiser->add_setting( '_default_sidebar_page', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_default_sidebar_page', '', true ),
+			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
+		] );
+
+		$customiser->add_control( '_default_sidebar_page', [
+			'label'    => __( 'Default Page Sidebar', 'benenson' ),
+			'section'  => 'benenson_sidebars',
+			'type'     => 'select',
+			'priority' => 100,
+			'choices'  => $sidebar_post_list,
+		] );
+
+		$customiser->add_setting( '_default_sidebar_archive', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_default_sidebar_archive', '', true ),
+			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
+		] );
+
+		$customiser->add_control( '_default_sidebar_archive', [
+			'label'    => __( 'Default Archive Sidebar', 'benenson' ),
+			'section'  => 'benenson_sidebars',
+			'type'     => 'select',
+			'priority' => 100,
+			'choices'  => $sidebar_post_list,
+		] );
+
+		$customiser->add_setting( '_default_sidebar', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_default_sidebar', '', true ),
+			'sanitize_callback' => 'benenson_sanitize_sidebar_id',
+		] );
+
+		$customiser->add_control( '_default_sidebar', [
+			'label'    => __( 'Default Sidebar', 'benenson' ),
+			'section'  => 'benenson_sidebars',
+			'type'     => 'select',
+			'priority' => 100,
+			'choices'  => $sidebar_post_list,
+		] );
+
+		/**
+		 * Search settings.
+		 */
+		$customiser->add_section( 'benenson_search', [
+			'title'       => __( 'Search', 'benenson' ),
+			'description' => __( 'Manage your search settings', 'benenson' ),
+			'priority'    => 60,
+			'capability'  => 'edit_theme_options',
+		] );
+
+		$customiser->add_setting( '_search_disabled', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_search_disabled', '', true ),
+			'sanitize_callback' => 'benenson_sanitize_boolean',
+		] );
+
+		$customiser->add_control( '_search_disabled', [
+			'label'   => __( 'Disable all search', 'benenson' ),
+			'section' => 'benenson_search',
+			'type'    => 'checkbox',
+		] );
+
+		$customiser->add_setting( '_search_navigation_disabled', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_search_navigation_disabled', '', true ),
+			'sanitize_callback' => 'benenson_sanitize_boolean',
+		] );
+
+		$customiser->add_control( '_search_navigation_disabled', [
+			'label'   => __( 'Disable Search in Navigation', 'benenson' ),
+			'section' => 'benenson_search',
+			'type'    => 'checkbox',
+		] );
+
+		/**
+		 * Analytics settings.
+		 */
+		$customiser->add_section( 'benenson_analytics', [
+			'title'       => __( 'Analytics', 'benenson' ),
+			'description' => __( 'Manage your Analytics settings', 'benenson' ),
+			'priority'    => 20,
+			'capability'  => 'edit_theme_options',
+		] );
+
+		$customiser->add_setting( '_analytics_gtm', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_analytics_gtm', '', true ),
+			'sanitize_callback' => 'sanitize_text_field',
+		] );
+
+		$customiser->add_control( '_analytics_gtm', [
+			'label'    => __( 'Google Tag Manager', 'benenson' ),
+			'section'  => 'benenson_analytics',
+			'type'     => 'text',
+			'priority' => 10,
+		] );
+
+		$customiser->add_setting( '_analytics_ga', [
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'default'           => benenson_get_option( '_analytics_ga', '', true ),
+			'sanitize_callback' => 'sanitize_text_field',
+		] );
+
+		$customiser->add_control( '_analytics_ga', [
+			'label'    => __( 'Google Analytics', 'benenson' ),
+			'section'  => 'benenson_analytics',
+			'type'     => 'text',
+			'priority' => 10,
+		] );
+	}
+}
+
+add_action( 'customize_register', 'benenson_customiser' );
+
+
+/**
+ * Retrieve a theme modification by overriding return value of benenson_get_option.
+ *
+ * @since 1.0.3
+ * @see benenson_get_option()
+ *
+ * @param mixed  $value   the return value from benenson_get_option
+ * @param mixed  $default the default value from benenson_get_option
+ * @param string $name    the option name
+ *
+ * @return mixed
+ *
+ */
+if ( ! function_exists( 'benenson_override_get_option' ) ) {
+	function benenson_override_get_option( $value, $default, $name ) {
+		return get_theme_mod( $name ) ?: $value;
+	}
+}
+
+add_filter( 'benenson_option__social_facebook', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__social_twitter', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__social_googleplus', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__social_youtube', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__social_instagram', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__logo', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__logo_url', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__default_sidebar_page', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__default_sidebar_archive', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__default_sidebar', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__search_disabled', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__search_navigation_disabled', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__analytics_gtm', 'benenson_override_get_option', 10, 3 );
+add_filter( 'benenson_option__analytics_ga', 'benenson_override_get_option', 10, 3 );
+
 /**
  * Registers and enqueues scripts for the theme admin.
  *
  * @since 1.0.0
+ * @deprecated 1.0.3
  * @return void
  */
 if ( ! function_exists( 'benenson_theme_options_scripts' ) ) {
 	function benenson_theme_options_scripts() {
-		if ( ! is_admin() ) {
+		_deprecated_function( __FUNCTION__, '1.0.3' );
+
+		if ( ! is_admin() || 'appearance_page_theme-settings' !== get_current_screen()->id ) {
 			return;
 		}
 
@@ -18,16 +301,18 @@ if ( ! function_exists( 'benenson_theme_options_scripts' ) ) {
 	}
 }
 
-add_action( 'admin_enqueue_scripts', 'benenson_theme_options_scripts' );
-
 /**
  * Register all settings with their given sanitizers.
  *
  * @since 1.0.0
+ * @deprecated 1.0.3
+ * @see benenson_customiser()
  * @return void
  */
 if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 	function benenson_register_theme_options() {
+		_deprecated_function( __FUNCTION__, '1.0.3', 'benenson_customiser' );
+
 		$text_field_args = [
 			'sanitize_callback' => 'sanitize_text_field',
 			'default'           => '',
@@ -57,8 +342,6 @@ if ( ! function_exists( 'benenson_register_theme_options' ) ) {
 	}
 }
 
-add_action( 'admin_init', 'benenson_register_theme_options' );
-
 /**
  * Sanitizer for sidebar ID's.
  * Checks whether they are numberic and found with sidebar post_type.
@@ -71,6 +354,42 @@ add_action( 'admin_init', 'benenson_register_theme_options' );
 if ( ! function_exists( 'benenson_sanitize_sidebar_id' ) ) {
 	function benenson_sanitize_sidebar_id( $value ) {
 		return benenson_is_post_type( $value, 'sidebar' );
+	}
+}
+
+/**
+ * Explicitly cast a value to a boolean.
+ *
+ * @since 1.0.3
+ *
+ * @param mixed $value the value to cast.
+ *
+ * @return bool
+ */
+if ( ! function_exists( 'benenson_sanitize_boolean' ) ) {
+	function benenson_sanitize_boolean( $value ) {
+		// nothing required.
+		if ( is_bool( $value ) ) {
+			return $value;
+		}
+
+		// assume 0 or 1.
+		if ( is_numeric( $value ) ) {
+			return (bool) $value;
+		}
+
+		// truthy values.
+		if ( in_array( $value, [ 'true', '1', 'yes', 'on' ], true ) ) {
+			return true;
+		}
+
+		// falsey values.
+		if ( in_array( $value, [ 'false', '0', 'no', 'off' ], true ) ) {
+			return false;
+		}
+
+		// assume invalid.
+		return false;
 	}
 }
 
@@ -118,6 +437,7 @@ if ( ! function_exists( 'benenson_is_post_type' ) ) {
  * Adds the menu page for the theme settings.
  *
  * @since 1.0.0
+ *
  * @return void
  */
 if ( ! function_exists( 'benenson_add_admin_page' ) ) {
@@ -127,7 +447,19 @@ if ( ! function_exists( 'benenson_add_admin_page' ) ) {
 			esc_html__( 'Theme Settings', 'benenson' ),
 			'manage_options',
 			'theme-settings',
-			'benenson_theme_option_admin_page'
+			function () {
+				$return_to    = rawurlencode( admin_url( 'themes.php', 'relative' ) );
+				$new_location = add_query_arg( 'return', $return_to, admin_url( 'customize.php' ) );
+
+				// just in case.
+				if ( ! headers_sent() ) {
+					header( 'Location: %s', esc_url( $new_location ) );
+				} else {
+					printf( '<script>window.location="%s";</script>', esc_url( $new_location ) );
+				}
+
+				exit;
+			}
 		);
 	}
 }
@@ -138,24 +470,29 @@ add_action( 'admin_menu', 'benenson_add_admin_page' );
  * Getter for the theme options.
  *
  * @since 1.0.0
+ *
  * @param string $name    The name of the option to retrieve.
  * @param mixed  $default The default to use if option not found or set.
+ * @param bool   $suppress_filters Whether to suppress the option filter.
+ *
  * @return mixed The found option, or default if none.
  */
 if ( ! function_exists( 'benenson_get_option' ) ) {
-	function benenson_get_option( $name, $default = false ) {
+	function benenson_get_option( $name, $default = false, $suppress_filters = false ) {
 		$option = get_option( $name, $default );
 
-		/**
-		 * Allows for filtering of a benenson theme option.
-		 *
-		 * @since 1.0.0
-		 *
-		 * @param mixed  $option  Value of the given option.
-		 * @param mixed  $default Default value of the given option.
-		 * @param string $name    Name of the given option.
-		 */
-		$option = apply_filters( "benenson_option_{$name}", $option, $default, $name );
+		if ( false === $suppress_filters ) {
+			/**
+			 * Allows for filtering of a benenson theme option.
+			 *
+			 * @since 1.0.0
+			 *
+			 * @param mixed  $option  Value of the given option.
+			 * @param mixed  $default Default value of the given option.
+			 * @param string $name    Name of the given option.
+			 */
+			$option = apply_filters( "benenson_option_{$name}", $option, $default, $name );
+		}
 
 		return $option;
 	}
@@ -165,10 +502,13 @@ if ( ! function_exists( 'benenson_get_option' ) ) {
  * Creates the admin page view for the theme options.
  *
  * @since 1.0.0
+ * @deprecated 1.0.3
  * @return void
  */
 if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 	function benenson_theme_option_admin_page() {
+		_deprecated_function( __FUNCTION__, '1.0.3' );
+
 		if ( ! is_admin() ) {
 			return;
 		}
