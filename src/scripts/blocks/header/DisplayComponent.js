@@ -143,7 +143,7 @@ class DisplayComponent extends Component {
             onChange={ this.createUpdateAttribute('type') }
           />
           <TextControl
-            label={__('Embed url', 'benenson')}
+            label={ __('Embed url', 'benenson') }
             value={ attributes.embed }
             onChange={ this.createUpdateAttribute('embed') }
           />
@@ -152,22 +152,19 @@ class DisplayComponent extends Component {
         <PanelBody title={ attributes.type === 'video' ? __('Background Image', 'benenson') : __('Featured Image', 'benenson') }>
           <PostFeaturedImage />
         </PanelBody>
-        { attributes.type === 'video' && <PanelBody title={__('Featured Video', 'benenson') }>
+        { attributes.type === 'video' && (<PanelBody title={ __('Featured Video', 'benenson') }>
           <PostFeaturedVideo
-            featuredVideoId={attributes.featuredVideoId}
-            onUpdate={this.createUpdateAttribute('featuredVideoId')}
+            featuredVideoId={ attributes.featuredVideoId }
+            onUpdate={ this.createUpdateAttribute('featuredVideoId') }
           />
-        </PanelBody> }
+        </PanelBody>) }
       </InspectorControls>
       <section className={ classes } style={ { backgroundImage: `url(${media ? media.source_url : ''})` } }>
-        {
-          this.state.videoUrl &&
-            <div className="page-heroVideoContainer">
-              <video className="page-heroVideo">
-                <source src={this.state.videoUrl} />
-              </video>
-            </div>
-        }
+        { this.state.videoUrl && (<div className="page-heroVideoContainer">
+          <video className="page-heroVideo">
+            <source src={ this.state.videoUrl } />
+          </video>
+        </div>) }
         <div className="container">
           <div className="hero-content">
             <RichText
@@ -199,10 +196,10 @@ class DisplayComponent extends Component {
                   format="string"
                   onChange={ this.createUpdateAttribute('ctaText') }
                 />
-                { (!attributes.embed || attributes.embed.length < 1) && <URLInputButton
+                { (!attributes.embed || attributes.embed.length < 1) && (<URLInputButton
                   url={ attributes.ctaLink }
                   onChange={ this.createUpdateAttribute('ctaLink') }
-                /> }
+                />) }
               </div>
             </div>
           </div>

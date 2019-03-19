@@ -10,27 +10,20 @@ const setURL = (image) => {
   return image.sizes.large.url;
 };
 
-const PostItem = props => (
-  <article className="postGrid-item">
+const PostItem = props => (<article className="postGrid-item">
+  <MediaUpload
+    onSelect={ media => props.updateMedia({
+      featured_image_id: media.id,
+      featured_image: setURL(media),
+    }) }
+    value={ props.featured_image_id }
+    allowedTypes={ ['image'] }
+    render={ ({ open }) => (<IconButton icon="format-image" onClick={ open } />) }
+  />
 
-      <MediaUpload
-        onSelect={ media => props.updateMedia({
-          featured_image_id: media.id,
-          featured_image: setURL(media),
-        }) }
-        value={ props.featured_image_id }
-        allowedTypes={ ['image'] }
-        render={ ({ open }) => (
-        <IconButton icon="format-image" onClick={ open } />
-        ) }
-      />
+  <figure class="postGrid-item-image" style={ { backgroundImage: `url(${props.featured_image})` } } />
 
-      <figure class="postGrid-item-image" style={ {
-        backgroundImage: `url(${props.featured_image})`,
-      } }></figure>
-
-    <div className="postGrid-content">
-
+  <div className="postGrid-content">
     <span className="postGrid-item-meta">
       <RichText
         tagName="div"
@@ -90,23 +83,21 @@ const PostItem = props => (
         onChange={ props.createUpdate('buttonLink') }
       />
     </a>
+  </div>
 
-    </div>
-    <div className="linkList-options">
-      {
-        props.featured_image_id &&
-        props.featured_image_id !== -1 &&
-        <IconButton icon="no-alt" onClick={ () => props.updateMedia({
-          featured_image_id: '',
-          featured_image: '',
-        }) }>
-          { __('Remove Image', 'benenson') }
-        </IconButton>
-      }
-
-      <IconButton onClick={ props.createRemove } icon="trash" />
-    </div>
-  </article>
-);
+  <div className="linkList-options">
+    { props.featured_image_id && props.featured_image_id !== -1 && (<IconButton
+      icon="no-alt"
+      onClick={ () => props.updateMedia({
+        featured_image_id: '',
+        featured_image: '',
+      }) }
+    >
+      { __('Remove Image', 'benenson') }
+    </IconButton>) }
+    { /* eslint-disable-next-line react/jsx-handler-names */ }
+    <IconButton onClick={ props.createRemove } icon="trash" />
+  </div>
+</article>);
 
 export default PostItem;
