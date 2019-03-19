@@ -6,7 +6,6 @@ import classnames from 'classnames';
 /**
  * Module-specific
  */
-import DisplayComponent from './DisplayComponent';
 import './InnerBlock';
 
 /**
@@ -15,6 +14,8 @@ import './InnerBlock';
 const { __ } = wp.i18n;
 const { createBlock, registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
+
+const { RepeatableBlockContainer } = benenson.components;
 
 registerBlockType('benenson/logos-block', {
   title: __('Logo Group', 'benenson'),
@@ -38,7 +39,11 @@ registerBlockType('benenson/logos-block', {
     },
   },
 
-  edit: DisplayComponent,
+  edit: class extends RepeatableBlockContainer {
+    BLOCKNAME = 'logoGroup';
+    CLASSNAME = 'logoList';
+    ALLOWED_BLOCKS = ['benenson/logo'];
+  },
 
   save({ attributes, className }) {
     const {

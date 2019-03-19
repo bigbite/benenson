@@ -176,11 +176,10 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:304
 	// Reference: src/scripts/blocks/call-to-action/DisplayComponent.js:29
 	// Reference: src/scripts/blocks/key-facts/index.js:53
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:60
-	// Reference: src/scripts/blocks/logo-list/DisplayComponent.js:52
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:15
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:53
 	// Reference: src/scripts/blocks/section/index.js:27
+	// Reference: src/scripts/packages/components/RepeatableBlockContainer.js:52
 	__( 'Grey', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:313
@@ -218,10 +217,9 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/blockquote/index.js:376
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:128
 	// Reference: src/scripts/blocks/key-facts/index.js:68
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:81
-	// Reference: src/scripts/blocks/logo-list/DisplayComponent.js:67
 	// Reference: src/scripts/blocks/menu/DisplayComponent.js:115
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:89
+	// Reference: src/scripts/packages/components/RepeatableBlockContainer.js:67
 	__( 'Background Colour', 'benenson' ),
 
 	// Reference: src/scripts/blocks/blockquote/index.js:386
@@ -415,9 +413,8 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/header/DisplayComponent.js:92
 	// Reference: src/scripts/blocks/key-facts/index.js:50
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:30
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:57
-	// Reference: src/scripts/blocks/logo-list/DisplayComponent.js:49
 	// Reference: src/scripts/blocks/section/DisplayComponent.js:64
+	// Reference: src/scripts/packages/components/RepeatableBlockContainer.js:49
 	__( 'None', 'benenson' ),
 
 	// Reference: src/scripts/blocks/header/PostFeaturedVideo.js:6
@@ -543,8 +540,7 @@ $generated_i18n_strings = array(
 	__( 'Add a key facts block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/key-facts/index.js:61
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:68
-	// Reference: src/scripts/blocks/logo-list/DisplayComponent.js:60
+	// Reference: src/scripts/packages/components/RepeatableBlockContainer.js:60
 	__( 'Quantity', 'benenson' ),
 
 	// Reference: src/scripts/blocks/link/DisplayComponent.js:19
@@ -586,16 +582,7 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/link/index.js:16
 	__( 'Add a link to section within page, another page or an external URL.', 'benenson' ),
 
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:49
-	__( 'Horizontal', 'benenson' ),
-
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:52
-	__( 'Vertical', 'benenson' ),
-
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:75
-	__( 'Orientation', 'benenson' ),
-
-	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:87
+	// Reference: src/scripts/blocks/links-with-icons/DisplayComponent.js:26
 	__( 'Hide Lines', 'benenson' ),
 
 	// Reference: src/scripts/blocks/links-with-icons/InnerBlock.js:70
@@ -656,10 +643,10 @@ $generated_i18n_strings = array(
 	// Reference: src/scripts/blocks/logo-list/InnerBlock.js:47
 	__( 'Add a logos block', 'benenson' ),
 
-	// Reference: src/scripts/blocks/logo-list/index.js:20
+	// Reference: src/scripts/blocks/logo-list/index.js:21
 	__( 'Logo Group', 'benenson' ),
 
-	// Reference: src/scripts/blocks/logo-list/index.js:21
+	// Reference: src/scripts/blocks/logo-list/index.js:22
 	__( 'Add a repeatable logo block', 'benenson' ),
 
 	// Reference: src/scripts/blocks/media-aside/DisplayComponent.js:103
