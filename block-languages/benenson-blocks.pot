@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/scripts/blocks/action/DisplayComponent.js:62
 #: src/scripts/blocks/blockquote/index.js:329
-#: src/scripts/blocks/header/DisplayComponent.js:134
+#: src/scripts/blocks/header/DisplayComponent.js:135
 #: src/scripts/blocks/tweet/index.js:91
 msgid "Size"
 msgstr ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:39
 #: src/scripts/blocks/blockquote/index.js:307
-#: src/scripts/blocks/header/DisplayComponent.js:95
+#: src/scripts/blocks/header/DisplayComponent.js:96
 #: src/scripts/blocks/menu/DisplayComponent.js:12
 #: src/scripts/blocks/section/DisplayComponent.js:50
 msgid "White"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: src/scripts/blocks/appearance-options/index.js:42
 #: src/scripts/blocks/blockquote/index.js:301
-#: src/scripts/blocks/header/DisplayComponent.js:98
+#: src/scripts/blocks/header/DisplayComponent.js:99
 msgid "Black"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 #: src/scripts/blocks/call-to-action/DisplayComponent.js:46
 #: src/scripts/blocks/category-list/DisplayComponent.js:61
 #: src/scripts/blocks/columns/DisplayComponent.js:32
-#: src/scripts/blocks/header/DisplayComponent.js:120
+#: src/scripts/blocks/header/DisplayComponent.js:121
 #: src/scripts/blocks/iframe/DisplayComponent.js:83
 #: src/scripts/blocks/link/DisplayComponent.js:53
 #: src/scripts/blocks/menu/DisplayComponent.js:103
@@ -173,7 +173,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Right'
 #: src/scripts/blocks/blockquote/index.js:227
-#: src/scripts/blocks/header/DisplayComponent.js:76
+#: src/scripts/blocks/header/DisplayComponent.js:77
 #: src/scripts/blocks/image/DisplayComponent.js:201
 #: src/scripts/blocks/link/DisplayComponent.js:41
 #: src/scripts/blocks/slider/DisplayComponent.js:37
@@ -189,7 +189,7 @@ msgstr ""
 
 # text alignment. for RTL languages, localise as 'Left'
 #: src/scripts/blocks/blockquote/index.js:233
-#: src/scripts/blocks/header/DisplayComponent.js:83
+#: src/scripts/blocks/header/DisplayComponent.js:84
 #: src/scripts/blocks/image/DisplayComponent.js:208
 #: src/scripts/blocks/link/DisplayComponent.js:47
 #: src/scripts/blocks/slider/DisplayComponent.js:44
@@ -197,7 +197,7 @@ msgid "Right"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:289
-#: src/scripts/blocks/header/DisplayComponent.js:114
+#: src/scripts/blocks/header/DisplayComponent.js:115
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:223
 #: src/scripts/blocks/logo-list/InnerDisplayComponent.js:139
 #: src/scripts/blocks/section/DisplayComponent.js:61
@@ -231,7 +231,7 @@ msgid "(Insert Citation)"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:323
-#: src/scripts/blocks/header/DisplayComponent.js:122
+#: src/scripts/blocks/header/DisplayComponent.js:123
 #: src/scripts/blocks/image/DisplayComponent.js:220
 msgid "Alignment"
 msgstr ""
@@ -269,7 +269,7 @@ msgid "Background"
 msgstr ""
 
 #: src/scripts/blocks/blockquote/index.js:376
-#: src/scripts/blocks/header/DisplayComponent.js:128
+#: src/scripts/blocks/header/DisplayComponent.js:129
 #: src/scripts/blocks/key-facts/index.js:68
 #: src/scripts/blocks/menu/DisplayComponent.js:115
 #: src/scripts/blocks/section/DisplayComponent.js:89
@@ -459,91 +459,78 @@ msgstr ""
 msgid "Edit File"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:103
+#: src/scripts/blocks/header/DisplayComponent.js:104
 #: src/scripts/blocks/image/DisplayComponent.js:389
 msgid "Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:106
+#: src/scripts/blocks/header/DisplayComponent.js:107
 #: src/scripts/blocks/image/DisplayComponent.js:392
 msgid "Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:111
+#: src/scripts/blocks/header/DisplayComponent.js:112
 #: src/scripts/blocks/section/DisplayComponent.js:69
 msgid "Normal"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:140
+#: src/scripts/blocks/header/DisplayComponent.js:141
 #: src/scripts/blocks/image/DisplayComponent.js:387
 msgid "Background Type"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:146
-#: src/scripts/blocks/media-aside/DisplayComponent.js:52
+#: src/scripts/blocks/header/DisplayComponent.js:147
+#: src/scripts/blocks/media-aside/DisplayComponent.js:53
 msgid "Embed url"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:150
+#: src/scripts/blocks/header/DisplayComponent.js:151
 msgid ""
 "Setting this will override the cta link and will now open a modal with the "
 "embed in the hero."
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/header/DisplayComponent.js:153
 #: src/scripts/blocks/section/DisplayComponent.js:112
 msgid "Background Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:152
+#: src/scripts/blocks/header/DisplayComponent.js:153
 msgid "Featured Image"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:155
+#: src/scripts/blocks/header/DisplayComponent.js:156
 msgid "Featured Video"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:174
+#: src/scripts/blocks/header/DisplayComponent.js:175
 msgid "(Header Title)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:183
+#: src/scripts/blocks/header/DisplayComponent.js:184
 msgid "(Header Content)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:194
+#: src/scripts/blocks/header/DisplayComponent.js:195
 msgid "(Call to action)"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:79
+#: src/scripts/blocks/header/DisplayComponent.js:80
 #: src/scripts/blocks/image/DisplayComponent.js:205
 #: src/scripts/blocks/slider/DisplayComponent.js:40
 msgid "Centre"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:89
+#: src/scripts/blocks/header/DisplayComponent.js:90
 msgid "Translucent black"
 msgstr ""
 
-#: src/scripts/blocks/header/DisplayComponent.js:92
+#: src/scripts/blocks/header/DisplayComponent.js:93
 #: src/scripts/blocks/key-facts/index.js:50
 #: src/scripts/blocks/link/DisplayComponent.js:30
 #: src/scripts/blocks/section/DisplayComponent.js:64
 #: src/scripts/packages/components/RepeatableBlockContainer.js:49
 msgid "None"
-msgstr ""
-
-#: src/scripts/blocks/header/PostFeaturedVideo.js:6
-msgid "Set featured video"
-msgstr ""
-
-#: src/scripts/blocks/header/PostFeaturedVideo.js:7
-msgid "Remove featured video"
-msgstr ""
-
-#: src/scripts/blocks/header/PostFeaturedVideo.js:84
-#: src/scripts/blocks/image/DisplayComponent.js:336
-msgid "Replace Video"
 msgstr ""
 
 #: src/scripts/blocks/iframe/DisplayComponent.js:102
@@ -644,6 +631,11 @@ msgstr ""
 msgid "Choose Video"
 msgstr ""
 
+#: src/scripts/blocks/image/DisplayComponent.js:336
+#: src/scripts/packages/editor/PostFeaturedVideo.js:79
+msgid "Replace Video"
+msgstr ""
+
 #: src/scripts/blocks/image/DisplayComponent.js:340
 msgid "Remove Video"
 msgstr ""
@@ -667,7 +659,7 @@ msgstr ""
 #: src/scripts/blocks/key-facts/fact.js:30
 #: src/scripts/blocks/key-facts/index.js:79
 #: src/scripts/blocks/links-with-icons/InnerDisplayComponent.js:268
-#: src/scripts/blocks/media-aside/DisplayComponent.js:83
+#: src/scripts/blocks/media-aside/DisplayComponent.js:84
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:27
 #: src/scripts/blocks/post-list/components/editable/LinkList.js:29
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:48
@@ -676,7 +668,7 @@ msgid "(Insert Title)"
 msgstr ""
 
 #: src/scripts/blocks/key-facts/fact.js:39
-#: src/scripts/blocks/media-aside/DisplayComponent.js:93
+#: src/scripts/blocks/media-aside/DisplayComponent.js:94
 #: src/scripts/blocks/post-list/components/editable/GridItem.js:43
 #: src/scripts/blocks/post-list/components/editable/PostItem.js:64
 #: src/scripts/blocks/post-list/components/editable/SplitGridItem.js:51
@@ -836,23 +828,23 @@ msgstr ""
 msgid "Add a repeatable logo block"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:103
+#: src/scripts/blocks/media-aside/DisplayComponent.js:104
 msgid "(Insert Link text)"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:57
+#: src/scripts/blocks/media-aside/DisplayComponent.js:58
 msgid "Display in modal"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:58
+#: src/scripts/blocks/media-aside/DisplayComponent.js:59
 msgid "Clicking play will open up the video in a modal."
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:62
+#: src/scripts/blocks/media-aside/DisplayComponent.js:63
 msgid "Image/Video Poster"
 msgstr ""
 
-#: src/scripts/blocks/media-aside/DisplayComponent.js:68
+#: src/scripts/blocks/media-aside/DisplayComponent.js:69
 msgid "Video (will override embed)"
 msgstr ""
 
@@ -1196,4 +1188,12 @@ msgstr ""
 
 #: src/scripts/packages/components/PostMediaSelector.js:7
 msgid "Replace Image"
+msgstr ""
+
+#: src/scripts/packages/editor/PostFeaturedVideo.js:6
+msgid "Set featured video"
+msgstr ""
+
+#: src/scripts/packages/editor/PostFeaturedVideo.js:7
+msgid "Remove featured video"
 msgstr ""

@@ -1,5 +1,4 @@
 import classnames from 'classnames';
-import PostFeaturedVideo from './PostFeaturedVideo';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
@@ -16,6 +15,8 @@ const {
   SelectControl,
   TextControl,
 } = wp.components;
+
+const { PostFeaturedVideo } = benenson.editor;
 
 export default class DisplayComponent extends Component {
   state = {

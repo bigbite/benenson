@@ -6,7 +6,7 @@ const { MediaUpload } = wp.editor;
 const DEFAULT_SET_FEATURE_VIDEO_LABEL = __('Set featured video', 'benenson');
 const DEFAULT_REMOVE_FEATURE_VIDEO_LABEL = __('Remove featured video', 'benenson');
 
-class PostFeaturedVideo extends Component {
+export default class PostFeaturedVideo extends Component {
   constructor(...args) {
     super(...args);
 
@@ -103,5 +103,3 @@ class PostFeaturedVideo extends Component {
     </div>);
   }
 }
-
-export default PostFeaturedVideo;
