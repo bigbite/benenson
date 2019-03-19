@@ -7,7 +7,7 @@ import assign from 'lodash-es/assign';
 /**
  * Module-specific
  */
-import BlockEdit from './InnerBlockEdit';
+import DisplayComponent from './InnerDisplayComponent';
 
 /**
  * WordPress
@@ -127,20 +127,20 @@ registerBlockType('benenson/links-with-icons', {
             tagName="div"
             value={ title }
           />
-          { style === 'icon' && <div className={ imgClasses }>
+          { style === 'icon' && (<div className={ imgClasses }>
             <RichText.Content
               className="linksWithIcons-image"
               tagName="img"
               src={ imageURL }
               alt={ imageAlt }
             />
-          </div> }
-          { style === 'text' && <RichText.Content
+          </div>) }
+          { style === 'text' && (<RichText.Content
             className={ txtClasses }
             tagName="div"
             value={ bigtext }
             style={ bigTextCss }
-          /> }
+          />) }
           <RichText.Content
             className="linksWithIcons-body"
             tagName="div"
@@ -196,15 +196,15 @@ registerBlockType('benenson/links-with-icons', {
             tagName="div"
             value={ title }
           />
-          { style === 'icon' && <div className={ imgClasses }>
+          { style === 'icon' && (<div className={ imgClasses }>
             <img className="linksWithIcons-image" src={ imageURL } alt={ imageAlt } />
-          </div> }
-          { style === 'text' && <RichText.Content
+          </div>) }
+          { style === 'text' && (<RichText.Content
             className={ txtClasses }
             tagName="div"
             value={ bigtext }
             style={ bigTextCss }
-          /> }
+          />) }
           <RichText.Content
             className="linksWithIcons-body"
             tagName="div"
@@ -229,7 +229,7 @@ registerBlockType('benenson/links-with-icons', {
     },
   }],
 
-  edit: BlockEdit,
+  edit: DisplayComponent,
 
   save({ attributes }) {
     const {
@@ -304,23 +304,23 @@ registerBlockType('benenson/links-with-icons', {
           value={ title }
         />
         { style === 'icon' && getImageTag() }
-        { style === 'text' && <RichText.Content
+        { style === 'text' && (<RichText.Content
           className={ txtClasses }
           tagName="div"
           value={ bigtext }
           style={ bigTextCss }
-        /> }
+        />) }
         <RichText.Content
           className="linksWithIcons-body"
           tagName="div"
           value={ body }
         />
-        { hasButton && <RichText.Content
+        { hasButton && (<RichText.Content
           className="btn btn--white"
           tagName="a"
           href={ buttonLink }
           value={ buttonText }
-        /> }
+        />) }
       </div>
       <div class="linksWithIcons-spacer"></div>
     </Fragment>);

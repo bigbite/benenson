@@ -56,7 +56,7 @@ export default class PostMediaSelector extends Component {
       });
   }
 
-  onUpdate = async (media) => {
+  handleUpdate = async (media) => {
     if (!media) {
       this.setState({
         media: false,
@@ -77,7 +77,7 @@ export default class PostMediaSelector extends Component {
     });
   };
 
-  onRemove = () => this.onUpdate();
+  handleRemove = () => this.handleUpdate();
 
   render() {
     const {
@@ -91,66 +91,50 @@ export default class PostMediaSelector extends Component {
     } = this.props;
     const { media, loading } = this.state;
 
-    return (
-      <div className="editor-post-featured-image">
-        { !!mediaId &&
+    return (<div className="editor-post-featured-image">
+      { !!mediaId && (<MediaUpload
+        title={ setMediaLabel }
+        onSelect={ this.handleUpdate }
+        allowedTypes={ [mediaType] }
+        modalClass="editor-post-featured-image__media-modal"
+        render={ ({ open }) => (<Button
+          className="editor-post-featured-image__preview"
+          onClick={ open }
+        />) }
+      />) }
+      { !!mediaId && media && !media.isLoading && (<MediaUpload
+        title={ setMediaLabel }
+        onSelect={ this.handleUpdate }
+        allowedTypes={ [mediaType] }
+        modalClass="editor-post-featured-image__media-modal"
+        render={ ({ open }) => (<div>
+          { !loading && mediaType === 'video' && (<video>
+            <source src={ media.source_url || media.url } />
+          </video>) }
+          { !loading && mediaType === 'image' && (<img src={ media.source_url || media.url } />) }
+          { loading && <Spinner /> }
+          <Button onClick={ open } isDefault={ true } isLarge={ true }>
+            { replaceMediaLabel }
+          </Button>
+        </div>) }
+      />) }
+      { !mediaId && (<div>
         <MediaUpload
           title={ setMediaLabel }
-          onSelect={ this.onUpdate }
+          onSelect={ this.handleUpdate }
           allowedTypes={ [mediaType] }
           modalClass="editor-post-featured-image__media-modal"
-          render={ ({ open }) => (
-            <Button className="editor-post-featured-image__preview" onClick={ open }>
-            </Button>
-          ) }
+          render={ ({ open }) => (<Button
+            className="editor-post-featured-image__toggle"
+            onClick={ open }
+          >
+            { setMediaLabel }
+          </Button>) }
         />
-        }
-        { !!mediaId && media && !media.isLoading &&
-        <MediaUpload
-          title={ setMediaLabel }
-          onSelect={ this.onUpdate }
-          allowedTypes={ [mediaType] }
-          modalClass="editor-post-featured-image__media-modal"
-          render={ ({ open }) => (
-            <div>
-              { !loading && mediaType === 'video' && (
-                <video>
-                  <source src={media.source_url || media.url} />
-                </video>
-              ) }
-              { !loading && mediaType === 'image' && (
-                <img src={media.source_url || media.url} />
-              ) }
-
-              { loading && <Spinner /> }
-              <Button onClick={ open } isDefault isLarge>
-                { replaceMediaLabel }
-              </Button>
-            </div>
-          ) }
-        />
-        }
-        { !mediaId &&
-        <div>
-          <MediaUpload
-            title={ setMediaLabel }
-            onSelect={ this.onUpdate }
-            allowedTypes={ [mediaType] }
-            modalClass="editor-post-featured-image__media-modal"
-            render={ ({ open }) => (
-              <Button className="editor-post-featured-image__toggle" onClick={ open }>
-                { setMediaLabel }
-              </Button>
-            ) }
-          />
-        </div>
-        }
-        { !!mediaId &&
-        <Button onClick={this.onRemove} isLink isDestructive>
-          { removeMediaLabel }
-        </Button>
-        }
-      </div>
-    );
+      </div>) }
+      { !!mediaId && (<Button onClick={ this.handleRemove } isLink={ true } isDestructive={ true }>
+        { removeMediaLabel }
+      </Button>) }
+    </div>);
   }
 }

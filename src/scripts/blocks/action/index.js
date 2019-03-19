@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import assign from 'lodash-es/assign';
-import BlockEdit from './BlockEdit';
+import DisplayComponent from './DisplayComponent';
 
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
@@ -63,7 +63,7 @@ registerBlockType('benenson/action-block', {
     },
   }),
 
-  edit: BlockEdit,
+  edit: DisplayComponent,
 
   save({ attributes }) {
     const {

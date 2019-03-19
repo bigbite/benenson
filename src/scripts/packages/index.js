@@ -1,5 +1,6 @@
 import PostFeaturedVideo from './editor/PostFeaturedVideo';
 import PostMediaSelector from './components/PostMediaSelector';
+import RepeatableBlockContainer from './components/RepeatableBlockContainer';
 
 const editor = {
   PostFeaturedVideo,
@@ -7,6 +8,7 @@ const editor = {
 
 const components = {
   PostMediaSelector,
+  RepeatableBlockContainer,
 };
 
 export {

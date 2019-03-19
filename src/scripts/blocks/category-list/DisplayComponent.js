@@ -57,61 +57,56 @@ class DisplayComponent extends Component {
     const { attributes } = this.props;
     const { loading, error, categories = [] } = this.state;
 
-    const controls = (
-        <InspectorControls>
-          <PanelBody title={ __('Options', 'benenson') }>
-            <RangeControl
-              label={__('Maximum number of categories to show')}
-              desc={__('Set to 0 to show all.')}
-              value={attributes.maximum || 0}
-              onChange={this.createUpdateAttribute('maximum')}
-              min={0}
-              max={categories.length}
-            />
-          </PanelBody>
-        </InspectorControls>
-    );
+    const controls = (<InspectorControls>
+      <PanelBody title={ __('Options', 'benenson') }>
+        <RangeControl
+          label={ __('Maximum number of categories to show', 'benenson') }
+          desc={ __('Set to 0 to show all.', 'benenson') }
+          value={ attributes.maximum || 0 }
+          onChange={ this.createUpdateAttribute('maximum') }
+          min={ 0 }
+          max={ categories.length }
+        />
+      </PanelBody>
+    </InspectorControls>);
 
-    return (
-      <Fragment>
-        { controls }
-        <div>
-          <RichText
-            tagName="h3"
-            placeholder={ __('Title', 'benenson') }
-            value={attributes.title}
-            onChange={this.createUpdateAttribute('title')}
-            keepPlaceholderOnFocus={ true }
-            format="string"
-          />
-          <div className="wp-category-container">
-            { loading && (
-              <div>
-                <Spinner />
-                <p>{ __('Loading categories', 'benenson') }</p>
-              </div>
-            ) }
+    return (<Fragment>
+      { controls }
+      <div>
+        <RichText
+          tagName="h3"
+          placeholder={ __('Title', 'benenson') }
+          value={ attributes.title }
+          onChange={ this.createUpdateAttribute('title') }
+          keepPlaceholderOnFocus={ true }
+          format="string"
+        />
+        <div className="wp-category-container">
+          { loading && (<div>
+            <Spinner />
+            <p>{ __('Loading categories', 'benenson') }</p>
+          </div>) }
 
-            { error && (
-              <p>{ __('Something went wrong whilst trying to fetch the categories.', 'benenson') }</p>
-            ) }
+          { error && (<p>
+            { __('Something went wrong whilst trying to fetch the categories.', 'benenson') }
+          </p>) }
 
-            { !loading && !error && categories.length < 1 && (
-              <p>{ __('No categories to show.', 'benenson') }</p>
-            ) }
+          { !loading && !error && categories.length < 1 && (<p>
+            { __('No categories to show.', 'benenson') }
+          </p>) }
 
-            { !loading && !error && categories.length > 0 && (
-              <ul>
-                {
-                  // eslint-disable-next-line max-len
-                  categories.filter((cat, index) => !attributes.maximum || attributes.maximum === 0 || index + 1 <= attributes.maximum).map(category => <li key={category.id}>{category.name}</li>)
-                }
-              </ul>
-            ) }
-          </div>
+          { !loading && !error && categories.length > 0 && (<ul>
+            { categories.filter((cat, index) => (
+              !attributes.maximum ||
+              attributes.maximum === 0 ||
+              index + 1 <= attributes.maximum
+            )).map(category => (<li key={ category.id }>
+              { category.name }
+            </li>)) }
+          </ul>) }
         </div>
-      </Fragment>
-    );
+      </div>
+    </Fragment>);
   }
 }
 

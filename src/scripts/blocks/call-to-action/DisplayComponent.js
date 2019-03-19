@@ -45,7 +45,7 @@ class DisplayComponent extends Component {
       <InspectorControls>
         <PanelBody title={ __('Options', 'benenson') }>
           <SelectControl
-            label={__('Background Style', 'benenson')}
+            label={ __('Background Style', 'benenson') }
             options={ backgroundOptions }
             value={ attributes.background }
             onChange={ this.createUpdateAttribute('background') }

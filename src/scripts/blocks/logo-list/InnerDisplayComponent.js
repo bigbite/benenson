@@ -51,7 +51,7 @@ const sizeMap = {
   // >19: 60
 };
 
-export default class BlockEdit extends Component {
+export default class DisplayComponent extends Component {
   constructor(...params) {
     super(...params);
 
@@ -146,20 +146,24 @@ export default class BlockEdit extends Component {
       value: 'large',
     }]);
 
+    if (style !== 'icon') {
+      return (<div className="logoList">{ this.getOptionalField() }</div>);
+    }
+
     return (<Fragment>
       <InspectorControls>
         <PanelBody>
-          { style === 'icon' && <SelectControl
+          <SelectControl
             label={ __('Icon Size', 'benenson') }
             value={ iconSize }
             onChange={ newSize => setAttributes({ iconSize: newSize }) }
             options={ sizeOptions }
-          /> }
-          { style === 'icon' && <CheckboxControl
+          />
+          <CheckboxControl
             label={ __('Hide Image Credit Display', 'benenson') }
             checked={ uncredited }
             onChange={ newCredit => setAttributes({ uncredited: newCredit }) }
-          /> }
+          />
         </PanelBody>
       </InspectorControls>
       <div className="logoList">

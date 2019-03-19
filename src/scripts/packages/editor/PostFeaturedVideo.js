@@ -33,7 +33,7 @@ export default class PostFeaturedVideo extends Component {
       });
   }
 
-  onUpdateVideo = (media) => {
+  handleUpdateVideo = (media) => {
     if (!media) {
       this.setState({
         media: false,
@@ -50,65 +50,56 @@ export default class PostFeaturedVideo extends Component {
     this.props.onUpdate(media.id);
   };
 
-  onRemoveVideo = () => this.onUpdateVideo(false);
+  handleRemoveVideo = () => this.handleUpdateVideo(false);
 
   render() {
     const { featuredVideoId } = this.props;
     const { media } = this.state;
 
-    return (
-      <div className="editor-post-featured-image">
-        { !!featuredVideoId &&
+    return (<div className="editor-post-featured-image">
+      { !!featuredVideoId && (<MediaUpload
+        title={ DEFAULT_SET_FEATURE_VIDEO_LABEL }
+        onSelect={ this.handleUpdateVideo }
+        allowedTypes={ ['video'] }
+        modalClass="editor-post-featured-image__media-modal"
+        render={ ({ open }) => (
+          <Button className="editor-post-featured-image__preview" onClick={ open }></Button>
+        ) }
+      />) }
+      { !!featuredVideoId && media && !media.isLoading && (<MediaUpload
+        title={ DEFAULT_SET_FEATURE_VIDEO_LABEL }
+        onSelect={ this.handleUpdateVideo }
+        allowedTypes={ ['video'] }
+        modalClass="editor-post-featured-image__media-modal"
+        render={ ({ open }) => (<div>
+          <video>
+            <source src={ media.source_url || media.url } />
+          </video>
+          <Button onClick={ open } isDefault={ true } isLarge={ true }>
+            { __('Replace Video') }
+          </Button>
+        </div>) }
+      />) }
+      { !featuredVideoId && (<div>
         <MediaUpload
           title={ DEFAULT_SET_FEATURE_VIDEO_LABEL }
-          onSelect={ this.onUpdateVideo }
+          onSelect={ this.handleUpdateVideo }
           allowedTypes={ ['video'] }
           modalClass="editor-post-featured-image__media-modal"
           render={ ({ open }) => (
-            <Button className="editor-post-featured-image__preview" onClick={ open }>
+            <Button className="editor-post-featured-image__toggle" onClick={ open }>
+              { DEFAULT_SET_FEATURE_VIDEO_LABEL }
             </Button>
           ) }
         />
-        }
-        { !!featuredVideoId && media && !media.isLoading &&
-        <MediaUpload
-          title={ DEFAULT_SET_FEATURE_VIDEO_LABEL }
-          onSelect={ this.onUpdateVideo }
-          allowedTypes={ ['video'] }
-          modalClass="editor-post-featured-image__media-modal"
-          render={ ({ open }) => (
-            <div>
-              <video>
-                <source src={media.source_url || media.url} />
-              </video>
-              <Button onClick={ open } isDefault isLarge>
-                { __('Replace Video') }
-              </Button>
-            </div>
-          ) }
-        />
-        }
-        { !featuredVideoId &&
-        <div>
-          <MediaUpload
-            title={ DEFAULT_SET_FEATURE_VIDEO_LABEL }
-            onSelect={ this.onUpdateVideo }
-            allowedTypes={ ['video'] }
-            modalClass="editor-post-featured-image__media-modal"
-            render={ ({ open }) => (
-              <Button className="editor-post-featured-image__toggle" onClick={ open }>
-                { DEFAULT_SET_FEATURE_VIDEO_LABEL }
-              </Button>
-            ) }
-          />
-        </div>
-        }
-        { !!featuredVideoId &&
-        <Button onClick={this.onRemoveVideo} isLink isDestructive>
-          { DEFAULT_REMOVE_FEATURE_VIDEO_LABEL }
-        </Button>
-        }
-      </div>
-    );
+      </div>) }
+      { !!featuredVideoId && (<Button
+        onClick={ this.handleRemoveVideo }
+        isLink={ true }
+        isDestructive={ true }
+      >
+        { DEFAULT_REMOVE_FEATURE_VIDEO_LABEL }
+      </Button>) }
+    </div>);
   }
 }
