@@ -2,7 +2,6 @@
  * Third-party
  */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 import pick from 'lodash-es/pick';
 
@@ -16,40 +15,12 @@ const {
   Button,
   CheckboxControl,
   PanelBody,
-  RangeControl,
   SelectControl,
 } = wp.components;
 const {
   InspectorControls,
-  InnerBlocks,
   MediaUpload,
-  MediaUploadCheck,
-  RichText,
-  URLInputButton,
 } = wp.editor;
-
-/**
- * Module-specific
- */
-// because I can't do maths :(
-const sizeMap = {
-  // <6: 120
-  6: 116,
-  7: 112,
-  8: 108,
-  9: 104,
-  10: 100,
-  11: 96,
-  12: 92,
-  13: 88,
-  14: 84,
-  15: 80,
-  16: 76,
-  17: 72,
-  18: 68,
-  19: 64,
-  // >19: 60
-};
 
 export default class DisplayComponent extends Component {
   constructor(...params) {
@@ -88,16 +59,7 @@ export default class DisplayComponent extends Component {
 
   getOptionalField = () => {
     const { attributes, setAttributes } = this.props;
-    const {
-      style = 'icon',
-      underlined = false,
-      imageID,
-      imageAlt,
-      imageURL,
-      bigtext,
-      bigTextCss,
-    } = attributes;
-
+    const { imageID } = attributes;
 
     return (<MediaUpload
       className="logoList-upload"
@@ -122,17 +84,11 @@ export default class DisplayComponent extends Component {
   }
 
   render() {
-    const { attributes, setAttributes, className } = this.props;
+    const { attributes, setAttributes } = this.props;
     const {
       style = 'icon',
-      hasButton = true,
       iconSize = 'small',
-      underlined = false,
       uncredited = false,
-      title,
-      body,
-      buttonText,
-      buttonLink,
     } = attributes;
 
     const sizeOptions = applyFilters('benenson.block.logoGroup.sizeOptions', [{
