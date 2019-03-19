@@ -85,7 +85,7 @@ registerBlockType('benenson/key-facts', {
         />
         <InnerBlocks
           template={ getLayoutTemplate(quantity) }
-          templateLock="insert"
+          templateLock="all"
           allowedBlocks={ ALLOWED_BLOCKS }
         />
       </div>
@@ -104,7 +104,7 @@ registerBlockType('benenson/key-facts', {
 
     return (<aside className={ classes } aria-labelledby={ label }>
       <h2 id={ label } className="factBlock-title" aria-hidden="true">{ title }</h2>
-      <ol><InnerBlocks.Content/></ol>
+      <ol><InnerBlocks.Content /></ol>
     </aside>);
   },
 });

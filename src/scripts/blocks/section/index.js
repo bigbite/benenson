@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
 import DisplayComponent from './DisplayComponent';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
@@ -63,15 +63,20 @@ registerBlockType('benenson/block-section', {
       backgroundPosition: 'center',
     };
 
-    return (<section id={attributes.id} className={ classNames({
-        section: true,
-        'section--tinted': attributes.background === 'grey',
-        [`section--${attributes.padding}`]: !!attributes.padding,
-        [`section--${attributes.width}`]: !!attributes.width,
-      }) } style={ attributes.mediaUrl ? styles : null }>
-        <div className="container">
-          <InnerBlocks.Content />
-        </div>
-      </section>);
+    const classes = classnames('section', {
+      'section--tinted': attributes.background === 'grey',
+      [`section--${attributes.padding}`]: !!attributes.padding,
+      [`section--${attributes.width}`]: !!attributes.width,
+    });
+
+    return (<section
+      id={ attributes.id }
+      className={ classes }
+      style={ attributes.mediaUrl ? styles : null }
+    >
+      <div className="container">
+        <InnerBlocks.Content />
+      </div>
+    </section>);
   },
 });

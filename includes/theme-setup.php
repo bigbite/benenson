@@ -13,7 +13,7 @@ if ( ! function_exists( 'benenson_setup_default_sidebars' ) ) {
 			return;
 		}
 
-		$sidebar_posts = new \WP_Query( [
+		$sidebar_posts = new WP_Query( [
 			'post_type' => 'sidebar',
 			'orderby'   => 'post_title',
 			'order'     => 'ASC',
@@ -65,7 +65,7 @@ if ( ! function_exists( 'benenson_create_navs' ) ) {
 			$locations = get_theme_mod( 'nav_menu_locations' );
 
 			$locations['main-menu'] = $menu_id;
-			set_theme_mod ( 'nav_menu_locations', $locations );
+			set_theme_mod( 'nav_menu_locations', $locations );
 		}
 
 		// Check if the menu exists
@@ -79,7 +79,7 @@ if ( ! function_exists( 'benenson_create_navs' ) ) {
 
 			$locations['footer-navigation'] = $menu_id;
 
-			set_theme_mod ( 'nav_menu_locations', $locations );
+			set_theme_mod( 'nav_menu_locations', $locations );
 		}
 	}
 }

@@ -16,7 +16,33 @@ const {
   PanelBody,
   SelectControl,
   ToggleControl,
+  ColorPicker,
+  Button,
 } = wp.components;
+const { PostMediaSelector } = benenson.components;
+const oldAttributes = {
+  align: {
+    type: 'string',
+  },
+  size: {
+    type: 'string',
+  },
+  colour: {
+    type: 'string',
+  },
+  capitalise: {
+    type: 'boolean',
+  },
+  lined: {
+    type: 'boolean',
+  },
+  content: {
+    type: 'string',
+  },
+  citation: {
+    type: 'string',
+  },
+};
 
 registerBlockType('benenson/quote', {
   title: __('Blockquote', 'benenson'),
@@ -29,29 +55,26 @@ registerBlockType('benenson/quote', {
   supports: {
     className: false,
   },
-  attributes: {
-    align: {
+  attributes: assign({}, oldAttributes, {
+    subText: {
       type: 'string',
     },
-    size: {
+    backgroundId: {
+      type: 'integer',
+    },
+    backgroundUrl: {
       type: 'string',
     },
-    colour: {
+    backgroundColor: {
       type: 'string',
     },
-    capitalise: {
-      type: 'boolean',
+    logoId: {
+      tyoe: 'string',
     },
-    lined: {
-      type: 'boolean',
-    },
-    content: {
+    logoUrl: {
       type: 'string',
     },
-    citation: {
-      type: 'string',
-    },
-  },
+  }),
 
   transforms: {
     from: [{
@@ -154,6 +177,46 @@ registerBlockType('benenson/quote', {
     }],
   },
 
+  deprecated: [{
+    attributes: oldAttributes,
+    save({ attributes }) {
+      const {
+        align = '',
+        size = '',
+        colour = '',
+        capitalise = false,
+        lined = true,
+        content = '',
+        citation = '',
+      } = attributes;
+
+      const classes = classnames('blockquote', {
+        [`align-${align}`]: !!align,
+        [`is-${size}`]: !!size,
+        [`is-${colour}`]: !!colour,
+        'is-capitalised': capitalise,
+        'is-lined': lined,
+      });
+
+      const quoteStyle = {};
+      if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
+        const {
+          openDoubleQuote,
+          closeDoubleQuote,
+          openSingleQuote,
+          closeSingleQuote,
+        } = window.benensonCoreI18n;
+
+        quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
+      }
+
+      return (<blockquote className={ classes } style={ quoteStyle }>
+        <RichText.Content tagName="p" value={ content } />
+        <RichText.Content tagName="cite" value={ citation } />
+      </blockquote>);
+    },
+  }],
+
   edit: class extends Component {
     static isRightToLeft = document.documentElement.getAttribute('dir') === 'rtl';
     static hasI18n = Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n');
@@ -200,15 +263,27 @@ registerBlockType('benenson/quote', {
         lined = true,
         content = '',
         citation = '',
+        subText = '',
+        backgroundId = null,
+        backgroundUrl = '',
+        backgroundColor = '',
+        logoId = null,
+        logoUrl = '',
       } = attributes;
 
       const classes = classnames('blockquote', {
         [`align-${align}`]: !!align,
         [`is-${size}`]: !!size,
         [`is-${colour}`]: !!colour,
+        'is-background': backgroundUrl !== '' || backgroundColor !== '',
         'is-capitalised': capitalise,
         'is-lined': lined,
       });
+
+      const backgroundStyles = {
+        backgroundColor: backgroundColor !== '' ? backgroundColor : null,
+        backgroundImage: backgroundUrl !== '' ? `url('${backgroundUrl}')` : null,
+      };
 
       const sizeOptions = applyFilters('benenson.block.blockquote.sizeOptions', [{
         label: __('Small', 'benenson'),
@@ -233,6 +308,14 @@ registerBlockType('benenson/quote', {
         value: 'white',
       }]);
 
+      const heading = logoUrl ? (<img className="blockquote-image" src={ logoUrl } />) : (<RichText
+        tagName="cite"
+        placeholder={ __('(Insert Citation)', 'benenson') }
+        value={ citation }
+        keepPlaceholderOnFocus={ true }
+        onChange={ newCitation => setAttributes({ citation: newCitation }) }
+      />);
+
       return (<Fragment>
         <InspectorControls>
           <PanelBody>
@@ -254,37 +337,79 @@ registerBlockType('benenson/quote', {
               onChange={ newColour => setAttributes({ colour: newColour }) }
               options={ colourOptions }
             />
-          { !this.isRightToLeft && <ToggleControl
-            label={ __('Capitalise', 'benenson') }
-            help={ __('Capitalise the content.', 'benenson') }
-            checked={ capitalise }
-            onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
-          /> }
-          <ToggleControl
-            label={ __('Line', 'benenson') }
-            help={ __('Toggle display of line embellishment.', 'benenson') }
-            checked={ lined }
-            onChange={ newLine => setAttributes({ lined: newLine }) }
-          />
+            { !this.isRightToLeft && (<ToggleControl
+              label={ __('Capitalise', 'benenson') }
+              help={ __('Capitalise the content.', 'benenson') }
+              checked={ capitalise }
+              onChange={ newCaps => setAttributes({ capitalise: newCaps }) }
+            />) }
+            <ToggleControl
+              label={ __('Line', 'benenson') }
+              help={ __('Toggle display of line embellishment.', 'benenson') }
+              checked={ lined }
+              onChange={ newLine => setAttributes({ lined: newLine }) }
+            />
+          </PanelBody>
+          <PanelBody title={ __('Image citation', 'benenson') }>
+            <p>{ __('This will override any citation text.', 'benenson') }</p>
+            <PostMediaSelector
+              onUpdate={ (media) => {
+                setAttributes({
+                  logoUrl: media ? media.source_url : '',
+                  logoId: media ? media.id : null,
+                });
+              } }
+              mediaId={ logoId }
+            />
+          </PanelBody>
+          <PanelBody title={ __('Background', 'benenson') }>
+            <PostMediaSelector
+              onUpdate={ (media) => {
+                setAttributes({
+                  backgroundUrl: media ? media.source_url : '',
+                  backgroundId: media ? media.id : null,
+                });
+              } }
+              mediaId={ backgroundId }
+            />
+          </PanelBody>
+          <PanelBody title={ __('Background Colour', 'benenson') }>
+            <ColorPicker
+              color={ backgroundColor }
+              onChangeComplete={ color => setAttributes({ backgroundColor: color.hex }) }
+              disableAlpha={ true }
+            />
+            <Button
+              className="components-button is-button is-default is-large"
+              onClick={ () => setAttributes({ backgroundColor: '' }) }
+            >
+              { __('Remove background colour', 'benenson') }
+            </Button>
           </PanelBody>
         </InspectorControls>
         <style>{ this.getQuoteStyles() }</style>
-        <div className={ classes }>
-          <div><RichText
-            tagName="p"
-            placeholder={ __('(Insert Quote Text)', 'benenson') }
-            value={ content }
-            formattingControls={ [] }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newContent => setAttributes({ content: newContent }) }
-          /></div>
-          <div><RichText
-            tagName="cite"
-            placeholder={ __('(Insert Citation)', 'benenson') }
-            value={ citation }
-            keepPlaceholderOnFocus={ true }
-            onChange={ newCitation => setAttributes({ citation: newCitation }) }
-          /></div>
+        <div className={ classes } style={ backgroundStyles }>
+          <div>
+            <RichText
+              tagName="p"
+              placeholder={ __('(Insert Quote Text)', 'benenson') }
+              value={ content }
+              formattingControls={ [] }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newContent => setAttributes({ content: newContent }) }
+            />
+          </div>
+          <div>{ heading }</div>
+          <div>
+            <RichText
+              tagName="div"
+              className="blockquote-subText"
+              placeholder={ __('(Insert Subtext)', 'benenson') }
+              value={ subText }
+              keepPlaceholderOnFocus={ true }
+              onChange={ newSubText => setAttributes({ subText: newSubText }) }
+            />
+          </div>
         </div>
       </Fragment>);
     }
@@ -299,17 +424,25 @@ registerBlockType('benenson/quote', {
       lined = true,
       content = '',
       citation = '',
+      subText = '',
+      backgroundUrl = '',
+      backgroundColor = '',
+      logoUrl = '',
     } = attributes;
 
     const classes = classnames('blockquote', {
       [`align-${align}`]: !!align,
       [`is-${size}`]: !!size,
       [`is-${colour}`]: !!colour,
+      'is-background': backgroundUrl !== '' || backgroundColor !== '',
       'is-capitalised': capitalise,
       'is-lined': lined,
     });
 
-    const quoteStyle = {};
+    const quoteStyle = {
+      backgroundColor: backgroundColor !== '' ? backgroundColor : null,
+      backgroundImage: backgroundUrl !== '' ? `url('${backgroundUrl}')` : null,
+    };
     if (Object.prototype.hasOwnProperty.call(window, 'benensonCoreI18n')) {
       const {
         openDoubleQuote,
@@ -321,9 +454,13 @@ registerBlockType('benenson/quote', {
       quoteStyle.quotes = `"${openDoubleQuote}" "${closeDoubleQuote}" "${openSingleQuote}" "${closeSingleQuote}";`;
     }
 
+    const text = subText !== '' ? <RichText.Content tagName="span" className="blockquote-subText" value={ subText } /> : null;
+    const citationElement = logoUrl !== '' ? <img className="blockquote-image" src={ logoUrl } /> : <RichText.Content tagName="cite" value={ citation } />;
+
     return (<blockquote className={ classes } style={ quoteStyle }>
       <RichText.Content tagName="p" value={ content } />
-      <RichText.Content tagName="cite" value={ citation } />
+      { citationElement }
+      { text }
     </blockquote>);
   },
 });
