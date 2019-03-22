@@ -2,6 +2,7 @@ root = true
 
 [*]
 end_of_line = lf
+indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
 
@@ -11,7 +12,6 @@ trim_trailing_whitespace = false
 [*.{js,css,scss}]
 charset = utf-8
 indent_style = space
-indent_size = 2
 
 [*.php]
 indent_style = tab
@@ -19,4 +19,3 @@ indent_size = 4
 
 [*.json]
 indent_style = space
-indent_size = 2

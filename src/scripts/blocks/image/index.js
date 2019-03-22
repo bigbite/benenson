@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import BlockEdit from './BlockEdit';
+import DisplayComponent from './DisplayComponent';
 
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
@@ -129,7 +129,13 @@ registerBlockType('benenson/image-block', {
             <div className="imageBlock-title">{ title }</div>
             <div className="imageBlock-content"><RichText.Content tagName="p" value={ content } /></div>
             <div className="imageBlock-buttonWrapper">
-            { buttons.map(button => <a className="btn btn--white" href={ button.url }>{ button.text }</a>) }
+              { buttons.map((button, index) => (<a
+                className="btn btn--white"
+                href={ button.url }
+                key={ index }
+              >
+                { button.text }
+              </a>)) }
             </div>
           </div> : <div className="imageBlock-overlay"></div> }
         </div>
@@ -140,14 +146,27 @@ registerBlockType('benenson/image-block', {
     const block = (<Fragment>
       <div className={ classes }>
         { !type && <img className="imageBlock-image" src={ encodeURI(imageURL) } /> }
-        { type === 'video' && <video className="imageBlock-video" autoplay loop muted><source src={ encodeURI(videoURL) } /></video> }
-        { hasOverlay && <div className="imageBlock-overlay">
+        { type === 'video' && (<video
+          className="imageBlock-video"
+          autoplay={ true }
+          loop={ true }
+          muted={ true }
+        >
+          <source src={ encodeURI(videoURL) } />
+        </video>) }
+        { hasOverlay && (<div className="imageBlock-overlay">
           <div className="imageBlock-title">{ title }</div>
           <div className="imageBlock-content"><RichText.Content tagName="p" value={ content } /></div>
           <div className="imageBlock-buttonWrapper">
-            { buttons.map(button => <a className="btn btn--white" href={ button.url }>{ button.text }</a>) }
+            { buttons.map((button, index) => (<a
+              className="btn btn--white"
+              href={ button.url }
+              key={ index }
+            >
+              { button.text }
+            </a>)) }
           </div>
-        </div> }
+        </div>) }
       </div>
       { caption && <div className={ capClasses }>{ caption }</div> }
     </Fragment>);
@@ -162,5 +181,5 @@ registerBlockType('benenson/image-block', {
 
     return (<div className={ wrapperClasses }>{ block }</div>);
   },
-  edit: BlockEdit,
+  edit: DisplayComponent,
 });

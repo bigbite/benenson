@@ -81,19 +81,19 @@ export default class ImageBlockEdit extends Component {
     });
   }
 
-  removeImage = () => {
+  handleRemoveImage = () => {
     this.setState({ image: {} });
     this.props.setAttributes({ imageID: 0, imageURL: '' });
   }
 
   updateVideo = (media) => {
-    this.removeVideo();
+    this.handleRemoveVideo();
 
     this.setState({ video: media });
     this.props.setAttributes({ videoID: media.id, videoURL: media.source_url || media.url });
   }
 
-  removeVideo = () => {
+  handleRemoveVideo = () => {
     this.setState({ video: {} });
     this.props.setAttributes({ videoID: 0, videoURL: '' });
   }
@@ -147,11 +147,11 @@ export default class ImageBlockEdit extends Component {
         />
       </div>
       <div className="linkList-options">
-        { buttons.length > 1 && <IconButton
+        { buttons.length > 1 && (<IconButton
           icon="no-alt"
           label={ __('Remove Button', 'benenson') }
           onClick={ () => this.removeButton(index) }
-        /> }
+        />) }
         <URLInputButton
           url={ buttons[index].url }
           onChange={ url => this.updateButtonAttribute(index, 'url', url) }
@@ -237,7 +237,7 @@ export default class ImageBlockEdit extends Component {
       { imageID ? <IconButton
         icon="no-alt"
         label={ __('Remove Image', 'benenson') }
-        onClick={ this.removeImage }
+        onClick={ this.handleRemoveImage }
       /> : <MediaUpload
         allowedTypes={ ['image'] }
         value={ imageID }
@@ -290,8 +290,8 @@ export default class ImageBlockEdit extends Component {
         onChange={ newContent => setAttributes({ content: newContent }) }
       />
       <div className="imageBlock-buttonsContainer">
-      { buttons.map((button, index) => this.createButton(index, button)) }
-      { buttons.length < 1 && this.createButton(0) }
+        { buttons.map((button, index) => this.createButton(index, button)) }
+        { buttons.length < 1 && this.createButton(0) }
         <IconButton
           icon="plus"
           label={ __('Add Button', 'benenson') }
@@ -333,10 +333,10 @@ export default class ImageBlockEdit extends Component {
         modalClass="editor-post-featured-image__media-modal"
         render={ ({ open }) => (<div>
           <video><source src={ videoURL } /></video>
-          <Button onClick={ open } isDefault isLarge>{ __('Replace Video', 'benenson') }</Button>
+          <Button onClick={ open } isDefault={ true } isLarge={ true }>{ __('Replace Video', 'benenson') }</Button>
         </div>) }
       />
-      <Button onClick={ this.removeVideo } isLink isDestructive>
+      <Button onClick={ this.handleRemoveVideo } isLink={ true } isDestructive={ true }>
         { __('Remove Video', 'benenson') }
       </Button>
     </PanelBody>);

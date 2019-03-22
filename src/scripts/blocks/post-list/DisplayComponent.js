@@ -28,8 +28,6 @@ class DisplayComponent extends Component {
       keyPrefix: Math.random().toString(36).substring(7),
     };
 
-    this.props.styleOptions = [];
-
     this.range = createRange(1, 8);
   }
 
@@ -41,15 +39,15 @@ class DisplayComponent extends Component {
     * @returns {function(*): *}
     */
   createUpdateAttribute = key => value => this.props.setAttributes({ [key]: value });
-  createUpdateAttributeWithFilter =
-    (key, filter) =>
-      value => this.props.setAttributes({ [key]: filter(value) });
+  createUpdateAttributeWithFilter = (key, filter) => value => this.props.setAttributes({
+    [key]: filter(value),
+  });
 
   /**
     * Toggle the preview state for the 'selection' style.
     * @returns {*}
     */
-  togglePreview = () => this.setState({
+  handleTogglePreview = () => this.setState({
     preview: !this.state.preview,
   });
 
@@ -101,66 +99,69 @@ class DisplayComponent extends Component {
             value={ attributes.type }
             onChange={ this.createUpdateAttribute('type') }
           />
-          { attributes.type === 'category' && <label>
-            { __('Category:', 'benenson') }<br/>
+          { attributes.type === 'category' && (<label>
+            { __('Category:', 'benenson') }
+            <br />
             <CategorySelect
               value={ attributes.category }
               onChange={ this.createUpdateAttribute('category') }
-            /><br/>
-          </label> }
-          { attributes.type === 'category' && <RangeControl
+            />
+            <br />
+          </label>) }
+          { attributes.type === 'category' && (<RangeControl
             label={ __('Number of posts to show:', 'benenson') }
             min={ quantityOptions.min }
             max={ quantityOptions.max }
             value={ attributes.amount || 3 }
             onChange={ this.createUpdateAttributeWithFilter('amount', this.range) }
-          /> }
-            { attributes.type === 'category' && <ToggleControl
-              label={ __('Use related categories where supported', 'benenson') }
-              checked={ attributes.categoryRelated }
-              onChange={ this.createUpdateAttribute('categoryRelated') }
-            /> }
-            { attributes.type === 'select' && <ToggleControl
-              label={ __('Display excerpt', 'benenson') }
-              checked={ attributes.displayExcerpt }
-              onChange={ this.createUpdateAttribute('displayExcerpt') }
-            /> }
-            { attributes.type === 'select' && (<div>
-              <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') }</label>
-              <RichText
-                name="editorButtonText"
-                className="editorButtonText"
-                placeholder={ __('(CTA Text)', 'benenson') }
-                value={ attributes.ctaText }
-                keepPlaceholderOnFocus={ true }
-                onChange={ this.createUpdateAttribute('ctaText') }
-              /></div>) }
-          { attributes.type === 'select' && <button onClick={ this.togglePreview }>
+          />) }
+          { attributes.type === 'category' && (<ToggleControl
+            label={ __('Use related categories where supported', 'benenson') }
+            checked={ attributes.categoryRelated }
+            onChange={ this.createUpdateAttribute('categoryRelated') }
+          />) }
+          { attributes.type === 'select' && (<ToggleControl
+            label={ __('Display excerpt', 'benenson') }
+            checked={ attributes.displayExcerpt }
+            onChange={ this.createUpdateAttribute('displayExcerpt') }
+          />) }
+          { attributes.type === 'select' && (<div>
+            <label htmlFor="editorButtonText">{ __('Button Text:', 'benenson') }</label>
+            <RichText
+              name="editorButtonText"
+              className="editorButtonText"
+              placeholder={ __('(CTA Text)', 'benenson') }
+              value={ attributes.ctaText }
+              keepPlaceholderOnFocus={ true }
+              onChange={ this.createUpdateAttribute('ctaText') }
+            />
+          </div>) }
+          { attributes.type === 'select' && (<button onClick={ this.handleTogglePreview }>
             { this.state.preview ? __('Hide Preview', 'benenson') : __('Show Preview', 'benenson') }
-          </button> }
+          </button>) }
         </PanelBody>
       </InspectorControls>
       <div>
-        { attributes.type === 'category' && <DisplayCategories
+        { attributes.type === 'category' && (<DisplayCategories
           amount={ attributes.amount || 3 }
           category={ attributes.category }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
-        /> }
-        { attributes.type === 'custom' && <DisplayCustom
+        />) }
+        { attributes.type === 'custom' && (<DisplayCustom
           setAttributes={ this.props.setAttributes }
           custom={ attributes.custom || [] }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
-        /> }
-        { attributes.type === 'select' && <DisplaySelect
+        />) }
+        { attributes.type === 'select' && (<DisplaySelect
           setAttributes={ this.props.setAttributes }
           selectedPosts={ attributes.selectedPosts || [] }
           preview={ this.state.preview }
           style={ attributes.style }
           prefix={ this.state.keyPrefix }
           ctaText={ attributes.ctaText }
-        /> }
+        />) }
       </div>
     </Fragment>);
   }

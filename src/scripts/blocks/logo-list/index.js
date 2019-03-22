@@ -6,15 +6,16 @@ import classnames from 'classnames';
 /**
  * Module-specific
  */
-import BlockEdit from './BlockEdit';
 import './InnerBlock';
 
 /**
  * WordPress
  */
 const { __ } = wp.i18n;
-const { createBlock, registerBlockType } = wp.blocks;
+const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
+
+const { RepeatableBlockContainer } = benenson.components;
 
 registerBlockType('benenson/logos-block', {
   title: __('Logo Group', 'benenson'),
@@ -38,12 +39,17 @@ registerBlockType('benenson/logos-block', {
     },
   },
 
-  edit: BlockEdit,
+  edit: class extends RepeatableBlockContainer {
+    BLOCKNAME = 'logoGroup';
+    CLASSNAME = 'logoList';
+    ALLOWED_BLOCKS = ['benenson/logo'];
+  },
 
   save({ attributes, className }) {
     const {
-      quantity, orientation = 'horizontal', backgroundColor, hideLines,
+      quantity, orientation = 'horizontal', backgroundColor,
     } = attributes;
+
     const classes = classnames('logoList', `is-${orientation}`, `has-${quantity}-items`, {
       'has-background': !!backgroundColor,
       [`has-${backgroundColor}-background-color`]: !!backgroundColor,
@@ -51,7 +57,7 @@ registerBlockType('benenson/logos-block', {
     });
 
     return (<div className={ classes }>
-      <InnerBlocks.Content/>
+      <InnerBlocks.Content />
     </div>);
   },
 });

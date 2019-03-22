@@ -6,14 +6,14 @@ import classnames from 'classnames';
 /**
  * Module-specific
  */
-import BlockEdit from './BlockEdit';
+import DisplayComponent from './DisplayComponent';
 import './InnerBlock';
 
 /**
  * WordPress
  */
 const { __ } = wp.i18n;
-const { createBlock, registerBlockType } = wp.blocks;
+const { registerBlockType } = wp.blocks;
 const { InnerBlocks } = wp.editor;
 
 registerBlockType('benenson/repeatable-block', {
@@ -23,6 +23,9 @@ registerBlockType('benenson/repeatable-block', {
   category: 'benenson',
   supports: {
     className: false,
+    benenson: {
+      repeatable: true,
+    },
   },
   attributes: {
     backgroundColor: {
@@ -42,7 +45,7 @@ registerBlockType('benenson/repeatable-block', {
     },
   },
 
-  edit: BlockEdit,
+  edit: DisplayComponent,
 
   save({ attributes, className }) {
     const {
@@ -56,7 +59,7 @@ registerBlockType('benenson/repeatable-block', {
     });
 
     return (<div className={ classes }>
-      <InnerBlocks.Content/>
+      <InnerBlocks.Content />
     </div>);
   },
 });

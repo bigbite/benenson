@@ -37,6 +37,7 @@ const LinkItem = props => (<li>
       />
     </h3>
     <div className="linkList-options">
+      { /* eslint-disable react/jsx-handler-names */ }
       <IconButton onClick={ props.createRemove } icon="trash" />
     </div>
   </article>
