@@ -35,10 +35,9 @@ _bump() {
 
     # bump it
     case "$bumptype" in
-        major) newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=++v[1]"."v[2]"."v[3]}1');;
-        minor) newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=v[1]"."++v[2]"."v[3]}1');;
-        patch) newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=v[1]"."v[2]"."++v[3]}1');;
-        *)     newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=v[1]"."v[2]"."++v[3]}1');;
+        major)   newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=++v[1]"."v[2]"."v[3]}1');;
+        minor)   newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=v[1]"."++v[2]"."v[3]}1');;
+        patch|*) newversion=$(echo "$oldversion" | awk '{split($NF,v,/[.]/); $NF=v[1]"."v[2]"."++v[3]}1');;
     esac
 
     # escape versions for use in sed
