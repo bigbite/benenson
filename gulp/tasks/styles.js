@@ -38,7 +38,7 @@ transforms.push(postcssBanner({ banner: `
 	Theme Name: Benenson
 	Theme URI: https://benenson.co
 	Description: Named after the founder of the human rights group, Amnesty International, Benenson is an open-source WordPress theme built using Gutenberg
-	Version: 1.0.4
+	Version: 1.1.0
   Requires at least: WordPress 4.9.8
 	Author: Big Bite Creative
 	Author URI: https://bigbitecreative.com
