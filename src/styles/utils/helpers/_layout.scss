@@ -8,10 +8,20 @@
 /**
  * Floats
  */
-.u-floatLeft {
+.u-floatLeft,
+.alignleft {
   float: left !important;
 }
 
-.u-floatRight {
+.u-floatRight,
+.alignright {
   float: right !important;
+}
+
+.alignleft {
+  margin: 5px 5px 5px 0;
+}
+
+.alignright {
+  margin: 5px 0 5px 5px;
 }
