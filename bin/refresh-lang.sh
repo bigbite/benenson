@@ -79,7 +79,7 @@ find . -name "*.php" | grep -vi '^\.\/\.git' | xargs xgettext \
   --language=PHP \
   --output=./languages/_benenson.pot \
   --force-po \
-  --add-location=full \
+  --add-location \
   --from-code=UTF-8 \
   --foreign-user \
   --copyright-holder='' \
