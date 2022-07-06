@@ -50,7 +50,7 @@ add_action( 'admin_enqueue_scripts', 'array_reverse_polyfill' );
  */
 if ( ! function_exists( 'benenson_styles' ) ) {
 	function benenson_styles() {
-		wp_enqueue_style( 'global-styles', get_theme_file_uri( '/style.css' ), [], '1.1.0', 'all' );
+		wp_enqueue_style( 'theme-styles', get_theme_file_uri( '/style.css' ), [], '1.1.0', 'all' );
 		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,600,700,700i,900,900i', [], '1.1.0' );
 
 		if ( is_singular( 'post' ) || ! is_page_template( 'templates/without-sidebar' ) ) {
