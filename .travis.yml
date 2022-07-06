@@ -5,7 +5,7 @@ cache:
   - "$HOME/.yarn"
   - "./node_modules"
 before_install:
-- composer self-update --rollback
+- composer self-update 1.10.26
 - nvm install 12
 - nvm use 12
 - travis_retry yarn
