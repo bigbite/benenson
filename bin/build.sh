@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+nvm use 10
+
 yarn \
 && yarn build \
 && yarn lang \

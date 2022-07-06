@@ -24,8 +24,16 @@ jobs:
     php: 7.3
     script:
     - "./bin/lint.sh"
+  - stage: lint
+    php: 7.4
+    script:
+    - "./bin/lint.sh"
+  - stage: lint
+    php: 8.0
+    script:
+    - "./bin/lint.sh"
   - stage: deploy
-    php: 7.2
+    php: 7.4
     script:
     - "./bin/build.sh"
     if: branch = master
