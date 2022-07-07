@@ -23,7 +23,7 @@ $footer_section = [
 			<?php if ( $footer_section['title'] || $footer_section['content'] ) : ?>
 				<li class="page-footerSection page-footerSection--large">
 				<?php if ( $footer_section['title'] ) : ?>
-					<a><?php echo esc_attr( $footer_section['title'] ); ?></a>
+					<a><?php echo esc_html( $footer_section['title'] ); ?></a>
 				<?php endif; ?>
 
 				<?php if ( $footer_section['content'] ) : ?>

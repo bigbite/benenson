@@ -20,7 +20,7 @@ get_header();
 			<div class="authorMeta">
 				<h1><?php echo esc_html( $author_name ); ?></h1>
 				<?php if ( isset( $author_image ) && ! empty( $author_image ) ) : ?>
-					<img class="authorMeta-image" src="<?php echo esc_html( $author_image ); ?>" alt="Photo of <?php echo esc_html( $author_name ); ?>">
+					<img class="authorMeta-image" src="<?php echo esc_url( $author_image ); ?>" alt="Photo of <?php echo esc_attr( $author_name ); ?>">
 				<?php endif; ?>
 			</div>
 

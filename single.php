@@ -39,13 +39,13 @@ if ( benenson_post_has_header() ) {
 				<?php $term_link = get_term_link( $main_category, 'category' ); ?>
 				<a class="btn btn--white has-icon" aria-label="<?php echo esc_attr( sprintf( /* translators: Link to return to all posts of category %s */ __( 'Back to %s', 'benenson' ), $main_category->name ) ); ?>" href="<?php echo esc_url( is_wp_error( $term_link ) ? home_url() : $term_link ); ?>">
 					<span class="icon-arrow-left"></span>
-					<span><?php echo esc_attr( $main_category->name ); ?></span>
+					<span><?php echo esc_html( $main_category->name ); ?></span>
 				</a>
 			<?php endif; ?>
 				<div class="article-meta-data">
-					<div class="article-meta-item" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_attr( $the_time ); ?></div>
+					<div class="article-meta-item" aria-label="<?php echo esc_attr( __( 'Post published timestamp', 'benenson' ) ); ?>"><?php echo esc_html( $the_time ); ?></div>
 				<?php if ( true === apply_filters( 'benenson_display_author', false ) ) : ?>
-					<div class="bypostauthor"><?php echo esc_attr( sprintf( '%s %s', __( 'Authored by', 'benenson' ), get_the_author() ) ); ?></div>
+					<div class="bypostauthor"><?php echo esc_html( sprintf( '%s %s', __( 'Authored by', 'benenson' ), get_the_author() ) ); ?></div>
 				<?php endif; ?>
 				</div>
 			</nav>
@@ -63,7 +63,7 @@ if ( benenson_post_has_header() ) {
 			?>
 
 			<?php if ( $caption ) : ?>
-				<span class="article-figureCopyright"><?php echo esc_attr( $caption ); ?></span>
+				<span class="article-figureCopyright"><?php echo esc_html( $caption ); ?></span>
 			<?php endif; ?>
 			</figure>
 		<?php endif; ?>
@@ -104,9 +104,10 @@ if ( benenson_post_has_header() ) {
 				/* translators: 1: posted in label, only visible to screen readers. 2: list of tags. */
 				printf(
 					'<span class="screen-reader-text">%1$s </span>%2$s',
-					__( 'Tags:', 'benenson' ),
+					esc_html__( 'Tags:', 'benenson' ),
+					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					$tags_list
-				); // WPCS: XSS OK.
+				);
 			}
 
 			?>

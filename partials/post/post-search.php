@@ -15,9 +15,9 @@ $date  = benenson_locale_date( $epoch );
 	<a class="floating-anchor" href="<?php the_permalink(); ?>" aria-hidden="true"></a>
 <?php if ( $post_term ) : ?>
 	<?php $post_term_link = get_term_link( $post_term, $post_term->taxonomy ); ?>
-	<a class="post-category" href="<?php echo esc_url( is_wp_error( $post_term_link ) ? home_url() : $post_term_link ); ?>" tabindex="0"><?php echo esc_attr( $post_term->name ); ?></a>
+	<a class="post-category" href="<?php echo esc_url( is_wp_error( $post_term_link ) ? home_url() : $post_term_link ); ?>" tabindex="0"><?php echo esc_html( $post_term->name ); ?></a>
 <?php endif; ?>
 	<h1 class="post-title"><a href="<?php the_permalink(); ?>" tabindex="0"><?php the_title(); ?></a></h1>
-	<div class="post-excerpt"><?php echo esc_attr( trim_text( get_the_excerpt(), 300, true, true ) ); ?></div>
-	<span class="post-byline" aria-label="<?php echo esc_attr( __( 'Post published date', 'benenson' ) ); ?>"><?php echo esc_attr( $date ); ?></span>
+	<div class="post-excerpt"><?php echo esc_html( trim_text( get_the_excerpt(), 300, true, true ) ); ?></div>
+	<span class="post-byline" aria-label="<?php echo esc_attr( __( 'Post published date', 'benenson' ) ); ?>"><?php echo esc_html( $date ); ?></span>
 </article>

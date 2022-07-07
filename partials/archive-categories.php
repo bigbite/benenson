@@ -42,7 +42,7 @@ $has_subcategories = count( $sub_categories ) > 0;
 		?>
 		<li <?php $active && printf( 'class="is-current" data-categories-selected="%d"', esc_attr( $key ) ); ?>>
 			<div>
-				<a class="btn btn--white" href="<?php echo esc_url( $termlink ); ?>"><?php echo esc_attr( $featured_category->name ); ?></a>
+				<a class="btn btn--white" href="<?php echo esc_url( $termlink ); ?>"><?php echo esc_html( $featured_category->name ); ?></a>
 			</div>
 		</li>
 	<?php endforeach; ?>
@@ -58,7 +58,7 @@ if ( ! $has_subcategories ) {
 }
 ?>
 
-<aside class="news-sidebar section section--small" role="complementary" aria-label="<?php esc_html_e( 'List of subcategories', 'benenson' ); ?>">
+<aside class="news-sidebar section section--small" role="complementary" aria-label="<?php esc_attr_e( 'List of subcategories', 'benenson' ); ?>">
 	<span class="element-select <?php has_term_parent( get_queried_object() ) && print 'is-active'; ?>">
 		<select aria-label="<?php echo esc_attr( __( 'List of second-level categories', 'benenson' ) ); ?>">
 		<?php

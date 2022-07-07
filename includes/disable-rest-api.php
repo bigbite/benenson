@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable WordPressVIPMinimum.Hooks.AlwaysReturnInFilter.MissingReturnStatement
+
 /**
  * Disables the rest API for users that are not logged in.
  *
@@ -45,3 +47,5 @@ if ( ! function_exists( 'benenson_disable_rest_api' ) ) {
 }
 
 add_filter( 'rest_authentication_errors', 'benenson_disable_rest_api' );
+
+// phpcs:enable WordPressVIPMinimum.Hooks.AlwaysReturnInFilter.MissingReturnStatement
