@@ -143,11 +143,13 @@ class Mobile_Nav_Walker extends Walker_Nav_Menu {
 		$item_output .= $args->link_before . $title . $args->link_after;
 		$item_output .= '</a>';
 		if ( $has_children ) {
+			// phpcs:disable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 			$item_output .= sprintf(
 				'<button class="page-mobileMenuToggle" role="button" aria-expanded="false" aria-label="%1$s" tabindex="-1"><span class="u-hiddenVisually">%1$s</span></button>',
 				/* translators: Accessibility label for mobile navigation dropdown button */
 				esc_attr( sprintf( __( 'Expand %s sub-list', 'benenson' ), $title ) )
 			);
+			// phpcs:enable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 		}
 		$item_output .= $args->after;
 

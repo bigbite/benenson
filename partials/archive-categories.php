@@ -63,6 +63,7 @@ if ( ! $has_subcategories ) {
 		<select aria-label="<?php echo esc_attr( __( 'List of second-level categories', 'benenson' ) ); ?>">
 		<?php
 
+		// phpcs:ignore WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 		printf( '<option value="%s">%s</option>', esc_attr( get_term_link( get_term_parent( get_queried_object() ) ) ), esc_html( __( 'Select a sub filter', 'benenson' ) ) );
 		array_map( 'print_category_option', $sub_categories );
 
@@ -94,6 +95,7 @@ foreach ( $sub_categories as $sub_cat ) :
 		<select aria-label="<?php echo esc_attr( __( 'List of third-level categories', 'benenson' ) ); ?>">
 		<?php
 
+		// phpcs:ignore WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 		printf( '<option value="%s">%s</option>', esc_attr( get_term_link( get_term_parent( get_queried_object() ) ) ), esc_html( __( 'Select a sub filter', 'benenson' ) ) );
 		array_map( 'print_category_option', $sub_sub_cats );
 

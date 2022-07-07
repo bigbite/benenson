@@ -131,12 +131,14 @@ if ( ! function_exists( 'is_current_category' ) ) {
  */
 if ( ! function_exists( 'print_category_option' ) ) {
 	function print_category_option( WP_Term $cat ) {
+		// phpcs:disable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 		printf(
 			'<option value="%s" %s>%s</option>',
 			esc_attr( get_term_link( $cat ) ),
 			esc_attr( is_current_category( $cat ) ? 'selected' : '' ),
 			esc_html( $cat->name )
 		);
+		// phpcs:enable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 	}
 }
 
