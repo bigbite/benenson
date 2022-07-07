@@ -6,8 +6,8 @@ cache:
   - "./node_modules"
 before_install:
 - composer self-update 1.10.26
-- nvm install 12
-- nvm use 12
+- nvm install 10
+- nvm use 10
 - travis_retry yarn
 jobs:
   include:

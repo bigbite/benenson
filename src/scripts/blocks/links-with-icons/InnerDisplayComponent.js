@@ -1,8 +1,6 @@
 /**
  * Third-party
  */
-import React from 'react';
-import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 import pick from 'lodash-es/pick';
 
@@ -10,18 +8,21 @@ import pick from 'lodash-es/pick';
  * WordPress
  */
 const { __ } = wp.i18n;
-const { Component, Fragment } = wp.element;
+const {
+  Component,
+  createRef,
+  findDOMNode,
+  Fragment,
+} = wp.element;
 const { applyFilters } = wp.hooks;
 const {
   Button,
   CheckboxControl,
   PanelBody,
-  RangeControl,
   SelectControl,
 } = wp.components;
 const {
   InspectorControls,
-  InnerBlocks,
   MediaUpload,
   RichText,
   URLInputButton,
@@ -54,7 +55,7 @@ export default class DisplayComponent extends Component {
   constructor(...params) {
     super(...params);
 
-    this.bigTextRef = React.createRef();
+    this.bigTextRef = createRef();
   }
 
   componentDidUpdate(props) {
@@ -110,8 +111,7 @@ export default class DisplayComponent extends Component {
       return {};
     }
 
-    const { setAttributes } = this.props;
-    const node = ReactDOM.findDOMNode(this.bigTextRef.current);
+    const node = findDOMNode(this.bigTextRef.current);
     const { length } = node.innerText;
 
     const styles = {
