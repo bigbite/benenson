@@ -464,6 +464,7 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		ob_start();
 
 		if ( isset( $attributes['style'] ) && 'grid' === $attributes['style'] ) {
+			// phpcs:ignore WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
 			array_map( 'benenson_render_grid_item', $data );
 			print '</div>';
@@ -472,6 +473,7 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		}
 
 		if ( isset( $attributes['style'] ) && 'post' === $attributes['style'] ) {
+			// phpcs:ignore WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 			printf( '<div class="grid grid-%s">', esc_attr( count( $data ) ) );
 			array_map( 'benenson_render_post_item', $data );
 			print '</div>';
@@ -480,6 +482,7 @@ if ( ! function_exists( 'benenson_render_list_block' ) ) {
 		}
 
 		if ( isset( $attributes['style'] ) && 'splitgrid' === $attributes['style'] ) {
+			// phpcs:ignore WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 			printf( '<div class="splitGrid splitGrid-%s">', esc_attr( count( $data ) ) );
 			$index = 0;
 			$total = count( $data );

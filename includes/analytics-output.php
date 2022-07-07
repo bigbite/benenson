@@ -110,7 +110,7 @@ if ( ! function_exists( 'benenson_analytics_fallback' ) ) {
 			?>
 			<!-- Google Tag Manager (noscript) -->
 			<noscript>
-				<iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo esc_html( $google_tag_manager ); ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+				<iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo esc_attr( $google_tag_manager ); ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 			</noscript>
 			<!-- End Google Tag Manager (noscript) -->
 			<?php

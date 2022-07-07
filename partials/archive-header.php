@@ -25,7 +25,7 @@ if ( is_search() ) {
 		<div class="element-select">
 			<select id="sort-by" name="sort" aria-labelledby="sort-description">
 			<?php foreach ( $available_sorts as $value => $label ) : ?>
-				<option value="<?php echo esc_attr( $value ); ?>" <?php echo wp_kses_post( $value === $current_sort ? 'selected' : '' ); ?>><?php echo esc_attr( $label ); ?></option>
+				<option value="<?php echo esc_attr( $value ); ?>" <?php echo wp_kses_post( $value === $current_sort ? 'selected' : '' ); ?>><?php echo esc_html( $label ); ?></option>
 			<?php endforeach; ?>
 			</select>
 		</div>

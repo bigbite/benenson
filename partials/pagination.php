@@ -24,7 +24,7 @@ if ( empty( $page_numbers ) ) {
 		<?php else : ?>
 			<button disabled>
 				<span class="icon"></span>
-				<span><?php esc_attr_e( 'Previous', 'benenson' ); ?></span>
+				<span><?php esc_html_e( 'Previous', 'benenson' ); ?></span>
 			</button>
 		<?php endif; ?>
 		</div>
@@ -39,7 +39,7 @@ if ( empty( $page_numbers ) ) {
 		<?php else : ?>
 			<button disabled>
 				<span class="icon"></span>
-				<span><?php esc_attr_e( 'Next', 'benenson' ); ?></span>
+				<span><?php esc_html_e( 'Next', 'benenson' ); ?></span>
 			</button>
 		<?php endif; ?>
 		</div>

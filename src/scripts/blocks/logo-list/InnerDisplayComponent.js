@@ -1,7 +1,6 @@
 /**
  * Third-party
  */
-import React from 'react';
 import classnames from 'classnames';
 import pick from 'lodash-es/pick';
 
@@ -9,7 +8,7 @@ import pick from 'lodash-es/pick';
  * WordPress
  */
 const { __ } = wp.i18n;
-const { Component, Fragment } = wp.element;
+const { Component, createRef, Fragment } = wp.element;
 const { applyFilters } = wp.hooks;
 const {
   Button,
@@ -26,7 +25,7 @@ export default class DisplayComponent extends Component {
   constructor(...params) {
     super(...params);
 
-    this.bigTextRef = React.createRef();
+    this.bigTextRef = createRef();
   }
 
   getImageButton = (openEvent) => {

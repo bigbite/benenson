@@ -591,7 +591,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 				<th scope="row"><?php esc_html_e( 'Google Analytics', 'benenson' ); ?></th>
 				<td>
 					<?php $value = benenson_get_option( '_analytics_ga', '' ); ?>
-					<input type="text" name="_analytics_ga" value="<?php echo esc_html( $value ); ?>" placeholder="UA-XXXXX-X">
+					<input type="text" name="_analytics_ga" value="<?php echo esc_attr( $value ); ?>" placeholder="UA-XXXXX-X">
 				</td>
 			</tr>
 			<?php
@@ -612,7 +612,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 						<option value="" disabled>Select a Sidebar</option>
 						<option value=""></option>
 						<?php foreach ( $sidebar_post_list as $post_id => $post ) : ?>
-						<option value="<?php echo esc_html( strval( $post_id ) ); ?>" <?php selected( $value, strval( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
+						<option value="<?php echo esc_attr( strval( $post_id ) ); ?>" <?php selected( $value, strval( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
 						<?php endforeach; ?>
 					</select>
 				</td>
@@ -625,7 +625,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 						<option value="" disabled>Select a Sidebar</option>
 						<option value=""></option>
 						<?php foreach ( $sidebar_post_list as $post_id => $post ) : ?>
-						<option value="<?php echo esc_html( strval( $post_id ) ); ?>" <?php selected( $value, strval( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
+						<option value="<?php echo esc_attr( strval( $post_id ) ); ?>" <?php selected( $value, strval( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
 						<?php endforeach; ?>
 					</select>
 				</td>
@@ -638,7 +638,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 						<option value="" disabled>Select a Sidebar</option>
 						<option value=""></option>
 						<?php foreach ( $sidebar_post_list as $post_id => $post ) : ?>
-						<option value="<?php echo esc_html( $post_id ); ?>" <?php selected( $value, esc_html( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
+						<option value="<?php echo esc_attr( $post_id ); ?>" <?php selected( $value, esc_html( $post_id ), true ); ?>><?php echo esc_html( $post ); ?></option>
 						<?php endforeach; ?>
 					</select>
 				</td>
@@ -693,7 +693,7 @@ if ( ! function_exists( 'benenson_theme_option_admin_page' ) ) {
 						<img id="_logo_image" src="<?php echo esc_url( $attachment ); ?>" />
 					</div>
 					<div>
-						<input id="_logo_input" type="hidden" name="_logo" value="<?php echo esc_html( $value ); ?>" />
+						<input id="_logo_input" type="hidden" name="_logo" value="<?php echo esc_attr( $value ); ?>" />
 						<input id="upload_image_button" type="button" class="button-primary" value="Insert Image" />
 					</div>
 				</td>

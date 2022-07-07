@@ -66,12 +66,14 @@ if ( ! function_exists( 'benenson_render_header_block' ) ) {
 			);
 		}
 
+		// phpcs:disable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 		printf(
 			'<section id="banner-%s" class="page-hero %s" role="figure" aria-label="%s">',
 			esc_attr( $banner_identifier ),
 			esc_attr( implode( ' ', $classlist ) ),
 			esc_attr( $attributes['title'] )
 		);
+		// phpcs:enable WordPressVIPMinimum.Security.ProperEscapingFunction.notAttrEscAttr
 
 		if ( 'video' === $attributes['type'] ) {
 			printf(

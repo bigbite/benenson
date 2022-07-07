@@ -1,6 +1,6 @@
 <?php spaceless(); ?>
 <div class="article-share" role="complementary" aria-label="<?php echo esc_attr( __( 'Social sharing options', 'benenson' ) ); ?>">
-	<h3 class="article-shareTitle"><?php esc_attr_e( 'Share', 'benenson' ); ?></h3>
+	<h3 class="article-shareTitle"><?php esc_html_e( 'Share', 'benenson' ); ?></h3>
 	<ul>
 		<li>
 			<a class="article-shareFacebook" target="_blank" rel="noopener" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" title="<?php esc_attr_e( 'Share on Facebook', 'benenson' ); ?>">

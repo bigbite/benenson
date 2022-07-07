@@ -71,7 +71,7 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 
 <?php do_action( 'benenson_after_body_open_tag' ); ?>
 
-<?php require_once get_template_directory() . '/assets/images/symbol-defs.svg'; ?>
+<?php require_once get_template_directory() . '/assets/images/symbol-defs.svg'; // phpcs:ignore WordPressVIPMinimum.Files.IncludingNonPHPFile.IncludingSVGCSSFile ?>
 
 <a class="skipLink" href="#main"><?php echo esc_html( /* translators: Label for screen reader/keyboard users */ __( 'Skip to main content', 'benenson' ) ); ?></a>
 
@@ -84,14 +84,14 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 				<?php benenson_nav( 'main-menu' ); ?>
 			</ul>
 			<?php if ( ! benenson_get_option( '_search_disabled', false ) && ! benenson_get_option( '_search_navigation_disabled', false ) ) : ?>
-			<div class="page-headerSearchContainer" role="search" aria-label="<?php echo esc_attr( 'Search', 'benenson' ); ?>">
+			<div class="page-headerSearchContainer" role="search" aria-label="<?php echo esc_attr__( 'Search', 'benenson' ); ?>">
 				<button data-toggle-search class="page-headerSearch" role="button" aria-label="<?php echo esc_attr( __( 'Show search form', 'benenson' ) ); ?>">
-					<span class="u-hiddenVisually"><?php esc_attr_e( 'Search', 'benenson' ); ?></span>
+					<span class="u-hiddenVisually"><?php esc_html_e( 'Search', 'benenson' ); ?></span>
 				</button>
 				<?php get_search_form(); ?>
 			</div>
 			<?php endif; ?>
-			<button class="page-headerHamburger" data-toggle-menu role="button" aria-expanded="false" aria-label="<?php echo esc_attr( 'Open navigation', 'benenson' ); ?>"><span></span></button>
+			<button class="page-headerHamburger" data-toggle-menu role="button" aria-expanded="false" aria-label="<?php echo esc_attr__( 'Open navigation', 'benenson' ); ?>"><span></span></button>
 		</nav>
 	</div>
 </header>
@@ -99,7 +99,7 @@ if ( $hero_show && ! is_singular( [ 'post' ] ) && ! is_search() && ! is_404() ) 
 <div class="page-mobileMenuOverlay" data-toggle-menu aria-hidden="true">
 	<section class="page-mobileMenu">
 		<header class="page-mobileMenuHeader">
-			<h2><?php esc_attr_e( 'Main Menu', 'benenson' ); ?></h2>
+			<h2><?php esc_html_e( 'Main Menu', 'benenson' ); ?></h2>
 			<button data-toggle-menu tabindex="-1" role="button" aria-expanded="true" aria-label="<?php echo esc_attr( __( 'Close navigation', 'benenson' ) ); ?>"></button>
 		</header>
 		<nav class="page-mobileMenuNav">
