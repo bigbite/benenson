@@ -1,4 +1,6 @@
 # Benenson
+Benenson has now been superseded by the [Humanity Theme](https://github.com/amnestywebsite/humanity-theme); no further updates will be made to this repository.  
+
 ![Benenson Theme Screenshot](./screenshot.jpg)
 Benenson is a WordPress theme 
 
